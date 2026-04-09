@@ -1,0 +1,470 @@
+{
+  "app_reference": {
+    "package_name": null,
+    "app_store_url": null,
+    "bundle_path": null,
+    "web_url": "https://news.ycombinator.com",
+    "name": "Hacker News",
+    "description": null,
+    "baseline": null,
+    "differentiation": null,
+    "credentials": null
+  },
+  "model_version": 10,
+  "domain": "news aggregation",
+  "purpose": "Hacker News is a social news website focused on technology and startup-related content where users can submit, vote on, and discuss stories.",
+  "baseline_category": "social news aggregation",
+  "differentiators": [
+    "Technology and startup focus",
+    "Community-driven content curation",
+    "Minimalist design aesthetic",
+    "Historical content browsing with date navigation",
+    "Dedicated Ask HN section for community questions",
+    "Show HN section for community project showcases",
+    "Integrated job board for Y Combinator startups"
+  ],
+  "entities": [
+    {
+      "name": "story",
+      "description": "News articles, discussions, or links submitted by users",
+      "provenance": "observed"
+    },
+    {
+      "name": "user",
+      "description": "Community members who can submit, vote, and comment",
+      "provenance": "observed"
+    },
+    {
+      "name": "comment",
+      "description": "User responses and discussions on stories",
+      "provenance": "observed"
+    },
+    {
+      "name": "job",
+      "description": "Job listings from Y Combinator startups",
+      "provenance": "observed"
+    }
+  ],
+  "capabilities": [
+    {
+      "name": "browse_stories",
+      "description": "View and navigate through story listings",
+      "estimated_importance": 1.0,
+      "estimated_frequency": 1.0,
+      "is_differentiator": false,
+      "provenance": "observed"
+    },
+    {
+      "name": "filter_by_category",
+      "description": "Filter content by different sections (new, ask, show, jobs)",
+      "estimated_importance": 0.8,
+      "estimated_frequency": 0.7,
+      "is_differentiator": false,
+      "provenance": "observed"
+    },
+    {
+      "name": "search_stories",
+      "description": "Search through Hacker News content",
+      "estimated_importance": 0.7,
+      "estimated_frequency": 0.4,
+      "is_differentiator": false,
+      "provenance": "observed"
+    },
+    {
+      "name": "submit_content",
+      "description": "Submit new stories or content to the platform",
+      "estimated_importance": 0.6,
+      "estimated_frequency": 0.2,
+      "is_differentiator": false,
+      "provenance": "observed"
+    },
+    {
+      "name": "user_authentication",
+      "description": "Login and manage user accounts",
+      "estimated_importance": 0.7,
+      "estimated_frequency": 0.3,
+      "is_differentiator": false,
+      "provenance": "observed"
+    },
+    {
+      "name": "view_comments",
+      "description": "Read and interact with story comments",
+      "estimated_importance": 0.9,
+      "estimated_frequency": 0.8,
+      "is_differentiator": false,
+      "provenance": "observed"
+    },
+    {
+      "name": "browse_chronological",
+      "description": "Browse stories in chronological order",
+      "estimated_importance": 0.8,
+      "estimated_frequency": 0.6,
+      "is_differentiator": false,
+      "provenance": "observed"
+    },
+    {
+      "name": "view_story_details",
+      "description": "View detailed information about individual stories",
+      "estimated_importance": 0.9,
+      "estimated_frequency": 0.9,
+      "is_differentiator": false,
+      "provenance": "observed"
+    },
+    {
+      "name": "browse_past_stories",
+      "description": "Browse historical stories from previous dates",
+      "estimated_importance": 0.6,
+      "estimated_frequency": 0.3,
+      "is_differentiator": true,
+      "provenance": "observed"
+    },
+    {
+      "name": "browse_jobs",
+      "description": "Browse job listings from Y Combinator startups",
+      "estimated_importance": 0.5,
+      "estimated_frequency": 0.2,
+      "is_differentiator": false,
+      "provenance": "observed"
+    },
+    {
+      "name": "browse_recent_comments",
+      "description": "Browse recently posted comments across all stories",
+      "estimated_importance": 0.7,
+      "estimated_frequency": 0.4,
+      "is_differentiator": false,
+      "provenance": "observed"
+    },
+    {
+      "name": "view_user_profiles",
+      "description": "View user profile information and activity",
+      "estimated_importance": 0.6,
+      "estimated_frequency": 0.3,
+      "is_differentiator": false,
+      "provenance": "observed"
+    },
+    {
+      "name": "browse_ask_stories",
+      "description": "Browse Ask HN community questions",
+      "estimated_importance": 0.7,
+      "estimated_frequency": 0.4,
+      "is_differentiator": false,
+      "provenance": "observed"
+    },
+    {
+      "name": "browse_show_stories",
+      "description": "Browse Show HN community project showcases",
+      "estimated_importance": 0.7,
+      "estimated_frequency": 0.4,
+      "is_differentiator": false,
+      "provenance": "observed"
+    }
+  ],
+  "screens": [
+    {
+      "screen_id": "homepage",
+      "name": "Hacker News Homepage",
+      "screen_type": "home",
+      "purpose": "Main landing page showing top stories",
+      "participates_in": [
+        "browse_stories",
+        "filter_by_category",
+        "search_stories",
+        "submit_content",
+        "user_authentication"
+      ],
+      "visit_count": 10,
+      "last_observation_id": "obs_4b9d409c"
+    },
+    {
+      "screen_id": "new_page",
+      "name": "New Stories Page",
+      "screen_type": "list",
+      "purpose": "Shows newest submitted stories in chronological order",
+      "participates_in": [
+        "browse_stories",
+        "filter_by_category",
+        "search_stories",
+        "browse_chronological"
+      ],
+      "visit_count": 9,
+      "last_observation_id": "obs_0bcfa8ca"
+    },
+    {
+      "screen_id": "story_detail",
+      "name": "Story Detail Page",
+      "screen_type": "detail",
+      "purpose": "Shows individual story with comments and discussion",
+      "participates_in": [
+        "view_story_details",
+        "view_comments"
+      ],
+      "visit_count": 8,
+      "last_observation_id": "obs_352dde34"
+    },
+    {
+      "screen_id": "comments_page",
+      "name": "Comments Page",
+      "screen_type": "list",
+      "purpose": "Shows recent comments across all stories",
+      "participates_in": [
+        "browse_recent_comments",
+        "view_comments",
+        "view_user_profiles"
+      ],
+      "visit_count": 5,
+      "last_observation_id": "obs_0bcfa8ca"
+    },
+    {
+      "screen_id": "past_page",
+      "name": "Past Stories Page",
+      "screen_type": "list",
+      "purpose": "Shows historical stories from previous dates",
+      "participates_in": [
+        "browse_past_stories",
+        "browse_stories",
+        "filter_by_category"
+      ],
+      "visit_count": 4,
+      "last_observation_id": "obs_0bcfa8ca"
+    },
+    {
+      "screen_id": "ask_page",
+      "name": "Ask HN Page",
+      "screen_type": "list",
+      "purpose": "Shows Ask HN community questions and discussions",
+      "participates_in": [
+        "browse_ask_stories",
+        "browse_stories",
+        "filter_by_category"
+      ],
+      "visit_count": 3,
+      "last_observation_id": "obs_0bcfa8ca"
+    },
+    {
+      "screen_id": "show_page",
+      "name": "Show HN Page",
+      "screen_type": "list",
+      "purpose": "Shows Show HN community project showcases",
+      "participates_in": [
+        "browse_show_stories",
+        "browse_stories",
+        "filter_by_category"
+      ],
+      "visit_count": 2,
+      "last_observation_id": "obs_0bcfa8ca"
+    },
+    {
+      "screen_id": "jobs_page",
+      "name": "Jobs Page",
+      "screen_type": "list",
+      "purpose": "Shows job listings from Y Combinator startups",
+      "participates_in": [
+        "browse_jobs",
+        "filter_by_category",
+        "search_stories"
+      ],
+      "visit_count": 1,
+      "last_observation_id": "obs_0bcfa8ca"
+    }
+  ],
+  "transitions": [
+    {
+      "from_screen": "homepage",
+      "to_screen": "new_page",
+      "action": "Click new tab",
+      "observed_count": 9
+    },
+    {
+      "from_screen": "new_page",
+      "to_screen": "homepage",
+      "action": "Navigate back to homepage",
+      "observed_count": 9
+    },
+    {
+      "from_screen": "story_detail",
+      "to_screen": "homepage",
+      "action": "Click Home link",
+      "observed_count": 8
+    },
+    {
+      "from_screen": "homepage",
+      "to_screen": "story_detail",
+      "action": "Click story link",
+      "observed_count": 6
+    },
+    {
+      "from_screen": "comments_page",
+      "to_screen": "homepage",
+      "action": "Click Hacker News link",
+      "observed_count": 5
+    },
+    {
+      "from_screen": "comments_page",
+      "to_screen": "new_page",
+      "action": "Click new tab",
+      "observed_count": 5
+    },
+    {
+      "from_screen": "past_page",
+      "to_screen": "new_page",
+      "action": "Click new tab",
+      "observed_count": 4
+    },
+    {
+      "from_screen": "past_page",
+      "to_screen": "comments_page",
+      "action": "Click comments tab",
+      "observed_count": 4
+    },
+    {
+      "from_screen": "past_page",
+      "to_screen": "story_detail",
+      "action": "Click story link",
+      "observed_count": 4
+    },
+    {
+      "from_screen": "ask_page",
+      "to_screen": "homepage",
+      "action": "Click Hacker News link",
+      "observed_count": 3
+    },
+    {
+      "from_screen": "ask_page",
+      "to_screen": "new_page",
+      "action": "Click new tab",
+      "observed_count": 3
+    },
+    {
+      "from_screen": "ask_page",
+      "to_screen": "past_page",
+      "action": "Click past tab",
+      "observed_count": 3
+    },
+    {
+      "from_screen": "ask_page",
+      "to_screen": "comments_page",
+      "action": "Click comments tab",
+      "observed_count": 3
+    },
+    {
+      "from_screen": "ask_page",
+      "to_screen": "story_detail",
+      "action": "Click story link",
+      "observed_count": 3
+    },
+    {
+      "from_screen": "show_page",
+      "to_screen": "new_page",
+      "action": "Click new tab",
+      "observed_count": 2
+    },
+    {
+      "from_screen": "show_page",
+      "to_screen": "past_page",
+      "action": "Click past tab",
+      "observed_count": 2
+    },
+    {
+      "from_screen": "show_page",
+      "to_screen": "comments_page",
+      "action": "Click comments tab",
+      "observed_count": 2
+    },
+    {
+      "from_screen": "show_page",
+      "to_screen": "ask_page",
+      "action": "Click ask tab",
+      "observed_count": 2
+    },
+    {
+      "from_screen": "show_page",
+      "to_screen": "story_detail",
+      "action": "Click story link",
+      "observed_count": 2
+    },
+    {
+      "from_screen": "jobs_page",
+      "to_screen": "new_page",
+      "action": "Click new tab",
+      "observed_count": 1
+    },
+    {
+      "from_screen": "jobs_page",
+      "to_screen": "past_page",
+      "action": "Click past tab",
+      "observed_count": 1
+    },
+    {
+      "from_screen": "jobs_page",
+      "to_screen": "comments_page",
+      "action": "Click comments tab",
+      "observed_count": 1
+    },
+    {
+      "from_screen": "jobs_page",
+      "to_screen": "ask_page",
+      "action": "Click ask tab",
+      "observed_count": 1
+    },
+    {
+      "from_screen": "jobs_page",
+      "to_screen": "show_page",
+      "action": "Click show tab",
+      "observed_count": 1
+    }
+  ],
+  "frontier": [
+    {
+      "description": "Submit page for content creation",
+      "rationale": "Submit tab is visible on jobs page, indicating content submission capability exists",
+      "provenance": "inferred_structure",
+      "priority": 0.9,
+      "search_strategy": "Click submit tab from any main section page"
+    },
+    {
+      "description": "Login page and user authentication flow",
+      "rationale": "Login link is visible on jobs page, indicating user authentication system exists",
+      "provenance": "inferred_structure",
+      "priority": 0.9,
+      "search_strategy": "Click login link from any main section page"
+    },
+    {
+      "description": "Job detail pages",
+      "rationale": "Individual job listings are clickable on jobs page, likely leading to detailed job descriptions",
+      "provenance": "inferred_structure",
+      "priority": 0.8,
+      "search_strategy": "Click on individual job listings from jobs page"
+    },
+    {
+      "description": "Search results page",
+      "rationale": "Search field is available on jobs page, indicating search functionality exists",
+      "provenance": "inferred_structure",
+      "priority": 0.6,
+      "search_strategy": "Enter search query in search field and submit"
+    },
+    {
+      "description": "User profile pages",
+      "rationale": "User profiles likely exist based on community nature of platform",
+      "provenance": "inferred_structure",
+      "priority": 0.6,
+      "search_strategy": "Click on usernames in comments or story submissions"
+    },
+    {
+      "description": "External Y Combinator jobs portal",
+      "rationale": "Link to ycombinator.com/jobs suggests integration with external job portal",
+      "provenance": "inferred_structure",
+      "priority": 0.5,
+      "search_strategy": "Click ycombinator.com/jobs link from jobs page"
+    }
+  ],
+  "anomalies": [
+    {
+      "description": "Previous story detail observation showed Custom Paper Pocket Yachts website instead of typical Hacker News story page",
+      "observation_id": "obs_0bcfa8ca",
+      "classification": "contradictory",
+      "exploration_priority_boost": 0.3
+    }
+  ],
+  "coverage_estimate": 0.85,
+  "confidence": 0.95
+}

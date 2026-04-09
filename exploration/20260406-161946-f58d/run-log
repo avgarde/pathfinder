@@ -1,0 +1,65 @@
+2026-04-06 21:49:49,159 INFO pathfinder.orchestrator.agent_loop: Invocation: pathfinder explore-web https://goindigo.in --name 'Indigo' --max-actions 50 --inputs /Users/amitgarde/indigo_inputs.json
+2026-04-06 21:49:49,159 INFO pathfinder.orchestrator.agent_loop: Run ID: 20260406-161946-f58d
+2026-04-06 21:49:49,160 INFO pathfinder.orchestrator.agent_loop: Run directory: exploration/20260406-161946-f58d
+2026-04-06 21:49:49,160 INFO pathfinder.orchestrator.agent_loop: Navigating to start URL: https://goindigo.in
+2026-04-06 21:49:49,160 INFO pathfinder.device.web.adapter: Navigating to: https://goindigo.in
+2026-04-06 21:49:51,906 INFO pathfinder.layers.world_modeling: Created empty model
+2026-04-06 21:49:51,906 INFO pathfinder.orchestrator.agent_loop: Available inputs: destination_city, destination
+2026-04-06 21:49:51,906 INFO pathfinder.orchestrator.agent_loop: Starting exploration of Indigo (budget: 50 actions)
+2026-04-06 21:49:51,907 INFO pathfinder.orchestrator.agent_loop: === Step 1 / 50 ===
+2026-04-06 21:49:52,993 INFO pathfinder.device.web.adapter: Screenshot saved to exploration/20260406-161946-f58d/screenshot.png
+2026-04-06 21:49:52,993 INFO pathfinder.layers.perception: Captured screenshot: exploration/20260406-161946-f58d/screenshot.png
+2026-04-06 21:49:52,996 INFO pathfinder.device.web.adapter: DOM structure extracted (147 chars)
+2026-04-06 21:49:52,996 INFO pathfinder.layers.perception: Captured UI structure (147 chars)
+2026-04-06 21:49:52,997 INFO pathfinder.layers.perception: Perceiving screenshot: exploration/20260406-161946-f58d/screenshot.png
+2026-04-06 21:49:53,001 INFO pathfinder.ai.openai_compatible: Calling qwen2.5-vl:32b at http://localhost:11434/v1...
+2026-04-06 21:49:53,822 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-04-06 21:49:53,823 ERROR pathfinder.orchestrator.agent_loop: Exploration error: Error code: 404 - {'error': {'message': "model 'qwen2.5-vl:32b' not found", 'type': 'not_found_error', 'param': None, 'code': None}}
+Traceback (most recent call last):
+  File "/Users/amitgarde/hacking/claude-code/pathfinder/pathfinder/orchestrator/agent_loop.py", line 301, in explore
+    observation = await self.perception.perceive_live(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Users/amitgarde/hacking/claude-code/pathfinder/pathfinder/layers/perception.py", line 124, in perceive_live
+    return await self.perceive_screenshot(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Users/amitgarde/hacking/claude-code/pathfinder/pathfinder/layers/perception.py", line 68, in perceive_screenshot
+    observation = await self.ai.perceive(
+                  ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Users/amitgarde/hacking/claude-code/pathfinder/pathfinder/ai/openai_compatible.py", line 174, in perceive
+    raw_text = self._chat(PERCEPTION_SYSTEM_PROMPT, user_content)
+  File "/Users/amitgarde/hacking/claude-code/pathfinder/pathfinder/ai/openai_compatible.py", line 117, in _chat
+    response = self.client.chat.completions.create(
+        model=self.config.model,
+    ...<2 lines>...
+        temperature=temperature if temperature is not None else self.config.temperature,
+    )
+  File "/Users/amitgarde/hacking/claude-code/pathfinder/.venv/lib/python3.14/site-packages/openai/_utils/_utils.py", line 286, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/amitgarde/hacking/claude-code/pathfinder/.venv/lib/python3.14/site-packages/openai/resources/chat/completions/completions.py", line 1211, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/chat/completions",
+        ^^^^^^^^^^^^^^^^^^^^
+    ...<47 lines>...
+        stream_cls=Stream[ChatCompletionChunk],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/amitgarde/hacking/claude-code/pathfinder/.venv/lib/python3.14/site-packages/openai/_base_client.py", line 1297, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amitgarde/hacking/claude-code/pathfinder/.venv/lib/python3.14/site-packages/openai/_base_client.py", line 1070, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.NotFoundError: Error code: 404 - {'error': {'message': "model 'qwen2.5-vl:32b' not found", 'type': 'not_found_error', 'param': None, 'code': None}}
+2026-04-06 21:49:53,953 INFO pathfinder.layers.world_modeling: Model saved to exploration/20260406-161946-f58d/final_model.json
+2026-04-06 21:49:53,954 INFO pathfinder.orchestrator.agent_loop: Exploration summary saved to exploration/20260406-161946-f58d/exploration_summary.json
+2026-04-06 21:49:53,955 INFO pathfinder.orchestrator.agent_loop: Exploration complete: 0 actions in 2.0s. Model v0: 0 screens, 0 transitions, coverage=0%. Stop reason: Error: Error code: 404 - {'error': {'message': "model 'qwen2.5-vl:32b' not found", 'type': 'not_found_error', 'param': None, 'code': None}}

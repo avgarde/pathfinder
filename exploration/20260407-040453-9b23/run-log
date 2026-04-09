@@ -1,0 +1,129 @@
+2026-04-07 09:34:55,399 INFO pathfinder.orchestrator.agent_loop: Invocation: pathfinder explore-web https://goindigo.in --name 'Indigo' --max-actions 10 --inputs /Users/amitgarde/indigo_inputs.json
+2026-04-07 09:34:55,400 INFO pathfinder.orchestrator.agent_loop: Run ID: 20260407-040453-9b23
+2026-04-07 09:34:55,400 INFO pathfinder.orchestrator.agent_loop: Run directory: exploration/20260407-040453-9b23
+2026-04-07 09:34:55,400 INFO pathfinder.orchestrator.agent_loop: Navigating to start URL: https://goindigo.in
+2026-04-07 09:34:55,401 INFO pathfinder.device.web.adapter: Navigating to: https://goindigo.in
+2026-04-07 09:34:57,801 INFO pathfinder.layers.world_modeling: Created empty model
+2026-04-07 09:34:57,801 INFO pathfinder.orchestrator.agent_loop: Available inputs: destination_city, destination
+2026-04-07 09:34:57,801 INFO pathfinder.orchestrator.agent_loop: Starting exploration of Indigo (budget: 10 actions)
+2026-04-07 09:34:57,802 INFO pathfinder.orchestrator.agent_loop: === Step 1 / 10 ===
+2026-04-07 09:34:59,184 INFO pathfinder.device.web.adapter: Screenshot saved to exploration/20260407-040453-9b23/screenshot.png
+2026-04-07 09:34:59,185 INFO pathfinder.layers.perception: Captured screenshot: exploration/20260407-040453-9b23/screenshot.png
+2026-04-07 09:34:59,188 INFO pathfinder.device.web.adapter: DOM structure extracted (147 chars)
+2026-04-07 09:34:59,188 INFO pathfinder.layers.perception: Captured UI structure (147 chars)
+2026-04-07 09:34:59,189 INFO pathfinder.layers.perception: Perceiving screenshot: exploration/20260407-040453-9b23/screenshot.png
+2026-04-07 09:34:59,191 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:32b at http://localhost:11434/v1...
+2026-04-07 09:44:59,690 INFO openai._base_client: Retrying request to /chat/completions in 0.439638 seconds
+2026-04-07 09:48:02,405 INFO openai._base_client: Retrying request to /chat/completions in 0.959154 seconds
+2026-04-07 09:48:03,442 ERROR pathfinder.orchestrator.agent_loop: Exploration error: Connection error.
+Traceback (most recent call last):
+  File "/Users/amitgarde/hacking/claude-code/pathfinder/.venv/lib/python3.14/site-packages/httpx/_transports/default.py", line 101, in map_httpcore_exceptions
+    yield
+  File "/Users/amitgarde/hacking/claude-code/pathfinder/.venv/lib/python3.14/site-packages/httpx/_transports/default.py", line 250, in handle_request
+    resp = self._pool.handle_request(req)
+  File "/Users/amitgarde/hacking/claude-code/pathfinder/.venv/lib/python3.14/site-packages/httpcore/_sync/connection_pool.py", line 256, in handle_request
+    raise exc from None
+  File "/Users/amitgarde/hacking/claude-code/pathfinder/.venv/lib/python3.14/site-packages/httpcore/_sync/connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+        pool_request.request
+    )
+  File "/Users/amitgarde/hacking/claude-code/pathfinder/.venv/lib/python3.14/site-packages/httpcore/_sync/connection.py", line 101, in handle_request
+    raise exc
+  File "/Users/amitgarde/hacking/claude-code/pathfinder/.venv/lib/python3.14/site-packages/httpcore/_sync/connection.py", line 78, in handle_request
+    stream = self._connect(request)
+  File "/Users/amitgarde/hacking/claude-code/pathfinder/.venv/lib/python3.14/site-packages/httpcore/_sync/connection.py", line 124, in _connect
+    stream = self._network_backend.connect_tcp(**kwargs)
+  File "/Users/amitgarde/hacking/claude-code/pathfinder/.venv/lib/python3.14/site-packages/httpcore/_backends/sync.py", line 207, in connect_tcp
+    with map_exceptions(exc_map):
+         ~~~~~~~~~~~~~~^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "/Users/amitgarde/hacking/claude-code/pathfinder/.venv/lib/python3.14/site-packages/httpcore/_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectError: [Errno 61] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/amitgarde/hacking/claude-code/pathfinder/.venv/lib/python3.14/site-packages/openai/_base_client.py", line 1005, in request
+    response = self._client.send(
+        request,
+        stream=stream or self._should_stream_response_body(request=request),
+        **kwargs,
+    )
+  File "/Users/amitgarde/hacking/claude-code/pathfinder/.venv/lib/python3.14/site-packages/httpx/_client.py", line 914, in send
+    response = self._send_handling_auth(
+        request,
+    ...<2 lines>...
+        history=[],
+    )
+  File "/Users/amitgarde/hacking/claude-code/pathfinder/.venv/lib/python3.14/site-packages/httpx/_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+        request,
+        follow_redirects=follow_redirects,
+        history=history,
+    )
+  File "/Users/amitgarde/hacking/claude-code/pathfinder/.venv/lib/python3.14/site-packages/httpx/_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "/Users/amitgarde/hacking/claude-code/pathfinder/.venv/lib/python3.14/site-packages/httpx/_client.py", line 1014, in _send_single_request
+    response = transport.handle_request(request)
+  File "/Users/amitgarde/hacking/claude-code/pathfinder/.venv/lib/python3.14/site-packages/httpx/_transports/default.py", line 249, in handle_request
+    with map_httpcore_exceptions():
+         ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.0_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "/Users/amitgarde/hacking/claude-code/pathfinder/.venv/lib/python3.14/site-packages/httpx/_transports/default.py", line 118, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectError: [Errno 61] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/amitgarde/hacking/claude-code/pathfinder/pathfinder/orchestrator/agent_loop.py", line 301, in explore
+    observation = await self.perception.perceive_live(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Users/amitgarde/hacking/claude-code/pathfinder/pathfinder/layers/perception.py", line 124, in perceive_live
+    return await self.perceive_screenshot(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Users/amitgarde/hacking/claude-code/pathfinder/pathfinder/layers/perception.py", line 68, in perceive_screenshot
+    observation = await self.ai.perceive(
+                  ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Users/amitgarde/hacking/claude-code/pathfinder/pathfinder/ai/openai_compatible.py", line 174, in perceive
+    raise
+    
+  File "/Users/amitgarde/hacking/claude-code/pathfinder/pathfinder/ai/openai_compatible.py", line 117, in _chat
+    
+    ...<4 lines>...
+    
+  File "/Users/amitgarde/hacking/claude-code/pathfinder/.venv/lib/python3.14/site-packages/openai/_utils/_utils.py", line 286, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/amitgarde/hacking/claude-code/pathfinder/.venv/lib/python3.14/site-packages/openai/resources/chat/completions/completions.py", line 1211, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/chat/completions",
+        ^^^^^^^^^^^^^^^^^^^^
+    ...<47 lines>...
+        stream_cls=Stream[ChatCompletionChunk],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/amitgarde/hacking/claude-code/pathfinder/.venv/lib/python3.14/site-packages/openai/_base_client.py", line 1297, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amitgarde/hacking/claude-code/pathfinder/.venv/lib/python3.14/site-packages/openai/_base_client.py", line 1037, in request
+    raise APIConnectionError(request=request) from err
+openai.APIConnectionError: Connection error.
+2026-04-07 09:48:04,026 INFO pathfinder.layers.world_modeling: Model saved to exploration/20260407-040453-9b23/final_model.json
+2026-04-07 09:48:04,027 INFO pathfinder.orchestrator.agent_loop: Exploration summary saved to exploration/20260407-040453-9b23/exploration_summary.json
+2026-04-07 09:48:04,028 INFO pathfinder.orchestrator.agent_loop: Exploration complete: 0 actions in 786.2s. Model v0: 0 screens, 0 transitions, coverage=0%. Stop reason: Error: Connection error.

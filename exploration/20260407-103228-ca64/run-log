@@ -1,0 +1,1445 @@
+2026-04-07 16:02:30,154 INFO pathfinder.orchestrator.agent_loop: Invocation: pathfinder explore-web https://espncricinfo.com --name 'Cricinfo' --max-actions 50
+2026-04-07 16:02:30,155 INFO pathfinder.orchestrator.agent_loop: Run ID: 20260407-103228-ca64
+2026-04-07 16:02:30,155 INFO pathfinder.orchestrator.agent_loop: Run directory: exploration/20260407-103228-ca64
+2026-04-07 16:02:30,156 INFO pathfinder.orchestrator.agent_loop: Navigating to start URL: https://espncricinfo.com
+2026-04-07 16:02:30,156 INFO pathfinder.device.web.adapter: Navigating to: https://espncricinfo.com
+2026-04-07 16:02:41,242 INFO pathfinder.layers.world_modeling: Created empty model
+2026-04-07 16:02:41,246 INFO pathfinder.orchestrator.agent_loop: Starting exploration of Cricinfo (budget: 50 actions)
+2026-04-07 16:02:41,249 INFO pathfinder.orchestrator.agent_loop: === Step 1 / 50 ===
+2026-04-07 16:02:52,157 INFO pathfinder.device.web.adapter: Screenshot saved to exploration/20260407-103228-ca64/screenshot.png
+2026-04-07 16:02:52,158 INFO pathfinder.layers.perception: Captured screenshot: exploration/20260407-103228-ca64/screenshot.png
+2026-04-07 16:02:52,161 INFO pathfinder.device.web.adapter: DOM structure extracted (3992 chars)
+2026-04-07 16:02:52,161 INFO pathfinder.layers.perception: Captured UI structure (3992 chars)
+2026-04-07 16:02:52,162 INFO pathfinder.layers.perception: Perceiving screenshot: exploration/20260407-103228-ca64/screenshot.png
+2026-04-07 16:02:52,164 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 (with screenshot) — this may take a few minutes for local models...
+2026-04-07 16:03:06,775 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 16:03:08,604 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 16.4s (6.1 tok/s)
+2026-04-07 16:03:10,472 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 18.3s (10.9 tok/s)
+2026-04-07 16:03:12,341 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 20.2s (14.9 tok/s)
+2026-04-07 16:03:14,231 INFO pathfinder.ai.openai_compatible:   ... 400 tokens in 22.1s (18.1 tok/s)
+2026-04-07 16:03:16,125 INFO pathfinder.ai.openai_compatible:   ... 500 tokens in 24.0s (20.9 tok/s)
+2026-04-07 16:03:18,030 INFO pathfinder.ai.openai_compatible:   ... 600 tokens in 25.9s (23.2 tok/s)
+2026-04-07 16:03:19,960 INFO pathfinder.ai.openai_compatible:   ... 700 tokens in 27.8s (25.2 tok/s)
+2026-04-07 16:03:21,891 INFO pathfinder.ai.openai_compatible:   ... 800 tokens in 29.7s (26.9 tok/s)
+2026-04-07 16:03:23,844 INFO pathfinder.ai.openai_compatible:   ... 900 tokens in 31.7s (28.4 tok/s)
+2026-04-07 16:03:25,806 INFO pathfinder.ai.openai_compatible:   ... 1000 tokens in 33.6s (29.7 tok/s)
+2026-04-07 16:03:26,810 INFO pathfinder.ai.openai_compatible: Response: 1050 tokens, 3716 chars in 34.6s (30.3 tok/s)
+2026-04-07 16:03:26,814 INFO pathfinder.layers.perception: Perceived: This screen displays upcoming cricket matches and provides navigation to various cricket-related sections. (type=navigation, 7 elements, confidence=0.90)
+2026-04-07 16:03:26,826 INFO pathfinder.layers.perception: Observation saved to exploration/20260407-103228-ca64/step_001_observation.json
+2026-04-07 16:03:26,827 INFO pathfinder.orchestrator.agent_loop: Perceived: This screen displays upcoming cricket matches and provides navigation to various cricket-related sections. (navigation, 7 elements)
+2026-04-07 16:03:26,828 INFO pathfinder.layers.world_modeling: Updating model (v0) with 1 new observations
+2026-04-07 16:03:26,828 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 16:03:28,605 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 16:03:30,211 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 3.4s (29.6 tok/s)
+2026-04-07 16:03:31,859 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 5.0s (39.8 tok/s)
+2026-04-07 16:03:33,502 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 6.7s (45.0 tok/s)
+2026-04-07 16:03:35,176 INFO pathfinder.ai.openai_compatible:   ... 400 tokens in 8.3s (47.9 tok/s)
+2026-04-07 16:03:36,847 INFO pathfinder.ai.openai_compatible:   ... 500 tokens in 10.0s (49.9 tok/s)
+2026-04-07 16:03:38,540 INFO pathfinder.ai.openai_compatible:   ... 600 tokens in 11.7s (51.2 tok/s)
+2026-04-07 16:03:40,237 INFO pathfinder.ai.openai_compatible:   ... 700 tokens in 13.4s (52.2 tok/s)
+2026-04-07 16:03:41,937 INFO pathfinder.ai.openai_compatible:   ... 800 tokens in 15.1s (53.0 tok/s)
+2026-04-07 16:03:43,667 INFO pathfinder.ai.openai_compatible:   ... 900 tokens in 16.8s (53.5 tok/s)
+2026-04-07 16:03:44,942 INFO pathfinder.ai.openai_compatible: Response: 973 tokens, 3753 chars in 18.1s (53.7 tok/s)
+2026-04-07 16:03:44,944 INFO pathfinder.layers.world_modeling: Model updated to v1: 1 screens, 7 transitions, 5 capabilities, 3 entities, 1 frontier, 1 anomalies (coverage=30%, confidence=50%)
+2026-04-07 16:03:44,945 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 16:03:47,562 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 16:03:49,237 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 4.3s (23.3 tok/s)
+2026-04-07 16:03:50,930 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 6.0s (33.4 tok/s)
+2026-04-07 16:03:51,134 INFO pathfinder.ai.openai_compatible: Response: 211 tokens, 891 chars in 6.2s (34.1 tok/s)
+2026-04-07 16:03:51,136 INFO pathfinder.orchestrator.agent_loop: Plan: ExplorationPlan(navigate: Navigate to the Ask Cricinfo section)
+2026-04-07 16:03:51,137 INFO pathfinder.orchestrator.agent_loop: Navigation requested to: https://www.espncricinfo.com/ask
+2026-04-07 16:03:51,138 INFO pathfinder.orchestrator.agent_loop: Executing: Navigate to the Ask Cricinfo section
+2026-04-07 16:03:51,139 INFO pathfinder.device.web.adapter: Navigating to: https://www.espncricinfo.com/ask
+2026-04-07 16:04:02,943 INFO pathfinder.orchestrator.agent_loop: === Step 2 / 50 ===
+2026-04-07 16:04:13,780 INFO pathfinder.device.web.adapter: Screenshot saved to exploration/20260407-103228-ca64/screenshot.png
+2026-04-07 16:04:13,781 INFO pathfinder.layers.perception: Captured screenshot: exploration/20260407-103228-ca64/screenshot.png
+2026-04-07 16:04:13,784 INFO pathfinder.device.web.adapter: DOM structure extracted (243 chars)
+2026-04-07 16:04:13,784 INFO pathfinder.layers.perception: Captured UI structure (243 chars)
+2026-04-07 16:04:13,785 INFO pathfinder.layers.perception: Perceiving screenshot: exploration/20260407-103228-ca64/screenshot.png
+2026-04-07 16:04:13,788 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 (with screenshot) — this may take a few minutes for local models...
+2026-04-07 16:04:21,780 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 16:04:23,523 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 9.7s (10.3 tok/s)
+2026-04-07 16:04:25,273 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 11.5s (17.4 tok/s)
+2026-04-07 16:04:27,033 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 13.2s (22.7 tok/s)
+2026-04-07 16:04:28,810 INFO pathfinder.ai.openai_compatible:   ... 400 tokens in 15.0s (26.6 tok/s)
+2026-04-07 16:04:30,586 INFO pathfinder.ai.openai_compatible:   ... 500 tokens in 16.8s (29.8 tok/s)
+2026-04-07 16:04:32,387 INFO pathfinder.ai.openai_compatible:   ... 600 tokens in 18.6s (32.3 tok/s)
+2026-04-07 16:04:32,892 INFO pathfinder.ai.openai_compatible: Response: 627 tokens, 2470 chars in 19.1s (32.8 tok/s)
+2026-04-07 16:04:32,895 INFO pathfinder.layers.perception: Perceived: This screen is for searching and retrieving cricket statistics and information. (type=search, 5 elements, confidence=0.90)
+2026-04-07 16:04:32,901 INFO pathfinder.layers.perception: Observation saved to exploration/20260407-103228-ca64/step_002_observation.json
+2026-04-07 16:04:32,902 INFO pathfinder.orchestrator.agent_loop: Perceived: This screen is for searching and retrieving cricket statistics and information. (search, 5 elements)
+2026-04-07 16:04:32,904 INFO pathfinder.layers.world_modeling: Updating model (v1) with 1 new observations
+2026-04-07 16:04:32,905 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 16:04:34,989 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 16:04:36,619 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 3.7s (26.9 tok/s)
+2026-04-07 16:04:38,286 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 5.4s (37.2 tok/s)
+2026-04-07 16:04:39,967 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 7.1s (42.5 tok/s)
+2026-04-07 16:04:41,652 INFO pathfinder.ai.openai_compatible:   ... 400 tokens in 8.7s (45.7 tok/s)
+2026-04-07 16:04:43,357 INFO pathfinder.ai.openai_compatible:   ... 500 tokens in 10.5s (47.8 tok/s)
+2026-04-07 16:04:45,066 INFO pathfinder.ai.openai_compatible:   ... 600 tokens in 12.2s (49.3 tok/s)
+2026-04-07 16:04:46,790 INFO pathfinder.ai.openai_compatible:   ... 700 tokens in 13.9s (50.4 tok/s)
+2026-04-07 16:04:48,530 INFO pathfinder.ai.openai_compatible:   ... 800 tokens in 15.6s (51.2 tok/s)
+2026-04-07 16:04:50,271 INFO pathfinder.ai.openai_compatible:   ... 900 tokens in 17.4s (51.8 tok/s)
+2026-04-07 16:04:52,044 INFO pathfinder.ai.openai_compatible:   ... 1000 tokens in 19.1s (52.3 tok/s)
+2026-04-07 16:04:53,817 INFO pathfinder.ai.openai_compatible:   ... 1100 tokens in 20.9s (52.6 tok/s)
+2026-04-07 16:04:55,459 INFO pathfinder.ai.openai_compatible: Response: 1191 tokens, 4628 chars in 22.6s (52.8 tok/s)
+2026-04-07 16:04:55,461 INFO pathfinder.layers.world_modeling: Model updated to v2: 2 screens, 12 transitions, 5 capabilities, 3 entities, 1 frontier, 1 anomalies (coverage=30%, confidence=50%)
+2026-04-07 16:04:55,463 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 16:04:58,126 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 16:04:59,789 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 4.3s (23.1 tok/s)
+2026-04-07 16:05:01,490 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 6.0s (33.2 tok/s)
+2026-04-07 16:05:01,764 INFO pathfinder.ai.openai_compatible: Response: 215 tokens, 896 chars in 6.3s (34.1 tok/s)
+2026-04-07 16:05:01,765 INFO pathfinder.orchestrator.agent_loop: Plan: ExplorationPlan(type: Type 'Test' into the search text field)
+2026-04-07 16:05:01,768 INFO pathfinder.orchestrator.agent_loop: Executing: Type 'Test' into the search text field
+2026-04-07 16:05:01,881 WARNING pathfinder.orchestrator.agent_loop: Action failed: Type failed: Cannot resolve element: Search text field for cricket statistics
+2026-04-07 16:05:02,883 INFO pathfinder.orchestrator.agent_loop: === Step 3 / 50 ===
+2026-04-07 16:05:13,517 INFO pathfinder.device.web.adapter: Screenshot saved to exploration/20260407-103228-ca64/screenshot.png
+2026-04-07 16:05:13,518 INFO pathfinder.layers.perception: Captured screenshot: exploration/20260407-103228-ca64/screenshot.png
+2026-04-07 16:05:13,520 INFO pathfinder.device.web.adapter: DOM structure extracted (243 chars)
+2026-04-07 16:05:13,520 INFO pathfinder.layers.perception: Captured UI structure (243 chars)
+2026-04-07 16:05:13,521 INFO pathfinder.layers.perception: Perceiving screenshot: exploration/20260407-103228-ca64/screenshot.png
+2026-04-07 16:05:13,524 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 (with screenshot) — this may take a few minutes for local models...
+2026-04-07 16:05:20,372 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 16:05:22,107 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 8.6s (11.7 tok/s)
+2026-04-07 16:05:23,845 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 10.3s (19.4 tok/s)
+2026-04-07 16:05:25,614 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 12.1s (24.8 tok/s)
+2026-04-07 16:05:27,383 INFO pathfinder.ai.openai_compatible:   ... 400 tokens in 13.9s (28.9 tok/s)
+2026-04-07 16:05:29,169 INFO pathfinder.ai.openai_compatible:   ... 500 tokens in 15.6s (32.0 tok/s)
+2026-04-07 16:05:30,948 INFO pathfinder.ai.openai_compatible:   ... 600 tokens in 17.4s (34.4 tok/s)
+2026-04-07 16:05:32,767 INFO pathfinder.ai.openai_compatible:   ... 700 tokens in 19.2s (36.4 tok/s)
+2026-04-07 16:05:34,621 INFO pathfinder.ai.openai_compatible:   ... 800 tokens in 21.1s (37.9 tok/s)
+2026-04-07 16:05:36,472 INFO pathfinder.ai.openai_compatible:   ... 900 tokens in 22.9s (39.2 tok/s)
+2026-04-07 16:05:38,328 INFO pathfinder.ai.openai_compatible:   ... 1000 tokens in 24.8s (40.3 tok/s)
+2026-04-07 16:05:40,208 INFO pathfinder.ai.openai_compatible:   ... 1100 tokens in 26.7s (41.2 tok/s)
+2026-04-07 16:05:41,828 INFO pathfinder.ai.openai_compatible: Response: 1185 tokens, 4738 chars in 28.3s (41.9 tok/s)
+2026-04-07 16:05:41,832 INFO pathfinder.layers.perception: Perceived: This screen is for searching and retrieving cricket statistics and information. (type=search, 9 elements, confidence=0.90)
+2026-04-07 16:05:41,839 INFO pathfinder.layers.perception: Observation saved to exploration/20260407-103228-ca64/step_003_observation.json
+2026-04-07 16:05:41,841 INFO pathfinder.orchestrator.agent_loop: Perceived: This screen is for searching and retrieving cricket statistics and information. (search, 9 elements)
+2026-04-07 16:05:41,842 INFO pathfinder.layers.world_modeling: Updating model (v2) with 1 new observations
+2026-04-07 16:05:41,843 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 16:05:44,617 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 16:05:46,303 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 4.5s (22.4 tok/s)
+2026-04-07 16:05:48,027 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 6.2s (32.3 tok/s)
+2026-04-07 16:05:49,731 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 7.9s (38.0 tok/s)
+2026-04-07 16:05:51,471 INFO pathfinder.ai.openai_compatible:   ... 400 tokens in 9.6s (41.5 tok/s)
+2026-04-07 16:05:53,225 INFO pathfinder.ai.openai_compatible:   ... 500 tokens in 11.4s (43.9 tok/s)
+2026-04-07 16:05:54,990 INFO pathfinder.ai.openai_compatible:   ... 600 tokens in 13.1s (45.6 tok/s)
+2026-04-07 16:05:56,777 INFO pathfinder.ai.openai_compatible:   ... 700 tokens in 14.9s (46.9 tok/s)
+2026-04-07 16:05:58,530 INFO pathfinder.ai.openai_compatible:   ... 800 tokens in 16.7s (47.9 tok/s)
+2026-04-07 16:06:00,320 INFO pathfinder.ai.openai_compatible:   ... 900 tokens in 18.5s (48.7 tok/s)
+2026-04-07 16:06:02,129 INFO pathfinder.ai.openai_compatible:   ... 1000 tokens in 20.3s (49.3 tok/s)
+2026-04-07 16:06:03,932 INFO pathfinder.ai.openai_compatible:   ... 1100 tokens in 22.1s (49.8 tok/s)
+2026-04-07 16:06:05,646 INFO pathfinder.ai.openai_compatible: Response: 1193 tokens, 4723 chars in 23.8s (50.1 tok/s)
+2026-04-07 16:06:05,649 INFO pathfinder.layers.world_modeling: Model updated to v3: 2 screens, 12 transitions, 5 capabilities, 3 entities, 1 frontier, 1 anomalies (coverage=30%, confidence=50%)
+2026-04-07 16:06:05,650 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 16:06:08,758 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 16:06:10,461 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 4.8s (20.8 tok/s)
+2026-04-07 16:06:12,196 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 6.5s (30.6 tok/s)
+2026-04-07 16:06:12,911 INFO pathfinder.ai.openai_compatible: Response: 240 tokens, 1013 chars in 7.3s (33.1 tok/s)
+2026-04-07 16:06:12,913 INFO pathfinder.orchestrator.agent_loop: Plan: ExplorationPlan(type: Type the suggested search query to explore the app's search functionality)
+2026-04-07 16:06:12,914 INFO pathfinder.orchestrator.agent_loop: Executing: Type the suggested search query to explore the app's search functionality
+2026-04-07 16:06:14,211 INFO pathfinder.orchestrator.agent_loop: === Step 4 / 50 ===
+2026-04-07 16:06:24,818 INFO pathfinder.device.web.adapter: Screenshot saved to exploration/20260407-103228-ca64/screenshot.png
+2026-04-07 16:06:24,819 INFO pathfinder.layers.perception: Captured screenshot: exploration/20260407-103228-ca64/screenshot.png
+2026-04-07 16:06:24,821 INFO pathfinder.device.web.adapter: DOM structure extracted (246 chars)
+2026-04-07 16:06:24,822 INFO pathfinder.layers.perception: Captured UI structure (246 chars)
+2026-04-07 16:06:24,822 INFO pathfinder.layers.perception: Perceiving screenshot: exploration/20260407-103228-ca64/screenshot.png
+2026-04-07 16:06:24,827 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 (with screenshot) — this may take a few minutes for local models...
+2026-04-07 16:06:32,038 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 16:06:33,787 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 9.0s (11.2 tok/s)
+2026-04-07 16:06:35,539 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 10.7s (18.7 tok/s)
+2026-04-07 16:06:37,319 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 12.5s (24.0 tok/s)
+2026-04-07 16:06:39,095 INFO pathfinder.ai.openai_compatible:   ... 400 tokens in 14.3s (28.0 tok/s)
+2026-04-07 16:06:40,681 INFO pathfinder.ai.openai_compatible: Response: 487 tokens, 1743 chars in 15.9s (30.7 tok/s)
+2026-04-07 16:06:40,684 INFO pathfinder.layers.perception: Perceived: This screen displays the most runs conceded by spinners in a team innings in T20Is. (type=list, 3 elements, confidence=0.90)
+2026-04-07 16:06:40,691 INFO pathfinder.layers.perception: Observation saved to exploration/20260407-103228-ca64/step_004_observation.json
+2026-04-07 16:06:40,692 INFO pathfinder.orchestrator.agent_loop: Perceived: This screen displays the most runs conceded by spinners in a team innings in T20Is. (list, 3 elements)
+2026-04-07 16:06:40,693 INFO pathfinder.layers.world_modeling: Updating model (v3) with 1 new observations
+2026-04-07 16:06:40,694 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 16:06:42,968 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 16:06:44,624 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 3.9s (25.5 tok/s)
+2026-04-07 16:06:46,286 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 5.6s (35.8 tok/s)
+2026-04-07 16:06:47,980 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 7.3s (41.2 tok/s)
+2026-04-07 16:06:49,669 INFO pathfinder.ai.openai_compatible:   ... 400 tokens in 9.0s (44.6 tok/s)
+2026-04-07 16:06:51,372 INFO pathfinder.ai.openai_compatible:   ... 500 tokens in 10.7s (46.8 tok/s)
+2026-04-07 16:06:53,096 INFO pathfinder.ai.openai_compatible:   ... 600 tokens in 12.4s (48.4 tok/s)
+2026-04-07 16:06:54,817 INFO pathfinder.ai.openai_compatible:   ... 700 tokens in 14.1s (49.6 tok/s)
+2026-04-07 16:06:56,560 INFO pathfinder.ai.openai_compatible:   ... 800 tokens in 15.9s (50.4 tok/s)
+2026-04-07 16:06:58,308 INFO pathfinder.ai.openai_compatible:   ... 900 tokens in 17.6s (51.1 tok/s)
+2026-04-07 16:07:00,036 INFO pathfinder.ai.openai_compatible:   ... 1000 tokens in 19.3s (51.7 tok/s)
+2026-04-07 16:07:01,805 INFO pathfinder.ai.openai_compatible:   ... 1100 tokens in 21.1s (52.1 tok/s)
+2026-04-07 16:07:03,321 INFO pathfinder.ai.openai_compatible: Response: 1184 tokens, 4660 chars in 22.6s (52.3 tok/s)
+2026-04-07 16:07:03,324 INFO pathfinder.layers.world_modeling: Model updated to v4: 2 screens, 12 transitions, 5 capabilities, 3 entities, 1 frontier, 1 anomalies (coverage=30%, confidence=50%)
+2026-04-07 16:07:03,326 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 16:07:05,969 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 16:07:07,640 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 4.3s (23.2 tok/s)
+2026-04-07 16:07:09,176 INFO pathfinder.ai.openai_compatible: Response: 190 tokens, 814 chars in 5.8s (32.5 tok/s)
+2026-04-07 16:07:09,178 INFO pathfinder.orchestrator.agent_loop: Plan: ExplorationPlan(navigate: Navigate to the Ask Cricinfo section to explore its functionality)
+2026-04-07 16:07:09,179 INFO pathfinder.orchestrator.agent_loop: Executing: Navigate to the Ask Cricinfo section to explore its functionality
+2026-04-07 16:07:11,182 INFO pathfinder.orchestrator.agent_loop: === Step 5 / 50 ===
+2026-04-07 16:07:21,822 INFO pathfinder.device.web.adapter: Screenshot saved to exploration/20260407-103228-ca64/screenshot.png
+2026-04-07 16:07:21,822 INFO pathfinder.layers.perception: Captured screenshot: exploration/20260407-103228-ca64/screenshot.png
+2026-04-07 16:07:21,825 INFO pathfinder.device.web.adapter: DOM structure extracted (246 chars)
+2026-04-07 16:07:21,826 INFO pathfinder.layers.perception: Captured UI structure (246 chars)
+2026-04-07 16:07:21,826 INFO pathfinder.layers.perception: Perceiving screenshot: exploration/20260407-103228-ca64/screenshot.png
+2026-04-07 16:07:21,829 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 (with screenshot) — this may take a few minutes for local models...
+2026-04-07 16:07:28,852 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 16:07:30,573 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 8.7s (11.4 tok/s)
+2026-04-07 16:07:32,339 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 10.5s (19.0 tok/s)
+2026-04-07 16:07:34,116 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 12.3s (24.4 tok/s)
+2026-04-07 16:07:35,894 INFO pathfinder.ai.openai_compatible:   ... 400 tokens in 14.1s (28.4 tok/s)
+2026-04-07 16:07:37,698 INFO pathfinder.ai.openai_compatible:   ... 500 tokens in 15.9s (31.5 tok/s)
+2026-04-07 16:07:37,751 INFO pathfinder.ai.openai_compatible: Response: 502 tokens, 1789 chars in 15.9s (31.5 tok/s)
+2026-04-07 16:07:37,752 INFO pathfinder.layers.perception: Perceived: This screen displays the most runs conceded by spinners in a team innings in T20Is. (type=list, 3 elements, confidence=0.90)
+2026-04-07 16:07:37,759 INFO pathfinder.layers.perception: Observation saved to exploration/20260407-103228-ca64/step_005_observation.json
+2026-04-07 16:07:37,759 INFO pathfinder.orchestrator.agent_loop: Perceived: This screen displays the most runs conceded by spinners in a team innings in T20Is. (list, 3 elements)
+2026-04-07 16:07:37,760 INFO pathfinder.layers.world_modeling: Updating model (v4) with 1 new observations
+2026-04-07 16:07:37,761 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 16:07:40,022 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 16:07:41,680 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 3.9s (25.5 tok/s)
+2026-04-07 16:07:43,355 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 5.6s (35.8 tok/s)
+2026-04-07 16:07:45,052 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 7.3s (41.1 tok/s)
+2026-04-07 16:07:46,745 INFO pathfinder.ai.openai_compatible:   ... 400 tokens in 9.0s (44.5 tok/s)
+2026-04-07 16:07:48,455 INFO pathfinder.ai.openai_compatible:   ... 500 tokens in 10.7s (46.8 tok/s)
+2026-04-07 16:07:50,178 INFO pathfinder.ai.openai_compatible:   ... 600 tokens in 12.4s (48.3 tok/s)
+2026-04-07 16:07:51,904 INFO pathfinder.ai.openai_compatible:   ... 700 tokens in 14.1s (49.5 tok/s)
+2026-04-07 16:07:53,666 INFO pathfinder.ai.openai_compatible:   ... 800 tokens in 15.9s (50.3 tok/s)
+2026-04-07 16:07:55,426 INFO pathfinder.ai.openai_compatible:   ... 900 tokens in 17.7s (50.9 tok/s)
+2026-04-07 16:07:57,195 INFO pathfinder.ai.openai_compatible:   ... 1000 tokens in 19.4s (51.5 tok/s)
+2026-04-07 16:07:58,990 INFO pathfinder.ai.openai_compatible:   ... 1100 tokens in 21.2s (51.8 tok/s)
+2026-04-07 16:08:00,772 INFO pathfinder.ai.openai_compatible:   ... 1200 tokens in 23.0s (52.2 tok/s)
+2026-04-07 16:08:01,952 INFO pathfinder.ai.openai_compatible: Response: 1265 tokens, 4976 chars in 24.2s (52.3 tok/s)
+2026-04-07 16:08:01,955 INFO pathfinder.layers.world_modeling: Model updated to v5: 3 screens, 12 transitions, 5 capabilities, 3 entities, 1 frontier, 1 anomalies (coverage=30%, confidence=50%)
+2026-04-07 16:08:01,957 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 16:08:04,725 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 16:08:06,414 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 4.5s (22.4 tok/s)
+2026-04-07 16:08:08,133 INFO pathfinder.ai.openai_compatible: Response: 199 tokens, 854 chars in 6.2s (32.2 tok/s)
+2026-04-07 16:08:08,136 INFO pathfinder.orchestrator.agent_loop: Plan: ExplorationPlan(navigate: Navigate to the Ask Cricinfo section to explore its functionality)
+2026-04-07 16:08:08,137 INFO pathfinder.orchestrator.agent_loop: Executing: Navigate to the Ask Cricinfo section to explore its functionality
+2026-04-07 16:08:10,140 INFO pathfinder.orchestrator.agent_loop: === Step 6 / 50 ===
+2026-04-07 16:08:20,778 INFO pathfinder.device.web.adapter: Screenshot saved to exploration/20260407-103228-ca64/screenshot.png
+2026-04-07 16:08:20,779 INFO pathfinder.layers.perception: Captured screenshot: exploration/20260407-103228-ca64/screenshot.png
+2026-04-07 16:08:20,783 INFO pathfinder.device.web.adapter: DOM structure extracted (246 chars)
+2026-04-07 16:08:20,783 INFO pathfinder.layers.perception: Captured UI structure (246 chars)
+2026-04-07 16:08:20,784 INFO pathfinder.layers.perception: Perceiving screenshot: exploration/20260407-103228-ca64/screenshot.png
+2026-04-07 16:08:20,787 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 (with screenshot) — this may take a few minutes for local models...
+2026-04-07 16:08:27,752 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 16:08:29,489 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 8.7s (11.5 tok/s)
+2026-04-07 16:08:31,260 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 10.5s (19.1 tok/s)
+2026-04-07 16:08:33,048 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 12.3s (24.5 tok/s)
+2026-04-07 16:08:34,852 INFO pathfinder.ai.openai_compatible:   ... 400 tokens in 14.1s (28.4 tok/s)
+2026-04-07 16:08:36,658 INFO pathfinder.ai.openai_compatible:   ... 500 tokens in 15.9s (31.5 tok/s)
+2026-04-07 16:08:36,712 INFO pathfinder.ai.openai_compatible: Response: 502 tokens, 1789 chars in 15.9s (31.5 tok/s)
+2026-04-07 16:08:36,712 INFO pathfinder.layers.perception: Perceived: This screen displays the most runs conceded by spinners in a team innings in T20Is. (type=list, 3 elements, confidence=0.90)
+2026-04-07 16:08:36,719 INFO pathfinder.layers.perception: Observation saved to exploration/20260407-103228-ca64/step_006_observation.json
+2026-04-07 16:08:36,719 INFO pathfinder.orchestrator.agent_loop: Perceived: This screen displays the most runs conceded by spinners in a team innings in T20Is. (list, 3 elements)
+2026-04-07 16:08:36,720 WARNING pathfinder.orchestrator.agent_loop: STUCK: seen screen 'list|3|list_item,list_item,list_item' 3 times consecutively
+2026-04-07 16:08:36,721 INFO pathfinder.layers.world_modeling: Updating model (v5) with 1 new observations
+2026-04-07 16:08:36,721 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 16:08:39,030 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 16:08:40,693 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 4.0s (25.2 tok/s)
+2026-04-07 16:08:42,378 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 5.7s (35.4 tok/s)
+2026-04-07 16:08:44,075 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 7.4s (40.8 tok/s)
+2026-04-07 16:08:45,766 INFO pathfinder.ai.openai_compatible:   ... 400 tokens in 9.0s (44.2 tok/s)
+2026-04-07 16:08:47,475 INFO pathfinder.ai.openai_compatible:   ... 500 tokens in 10.8s (46.5 tok/s)
+2026-04-07 16:08:49,205 INFO pathfinder.ai.openai_compatible:   ... 600 tokens in 12.5s (48.1 tok/s)
+2026-04-07 16:08:50,932 INFO pathfinder.ai.openai_compatible:   ... 700 tokens in 14.2s (49.3 tok/s)
+2026-04-07 16:08:52,686 INFO pathfinder.ai.openai_compatible:   ... 800 tokens in 16.0s (50.1 tok/s)
+2026-04-07 16:08:54,436 INFO pathfinder.ai.openai_compatible:   ... 900 tokens in 17.7s (50.8 tok/s)
+2026-04-07 16:08:56,196 INFO pathfinder.ai.openai_compatible:   ... 1000 tokens in 19.5s (51.4 tok/s)
+2026-04-07 16:08:57,975 INFO pathfinder.ai.openai_compatible:   ... 1100 tokens in 21.3s (51.8 tok/s)
+2026-04-07 16:08:59,757 INFO pathfinder.ai.openai_compatible:   ... 1200 tokens in 23.0s (52.1 tok/s)
+2026-04-07 16:09:01,359 INFO pathfinder.ai.openai_compatible: Response: 1288 tokens, 5079 chars in 24.6s (52.3 tok/s)
+2026-04-07 16:09:01,362 INFO pathfinder.layers.world_modeling: Model updated to v6: 3 screens, 12 transitions, 5 capabilities, 3 entities, 1 frontier, 1 anomalies (coverage=30%, confidence=50%)
+2026-04-07 16:09:01,364 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 16:09:04,275 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 16:09:05,972 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 4.6s (21.7 tok/s)
+2026-04-07 16:09:07,589 INFO pathfinder.ai.openai_compatible: Response: 193 tokens, 827 chars in 6.2s (31.0 tok/s)
+2026-04-07 16:09:07,591 INFO pathfinder.orchestrator.agent_loop: Plan: ExplorationPlan(navigate: Navigate to the Ask Cricinfo section to explore its functionality)
+2026-04-07 16:09:07,592 INFO pathfinder.orchestrator.agent_loop: Executing: Navigate to the Ask Cricinfo section to explore its functionality
+2026-04-07 16:09:09,595 INFO pathfinder.orchestrator.agent_loop: === Step 7 / 50 ===
+2026-04-07 16:09:20,212 INFO pathfinder.device.web.adapter: Screenshot saved to exploration/20260407-103228-ca64/screenshot.png
+2026-04-07 16:09:20,213 INFO pathfinder.layers.perception: Captured screenshot: exploration/20260407-103228-ca64/screenshot.png
+2026-04-07 16:09:20,215 INFO pathfinder.device.web.adapter: DOM structure extracted (246 chars)
+2026-04-07 16:09:20,216 INFO pathfinder.layers.perception: Captured UI structure (246 chars)
+2026-04-07 16:09:20,216 INFO pathfinder.layers.perception: Perceiving screenshot: exploration/20260407-103228-ca64/screenshot.png
+2026-04-07 16:09:20,219 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 (with screenshot) — this may take a few minutes for local models...
+2026-04-07 16:09:27,205 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 16:09:28,963 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 8.7s (11.4 tok/s)
+2026-04-07 16:09:30,746 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 10.5s (19.0 tok/s)
+2026-04-07 16:09:32,526 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 12.3s (24.4 tok/s)
+2026-04-07 16:09:34,321 INFO pathfinder.ai.openai_compatible:   ... 400 tokens in 14.1s (28.4 tok/s)
+2026-04-07 16:09:36,137 INFO pathfinder.ai.openai_compatible:   ... 500 tokens in 15.9s (31.4 tok/s)
+2026-04-07 16:09:36,301 INFO pathfinder.ai.openai_compatible: Response: 508 tokens, 1803 chars in 16.1s (31.6 tok/s)
+2026-04-07 16:09:36,304 INFO pathfinder.layers.perception: Perceived: This screen displays the most runs conceded by spinners in a team innings in T20Is. (type=list, 3 elements, confidence=0.90)
+2026-04-07 16:09:36,311 INFO pathfinder.layers.perception: Observation saved to exploration/20260407-103228-ca64/step_007_observation.json
+2026-04-07 16:09:36,312 INFO pathfinder.orchestrator.agent_loop: Perceived: This screen displays the most runs conceded by spinners in a team innings in T20Is. (list, 3 elements)
+2026-04-07 16:09:36,313 WARNING pathfinder.orchestrator.agent_loop: STUCK: seen screen 'list|3|list_item,list_item,list_item' 4 times consecutively
+2026-04-07 16:09:36,314 INFO pathfinder.layers.world_modeling: Updating model (v6) with 1 new observations
+2026-04-07 16:09:36,315 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 16:09:38,650 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 16:09:40,305 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 4.0s (25.1 tok/s)
+2026-04-07 16:09:41,992 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 5.7s (35.2 tok/s)
+2026-04-07 16:09:43,693 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 7.4s (40.7 tok/s)
+2026-04-07 16:09:45,390 INFO pathfinder.ai.openai_compatible:   ... 400 tokens in 9.1s (44.1 tok/s)
+2026-04-07 16:09:47,088 INFO pathfinder.ai.openai_compatible:   ... 500 tokens in 10.8s (46.4 tok/s)
+2026-04-07 16:09:48,823 INFO pathfinder.ai.openai_compatible:   ... 600 tokens in 12.5s (48.0 tok/s)
+2026-04-07 16:09:50,563 INFO pathfinder.ai.openai_compatible:   ... 700 tokens in 14.2s (49.1 tok/s)
+2026-04-07 16:09:52,317 INFO pathfinder.ai.openai_compatible:   ... 800 tokens in 16.0s (50.0 tok/s)
+2026-04-07 16:09:54,084 INFO pathfinder.ai.openai_compatible:   ... 900 tokens in 17.8s (50.7 tok/s)
+2026-04-07 16:09:55,868 INFO pathfinder.ai.openai_compatible:   ... 1000 tokens in 19.6s (51.1 tok/s)
+2026-04-07 16:09:57,650 INFO pathfinder.ai.openai_compatible:   ... 1100 tokens in 21.3s (51.6 tok/s)
+2026-04-07 16:09:59,437 INFO pathfinder.ai.openai_compatible:   ... 1200 tokens in 23.1s (51.9 tok/s)
+2026-04-07 16:10:00,212 INFO pathfinder.ai.openai_compatible: Response: 1242 tokens, 4870 chars in 23.9s (52.0 tok/s)
+2026-04-07 16:10:00,214 INFO pathfinder.layers.world_modeling: Model updated to v7: 3 screens, 12 transitions, 5 capabilities, 3 entities, 1 frontier, 1 anomalies (coverage=30%, confidence=50%)
+2026-04-07 16:10:00,216 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 16:10:03,165 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 16:10:04,857 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 4.6s (21.6 tok/s)
+2026-04-07 16:10:06,490 INFO pathfinder.ai.openai_compatible: Response: 194 tokens, 828 chars in 6.3s (30.9 tok/s)
+2026-04-07 16:10:06,492 INFO pathfinder.orchestrator.agent_loop: Plan: ExplorationPlan(navigate: Navigate to the Ask Cricinfo section to explore its functionality)
+2026-04-07 16:10:06,494 INFO pathfinder.orchestrator.agent_loop: Executing: Navigate to the Ask Cricinfo section to explore its functionality
+2026-04-07 16:10:08,498 INFO pathfinder.orchestrator.agent_loop: === Step 8 / 50 ===
+2026-04-07 16:10:19,111 INFO pathfinder.device.web.adapter: Screenshot saved to exploration/20260407-103228-ca64/screenshot.png
+2026-04-07 16:10:19,112 INFO pathfinder.layers.perception: Captured screenshot: exploration/20260407-103228-ca64/screenshot.png
+2026-04-07 16:10:19,114 INFO pathfinder.device.web.adapter: DOM structure extracted (246 chars)
+2026-04-07 16:10:19,115 INFO pathfinder.layers.perception: Captured UI structure (246 chars)
+2026-04-07 16:10:19,115 INFO pathfinder.layers.perception: Perceiving screenshot: exploration/20260407-103228-ca64/screenshot.png
+2026-04-07 16:10:19,118 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 (with screenshot) — this may take a few minutes for local models...
+2026-04-07 16:10:27,051 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 16:10:28,792 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 9.7s (10.3 tok/s)
+2026-04-07 16:10:30,567 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 11.4s (17.5 tok/s)
+2026-04-07 16:10:32,344 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 13.2s (22.7 tok/s)
+2026-04-07 16:10:34,117 INFO pathfinder.ai.openai_compatible:   ... 400 tokens in 15.0s (26.7 tok/s)
+2026-04-07 16:10:35,920 INFO pathfinder.ai.openai_compatible:   ... 500 tokens in 16.8s (29.8 tok/s)
+2026-04-07 16:10:37,723 INFO pathfinder.ai.openai_compatible:   ... 600 tokens in 18.6s (32.3 tok/s)
+2026-04-07 16:10:37,831 INFO pathfinder.ai.openai_compatible: Response: 605 tokens, 2176 chars in 18.7s (32.3 tok/s)
+2026-04-07 16:10:37,833 INFO pathfinder.layers.perception: Perceived: This screen displays the most runs conceded by spinners in a team innings in T20Is. (type=list, 4 elements, confidence=0.90)
+2026-04-07 16:10:37,839 INFO pathfinder.layers.perception: Observation saved to exploration/20260407-103228-ca64/step_008_observation.json
+2026-04-07 16:10:37,841 INFO pathfinder.orchestrator.agent_loop: Perceived: This screen displays the most runs conceded by spinners in a team innings in T20Is. (list, 4 elements)
+2026-04-07 16:10:37,842 INFO pathfinder.layers.world_modeling: Updating model (v7) with 1 new observations
+2026-04-07 16:10:37,843 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 16:10:40,148 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 16:10:41,803 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 4.0s (25.3 tok/s)
+2026-04-07 16:10:43,482 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 5.6s (35.5 tok/s)
+2026-04-07 16:10:45,183 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 7.3s (40.9 tok/s)
+2026-04-07 16:10:46,879 INFO pathfinder.ai.openai_compatible:   ... 400 tokens in 9.0s (44.3 tok/s)
+2026-04-07 16:10:48,596 INFO pathfinder.ai.openai_compatible:   ... 500 tokens in 10.8s (46.5 tok/s)
+2026-04-07 16:10:50,317 INFO pathfinder.ai.openai_compatible:   ... 600 tokens in 12.5s (48.1 tok/s)
+2026-04-07 16:10:52,046 INFO pathfinder.ai.openai_compatible:   ... 700 tokens in 14.2s (49.3 tok/s)
+2026-04-07 16:10:53,809 INFO pathfinder.ai.openai_compatible:   ... 800 tokens in 16.0s (50.1 tok/s)
+2026-04-07 16:10:55,566 INFO pathfinder.ai.openai_compatible:   ... 900 tokens in 17.7s (50.8 tok/s)
+2026-04-07 16:10:57,335 INFO pathfinder.ai.openai_compatible:   ... 1000 tokens in 19.5s (51.3 tok/s)
+2026-04-07 16:10:59,133 INFO pathfinder.ai.openai_compatible:   ... 1100 tokens in 21.3s (51.7 tok/s)
+2026-04-07 16:11:00,919 INFO pathfinder.ai.openai_compatible:   ... 1200 tokens in 23.1s (52.0 tok/s)
+2026-04-07 16:11:02,141 INFO pathfinder.ai.openai_compatible: Response: 1266 tokens, 4980 chars in 24.3s (52.1 tok/s)
+2026-04-07 16:11:02,143 INFO pathfinder.layers.world_modeling: Model updated to v8: 3 screens, 12 transitions, 5 capabilities, 3 entities, 1 frontier, 1 anomalies (coverage=30%, confidence=50%)
+2026-04-07 16:11:02,145 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 16:11:05,043 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 16:11:06,748 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 4.6s (21.7 tok/s)
+2026-04-07 16:11:08,351 INFO pathfinder.ai.openai_compatible: Response: 192 tokens, 795 chars in 6.2s (30.9 tok/s)
+2026-04-07 16:11:08,352 INFO pathfinder.orchestrator.agent_loop: Plan: ExplorationPlan(navigate: Navigate to the Ask Cricinfo section to explore its functionality)
+2026-04-07 16:11:08,354 INFO pathfinder.orchestrator.agent_loop: Executing: Navigate to the Ask Cricinfo section to explore its functionality
+2026-04-07 16:11:10,356 INFO pathfinder.orchestrator.agent_loop: === Step 9 / 50 ===
+2026-04-07 16:11:20,987 INFO pathfinder.device.web.adapter: Screenshot saved to exploration/20260407-103228-ca64/screenshot.png
+2026-04-07 16:11:20,988 INFO pathfinder.layers.perception: Captured screenshot: exploration/20260407-103228-ca64/screenshot.png
+2026-04-07 16:11:20,991 INFO pathfinder.device.web.adapter: DOM structure extracted (246 chars)
+2026-04-07 16:11:20,992 INFO pathfinder.layers.perception: Captured UI structure (246 chars)
+2026-04-07 16:11:20,992 INFO pathfinder.layers.perception: Perceiving screenshot: exploration/20260407-103228-ca64/screenshot.png
+2026-04-07 16:11:20,995 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 (with screenshot) — this may take a few minutes for local models...
+2026-04-07 16:11:27,909 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 16:11:29,641 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 8.6s (11.6 tok/s)
+2026-04-07 16:11:31,406 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 10.4s (19.2 tok/s)
+2026-04-07 16:11:33,180 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 12.2s (24.6 tok/s)
+2026-04-07 16:11:34,963 INFO pathfinder.ai.openai_compatible:   ... 400 tokens in 14.0s (28.6 tok/s)
+2026-04-07 16:11:36,761 INFO pathfinder.ai.openai_compatible:   ... 500 tokens in 15.8s (31.7 tok/s)
+2026-04-07 16:11:36,869 INFO pathfinder.ai.openai_compatible: Response: 505 tokens, 1779 chars in 15.9s (31.8 tok/s)
+2026-04-07 16:11:36,871 INFO pathfinder.layers.perception: Perceived: This screen displays the most runs conceded by spinners in a team innings in T20Is. (type=list, 3 elements, confidence=0.90)
+2026-04-07 16:11:36,878 INFO pathfinder.layers.perception: Observation saved to exploration/20260407-103228-ca64/step_009_observation.json
+2026-04-07 16:11:36,879 INFO pathfinder.orchestrator.agent_loop: Perceived: This screen displays the most runs conceded by spinners in a team innings in T20Is. (list, 3 elements)
+2026-04-07 16:11:36,880 INFO pathfinder.layers.world_modeling: Updating model (v8) with 1 new observations
+2026-04-07 16:11:36,882 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 16:11:39,197 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 16:11:40,850 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 4.0s (25.2 tok/s)
+2026-04-07 16:11:42,534 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 5.7s (35.4 tok/s)
+2026-04-07 16:11:44,226 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 7.3s (40.9 tok/s)
+2026-04-07 16:11:45,928 INFO pathfinder.ai.openai_compatible:   ... 400 tokens in 9.0s (44.2 tok/s)
+2026-04-07 16:11:47,646 INFO pathfinder.ai.openai_compatible:   ... 500 tokens in 10.8s (46.5 tok/s)
+2026-04-07 16:11:49,372 INFO pathfinder.ai.openai_compatible:   ... 600 tokens in 12.5s (48.0 tok/s)
+2026-04-07 16:11:51,106 INFO pathfinder.ai.openai_compatible:   ... 700 tokens in 14.2s (49.2 tok/s)
+2026-04-07 16:11:52,846 INFO pathfinder.ai.openai_compatible:   ... 800 tokens in 16.0s (50.1 tok/s)
+2026-04-07 16:11:54,602 INFO pathfinder.ai.openai_compatible:   ... 900 tokens in 17.7s (50.8 tok/s)
+2026-04-07 16:11:56,370 INFO pathfinder.ai.openai_compatible:   ... 1000 tokens in 19.5s (51.3 tok/s)
+2026-04-07 16:11:58,156 INFO pathfinder.ai.openai_compatible:   ... 1100 tokens in 21.3s (51.7 tok/s)
+2026-04-07 16:11:59,935 INFO pathfinder.ai.openai_compatible:   ... 1200 tokens in 23.1s (52.1 tok/s)
+2026-04-07 16:12:01,706 INFO pathfinder.ai.openai_compatible: Response: 1297 tokens, 5137 chars in 24.8s (52.2 tok/s)
+2026-04-07 16:12:01,708 INFO pathfinder.layers.world_modeling: Model updated to v9: 3 screens, 12 transitions, 5 capabilities, 3 entities, 1 frontier, 1 anomalies (coverage=30%, confidence=50%)
+2026-04-07 16:12:01,709 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 16:12:04,637 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 16:12:06,321 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 4.6s (21.7 tok/s)
+2026-04-07 16:12:08,039 INFO pathfinder.ai.openai_compatible: Response: 199 tokens, 850 chars in 6.3s (31.4 tok/s)
+2026-04-07 16:12:08,041 INFO pathfinder.orchestrator.agent_loop: Plan: ExplorationPlan(navigate: Navigate to the Ask Cricinfo section to explore its functionality)
+2026-04-07 16:12:08,042 INFO pathfinder.orchestrator.agent_loop: Executing: Navigate to the Ask Cricinfo section to explore its functionality
+2026-04-07 16:12:10,046 INFO pathfinder.orchestrator.agent_loop: === Step 10 / 50 ===
+2026-04-07 16:12:20,687 INFO pathfinder.device.web.adapter: Screenshot saved to exploration/20260407-103228-ca64/screenshot.png
+2026-04-07 16:12:20,688 INFO pathfinder.layers.perception: Captured screenshot: exploration/20260407-103228-ca64/screenshot.png
+2026-04-07 16:12:20,690 INFO pathfinder.device.web.adapter: DOM structure extracted (246 chars)
+2026-04-07 16:12:20,691 INFO pathfinder.layers.perception: Captured UI structure (246 chars)
+2026-04-07 16:12:20,691 INFO pathfinder.layers.perception: Perceiving screenshot: exploration/20260407-103228-ca64/screenshot.png
+2026-04-07 16:12:20,694 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 (with screenshot) — this may take a few minutes for local models...
+2026-04-07 16:12:27,636 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 16:12:29,361 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 8.7s (11.5 tok/s)
+2026-04-07 16:12:31,128 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 10.4s (19.2 tok/s)
+2026-04-07 16:12:32,902 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 12.2s (24.6 tok/s)
+2026-04-07 16:12:34,682 INFO pathfinder.ai.openai_compatible:   ... 400 tokens in 14.0s (28.6 tok/s)
+2026-04-07 16:12:36,497 INFO pathfinder.ai.openai_compatible:   ... 500 tokens in 15.8s (31.7 tok/s)
+2026-04-07 16:12:36,605 INFO pathfinder.ai.openai_compatible: Response: 505 tokens, 1779 chars in 15.9s (31.8 tok/s)
+2026-04-07 16:12:36,607 INFO pathfinder.layers.perception: Perceived: This screen displays the most runs conceded by spinners in a team innings in T20Is. (type=list, 3 elements, confidence=0.90)
+2026-04-07 16:12:36,614 INFO pathfinder.layers.perception: Observation saved to exploration/20260407-103228-ca64/step_010_observation.json
+2026-04-07 16:12:36,615 INFO pathfinder.orchestrator.agent_loop: Perceived: This screen displays the most runs conceded by spinners in a team innings in T20Is. (list, 3 elements)
+2026-04-07 16:12:36,616 INFO pathfinder.layers.world_modeling: Updating model (v9) with 1 new observations
+2026-04-07 16:12:36,618 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 16:12:38,922 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 16:12:40,578 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 4.0s (25.3 tok/s)
+2026-04-07 16:12:42,264 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 5.6s (35.4 tok/s)
+2026-04-07 16:12:43,964 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 7.3s (40.8 tok/s)
+2026-04-07 16:12:45,666 INFO pathfinder.ai.openai_compatible:   ... 400 tokens in 9.0s (44.2 tok/s)
+2026-04-07 16:12:47,380 INFO pathfinder.ai.openai_compatible:   ... 500 tokens in 10.8s (46.5 tok/s)
+2026-04-07 16:12:49,102 INFO pathfinder.ai.openai_compatible:   ... 600 tokens in 12.5s (48.1 tok/s)
+2026-04-07 16:12:50,822 INFO pathfinder.ai.openai_compatible:   ... 700 tokens in 14.2s (49.3 tok/s)
+2026-04-07 16:12:52,566 INFO pathfinder.ai.openai_compatible:   ... 800 tokens in 15.9s (50.2 tok/s)
+2026-04-07 16:12:54,338 INFO pathfinder.ai.openai_compatible:   ... 900 tokens in 17.7s (50.8 tok/s)
+2026-04-07 16:12:56,111 INFO pathfinder.ai.openai_compatible:   ... 1000 tokens in 19.5s (51.3 tok/s)
+2026-04-07 16:12:57,892 INFO pathfinder.ai.openai_compatible:   ... 1100 tokens in 21.3s (51.7 tok/s)
+2026-04-07 16:12:59,682 INFO pathfinder.ai.openai_compatible:   ... 1200 tokens in 23.1s (52.0 tok/s)
+2026-04-07 16:13:01,494 INFO pathfinder.ai.openai_compatible:   ... 1300 tokens in 24.9s (52.3 tok/s)
+2026-04-07 16:13:01,565 INFO pathfinder.ai.openai_compatible: Response: 1303 tokens, 5169 chars in 24.9s (52.2 tok/s)
+2026-04-07 16:13:01,566 INFO pathfinder.layers.world_modeling: Model updated to v10: 3 screens, 12 transitions, 5 capabilities, 3 entities, 1 frontier, 1 anomalies (coverage=30%, confidence=50%)
+2026-04-07 16:13:01,567 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 16:13:04,562 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 16:13:06,268 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 4.7s (21.3 tok/s)
+2026-04-07 16:13:07,969 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 6.4s (31.2 tok/s)
+2026-04-07 16:13:07,986 INFO pathfinder.ai.openai_compatible: Response: 200 tokens, 855 chars in 6.4s (31.2 tok/s)
+2026-04-07 16:13:07,988 INFO pathfinder.orchestrator.agent_loop: Plan: ExplorationPlan(navigate: Navigate to the Ask Cricinfo section to explore its functionality)
+2026-04-07 16:13:07,989 INFO pathfinder.orchestrator.agent_loop: Executing: Navigate to the Ask Cricinfo section to explore its functionality
+2026-04-07 16:13:09,994 INFO pathfinder.orchestrator.agent_loop: === Step 11 / 50 ===
+2026-04-07 16:13:20,636 INFO pathfinder.device.web.adapter: Screenshot saved to exploration/20260407-103228-ca64/screenshot.png
+2026-04-07 16:13:20,637 INFO pathfinder.layers.perception: Captured screenshot: exploration/20260407-103228-ca64/screenshot.png
+2026-04-07 16:13:20,640 INFO pathfinder.device.web.adapter: DOM structure extracted (246 chars)
+2026-04-07 16:13:20,640 INFO pathfinder.layers.perception: Captured UI structure (246 chars)
+2026-04-07 16:13:20,640 INFO pathfinder.layers.perception: Perceiving screenshot: exploration/20260407-103228-ca64/screenshot.png
+2026-04-07 16:13:20,643 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 (with screenshot) — this may take a few minutes for local models...
+2026-04-07 16:13:28,504 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 16:13:30,234 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 9.6s (10.4 tok/s)
+2026-04-07 16:13:32,002 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 11.4s (17.6 tok/s)
+2026-04-07 16:13:33,779 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 13.1s (22.8 tok/s)
+2026-04-07 16:13:35,561 INFO pathfinder.ai.openai_compatible:   ... 400 tokens in 14.9s (26.8 tok/s)
+2026-04-07 16:13:37,365 INFO pathfinder.ai.openai_compatible:   ... 500 tokens in 16.7s (29.9 tok/s)
+2026-04-07 16:13:39,168 INFO pathfinder.ai.openai_compatible:   ... 600 tokens in 18.5s (32.4 tok/s)
+2026-04-07 16:13:39,710 INFO pathfinder.ai.openai_compatible: Response: 629 tokens, 2274 chars in 19.1s (33.0 tok/s)
+2026-04-07 16:13:39,711 INFO pathfinder.layers.perception: Perceived: This screen displays the most runs conceded by spinners in a team innings in T20Is. (type=list, 4 elements, confidence=0.90)
+2026-04-07 16:13:39,719 INFO pathfinder.layers.perception: Observation saved to exploration/20260407-103228-ca64/step_011_observation.json
+2026-04-07 16:13:39,720 INFO pathfinder.orchestrator.agent_loop: Perceived: This screen displays the most runs conceded by spinners in a team innings in T20Is. (list, 4 elements)
+2026-04-07 16:13:39,720 INFO pathfinder.layers.world_modeling: Updating model (v10) with 1 new observations
+2026-04-07 16:13:39,721 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 16:13:42,060 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 16:13:43,719 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 4.0s (25.0 tok/s)
+2026-04-07 16:13:45,414 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 5.7s (35.1 tok/s)
+2026-04-07 16:13:47,113 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 7.4s (40.6 tok/s)
+2026-04-07 16:13:48,821 INFO pathfinder.ai.openai_compatible:   ... 400 tokens in 9.1s (44.0 tok/s)
+2026-04-07 16:13:50,530 INFO pathfinder.ai.openai_compatible:   ... 500 tokens in 10.8s (46.3 tok/s)
+2026-04-07 16:13:52,255 INFO pathfinder.ai.openai_compatible:   ... 600 tokens in 12.5s (47.9 tok/s)
+2026-04-07 16:13:54,004 INFO pathfinder.ai.openai_compatible:   ... 700 tokens in 14.3s (49.0 tok/s)
+2026-04-07 16:13:55,770 INFO pathfinder.ai.openai_compatible:   ... 800 tokens in 16.0s (49.8 tok/s)
+2026-04-07 16:13:57,532 INFO pathfinder.ai.openai_compatible:   ... 900 tokens in 17.8s (50.5 tok/s)
+2026-04-07 16:13:59,312 INFO pathfinder.ai.openai_compatible:   ... 1000 tokens in 19.6s (51.0 tok/s)
+2026-04-07 16:14:01,095 INFO pathfinder.ai.openai_compatible:   ... 1100 tokens in 21.4s (51.5 tok/s)
+2026-04-07 16:14:02,888 INFO pathfinder.ai.openai_compatible:   ... 1200 tokens in 23.2s (51.8 tok/s)
+2026-04-07 16:14:03,851 INFO pathfinder.ai.openai_compatible: Response: 1252 tokens, 4914 chars in 24.1s (51.9 tok/s)
+2026-04-07 16:14:03,854 INFO pathfinder.layers.world_modeling: Model updated to v11: 3 screens, 12 transitions, 5 capabilities, 3 entities, 1 frontier, 1 anomalies (coverage=30%, confidence=50%)
+2026-04-07 16:14:03,856 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 16:14:06,912 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 16:14:08,625 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 4.8s (21.0 tok/s)
+2026-04-07 16:14:10,340 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 6.5s (30.8 tok/s)
+2026-04-07 16:14:10,920 INFO pathfinder.ai.openai_compatible: Response: 232 tokens, 978 chars in 7.1s (32.8 tok/s)
+2026-04-07 16:14:10,922 INFO pathfinder.orchestrator.agent_loop: Plan: ExplorationPlan(click: Click on the first cricket match in the list to view more details.)
+2026-04-07 16:14:10,923 WARNING pathfinder.orchestrator.agent_loop: Unknown action type 'click', defaulting to wait
+2026-04-07 16:14:10,924 INFO pathfinder.orchestrator.agent_loop: Executing: Click on the first cricket match in the list to view more details.
+2026-04-07 16:14:12,928 INFO pathfinder.orchestrator.agent_loop: === Step 12 / 50 ===
+2026-04-07 16:14:23,577 INFO pathfinder.device.web.adapter: Screenshot saved to exploration/20260407-103228-ca64/screenshot.png
+2026-04-07 16:14:23,578 INFO pathfinder.layers.perception: Captured screenshot: exploration/20260407-103228-ca64/screenshot.png
+2026-04-07 16:14:23,580 INFO pathfinder.device.web.adapter: DOM structure extracted (246 chars)
+2026-04-07 16:14:23,580 INFO pathfinder.layers.perception: Captured UI structure (246 chars)
+2026-04-07 16:14:23,581 INFO pathfinder.layers.perception: Perceiving screenshot: exploration/20260407-103228-ca64/screenshot.png
+2026-04-07 16:14:23,584 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 (with screenshot) — this may take a few minutes for local models...
+2026-04-07 16:14:30,480 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 16:14:32,203 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 8.6s (11.6 tok/s)
+2026-04-07 16:14:33,966 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 10.4s (19.3 tok/s)
+2026-04-07 16:14:35,744 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 12.2s (24.7 tok/s)
+2026-04-07 16:14:37,529 INFO pathfinder.ai.openai_compatible:   ... 400 tokens in 13.9s (28.7 tok/s)
+2026-04-07 16:14:39,226 INFO pathfinder.ai.openai_compatible: Response: 493 tokens, 1746 chars in 15.6s (31.5 tok/s)
+2026-04-07 16:14:39,228 INFO pathfinder.layers.perception: Perceived: This screen displays the most runs conceded by spinners in a team innings in T20Is. (type=list, 3 elements, confidence=0.90)
+2026-04-07 16:14:39,236 INFO pathfinder.layers.perception: Observation saved to exploration/20260407-103228-ca64/step_012_observation.json
+2026-04-07 16:14:39,238 INFO pathfinder.orchestrator.agent_loop: Perceived: This screen displays the most runs conceded by spinners in a team innings in T20Is. (list, 3 elements)
+2026-04-07 16:14:39,239 INFO pathfinder.layers.world_modeling: Updating model (v11) with 1 new observations
+2026-04-07 16:14:39,240 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 16:14:41,545 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 16:14:43,201 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 4.0s (25.3 tok/s)
+2026-04-07 16:14:44,880 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 5.6s (35.5 tok/s)
+2026-04-07 16:14:46,588 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 7.3s (40.8 tok/s)
+2026-04-07 16:14:48,285 INFO pathfinder.ai.openai_compatible:   ... 400 tokens in 9.0s (44.2 tok/s)
+2026-04-07 16:14:50,000 INFO pathfinder.ai.openai_compatible:   ... 500 tokens in 10.8s (46.5 tok/s)
+2026-04-07 16:14:51,731 INFO pathfinder.ai.openai_compatible:   ... 600 tokens in 12.5s (48.0 tok/s)
+2026-04-07 16:14:53,463 INFO pathfinder.ai.openai_compatible:   ... 700 tokens in 14.2s (49.2 tok/s)
+2026-04-07 16:14:55,220 INFO pathfinder.ai.openai_compatible:   ... 800 tokens in 16.0s (50.1 tok/s)
+2026-04-07 16:14:56,972 INFO pathfinder.ai.openai_compatible:   ... 900 tokens in 17.7s (50.8 tok/s)
+2026-04-07 16:14:58,744 INFO pathfinder.ai.openai_compatible:   ... 1000 tokens in 19.5s (51.3 tok/s)
+2026-04-07 16:15:00,518 INFO pathfinder.ai.openai_compatible:   ... 1100 tokens in 21.3s (51.7 tok/s)
+2026-04-07 16:15:02,301 INFO pathfinder.ai.openai_compatible:   ... 1200 tokens in 23.1s (52.0 tok/s)
+2026-04-07 16:15:03,463 INFO pathfinder.ai.openai_compatible: Response: 1263 tokens, 4957 chars in 24.2s (52.1 tok/s)
+2026-04-07 16:15:03,466 INFO pathfinder.layers.world_modeling: Model updated to v12: 3 screens, 12 transitions, 5 capabilities, 3 entities, 1 frontier, 1 anomalies (coverage=30%, confidence=50%)
+2026-04-07 16:15:03,468 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 16:15:06,418 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 16:15:08,125 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 4.7s (21.5 tok/s)
+2026-04-07 16:15:09,844 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 6.4s (31.4 tok/s)
+2026-04-07 16:15:10,151 INFO pathfinder.ai.openai_compatible: Response: 217 tokens, 912 chars in 6.7s (32.5 tok/s)
+2026-04-07 16:15:10,153 INFO pathfinder.orchestrator.agent_loop: Plan: ExplorationPlan(click: Click on the first cricket match to view more details)
+2026-04-07 16:15:10,154 WARNING pathfinder.orchestrator.agent_loop: Unknown action type 'click', defaulting to wait
+2026-04-07 16:15:10,155 INFO pathfinder.orchestrator.agent_loop: Executing: Click on the first cricket match to view more details
+2026-04-07 16:15:12,160 INFO pathfinder.orchestrator.agent_loop: === Step 13 / 50 ===
+2026-04-07 16:15:22,772 INFO pathfinder.device.web.adapter: Screenshot saved to exploration/20260407-103228-ca64/screenshot.png
+2026-04-07 16:15:22,773 INFO pathfinder.layers.perception: Captured screenshot: exploration/20260407-103228-ca64/screenshot.png
+2026-04-07 16:15:22,775 INFO pathfinder.device.web.adapter: DOM structure extracted (246 chars)
+2026-04-07 16:15:22,775 INFO pathfinder.layers.perception: Captured UI structure (246 chars)
+2026-04-07 16:15:22,776 INFO pathfinder.layers.perception: Perceiving screenshot: exploration/20260407-103228-ca64/screenshot.png
+2026-04-07 16:15:22,778 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 (with screenshot) — this may take a few minutes for local models...
+2026-04-07 16:15:29,684 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 16:15:31,419 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 8.6s (11.6 tok/s)
+2026-04-07 16:15:33,195 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 10.4s (19.2 tok/s)
+2026-04-07 16:15:34,978 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 12.2s (24.6 tok/s)
+2026-04-07 16:15:36,769 INFO pathfinder.ai.openai_compatible:   ... 400 tokens in 14.0s (28.6 tok/s)
+2026-04-07 16:15:38,529 INFO pathfinder.ai.openai_compatible: Response: 496 tokens, 1767 chars in 15.8s (31.5 tok/s)
+2026-04-07 16:15:38,532 INFO pathfinder.layers.perception: Perceived: This screen displays the most runs conceded by spinners in a team innings in T20Is. (type=list, 3 elements, confidence=0.90)
+2026-04-07 16:15:38,538 INFO pathfinder.layers.perception: Observation saved to exploration/20260407-103228-ca64/step_013_observation.json
+2026-04-07 16:15:38,539 INFO pathfinder.orchestrator.agent_loop: Perceived: This screen displays the most runs conceded by spinners in a team innings in T20Is. (list, 3 elements)
+2026-04-07 16:15:38,541 INFO pathfinder.layers.world_modeling: Updating model (v12) with 1 new observations
+2026-04-07 16:15:38,541 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 16:15:40,845 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 16:15:42,503 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 4.0s (25.2 tok/s)
+2026-04-07 16:15:44,188 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 5.6s (35.4 tok/s)
+2026-04-07 16:15:45,882 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 7.3s (40.9 tok/s)
+2026-04-07 16:15:47,584 INFO pathfinder.ai.openai_compatible:   ... 400 tokens in 9.0s (44.2 tok/s)
+2026-04-07 16:15:49,297 INFO pathfinder.ai.openai_compatible:   ... 500 tokens in 10.8s (46.5 tok/s)
+2026-04-07 16:15:51,021 INFO pathfinder.ai.openai_compatible:   ... 600 tokens in 12.5s (48.1 tok/s)
+2026-04-07 16:15:52,749 INFO pathfinder.ai.openai_compatible:   ... 700 tokens in 14.2s (49.3 tok/s)
+2026-04-07 16:15:54,501 INFO pathfinder.ai.openai_compatible:   ... 800 tokens in 16.0s (50.1 tok/s)
+2026-04-07 16:15:56,256 INFO pathfinder.ai.openai_compatible:   ... 900 tokens in 17.7s (50.8 tok/s)
+2026-04-07 16:15:58,036 INFO pathfinder.ai.openai_compatible:   ... 1000 tokens in 19.5s (51.3 tok/s)
+2026-04-07 16:15:59,815 INFO pathfinder.ai.openai_compatible:   ... 1100 tokens in 21.3s (51.7 tok/s)
+2026-04-07 16:16:01,599 INFO pathfinder.ai.openai_compatible:   ... 1200 tokens in 23.1s (52.0 tok/s)
+2026-04-07 16:16:02,851 INFO pathfinder.ai.openai_compatible: Response: 1268 tokens, 4985 chars in 24.3s (52.2 tok/s)
+2026-04-07 16:16:02,852 INFO pathfinder.layers.world_modeling: Model updated to v13: 3 screens, 12 transitions, 5 capabilities, 3 entities, 1 frontier, 1 anomalies (coverage=30%, confidence=50%)
+2026-04-07 16:16:02,853 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 16:16:05,807 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 16:16:07,519 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 4.7s (21.4 tok/s)
+2026-04-07 16:16:09,241 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 6.4s (31.3 tok/s)
+2026-04-07 16:16:09,311 INFO pathfinder.ai.openai_compatible: Response: 203 tokens, 872 chars in 6.5s (31.4 tok/s)
+2026-04-07 16:16:09,312 INFO pathfinder.orchestrator.agent_loop: Plan: ExplorationPlan(navigate: Navigate to the Ask Cricinfo section to explore its functionality)
+2026-04-07 16:16:09,312 INFO pathfinder.orchestrator.agent_loop: Executing: Navigate to the Ask Cricinfo section to explore its functionality
+2026-04-07 16:16:11,317 INFO pathfinder.orchestrator.agent_loop: === Step 14 / 50 ===
+2026-04-07 16:16:21,935 INFO pathfinder.device.web.adapter: Screenshot saved to exploration/20260407-103228-ca64/screenshot.png
+2026-04-07 16:16:21,936 INFO pathfinder.layers.perception: Captured screenshot: exploration/20260407-103228-ca64/screenshot.png
+2026-04-07 16:16:21,938 INFO pathfinder.device.web.adapter: DOM structure extracted (246 chars)
+2026-04-07 16:16:21,938 INFO pathfinder.layers.perception: Captured UI structure (246 chars)
+2026-04-07 16:16:21,938 INFO pathfinder.layers.perception: Perceiving screenshot: exploration/20260407-103228-ca64/screenshot.png
+2026-04-07 16:16:21,941 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 (with screenshot) — this may take a few minutes for local models...
+2026-04-07 16:16:28,840 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 16:16:30,574 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 8.6s (11.6 tok/s)
+2026-04-07 16:16:32,344 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 10.4s (19.2 tok/s)
+2026-04-07 16:16:34,119 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 12.2s (24.6 tok/s)
+2026-04-07 16:16:35,899 INFO pathfinder.ai.openai_compatible:   ... 400 tokens in 14.0s (28.7 tok/s)
+2026-04-07 16:16:37,702 INFO pathfinder.ai.openai_compatible:   ... 500 tokens in 15.8s (31.7 tok/s)
+2026-04-07 16:16:37,918 INFO pathfinder.ai.openai_compatible: Response: 511 tokens, 1818 chars in 16.0s (32.0 tok/s)
+2026-04-07 16:16:37,920 INFO pathfinder.layers.perception: Perceived: This screen displays the most runs conceded by spinners in a team innings in T20Is. (type=list, 3 elements, confidence=0.90)
+2026-04-07 16:16:37,926 INFO pathfinder.layers.perception: Observation saved to exploration/20260407-103228-ca64/step_014_observation.json
+2026-04-07 16:16:37,927 INFO pathfinder.orchestrator.agent_loop: Perceived: This screen displays the most runs conceded by spinners in a team innings in T20Is. (list, 3 elements)
+2026-04-07 16:16:37,928 WARNING pathfinder.orchestrator.agent_loop: STUCK: seen screen 'list|3|list_item,list_item,list_item' 3 times consecutively
+2026-04-07 16:16:37,929 INFO pathfinder.layers.world_modeling: Updating model (v13) with 1 new observations
+2026-04-07 16:16:37,930 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 16:16:40,235 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 16:16:41,893 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 4.0s (25.2 tok/s)
+2026-04-07 16:16:43,580 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 5.6s (35.4 tok/s)
+2026-04-07 16:16:45,275 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 7.3s (40.9 tok/s)
+2026-04-07 16:16:46,976 INFO pathfinder.ai.openai_compatible:   ... 400 tokens in 9.0s (44.2 tok/s)
+2026-04-07 16:16:48,701 INFO pathfinder.ai.openai_compatible:   ... 500 tokens in 10.8s (46.4 tok/s)
+2026-04-07 16:16:50,428 INFO pathfinder.ai.openai_compatible:   ... 600 tokens in 12.5s (48.0 tok/s)
+2026-04-07 16:16:52,164 INFO pathfinder.ai.openai_compatible:   ... 700 tokens in 14.2s (49.2 tok/s)
+2026-04-07 16:16:53,919 INFO pathfinder.ai.openai_compatible:   ... 800 tokens in 16.0s (50.0 tok/s)
+2026-04-07 16:16:55,665 INFO pathfinder.ai.openai_compatible:   ... 900 tokens in 17.7s (50.8 tok/s)
+2026-04-07 16:16:57,440 INFO pathfinder.ai.openai_compatible:   ... 1000 tokens in 19.5s (51.3 tok/s)
+2026-04-07 16:16:59,223 INFO pathfinder.ai.openai_compatible:   ... 1100 tokens in 21.3s (51.7 tok/s)
+2026-04-07 16:17:01,009 INFO pathfinder.ai.openai_compatible:   ... 1200 tokens in 23.1s (52.0 tok/s)
+2026-04-07 16:17:02,657 INFO pathfinder.ai.openai_compatible: Response: 1290 tokens, 5083 chars in 24.7s (52.2 tok/s)
+2026-04-07 16:17:02,660 INFO pathfinder.layers.world_modeling: Model updated to v14: 3 screens, 12 transitions, 5 capabilities, 3 entities, 1 frontier, 1 anomalies (coverage=30%, confidence=50%)
+2026-04-07 16:17:02,662 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 16:17:05,710 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 16:17:07,421 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 4.8s (21.0 tok/s)
+2026-04-07 16:17:09,157 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 6.5s (30.8 tok/s)
+2026-04-07 16:17:09,629 INFO pathfinder.ai.openai_compatible: Response: 226 tokens, 961 chars in 7.0s (32.4 tok/s)
+2026-04-07 16:17:09,629 INFO pathfinder.orchestrator.agent_loop: Plan: ExplorationPlan(navigate: Navigate to the Ask Cricinfo section to explore its functionality)
+2026-04-07 16:17:09,630 INFO pathfinder.orchestrator.agent_loop: Executing: Navigate to the Ask Cricinfo section to explore its functionality
+2026-04-07 16:17:11,633 INFO pathfinder.orchestrator.agent_loop: === Step 15 / 50 ===
+2026-04-07 16:17:22,281 INFO pathfinder.device.web.adapter: Screenshot saved to exploration/20260407-103228-ca64/screenshot.png
+2026-04-07 16:17:22,282 INFO pathfinder.layers.perception: Captured screenshot: exploration/20260407-103228-ca64/screenshot.png
+2026-04-07 16:17:22,285 INFO pathfinder.device.web.adapter: DOM structure extracted (246 chars)
+2026-04-07 16:17:22,285 INFO pathfinder.layers.perception: Captured UI structure (246 chars)
+2026-04-07 16:17:22,285 INFO pathfinder.layers.perception: Perceiving screenshot: exploration/20260407-103228-ca64/screenshot.png
+2026-04-07 16:17:22,289 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 (with screenshot) — this may take a few minutes for local models...
+2026-04-07 16:17:29,211 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 16:17:30,948 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 8.7s (11.5 tok/s)
+2026-04-07 16:17:32,718 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 10.4s (19.2 tok/s)
+2026-04-07 16:17:34,496 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 12.2s (24.6 tok/s)
+2026-04-07 16:17:36,278 INFO pathfinder.ai.openai_compatible:   ... 400 tokens in 14.0s (28.6 tok/s)
+2026-04-07 16:17:38,024 INFO pathfinder.ai.openai_compatible: Response: 496 tokens, 1767 chars in 15.7s (31.5 tok/s)
+2026-04-07 16:17:38,027 INFO pathfinder.layers.perception: Perceived: This screen displays the most runs conceded by spinners in a team innings in T20Is. (type=list, 3 elements, confidence=0.90)
+2026-04-07 16:17:38,033 INFO pathfinder.layers.perception: Observation saved to exploration/20260407-103228-ca64/step_015_observation.json
+2026-04-07 16:17:38,034 INFO pathfinder.orchestrator.agent_loop: Perceived: This screen displays the most runs conceded by spinners in a team innings in T20Is. (list, 3 elements)
+2026-04-07 16:17:38,035 WARNING pathfinder.orchestrator.agent_loop: STUCK: seen screen 'list|3|list_item,list_item,list_item' 4 times consecutively
+2026-04-07 16:17:38,036 INFO pathfinder.layers.world_modeling: Updating model (v14) with 1 new observations
+2026-04-07 16:17:38,037 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 16:17:40,342 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 16:17:42,001 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 4.0s (25.2 tok/s)
+2026-04-07 16:17:43,678 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 5.6s (35.5 tok/s)
+2026-04-07 16:17:45,374 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 7.3s (40.9 tok/s)
+2026-04-07 16:17:47,074 INFO pathfinder.ai.openai_compatible:   ... 400 tokens in 9.0s (44.3 tok/s)
+2026-04-07 16:17:48,790 INFO pathfinder.ai.openai_compatible:   ... 500 tokens in 10.8s (46.5 tok/s)
+2026-04-07 16:17:50,509 INFO pathfinder.ai.openai_compatible:   ... 600 tokens in 12.5s (48.1 tok/s)
+2026-04-07 16:17:52,241 INFO pathfinder.ai.openai_compatible:   ... 700 tokens in 14.2s (49.3 tok/s)
+2026-04-07 16:17:53,994 INFO pathfinder.ai.openai_compatible:   ... 800 tokens in 16.0s (50.1 tok/s)
+2026-04-07 16:17:55,748 INFO pathfinder.ai.openai_compatible:   ... 900 tokens in 17.7s (50.8 tok/s)
+2026-04-07 16:17:57,519 INFO pathfinder.ai.openai_compatible:   ... 1000 tokens in 19.5s (51.3 tok/s)
+2026-04-07 16:17:59,305 INFO pathfinder.ai.openai_compatible:   ... 1100 tokens in 21.3s (51.7 tok/s)
+2026-04-07 16:18:01,088 INFO pathfinder.ai.openai_compatible:   ... 1200 tokens in 23.0s (52.1 tok/s)
+2026-04-07 16:18:02,336 INFO pathfinder.ai.openai_compatible: Response: 1268 tokens, 4985 chars in 24.3s (52.2 tok/s)
+2026-04-07 16:18:02,338 INFO pathfinder.layers.world_modeling: Model updated to v15: 3 screens, 12 transitions, 5 capabilities, 3 entities, 1 frontier, 1 anomalies (coverage=30%, confidence=50%)
+2026-04-07 16:18:02,340 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 16:18:05,334 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 16:18:07,042 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 4.7s (21.3 tok/s)
+2026-04-07 16:18:08,768 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 6.4s (31.1 tok/s)
+2026-04-07 16:18:09,661 INFO pathfinder.ai.openai_compatible: Response: 250 tokens, 1124 chars in 7.3s (34.2 tok/s)
+2026-04-07 16:18:09,662 INFO pathfinder.orchestrator.agent_loop: Plan: ExplorationPlan(click: Click on the 'View more details about the cricket match' button to explore the details of a cricket match)
+2026-04-07 16:18:09,662 WARNING pathfinder.orchestrator.agent_loop: Unknown action type 'click', defaulting to wait
+2026-04-07 16:18:09,663 INFO pathfinder.orchestrator.agent_loop: Executing: Click on the 'View more details about the cricket match' button to explore the details of a cricket match
+2026-04-07 16:18:11,666 INFO pathfinder.orchestrator.agent_loop: === Step 16 / 50 ===
+2026-04-07 16:18:22,254 INFO pathfinder.device.web.adapter: Screenshot saved to exploration/20260407-103228-ca64/screenshot.png
+2026-04-07 16:18:22,255 INFO pathfinder.layers.perception: Captured screenshot: exploration/20260407-103228-ca64/screenshot.png
+2026-04-07 16:18:22,257 INFO pathfinder.device.web.adapter: DOM structure extracted (246 chars)
+2026-04-07 16:18:22,257 INFO pathfinder.layers.perception: Captured UI structure (246 chars)
+2026-04-07 16:18:22,257 INFO pathfinder.layers.perception: Perceiving screenshot: exploration/20260407-103228-ca64/screenshot.png
+2026-04-07 16:18:22,260 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 (with screenshot) — this may take a few minutes for local models...
+2026-04-07 16:18:29,258 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 16:18:30,995 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 8.7s (11.4 tok/s)
+2026-04-07 16:18:32,772 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 10.5s (19.0 tok/s)
+2026-04-07 16:18:34,557 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 12.3s (24.4 tok/s)
+2026-04-07 16:18:36,346 INFO pathfinder.ai.openai_compatible:   ... 400 tokens in 14.1s (28.4 tok/s)
+2026-04-07 16:18:38,161 INFO pathfinder.ai.openai_compatible:   ... 500 tokens in 15.9s (31.4 tok/s)
+2026-04-07 16:18:38,431 INFO pathfinder.ai.openai_compatible: Response: 514 tokens, 1842 chars in 16.2s (31.8 tok/s)
+2026-04-07 16:18:38,435 INFO pathfinder.layers.perception: Perceived: This screen displays the most runs conceded by spinners in a team innings in T20Is. (type=list, 3 elements, confidence=0.90)
+2026-04-07 16:18:38,478 INFO pathfinder.layers.perception: Observation saved to exploration/20260407-103228-ca64/step_016_observation.json
+2026-04-07 16:18:38,481 INFO pathfinder.orchestrator.agent_loop: Perceived: This screen displays the most runs conceded by spinners in a team innings in T20Is. (list, 3 elements)
+2026-04-07 16:18:38,482 WARNING pathfinder.orchestrator.agent_loop: STUCK: seen screen 'list|3|list_item,list_item,list_item' 5 times consecutively
+2026-04-07 16:18:38,483 INFO pathfinder.layers.world_modeling: Updating model (v15) with 1 new observations
+2026-04-07 16:18:38,483 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 16:18:40,821 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 16:18:42,484 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 4.0s (25.0 tok/s)
+2026-04-07 16:18:44,170 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 5.7s (35.2 tok/s)
+2026-04-07 16:18:45,861 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 7.4s (40.7 tok/s)
+2026-04-07 16:18:47,552 INFO pathfinder.ai.openai_compatible:   ... 400 tokens in 9.1s (44.1 tok/s)
+2026-04-07 16:18:49,275 INFO pathfinder.ai.openai_compatible:   ... 500 tokens in 10.8s (46.3 tok/s)
+2026-04-07 16:18:50,997 INFO pathfinder.ai.openai_compatible:   ... 600 tokens in 12.5s (47.9 tok/s)
+2026-04-07 16:18:52,733 INFO pathfinder.ai.openai_compatible:   ... 700 tokens in 14.2s (49.1 tok/s)
+2026-04-07 16:18:54,498 INFO pathfinder.ai.openai_compatible:   ... 800 tokens in 16.0s (50.0 tok/s)
+2026-04-07 16:18:56,259 INFO pathfinder.ai.openai_compatible:   ... 900 tokens in 17.8s (50.6 tok/s)
+2026-04-07 16:18:58,044 INFO pathfinder.ai.openai_compatible:   ... 1000 tokens in 19.6s (51.1 tok/s)
+2026-04-07 16:18:59,822 INFO pathfinder.ai.openai_compatible:   ... 1100 tokens in 21.3s (51.5 tok/s)
+2026-04-07 16:19:01,609 INFO pathfinder.ai.openai_compatible:   ... 1200 tokens in 23.1s (51.9 tok/s)
+2026-04-07 16:19:03,258 INFO pathfinder.ai.openai_compatible: Response: 1290 tokens, 5095 chars in 24.8s (52.1 tok/s)
+2026-04-07 16:19:03,261 INFO pathfinder.layers.world_modeling: Model updated to v16: 3 screens, 12 transitions, 5 capabilities, 3 entities, 1 frontier, 1 anomalies (coverage=30%, confidence=50%)
+2026-04-07 16:19:03,263 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 16:19:06,304 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 16:19:08,017 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 4.8s (21.0 tok/s)
+2026-04-07 16:19:09,748 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 6.5s (30.8 tok/s)
+2026-04-07 16:19:10,432 INFO pathfinder.ai.openai_compatible: Response: 238 tokens, 1074 chars in 7.2s (33.2 tok/s)
+2026-04-07 16:19:10,434 INFO pathfinder.orchestrator.agent_loop: Plan: ExplorationPlan(back: Navigate back to the main screen to explore other functionalities.)
+2026-04-07 16:19:10,436 WARNING pathfinder.orchestrator.agent_loop: Force-navigating back: stuck for 5 steps
+2026-04-07 16:19:10,437 INFO pathfinder.orchestrator.agent_loop: Executing: Forced back — stuck on list|3|list_item,list_item,list_item
+2026-04-07 16:19:11,971 INFO pathfinder.orchestrator.agent_loop: === Step 17 / 50 ===
+2026-04-07 16:19:22,740 INFO pathfinder.device.web.adapter: Screenshot saved to exploration/20260407-103228-ca64/screenshot.png
+2026-04-07 16:19:22,741 INFO pathfinder.layers.perception: Captured screenshot: exploration/20260407-103228-ca64/screenshot.png
+2026-04-07 16:19:22,743 INFO pathfinder.device.web.adapter: DOM structure extracted (243 chars)
+2026-04-07 16:19:22,744 INFO pathfinder.layers.perception: Captured UI structure (243 chars)
+2026-04-07 16:19:22,744 INFO pathfinder.layers.perception: Perceiving screenshot: exploration/20260407-103228-ca64/screenshot.png
+2026-04-07 16:19:22,747 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 (with screenshot) — this may take a few minutes for local models...
+2026-04-07 16:19:31,199 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 16:19:32,937 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 10.2s (9.8 tok/s)
+2026-04-07 16:19:34,710 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 12.0s (16.7 tok/s)
+2026-04-07 16:19:36,500 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 13.8s (21.8 tok/s)
+2026-04-07 16:19:38,302 INFO pathfinder.ai.openai_compatible:   ... 400 tokens in 15.6s (25.7 tok/s)
+2026-04-07 16:19:40,128 INFO pathfinder.ai.openai_compatible:   ... 500 tokens in 17.4s (28.8 tok/s)
+2026-04-07 16:19:41,954 INFO pathfinder.ai.openai_compatible:   ... 600 tokens in 19.2s (31.2 tok/s)
+2026-04-07 16:19:43,795 INFO pathfinder.ai.openai_compatible:   ... 700 tokens in 21.0s (33.3 tok/s)
+2026-04-07 16:19:45,242 INFO pathfinder.ai.openai_compatible: Response: 777 tokens, 3034 chars in 22.5s (34.5 tok/s)
+2026-04-07 16:19:45,244 INFO pathfinder.layers.perception: Perceived: This screen is for searching and exploring cricket statistics and questions. (type=search, 6 elements, confidence=0.90)
+2026-04-07 16:19:45,252 INFO pathfinder.layers.perception: Observation saved to exploration/20260407-103228-ca64/step_017_observation.json
+2026-04-07 16:19:45,254 INFO pathfinder.orchestrator.agent_loop: Perceived: This screen is for searching and exploring cricket statistics and questions. (search, 6 elements)
+2026-04-07 16:19:45,255 INFO pathfinder.layers.world_modeling: Updating model (v16) with 1 new observations
+2026-04-07 16:19:45,256 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 16:19:48,016 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 16:19:49,673 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 4.4s (22.6 tok/s)
+2026-04-07 16:19:51,367 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 6.1s (32.7 tok/s)
+2026-04-07 16:19:53,086 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 7.8s (38.3 tok/s)
+2026-04-07 16:19:54,810 INFO pathfinder.ai.openai_compatible:   ... 400 tokens in 9.6s (41.9 tok/s)
+2026-04-07 16:19:56,543 INFO pathfinder.ai.openai_compatible:   ... 500 tokens in 11.3s (44.3 tok/s)
+2026-04-07 16:19:58,282 INFO pathfinder.ai.openai_compatible:   ... 600 tokens in 13.0s (46.1 tok/s)
+2026-04-07 16:20:00,041 INFO pathfinder.ai.openai_compatible:   ... 700 tokens in 14.8s (47.4 tok/s)
+2026-04-07 16:20:01,811 INFO pathfinder.ai.openai_compatible:   ... 800 tokens in 16.6s (48.3 tok/s)
+2026-04-07 16:20:03,582 INFO pathfinder.ai.openai_compatible:   ... 900 tokens in 18.3s (49.1 tok/s)
+2026-04-07 16:20:05,378 INFO pathfinder.ai.openai_compatible:   ... 1000 tokens in 20.1s (49.7 tok/s)
+2026-04-07 16:20:07,172 INFO pathfinder.ai.openai_compatible:   ... 1100 tokens in 21.9s (50.2 tok/s)
+2026-04-07 16:20:08,982 INFO pathfinder.ai.openai_compatible:   ... 1200 tokens in 23.7s (50.6 tok/s)
+2026-04-07 16:20:10,810 INFO pathfinder.ai.openai_compatible:   ... 1300 tokens in 25.6s (50.9 tok/s)
+2026-04-07 16:20:11,250 INFO pathfinder.ai.openai_compatible: Response: 1323 tokens, 5238 chars in 26.0s (50.9 tok/s)
+2026-04-07 16:20:11,253 INFO pathfinder.layers.world_modeling: Model updated to v17: 4 screens, 12 transitions, 5 capabilities, 3 entities, 1 frontier, 1 anomalies (coverage=30%, confidence=50%)
+2026-04-07 16:20:11,255 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 16:20:14,648 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 16:20:16,353 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 5.1s (19.6 tok/s)
+2026-04-07 16:20:18,084 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 6.8s (29.3 tok/s)
+2026-04-07 16:20:18,912 INFO pathfinder.ai.openai_compatible: Response: 246 tokens, 1044 chars in 7.7s (32.1 tok/s)
+2026-04-07 16:20:18,914 INFO pathfinder.orchestrator.agent_loop: Plan: ExplorationPlan(click: Click on the search suggestion for most runs conceded by spinners in a team innings in T20Is)
+2026-04-07 16:20:18,915 WARNING pathfinder.orchestrator.agent_loop: Unknown action type 'click', defaulting to wait
+2026-04-07 16:20:18,916 INFO pathfinder.orchestrator.agent_loop: Executing: Click on the search suggestion for most runs conceded by spinners in a team innings in T20Is
+2026-04-07 16:20:20,920 INFO pathfinder.orchestrator.agent_loop: === Step 18 / 50 ===
+2026-04-07 16:20:31,570 INFO pathfinder.device.web.adapter: Screenshot saved to exploration/20260407-103228-ca64/screenshot.png
+2026-04-07 16:20:31,570 INFO pathfinder.layers.perception: Captured screenshot: exploration/20260407-103228-ca64/screenshot.png
+2026-04-07 16:20:31,573 INFO pathfinder.device.web.adapter: DOM structure extracted (243 chars)
+2026-04-07 16:20:31,573 INFO pathfinder.layers.perception: Captured UI structure (243 chars)
+2026-04-07 16:20:31,574 INFO pathfinder.layers.perception: Perceiving screenshot: exploration/20260407-103228-ca64/screenshot.png
+2026-04-07 16:20:31,578 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 (with screenshot) — this may take a few minutes for local models...
+2026-04-07 16:20:38,868 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 16:20:40,617 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 9.0s (11.1 tok/s)
+2026-04-07 16:20:42,391 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 10.8s (18.5 tok/s)
+2026-04-07 16:20:44,187 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 12.6s (23.8 tok/s)
+2026-04-07 16:20:45,988 INFO pathfinder.ai.openai_compatible:   ... 400 tokens in 14.4s (27.8 tok/s)
+2026-04-07 16:20:47,816 INFO pathfinder.ai.openai_compatible:   ... 500 tokens in 16.2s (30.8 tok/s)
+2026-04-07 16:20:49,635 INFO pathfinder.ai.openai_compatible:   ... 600 tokens in 18.1s (33.2 tok/s)
+2026-04-07 16:20:51,470 INFO pathfinder.ai.openai_compatible:   ... 700 tokens in 19.9s (35.2 tok/s)
+2026-04-07 16:20:53,329 INFO pathfinder.ai.openai_compatible:   ... 800 tokens in 21.7s (36.8 tok/s)
+2026-04-07 16:20:53,553 INFO pathfinder.ai.openai_compatible: Response: 811 tokens, 3127 chars in 22.0s (36.9 tok/s)
+2026-04-07 16:20:53,556 INFO pathfinder.layers.perception: Perceived: This screen is for searching and exploring cricket statistics and questions. (type=search, 6 elements, confidence=0.90)
+2026-04-07 16:20:53,564 INFO pathfinder.layers.perception: Observation saved to exploration/20260407-103228-ca64/step_018_observation.json
+2026-04-07 16:20:53,565 INFO pathfinder.orchestrator.agent_loop: Perceived: This screen is for searching and exploring cricket statistics and questions. (search, 6 elements)
+2026-04-07 16:20:53,567 INFO pathfinder.layers.world_modeling: Updating model (v17) with 1 new observations
+2026-04-07 16:20:53,568 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 16:20:56,238 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 16:20:57,899 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 4.3s (23.1 tok/s)
+2026-04-07 16:20:59,590 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 6.0s (33.2 tok/s)
+2026-04-07 16:21:01,289 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 7.7s (38.9 tok/s)
+2026-04-07 16:21:03,006 INFO pathfinder.ai.openai_compatible:   ... 400 tokens in 9.4s (42.4 tok/s)
+2026-04-07 16:21:04,747 INFO pathfinder.ai.openai_compatible:   ... 500 tokens in 11.2s (44.7 tok/s)
+2026-04-07 16:21:06,496 INFO pathfinder.ai.openai_compatible:   ... 600 tokens in 12.9s (46.4 tok/s)
+2026-04-07 16:21:08,255 INFO pathfinder.ai.openai_compatible:   ... 700 tokens in 14.7s (47.7 tok/s)
+2026-04-07 16:21:10,020 INFO pathfinder.ai.openai_compatible:   ... 800 tokens in 16.5s (48.6 tok/s)
+2026-04-07 16:21:11,801 INFO pathfinder.ai.openai_compatible:   ... 900 tokens in 18.2s (49.4 tok/s)
+2026-04-07 16:21:13,599 INFO pathfinder.ai.openai_compatible:   ... 1000 tokens in 20.0s (49.9 tok/s)
+2026-04-07 16:21:15,402 INFO pathfinder.ai.openai_compatible:   ... 1100 tokens in 21.8s (50.4 tok/s)
+2026-04-07 16:21:17,225 INFO pathfinder.ai.openai_compatible:   ... 1200 tokens in 23.7s (50.7 tok/s)
+2026-04-07 16:21:19,036 INFO pathfinder.ai.openai_compatible:   ... 1300 tokens in 25.5s (51.0 tok/s)
+2026-04-07 16:21:19,464 INFO pathfinder.ai.openai_compatible: Response: 1323 tokens, 5240 chars in 25.9s (51.1 tok/s)
+2026-04-07 16:21:19,467 INFO pathfinder.layers.world_modeling: Model updated to v18: 4 screens, 12 transitions, 5 capabilities, 3 entities, 1 frontier, 1 anomalies (coverage=30%, confidence=50%)
+2026-04-07 16:21:19,469 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 16:21:22,816 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 16:21:24,523 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 5.1s (19.8 tok/s)
+2026-04-07 16:21:26,263 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 6.8s (29.4 tok/s)
+2026-04-07 16:21:26,736 INFO pathfinder.ai.openai_compatible: Response: 226 tokens, 980 chars in 7.3s (31.1 tok/s)
+2026-04-07 16:21:26,738 INFO pathfinder.orchestrator.agent_loop: Plan: ExplorationPlan(click: Click on the suggestion for most runs conceded by spinners in a team innings in T20Is to explore the search results)
+2026-04-07 16:21:26,739 WARNING pathfinder.orchestrator.agent_loop: Unknown action type 'click', defaulting to wait
+2026-04-07 16:21:26,741 INFO pathfinder.orchestrator.agent_loop: Executing: Click on the suggestion for most runs conceded by spinners in a team innings in T20Is to explore the search results
+2026-04-07 16:21:28,746 INFO pathfinder.orchestrator.agent_loop: === Step 19 / 50 ===
+2026-04-07 16:21:39,418 INFO pathfinder.device.web.adapter: Screenshot saved to exploration/20260407-103228-ca64/screenshot.png
+2026-04-07 16:21:39,419 INFO pathfinder.layers.perception: Captured screenshot: exploration/20260407-103228-ca64/screenshot.png
+2026-04-07 16:21:39,421 INFO pathfinder.device.web.adapter: DOM structure extracted (243 chars)
+2026-04-07 16:21:39,421 INFO pathfinder.layers.perception: Captured UI structure (243 chars)
+2026-04-07 16:21:39,422 INFO pathfinder.layers.perception: Perceiving screenshot: exploration/20260407-103228-ca64/screenshot.png
+2026-04-07 16:21:39,424 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 (with screenshot) — this may take a few minutes for local models...
+2026-04-07 16:21:47,400 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 16:21:49,132 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 9.7s (10.3 tok/s)
+2026-04-07 16:21:50,911 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 11.5s (17.4 tok/s)
+2026-04-07 16:21:52,693 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 13.3s (22.6 tok/s)
+2026-04-07 16:21:54,493 INFO pathfinder.ai.openai_compatible:   ... 400 tokens in 15.1s (26.5 tok/s)
+2026-04-07 16:21:56,308 INFO pathfinder.ai.openai_compatible:   ... 500 tokens in 16.9s (29.6 tok/s)
+2026-04-07 16:21:58,129 INFO pathfinder.ai.openai_compatible:   ... 600 tokens in 18.7s (32.1 tok/s)
+2026-04-07 16:21:59,963 INFO pathfinder.ai.openai_compatible:   ... 700 tokens in 20.5s (34.1 tok/s)
+2026-04-07 16:22:01,642 INFO pathfinder.ai.openai_compatible: Response: 790 tokens, 3082 chars in 22.2s (35.6 tok/s)
+2026-04-07 16:22:01,644 INFO pathfinder.layers.perception: Perceived: This screen is for searching and exploring cricket statistics and questions. (type=search, 6 elements, confidence=0.90)
+2026-04-07 16:22:01,652 INFO pathfinder.layers.perception: Observation saved to exploration/20260407-103228-ca64/step_019_observation.json
+2026-04-07 16:22:01,653 INFO pathfinder.orchestrator.agent_loop: Perceived: This screen is for searching and exploring cricket statistics and questions. (search, 6 elements)
+2026-04-07 16:22:01,654 WARNING pathfinder.orchestrator.agent_loop: STUCK: seen screen 'search|6|list_item,list_item,list_item,list_item,list_item,text_field' 3 times consecutively
+2026-04-07 16:22:01,655 INFO pathfinder.layers.world_modeling: Updating model (v18) with 1 new observations
+2026-04-07 16:22:01,656 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 16:22:04,204 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 16:22:05,867 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 4.2s (23.8 tok/s)
+2026-04-07 16:22:07,561 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 5.9s (33.9 tok/s)
+2026-04-07 16:22:09,271 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 7.6s (39.4 tok/s)
+2026-04-07 16:22:10,987 INFO pathfinder.ai.openai_compatible:   ... 400 tokens in 9.3s (42.9 tok/s)
+2026-04-07 16:22:12,722 INFO pathfinder.ai.openai_compatible:   ... 500 tokens in 11.1s (45.2 tok/s)
+2026-04-07 16:22:14,470 INFO pathfinder.ai.openai_compatible:   ... 600 tokens in 12.8s (46.8 tok/s)
+2026-04-07 16:22:16,240 INFO pathfinder.ai.openai_compatible:   ... 700 tokens in 14.6s (48.0 tok/s)
+2026-04-07 16:22:18,022 INFO pathfinder.ai.openai_compatible:   ... 800 tokens in 16.4s (48.9 tok/s)
+2026-04-07 16:22:19,808 INFO pathfinder.ai.openai_compatible:   ... 900 tokens in 18.2s (49.6 tok/s)
+2026-04-07 16:22:21,604 INFO pathfinder.ai.openai_compatible:   ... 1000 tokens in 19.9s (50.1 tok/s)
+2026-04-07 16:22:23,413 INFO pathfinder.ai.openai_compatible:   ... 1100 tokens in 21.8s (50.6 tok/s)
+2026-04-07 16:22:25,238 INFO pathfinder.ai.openai_compatible:   ... 1200 tokens in 23.6s (50.9 tok/s)
+2026-04-07 16:22:27,073 INFO pathfinder.ai.openai_compatible:   ... 1300 tokens in 25.4s (51.1 tok/s)
+2026-04-07 16:22:27,511 INFO pathfinder.ai.openai_compatible: Response: 1323 tokens, 5240 chars in 25.9s (51.2 tok/s)
+2026-04-07 16:22:27,514 INFO pathfinder.layers.world_modeling: Model updated to v19: 4 screens, 12 transitions, 5 capabilities, 3 entities, 1 frontier, 1 anomalies (coverage=30%, confidence=50%)
+2026-04-07 16:22:27,514 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 16:22:30,933 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 16:22:32,659 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 5.1s (19.4 tok/s)
+2026-04-07 16:22:34,397 INFO pathfinder.ai.openai_compatible: Response: 198 tokens, 800 chars in 6.9s (28.8 tok/s)
+2026-04-07 16:22:34,398 INFO pathfinder.orchestrator.agent_loop: Plan: ExplorationPlan(click: Click on the 'Ask Cricinfo' button to explore its functionality)
+2026-04-07 16:22:34,399 WARNING pathfinder.orchestrator.agent_loop: Unknown action type 'click', defaulting to wait
+2026-04-07 16:22:34,399 INFO pathfinder.orchestrator.agent_loop: Executing: Click on the 'Ask Cricinfo' button to explore its functionality
+2026-04-07 16:22:36,404 INFO pathfinder.orchestrator.agent_loop: === Step 20 / 50 ===
+2026-04-07 16:22:47,053 INFO pathfinder.device.web.adapter: Screenshot saved to exploration/20260407-103228-ca64/screenshot.png
+2026-04-07 16:22:47,054 INFO pathfinder.layers.perception: Captured screenshot: exploration/20260407-103228-ca64/screenshot.png
+2026-04-07 16:22:47,056 INFO pathfinder.device.web.adapter: DOM structure extracted (243 chars)
+2026-04-07 16:22:47,057 INFO pathfinder.layers.perception: Captured UI structure (243 chars)
+2026-04-07 16:22:47,057 INFO pathfinder.layers.perception: Perceiving screenshot: exploration/20260407-103228-ca64/screenshot.png
+2026-04-07 16:22:47,060 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 (with screenshot) — this may take a few minutes for local models...
+2026-04-07 16:22:55,321 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 16:22:57,048 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 10.0s (10.0 tok/s)
+2026-04-07 16:22:58,831 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 11.8s (17.0 tok/s)
+2026-04-07 16:23:00,607 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 13.5s (22.1 tok/s)
+2026-04-07 16:23:02,392 INFO pathfinder.ai.openai_compatible:   ... 400 tokens in 15.3s (26.1 tok/s)
+2026-04-07 16:23:04,208 INFO pathfinder.ai.openai_compatible:   ... 500 tokens in 17.1s (29.2 tok/s)
+2026-04-07 16:23:06,008 INFO pathfinder.ai.openai_compatible:   ... 600 tokens in 18.9s (31.7 tok/s)
+2026-04-07 16:23:07,846 INFO pathfinder.ai.openai_compatible:   ... 700 tokens in 20.8s (33.7 tok/s)
+2026-04-07 16:23:09,688 INFO pathfinder.ai.openai_compatible:   ... 800 tokens in 22.6s (35.4 tok/s)
+2026-04-07 16:23:11,534 INFO pathfinder.ai.openai_compatible:   ... 900 tokens in 24.5s (36.8 tok/s)
+2026-04-07 16:23:13,402 INFO pathfinder.ai.openai_compatible:   ... 1000 tokens in 26.3s (38.0 tok/s)
+2026-04-07 16:23:15,263 INFO pathfinder.ai.openai_compatible:   ... 1100 tokens in 28.2s (39.0 tok/s)
+2026-04-07 16:23:17,144 INFO pathfinder.ai.openai_compatible:   ... 1200 tokens in 30.1s (39.9 tok/s)
+2026-04-07 16:23:19,028 INFO pathfinder.ai.openai_compatible:   ... 1300 tokens in 32.0s (40.7 tok/s)
+2026-04-07 16:23:20,916 INFO pathfinder.ai.openai_compatible:   ... 1400 tokens in 33.9s (41.4 tok/s)
+2026-04-07 16:23:22,807 INFO pathfinder.ai.openai_compatible:   ... 1500 tokens in 35.7s (42.0 tok/s)
+2026-04-07 16:23:24,731 INFO pathfinder.ai.openai_compatible:   ... 1600 tokens in 37.7s (42.5 tok/s)
+2026-04-07 16:23:26,664 INFO pathfinder.ai.openai_compatible:   ... 1700 tokens in 39.6s (42.9 tok/s)
+2026-04-07 16:23:28,609 INFO pathfinder.ai.openai_compatible:   ... 1800 tokens in 41.5s (43.3 tok/s)
+2026-04-07 16:23:30,552 INFO pathfinder.ai.openai_compatible:   ... 1900 tokens in 43.5s (43.7 tok/s)
+2026-04-07 16:23:32,523 INFO pathfinder.ai.openai_compatible:   ... 2000 tokens in 45.5s (44.0 tok/s)
+2026-04-07 16:23:34,500 INFO pathfinder.ai.openai_compatible:   ... 2100 tokens in 47.4s (44.3 tok/s)
+2026-04-07 16:23:36,492 INFO pathfinder.ai.openai_compatible:   ... 2200 tokens in 49.4s (44.5 tok/s)
+2026-04-07 16:23:38,497 INFO pathfinder.ai.openai_compatible:   ... 2300 tokens in 51.4s (44.7 tok/s)
+2026-04-07 16:23:40,501 INFO pathfinder.ai.openai_compatible:   ... 2400 tokens in 53.4s (44.9 tok/s)
+2026-04-07 16:23:42,535 INFO pathfinder.ai.openai_compatible:   ... 2500 tokens in 55.5s (45.1 tok/s)
+2026-04-07 16:23:44,566 INFO pathfinder.ai.openai_compatible:   ... 2600 tokens in 57.5s (45.2 tok/s)
+2026-04-07 16:23:46,605 INFO pathfinder.ai.openai_compatible:   ... 2700 tokens in 59.5s (45.3 tok/s)
+2026-04-07 16:23:48,655 INFO pathfinder.ai.openai_compatible:   ... 2800 tokens in 61.6s (45.5 tok/s)
+2026-04-07 16:23:50,713 INFO pathfinder.ai.openai_compatible:   ... 2900 tokens in 63.7s (45.6 tok/s)
+2026-04-07 16:23:52,787 INFO pathfinder.ai.openai_compatible:   ... 3000 tokens in 65.7s (45.6 tok/s)
+2026-04-07 16:23:54,867 INFO pathfinder.ai.openai_compatible:   ... 3100 tokens in 67.8s (45.7 tok/s)
+2026-04-07 16:23:56,965 INFO pathfinder.ai.openai_compatible:   ... 3200 tokens in 69.9s (45.8 tok/s)
+2026-04-07 16:23:59,085 INFO pathfinder.ai.openai_compatible:   ... 3300 tokens in 72.0s (45.8 tok/s)
+2026-04-07 16:24:01,202 INFO pathfinder.ai.openai_compatible:   ... 3400 tokens in 74.1s (45.9 tok/s)
+2026-04-07 16:24:03,343 INFO pathfinder.ai.openai_compatible:   ... 3500 tokens in 76.3s (45.9 tok/s)
+2026-04-07 16:24:05,493 INFO pathfinder.ai.openai_compatible:   ... 3600 tokens in 78.4s (45.9 tok/s)
+2026-04-07 16:24:07,649 INFO pathfinder.ai.openai_compatible:   ... 3700 tokens in 80.6s (45.9 tok/s)
+2026-04-07 16:24:09,823 INFO pathfinder.ai.openai_compatible:   ... 3800 tokens in 82.8s (45.9 tok/s)
+2026-04-07 16:24:12,009 INFO pathfinder.ai.openai_compatible:   ... 3900 tokens in 84.9s (45.9 tok/s)
+2026-04-07 16:24:14,205 INFO pathfinder.ai.openai_compatible:   ... 4000 tokens in 87.1s (45.9 tok/s)
+2026-04-07 16:24:16,323 INFO pathfinder.ai.openai_compatible: Response: 4096 tokens, 15834 chars in 89.3s (45.9 tok/s)
+2026-04-07 16:24:16,325 ERROR pathfinder.ai.openai_compatible: Failed to parse perception response: Expecting value: line 445 column 26 (char 15826)
+2026-04-07 16:24:16,327 INFO pathfinder.layers.perception: Perceived: Failed to parse AI response (type=unknown, 0 elements, confidence=0.00)
+2026-04-07 16:24:16,334 INFO pathfinder.layers.perception: Observation saved to exploration/20260407-103228-ca64/step_020_observation.json
+2026-04-07 16:24:16,336 INFO pathfinder.orchestrator.agent_loop: Perceived: Failed to parse AI response (unknown, 0 elements)
+2026-04-07 16:24:16,337 INFO pathfinder.layers.world_modeling: Updating model (v19) with 1 new observations
+2026-04-07 16:24:16,338 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 16:24:18,562 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 16:24:20,204 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 3.9s (25.9 tok/s)
+2026-04-07 16:24:21,893 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 5.6s (36.0 tok/s)
+2026-04-07 16:24:23,565 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 7.2s (41.5 tok/s)
+2026-04-07 16:24:25,269 INFO pathfinder.ai.openai_compatible:   ... 400 tokens in 8.9s (44.8 tok/s)
+2026-04-07 16:24:26,974 INFO pathfinder.ai.openai_compatible:   ... 500 tokens in 10.6s (47.0 tok/s)
+2026-04-07 16:24:28,704 INFO pathfinder.ai.openai_compatible:   ... 600 tokens in 12.4s (48.5 tok/s)
+2026-04-07 16:24:30,443 INFO pathfinder.ai.openai_compatible:   ... 700 tokens in 14.1s (49.6 tok/s)
+2026-04-07 16:24:32,180 INFO pathfinder.ai.openai_compatible:   ... 800 tokens in 15.8s (50.5 tok/s)
+2026-04-07 16:24:33,939 INFO pathfinder.ai.openai_compatible:   ... 900 tokens in 17.6s (51.1 tok/s)
+2026-04-07 16:24:35,697 INFO pathfinder.ai.openai_compatible:   ... 1000 tokens in 19.4s (51.7 tok/s)
+2026-04-07 16:24:37,464 INFO pathfinder.ai.openai_compatible:   ... 1100 tokens in 21.1s (52.1 tok/s)
+2026-04-07 16:24:39,258 INFO pathfinder.ai.openai_compatible:   ... 1200 tokens in 22.9s (52.4 tok/s)
+2026-04-07 16:24:41,053 INFO pathfinder.ai.openai_compatible:   ... 1300 tokens in 24.7s (52.6 tok/s)
+2026-04-07 16:24:41,304 INFO pathfinder.ai.openai_compatible: Response: 1313 tokens, 5196 chars in 25.0s (52.6 tok/s)
+2026-04-07 16:24:41,306 INFO pathfinder.layers.world_modeling: Model updated to v20: 4 screens, 12 transitions, 5 capabilities, 3 entities, 1 frontier, 1 anomalies (coverage=30%, confidence=50%)
+2026-04-07 16:24:41,308 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 16:24:44,393 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 16:24:46,085 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 4.8s (20.9 tok/s)
+2026-04-07 16:24:47,821 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 6.5s (30.7 tok/s)
+2026-04-07 16:24:47,855 INFO pathfinder.ai.openai_compatible: Response: 201 tokens, 870 chars in 6.5s (30.7 tok/s)
+2026-04-07 16:24:47,858 INFO pathfinder.orchestrator.agent_loop: Plan: ExplorationPlan(navigate: Navigate away from the current screen as it is an unknown type and requires user input.)
+2026-04-07 16:24:47,859 INFO pathfinder.orchestrator.agent_loop: Executing: Navigate away from the current screen as it is an unknown type and requires user input.
+2026-04-07 16:24:49,864 INFO pathfinder.orchestrator.agent_loop: === Step 21 / 50 ===
+2026-04-07 16:25:00,522 INFO pathfinder.device.web.adapter: Screenshot saved to exploration/20260407-103228-ca64/screenshot.png
+2026-04-07 16:25:00,523 INFO pathfinder.layers.perception: Captured screenshot: exploration/20260407-103228-ca64/screenshot.png
+2026-04-07 16:25:00,527 INFO pathfinder.device.web.adapter: DOM structure extracted (243 chars)
+2026-04-07 16:25:00,527 INFO pathfinder.layers.perception: Captured UI structure (243 chars)
+2026-04-07 16:25:00,528 INFO pathfinder.layers.perception: Perceiving screenshot: exploration/20260407-103228-ca64/screenshot.png
+2026-04-07 16:25:00,530 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 (with screenshot) — this may take a few minutes for local models...
+2026-04-07 16:25:09,085 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 16:25:10,818 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 10.3s (9.7 tok/s)
+2026-04-07 16:25:12,613 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 12.1s (16.6 tok/s)
+2026-04-07 16:25:14,422 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 13.9s (21.6 tok/s)
+2026-04-07 16:25:16,224 INFO pathfinder.ai.openai_compatible:   ... 400 tokens in 15.7s (25.5 tok/s)
+2026-04-07 16:25:18,046 INFO pathfinder.ai.openai_compatible:   ... 500 tokens in 17.5s (28.5 tok/s)
+2026-04-07 16:25:19,869 INFO pathfinder.ai.openai_compatible:   ... 600 tokens in 19.3s (31.0 tok/s)
+2026-04-07 16:25:21,718 INFO pathfinder.ai.openai_compatible:   ... 700 tokens in 21.2s (33.0 tok/s)
+2026-04-07 16:25:23,368 INFO pathfinder.ai.openai_compatible: Response: 788 tokens, 3068 chars in 22.8s (34.5 tok/s)
+2026-04-07 16:25:23,371 INFO pathfinder.layers.perception: Perceived: This screen is for searching and exploring cricket statistics. (type=search, 6 elements, confidence=0.90)
+2026-04-07 16:25:23,377 INFO pathfinder.layers.perception: Observation saved to exploration/20260407-103228-ca64/step_021_observation.json
+2026-04-07 16:25:23,379 INFO pathfinder.orchestrator.agent_loop: Perceived: This screen is for searching and exploring cricket statistics. (search, 6 elements)
+2026-04-07 16:25:23,380 INFO pathfinder.layers.world_modeling: Updating model (v20) with 1 new observations
+2026-04-07 16:25:23,381 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 16:25:26,130 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 16:25:27,794 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 4.4s (22.7 tok/s)
+2026-04-07 16:25:29,491 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 6.1s (32.7 tok/s)
+2026-04-07 16:25:31,198 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 7.8s (38.4 tok/s)
+2026-04-07 16:25:32,927 INFO pathfinder.ai.openai_compatible:   ... 400 tokens in 9.5s (41.9 tok/s)
+2026-04-07 16:25:34,675 INFO pathfinder.ai.openai_compatible:   ... 500 tokens in 11.3s (44.3 tok/s)
+2026-04-07 16:25:36,463 INFO pathfinder.ai.openai_compatible:   ... 600 tokens in 13.1s (45.9 tok/s)
+2026-04-07 16:25:38,236 INFO pathfinder.ai.openai_compatible:   ... 700 tokens in 14.9s (47.1 tok/s)
+2026-04-07 16:25:40,017 INFO pathfinder.ai.openai_compatible:   ... 800 tokens in 16.6s (48.1 tok/s)
+2026-04-07 16:25:41,795 INFO pathfinder.ai.openai_compatible:   ... 900 tokens in 18.4s (48.9 tok/s)
+2026-04-07 16:25:43,599 INFO pathfinder.ai.openai_compatible:   ... 1000 tokens in 20.2s (49.5 tok/s)
+2026-04-07 16:25:45,414 INFO pathfinder.ai.openai_compatible:   ... 1100 tokens in 22.0s (49.9 tok/s)
+2026-04-07 16:25:47,252 INFO pathfinder.ai.openai_compatible:   ... 1200 tokens in 23.9s (50.3 tok/s)
+2026-04-07 16:25:49,082 INFO pathfinder.ai.openai_compatible:   ... 1300 tokens in 25.7s (50.6 tok/s)
+2026-04-07 16:25:49,356 INFO pathfinder.ai.openai_compatible: Response: 1314 tokens, 5223 chars in 26.0s (50.6 tok/s)
+2026-04-07 16:25:49,359 INFO pathfinder.layers.world_modeling: Model updated to v21: 4 screens, 12 transitions, 5 capabilities, 3 entities, 1 frontier, 1 anomalies (coverage=30%, confidence=50%)
+2026-04-07 16:25:49,361 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 16:25:52,803 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 16:25:54,594 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 5.2s (19.1 tok/s)
+2026-04-07 16:25:56,351 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 7.0s (28.6 tok/s)
+2026-04-07 16:25:56,599 INFO pathfinder.ai.openai_compatible: Response: 213 tokens, 924 chars in 7.2s (29.4 tok/s)
+2026-04-07 16:25:56,601 INFO pathfinder.orchestrator.agent_loop: Plan: ExplorationPlan(click: Click on the suggestion for most runs conceded by spinners in a team innings in T20Is to explore the search results)
+2026-04-07 16:25:56,603 WARNING pathfinder.orchestrator.agent_loop: Unknown action type 'click', defaulting to wait
+2026-04-07 16:25:56,604 INFO pathfinder.orchestrator.agent_loop: Executing: Click on the suggestion for most runs conceded by spinners in a team innings in T20Is to explore the search results
+2026-04-07 16:25:58,606 INFO pathfinder.orchestrator.agent_loop: === Step 22 / 50 ===
+2026-04-07 16:26:09,422 INFO pathfinder.device.web.adapter: Screenshot saved to exploration/20260407-103228-ca64/screenshot.png
+2026-04-07 16:26:09,423 INFO pathfinder.layers.perception: Captured screenshot: exploration/20260407-103228-ca64/screenshot.png
+2026-04-07 16:26:09,431 INFO pathfinder.device.web.adapter: DOM structure extracted (243 chars)
+2026-04-07 16:26:09,432 INFO pathfinder.layers.perception: Captured UI structure (243 chars)
+2026-04-07 16:26:09,433 INFO pathfinder.layers.perception: Perceiving screenshot: exploration/20260407-103228-ca64/screenshot.png
+2026-04-07 16:26:09,436 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 (with screenshot) — this may take a few minutes for local models...
+2026-04-07 16:26:16,746 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 16:26:18,480 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 9.0s (11.1 tok/s)
+2026-04-07 16:26:20,259 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 10.8s (18.5 tok/s)
+2026-04-07 16:26:22,052 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 12.6s (23.8 tok/s)
+2026-04-07 16:26:23,859 INFO pathfinder.ai.openai_compatible:   ... 400 tokens in 14.4s (27.7 tok/s)
+2026-04-07 16:26:25,689 INFO pathfinder.ai.openai_compatible:   ... 500 tokens in 16.3s (30.8 tok/s)
+2026-04-07 16:26:27,490 INFO pathfinder.ai.openai_compatible:   ... 600 tokens in 18.1s (33.2 tok/s)
+2026-04-07 16:26:29,337 INFO pathfinder.ai.openai_compatible:   ... 700 tokens in 19.9s (35.2 tok/s)
+2026-04-07 16:26:31,190 INFO pathfinder.ai.openai_compatible:   ... 800 tokens in 21.8s (36.8 tok/s)
+2026-04-07 16:26:31,264 INFO pathfinder.ai.openai_compatible: Response: 803 tokens, 3183 chars in 21.8s (36.8 tok/s)
+2026-04-07 16:26:31,265 INFO pathfinder.layers.perception: Perceived: This screen is for searching and exploring cricket statistics. (type=search, 6 elements, confidence=0.90)
+2026-04-07 16:26:31,273 INFO pathfinder.layers.perception: Observation saved to exploration/20260407-103228-ca64/step_022_observation.json
+2026-04-07 16:26:31,273 INFO pathfinder.orchestrator.agent_loop: Perceived: This screen is for searching and exploring cricket statistics. (search, 6 elements)
+2026-04-07 16:26:31,274 INFO pathfinder.layers.world_modeling: Updating model (v21) with 1 new observations
+2026-04-07 16:26:31,275 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 16:26:33,898 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 16:26:35,556 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 4.3s (23.4 tok/s)
+2026-04-07 16:26:37,256 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 6.0s (33.4 tok/s)
+2026-04-07 16:26:38,960 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 7.7s (39.0 tok/s)
+2026-04-07 16:26:40,715 INFO pathfinder.ai.openai_compatible:   ... 400 tokens in 9.4s (42.4 tok/s)
+2026-04-07 16:26:42,471 INFO pathfinder.ai.openai_compatible:   ... 500 tokens in 11.2s (44.7 tok/s)
+2026-04-07 16:26:44,239 INFO pathfinder.ai.openai_compatible:   ... 600 tokens in 13.0s (46.3 tok/s)
+2026-04-07 16:26:46,027 INFO pathfinder.ai.openai_compatible:   ... 700 tokens in 14.8s (47.5 tok/s)
+2026-04-07 16:26:47,809 INFO pathfinder.ai.openai_compatible:   ... 800 tokens in 16.5s (48.4 tok/s)
+2026-04-07 16:26:49,594 INFO pathfinder.ai.openai_compatible:   ... 900 tokens in 18.3s (49.1 tok/s)
+2026-04-07 16:26:51,391 INFO pathfinder.ai.openai_compatible:   ... 1000 tokens in 20.1s (49.7 tok/s)
+2026-04-07 16:26:53,193 INFO pathfinder.ai.openai_compatible:   ... 1100 tokens in 21.9s (50.2 tok/s)
+2026-04-07 16:26:55,019 INFO pathfinder.ai.openai_compatible:   ... 1200 tokens in 23.7s (50.5 tok/s)
+2026-04-07 16:26:56,859 INFO pathfinder.ai.openai_compatible:   ... 1300 tokens in 25.6s (50.8 tok/s)
+2026-04-07 16:26:57,132 INFO pathfinder.ai.openai_compatible: Response: 1314 tokens, 5223 chars in 25.9s (50.8 tok/s)
+2026-04-07 16:26:57,134 INFO pathfinder.layers.world_modeling: Model updated to v22: 4 screens, 12 transitions, 5 capabilities, 3 entities, 1 frontier, 1 anomalies (coverage=30%, confidence=50%)
+2026-04-07 16:26:57,136 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 16:27:00,544 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 16:27:02,258 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 5.1s (19.5 tok/s)
+2026-04-07 16:27:04,011 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 6.9s (29.1 tok/s)
+2026-04-07 16:27:04,609 INFO pathfinder.ai.openai_compatible: Response: 233 tokens, 1017 chars in 7.5s (31.2 tok/s)
+2026-04-07 16:27:04,611 INFO pathfinder.orchestrator.agent_loop: Plan: ExplorationPlan(click: Click on the suggestion for most runs conceded by spinners in a team innings in T20Is to explore the search results)
+2026-04-07 16:27:04,612 WARNING pathfinder.orchestrator.agent_loop: Unknown action type 'click', defaulting to wait
+2026-04-07 16:27:04,613 INFO pathfinder.orchestrator.agent_loop: Executing: Click on the suggestion for most runs conceded by spinners in a team innings in T20Is to explore the search results
+2026-04-07 16:27:06,616 INFO pathfinder.orchestrator.agent_loop: === Step 23 / 50 ===
+2026-04-07 16:27:17,270 INFO pathfinder.device.web.adapter: Screenshot saved to exploration/20260407-103228-ca64/screenshot.png
+2026-04-07 16:27:17,271 INFO pathfinder.layers.perception: Captured screenshot: exploration/20260407-103228-ca64/screenshot.png
+2026-04-07 16:27:17,274 INFO pathfinder.device.web.adapter: DOM structure extracted (243 chars)
+2026-04-07 16:27:17,275 INFO pathfinder.layers.perception: Captured UI structure (243 chars)
+2026-04-07 16:27:17,275 INFO pathfinder.layers.perception: Perceiving screenshot: exploration/20260407-103228-ca64/screenshot.png
+2026-04-07 16:27:17,278 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 (with screenshot) — this may take a few minutes for local models...
+2026-04-07 16:27:24,487 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 16:27:26,217 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 8.9s (11.2 tok/s)
+2026-04-07 16:27:27,980 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 10.7s (18.7 tok/s)
+2026-04-07 16:27:29,739 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 12.5s (24.1 tok/s)
+2026-04-07 16:27:31,534 INFO pathfinder.ai.openai_compatible:   ... 400 tokens in 14.3s (28.1 tok/s)
+2026-04-07 16:27:33,339 INFO pathfinder.ai.openai_compatible:   ... 500 tokens in 16.1s (31.1 tok/s)
+2026-04-07 16:27:35,155 INFO pathfinder.ai.openai_compatible:   ... 600 tokens in 17.9s (33.6 tok/s)
+2026-04-07 16:27:36,997 INFO pathfinder.ai.openai_compatible:   ... 700 tokens in 19.7s (35.5 tok/s)
+2026-04-07 16:27:38,638 INFO pathfinder.ai.openai_compatible: Response: 788 tokens, 3068 chars in 21.4s (36.9 tok/s)
+2026-04-07 16:27:38,641 INFO pathfinder.layers.perception: Perceived: This screen is for searching and exploring cricket statistics. (type=search, 6 elements, confidence=0.90)
+2026-04-07 16:27:38,648 INFO pathfinder.layers.perception: Observation saved to exploration/20260407-103228-ca64/step_023_observation.json
+2026-04-07 16:27:38,649 INFO pathfinder.orchestrator.agent_loop: Perceived: This screen is for searching and exploring cricket statistics. (search, 6 elements)
+2026-04-07 16:27:38,650 WARNING pathfinder.orchestrator.agent_loop: STUCK: seen screen 'search|6|list_item,list_item,list_item,list_item,list_item,text_field' 3 times consecutively
+2026-04-07 16:27:38,651 INFO pathfinder.layers.world_modeling: Updating model (v22) with 1 new observations
+2026-04-07 16:27:38,652 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 16:27:41,226 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 16:27:42,871 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 4.2s (23.7 tok/s)
+2026-04-07 16:27:44,557 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 5.9s (33.9 tok/s)
+2026-04-07 16:27:46,250 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 7.6s (39.5 tok/s)
+2026-04-07 16:27:47,963 INFO pathfinder.ai.openai_compatible:   ... 400 tokens in 9.3s (43.0 tok/s)
+2026-04-07 16:27:49,695 INFO pathfinder.ai.openai_compatible:   ... 500 tokens in 11.0s (45.3 tok/s)
+2026-04-07 16:27:51,429 INFO pathfinder.ai.openai_compatible:   ... 600 tokens in 12.8s (47.0 tok/s)
+2026-04-07 16:27:53,187 INFO pathfinder.ai.openai_compatible:   ... 700 tokens in 14.5s (48.2 tok/s)
+2026-04-07 16:27:54,949 INFO pathfinder.ai.openai_compatible:   ... 800 tokens in 16.3s (49.1 tok/s)
+2026-04-07 16:27:56,716 INFO pathfinder.ai.openai_compatible:   ... 900 tokens in 18.1s (49.8 tok/s)
+2026-04-07 16:27:58,506 INFO pathfinder.ai.openai_compatible:   ... 1000 tokens in 19.8s (50.4 tok/s)
+2026-04-07 16:28:00,294 INFO pathfinder.ai.openai_compatible:   ... 1100 tokens in 21.6s (50.8 tok/s)
+2026-04-07 16:28:02,102 INFO pathfinder.ai.openai_compatible:   ... 1200 tokens in 23.4s (51.2 tok/s)
+2026-04-07 16:28:03,927 INFO pathfinder.ai.openai_compatible:   ... 1300 tokens in 25.3s (51.4 tok/s)
+2026-04-07 16:28:04,201 INFO pathfinder.ai.openai_compatible: Response: 1314 tokens, 5223 chars in 25.5s (51.4 tok/s)
+2026-04-07 16:28:04,202 INFO pathfinder.layers.world_modeling: Model updated to v23: 4 screens, 12 transitions, 5 capabilities, 3 entities, 1 frontier, 1 anomalies (coverage=30%, confidence=50%)
+2026-04-07 16:28:04,204 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 16:28:07,573 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 16:28:09,285 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 5.1s (19.7 tok/s)
+2026-04-07 16:28:10,922 INFO pathfinder.ai.openai_compatible: Response: 193 tokens, 815 chars in 6.7s (28.7 tok/s)
+2026-04-07 16:28:10,925 INFO pathfinder.orchestrator.agent_loop: Plan: ExplorationPlan(click: Click on the 'Ask Cricinfo' button to explore its functionality)
+2026-04-07 16:28:10,926 WARNING pathfinder.orchestrator.agent_loop: Unknown action type 'click', defaulting to wait
+2026-04-07 16:28:10,927 INFO pathfinder.orchestrator.agent_loop: Executing: Click on the 'Ask Cricinfo' button to explore its functionality
+2026-04-07 16:28:12,929 INFO pathfinder.orchestrator.agent_loop: === Step 24 / 50 ===
+2026-04-07 16:28:23,575 INFO pathfinder.device.web.adapter: Screenshot saved to exploration/20260407-103228-ca64/screenshot.png
+2026-04-07 16:28:23,576 INFO pathfinder.layers.perception: Captured screenshot: exploration/20260407-103228-ca64/screenshot.png
+2026-04-07 16:28:23,578 INFO pathfinder.device.web.adapter: DOM structure extracted (243 chars)
+2026-04-07 16:28:23,578 INFO pathfinder.layers.perception: Captured UI structure (243 chars)
+2026-04-07 16:28:23,579 INFO pathfinder.layers.perception: Perceiving screenshot: exploration/20260407-103228-ca64/screenshot.png
+2026-04-07 16:28:23,582 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 (with screenshot) — this may take a few minutes for local models...
+2026-04-07 16:28:30,770 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 16:28:32,507 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 8.9s (11.2 tok/s)
+2026-04-07 16:28:34,269 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 10.7s (18.7 tok/s)
+2026-04-07 16:28:36,048 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 12.5s (24.1 tok/s)
+2026-04-07 16:28:37,835 INFO pathfinder.ai.openai_compatible:   ... 400 tokens in 14.3s (28.1 tok/s)
+2026-04-07 16:28:39,652 INFO pathfinder.ai.openai_compatible:   ... 500 tokens in 16.1s (31.1 tok/s)
+2026-04-07 16:28:41,447 INFO pathfinder.ai.openai_compatible:   ... 600 tokens in 17.9s (33.6 tok/s)
+2026-04-07 16:28:43,285 INFO pathfinder.ai.openai_compatible:   ... 700 tokens in 19.7s (35.5 tok/s)
+2026-04-07 16:28:44,811 INFO pathfinder.ai.openai_compatible: Response: 782 tokens, 3054 chars in 21.2s (36.8 tok/s)
+2026-04-07 16:28:44,813 INFO pathfinder.layers.perception: Perceived: This screen is for searching and exploring cricket statistics. (type=search, 6 elements, confidence=0.90)
+2026-04-07 16:28:44,819 INFO pathfinder.layers.perception: Observation saved to exploration/20260407-103228-ca64/step_024_observation.json
+2026-04-07 16:28:44,820 INFO pathfinder.orchestrator.agent_loop: Perceived: This screen is for searching and exploring cricket statistics. (search, 6 elements)
+2026-04-07 16:28:44,821 WARNING pathfinder.orchestrator.agent_loop: STUCK: seen screen 'search|6|list_item,list_item,list_item,list_item,list_item,text_field' 4 times consecutively
+2026-04-07 16:28:44,822 INFO pathfinder.layers.world_modeling: Updating model (v23) with 1 new observations
+2026-04-07 16:28:44,822 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 16:28:47,335 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 16:28:48,982 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 4.2s (24.0 tok/s)
+2026-04-07 16:28:50,665 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 5.8s (34.2 tok/s)
+2026-04-07 16:28:52,363 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 7.5s (39.8 tok/s)
+2026-04-07 16:28:54,060 INFO pathfinder.ai.openai_compatible:   ... 400 tokens in 9.2s (43.3 tok/s)
+2026-04-07 16:28:55,788 INFO pathfinder.ai.openai_compatible:   ... 500 tokens in 11.0s (45.6 tok/s)
+2026-04-07 16:28:57,525 INFO pathfinder.ai.openai_compatible:   ... 600 tokens in 12.7s (47.2 tok/s)
+2026-04-07 16:28:59,276 INFO pathfinder.ai.openai_compatible:   ... 700 tokens in 14.5s (48.4 tok/s)
+2026-04-07 16:29:01,033 INFO pathfinder.ai.openai_compatible:   ... 800 tokens in 16.2s (49.4 tok/s)
+2026-04-07 16:29:02,792 INFO pathfinder.ai.openai_compatible:   ... 900 tokens in 18.0s (50.1 tok/s)
+2026-04-07 16:29:04,580 INFO pathfinder.ai.openai_compatible:   ... 1000 tokens in 19.8s (50.6 tok/s)
+2026-04-07 16:29:06,366 INFO pathfinder.ai.openai_compatible:   ... 1100 tokens in 21.5s (51.1 tok/s)
+2026-04-07 16:29:08,171 INFO pathfinder.ai.openai_compatible:   ... 1200 tokens in 23.3s (51.4 tok/s)
+2026-04-07 16:29:09,984 INFO pathfinder.ai.openai_compatible:   ... 1300 tokens in 25.2s (51.7 tok/s)
+2026-04-07 16:29:10,294 INFO pathfinder.ai.openai_compatible: Response: 1316 tokens, 5231 chars in 25.5s (51.7 tok/s)
+2026-04-07 16:29:10,297 INFO pathfinder.layers.world_modeling: Model updated to v24: 4 screens, 12 transitions, 5 capabilities, 3 entities, 1 frontier, 1 anomalies (coverage=30%, confidence=50%)
+2026-04-07 16:29:10,298 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 16:29:13,652 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 16:29:15,367 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 5.1s (19.7 tok/s)
+2026-04-07 16:29:17,121 INFO pathfinder.ai.openai_compatible: Response: 199 tokens, 799 chars in 6.8s (29.2 tok/s)
+2026-04-07 16:29:17,123 INFO pathfinder.orchestrator.agent_loop: Plan: ExplorationPlan(click: Click on the 'Ask Cricinfo' button to explore its functionality)
+2026-04-07 16:29:17,125 WARNING pathfinder.orchestrator.agent_loop: Unknown action type 'click', defaulting to wait
+2026-04-07 16:29:17,126 INFO pathfinder.orchestrator.agent_loop: Executing: Click on the 'Ask Cricinfo' button to explore its functionality
+2026-04-07 16:29:19,129 INFO pathfinder.orchestrator.agent_loop: === Step 25 / 50 ===
+2026-04-07 16:29:29,753 INFO pathfinder.device.web.adapter: Screenshot saved to exploration/20260407-103228-ca64/screenshot.png
+2026-04-07 16:29:29,754 INFO pathfinder.layers.perception: Captured screenshot: exploration/20260407-103228-ca64/screenshot.png
+2026-04-07 16:29:29,757 INFO pathfinder.device.web.adapter: DOM structure extracted (243 chars)
+2026-04-07 16:29:29,757 INFO pathfinder.layers.perception: Captured UI structure (243 chars)
+2026-04-07 16:29:29,758 INFO pathfinder.layers.perception: Perceiving screenshot: exploration/20260407-103228-ca64/screenshot.png
+2026-04-07 16:29:29,761 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 (with screenshot) — this may take a few minutes for local models...
+2026-04-07 16:29:36,939 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 16:29:38,705 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 8.9s (11.2 tok/s)
+2026-04-07 16:29:40,502 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 10.7s (18.6 tok/s)
+2026-04-07 16:29:42,299 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 12.5s (23.9 tok/s)
+2026-04-07 16:29:44,137 INFO pathfinder.ai.openai_compatible:   ... 400 tokens in 14.4s (27.8 tok/s)
+2026-04-07 16:29:45,993 INFO pathfinder.ai.openai_compatible:   ... 500 tokens in 16.2s (30.8 tok/s)
+2026-04-07 16:29:47,811 INFO pathfinder.ai.openai_compatible:   ... 600 tokens in 18.0s (33.2 tok/s)
+2026-04-07 16:29:49,653 INFO pathfinder.ai.openai_compatible:   ... 700 tokens in 19.9s (35.2 tok/s)
+2026-04-07 16:29:51,082 INFO pathfinder.ai.openai_compatible: Response: 777 tokens, 3019 chars in 21.3s (36.4 tok/s)
+2026-04-07 16:29:51,085 INFO pathfinder.layers.perception: Perceived: This screen is for searching and exploring cricket statistics. (type=search, 6 elements, confidence=0.90)
+2026-04-07 16:29:51,092 INFO pathfinder.layers.perception: Observation saved to exploration/20260407-103228-ca64/step_025_observation.json
+2026-04-07 16:29:51,094 INFO pathfinder.orchestrator.agent_loop: Perceived: This screen is for searching and exploring cricket statistics. (search, 6 elements)
+2026-04-07 16:29:51,095 WARNING pathfinder.orchestrator.agent_loop: STUCK: seen screen 'search|6|list_item,list_item,list_item,list_item,list_item,text_field' 5 times consecutively
+2026-04-07 16:29:51,096 INFO pathfinder.layers.world_modeling: Updating model (v24) with 1 new observations
+2026-04-07 16:29:51,097 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 16:29:53,628 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 16:29:55,278 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 4.2s (23.9 tok/s)
+2026-04-07 16:29:56,964 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 5.9s (34.1 tok/s)
+2026-04-07 16:29:58,664 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 7.6s (39.6 tok/s)
+2026-04-07 16:30:00,371 INFO pathfinder.ai.openai_compatible:   ... 400 tokens in 9.3s (43.1 tok/s)
+2026-04-07 16:30:02,103 INFO pathfinder.ai.openai_compatible:   ... 500 tokens in 11.0s (45.4 tok/s)
+2026-04-07 16:30:03,842 INFO pathfinder.ai.openai_compatible:   ... 600 tokens in 12.7s (47.1 tok/s)
+2026-04-07 16:30:05,589 INFO pathfinder.ai.openai_compatible:   ... 700 tokens in 14.5s (48.3 tok/s)
+2026-04-07 16:30:07,353 INFO pathfinder.ai.openai_compatible:   ... 800 tokens in 16.3s (49.2 tok/s)
+2026-04-07 16:30:09,116 INFO pathfinder.ai.openai_compatible:   ... 900 tokens in 18.0s (50.0 tok/s)
+2026-04-07 16:30:10,903 INFO pathfinder.ai.openai_compatible:   ... 1000 tokens in 19.8s (50.5 tok/s)
+2026-04-07 16:30:12,685 INFO pathfinder.ai.openai_compatible:   ... 1100 tokens in 21.6s (51.0 tok/s)
+2026-04-07 16:30:14,485 INFO pathfinder.ai.openai_compatible:   ... 1200 tokens in 23.4s (51.3 tok/s)
+2026-04-07 16:30:16,292 INFO pathfinder.ai.openai_compatible:   ... 1300 tokens in 25.2s (51.6 tok/s)
+2026-04-07 16:30:16,599 INFO pathfinder.ai.openai_compatible: Response: 1316 tokens, 5231 chars in 25.5s (51.6 tok/s)
+2026-04-07 16:30:16,601 INFO pathfinder.layers.world_modeling: Model updated to v25: 4 screens, 12 transitions, 5 capabilities, 3 entities, 1 frontier, 1 anomalies (coverage=30%, confidence=50%)
+2026-04-07 16:30:16,605 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 16:30:19,985 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 16:30:21,699 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 5.1s (19.6 tok/s)
+2026-04-07 16:30:23,446 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 6.8s (29.2 tok/s)
+2026-04-07 16:30:23,639 INFO pathfinder.ai.openai_compatible: Response: 210 tokens, 905 chars in 7.0s (29.9 tok/s)
+2026-04-07 16:30:23,641 INFO pathfinder.orchestrator.agent_loop: Plan: ExplorationPlan(click: Click on the suggestion for most runs conceded by spinners in a team innings in T20Is to explore the search results)
+2026-04-07 16:30:23,643 WARNING pathfinder.orchestrator.agent_loop: Force-navigating back: stuck for 5 steps
+2026-04-07 16:30:23,648 INFO pathfinder.orchestrator.agent_loop: Executing: Forced back — stuck on search|6|list_item,list_item,list_item,list_item,list_item,text_field
+2026-04-07 16:30:27,131 INFO pathfinder.orchestrator.agent_loop: === Step 26 / 50 ===
+2026-04-07 16:30:37,784 INFO pathfinder.device.web.adapter: Screenshot saved to exploration/20260407-103228-ca64/screenshot.png
+2026-04-07 16:30:37,785 INFO pathfinder.layers.perception: Captured screenshot: exploration/20260407-103228-ca64/screenshot.png
+2026-04-07 16:30:37,787 INFO pathfinder.device.web.adapter: DOM structure extracted (3140 chars)
+2026-04-07 16:30:37,787 INFO pathfinder.layers.perception: Captured UI structure (3140 chars)
+2026-04-07 16:30:37,788 INFO pathfinder.layers.perception: Perceiving screenshot: exploration/20260407-103228-ca64/screenshot.png
+2026-04-07 16:30:37,792 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 (with screenshot) — this may take a few minutes for local models...
+2026-04-07 16:30:46,745 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 16:30:48,592 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 10.8s (9.3 tok/s)
+2026-04-07 16:30:50,459 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 12.7s (15.8 tok/s)
+2026-04-07 16:30:52,361 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 14.6s (20.6 tok/s)
+2026-04-07 16:30:54,275 INFO pathfinder.ai.openai_compatible:   ... 400 tokens in 16.5s (24.3 tok/s)
+2026-04-07 16:30:56,204 INFO pathfinder.ai.openai_compatible:   ... 500 tokens in 18.4s (27.2 tok/s)
+2026-04-07 16:30:58,125 INFO pathfinder.ai.openai_compatible:   ... 600 tokens in 20.3s (29.5 tok/s)
+2026-04-07 16:31:00,064 INFO pathfinder.ai.openai_compatible:   ... 700 tokens in 22.3s (31.4 tok/s)
+2026-04-07 16:31:02,013 INFO pathfinder.ai.openai_compatible:   ... 800 tokens in 24.2s (33.0 tok/s)
+2026-04-07 16:31:03,967 INFO pathfinder.ai.openai_compatible:   ... 900 tokens in 26.2s (34.4 tok/s)
+2026-04-07 16:31:04,897 INFO pathfinder.ai.openai_compatible: Response: 946 tokens, 3322 chars in 27.1s (34.9 tok/s)
+2026-04-07 16:31:04,898 INFO pathfinder.layers.perception: Perceived: This screen is for displaying upcoming cricket matches and providing navigation to different cricket-related sections. (type=home, 6 elements, confidence=0.90)
+2026-04-07 16:31:04,910 INFO pathfinder.layers.perception: Observation saved to exploration/20260407-103228-ca64/step_026_observation.json
+2026-04-07 16:31:04,911 INFO pathfinder.orchestrator.agent_loop: Perceived: This screen is for displaying upcoming cricket matches and providing navigation to different cricket-related sections. (home, 6 elements)
+2026-04-07 16:31:04,911 INFO pathfinder.layers.world_modeling: Updating model (v25) with 1 new observations
+2026-04-07 16:31:04,911 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 16:31:07,737 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 16:31:09,422 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 4.5s (22.2 tok/s)
+2026-04-07 16:31:11,117 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 6.2s (32.2 tok/s)
+2026-04-07 16:31:12,850 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 7.9s (37.8 tok/s)
+2026-04-07 16:31:14,594 INFO pathfinder.ai.openai_compatible:   ... 400 tokens in 9.7s (41.3 tok/s)
+2026-04-07 16:31:16,348 INFO pathfinder.ai.openai_compatible:   ... 500 tokens in 11.4s (43.7 tok/s)
+2026-04-07 16:31:18,116 INFO pathfinder.ai.openai_compatible:   ... 600 tokens in 13.2s (45.4 tok/s)
+2026-04-07 16:31:19,885 INFO pathfinder.ai.openai_compatible:   ... 700 tokens in 15.0s (46.7 tok/s)
+2026-04-07 16:31:21,665 INFO pathfinder.ai.openai_compatible:   ... 800 tokens in 16.8s (47.8 tok/s)
+2026-04-07 16:31:23,457 INFO pathfinder.ai.openai_compatible:   ... 900 tokens in 18.5s (48.5 tok/s)
+2026-04-07 16:31:25,255 INFO pathfinder.ai.openai_compatible:   ... 1000 tokens in 20.3s (49.2 tok/s)
+2026-04-07 16:31:27,078 INFO pathfinder.ai.openai_compatible:   ... 1100 tokens in 22.2s (49.6 tok/s)
+2026-04-07 16:31:28,895 INFO pathfinder.ai.openai_compatible:   ... 1200 tokens in 24.0s (50.0 tok/s)
+2026-04-07 16:31:30,731 INFO pathfinder.ai.openai_compatible:   ... 1300 tokens in 25.8s (50.4 tok/s)
+2026-04-07 16:31:32,070 INFO pathfinder.ai.openai_compatible: Response: 1371 tokens, 5462 chars in 27.2s (50.5 tok/s)
+2026-04-07 16:31:32,073 INFO pathfinder.layers.world_modeling: Model updated to v26: 5 screens, 12 transitions, 5 capabilities, 3 entities, 1 frontier, 1 anomalies (coverage=30%, confidence=50%)
+2026-04-07 16:31:32,075 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 16:31:35,789 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 16:31:37,528 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 5.5s (18.3 tok/s)
+2026-04-07 16:31:39,304 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 7.2s (27.7 tok/s)
+2026-04-07 16:31:39,592 INFO pathfinder.ai.openai_compatible: Response: 214 tokens, 898 chars in 7.5s (28.5 tok/s)
+2026-04-07 16:31:39,595 INFO pathfinder.orchestrator.agent_loop: Plan: ExplorationPlan(click: Click on the 'Ask Cricinfo' button to explore its functionality)
+2026-04-07 16:31:39,596 WARNING pathfinder.orchestrator.agent_loop: Unknown action type 'click', defaulting to wait
+2026-04-07 16:31:39,597 INFO pathfinder.orchestrator.agent_loop: Executing: Click on the 'Ask Cricinfo' button to explore its functionality
+2026-04-07 16:31:41,600 INFO pathfinder.orchestrator.agent_loop: === Step 27 / 50 ===
+2026-04-07 16:31:52,251 INFO pathfinder.device.web.adapter: Screenshot saved to exploration/20260407-103228-ca64/screenshot.png
+2026-04-07 16:31:52,252 INFO pathfinder.layers.perception: Captured screenshot: exploration/20260407-103228-ca64/screenshot.png
+2026-04-07 16:31:52,255 INFO pathfinder.device.web.adapter: DOM structure extracted (3140 chars)
+2026-04-07 16:31:52,255 INFO pathfinder.layers.perception: Captured UI structure (3140 chars)
+2026-04-07 16:31:52,255 INFO pathfinder.layers.perception: Perceiving screenshot: exploration/20260407-103228-ca64/screenshot.png
+2026-04-07 16:31:52,260 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 (with screenshot) — this may take a few minutes for local models...
+2026-04-07 16:32:01,267 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 16:32:03,121 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 10.9s (9.2 tok/s)
+2026-04-07 16:32:05,011 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 12.8s (15.7 tok/s)
+2026-04-07 16:32:06,913 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 14.7s (20.5 tok/s)
+2026-04-07 16:32:08,827 INFO pathfinder.ai.openai_compatible:   ... 400 tokens in 16.6s (24.1 tok/s)
+2026-04-07 16:32:10,760 INFO pathfinder.ai.openai_compatible:   ... 500 tokens in 18.5s (27.0 tok/s)
+2026-04-07 16:32:12,696 INFO pathfinder.ai.openai_compatible:   ... 600 tokens in 20.4s (29.4 tok/s)
+2026-04-07 16:32:14,646 INFO pathfinder.ai.openai_compatible:   ... 700 tokens in 22.4s (31.3 tok/s)
+2026-04-07 16:32:16,608 INFO pathfinder.ai.openai_compatible:   ... 800 tokens in 24.3s (32.9 tok/s)
+2026-04-07 16:32:18,568 INFO pathfinder.ai.openai_compatible:   ... 900 tokens in 26.3s (34.2 tok/s)
+2026-04-07 16:32:20,548 INFO pathfinder.ai.openai_compatible:   ... 1000 tokens in 28.3s (35.4 tok/s)
+2026-04-07 16:32:21,800 INFO pathfinder.ai.openai_compatible: Response: 1062 tokens, 3743 chars in 29.5s (36.0 tok/s)
+2026-04-07 16:32:21,804 INFO pathfinder.layers.perception: Perceived: This screen is for displaying upcoming cricket matches and providing navigation to different cricket-related sections. (type=home, 7 elements, confidence=0.90)
+2026-04-07 16:32:21,811 INFO pathfinder.layers.perception: Observation saved to exploration/20260407-103228-ca64/step_027_observation.json
+2026-04-07 16:32:21,813 INFO pathfinder.orchestrator.agent_loop: Perceived: This screen is for displaying upcoming cricket matches and providing navigation to different cricket-related sections. (home, 7 elements)
+2026-04-07 16:32:21,814 INFO pathfinder.layers.world_modeling: Updating model (v26) with 1 new observations
+2026-04-07 16:32:21,815 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 16:32:24,720 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 16:32:26,404 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 4.6s (21.8 tok/s)
+2026-04-07 16:32:28,121 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 6.3s (31.7 tok/s)
+2026-04-07 16:32:29,850 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 8.0s (37.3 tok/s)
+2026-04-07 16:32:31,594 INFO pathfinder.ai.openai_compatible:   ... 400 tokens in 9.8s (40.9 tok/s)
+2026-04-07 16:32:33,360 INFO pathfinder.ai.openai_compatible:   ... 500 tokens in 11.5s (43.3 tok/s)
+2026-04-07 16:32:35,118 INFO pathfinder.ai.openai_compatible:   ... 600 tokens in 13.3s (45.1 tok/s)
+2026-04-07 16:32:36,891 INFO pathfinder.ai.openai_compatible:   ... 700 tokens in 15.1s (46.4 tok/s)
+2026-04-07 16:32:38,692 INFO pathfinder.ai.openai_compatible:   ... 800 tokens in 16.9s (47.4 tok/s)
+2026-04-07 16:32:40,495 INFO pathfinder.ai.openai_compatible:   ... 900 tokens in 18.7s (48.2 tok/s)
+2026-04-07 16:32:42,312 INFO pathfinder.ai.openai_compatible:   ... 1000 tokens in 20.5s (48.8 tok/s)
+2026-04-07 16:32:44,133 INFO pathfinder.ai.openai_compatible:   ... 1100 tokens in 22.3s (49.3 tok/s)
+2026-04-07 16:32:45,956 INFO pathfinder.ai.openai_compatible:   ... 1200 tokens in 24.1s (49.7 tok/s)
+2026-04-07 16:32:47,810 INFO pathfinder.ai.openai_compatible:   ... 1300 tokens in 26.0s (50.0 tok/s)
+2026-04-07 16:32:49,665 INFO pathfinder.ai.openai_compatible:   ... 1400 tokens in 27.8s (50.3 tok/s)
+2026-04-07 16:32:51,528 INFO pathfinder.ai.openai_compatible:   ... 1500 tokens in 29.7s (50.5 tok/s)
+2026-04-07 16:32:53,422 INFO pathfinder.ai.openai_compatible:   ... 1600 tokens in 31.6s (50.6 tok/s)
+2026-04-07 16:32:55,445 INFO pathfinder.ai.openai_compatible:   ... 1700 tokens in 33.6s (50.6 tok/s)
+2026-04-07 16:32:57,421 INFO pathfinder.ai.openai_compatible:   ... 1800 tokens in 35.6s (50.6 tok/s)
+2026-04-07 16:32:59,367 INFO pathfinder.ai.openai_compatible:   ... 1900 tokens in 37.6s (50.6 tok/s)
+2026-04-07 16:33:01,333 INFO pathfinder.ai.openai_compatible:   ... 2000 tokens in 39.5s (50.6 tok/s)
+2026-04-07 16:33:03,311 INFO pathfinder.ai.openai_compatible:   ... 2100 tokens in 41.5s (50.6 tok/s)
+2026-04-07 16:33:05,287 INFO pathfinder.ai.openai_compatible:   ... 2200 tokens in 43.5s (50.6 tok/s)
+2026-04-07 16:33:07,284 INFO pathfinder.ai.openai_compatible:   ... 2300 tokens in 45.5s (50.6 tok/s)
+2026-04-07 16:33:09,282 INFO pathfinder.ai.openai_compatible:   ... 2400 tokens in 47.5s (50.6 tok/s)
+2026-04-07 16:33:11,297 INFO pathfinder.ai.openai_compatible:   ... 2500 tokens in 49.5s (50.5 tok/s)
+2026-04-07 16:33:13,329 INFO pathfinder.ai.openai_compatible:   ... 2600 tokens in 51.5s (50.5 tok/s)
+2026-04-07 16:33:15,364 INFO pathfinder.ai.openai_compatible:   ... 2700 tokens in 53.5s (50.4 tok/s)
+2026-04-07 16:33:17,417 INFO pathfinder.ai.openai_compatible:   ... 2800 tokens in 55.6s (50.4 tok/s)
+2026-04-07 16:33:19,477 INFO pathfinder.ai.openai_compatible:   ... 2900 tokens in 57.7s (50.3 tok/s)
+2026-04-07 16:33:21,552 INFO pathfinder.ai.openai_compatible:   ... 3000 tokens in 59.7s (50.2 tok/s)
+2026-04-07 16:33:23,644 INFO pathfinder.ai.openai_compatible:   ... 3100 tokens in 61.8s (50.1 tok/s)
+2026-04-07 16:33:25,713 INFO pathfinder.ai.openai_compatible:   ... 3200 tokens in 63.9s (50.1 tok/s)
+2026-04-07 16:33:27,785 INFO pathfinder.ai.openai_compatible:   ... 3300 tokens in 66.0s (50.0 tok/s)
+2026-04-07 16:33:29,847 INFO pathfinder.ai.openai_compatible:   ... 3400 tokens in 68.0s (50.0 tok/s)
+2026-04-07 16:33:31,912 INFO pathfinder.ai.openai_compatible:   ... 3500 tokens in 70.1s (49.9 tok/s)
+2026-04-07 16:33:34,005 INFO pathfinder.ai.openai_compatible:   ... 3600 tokens in 72.2s (49.9 tok/s)
+2026-04-07 16:33:36,099 INFO pathfinder.ai.openai_compatible:   ... 3700 tokens in 74.3s (49.8 tok/s)
+2026-04-07 16:33:38,200 INFO pathfinder.ai.openai_compatible:   ... 3800 tokens in 76.4s (49.7 tok/s)
+2026-04-07 16:33:40,325 INFO pathfinder.ai.openai_compatible:   ... 3900 tokens in 78.5s (49.7 tok/s)
+2026-04-07 16:33:42,455 INFO pathfinder.ai.openai_compatible:   ... 4000 tokens in 80.6s (49.6 tok/s)
+2026-04-07 16:33:44,526 INFO pathfinder.ai.openai_compatible: Response: 4096 tokens, 16633 chars in 82.7s (49.5 tok/s)
+2026-04-07 16:33:44,529 ERROR pathfinder.ai.openai_compatible: Failed to parse world model response: Unterminated string starting at: line 554 column 7 (char 16632)
+2026-04-07 16:33:44,530 INFO pathfinder.layers.world_modeling: Model updated to v26: 5 screens, 12 transitions, 5 capabilities, 3 entities, 1 frontier, 1 anomalies (coverage=30%, confidence=50%)
+2026-04-07 16:33:44,532 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 16:33:48,409 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 16:33:50,132 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 5.6s (17.9 tok/s)
+2026-04-07 16:33:51,898 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 7.4s (27.2 tok/s)
+2026-04-07 16:33:52,203 INFO pathfinder.ai.openai_compatible: Response: 216 tokens, 902 chars in 7.7s (28.2 tok/s)
+2026-04-07 16:33:52,205 INFO pathfinder.orchestrator.agent_loop: Plan: ExplorationPlan(navigate: Navigate to the Ask Cricinfo section)
+2026-04-07 16:33:52,206 INFO pathfinder.orchestrator.agent_loop: Navigation requested to: https://www.espncricinfo.com/ask
+2026-04-07 16:33:52,207 INFO pathfinder.orchestrator.agent_loop: Executing: Navigate to the Ask Cricinfo section
+2026-04-07 16:33:52,207 INFO pathfinder.device.web.adapter: Navigating to: https://www.espncricinfo.com/ask
+2026-04-07 16:34:04,823 INFO pathfinder.orchestrator.agent_loop: === Step 28 / 50 ===
+2026-04-07 16:34:15,447 INFO pathfinder.device.web.adapter: Screenshot saved to exploration/20260407-103228-ca64/screenshot.png
+2026-04-07 16:34:15,447 INFO pathfinder.layers.perception: Captured screenshot: exploration/20260407-103228-ca64/screenshot.png
+2026-04-07 16:34:15,449 INFO pathfinder.device.web.adapter: DOM structure extracted (243 chars)
+2026-04-07 16:34:15,450 INFO pathfinder.layers.perception: Captured UI structure (243 chars)
+2026-04-07 16:34:15,450 INFO pathfinder.layers.perception: Perceiving screenshot: exploration/20260407-103228-ca64/screenshot.png
+2026-04-07 16:34:15,453 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 (with screenshot) — this may take a few minutes for local models...
+2026-04-07 16:34:22,722 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 16:34:24,441 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 9.0s (11.1 tok/s)
+2026-04-07 16:34:26,199 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 10.7s (18.6 tok/s)
+2026-04-07 16:34:27,992 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 12.5s (23.9 tok/s)
+2026-04-07 16:34:29,790 INFO pathfinder.ai.openai_compatible:   ... 400 tokens in 14.3s (27.9 tok/s)
+2026-04-07 16:34:31,604 INFO pathfinder.ai.openai_compatible:   ... 500 tokens in 16.2s (31.0 tok/s)
+2026-04-07 16:34:33,418 INFO pathfinder.ai.openai_compatible:   ... 600 tokens in 18.0s (33.4 tok/s)
+2026-04-07 16:34:35,252 INFO pathfinder.ai.openai_compatible:   ... 700 tokens in 19.8s (35.4 tok/s)
+2026-04-07 16:34:36,986 INFO pathfinder.ai.openai_compatible: Response: 793 tokens, 3019 chars in 21.5s (36.8 tok/s)
+2026-04-07 16:34:36,989 INFO pathfinder.layers.perception: Perceived: This screen is for searching and exploring cricket statistics and related queries. (type=search, 6 elements, confidence=0.90)
+2026-04-07 16:34:36,995 INFO pathfinder.layers.perception: Observation saved to exploration/20260407-103228-ca64/step_028_observation.json
+2026-04-07 16:34:36,996 INFO pathfinder.orchestrator.agent_loop: Perceived: This screen is for searching and exploring cricket statistics and related queries. (search, 6 elements)
+2026-04-07 16:34:36,998 INFO pathfinder.layers.world_modeling: Updating model (v26) with 1 new observations
+2026-04-07 16:34:36,999 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 16:34:39,617 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 16:34:41,269 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 4.3s (23.4 tok/s)
+2026-04-07 16:34:42,959 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 6.0s (33.6 tok/s)
+2026-04-07 16:34:44,647 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 7.6s (39.2 tok/s)
+2026-04-07 16:34:46,342 INFO pathfinder.ai.openai_compatible:   ... 400 tokens in 9.3s (42.8 tok/s)
+2026-04-07 16:34:48,060 INFO pathfinder.ai.openai_compatible:   ... 500 tokens in 11.1s (45.2 tok/s)
+2026-04-07 16:34:49,788 INFO pathfinder.ai.openai_compatible:   ... 600 tokens in 12.8s (46.9 tok/s)
+2026-04-07 16:34:51,532 INFO pathfinder.ai.openai_compatible:   ... 700 tokens in 14.5s (48.2 tok/s)
+2026-04-07 16:34:53,282 INFO pathfinder.ai.openai_compatible:   ... 800 tokens in 16.3s (49.1 tok/s)
+2026-04-07 16:34:55,050 INFO pathfinder.ai.openai_compatible:   ... 900 tokens in 18.1s (49.9 tok/s)
+2026-04-07 16:34:56,839 INFO pathfinder.ai.openai_compatible:   ... 1000 tokens in 19.8s (50.4 tok/s)
+2026-04-07 16:34:58,628 INFO pathfinder.ai.openai_compatible:   ... 1100 tokens in 21.6s (50.9 tok/s)
+2026-04-07 16:35:00,436 INFO pathfinder.ai.openai_compatible:   ... 1200 tokens in 23.4s (51.2 tok/s)
+2026-04-07 16:35:02,260 INFO pathfinder.ai.openai_compatible:   ... 1300 tokens in 25.3s (51.5 tok/s)
+2026-04-07 16:35:04,082 INFO pathfinder.ai.openai_compatible:   ... 1400 tokens in 27.1s (51.7 tok/s)
+2026-04-07 16:35:05,924 INFO pathfinder.ai.openai_compatible:   ... 1500 tokens in 28.9s (51.9 tok/s)
+2026-04-07 16:35:06,348 INFO pathfinder.ai.openai_compatible: Response: 1522 tokens, 6109 chars in 29.3s (51.9 tok/s)
+2026-04-07 16:35:06,351 INFO pathfinder.layers.world_modeling: Model updated to v27: 7 screens, 12 transitions, 5 capabilities, 3 entities, 1 frontier, 1 anomalies (coverage=30%, confidence=50%)
+2026-04-07 16:35:06,353 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 16:35:09,726 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 16:35:11,442 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 5.1s (19.7 tok/s)
+2026-04-07 16:35:13,095 INFO pathfinder.ai.openai_compatible: Response: 194 tokens, 859 chars in 6.7s (28.8 tok/s)
+2026-04-07 16:35:13,096 INFO pathfinder.orchestrator.agent_loop: Plan: ExplorationPlan(type: Type a search query for cricket statistics)
+2026-04-07 16:35:13,098 INFO pathfinder.orchestrator.agent_loop: Executing: Type a search query for cricket statistics
+2026-04-07 16:35:13,127 WARNING pathfinder.orchestrator.agent_loop: Action failed: Type failed: Cannot resolve element: Search field for cricket statistics
+2026-04-07 16:35:14,130 INFO pathfinder.orchestrator.agent_loop: === Step 29 / 50 ===
+2026-04-07 16:35:24,734 INFO pathfinder.device.web.adapter: Screenshot saved to exploration/20260407-103228-ca64/screenshot.png
+2026-04-07 16:35:24,735 INFO pathfinder.layers.perception: Captured screenshot: exploration/20260407-103228-ca64/screenshot.png
+2026-04-07 16:35:24,737 INFO pathfinder.device.web.adapter: DOM structure extracted (243 chars)
+2026-04-07 16:35:24,738 INFO pathfinder.layers.perception: Captured UI structure (243 chars)
+2026-04-07 16:35:24,738 INFO pathfinder.layers.perception: Perceiving screenshot: exploration/20260407-103228-ca64/screenshot.png
+2026-04-07 16:35:24,740 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 (with screenshot) — this may take a few minutes for local models...
+2026-04-07 16:35:31,933 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 16:35:33,648 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 8.9s (11.2 tok/s)
+2026-04-07 16:35:35,407 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 10.7s (18.8 tok/s)
+2026-04-07 16:35:37,180 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 12.4s (24.1 tok/s)
+2026-04-07 16:35:38,951 INFO pathfinder.ai.openai_compatible:   ... 400 tokens in 14.2s (28.1 tok/s)
+2026-04-07 16:35:40,741 INFO pathfinder.ai.openai_compatible:   ... 500 tokens in 16.0s (31.3 tok/s)
+2026-04-07 16:35:42,536 INFO pathfinder.ai.openai_compatible:   ... 600 tokens in 17.8s (33.7 tok/s)
+2026-04-07 16:35:44,343 INFO pathfinder.ai.openai_compatible:   ... 700 tokens in 19.6s (35.7 tok/s)
+2026-04-07 16:35:45,944 INFO pathfinder.ai.openai_compatible: Response: 787 tokens, 3020 chars in 21.2s (37.1 tok/s)
+2026-04-07 16:35:45,946 INFO pathfinder.layers.perception: Perceived: This screen is for searching and exploring cricket statistics and related queries. (type=search, 6 elements, confidence=0.90)
+2026-04-07 16:35:45,952 INFO pathfinder.layers.perception: Observation saved to exploration/20260407-103228-ca64/step_029_observation.json
+2026-04-07 16:35:45,953 INFO pathfinder.orchestrator.agent_loop: Perceived: This screen is for searching and exploring cricket statistics and related queries. (search, 6 elements)
+2026-04-07 16:35:45,955 INFO pathfinder.layers.world_modeling: Updating model (v27) with 1 new observations
+2026-04-07 16:35:45,956 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 16:35:48,462 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 16:35:50,123 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 4.2s (24.0 tok/s)
+2026-04-07 16:35:51,814 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 5.9s (34.1 tok/s)
+2026-04-07 16:35:53,508 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 7.6s (39.7 tok/s)
+2026-04-07 16:35:55,237 INFO pathfinder.ai.openai_compatible:   ... 400 tokens in 9.3s (43.1 tok/s)
+2026-04-07 16:35:57,008 INFO pathfinder.ai.openai_compatible:   ... 500 tokens in 11.1s (45.2 tok/s)
+2026-04-07 16:35:59,030 INFO pathfinder.ai.openai_compatible:   ... 600 tokens in 13.1s (45.9 tok/s)
+2026-04-07 16:36:00,855 INFO pathfinder.ai.openai_compatible:   ... 700 tokens in 14.9s (47.0 tok/s)
+2026-04-07 16:36:02,630 INFO pathfinder.ai.openai_compatible:   ... 800 tokens in 16.7s (48.0 tok/s)
+2026-04-07 16:36:04,410 INFO pathfinder.ai.openai_compatible:   ... 900 tokens in 18.5s (48.8 tok/s)
+2026-04-07 16:36:06,162 INFO pathfinder.ai.openai_compatible:   ... 1000 tokens in 20.2s (49.5 tok/s)
+2026-04-07 16:36:07,930 INFO pathfinder.ai.openai_compatible:   ... 1100 tokens in 22.0s (50.1 tok/s)
+2026-04-07 16:36:09,712 INFO pathfinder.ai.openai_compatible:   ... 1200 tokens in 23.8s (50.5 tok/s)
+2026-04-07 16:36:11,512 INFO pathfinder.ai.openai_compatible:   ... 1300 tokens in 25.6s (50.9 tok/s)
+2026-04-07 16:36:13,357 INFO pathfinder.ai.openai_compatible:   ... 1400 tokens in 27.4s (51.1 tok/s)
+2026-04-07 16:36:15,202 INFO pathfinder.ai.openai_compatible:   ... 1500 tokens in 29.2s (51.3 tok/s)
+2026-04-07 16:36:17,044 INFO pathfinder.ai.openai_compatible:   ... 1600 tokens in 31.1s (51.5 tok/s)
+2026-04-07 16:36:18,909 INFO pathfinder.ai.openai_compatible:   ... 1700 tokens in 33.0s (51.6 tok/s)
+2026-04-07 16:36:20,784 INFO pathfinder.ai.openai_compatible:   ... 1800 tokens in 34.8s (51.7 tok/s)
+2026-04-07 16:36:22,666 INFO pathfinder.ai.openai_compatible:   ... 1900 tokens in 36.7s (51.8 tok/s)
+2026-04-07 16:36:24,538 INFO pathfinder.ai.openai_compatible:   ... 2000 tokens in 38.6s (51.8 tok/s)
+2026-04-07 16:36:26,416 INFO pathfinder.ai.openai_compatible:   ... 2100 tokens in 40.5s (51.9 tok/s)
+2026-04-07 16:52:17,049 INFO pathfinder.ai.openai_compatible:   ... 2200 tokens in 42.7s (51.5 tok/s)
+2026-04-07 16:52:18,899 INFO pathfinder.ai.openai_compatible:   ... 2300 tokens in 44.6s (51.6 tok/s)
+2026-04-07 16:52:20,826 INFO pathfinder.ai.openai_compatible:   ... 2400 tokens in 46.5s (51.6 tok/s)
+2026-04-07 16:52:26,210 INFO pathfinder.ai.openai_compatible:   ... 2500 tokens in 51.9s (48.2 tok/s)
+2026-04-07 16:52:30,076 INFO pathfinder.ai.openai_compatible:   ... 2600 tokens in 55.7s (46.6 tok/s)
+2026-04-07 16:52:34,240 INFO pathfinder.ai.openai_compatible:   ... 2700 tokens in 59.9s (45.1 tok/s)
+2026-04-07 16:52:39,227 INFO pathfinder.ai.openai_compatible:   ... 2800 tokens in 64.9s (43.2 tok/s)
+2026-04-07 16:52:43,387 INFO pathfinder.ai.openai_compatible:   ... 2900 tokens in 69.0s (42.0 tok/s)
+2026-04-07 16:52:48,212 INFO pathfinder.ai.openai_compatible:   ... 3000 tokens in 73.9s (40.6 tok/s)
+2026-04-07 16:52:52,124 INFO pathfinder.ai.openai_compatible:   ... 3100 tokens in 77.8s (39.9 tok/s)
+2026-04-07 16:52:56,178 INFO pathfinder.ai.openai_compatible:   ... 3200 tokens in 81.8s (39.1 tok/s)
+2026-04-07 16:53:00,334 INFO pathfinder.ai.openai_compatible:   ... 3300 tokens in 86.0s (38.4 tok/s)
+2026-04-07 16:53:04,418 INFO pathfinder.ai.openai_compatible:   ... 3400 tokens in 90.1s (37.7 tok/s)
+2026-04-07 16:53:08,764 INFO pathfinder.ai.openai_compatible:   ... 3500 tokens in 94.4s (37.1 tok/s)
+2026-04-07 16:53:12,869 INFO pathfinder.ai.openai_compatible:   ... 3600 tokens in 98.5s (36.5 tok/s)
+2026-04-07 17:09:19,183 INFO pathfinder.ai.openai_compatible:   ... 3700 tokens in 103.6s (35.7 tok/s)
+2026-04-07 17:09:23,222 INFO pathfinder.ai.openai_compatible:   ... 3800 tokens in 107.7s (35.3 tok/s)
+2026-04-07 17:09:27,289 INFO pathfinder.ai.openai_compatible:   ... 3900 tokens in 111.7s (34.9 tok/s)
+2026-04-07 17:09:31,468 INFO pathfinder.ai.openai_compatible:   ... 4000 tokens in 115.9s (34.5 tok/s)
+2026-04-07 17:09:36,227 INFO pathfinder.ai.openai_compatible: Response: 4096 tokens, 17815 chars in 120.7s (33.9 tok/s)
+2026-04-07 17:09:36,229 ERROR pathfinder.ai.openai_compatible: Failed to parse world model response: Expecting property name enclosed in double quotes: line 516 column 52 (char 17809)
+2026-04-07 17:09:36,230 INFO pathfinder.layers.world_modeling: Model updated to v27: 7 screens, 12 transitions, 5 capabilities, 3 entities, 1 frontier, 1 anomalies (coverage=30%, confidence=50%)
+2026-04-07 17:09:36,232 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 17:09:43,293 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 17:09:46,960 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 10.7s (9.3 tok/s)
+2026-04-07 17:09:51,317 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 15.1s (13.3 tok/s)
+2026-04-07 17:09:51,518 INFO pathfinder.ai.openai_compatible: Response: 204 tokens, 875 chars in 15.3s (13.3 tok/s)
+2026-04-07 17:09:51,518 INFO pathfinder.orchestrator.agent_loop: Plan: ExplorationPlan(type: Type 'Test Matches' into the search field to explore the Ask Cricinfo section)
+2026-04-07 17:09:51,519 INFO pathfinder.orchestrator.agent_loop: Executing: Type 'Test Matches' into the search field to explore the Ask Cricinfo section
+2026-04-07 17:09:51,535 WARNING pathfinder.orchestrator.agent_loop: Action failed: Type failed: Cannot resolve element: Search field for cricket statistics
+2026-04-07 17:09:52,537 INFO pathfinder.orchestrator.agent_loop: === Step 30 / 50 ===
+2026-04-07 17:10:03,202 INFO pathfinder.device.web.adapter: Screenshot saved to exploration/20260407-103228-ca64/screenshot.png
+2026-04-07 17:10:03,203 INFO pathfinder.layers.perception: Captured screenshot: exploration/20260407-103228-ca64/screenshot.png
+2026-04-07 17:10:03,205 INFO pathfinder.device.web.adapter: DOM structure extracted (243 chars)
+2026-04-07 17:10:03,205 INFO pathfinder.layers.perception: Captured UI structure (243 chars)
+2026-04-07 17:10:03,206 INFO pathfinder.layers.perception: Perceiving screenshot: exploration/20260407-103228-ca64/screenshot.png
+2026-04-07 17:10:03,209 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 (with screenshot) — this may take a few minutes for local models...
+2026-04-07 17:13:37,070 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 17:13:39,537 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 13.4s (7.5 tok/s)
+2026-04-07 17:13:41,468 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 15.3s (13.0 tok/s)
+2026-04-07 17:13:43,363 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 17.2s (17.4 tok/s)
+2026-04-07 17:13:45,168 INFO pathfinder.ai.openai_compatible:   ... 400 tokens in 19.0s (21.0 tok/s)
+2026-04-07 17:13:46,943 INFO pathfinder.ai.openai_compatible:   ... 500 tokens in 20.8s (24.0 tok/s)
+2026-04-07 17:13:48,711 INFO pathfinder.ai.openai_compatible:   ... 600 tokens in 22.6s (26.6 tok/s)
+2026-04-07 17:13:50,497 INFO pathfinder.ai.openai_compatible:   ... 700 tokens in 24.4s (28.7 tok/s)
+2026-04-07 17:13:52,298 INFO pathfinder.ai.openai_compatible:   ... 800 tokens in 26.2s (30.6 tok/s)
+2026-04-07 17:13:52,928 INFO pathfinder.ai.openai_compatible: Response: 834 tokens, 3362 chars in 26.8s (31.1 tok/s)
+2026-04-07 17:13:52,931 INFO pathfinder.layers.perception: Perceived: This screen is for searching and exploring cricket statistics and related queries. (type=search, 6 elements, confidence=0.90)
+2026-04-07 17:13:52,944 INFO pathfinder.layers.perception: Observation saved to exploration/20260407-103228-ca64/step_030_observation.json
+2026-04-07 17:13:52,945 INFO pathfinder.orchestrator.agent_loop: Perceived: This screen is for searching and exploring cricket statistics and related queries. (search, 6 elements)
+2026-04-07 17:13:52,945 WARNING pathfinder.orchestrator.agent_loop: STUCK: seen screen 'search|6|list_item,list_item,list_item,list_item,list_item,text_field' 3 times consecutively
+2026-04-07 17:13:52,946 INFO pathfinder.layers.world_modeling: Updating model (v27) with 1 new observations
+2026-04-07 17:13:52,946 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 17:13:55,485 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 17:13:57,130 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 4.2s (23.9 tok/s)
+2026-04-07 17:13:58,812 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 5.9s (34.1 tok/s)
+2026-04-07 17:14:00,502 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 7.6s (39.7 tok/s)
+2026-04-07 17:14:02,211 INFO pathfinder.ai.openai_compatible:   ... 400 tokens in 9.3s (43.2 tok/s)
+2026-04-07 17:14:03,915 INFO pathfinder.ai.openai_compatible:   ... 500 tokens in 11.0s (45.6 tok/s)
+2026-04-07 17:14:05,643 INFO pathfinder.ai.openai_compatible:   ... 600 tokens in 12.7s (47.3 tok/s)
+2026-04-07 17:14:07,376 INFO pathfinder.ai.openai_compatible:   ... 700 tokens in 14.4s (48.5 tok/s)
+2026-04-07 17:14:09,104 INFO pathfinder.ai.openai_compatible:   ... 800 tokens in 16.2s (49.5 tok/s)
+2026-04-07 17:14:10,859 INFO pathfinder.ai.openai_compatible:   ... 900 tokens in 17.9s (50.2 tok/s)
+2026-04-07 17:14:12,610 INFO pathfinder.ai.openai_compatible:   ... 1000 tokens in 19.7s (50.9 tok/s)
+2026-04-07 17:14:14,385 INFO pathfinder.ai.openai_compatible:   ... 1100 tokens in 21.4s (51.3 tok/s)
+2026-04-07 17:14:16,161 INFO pathfinder.ai.openai_compatible:   ... 1200 tokens in 23.2s (51.7 tok/s)
+2026-04-07 17:14:17,946 INFO pathfinder.ai.openai_compatible:   ... 1300 tokens in 25.0s (52.0 tok/s)
+2026-04-07 17:14:19,754 INFO pathfinder.ai.openai_compatible:   ... 1400 tokens in 26.8s (52.2 tok/s)
+2026-04-07 17:14:21,552 INFO pathfinder.ai.openai_compatible:   ... 1500 tokens in 28.6s (52.4 tok/s)
+2026-04-07 17:14:23,107 INFO pathfinder.ai.openai_compatible: Response: 1585 tokens, 6414 chars in 30.2s (52.6 tok/s)
+2026-04-07 17:14:23,110 INFO pathfinder.layers.world_modeling: Model updated to v28: 8 screens, 12 transitions, 5 capabilities, 3 entities, 1 frontier, 1 anomalies (coverage=30%, confidence=50%)
+2026-04-07 17:14:23,112 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 17:14:26,657 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 17:14:28,365 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 5.3s (19.0 tok/s)
+2026-04-07 17:14:30,022 INFO pathfinder.ai.openai_compatible: Response: 195 tokens, 816 chars in 6.9s (28.2 tok/s)
+2026-04-07 17:14:30,024 INFO pathfinder.orchestrator.agent_loop: Plan: ExplorationPlan(STOP: The screen is stuck in a loop and has no actionable elements to interact with.)
+2026-04-07 17:14:30,026 INFO pathfinder.orchestrator.agent_loop: Planner says stop: The screen is stuck in a loop and has no actionable elements to interact with.
+2026-04-07 17:14:30,030 INFO pathfinder.layers.world_modeling: Model saved to exploration/20260407-103228-ca64/final_model.json
+2026-04-07 17:14:30,032 INFO pathfinder.orchestrator.agent_loop: Running Layer 3: Flow Generation...
+2026-04-07 17:14:30,034 INFO pathfinder.layers.flow_generation: Generating flows from model v28 (8 screens, 12 transitions) and 30 trace steps
+2026-04-07 17:14:30,035 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 17:14:35,472 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 17:14:37,280 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 7.2s (13.8 tok/s)
+2026-04-07 17:14:39,099 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 9.1s (22.1 tok/s)
+2026-04-07 17:14:40,955 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 10.9s (27.5 tok/s)
+2026-04-07 17:14:42,812 INFO pathfinder.ai.openai_compatible:   ... 400 tokens in 12.8s (31.3 tok/s)
+2026-04-07 17:14:44,698 INFO pathfinder.ai.openai_compatible:   ... 500 tokens in 14.7s (34.1 tok/s)
+2026-04-07 17:14:46,582 INFO pathfinder.ai.openai_compatible:   ... 600 tokens in 16.5s (36.3 tok/s)
+2026-04-07 17:14:48,479 INFO pathfinder.ai.openai_compatible:   ... 700 tokens in 18.4s (38.0 tok/s)
+2026-04-07 17:14:50,393 INFO pathfinder.ai.openai_compatible:   ... 800 tokens in 20.4s (39.3 tok/s)
+2026-04-07 17:14:52,302 INFO pathfinder.ai.openai_compatible:   ... 900 tokens in 22.3s (40.4 tok/s)
+2026-04-07 17:14:54,237 INFO pathfinder.ai.openai_compatible:   ... 1000 tokens in 24.2s (41.3 tok/s)
+2026-04-07 17:14:56,174 INFO pathfinder.ai.openai_compatible:   ... 1100 tokens in 26.1s (42.1 tok/s)
+2026-04-07 17:14:58,102 INFO pathfinder.ai.openai_compatible:   ... 1200 tokens in 28.1s (42.8 tok/s)
+2026-04-07 17:15:00,058 INFO pathfinder.ai.openai_compatible:   ... 1300 tokens in 30.0s (43.3 tok/s)
+2026-04-07 17:15:02,020 INFO pathfinder.ai.openai_compatible:   ... 1400 tokens in 32.0s (43.8 tok/s)
+2026-04-07 17:15:03,994 INFO pathfinder.ai.openai_compatible:   ... 1500 tokens in 34.0s (44.2 tok/s)
+2026-04-07 17:15:05,982 INFO pathfinder.ai.openai_compatible:   ... 1600 tokens in 35.9s (44.5 tok/s)
+2026-04-07 17:15:07,972 INFO pathfinder.ai.openai_compatible:   ... 1700 tokens in 37.9s (44.8 tok/s)
+2026-04-07 17:15:09,980 INFO pathfinder.ai.openai_compatible:   ... 1800 tokens in 39.9s (45.1 tok/s)
+2026-04-07 17:15:11,987 INFO pathfinder.ai.openai_compatible:   ... 1900 tokens in 42.0s (45.3 tok/s)
+2026-04-07 17:15:14,007 INFO pathfinder.ai.openai_compatible:   ... 2000 tokens in 44.0s (45.5 tok/s)
+2026-04-07 17:15:16,039 INFO pathfinder.ai.openai_compatible:   ... 2100 tokens in 46.0s (45.6 tok/s)
+2026-04-07 17:15:18,070 INFO pathfinder.ai.openai_compatible:   ... 2200 tokens in 48.0s (45.8 tok/s)
+2026-04-07 17:15:20,127 INFO pathfinder.ai.openai_compatible:   ... 2300 tokens in 50.1s (45.9 tok/s)
+2026-04-07 17:15:22,182 INFO pathfinder.ai.openai_compatible:   ... 2400 tokens in 52.1s (46.0 tok/s)
+2026-04-07 17:15:23,526 INFO pathfinder.ai.openai_compatible: Response: 2464 tokens, 10277 chars in 53.5s (46.1 tok/s)
+2026-04-07 17:15:23,529 INFO pathfinder.layers.flow_generation:   Flow: Browse and read cricket match details [core] importance=0.8 status=validated (4 semantic, 4 concrete steps)
+2026-04-07 17:15:23,531 INFO pathfinder.layers.flow_generation:   Flow: Search for cricket statistics [core] importance=0.8 status=validated (3 semantic, 3 concrete steps)
+2026-04-07 17:15:23,533 INFO pathfinder.layers.flow_generation:   Flow: View cricket team rankings [core] importance=0.8 status=validated (2 semantic, 2 concrete steps)
+2026-04-07 17:15:23,534 INFO pathfinder.layers.flow_generation:   Flow: View cricket player rankings [core] importance=0.8 status=validated (2 semantic, 2 concrete steps)
+2026-04-07 17:15:23,535 INFO pathfinder.layers.flow_generation:   Flow: Search for cricket-related information [core] importance=0.8 status=validated (3 semantic, 3 concrete steps)
+2026-04-07 17:15:23,537 INFO pathfinder.layers.flow_generation: Generated 5 flows (53.5s): 5 observed, 0 hypothetical
+2026-04-07 17:15:23,540 INFO pathfinder.layers.flow_generation: FlowSet saved to exploration/20260407-103228-ca64/flows.json
+2026-04-07 17:15:23,540 INFO pathfinder.orchestrator.agent_loop: Generated 5 flows, saved to exploration/20260407-103228-ca64/flows.json
+2026-04-07 17:15:23,542 INFO pathfinder.orchestrator.agent_loop: Exploration summary saved to exploration/20260407-103228-ca64/exploration_summary.json
+2026-04-07 17:15:23,543 INFO pathfinder.orchestrator.agent_loop: Exploration complete: 29 actions in 4308.8s. Model v28: 8 screens, 12 transitions, coverage=30%. Stop reason: The screen is stuck in a loop and has no actionable elements to interact with.

@@ -1,0 +1,62 @@
+2026-04-07 11:20:37,767 INFO pathfinder.orchestrator.agent_loop: Invocation: pathfinder explore-web https://goindigo.in --name 'Indigo' --max-actions 50 --inputs /Users/amitgarde/indigo_inputs.json --deep-trace
+2026-04-07 11:20:37,768 INFO pathfinder.orchestrator.agent_loop: Run ID: 20260407-055035-3a42
+2026-04-07 11:20:37,769 INFO pathfinder.orchestrator.agent_loop: Run directory: exploration/20260407-055035-3a42
+2026-04-07 11:20:37,769 INFO pathfinder.orchestrator.agent_loop: Navigating to start URL: https://goindigo.in
+2026-04-07 11:20:37,769 INFO pathfinder.device.web.adapter: Navigating to: https://goindigo.in
+2026-04-07 11:20:49,181 INFO pathfinder.layers.world_modeling: Created empty model
+2026-04-07 11:20:49,181 INFO pathfinder.orchestrator.agent_loop: Available inputs: from, to, departure, return, destination_city, destination
+2026-04-07 11:20:49,182 INFO pathfinder.orchestrator.agent_loop: Starting exploration of Indigo (budget: 50 actions)
+2026-04-07 11:20:49,182 INFO pathfinder.orchestrator.agent_loop: === Step 1 / 50 ===
+2026-04-07 11:20:49,688 INFO pathfinder.device.web.adapter: Screenshot saved to exploration/20260407-055035-3a42/screenshot.png
+2026-04-07 11:20:49,689 INFO pathfinder.layers.perception: Captured screenshot: exploration/20260407-055035-3a42/screenshot.png
+2026-04-07 11:20:49,692 INFO pathfinder.device.web.adapter: DOM structure extracted (147 chars)
+2026-04-07 11:20:49,693 INFO pathfinder.layers.perception: Captured UI structure (147 chars)
+2026-04-07 11:20:49,693 INFO pathfinder.layers.perception: Perceiving screenshot: exploration/20260407-055035-3a42/screenshot.png
+2026-04-07 11:20:49,696 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 (with screenshot) — this may take a few minutes for local models...
+2026-04-07 11:20:57,921 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 11:20:59,640 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 9.9s (10.1 tok/s)
+2026-04-07 11:21:01,398 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 11.7s (17.1 tok/s)
+2026-04-07 11:21:03,162 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 13.5s (22.3 tok/s)
+2026-04-07 11:21:04,931 INFO pathfinder.ai.openai_compatible:   ... 400 tokens in 15.2s (26.3 tok/s)
+2026-04-07 11:21:06,720 INFO pathfinder.ai.openai_compatible:   ... 500 tokens in 17.0s (29.4 tok/s)
+2026-04-07 11:21:08,504 INFO pathfinder.ai.openai_compatible:   ... 600 tokens in 18.8s (31.9 tok/s)
+2026-04-07 11:21:10,291 INFO pathfinder.ai.openai_compatible:   ... 700 tokens in 20.6s (34.0 tok/s)
+2026-04-07 11:21:10,871 INFO pathfinder.ai.openai_compatible: Response: 731 tokens, 2772 chars in 21.2s (34.5 tok/s)
+2026-04-07 11:21:10,872 INFO pathfinder.layers.perception: Perceived: A flight booking page for planning a journey with IndiGo. (type=form, 6 elements, confidence=0.90)
+2026-04-07 11:21:10,879 INFO pathfinder.layers.perception: Observation saved to exploration/20260407-055035-3a42/step_001_observation.json
+2026-04-07 11:21:10,920 INFO pathfinder.orchestrator.agent_loop: Perceived: A flight booking page for planning a journey with IndiGo. (form, 6 elements)
+2026-04-07 11:21:10,920 INFO pathfinder.layers.world_modeling: Updating model (v0) with 1 new observations
+2026-04-07 11:21:10,921 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 11:21:12,393 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 11:21:13,998 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 3.1s (32.5 tok/s)
+2026-04-07 11:21:15,615 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 4.7s (42.6 tok/s)
+2026-04-07 11:21:17,240 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 6.3s (47.5 tok/s)
+2026-04-07 11:21:18,881 INFO pathfinder.ai.openai_compatible:   ... 400 tokens in 8.0s (50.3 tok/s)
+2026-04-07 11:21:20,006 INFO pathfinder.ai.openai_compatible: Response: 467 tokens, 1909 chars in 9.1s (51.4 tok/s)
+2026-04-07 11:21:20,006 INFO pathfinder.layers.world_modeling: Model updated to v1: 1 screens, 1 transitions, 1 capabilities, 1 entities, 1 frontier, 1 anomalies (coverage=30%, confidence=50%)
+2026-04-07 11:21:20,007 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 11:21:22,062 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 11:21:23,689 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 3.7s (27.2 tok/s)
+2026-04-07 11:21:25,273 INFO pathfinder.ai.openai_compatible: Response: 194 tokens, 848 chars in 5.3s (36.8 tok/s)
+2026-04-07 11:21:25,274 INFO pathfinder.orchestrator.agent_loop: Plan: ExplorationPlan(type: Click the 'Search' button to proceed with the flight booking process)
+2026-04-07 11:21:25,274 ERROR pathfinder.orchestrator.agent_loop: Exploration error: 1 validation error for TypeAction
+text
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+Traceback (most recent call last):
+  File "/Users/amitgarde/hacking/claude-code/pathfinder/pathfinder/orchestrator/agent_loop.py", line 500, in explore
+    device_action = self._translate_plan_to_action(plan)
+  File "/Users/amitgarde/hacking/claude-code/pathfinder/pathfinder/orchestrator/agent_loop.py", line 714, in _translate_plan_to_action
+    return TypeAction(text=input_text, target=target, description=description)
+  File "/Users/amitgarde/hacking/claude-code/pathfinder/.venv/lib/python3.14/site-packages/pydantic/main.py", line 250, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+pydantic_core._pydantic_core.ValidationError: 1 validation error for TypeAction
+text
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+2026-04-07 11:21:25,339 INFO pathfinder.layers.world_modeling: Model saved to exploration/20260407-055035-3a42/final_model.json
+2026-04-07 11:21:25,340 INFO pathfinder.orchestrator.agent_loop: Exploration summary saved to exploration/20260407-055035-3a42/exploration_summary.json
+2026-04-07 11:21:25,341 INFO pathfinder.orchestrator.agent_loop: Exploration complete: 0 actions in 36.2s. Model v1: 1 screens, 1 transitions, coverage=30%. Stop reason: Error: 1 validation error for TypeAction
+text
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type

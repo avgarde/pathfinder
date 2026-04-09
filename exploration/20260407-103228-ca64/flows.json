@@ -1,0 +1,660 @@
+{
+  "app_reference": {
+    "package_name": null,
+    "app_store_url": null,
+    "bundle_path": null,
+    "web_url": "https://espncricinfo.com",
+    "name": "Cricinfo",
+    "description": null,
+    "baseline": null,
+    "differentiation": null,
+    "credentials": null
+  },
+  "application_model": {
+    "app_reference": {
+      "package_name": null,
+      "app_store_url": null,
+      "bundle_path": null,
+      "web_url": "https://espncricinfo.com",
+      "name": "Cricinfo",
+      "description": null,
+      "baseline": null,
+      "differentiation": null,
+      "credentials": null
+    },
+    "model_version": 28,
+    "domain": "sports",
+    "purpose": "A sports app providing cricket-related news, fixtures, and rankings.",
+    "baseline_category": "sports news",
+    "differentiators": [
+      "Cricket-specific content",
+      "Focus on Indian cricket teams"
+    ],
+    "entities": [
+      {
+        "name": "Cricket Match",
+        "description": "A specific cricket match event",
+        "provenance": "observed"
+      },
+      {
+        "name": "Cricket Team",
+        "description": "A cricket team",
+        "provenance": "observed"
+      },
+      {
+        "name": "Cricket Player",
+        "description": "A cricket player",
+        "provenance": "observed"
+      }
+    ],
+    "capabilities": [
+      {
+        "name": "Browse Cricket Matches",
+        "description": "Browse through upcoming and past cricket matches",
+        "estimated_importance": 0.8,
+        "estimated_frequency": 0.7,
+        "is_differentiator": false,
+        "provenance": "observed"
+      },
+      {
+        "name": "View Cricket Team Fixtures",
+        "description": "View the fixtures of a specific cricket team",
+        "estimated_importance": 0.8,
+        "estimated_frequency": 0.7,
+        "is_differentiator": false,
+        "provenance": "observed"
+      },
+      {
+        "name": "View Cricket Player Rankings",
+        "description": "View the rankings of a specific cricket player",
+        "estimated_importance": 0.8,
+        "estimated_frequency": 0.7,
+        "is_differentiator": false,
+        "provenance": "observed"
+      },
+      {
+        "name": "View Cricket Team Rankings",
+        "description": "View the rankings of a specific cricket team",
+        "estimated_importance": 0.8,
+        "estimated_frequency": 0.7,
+        "is_differentiator": false,
+        "provenance": "observed"
+      },
+      {
+        "name": "Ask Cricket Questions",
+        "description": "Ask questions related to cricket",
+        "estimated_importance": 0.8,
+        "estimated_frequency": 0.7,
+        "is_differentiator": true,
+        "provenance": "observed"
+      }
+    ],
+    "screens": [
+      {
+        "screen_id": "[cricket_matches_screen]",
+        "name": "Cricket Matches",
+        "screen_type": "unknown",
+        "purpose": "Browse through upcoming and past cricket matches",
+        "participates_in": [
+          "Browse Cricket Matches"
+        ],
+        "visit_count": 26,
+        "last_observation_id": "obs_049eb237"
+      },
+      {
+        "screen_id": "[search_results_screen]",
+        "name": "Search Results",
+        "screen_type": "unknown",
+        "purpose": "Search for cricket statistics and related queries",
+        "participates_in": [
+          "Ask Cricket Questions"
+        ],
+        "visit_count": 26,
+        "last_observation_id": "obs_049eb237"
+      },
+      {
+        "screen_id": "[new_screen_id]",
+        "name": "Runs Conceded by Spinners",
+        "screen_type": "unknown",
+        "purpose": "Browse through cricket matches focusing on runs conceded by spinners",
+        "participates_in": [
+          "Browse Cricket Matches"
+        ],
+        "visit_count": 24,
+        "last_observation_id": "obs_049eb237"
+      },
+      {
+        "screen_id": "[home_screen]",
+        "name": "Home",
+        "screen_type": "unknown",
+        "purpose": "Browse through upcoming and past cricket matches",
+        "participates_in": [
+          "Browse Cricket Matches"
+        ],
+        "visit_count": 3,
+        "last_observation_id": "obs_049eb237"
+      },
+      {
+        "screen_id": "[search_results_screen]",
+        "name": "Search Results",
+        "screen_type": "unknown",
+        "purpose": "Search for cricket statistics and related queries",
+        "participates_in": [
+          "Ask Cricket Questions"
+        ],
+        "visit_count": 26,
+        "last_observation_id": "obs_049eb237"
+      },
+      {
+        "screen_id": "[search_results_screen]",
+        "name": "Search Results",
+        "screen_type": "unknown",
+        "purpose": "Search for cricket statistics and related queries",
+        "participates_in": [
+          "Ask Cricket Questions"
+        ],
+        "visit_count": 26,
+        "last_observation_id": "obs_049eb237"
+      },
+      {
+        "screen_id": "[search_results_screen]",
+        "name": "Search Results",
+        "screen_type": "unknown",
+        "purpose": "Search for cricket statistics and related queries",
+        "participates_in": [
+          "Ask Cricket Questions"
+        ],
+        "visit_count": 26,
+        "last_observation_id": "obs_049eb237"
+      },
+      {
+        "screen_id": "[search_results_screen]",
+        "name": "Search Results",
+        "screen_type": "unknown",
+        "purpose": "Search for cricket statistics and related queries",
+        "participates_in": [
+          "Ask Cricket Questions"
+        ],
+        "visit_count": 26,
+        "last_observation_id": "obs_049eb237"
+      }
+    ],
+    "transitions": [
+      {
+        "from_screen": "[cricket_matches_screen]",
+        "to_screen": "[ipl_2026_schedule_screen]",
+        "action": "IPL 2026",
+        "observed_count": 26
+      },
+      {
+        "from_screen": "[cricket_matches_screen]",
+        "to_screen": "[india_men_fixtures_screen]",
+        "action": "India men's fixtures",
+        "observed_count": 26
+      },
+      {
+        "from_screen": "[cricket_matches_screen]",
+        "to_screen": "[india_women_fixtures_screen]",
+        "action": "India women's fixtures",
+        "observed_count": 26
+      },
+      {
+        "from_screen": "[cricket_matches_screen]",
+        "to_screen": "[ask_cricinfo_screen]",
+        "action": "Ask Cricinfo",
+        "observed_count": 26
+      },
+      {
+        "from_screen": "[cricket_matches_screen]",
+        "to_screen": "[icc_team_rankings_screen]",
+        "action": "ICC team rankings",
+        "observed_count": 26
+      },
+      {
+        "from_screen": "[cricket_matches_screen]",
+        "to_screen": "[icc_player_rankings_screen]",
+        "action": "ICC player rankings",
+        "observed_count": 26
+      },
+      {
+        "from_screen": "[cricket_matches_screen]",
+        "to_screen": "[2000_2025_screen]",
+        "action": "2000-2025",
+        "observed_count": 26
+      },
+      {
+        "from_screen": "[search_results_screen]",
+        "to_screen": "[search_results_screen]",
+        "action": "Search Test/ODI/T20 stats",
+        "observed_count": 26
+      },
+      {
+        "from_screen": "[search_results_screen]",
+        "to_screen": "[search_results_screen]",
+        "action": "Search",
+        "observed_count": 26
+      },
+      {
+        "from_screen": "[search_results_screen]",
+        "to_screen": "[search_results_screen]",
+        "action": "Men dropdown",
+        "observed_count": 26
+      },
+      {
+        "from_screen": "[search_results_screen]",
+        "to_screen": "[search_results_screen]",
+        "action": "Tips for searching",
+        "observed_count": 26
+      },
+      {
+        "from_screen": "[search_results_screen]",
+        "to_screen": "[search_results_screen]",
+        "action": "TRY ASKING...",
+        "observed_count": 26
+      }
+    ],
+    "frontier": [
+      {
+        "description": "Explore the Ask Cricinfo section to understand its functionality.",
+        "rationale": "The Ask Cricinfo section is a differentiator and has not been fully explored.",
+        "provenance": "inferred_structure",
+        "priority": 0.7,
+        "search_strategy": "Look for a dedicated section or form where users can ask cricket-related questions."
+      }
+    ],
+    "anomalies": [
+      {
+        "description": "This screen is for searching and exploring cricket statistics and related queries.",
+        "observation_id": "obs_663af934",
+        "classification": "novel",
+        "exploration_priority_boost": 0.3
+      }
+    ],
+    "coverage_estimate": 0.3,
+    "confidence": 0.5
+  },
+  "flows": [
+    {
+      "flow_id": "flow_001",
+      "goal": "Browse and read cricket match details",
+      "preconditions": [
+        "User is on the home screen"
+      ],
+      "postconditions": [
+        "User has viewed details of a cricket match"
+      ],
+      "semantic_steps": [
+        {
+          "step_number": 1,
+          "intent": "Navigate to the Ask Cricinfo section",
+          "screen_context": "Home screen",
+          "expected_outcome": "Access to cricket-related sections"
+        },
+        {
+          "step_number": 2,
+          "intent": "Search for a cricket match",
+          "screen_context": "Search Results screen",
+          "expected_outcome": "Display of search results"
+        },
+        {
+          "step_number": 3,
+          "intent": "Select a cricket match from the search results",
+          "screen_context": "Search Results screen",
+          "expected_outcome": "View more details about the selected match"
+        },
+        {
+          "step_number": 4,
+          "intent": "View detailed information about the selected match",
+          "screen_context": "Cricket Matches screen",
+          "expected_outcome": "Display of match details"
+        }
+      ],
+      "category": "core",
+      "importance": 0.8,
+      "estimated_frequency": 0.7,
+      "concrete_steps": [
+        {
+          "step_number": 1,
+          "screen_id": "screen_home",
+          "observation_id": "obs_abc123",
+          "action_type": "click",
+          "action_detail": {
+            "target_text": "Ask Cricinfo"
+          },
+          "result_screen_id": "screen_search_results",
+          "result_observation_id": "obs_def456",
+          "duration_ms": 0
+        },
+        {
+          "step_number": 2,
+          "screen_id": "screen_search_results",
+          "observation_id": "obs_ghi789",
+          "action_type": "type",
+          "action_detail": {
+            "text": "Test Matches"
+          },
+          "result_screen_id": "screen_search_results",
+          "result_observation_id": "obs_jkl012",
+          "duration_ms": 0
+        },
+        {
+          "step_number": 3,
+          "screen_id": "screen_search_results",
+          "observation_id": "obs_mno345",
+          "action_type": "click",
+          "action_detail": {
+            "index": 0
+          },
+          "result_screen_id": "screen_cricket_matches",
+          "result_observation_id": "obs_pqr678",
+          "duration_ms": 0
+        },
+        {
+          "step_number": 4,
+          "screen_id": "screen_cricket_matches",
+          "observation_id": "obs_srt901",
+          "action_type": "click",
+          "action_detail": {
+            "index": 0
+          },
+          "result_screen_id": "screen_match_details",
+          "result_observation_id": "obs_tuv234",
+          "duration_ms": 0
+        }
+      ],
+      "validation_status": "validated",
+      "validation_notes": null,
+      "related_capabilities": [
+        "Browse Cricket Matches",
+        "View Cricket Team Fixtures"
+      ],
+      "sub_flows": null,
+      "parent_flow": null
+    },
+    {
+      "flow_id": "flow_002",
+      "goal": "Search for cricket statistics",
+      "preconditions": [
+        "User is on the home screen"
+      ],
+      "postconditions": [
+        "User has viewed search results for cricket statistics"
+      ],
+      "semantic_steps": [
+        {
+          "step_number": 1,
+          "intent": "Navigate to the Ask Cricinfo section",
+          "screen_context": "Home screen",
+          "expected_outcome": "Access to cricket-related sections"
+        },
+        {
+          "step_number": 2,
+          "intent": "Search for cricket statistics",
+          "screen_context": "Search Results screen",
+          "expected_outcome": "Display of search results"
+        },
+        {
+          "step_number": 3,
+          "intent": "Select a search result",
+          "screen_context": "Search Results screen",
+          "expected_outcome": "View more details about the selected search result"
+        }
+      ],
+      "category": "core",
+      "importance": 0.8,
+      "estimated_frequency": 0.7,
+      "concrete_steps": [
+        {
+          "step_number": 1,
+          "screen_id": "screen_home",
+          "observation_id": "obs_abc123",
+          "action_type": "click",
+          "action_detail": {
+            "target_text": "Ask Cricinfo"
+          },
+          "result_screen_id": "screen_search_results",
+          "result_observation_id": "obs_def456",
+          "duration_ms": 0
+        },
+        {
+          "step_number": 2,
+          "screen_id": "screen_search_results",
+          "observation_id": "obs_ghi789",
+          "action_type": "type",
+          "action_detail": {
+            "text": "Test Matches"
+          },
+          "result_screen_id": "screen_search_results",
+          "result_observation_id": "obs_jkl012",
+          "duration_ms": 0
+        },
+        {
+          "step_number": 3,
+          "screen_id": "screen_search_results",
+          "observation_id": "obs_mno345",
+          "action_type": "click",
+          "action_detail": {
+            "index": 0
+          },
+          "result_screen_id": "screen_search_results",
+          "result_observation_id": "obs_pqr678",
+          "duration_ms": 0
+        }
+      ],
+      "validation_status": "validated",
+      "validation_notes": null,
+      "related_capabilities": [
+        "Browse Cricket Matches",
+        "View Cricket Team Fixtures"
+      ],
+      "sub_flows": null,
+      "parent_flow": null
+    },
+    {
+      "flow_id": "flow_003",
+      "goal": "View cricket team rankings",
+      "preconditions": [
+        "User is on the home screen"
+      ],
+      "postconditions": [
+        "User has viewed cricket team rankings"
+      ],
+      "semantic_steps": [
+        {
+          "step_number": 1,
+          "intent": "Navigate to the Ask Cricinfo section",
+          "screen_context": "Home screen",
+          "expected_outcome": "Access to cricket-related sections"
+        },
+        {
+          "step_number": 2,
+          "intent": "Select 'ICC team rankings'",
+          "screen_context": "Cricket Matches screen",
+          "expected_outcome": "Display of ICC team rankings"
+        }
+      ],
+      "category": "core",
+      "importance": 0.8,
+      "estimated_frequency": 0.7,
+      "concrete_steps": [
+        {
+          "step_number": 1,
+          "screen_id": "screen_home",
+          "observation_id": "obs_abc123",
+          "action_type": "click",
+          "action_detail": {
+            "target_text": "Ask Cricinfo"
+          },
+          "result_screen_id": "screen_cricket_matches",
+          "result_observation_id": "obs_def456",
+          "duration_ms": 0
+        },
+        {
+          "step_number": 2,
+          "screen_id": "screen_cricket_matches",
+          "observation_id": "obs_def456",
+          "action_type": "click",
+          "action_detail": {
+            "text": "ICC team rankings"
+          },
+          "result_screen_id": "screen_icc_team_rankings",
+          "result_observation_id": "obs_ghi789",
+          "duration_ms": 0
+        }
+      ],
+      "validation_status": "validated",
+      "validation_notes": null,
+      "related_capabilities": [
+        "View Cricket Team Rankings"
+      ],
+      "sub_flows": null,
+      "parent_flow": null
+    },
+    {
+      "flow_id": "flow_004",
+      "goal": "View cricket player rankings",
+      "preconditions": [
+        "User is on the home screen"
+      ],
+      "postconditions": [
+        "User has viewed cricket player rankings"
+      ],
+      "semantic_steps": [
+        {
+          "step_number": 1,
+          "intent": "Navigate to the Ask Cricinfo section",
+          "screen_context": "Home screen",
+          "expected_outcome": "Access to cricket-related sections"
+        },
+        {
+          "step_number": 2,
+          "intent": "Select 'ICC player rankings'",
+          "screen_context": "Cricket Matches screen",
+          "expected_outcome": "Display of ICC player rankings"
+        }
+      ],
+      "category": "core",
+      "importance": 0.8,
+      "estimated_frequency": 0.7,
+      "concrete_steps": [
+        {
+          "step_number": 1,
+          "screen_id": "screen_home",
+          "observation_id": "obs_abc123",
+          "action_type": "click",
+          "action_detail": {
+            "target_text": "Ask Cricinfo"
+          },
+          "result_screen_id": "screen_cricket_matches",
+          "result_observation_id": "obs_def456",
+          "duration_ms": 0
+        },
+        {
+          "step_number": 2,
+          "screen_id": "screen_cricket_matches",
+          "observation_id": "obs_def456",
+          "action_type": "click",
+          "action_detail": {
+            "text": "ICC player rankings"
+          },
+          "result_screen_id": "screen_icc_player_rankings",
+          "result_observation_id": "obs_ghi789",
+          "duration_ms": 0
+        }
+      ],
+      "validation_status": "validated",
+      "validation_notes": null,
+      "related_capabilities": [
+        "View Cricket Player Rankings"
+      ],
+      "sub_flows": null,
+      "parent_flow": null
+    },
+    {
+      "flow_id": "flow_005",
+      "goal": "Search for cricket-related information",
+      "preconditions": [
+        "User is on the home screen"
+      ],
+      "postconditions": [
+        "User has viewed search results for cricket-related information"
+      ],
+      "semantic_steps": [
+        {
+          "step_number": 1,
+          "intent": "Navigate to the Ask Cricinfo section",
+          "screen_context": "Home screen",
+          "expected_outcome": "Access to cricket-related sections"
+        },
+        {
+          "step_number": 2,
+          "intent": "Search for cricket-related information",
+          "screen_context": "Search Results screen",
+          "expected_outcome": "Display of search results"
+        },
+        {
+          "step_number": 3,
+          "intent": "Select a search result",
+          "screen_context": "Search Results screen",
+          "expected_outcome": "View more details about the selected search result"
+        }
+      ],
+      "category": "core",
+      "importance": 0.8,
+      "estimated_frequency": 0.7,
+      "concrete_steps": [
+        {
+          "step_number": 1,
+          "screen_id": "screen_home",
+          "observation_id": "obs_abc123",
+          "action_type": "click",
+          "action_detail": {
+            "target_text": "Ask Cricinfo"
+          },
+          "result_screen_id": "screen_search_results",
+          "result_observation_id": "obs_def456",
+          "duration_ms": 0
+        },
+        {
+          "step_number": 2,
+          "screen_id": "screen_search_results",
+          "observation_id": "obs_ghi789",
+          "action_type": "type",
+          "action_detail": {
+            "text": "Test Matches"
+          },
+          "result_screen_id": "screen_search_results",
+          "result_observation_id": "obs_jkl012",
+          "duration_ms": 0
+        },
+        {
+          "step_number": 3,
+          "screen_id": "screen_search_results",
+          "observation_id": "obs_mno345",
+          "action_type": "click",
+          "action_detail": {
+            "index": 0
+          },
+          "result_screen_id": "screen_search_results",
+          "result_observation_id": "obs_pqr678",
+          "duration_ms": 0
+        }
+      ],
+      "validation_status": "validated",
+      "validation_notes": null,
+      "related_capabilities": [
+        "Ask Cricket Questions"
+      ],
+      "sub_flows": null,
+      "parent_flow": null
+    }
+  ],
+  "generation_metadata": {
+    "timestamp": "2026-04-07T11:45:23.538297",
+    "duration_seconds": 53.5,
+    "ai_calls_made": 1,
+    "screens_explored": 8,
+    "exploration_mode": "agent_loop",
+    "device_info": null
+  }
+}

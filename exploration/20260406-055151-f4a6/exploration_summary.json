@@ -1,0 +1,15 @@
+{
+  "run_id": "20260406-055151-f4a6",
+  "run_dir": "exploration/20260406-055151-f4a6",
+  "app": "Hacker News",
+  "total_actions": 0,
+  "duration_seconds": 18.6,
+  "stop_reason": "Error: 1 validation error for ScreenObservation\napp_state.story_count\n  Input should be a valid string [type=string_type, input_value=22, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/string_type",
+  "model_version": 0,
+  "screens_discovered": 0,
+  "transitions_discovered": 0,
+  "capabilities": 0,
+  "coverage_estimate": 0.0,
+  "confidence": 0.0,
+  "steps": []
+}

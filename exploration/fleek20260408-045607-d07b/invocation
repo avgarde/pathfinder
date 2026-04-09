@@ -1,0 +1,1 @@
+pathfinder explore-web https://joinfleek.com --name 'Fleek' --max-actions 50 --run-prefix 'fleek'

@@ -1,0 +1,572 @@
+{
+  "run_id": "20260407-055959-1c92",
+  "run_dir": "exploration/20260407-055959-1c92",
+  "app": "Indigo",
+  "total_actions": 50,
+  "duration_seconds": 2510.3,
+  "stop_reason": "Budget exhausted",
+  "model_version": 46,
+  "screens_discovered": 7,
+  "transitions_discovered": 1,
+  "capabilities": 3,
+  "coverage_estimate": 0.3,
+  "confidence": 0.5,
+  "inputs_required": [
+    {
+      "field": "username",
+      "category": "credentials",
+      "screen_type": "form",
+      "element_label": "username",
+      "required": true,
+      "suggested_strategy": "literal",
+      "notes": "This field is required to log in and proceed with booking"
+    },
+    {
+      "field": "password",
+      "category": "credentials",
+      "screen_type": "form",
+      "element_label": "password",
+      "required": true,
+      "suggested_strategy": "literal",
+      "notes": "This field is required to log in and proceed with booking"
+    },
+    {
+      "field": "destination_city",
+      "category": "content",
+      "screen_type": "form",
+      "element_label": "From",
+      "required": true,
+      "suggested_strategy": "skip",
+      "notes": "This field is required to proceed with hotel booking"
+    },
+    {
+      "field": "departure",
+      "category": "content",
+      "screen_type": "form",
+      "element_label": "Departure",
+      "required": true,
+      "suggested_strategy": "skip",
+      "notes": "This field is required to proceed with hotel booking"
+    },
+    {
+      "field": "return",
+      "category": "content",
+      "screen_type": "form",
+      "element_label": "Return",
+      "required": true,
+      "suggested_strategy": "skip",
+      "notes": "This field is required to proceed with hotel booking"
+    },
+    {
+      "field": "destination",
+      "category": "search_query",
+      "screen_type": "form",
+      "element_label": "Destination",
+      "required": true,
+      "suggested_strategy": "generate",
+      "notes": "This field is required to proceed with hotel booking."
+    },
+    {
+      "field": "check_in_date",
+      "category": "search_query",
+      "screen_type": "form",
+      "element_label": "Check-in Date",
+      "required": true,
+      "suggested_strategy": "generate",
+      "notes": "This field is required to proceed with hotel booking."
+    },
+    {
+      "field": "check_out_date",
+      "category": "search_query",
+      "screen_type": "form",
+      "element_label": "Check-out Date",
+      "required": true,
+      "suggested_strategy": "generate",
+      "notes": "This field is required to proceed with hotel booking."
+    },
+    {
+      "field": "guests",
+      "category": "search_query",
+      "screen_type": "form",
+      "element_label": "Guests",
+      "required": true,
+      "suggested_strategy": "generate",
+      "notes": "This field is required to proceed with hotel booking."
+    },
+    {
+      "field": "search_query",
+      "category": "search_query",
+      "screen_type": "form",
+      "element_label": "Search",
+      "required": true,
+      "suggested_strategy": "generate",
+      "notes": "This field is required to search for hotels."
+    },
+    {
+      "field": "guests_count",
+      "category": "content",
+      "screen_type": "form",
+      "element_label": "Guests",
+      "required": true,
+      "suggested_strategy": "skip",
+      "notes": "This field is required to specify the number of guests."
+    },
+    {
+      "field": "check-in",
+      "category": "search_query",
+      "screen_type": "form",
+      "element_label": "Check-in",
+      "required": true,
+      "suggested_strategy": "generate",
+      "notes": "This field is required to proceed with the hotel booking process."
+    },
+    {
+      "field": "check-out",
+      "category": "search_query",
+      "screen_type": "form",
+      "element_label": "Check-out",
+      "required": true,
+      "suggested_strategy": "generate",
+      "notes": "This field is required to proceed with the hotel booking process."
+    },
+    {
+      "field": "rooms",
+      "category": "content",
+      "screen_type": "form",
+      "element_label": "Rooms",
+      "required": true,
+      "suggested_strategy": "skip",
+      "notes": "This field is required to proceed with the hotel booking process."
+    },
+    {
+      "field": "Hotel Name",
+      "category": "search_query",
+      "screen_type": "form",
+      "element_label": "Hotel Name",
+      "required": true,
+      "suggested_strategy": "generate",
+      "notes": "This field is required to search for hotels."
+    },
+    {
+      "field": "Check-in Date",
+      "category": "search_query",
+      "screen_type": "form",
+      "element_label": "Check-in Date",
+      "required": true,
+      "suggested_strategy": "generate",
+      "notes": "This field is required to specify the check-in date."
+    },
+    {
+      "field": "Check-out Date",
+      "category": "search_query",
+      "screen_type": "form",
+      "element_label": "Check-out Date",
+      "required": true,
+      "suggested_strategy": "generate",
+      "notes": "This field is required to specify the check-out date."
+    },
+    {
+      "field": "Guests",
+      "category": "content",
+      "screen_type": "form",
+      "element_label": "Guests",
+      "required": true,
+      "suggested_strategy": "skip",
+      "notes": "This field is required to select the number of guests."
+    }
+  ],
+  "flows": [
+    {
+      "flow_id": "flow_003",
+      "goal": "Book a flight",
+      "category": "core",
+      "importance": 0.8,
+      "status": "validated",
+      "steps": 3
+    },
+    {
+      "flow_id": "flow_001",
+      "goal": "Explore hotel booking options",
+      "category": "secondary",
+      "importance": 0.6,
+      "status": "validated",
+      "steps": 2
+    },
+    {
+      "flow_id": "flow_002",
+      "goal": "Explore sightseeing booking options",
+      "category": "secondary",
+      "importance": 0.6,
+      "status": "validated",
+      "steps": 2
+    },
+    {
+      "flow_id": "flow_004",
+      "goal": "Book a hotel",
+      "category": "secondary",
+      "importance": 0.6,
+      "status": "validated",
+      "steps": 3
+    },
+    {
+      "flow_id": "flow_005",
+      "goal": "Book a sightseeing activity",
+      "category": "secondary",
+      "importance": 0.6,
+      "status": "validated",
+      "steps": 3
+    }
+  ],
+  "steps": [
+    {
+      "step": 1,
+      "screen": "A flight booking page on the IndiGo website.",
+      "action": "Navigate to the 'Hotels' tab",
+      "goal": "Explore the functionality of the 'Hotels' tab",
+      "success": true
+    },
+    {
+      "step": 2,
+      "screen": "A flight booking page on the IndiGo website with options to book flights, hotels, and sightseeing.",
+      "action": "Navigate to the 'Hotels' tab",
+      "goal": "Explore the functionality of the 'Hotels' tab",
+      "success": true
+    },
+    {
+      "step": 3,
+      "screen": "A flight booking page on the IndiGo website with options to book flights, hotels, and sightseeing.",
+      "action": "Navigate to the 'Hotels' tab to explore its functionality",
+      "goal": "Explore the functionality of the 'Hotels' tab",
+      "success": true
+    },
+    {
+      "step": 4,
+      "screen": "A flight booking page on the IndiGo website with options to book flights, hotels, and sightseeing.",
+      "action": "Tap on the 'Hotels' tab to navigate to the Hotels Booking Page",
+      "goal": "Explore the functionality of the 'Hotels' tab",
+      "success": false
+    },
+    {
+      "step": 5,
+      "screen": "A flight booking page on the IndiGo website with options to book flights, hotels, and sightseeing.",
+      "action": "Click on the 'Sight Seeing' tab to navigate to the Sight Seeing booking page",
+      "goal": "Explore the functionality of the 'Sight Seeing' tab",
+      "success": true
+    },
+    {
+      "step": 6,
+      "screen": "A flight booking page on the IndiGo website with options to book flights, hotels, and sightseeing.",
+      "action": "Wait for the 'Hotels' tab to be clickable and attempt to navigate to the Hotels Booking Page",
+      "goal": "Explore the functionality of the 'Hotels' tab",
+      "success": true
+    },
+    {
+      "step": 7,
+      "screen": "A flight booking page on the IndiGo website with options to book flights, hotels, and sightseeing.",
+      "action": "Wait for the 'Hotels' tab to be clickable and attempt to navigate to the Hotels Booking Page",
+      "goal": "Explore the functionality of the 'Hotels' tab",
+      "success": true
+    },
+    {
+      "step": 8,
+      "screen": "A flight booking page on the IndiGo website with options to book flights, hotels, and sightseeing.",
+      "action": "Wait for the 'Hotels' tab to be clickable and attempt to navigate to the Hotels Booking Page",
+      "goal": "Explore the functionality of the 'Hotels' tab",
+      "success": true
+    },
+    {
+      "step": 9,
+      "screen": "A flight booking page on the IndiGo website with options to book flights, hotels, and sightseeing.",
+      "action": "Wait for the 'Hotels' tab to be clickable and attempt to navigate to the Hotels Booking Page",
+      "goal": "Explore the functionality of the 'Hotels' and 'Sight Seeing' tabs",
+      "success": true
+    },
+    {
+      "step": 10,
+      "screen": "A flight booking page on the IndiGo website with options to book flights, hotels, and sightseeing.",
+      "action": "Wait for the 'Hotels' tab to become clickable",
+      "goal": "Explore the functionality of the 'Hotels' tab",
+      "success": true
+    },
+    {
+      "step": 11,
+      "screen": "A flight booking page on the IndiGo website with options to book flights, hotels, and sightseeing.",
+      "action": "Click on the 'Sight Seeing' tab to navigate to the Sight Seeing booking page",
+      "goal": "Explore the functionality of the 'Sight Seeing' tab",
+      "success": true
+    },
+    {
+      "step": 12,
+      "screen": "A flight booking page on the IndiGo website with options to book flights, hotels, and sightseeing.",
+      "action": "Click on the 'Sight Seeing' tab to navigate to the Sight Seeing booking page",
+      "goal": "Explore the functionality of the 'Sight Seeing' tab",
+      "success": true
+    },
+    {
+      "step": 13,
+      "screen": "A flight booking page on the IndiGo website with options to book flights, hotels, and sightseeing.",
+      "action": "Click on the 'Hotels' tab to navigate to the Hotels Booking Page",
+      "goal": "Confirm the functionality of the 'Hotels' tab and navigate to the Hotels Booking Page",
+      "success": true
+    },
+    {
+      "step": 14,
+      "screen": "A flight booking page on the IndiGo website with options to book flights, hotels, and sightseeing.",
+      "action": "Click on the 'Hotels' tab to navigate to the Hotels Booking Page",
+      "goal": "Explore the functionality of the 'Hotels' tab",
+      "success": true
+    },
+    {
+      "step": 15,
+      "screen": "A flight booking page on the IndiGo website with options to book flights, hotels, and sightseeing.",
+      "action": "Click on the 'Hotels' tab to navigate to the Hotels Booking Page",
+      "goal": "Confirm the functionality of the 'Hotels' tab",
+      "success": true
+    },
+    {
+      "step": 16,
+      "screen": "A flight booking page on the IndiGo website with options to book flights, hotels, and sightseeing.",
+      "action": "Forced back \u2014 stuck on form|9|button,date_picker,date_picker,dropdown,dropdown,tab,tab,text_field,text_field",
+      "goal": "Escape stuck state",
+      "success": true
+    },
+    {
+      "step": 17,
+      "screen": "This screen is for booking hotels as part of a travel booking process.",
+      "action": "Navigate away from the hotel booking form as it requires input fields that cannot be filled.",
+      "goal": "Explore the functionality of the 'Hotels' and 'Sight Seeing' tabs",
+      "success": true
+    },
+    {
+      "step": 18,
+      "screen": "This screen is for booking hotels as part of a travel booking process.",
+      "action": "Navigate away from the hotel booking form as it requires input fields that cannot be filled.",
+      "goal": "Explore the functionality of the 'Hotels' and 'Sight Seeing' tabs",
+      "success": true
+    },
+    {
+      "step": 19,
+      "screen": "This screen is for booking hotels as part of a travel booking process.",
+      "action": "Navigate away from the hotel booking form as it requires input fields that cannot be filled.",
+      "goal": "Explore the functionality of the 'Hotels' and 'Sight Seeing' tabs",
+      "success": true
+    },
+    {
+      "step": 20,
+      "screen": "This screen is for booking hotels as part of a travel booking process.",
+      "action": "Navigate away from the hotel booking form as it requires input fields that cannot be filled.",
+      "goal": "Explore the functionality of the 'Hotels' and 'Sight Seeing' tabs",
+      "success": true
+    },
+    {
+      "step": 21,
+      "screen": "This screen is for booking hotels as part of a travel booking process.",
+      "action": "Navigate away from the hotel booking form as it requires input fields that cannot be filled.",
+      "goal": "Explore the functionality of the 'Hotels' and 'Sight Seeing' tabs.",
+      "success": true
+    },
+    {
+      "step": 22,
+      "screen": "This screen is for browsing hotel options as part of a travel booking process.",
+      "action": "Tap on the 'Hotels' tab to explore hotel booking options",
+      "goal": "Explore the functionality of the 'Hotels' tab",
+      "success": false
+    },
+    {
+      "step": 23,
+      "screen": "This screen is for browsing hotel options as part of a travel booking process.",
+      "action": "Tap on the 'Sight Seeing' tab to explore sightseeing booking options",
+      "goal": "Explore the functionality of the 'Sight Seeing' tab",
+      "success": false
+    },
+    {
+      "step": 24,
+      "screen": "This screen is for browsing hotel options as part of a travel booking process.",
+      "action": "Click on the 'Hotels' tab to explore hotel booking options",
+      "goal": "Explore the functionality of the 'Hotels' and 'Sight Seeing' tabs",
+      "success": true
+    },
+    {
+      "step": 25,
+      "screen": "This screen is for browsing hotel options as part of a travel booking process.",
+      "action": "Tap on the 'Sight Seeing' tab to explore sightseeing booking options",
+      "goal": "Explore the functionality of the 'Sight Seeing' tab",
+      "success": false
+    },
+    {
+      "step": 26,
+      "screen": "This screen is for browsing hotel options as part of a travel booking process.",
+      "action": "Forced back \u2014 stuck on list|2|tab,tab",
+      "goal": "Escape stuck state",
+      "success": true
+    },
+    {
+      "step": 27,
+      "screen": "This screen is for browsing hotel options as part of a travel booking process.",
+      "action": "Forced back \u2014 stuck on list|2|tab,tab",
+      "goal": "Escape stuck state",
+      "success": true
+    },
+    {
+      "step": 28,
+      "screen": "This screen is for browsing hotel options as part of a travel booking process.",
+      "action": "Forced back \u2014 stuck on list|2|tab,tab",
+      "goal": "Escape stuck state",
+      "success": true
+    },
+    {
+      "step": 29,
+      "screen": "This screen is for browsing hotel options as part of a travel booking process.",
+      "action": "Forced back \u2014 stuck on list|2|tab,tab",
+      "goal": "Escape stuck state",
+      "success": true
+    },
+    {
+      "step": 30,
+      "screen": "This screen is for browsing hotel options as part of a travel booking process.",
+      "action": "Forced back \u2014 stuck on list|2|tab,tab",
+      "goal": "Escape stuck state",
+      "success": true
+    },
+    {
+      "step": 31,
+      "screen": "This screen is for browsing hotel options as part of a travel booking process.",
+      "action": "Forced back \u2014 stuck on list|2|tab,tab",
+      "goal": "Escape stuck state",
+      "success": true
+    },
+    {
+      "step": 32,
+      "screen": "This screen is for browsing hotel options as part of a travel booking process.",
+      "action": "Forced back \u2014 stuck on list|2|tab,tab",
+      "goal": "Escape stuck state",
+      "success": true
+    },
+    {
+      "step": 33,
+      "screen": "This screen is for browsing hotel options as part of a travel booking process.",
+      "action": "Forced back \u2014 stuck on list|2|tab,tab",
+      "goal": "Escape stuck state",
+      "success": true
+    },
+    {
+      "step": 34,
+      "screen": "This screen is for browsing hotel options as part of a travel booking process.",
+      "action": "Forced back \u2014 stuck on list|2|tab,tab",
+      "goal": "Escape stuck state",
+      "success": true
+    },
+    {
+      "step": 35,
+      "screen": "This screen is for browsing hotel options as part of a travel booking process.",
+      "action": "Forced back \u2014 stuck on list|2|tab,tab",
+      "goal": "Escape stuck state",
+      "success": true
+    },
+    {
+      "step": 36,
+      "screen": "This screen is for browsing hotel options as part of a travel booking process.",
+      "action": "Forced back \u2014 stuck on list|2|tab,tab",
+      "goal": "Escape stuck state",
+      "success": true
+    },
+    {
+      "step": 37,
+      "screen": "This screen is for browsing hotel options as part of a travel booking process.",
+      "action": "Forced back \u2014 stuck on list|2|tab,tab",
+      "goal": "Escape stuck state",
+      "success": true
+    },
+    {
+      "step": 38,
+      "screen": "This screen is for browsing hotel options as part of a travel booking process.",
+      "action": "Forced back \u2014 stuck on list|2|tab,tab",
+      "goal": "Escape stuck state",
+      "success": true
+    },
+    {
+      "step": 39,
+      "screen": "This screen is for browsing hotel options as part of a travel booking process.",
+      "action": "Forced back \u2014 stuck on list|2|tab,tab",
+      "goal": "Escape stuck state",
+      "success": true
+    },
+    {
+      "step": 40,
+      "screen": "This screen is for browsing hotel options as part of a travel booking process.",
+      "action": "Forced back \u2014 stuck on list|2|tab,tab",
+      "goal": "Escape stuck state",
+      "success": true
+    },
+    {
+      "step": 41,
+      "screen": "This screen is for browsing hotel options as part of a travel booking process.",
+      "action": "Forced back \u2014 stuck on list|2|tab,tab",
+      "goal": "Escape stuck state",
+      "success": true
+    },
+    {
+      "step": 42,
+      "screen": "This screen is for browsing hotel options as part of a travel booking process.",
+      "action": "Forced back \u2014 stuck on list|2|tab,tab",
+      "goal": "Escape stuck state",
+      "success": true
+    },
+    {
+      "step": 43,
+      "screen": "This screen is for browsing hotel options as part of a travel booking process.",
+      "action": "Forced back \u2014 stuck on list|2|tab,tab",
+      "goal": "Escape stuck state",
+      "success": true
+    },
+    {
+      "step": 44,
+      "screen": "This screen is for browsing hotel options as part of a travel booking process.",
+      "action": "Forced back \u2014 stuck on list|2|tab,tab",
+      "goal": "Escape stuck state",
+      "success": true
+    },
+    {
+      "step": 45,
+      "screen": "This screen is for browsing hotel options as part of a travel booking process.",
+      "action": "Forced back \u2014 stuck on list|2|tab,tab",
+      "goal": "Escape stuck state",
+      "success": true
+    },
+    {
+      "step": 46,
+      "screen": "This screen is for browsing hotel options as part of a travel booking process.",
+      "action": "Forced back \u2014 stuck on list|2|tab,tab",
+      "goal": "Escape stuck state",
+      "success": true
+    },
+    {
+      "step": 47,
+      "screen": "This screen is for browsing hotel options as part of a travel booking process.",
+      "action": "Forced back \u2014 stuck on list|2|tab,tab",
+      "goal": "Escape stuck state",
+      "success": true
+    },
+    {
+      "step": 48,
+      "screen": "This screen is for browsing hotel options as part of a travel booking process.",
+      "action": "Forced back \u2014 stuck on list|2|tab,tab",
+      "goal": "Escape stuck state",
+      "success": true
+    },
+    {
+      "step": 49,
+      "screen": "This screen is for browsing hotel options as part of a travel booking process.",
+      "action": "Forced back \u2014 stuck on list|2|tab,tab",
+      "goal": "Escape stuck state",
+      "success": true
+    },
+    {
+      "step": 50,
+      "screen": "This screen is for browsing hotel options as part of a travel booking process.",
+      "action": "Forced back \u2014 stuck on list|2|tab,tab",
+      "goal": "Escape stuck state",
+      "success": true
+    }
+  ]
+}

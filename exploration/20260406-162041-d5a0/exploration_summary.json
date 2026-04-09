@@ -1,0 +1,17 @@
+{
+  "run_id": "20260406-162041-d5a0",
+  "run_dir": "exploration/20260406-162041-d5a0",
+  "app": "Indigo",
+  "total_actions": 0,
+  "duration_seconds": 1.9,
+  "stop_reason": "Error: Error code: 404 - {'error': {'message': \"model 'qwen2.5-vl:32b' not found\", 'type': 'not_found_error', 'param': None, 'code': None}}",
+  "model_version": 0,
+  "screens_discovered": 0,
+  "transitions_discovered": 0,
+  "capabilities": 0,
+  "coverage_estimate": 0.0,
+  "confidence": 0.0,
+  "inputs_required": [],
+  "flows": [],
+  "steps": []
+}

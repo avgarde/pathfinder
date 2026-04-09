@@ -1,0 +1,289 @@
+{
+  "observation_id": "obs_93ffa773",
+  "timestamp": "2026-04-06T06:48:57.811211",
+  "screenshot_path": "exploration/20260406-063355-41bf/step_016.png",
+  "ui_structure_path": "<body class=\"ycdc2 waas landing_page\" bounds=\"[0,0][1280,4310]\">\n  <div id=\"WaasLandingPage-react-component-dc5125d0-2a67-4071-8e5f-45ff0f788d0f\" bounds=\"[0,0][1280,4310]\">\n    <div class=\"no-scroll-behind sticky top-0\" bounds=\"[0,0][1280,64]\">\n      <div bounds=\"[0,0][1280,64]\">\n        <header class=\"w-full bg-beige-light leading-tight\" bounds=\"[0,0][1280,64]\">\n          <nav class=\"relative hidden items-center\" bounds=\"[0,0][1280,64]\">\n            <div class=\"flex w-full max-w-[1400px]\" bounds=\"[20,12][1260,52]\">\n              <div class=\"flex shrink-0 items-center\" bounds=\"[620,12][660,52]\">\n                <a class=\"inline-block h-[40px] w-[40px]\" href=\"/\" bounds=\"[620,12][660,52]\" interactive=\"true\" />\n              </div>\n            </div>\n            <div class=\"absolute right-5 flex\" bounds=\"[1128,12][1260,52]\">\n              <a class=\"font-['Outfit',sans-serif] text-sm tracking-[0.3px]\" href=\"https://account.ycombinator.com/?continue=https://www.ycombinator.com/jobs\" bounds=\"[1128,22][1167,42]\" interactive=\"true\">Log in</a>\n              <a class=\"flex h-10 items-center\" href=\"/apply\" bounds=\"[1183,12][1260,52]\" interactive=\"true\">Apply</a>\n            </div>\n          </nav>\n        </header>\n      </div>\n    </div>\n    <div class=\"relative isolate z-0\" bounds=\"[0,64][1280,514]\">\n      <div class=\"mx-auto max-w-ycdc-page px-4\" bounds=\"[90,100][1190,478]\">\n        <div class=\"flex flex-col items-center\" bounds=\"[106,100][1174,478]\">\n          <div class=\"flex w-full flex-col\" bounds=\"[106,100][1174,362]\">\n            <h1 class=\"ycdc-page-title text-xl md:text-2xl\" bounds=\"[361,100][919,250]\">Find the best startup jobs, curated by YC</h1>\n            <ul class=\"prose-md prose ml-6\" bounds=\"[419,274][885,362]\">\n              <li bounds=\"[419,274][885,298]\">Apply to thousands of startup jobs with a single profile.</li>\n              <li bounds=\"[419,306][885,330]\">Let YC founders contact you or browse companies privately.</li>\n              <li bounds=\"[419,338][885,362]\">Find the next Airbnb, Instacart or Coinbase — only YC companies.</li>\n            </ul>\n          </div>\n          <div class=\"mt-8 flex flex-col\" bounds=\"[493,394][787,478]\">\n            <a class=\"ycdc-btn ycdc-btn-lg bg-brand\" href=\"https://account.ycombinator.com/authenticate?continue=https%3A%2F%2Fwww.workatastartup.com%2Fapplica\" bounds=\"[578,394][702,442]\" interactive=\"true\">Find a job ›</a>\n            <div class=\"prose mt-4 text-sm\" bounds=\"[493,458][787,478]\"> Already work at a YC startup?\n              <a href=\"https://account.ycombinator.com/authenticate?continue=https%3A%2F%2Fwww.workatastartup.com%2Fapplica\" bounds=\"[684,459][787,477]\" interactive=\"true\">Browse privately</a>\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n    <div class=\"relative isolate z-0\" bounds=\"[0,514][1280,3122]\">\n      <div class=\"mx-auto max-w-ycdc-page px-4\" bounds=\"[90,550][1190,3086]\">\n        <div class=\"flex flex-col justify-between\" bounds=\"[106,550][1174,582]\">\n          <h2 class=\"text-2xl text-center md:text-left\" bounds=\"[106,550][516,582]\">Software Engineer jobs added recently</h2>\n          <ul class=\"text-center text-linkColor md:text-left\" bounds=\"[727,550][1174,582]\">\n            <li class=\"inline border-r border-gray-300\" bounds=\"[727,556][851,576]\">\n              <a href=\"/jobs/role/designer\" bounds=\"[735,556][842,576]\" interactive=\"true\">Design & UI/UX</a>\n            </li>\n            <li class=\"inline border-r border-gray-300\" bounds=\"[851,556][924,576]\">\n              <a href=\"/jobs/role/product-manager\" bounds=\"[859,556][915,576]\" interactive=\"true\">Product</a>\n            </li>\n            <li class=\"inline border-r border-gray-300\" bounds=\"[924,556][1051,576]\">\n              <a href=\"/jobs/role/recruiting-hr\" bounds=\"[932,556][1042,576]\" interactive=\"true\">Recruiting & HR</a>\n            </li>\n            <li class=\"inline border-r border-gray-300\" bounds=\"[1051,556][1104,576]\">\n              <a href=\"/jobs/role/sales-manager\" bounds=\"[1059,556][1095,576]\" interactive=\"true\">Sales</a>\n            </li>\n            <li class=\"inline border-r border-gray-300\" bounds=\"[1104,556][1174,576]\">\n              <a href=\"/jobs/role/science\" bounds=\"[1112,556][1166,576]\" interactive=\"true\">Science</a>\n            </li>\n          </ul>\n        </div>\n        <div class=\"mt-8 flex justify-center\">\n          <a class=\"ycdc-btn ycdc-btn-lg border-brand-200\" href=\"https://account.ycombinator.com/authenticate?continue=https%3A%2F%2Fwww.workatastartup.com%2Fapplica\" interactive=\"true\">See more jobs ›</a>\n        </div>\n      </div>\n    </div>\n    <div class=\"relative isolate z-0\">\n      <div class=\"mx-auto max-w-ycdc-page px-4\">\n        <div id=\"library-carousel\">\n          <div class=\"hidden md:block\">\n            <div class=\"carousel\">\n              <div class=\"relative -mb-4 h-fit\">\n                <div class=\"horizontalSlider___281Ls carousel__slider carousel__slider--horizontal\" role=\"listbox\" aria-label=\"slider\" interactive=\"true\" />\n              </div>\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n    <div class=\"relative isolate z-0\">\n      <div class=\"mx-auto max-w-ycdc-page px-4\">\n        <div class=\"flex flex-col flex-wrap\">\n          <div class=\"shrink-0\">\n            <h3 class=\"font-semibold tracking-wider\">Work at a Startup</h3>\n            <ul class=\"mt-2 space-y-1\">\n              <li>\n                <a class=\"font-light text-sm hover:text-gray-700\" href=\"https://www.workatastartup.com/jobs\" interactive=\"true\">Jobs</a>\n              </li>\n              <li>\n                <a class=\"font-light text-sm hover:text-gray-700\" href=\"https://www.workatastartup.com/internships\" interactive=\"true\">Internships</a>\n              </li>\n              <li>\n                <a class=\"font-light text-sm hover:text-gray-700\" href=\"https://www.workatastartup.com/events\" interactive=\"true\">Events</a>\n              </li>\n              <li>\n                <a class=\"font-light text-sm hover:text-gray-700\" href=\"https://www.workatastartup.com/about\" interactive=\"true\">How it works</a>\n              </li>\n              <li>\n                <a class=\"font-light text-sm hover:text-gray-700\" href=\"https://www.workatastartup.com/application\" interactive=\"true\">Sign In</a>\n              </li>\n            </ul>\n          </div>\n          <div class=\"shrink-0\">\n            <h3 class=\"font-semibold tracking-wider\">Jobs by Role</h3>\n            <ul class=\"mt-2 space-y-1\">\n              <li>\n                <a class=\"font-light text-sm hover:text-gray-700\" href=\"/jobs/role/software-engineer\" interactive=\"true\">Software Engineer Jobs</a>\n              </li>\n              <li>\n                <a class=\"font-light text-sm hover:text-gray-700\" href=\"/jobs/role/designer\" interactive=\"true\">Design & UI/UX Jobs</a>\n              </li>\n              <li>\n                <a class=\"font-light text-sm hover:text-gray-700\" href=\"/jobs/role/product-manager\" interactive=\"true\">Product Manager Jobs</a>\n              </li>\n              <li>\n                <a class=\"font-light text-sm hover:text-gray-700\" href=\"/jobs/role/recruiting-hr\" interactive=\"true\">Recruiting & HR Jobs</a>\n              </li>\n              <li>\n                <a class=\"font-light text-sm hover:text-gray-700\" href=\"/jobs/role/sales-manager\" interactive=\"true\">Sales Jobs</a>\n              </li>\n              <li>\n                <a class=\"font-light text-sm hover:text-gray-700\" href=\"/jobs/role/marketing\" interactive=\"true\">Marketing Jobs</a>\n              </li>\n              <li>\n                <a class=\"font-light text-sm hover:text-gray-700\" href=\"/jobs/role/support\" interactive=\"true\">Support & Success Jobs</a>\n              </li>\n              <li>\n                <a class=\"font-light text-sm hover:text-gray-700\" href=\"/jobs/role/operations\" interactive=\"true\">Operations Jobs</a>\n              </li>\n              <li>\n                <a class=\"font-light text-sm hover:text-gray-700\" href=\"/jobs/role/science\" interactive=\"true\">Science Jobs</a>\n              </li>\n            </ul>\n          </div>\n          <div class=\"shrink-0\">\n            <h3 class=\"font-semibold tracking-wider\">Jobs by Location</h3>\n            <ul class=\"mt-2 space-y-1\">\n              <li>\n                <a class=\"font-light text-sm hover:text-gray-700\" href=\"/jobs/location/san-francisco\" interactive=\"true\">Jobs in San Francisco</a>\n              </li>\n              <li>\n                <a class=\"font-light text-sm hover:text-gray-700\" href=\"/jobs/location/new-york\" interactive=\"true\">Jobs in New York</a>\n              </li>\n              <li>\n                <a class=\"font-light text-sm hover:text-gray-700\" href=\"/jobs/location/los-angeles\" interactive=\"true\">Jobs in Los Angeles</a>\n              </li>\n              <li>\n                <a class=\"font-light text-sm hover:text-gray-700\" href=\"/jobs/location/seattle\" interactive=\"true\">Jobs in Seattle</a>\n              </li>\n              <li>\n                <a class=\"font-light text-sm hover:text-gray-700\" href=\"/jobs/location/austin\" interactive=\"true\">Jobs in Austin</a>\n              </li>\n              <li>\n                <a class=\"font-light text-sm hover:text-gray-700\" href=\"/jobs/location/chicago\" interactive=\"true\">Jobs in Chicago</a>\n              </li>\n              <li>\n                <a class=\"font-light text-sm hover:text-gray-700\" href=\"/jobs/location/india\" interactive=\"true\">Jobs in India</a>\n              </li>\n            </ul>\n          </div>\n          <div class=\"shrink-0\">\n            <h3 class=\"font-semibold tracking-wider\">Jobs by Role and Location</h3>\n            <ul class=\"mt-2 space-y-1\">\n              <li>\n                <a class=\"font-light text-sm hover:text-gray-700\" href=\"/jobs/role/software-engineer/san-francisco\" interactive=\"true\">Software Engineer Jobs in San Francisco</a>\n              </li>\n              <li>\n                <a class=\"font-light text-sm hover:text-gray-700\" href=\"/jobs/role/recruiting-hr/san-francisco\" interactive=\"true\">Recruiting Jobs in San Francisco</a>\n              </li>\n              <li>\n                <a class=\"font-light text-sm hover:text-gray-700\" href=\"/jobs/role/product-manager/san-francisco\" interactive=\"true\">Product Manager Jobs in San Francisco</a>\n              </li>\n              <li>\n                <a class=\"font-light text-sm hover:text-gray-700\" href=\"/jobs/role/software-engineer/new-york\" interactive=\"true\">Software Engineer Jobs in New York</a>\n              </li>\n              <li>\n                <a class=\"font-light text-sm hover:text-gray-700\" href=\"/jobs/role/recruiting-hr/new-york\" interactive=\"true\">Recruiting Jobs in New York</a>\n              </li>\n              <li>\n                <a class=\"font-light text-sm hover:text-gray-700\" href=\"/jobs/role/product-manager/new-york\" interactive=\"true\">Product Manager Jobs in New York</a>\n              </li>\n              <li>\n                <a class=\"font-light text-sm hover:text-gray-700\" href=\"/jobs/role/software-engineer/los-angeles\" interactive=\"true\">Software Engineer Jobs in Los Angeles</a>\n              </li>\n              <li>\n                <a class=\"font-light text-sm hover:text-gray-700\" href=\"/jobs/role/recruiting-hr/los-angeles\" interactive=\"true\">Recruiting Jobs in Los Angeles</a>\n              </li>\n              <li>\n                <a class=\"font-light text-sm hover:text-gray-700\" href=\"/jobs/role/product-manager/los-angeles\" interactive=\"true\">Product Manager Jobs in Los Angeles</a>\n              </li>\n            </ul>\n          </div>\n          <div class=\"shrink-0\">\n            <h3 class=\"font-semibold tracking-wider\">Remote Jobs</h3>\n            <ul class=\"mt-2 space-y-1\">\n              <li>\n                <a class=\"font-light text-sm hover:text-gray-700\" href=\"/jobs/role/software-engineer/remote\" interactive=\"true\">Remote Software Engineer Jobs</a>\n              </li>\n              <li>\n                <a class=\"font-light text-sm hover:text-gray-700\" href=\"/jobs/role/designer/remote\" interactive=\"true\">Remote Design & UI/UX Jobs</a>\n              </li>\n              <li>\n                <a class=\"font-light text-sm hover:text-gray-700\" href=\"/jobs/role/product-manager/remote\" interactive=\"true\">Remote Product Manager Jobs</a>\n              </li>\n              <li>\n                <a class=\"font-light text-sm hover:text-gray-700\" href=\"/jobs/role/recruiting-hr/remote\" interactive=\"true\">Remote Recruiting & HR Jobs</a>\n              </li>\n              <li>\n                <a class=\"font-light text-sm hover:text-gray-700\" href=\"/jobs/role/sales-manager/remote\" interactive=\"true\">Remote Sales Jobs</a>\n              </li>\n              <li>\n                <a class=\"font-light text-sm hover:text-gray-700\" href=\"/jobs/role/marketing/remote\" interactive=\"true\">Remote Marketing Jobs</a>\n              </li>\n              <li>\n                <a class=\"font-light text-sm hover:text-gray-700\" href=\"/jobs/role/support/remote\" interactive=\"true\">Remote Support & Success Jobs</a>\n              </li>\n              <li>\n                <a class=\"font-light text-sm hover:text-gray-700\" href=\"/jobs/role/operations/remote\" interactive=\"true\">Remote Operations Jobs</a>\n              </li>\n              <li>\n                <a class=\"font-light text-sm hover:text-gray-700\" href=\"/jobs/role/science/remote\" interactive=\"true\">Remote Science Jobs</a>\n              </li>\n            </ul>\n          </div>\n        </div>\n      </div>\n    </div>\n    <footer class=\"bg-black text-beige-light\">\n      <h2 id=\"footer-heading\" class=\"sr-only\">Footer</h2>\n      <div class=\"mx-auto max-w-ycdc-page px-6\">\n        <div class=\"flex flex-col space-y-8\">\n          <div class=\"flex flex-col items-start\">\n            <div class=\"flex flex-row items-center\">\n              <a class=\"block h-[40px] w-[40px]\" href=\"/\" interactive=\"true\">\n                <span class=\"sr-only\" interactive=\"true\">Y Combinator</span>\n                <img class=\"h-full w-full\" interactive=\"true\" />\n              </a>\n              <h3 class=\"font-['Outfit',sans-serif] font-light text-base\">Make something people want.</h3>\n            </div>\n          </div>\n          <div class=\"grid grid-cols-2 items-start\">\n            <div>\n              <h3 class=\"font-medium tracking-wider text-sm\">Programs</h3>\n            </div>\n            <div>\n              <h3 class=\"font-medium tracking-wider text-sm\">Resources</h3>\n            </div>\n            <div>\n              <h3 class=\"font-medium tracking-wider text-sm\">Company</h3>\n            </div>\n          </div>\n        </div>\n        <div class=\"mt-8 border-t border-gray-200\">\n          <div class=\"flex space-x-6 md:order-2\">\n            <a class=\"text-[#f5f5ee]\" href=\"https://twitter.com/ycombinator\" interactive=\"true\">\n              <span class=\"sr-only\" interactive=\"true\">Twitter</span>\n            </a>\n            <a class=\"text-[#f5f5ee]\" href=\"https://www.facebook.com/YCombinator/\" interactive=\"true\">\n              <span class=\"sr-only\" interactive=\"true\">Facebook</span>\n            </a>\n            <a class=\"text-[#f5f5ee]\" href=\"https://www.instagram.com/ycombinator\" interactive=\"true\">\n              <span class=\"sr-only\" interactive=\"true\">Instagram</span>\n            </a>\n            <a class=\"text-[#f5f5ee]\" href=\"https://www.linkedin.com/school/y-combinator/\" interactive=\"true\">\n              <span class=\"sr-only\" interactive=\"true\">LinkedIn</span>\n            </a>\n            <a class=\"text-[#f5f5ee]\" href=\"https://www.youtube.com/c/ycombinator\" interactive=\"true\">\n              <span class=\"sr-only\" interactive=\"true\">Youtube</span>\n            </a>\n          </div>\n          <p class=\"mt-8 font-['Outfit',sans-serif] font-light\">© 2026 Y Combinator</p>\n        </div>\n      </div>\n    </footer>\n  </div>\n</body>\n",
+  "screen_purpose": "This is the Y Combinator Work at a Startup homepage showcasing startup job opportunities and platform features",
+  "screen_type": "home",
+  "app_state": {
+    "logged_in": "no",
+    "platform": "work_at_startup",
+    "featured_section": "software_engineer_jobs"
+  },
+  "elements": [
+    {
+      "element_id": "elem_01",
+      "reference": {
+        "resource_id": null,
+        "text": "Y",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "top center navigation bar"
+      },
+      "element_type": "link",
+      "semantic_role": "Navigates to Y Combinator main homepage",
+      "label": "Y",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "tap"
+      ],
+      "inferred_destination": "Y Combinator main homepage",
+      "confidence": 0.95
+    },
+    {
+      "element_id": "elem_02",
+      "reference": {
+        "resource_id": null,
+        "text": "Log in",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "top right navigation bar"
+      },
+      "element_type": "link",
+      "semantic_role": "Initiates user login process",
+      "label": "Log in",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "tap"
+      ],
+      "inferred_destination": "Login page",
+      "confidence": 0.95
+    },
+    {
+      "element_id": "elem_03",
+      "reference": {
+        "resource_id": null,
+        "text": "Apply",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "top right navigation bar"
+      },
+      "element_type": "button",
+      "semantic_role": "Navigates to Y Combinator application process",
+      "label": "Apply",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "tap"
+      ],
+      "inferred_destination": "Y Combinator application page",
+      "confidence": 0.95
+    },
+    {
+      "element_id": "elem_04",
+      "reference": {
+        "resource_id": null,
+        "text": "Find the best startup jobs, curated by YC",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "center hero section"
+      },
+      "element_type": "text",
+      "semantic_role": "Main headline describing the platform's value proposition",
+      "label": "Find the best startup jobs, curated by YC",
+      "is_interactive": false,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [],
+      "inferred_destination": null,
+      "confidence": 0.95
+    },
+    {
+      "element_id": "elem_05",
+      "reference": {
+        "resource_id": null,
+        "text": "Find a job ›",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "center below hero text"
+      },
+      "element_type": "button",
+      "semantic_role": "Primary call-to-action to start job search process",
+      "label": "Find a job ›",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "tap"
+      ],
+      "inferred_destination": "Job search/application page",
+      "confidence": 0.95
+    },
+    {
+      "element_id": "elem_06",
+      "reference": {
+        "resource_id": null,
+        "text": "Browse privately",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "center below main CTA button"
+      },
+      "element_type": "link",
+      "semantic_role": "Allows existing YC startup employees to browse jobs privately",
+      "label": "Browse privately",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "tap"
+      ],
+      "inferred_destination": "Private job browsing page",
+      "confidence": 0.9
+    },
+    {
+      "element_id": "elem_07",
+      "reference": {
+        "resource_id": null,
+        "text": "Software Engineer jobs added recently",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "left side below hero section"
+      },
+      "element_type": "text",
+      "semantic_role": "Section header for recently added software engineering positions",
+      "label": "Software Engineer jobs added recently",
+      "is_interactive": false,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [],
+      "inferred_destination": null,
+      "confidence": 0.95
+    },
+    {
+      "element_id": "elem_08",
+      "reference": {
+        "resource_id": null,
+        "text": "Design & UI/UX",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "right side job category filters"
+      },
+      "element_type": "link",
+      "semantic_role": "Filters jobs to show Design & UI/UX positions",
+      "label": "Design & UI/UX",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "tap"
+      ],
+      "inferred_destination": "Design jobs listing page",
+      "confidence": 0.9
+    },
+    {
+      "element_id": "elem_09",
+      "reference": {
+        "resource_id": null,
+        "text": "Product",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "right side job category filters"
+      },
+      "element_type": "link",
+      "semantic_role": "Filters jobs to show Product Manager positions",
+      "label": "Product",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "tap"
+      ],
+      "inferred_destination": "Product jobs listing page",
+      "confidence": 0.9
+    },
+    {
+      "element_id": "elem_10",
+      "reference": {
+        "resource_id": null,
+        "text": "Recruiting & HR",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "right side job category filters"
+      },
+      "element_type": "link",
+      "semantic_role": "Filters jobs to show Recruiting & HR positions",
+      "label": "Recruiting & HR",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "tap"
+      ],
+      "inferred_destination": "Recruiting jobs listing page",
+      "confidence": 0.9
+    },
+    {
+      "element_id": "elem_11",
+      "reference": {
+        "resource_id": null,
+        "text": "Sales",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "right side job category filters"
+      },
+      "element_type": "link",
+      "semantic_role": "Filters jobs to show Sales positions",
+      "label": "Sales",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "tap"
+      ],
+      "inferred_destination": "Sales jobs listing page",
+      "confidence": 0.9
+    },
+    {
+      "element_id": "elem_12",
+      "reference": {
+        "resource_id": null,
+        "text": "Science",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "right side job category filters"
+      },
+      "element_type": "link",
+      "semantic_role": "Filters jobs to show Science positions",
+      "label": "Science",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "tap"
+      ],
+      "inferred_destination": "Science jobs listing page",
+      "confidence": 0.9
+    }
+  ],
+  "navigation_context": {
+    "arrived_from": null,
+    "arrival_action": null,
+    "visible_navigation": [
+      "Y Combinator logo",
+      "Log in",
+      "Apply"
+    ],
+    "active_navigation": null,
+    "back_available": false,
+    "inferred_depth": 0
+  },
+  "confidence": 0.92,
+  "raw_ai_response": "```json\n{\n  \"screen_purpose\": \"This is the Y Combinator Work at a Startup homepage showcasing startup job opportunities and platform features\",\n  \"screen_type\": \"home\",\n  \"app_state\": {\n    \"logged_in\": \"no\",\n    \"platform\": \"work_at_startup\",\n    \"featured_section\": \"software_engineer_jobs\"\n  },\n  \"elements\": [\n    {\n      \"element_id\": \"elem_01\",\n      \"element_type\": \"link\",\n      \"semantic_role\": \"Navigates to Y Combinator main homepage\",\n      \"label\": \"Y\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"tap\"],\n      \"inferred_destination\": \"Y Combinator main homepage\",\n      \"bounds_description\": \"top center navigation bar\",\n      \"confidence\": 0.95\n    },\n    {\n      \"element_id\": \"elem_02\",\n      \"element_type\": \"link\",\n      \"semantic_role\": \"Initiates user login process\",\n      \"label\": \"Log in\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"tap\"],\n      \"inferred_destination\": \"Login page\",\n      \"bounds_description\": \"top right navigation bar\",\n      \"confidence\": 0.95\n    },\n    {\n      \"element_id\": \"elem_03\",\n      \"element_type\": \"button\",\n      \"semantic_role\": \"Navigates to Y Combinator application process\",\n      \"label\": \"Apply\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"tap\"],\n      \"inferred_destination\": \"Y Combinator application page\",\n      \"bounds_description\": \"top right navigation bar\",\n      \"confidence\": 0.95\n    },\n    {\n      \"element_id\": \"elem_04\",\n      \"element_type\": \"text\",\n      \"semantic_role\": \"Main headline describing the platform's value proposition\",\n      \"label\": \"Find the best startup jobs, curated by YC\",\n      \"is_interactive\": false,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [],\n      \"inferred_destination\": null,\n      \"bounds_description\": \"center hero section\",\n      \"confidence\": 0.95\n    },\n    {\n      \"element_id\": \"elem_05\",\n      \"element_type\": \"button\",\n      \"semantic_role\": \"Primary call-to-action to start job search process\",\n      \"label\": \"Find a job ›\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"tap\"],\n      \"inferred_destination\": \"Job search/application page\",\n      \"bounds_description\": \"center below hero text\",\n      \"confidence\": 0.95\n    },\n    {\n      \"element_id\": \"elem_06\",\n      \"element_type\": \"link\",\n      \"semantic_role\": \"Allows existing YC startup employees to browse jobs privately\",\n      \"label\": \"Browse privately\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"tap\"],\n      \"inferred_destination\": \"Private job browsing page\",\n      \"bounds_description\": \"center below main CTA button\",\n      \"confidence\": 0.90\n    },\n    {\n      \"element_id\": \"elem_07\",\n      \"element_type\": \"text\",\n      \"semantic_role\": \"Section header for recently added software engineering positions\",\n      \"label\": \"Software Engineer jobs added recently\",\n      \"is_interactive\": false,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [],\n      \"inferred_destination\": null,\n      \"bounds_description\": \"left side below hero section\",\n      \"confidence\": 0.95\n    },\n    {\n      \"element_id\": \"elem_08\",\n      \"element_type\": \"link\",\n      \"semantic_role\": \"Filters jobs to show Design & UI/UX positions\",\n      \"label\": \"Design & UI/UX\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"tap\"],\n      \"inferred_destination\": \"Design jobs listing page\",\n      \"bounds_description\": \"right side job category filters\",\n      \"confidence\": 0.90\n    },\n    {\n      \"element_id\": \"elem_09\",\n      \"element_type\": \"link\",\n      \"semantic_role\": \"Filters jobs to show Product Manager positions\",\n      \"label\": \"Product\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"tap\"],\n      \"inferred_destination\": \"Product jobs listing page\",\n      \"bounds_description\": \"right side job category filters\",\n      \"confidence\": 0.90\n    },\n    {\n      \"element_id\": \"elem_10\",\n      \"element_type\": \"link\",\n      \"semantic_role\": \"Filters jobs to show Recruiting & HR positions\",\n      \"label\": \"Recruiting & HR\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"tap\"],\n      \"inferred_destination\": \"Recruiting jobs listing page\",\n      \"bounds_description\": \"right side job category filters\",\n      \"confidence\": 0.90\n    },\n    {\n      \"element_id\": \"elem_11\",\n      \"element_type\": \"link\",\n      \"semantic_role\": \"Filters jobs to show Sales positions\",\n      \"label\": \"Sales\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"tap\"],\n      \"inferred_destination\": \"Sales jobs listing page\",\n      \"bounds_description\": \"right side job category filters\",\n      \"confidence\": 0.90\n    },\n    {\n      \"element_id\": \"elem_12\",\n      \"element_type\": \"link\",\n      \"semantic_role\": \"Filters jobs to show Science positions\",\n      \"label\": \"Science\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"tap\"],\n      \"inferred_destination\": \"Science jobs listing page\",\n      \"bounds_description\": \"right side job category filters\",\n      \"confidence\": 0.90\n    }\n  ],\n  \"navigation_context\": {\n    \"visible_navigation\": [\"Y Combinator logo\", \"Log in\", \"Apply\"],\n    \"active_navigation\": null,\n    \"back_available\": false,\n    \"inferred_depth\": 0\n  },\n  \"confidence\": 0.92\n}\n```"
+}

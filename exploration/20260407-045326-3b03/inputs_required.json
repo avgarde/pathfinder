@@ -1,0 +1,28 @@
+[
+  {
+    "field": "username",
+    "category": "credentials",
+    "screen_type": "detail",
+    "screen_purpose": "This screen is for exploring flight booking options.",
+    "element_label": "Username",
+    "element_type": "text_field",
+    "placeholder": "",
+    "required": true,
+    "step_number": 35,
+    "suggested_strategy": "literal",
+    "notes": "This field is required to proceed with the booking process."
+  },
+  {
+    "field": "password",
+    "category": "credentials",
+    "screen_type": "detail",
+    "screen_purpose": "This screen is for exploring flight booking options.",
+    "element_label": "Password",
+    "element_type": "text_field",
+    "placeholder": "",
+    "required": true,
+    "step_number": 35,
+    "suggested_strategy": "literal",
+    "notes": "This field is required to proceed with the booking process."
+  }
+]

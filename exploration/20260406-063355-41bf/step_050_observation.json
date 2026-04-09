@@ -1,0 +1,295 @@
+{
+  "observation_id": "obs_687cee09",
+  "timestamp": "2026-04-06T07:21:10.115374",
+  "screenshot_path": "exploration/20260406-063355-41bf/step_050.png",
+  "ui_structure_path": "<body class=\"ycdc2 base home\" bounds=\"[0,0][1280,9777]\">\n  <div id=\"NewHomePage-react-component-a26261e6-ac68-4d4d-8e62-5128aa53037e\" bounds=\"[0,0][1280,9777]\">\n    <div id=\"why-yc-page\" class=\"relative w-full max-w-[100vw]\" bounds=\"[0,0][1280,9777]\">\n      <div class=\"relative z-10 bg-beige-light\" bounds=\"[0,0][1280,9777]\">\n        <section class=\"relative box-border hidden\" bounds=\"[0,784][1280,2676]\">\n          <div class=\"pointer-events-none fixed left-[4%]\" bounds=\"[64,400][474,400]\">\n            <div class=\"pointer-events-none absolute left-1/2\" bounds=\"[64,177][474,623]\">\n              <div class=\"relative flex w-full\" bounds=\"[64,177][474,623]\">\n                <div class=\"mb-1.5 text-center font-['Source_Serif_4',serif]\" bounds=\"[225,177][313,205]\">During YC</div>\n                <img class=\"block aspect-square w-full\" bounds=\"[64,213][474,623]\" />\n              </div>\n              <p class=\"absolute left-1/2 top-full\" bounds=\"[84,635][453,677]\">Sam was part of YC's inaugural batch in S05 and founded OpenAI as YC Research in 2015.</p>\n            </div>\n            <div class=\"pointer-events-none absolute left-1/2\" bounds=\"[64,177][474,623]\">\n              <div class=\"relative flex w-full\" bounds=\"[64,177][474,623]\">\n                <div class=\"mb-1.5 text-center font-['Source_Serif_4',serif]\" bounds=\"[225,177][313,205]\">During YC</div>\n                <img class=\"block aspect-square w-full\" bounds=\"[64,213][474,623]\" />\n              </div>\n              <p class=\"absolute left-1/2 top-full\" bounds=\"[84,635][453,656]\">Brian, Joe, and Nate did YC in W09.</p>\n            </div>\n            <div class=\"pointer-events-none absolute left-1/2\" bounds=\"[64,177][474,623]\">\n              <div class=\"relative flex w-full\" bounds=\"[64,177][474,623]\">\n                <div class=\"mb-1.5 text-center font-['Source_Serif_4',serif]\" bounds=\"[225,177][313,205]\">During YC</div>\n                <img class=\"block aspect-square w-full\" bounds=\"[64,213][474,623]\" />\n              </div>\n              <p class=\"absolute left-1/2 top-full\" bounds=\"[84,635][453,677]\">The Collison brothers did YC twice—first in W07 and then in S09, when they started Stripe.</p>\n            </div>\n            <div class=\"pointer-events-none absolute left-1/2\" bounds=\"[64,177][474,623]\">\n              <div class=\"relative flex w-full\" bounds=\"[64,177][474,623]\">\n                <div class=\"mb-1.5 text-center font-['Source_Serif_4',serif]\" bounds=\"[225,177][313,205]\">During YC</div>\n                <img class=\"block aspect-square w-full\" bounds=\"[64,213][474,623]\" />\n              </div>\n              <p class=\"absolute left-1/2 top-full\" bounds=\"[84,635][453,656]\">Fred and Brian met on Reddit and did YC in S12.</p>\n            </div>\n            <div class=\"pointer-events-none absolute left-1/2\" bounds=\"[64,177][474,623]\">\n              <div class=\"relative flex w-full\" bounds=\"[64,177][474,623]\">\n                <div class=\"mb-1.5 text-center font-['Source_Serif_4',serif]\" bounds=\"[225,177][313,205]\">During YC</div>\n                <img class=\"block aspect-square w-full\" bounds=\"[64,213][474,623]\" />\n              </div>\n              <p class=\"absolute left-1/2 top-full\" bounds=\"[84,635][453,656]\">Andy, Stanley, Tony, and Evan did YC in S13.</p>\n            </div>\n            <div class=\"pointer-events-none absolute left-1/2\" bounds=\"[64,177][474,623]\">\n              <div class=\"relative flex w-full\" bounds=\"[64,177][474,623]\">\n                <div class=\"mb-1.5 text-center font-['Source_Serif_4',serif]\" bounds=\"[225,177][313,205]\">During YC</div>\n                <img class=\"block aspect-square w-full\" bounds=\"[64,213][474,623]\" />\n              </div>\n              <p class=\"absolute left-1/2 top-full\" bounds=\"[84,635][453,656]\">Alexandr and Lucy did YC S16 and pivoted during the batch.</p>\n            </div>\n            <div class=\"pointer-events-none absolute left-1/2\" bounds=\"[64,177][474,623]\">\n              <div class=\"relative flex w-full\" bounds=\"[64,177][474,623]\">\n                <div class=\"mb-1.5 text-center font-['Source_Serif_4',serif]\" bounds=\"[225,177][313,205]\">During YC</div>\n                <img class=\"block aspect-square w-full\" bounds=\"[64,213][474,623]\" />\n              </div>\n              <p class=\"absolute left-1/2 top-full\" bounds=\"[84,635][453,656]\">Arash and Drew started Dropbox at MIT and did YC in S07.</p>\n            </div>\n            <div class=\"pointer-events-none absolute left-1/2\" bounds=\"[64,177][474,623]\">\n              <div class=\"relative flex w-full\" bounds=\"[64,177][474,623]\">\n                <div class=\"mb-1.5 text-center font-['Source_Serif_4',serif]\" bounds=\"[225,177][313,205]\">During YC</div>\n                <img class=\"block aspect-square w-full\" bounds=\"[64,213][474,623]\" />\n              </div>\n              <p class=\"absolute left-1/2 top-full\" bounds=\"[84,635][453,656]\">Alexis and Steve were in the inaugural YC batch in S05.</p>\n            </div>\n            <div class=\"pointer-events-none absolute left-1/2\" bounds=\"[64,177][474,623]\">\n              <div class=\"relative flex w-full\" bounds=\"[64,177][474,623]\">\n                <div class=\"mb-1.5 text-center font-['Source_Serif_4',serif]\" bounds=\"[225,177][313,205]\">During YC</div>\n                <img class=\"block aspect-square w-full\" bounds=\"[64,213][474,623]\" />\n              </div>\n              <p class=\"absolute left-1/2 top-full\" bounds=\"[84,635][453,656]\">Apoorva, Max, and Brandon did YC in S12.</p>\n            </div>\n            <div class=\"pointer-events-none absolute left-1/2\" bounds=\"[64,177][474,623]\">\n              <div class=\"relative flex w-full\" bounds=\"[64,177][474,623]\">\n                <div class=\"mb-1.5 text-center font-['Source_Serif_4',serif]\" bounds=\"[225,177][313,205]\">During YC</div>\n                <img class=\"block aspect-square w-full\" bounds=\"[64,213][474,623]\" />\n              </div>\n              <p class=\"absolute left-1/2 top-full\" bounds=\"[84,635][453,656]\">Sid and Dmytro did YC in S14.</p>\n            </div>\n            <div class=\"pointer-events-none absolute left-1/2\" bounds=\"[64,177][474,623]\">\n              <div class=\"relative flex w-full\" bounds=\"[64,177][474,623]\">\n                <div class=\"mb-1.5 text-center font-['Source_Serif_4',serif]\" bounds=\"[225,177][313,205]\">During YC</div>\n                <img class=\"block aspect-square w-full\" bounds=\"[64,213][474,623]\" />\n              </div>\n              <p class=\"absolute left-1/2 top-full\" bounds=\"[84,635][453,656]\">Tarek and Luana did YC in W19.</p>\n            </div>\n            <div class=\"pointer-events-none absolute left-1/2\" bounds=\"[64,177][474,623]\">\n              <div class=\"relative flex w-full\" bounds=\"[64,177][474,623]\">\n                <div class=\"mb-1.5 text-center font-['Source_Serif_4',serif]\" bounds=\"[225,177][313,205]\">During YC</div>\n                <img class=\"block aspect-square w-full\" bounds=\"[64,213][474,623]\" />\n              </div>\n              <p class=\"absolute left-1/2 top-full\" bounds=\"[84,635][453,656]\">Haya and Amjad interviewing for the YC W18 batch.</p>\n            </div>\n            <div class=\"pointer-events-none absolute left-1/2\" bounds=\"[64,177][474,623]\">\n              <div class=\"relative flex w-full\" bounds=\"[64,177][474,623]\">\n                <div class=\"mb-1.5 text-center font-['Source_Serif_4',serif]\" bounds=\"[225,177][313,205]\">During YC</div>\n                <img class=\"block aspect-square w-full\" bounds=\"[64,213][474,623]\" />\n              </div>\n              <p class=\"absolute left-1/2 top-full\" bounds=\"[84,635][453,656]\">Michael, Justin, Kyle, and Emmett in YC W07.</p>\n            </div>\n          </div>\n          <div class=\"relative flex min-w-[250px]\">\n            <div class=\"flex scale-100 cursor-pointer\" role=\"button\" interactive=\"true\">\n              <span class=\"block\" interactive=\"true\">OpenAI</span>\n            </div>\n            <div class=\"flex scale-100 cursor-pointer\" role=\"button\" interactive=\"true\">\n              <span class=\"block\" interactive=\"true\">Airbnb</span>\n            </div>\n            <div class=\"flex scale-100 cursor-pointer\" role=\"button\" interactive=\"true\">\n              <span class=\"block\" interactive=\"true\">Stripe</span>\n            </div>\n            <div class=\"flex scale-100 cursor-pointer\" role=\"button\" interactive=\"true\">\n              <span class=\"block\" interactive=\"true\">Coinbase</span>\n            </div>\n            <div class=\"flex scale-100 cursor-pointer\" role=\"button\" interactive=\"true\">\n              <span class=\"block\" interactive=\"true\">DoorDash</span>\n            </div>\n            <div class=\"flex scale-100 cursor-pointer\" role=\"button\" interactive=\"true\">\n              <span class=\"block\" interactive=\"true\">Scale AI</span>\n            </div>\n            <div class=\"flex scale-100 cursor-pointer\" role=\"button\" interactive=\"true\">\n              <span class=\"block\" interactive=\"true\">Dropbox</span>\n            </div>\n            <div class=\"flex scale-100 cursor-pointer\" role=\"button\" interactive=\"true\">\n              <span class=\"block\" interactive=\"true\">Reddit</span>\n            </div>\n            <div class=\"flex scale-100 cursor-pointer\" role=\"button\" interactive=\"true\">\n              <span class=\"block\" interactive=\"true\">Instacart</span>\n            </div>\n            <div class=\"flex scale-100 cursor-pointer\" role=\"button\" interactive=\"true\">\n              <span class=\"block\" interactive=\"true\">GitLab</span>\n            </div>\n            <div class=\"flex scale-100 cursor-pointer\" role=\"button\" interactive=\"true\">\n              <span class=\"block\" interactive=\"true\">Kalshi</span>\n            </div>\n            <div class=\"flex scale-100 cursor-pointer\" role=\"button\" interactive=\"true\">\n              <span class=\"block\" interactive=\"true\">Replit</span>\n            </div>\n            <div class=\"flex scale-100 cursor-pointer\" role=\"button\" interactive=\"true\">\n              <span class=\"block\" interactive=\"true\">Twitch</span>\n            </div>\n            <div class=\"flex scale-100 cursor-pointer\" role=\"button\" interactive=\"true\">\n              <span class=\"block\" interactive=\"true\">$1.3 Trillion</span>\n              <span class=\"block text-[0.6rem] font-[350]\" interactive=\"true\">in combined valuation</span>\n            </div>\n            <div class=\"mt-1 flex justify-center\">\n              <a class=\"inline-flex h-[52px] cursor-pointer\" href=\"/companies\" interactive=\"true\">All companies</a>\n            </div>\n          </div>\n          <div class=\"pointer-events-none fixed right-[4%]\" bounds=\"[806,400][1216,400]\">\n            <div class=\"pointer-events-none absolute left-1/2\" bounds=\"[806,177][1216,623]\">\n              <div class=\"relative flex w-full\" bounds=\"[806,177][1216,623]\">\n                <div class=\"mb-1.5 text-center font-['Source_Serif_4',serif]\" bounds=\"[992,177][1030,205]\">Now</div>\n                <img class=\"block aspect-square w-full\" bounds=\"[806,213][1216,623]\" />\n              </div>\n              <p class=\"absolute left-1/2 top-full\" bounds=\"[827,635][1196,656]\">Sam built OpenAI into a $500B company.</p>\n            </div>\n            <div class=\"pointer-events-none absolute left-1/2\" bounds=\"[806,177][1216,623]\">\n              <div class=\"relative flex w-full\" bounds=\"[806,177][1216,623]\">\n                <div class=\"mb-1.5 text-center font-['Source_Serif_4',serif]\" bounds=\"[992,177][1030,205]\">Now</div>\n                <img class=\"block aspect-square w-full\" bounds=\"[806,213][1216,623]\" />\n              </div>\n              <p class=\"absolute left-1/2 top-full\" bounds=\"[827,635][1196,656]\">Airbnb went public in 2020 at an over $100B valuation.</p>\n            </div>\n            <div class=\"pointer-events-none absolute left-1/2\" bounds=\"[806,177][1216,623]\">\n              <div class=\"relative flex w-full\" bounds=\"[806,177][1216,623]\">\n                <div class=\"mb-1.5 text-center font-['Source_Serif_4',serif]\" bounds=\"[992,177][1030,205]\">Now</div>\n                <img class=\"block aspect-square w-full\" bounds=\"[806,213][1216,623]\" />\n              </div>\n              <p class=\"absolute left-1/2 top-full\" bounds=\"[827,635][1196,656]\">Stripe is now the internet’s $107B payments backbone.</p>\n            </div>\n            <div class=\"pointer-events-none absolute left-1/2\" bounds=\"[806,177][1216,623]\">\n              <div class=\"relative flex w-full\" bounds=\"[806,177][1216,623]\">\n                <div class=\"mb-1.5 text-center font-['Source_Serif_4',serif]\" bounds=\"[992,177][1030,205]\">Now</div>\n                <img class=\"block aspect-square w-full\" bounds=\"[806,213][1216,623]\" />\n              </div>\n              <p class=\"absolute left-1/2 top-full\" bounds=\"[827,635][1196,656]\">Coinbase went public in 2021 at a $86B valuation.</p>\n            </div>\n            <div class=\"pointer-events-none absolute left-1/2\" bounds=\"[806,177][1216,623]\">\n              <div class=\"relative flex w-full\" bounds=\"[806,177][1216,623]\">\n                <div class=\"mb-1.5 text-center font-['Source_Serif_4',serif]\" bounds=\"[992,177][1030,205]\">Now</div>\n                <img class=\"block aspect-square w-full\" bounds=\"[806,213][1216,623]\" />\n              </div>\n              <p class=\"absolute left-1/2 top-full\" bounds=\"[827,635][1196,656]\">DoorDash went public in 2020 at a valuation of $39B.</p>\n            </div>\n            <div class=\"pointer-events-none absolute left-1/2\" bounds=\"[806,177][1216,623]\">\n              <div class=\"relative flex w-full\" bounds=\"[806,177][1216,623]\">\n                <div class=\"mb-1.5 text-center font-['Source_Serif_4',serif]\" bounds=\"[992,177][1030,205]\">Now</div>\n                <img class=\"block aspect-square w-full\" bounds=\"[806,213][1216,623]\" />\n              </div>\n              <p class=\"absolute left-1/2 top-full\" bounds=\"[827,635][1196,656]\">In 2025, Meta acquired 49% of Scale for over $14B.</p>\n            </div>\n            <div class=\"pointer-events-none absolute left-1/2\" bounds=\"[806,177][1216,623]\">\n              <div class=\"relative flex w-full\" bounds=\"[806,177][1216,623]\">\n                <div class=\"mb-1.5 text-center font-['Source_Serif_4',serif]\" bounds=\"[992,177][1030,205]\">Now</div>\n                <img class=\"block aspect-square w-full\" bounds=\"[806,213][1216,623]\" />\n              </div>\n              <p class=\"absolute left-1/2 top-full\" bounds=\"[827,635][1196,677]\">Dropbox had the biggest tech IPO of 2018 at a $9B valuation.</p>\n            </div>\n            <div class=\"pointer-events-none absolute left-1/2\" bounds=\"[806,177][1216,623]\">\n              <div class=\"relative flex w-full\" bounds=\"[806,177][1216,623]\">\n                <div class=\"mb-1.5 text-center font-['Source_Serif_4',serif]\" bounds=\"[992,177][1030,205]\">Now</div>\n                <img class=\"block aspect-square w-full\" bounds=\"[806,213][1216,623]\" />\n              </div>\n              <p class=\"absolute left-1/2 top-full\" bounds=\"[827,635][1196,656]\">Reddit went public in 2024 at a $6.4B valuation.</p>\n            </div>\n            <div class=\"pointer-events-none absolute left-1/2\" bounds=\"[806,177][1216,623]\">\n              <div class=\"relative flex w-full\" bounds=\"[806,177][1216,623]\">\n                <div class=\"mb-1.5 text-center font-['Source_Serif_4',serif]\" bounds=\"[992,177][1030,205]\">Now</div>\n                <img class=\"block aspect-square w-full\" bounds=\"[806,213][1216,623]\" />\n              </div>\n              <p class=\"absolute left-1/2 top-full\" bounds=\"[827,635][1196,656]\">Instacart went public in 2023 at a $10B valuation.</p>\n            </div>\n            <div class=\"pointer-events-none absolute left-1/2\" bounds=\"[806,177][1216,623]\">\n              <div class=\"relative flex w-full\" bounds=\"[806,177][1216,623]\">\n                <div class=\"mb-1.5 text-center font-['Source_Serif_4',serif]\" bounds=\"[992,177][1030,205]\">Now</div>\n                <img class=\"block aspect-square w-full\" bounds=\"[806,213][1216,623]\" />\n              </div>\n              <p class=\"absolute left-1/2 top-full\" bounds=\"[827,635][1196,656]\">GitLab went public in 2021 at an $11B valuation.</p>\n            </div>\n            <div class=\"pointer-events-none absolute left-1/2\" bounds=\"[806,177][1216,623]\">\n              <div class=\"relative flex w-full\" bounds=\"[806,177][1216,623]\">\n                <div class=\"mb-1.5 text-center font-['Source_Serif_4',serif]\" bounds=\"[992,177][1030,205]\">Now</div>\n                <img class=\"block aspect-square w-full\" bounds=\"[806,213][1216,623]\" />\n              </div>\n              <p class=\"absolute left-1/2 top-full\" bounds=\"[827,635][1196,656]\">Kalshi reached an $11B valuation in 2025.</p>\n            </div>\n            <div class=\"pointer-events-none absolute left-1/2\" bounds=\"[806,177][1216,623]\">\n              <div class=\"relative flex w-full\" bounds=\"[806,177][1216,623]\">\n                <div class=\"mb-1.5 text-center font-['Source_Serif_4',serif]\" bounds=\"[992,177][1030,205]\">Now</div>\n                <img class=\"block aspect-square w-full\" bounds=\"[806,213][1216,623]\" />\n              </div>\n              <p class=\"absolute left-1/2 top-full\" bounds=\"[827,635][1196,677]\">Replit became a leading AI coding platform valued at over $9B.</p>\n            </div>\n            <div class=\"pointer-events-none absolute left-1/2\" bounds=\"[806,177][1216,623]\">\n              <div class=\"relative flex w-full\" bounds=\"[806,177][1216,623]\">\n                <div class=\"mb-1.5 text-center font-['Source_Serif_4',serif]\" bounds=\"[992,177][1030,205]\">Now</div>\n                <img class=\"block aspect-square w-full\" bounds=\"[806,213][1216,623]\" />\n              </div>\n              <p class=\"absolute left-1/2 top-full\" bounds=\"[827,635][1196,656]\">Twitch was acquired by Amazon for nearly $1B.</p>\n            </div>\n          </div>\n        </section>\n        <div class=\"relative z-20\">\n          <section id=\"in-the-room-photos\" class=\"m-0 w-full max-w-full\">\n            <h2 class=\"mx-auto mb-[60px] max-w-full\">Be in the room with …</h2>\n            <div class=\"group/grid scrollbar-none flex\">\n              <div class=\"group relative z-[1]\">\n                <video class=\"duration-400 h-full w-full\" />\n              </div>\n              <div class=\"group relative z-[1]\">\n                <video class=\"duration-400 h-full w-full\" />\n              </div>\n              <div class=\"group relative z-[1]\">\n                <video class=\"duration-400 h-full w-full\" />\n              </div>\n              <div class=\"group relative z-[1]\">\n                <video class=\"duration-400 h-full w-full\" />\n              </div>\n              <div class=\"group relative z-[1]\">\n                <video class=\"duration-400 h-full w-full\" />\n              </div>\n              <div class=\"group relative z-[1]\">\n                <video class=\"duration-400 h-full w-full\" />\n              </div>\n              <div class=\"group relative z-[1]\">\n                <video class=\"duration-400 h-full w-full\" />\n              </div>\n              <div class=\"group relative z-[1]\">\n                <video class=\"duration-400 h-full w-full\" />\n              </div>\n              <div class=\"group relative z-[1]\">\n                <video class=\"duration-400 h-full w-full\" />\n              </div>\n            </div>\n          </section>\n          <section class=\"m-0 box-border w-full\">\n            <h2 class=\"mx-auto mb-[60px] max-w-full\">All partners were YC founders first</h2>\n            <div class=\"scrollbar-none flex w-full\">\n              <div class=\"max-sm:w-[85vw] max-sm:max-w-[360px] max-sm:flex-none\">\n                <a class=\"text-inherit no-underline\" href=\"/people/garry-tan\" interactive=\"true\" />\n              </div>\n              <div class=\"max-sm:w-[85vw] max-sm:max-w-[360px] max-sm:flex-none\">\n                <a class=\"text-inherit no-underline\" href=\"/people/harj-taggar\" interactive=\"true\" />\n              </div>\n              <div class=\"max-sm:w-[85vw] max-sm:max-w-[360px] max-sm:flex-none\">\n                <a class=\"text-inherit no-underline\" href=\"/people/jared-friedman\" interactive=\"true\" />\n              </div>\n              <div class=\"max-sm:w-[85vw] max-sm:max-w-[360px] max-sm:flex-none\">\n                <a class=\"text-inherit no-underline\" href=\"/people/aaron-epstein\" interactive=\"true\" />\n              </div>\n              <div class=\"max-sm:w-[85vw] max-sm:max-w-[360px] max-sm:flex-none\">\n                <a class=\"text-inherit no-underline\" href=\"/people/diana-hu\" interactive=\"true\" />\n              </div>\n              <div class=\"max-sm:w-[85vw] max-sm:max-w-[360px] max-sm:flex-none\">\n                <a class=\"text-inherit no-underline\" href=\"/people/gustaf-alstromer\" interactive=\"true\" />\n              </div>\n              <div class=\"max-sm:w-[85vw] max-sm:max-w-[360px] max-sm:flex-none\">\n                <a class=\"text-inherit no-underline\" href=\"/people/nicolas-dessaigne\" interactive=\"true\" />\n              </div>\n              <div class=\"max-sm:w-[85vw] max-sm:max-w-[360px] max-sm:flex-none\">\n                <a class=\"text-inherit no-underline\" href=\"/people/tom-blomfield\" interactive=\"true\" />\n              </div>\n              <div class=\"max-sm:w-[85vw] max-sm:max-w-[360px] max-sm:flex-none\">\n                <a class=\"text-inherit no-underline\" href=\"/people/brad-flora\" interactive=\"true\" />\n              </div>\n              <div class=\"max-sm:w-[85vw] max-sm:max-w-[360px] max-sm:flex-none\">\n                <a class=\"text-inherit no-underline\" href=\"/people/pete-koomen\" interactive=\"true\" />\n              </div>\n              <div class=\"max-sm:w-[85vw] max-sm:max-w-[360px] max-sm:flex-none\">\n                <a class=\"text-inherit no-underline\" href=\"/people/ankit-gupta\" interactive=\"true\" />\n              </div>\n              <div class=\"max-sm:w-[85vw] max-sm:max-w-[360px] max-sm:flex-none\">\n                <a class=\"text-inherit no-underline\" href=\"/people/tyler-bosmeny\" interactive=\"true\" />\n              </div>\n              <div class=\"max-sm:w-[85vw] max-sm:max-w-[360px] max-sm:flex-none\">\n                <a class=\"text-inherit no-underline\" href=\"/people/david-lieb\" interactive=\"true\" />\n              </div>\n              <div class=\"max-sm:w-[85vw] max-sm:max-w-[360px] max-sm:flex-none\">\n                <a class=\"text-inherit no-underline\" href=\"/people/andrew-miklas\" interactive=\"true\" />\n              </div>\n              <div class=\"max-sm:w-[85vw] max-sm:max-w-[360px] max-sm:flex-none\">\n                <a class=\"text-inherit no-underline\" href=\"/people/jon-xu\" interactive=\"true\" />\n              </div>\n            </div>\n          </section>\n          <section class=\"relative box-border flex\">\n            <h2 class=\"mx-auto mb-[60px] max-w-full\">Knowledge & News</h2>\n          </section>\n          <section class=\"relative box-border w-full\">\n            <div class=\"mx-auto flex w-full\">\n              <div class=\"flex w-full flex-col\">\n                <div class=\"mx-0 mb-0 mt-0\">It's never too early to apply.</div>\n                <p class=\"mx-0 mb-0 mt-0\">We fund companies with no revenue, product, or fully baked idea.</p>\n              </div>\n              <div class=\"mt-6 flex w-full\">\n                <a class=\"newycdcbutton inline-flex h-20\" href=\"/apply\" interactive=\"true\">Apply</a>\n              </div>\n              <div class=\"relative left-1/2 mx-auto\">\n                <img class=\"aspect-square min-w-0 flex-1\" />\n                <img class=\"aspect-square min-w-0 flex-1\" />\n                <img class=\"aspect-square min-w-0 flex-1\" />\n                <img class=\"aspect-square min-w-0 flex-1\" />\n                <img class=\"aspect-square min-w-0 flex-1\" />\n              </div>\n            </div>\n          </section>\n        </div>\n        <footer class=\"bg-black text-beige-light\">\n          <h2 id=\"footer-heading\" class=\"sr-only\">Footer</h2>\n          <div class=\"mx-auto max-w-ycdc-page px-6\">\n            <div class=\"mt-8 border-t border-gray-200\">\n              <div class=\"flex space-x-6 md:order-2\">\n                <a class=\"text-[#f5f5ee]\" href=\"https://twitter.com/ycombinator\" interactive=\"true\" />\n                <a class=\"text-[#f5f5ee]\" href=\"https://www.facebook.com/YCombinator/\" interactive=\"true\" />\n                <a class=\"text-[#f5f5ee]\" href=\"https://www.instagram.com/ycombinator\" interactive=\"true\" />\n                <a class=\"text-[#f5f5ee]\" href=\"https://www.linkedin.com/school/y-combinator/\" interactive=\"true\" />\n                <a class=\"text-[#f5f5ee]\" href=\"https://www.youtube.com/c/ycombinator\" interactive=\"true\" />\n              </div>\n              <p class=\"mt-8 font-['Outfit',sans-serif] font-light\">© 2026 Y Combinator</p>\n            </div>\n          </div>\n        </footer>\n      </div>\n    </div>\n  </div>\n</body>\n",
+  "screen_purpose": "This is Y Combinator's main homepage showcasing their value proposition of turning builders into formidable founders with a hero section and navigation to key platform areas.",
+  "screen_type": "home",
+  "app_state": {
+    "logged_in": "no",
+    "current_page": "homepage",
+    "user_type": "visitor"
+  },
+  "elements": [
+    {
+      "element_id": "elem_01",
+      "reference": {
+        "resource_id": null,
+        "text": "About",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "top navigation bar, left side"
+      },
+      "element_type": "dropdown",
+      "semantic_role": "Expands About section menu with information about Y Combinator",
+      "label": "About",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "tap"
+      ],
+      "inferred_destination": "About submenu or page",
+      "confidence": 0.95
+    },
+    {
+      "element_id": "elem_02",
+      "reference": {
+        "resource_id": null,
+        "text": "Companies",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "top navigation bar, left-center"
+      },
+      "element_type": "dropdown",
+      "semantic_role": "Expands Companies section menu to browse YC portfolio companies",
+      "label": "Companies",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "tap"
+      ],
+      "inferred_destination": "Companies submenu or directory",
+      "confidence": 0.95
+    },
+    {
+      "element_id": "elem_03",
+      "reference": {
+        "resource_id": null,
+        "text": "Library",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "top navigation bar, center-left"
+      },
+      "element_type": "link",
+      "semantic_role": "Navigates to YC's startup library and resources",
+      "label": "Library",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "tap"
+      ],
+      "inferred_destination": "YC Library page",
+      "confidence": 0.95
+    },
+    {
+      "element_id": "elem_04",
+      "reference": {
+        "resource_id": null,
+        "text": "Y",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "top navigation bar, center - orange logo"
+      },
+      "element_type": "link",
+      "semantic_role": "Navigates to Y Combinator main site or homepage",
+      "label": "Y",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": true,
+      "possible_actions": [
+        "tap"
+      ],
+      "inferred_destination": "Y Combinator homepage",
+      "confidence": 0.98
+    },
+    {
+      "element_id": "elem_05",
+      "reference": {
+        "resource_id": null,
+        "text": "Partners",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "top navigation bar, center-right"
+      },
+      "element_type": "link",
+      "semantic_role": "Navigates to information about YC partners and team",
+      "label": "Partners",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "tap"
+      ],
+      "inferred_destination": "Partners page",
+      "confidence": 0.95
+    },
+    {
+      "element_id": "elem_06",
+      "reference": {
+        "resource_id": null,
+        "text": "Resources",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "top navigation bar, right-center"
+      },
+      "element_type": "dropdown",
+      "semantic_role": "Expands Resources menu with startup tools and guides",
+      "label": "Resources",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "tap"
+      ],
+      "inferred_destination": "Resources submenu or page",
+      "confidence": 0.95
+    },
+    {
+      "element_id": "elem_07",
+      "reference": {
+        "resource_id": null,
+        "text": "Startup Jobs",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "top navigation bar, right side"
+      },
+      "element_type": "link",
+      "semantic_role": "Navigates to startup job listings and opportunities",
+      "label": "Startup Jobs",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "tap"
+      ],
+      "inferred_destination": "Work at a Startup job board",
+      "confidence": 0.95
+    },
+    {
+      "element_id": "elem_08",
+      "reference": {
+        "resource_id": null,
+        "text": "Log in",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "top navigation bar, far right"
+      },
+      "element_type": "link",
+      "semantic_role": "Initiates user login process",
+      "label": "Log in",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "tap"
+      ],
+      "inferred_destination": "Login page",
+      "confidence": 0.95
+    },
+    {
+      "element_id": "elem_09",
+      "reference": {
+        "resource_id": null,
+        "text": "Apply",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "top navigation bar, far right - black button"
+      },
+      "element_type": "button",
+      "semantic_role": "Initiates application process to Y Combinator",
+      "label": "Apply",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "tap"
+      ],
+      "inferred_destination": "YC application form",
+      "confidence": 0.95
+    },
+    {
+      "element_id": "elem_10",
+      "reference": {
+        "resource_id": null,
+        "text": "YC turns builders into formidable founders",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "center of screen, large hero text"
+      },
+      "element_type": "text",
+      "semantic_role": "Main headline describing YC's mission",
+      "label": "YC turns builders into formidable founders",
+      "is_interactive": false,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [],
+      "inferred_destination": null,
+      "confidence": 0.98
+    },
+    {
+      "element_id": "elem_11",
+      "reference": {
+        "resource_id": null,
+        "text": "[1] \"A formidable person is one who seems like they'll get what they want, regardless of whatever obstacles are in the way.\" — Paul Graham",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "center-bottom of visible area, smaller explanatory text"
+      },
+      "element_type": "text",
+      "semantic_role": "Provides definition and context for 'formidable' with attribution",
+      "label": "[1] \"A formidable person is one who seems like they'll get what they want, regardless of whatever obstacles are in the way.\" — Paul Graham",
+      "is_interactive": false,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [],
+      "inferred_destination": null,
+      "confidence": 0.95
+    },
+    {
+      "element_id": "elem_12",
+      "reference": {
+        "resource_id": null,
+        "text": "Scroll down indicator",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "bottom center of screen"
+      },
+      "element_type": "icon",
+      "semantic_role": "Indicates more content below, prompts user to scroll down",
+      "label": "Scroll down indicator",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "tap"
+      ],
+      "inferred_destination": "Scrolls to next section of homepage",
+      "confidence": 0.9
+    }
+  ],
+  "navigation_context": {
+    "arrived_from": null,
+    "arrival_action": null,
+    "visible_navigation": [
+      "About",
+      "Companies",
+      "Library",
+      "Y",
+      "Partners",
+      "Resources",
+      "Startup Jobs",
+      "Log in",
+      "Apply"
+    ],
+    "active_navigation": "Y",
+    "back_available": false,
+    "inferred_depth": 0
+  },
+  "confidence": 0.95,
+  "raw_ai_response": "```json\n{\n  \"screen_purpose\": \"This is Y Combinator's main homepage showcasing their value proposition of turning builders into formidable founders with a hero section and navigation to key platform areas.\",\n  \"screen_type\": \"home\",\n  \"app_state\": {\n    \"logged_in\": \"no\",\n    \"current_page\": \"homepage\",\n    \"user_type\": \"visitor\"\n  },\n  \"elements\": [\n    {\n      \"element_id\": \"elem_01\",\n      \"element_type\": \"dropdown\",\n      \"semantic_role\": \"Expands About section menu with information about Y Combinator\",\n      \"label\": \"About\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"tap\"],\n      \"inferred_destination\": \"About submenu or page\",\n      \"bounds_description\": \"top navigation bar, left side\",\n      \"confidence\": 0.95\n    },\n    {\n      \"element_id\": \"elem_02\",\n      \"element_type\": \"dropdown\",\n      \"semantic_role\": \"Expands Companies section menu to browse YC portfolio companies\",\n      \"label\": \"Companies\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"tap\"],\n      \"inferred_destination\": \"Companies submenu or directory\",\n      \"bounds_description\": \"top navigation bar, left-center\",\n      \"confidence\": 0.95\n    },\n    {\n      \"element_id\": \"elem_03\",\n      \"element_type\": \"link\",\n      \"semantic_role\": \"Navigates to YC's startup library and resources\",\n      \"label\": \"Library\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"tap\"],\n      \"inferred_destination\": \"YC Library page\",\n      \"bounds_description\": \"top navigation bar, center-left\",\n      \"confidence\": 0.95\n    },\n    {\n      \"element_id\": \"elem_04\",\n      \"element_type\": \"link\",\n      \"semantic_role\": \"Navigates to Y Combinator main site or homepage\",\n      \"label\": \"Y\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": true,\n      \"possible_actions\": [\"tap\"],\n      \"inferred_destination\": \"Y Combinator homepage\",\n      \"bounds_description\": \"top navigation bar, center - orange logo\",\n      \"confidence\": 0.98\n    },\n    {\n      \"element_id\": \"elem_05\",\n      \"element_type\": \"link\",\n      \"semantic_role\": \"Navigates to information about YC partners and team\",\n      \"label\": \"Partners\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"tap\"],\n      \"inferred_destination\": \"Partners page\",\n      \"bounds_description\": \"top navigation bar, center-right\",\n      \"confidence\": 0.95\n    },\n    {\n      \"element_id\": \"elem_06\",\n      \"element_type\": \"dropdown\",\n      \"semantic_role\": \"Expands Resources menu with startup tools and guides\",\n      \"label\": \"Resources\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"tap\"],\n      \"inferred_destination\": \"Resources submenu or page\",\n      \"bounds_description\": \"top navigation bar, right-center\",\n      \"confidence\": 0.95\n    },\n    {\n      \"element_id\": \"elem_07\",\n      \"element_type\": \"link\",\n      \"semantic_role\": \"Navigates to startup job listings and opportunities\",\n      \"label\": \"Startup Jobs\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"tap\"],\n      \"inferred_destination\": \"Work at a Startup job board\",\n      \"bounds_description\": \"top navigation bar, right side\",\n      \"confidence\": 0.95\n    },\n    {\n      \"element_id\": \"elem_08\",\n      \"element_type\": \"link\",\n      \"semantic_role\": \"Initiates user login process\",\n      \"label\": \"Log in\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"tap\"],\n      \"inferred_destination\": \"Login page\",\n      \"bounds_description\": \"top navigation bar, far right\",\n      \"confidence\": 0.95\n    },\n    {\n      \"element_id\": \"elem_09\",\n      \"element_type\": \"button\",\n      \"semantic_role\": \"Initiates application process to Y Combinator\",\n      \"label\": \"Apply\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"tap\"],\n      \"inferred_destination\": \"YC application form\",\n      \"bounds_description\": \"top navigation bar, far right - black button\",\n      \"confidence\": 0.95\n    },\n    {\n      \"element_id\": \"elem_10\",\n      \"element_type\": \"text\",\n      \"semantic_role\": \"Main headline describing YC's mission\",\n      \"label\": \"YC turns builders into formidable founders\",\n      \"is_interactive\": false,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [],\n      \"inferred_destination\": null,\n      \"bounds_description\": \"center of screen, large hero text\",\n      \"confidence\": 0.98\n    },\n    {\n      \"element_id\": \"elem_11\",\n      \"element_type\": \"text\",\n      \"semantic_role\": \"Provides definition and context for 'formidable' with attribution\",\n      \"label\": \"[1] \\\"A formidable person is one who seems like they'll get what they want, regardless of whatever obstacles are in the way.\\\" — Paul Graham\",\n      \"is_interactive\": false,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [],\n      \"inferred_destination\": null,\n      \"bounds_description\": \"center-bottom of visible area, smaller explanatory text\",\n      \"confidence\": 0.95\n    },\n    {\n      \"element_id\": \"elem_12\",\n      \"element_type\": \"icon\",\n      \"semantic_role\": \"Indicates more content below, prompts user to scroll down\",\n      \"label\": \"Scroll down indicator\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"tap\"],\n      \"inferred_destination\": \"Scrolls to next section of homepage\",\n      \"bounds_description\": \"bottom center of screen\",\n      \"confidence\": 0.90\n    }\n  ],\n  \"navigation_context\": {\n    \"visible_navigation\": [\"About\", \"Companies\", \"Library\", \"Y\", \"Partners\", \"Resources\", \"Startup Jobs\", \"Log in\", \"Apply\"],\n    \"active_navigation\": \"Y\",\n    \"back_available\": false,\n    \"inferred_depth\": 0\n  },\n  \"confidence\": 0.95\n}\n```"
+}

@@ -1,0 +1,6 @@
+2026-04-07 14:50:10,607 INFO pathfinder.orchestrator.agent_loop: Invocation: pathfinder explore-web https://espncriinfo.com --name 'Cricinfo' --max-actions 50
+2026-04-07 14:50:10,608 INFO pathfinder.orchestrator.agent_loop: Run ID: 20260407-092008-3f8f
+2026-04-07 14:50:10,608 INFO pathfinder.orchestrator.agent_loop: Run directory: exploration/20260407-092008-3f8f
+2026-04-07 14:50:10,608 INFO pathfinder.orchestrator.agent_loop: Navigating to start URL: https://espncriinfo.com
+2026-04-07 14:50:10,609 INFO pathfinder.device.web.adapter: Navigating to: https://espncriinfo.com
+2026-04-07 14:50:40,733 INFO pathfinder.device.web.adapter: Browser stopped

@@ -1,0 +1,109 @@
+{
+  "app_reference": {
+    "package_name": null,
+    "app_store_url": null,
+    "bundle_path": null,
+    "web_url": "https://goindigo.in",
+    "name": "Indigo",
+    "description": null,
+    "baseline": null,
+    "differentiation": null,
+    "credentials": null
+  },
+  "model_version": 10,
+  "domain": "travel booking",
+  "purpose": "Facilitate flight booking and related travel arrangements",
+  "baseline_category": "travel booking",
+  "differentiators": [
+    "Flight booking form with multiple date and location fields",
+    "Dropdown for selecting number of passengers",
+    "Responsibility Notice Modal",
+    "Responsibility Notice Modal before third-party platform access"
+  ],
+  "entities": [
+    {
+      "name": "Flight",
+      "description": "A flight booking entity",
+      "provenance": "observed"
+    }
+  ],
+  "capabilities": [
+    {
+      "name": "Flight Booking",
+      "description": "The ability to book flights",
+      "estimated_importance": 0.8,
+      "estimated_frequency": 0.7,
+      "is_differentiator": false,
+      "provenance": "observed"
+    }
+  ],
+  "screens": [
+    {
+      "screen_id": "[flight_booking_form]",
+      "name": "Flight Booking Form",
+      "screen_type": "unknown",
+      "purpose": "Flight Booking",
+      "participates_in": [
+        "Flight Booking"
+      ],
+      "visit_count": 8,
+      "last_observation_id": ""
+    },
+    {
+      "screen_id": "[flight_booking_form_new]",
+      "name": "Flight Booking Form",
+      "screen_type": "unknown",
+      "purpose": "Flight Booking",
+      "participates_in": [
+        "Flight Booking"
+      ],
+      "visit_count": 8,
+      "last_observation_id": ""
+    },
+    {
+      "screen_id": "[novel]",
+      "name": "Responsibility Notice Modal",
+      "screen_type": "unknown",
+      "purpose": "",
+      "participates_in": [],
+      "visit_count": 8,
+      "last_observation_id": "obs_611ff238"
+    },
+    {
+      "screen_id": "[novel]",
+      "name": "Responsibility Notice Modal",
+      "screen_type": "unknown",
+      "purpose": "",
+      "participates_in": [],
+      "visit_count": 8,
+      "last_observation_id": "obs_611ff238"
+    }
+  ],
+  "transitions": [
+    {
+      "from_screen": "[flight_booking_form]",
+      "to_screen": "[flight_search_results]",
+      "action": "Search button click",
+      "observed_count": 8
+    }
+  ],
+  "frontier": [
+    {
+      "description": "Explore other screens related to flight booking",
+      "rationale": "The app is a travel booking app, and flight booking is a core capability. Further exploration of related screens is necessary to understand the full scope of the app.",
+      "provenance": "inferred_structure",
+      "priority": 0.7,
+      "search_strategy": "Look for additional flight booking forms or related travel arrangements"
+    }
+  ],
+  "anomalies": [
+    {
+      "description": "The presence of a 'Hotels' and 'Sight Seeing' option in the navigation bar",
+      "observation_id": "obs_cc37a65d",
+      "classification": "novel",
+      "exploration_priority_boost": 0.3
+    }
+  ],
+  "coverage_estimate": 0.3,
+  "confidence": 0.5
+}

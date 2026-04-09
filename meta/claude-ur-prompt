@@ -1,0 +1,15 @@
+I want to think through the following problem: Given some reference to an application, a Mobile application on an Android or iOS device, or a Web Application, I want to have the computer or a computer system explore said application, and discover and enumerate possible paths through the application - we shall call these "flows" - similar to how a human user of the app might.  I would like to further classify these flows in terms of how useful they are, vis a vis accomplishing something specific that the app would allow a human user to do, and how frequently they are likely to be used in practice. The idea is to build something that is foundational for other end use cases, such as automating a test-suite or automatically evaluating the application for usability and user experience issues. So, in addition to how this system works, a clear boundary for it, a usable representation of the flows and other context it might discover that can be fed as input to other tools (perhaps yet to be built) will be important.
+
+
+
+I am sceptical of approaches that try to exhaustively enumerate flows in a brute force fashion, for several reasons: The size of the discoverable space is combinatorially large while most flows in the space are "uninteresting". The mechanisms of brute force enumeration in terms of app automation choices tend to be brittle and break easily, and brute force seems to miss the essence of figuring out what is genuinely useful or interesting in the app. 
+
+
+
+For these reasons I'd like to be circumspect in using approaches that skew heavily towards using tools like Appium or Playwright, because I feel that biases the architecture to what the tools do rather than what the intent is.
+
+I'd also want to use "native AI" as much as possible, especially when it comes to figuring out what an App does, or what a visually identifiable element on an app screen or interface could be for and how to invoke it to perform an app supported function.
+
+
+
+Suggest options to proceed with a design and subsequent implementation; ask questions to clarify or elaborate

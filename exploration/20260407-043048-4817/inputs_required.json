@@ -1,0 +1,67 @@
+[
+  {
+    "field": "from",
+    "category": "content",
+    "screen_type": "form",
+    "screen_purpose": "A flight booking form on the IndiGo website.",
+    "element_label": "From",
+    "element_type": "text_field",
+    "placeholder": "Enter departure location",
+    "required": true,
+    "step_number": 1,
+    "suggested_strategy": "skip",
+    "notes": "This field is required to enter the departure location for the flight search."
+  },
+  {
+    "field": "to",
+    "category": "content",
+    "screen_type": "form",
+    "screen_purpose": "A flight booking form on the IndiGo website.",
+    "element_label": "To",
+    "element_type": "text_field",
+    "placeholder": "Enter destination location",
+    "required": true,
+    "step_number": 1,
+    "suggested_strategy": "skip",
+    "notes": "This field is required to enter the destination location for the flight search."
+  },
+  {
+    "field": "departure",
+    "category": "content",
+    "screen_type": "form",
+    "screen_purpose": "A flight booking form on the IndiGo website.",
+    "element_label": "Departure",
+    "element_type": "text_field",
+    "placeholder": "Enter departure date",
+    "required": true,
+    "step_number": 1,
+    "suggested_strategy": "skip",
+    "notes": "This field is required to enter the departure date for the flight search."
+  },
+  {
+    "field": "return",
+    "category": "content",
+    "screen_type": "form",
+    "screen_purpose": "A flight booking form on the IndiGo website.",
+    "element_label": "Return",
+    "element_type": "text_field",
+    "placeholder": "Enter return date",
+    "required": true,
+    "step_number": 1,
+    "suggested_strategy": "skip",
+    "notes": "This field is required to enter the return date for the flight search."
+  },
+  {
+    "field": "destination_city",
+    "category": "content",
+    "screen_type": "form",
+    "screen_purpose": "A flight booking form on the IndiGo website.",
+    "element_label": "Destination",
+    "element_type": "text_field",
+    "placeholder": "",
+    "required": true,
+    "step_number": 2,
+    "suggested_strategy": "skip",
+    "notes": "This field is required to proceed with the flight booking form."
+  }
+]

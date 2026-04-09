@@ -1,0 +1,170 @@
+{
+  "app_reference": {
+    "package_name": null,
+    "app_store_url": null,
+    "bundle_path": null,
+    "web_url": "https://goindigo.in",
+    "name": "Indigo",
+    "description": null,
+    "baseline": null,
+    "differentiation": null,
+    "credentials": null
+  },
+  "model_version": 38,
+  "domain": "travel booking",
+  "purpose": "The app allows users to plan and book flights.",
+  "baseline_category": "travel booking",
+  "differentiators": [
+    "Flight booking functionality",
+    "IndiGo as a flight carrier"
+  ],
+  "entities": [
+    {
+      "name": "Flight",
+      "description": "A flight booking entity",
+      "provenance": "observed"
+    }
+  ],
+  "capabilities": [
+    {
+      "name": "Flight Booking",
+      "description": "The ability to book flights",
+      "estimated_importance": 0.8,
+      "estimated_frequency": 0.7,
+      "is_differentiator": false,
+      "provenance": "observed"
+    }
+  ],
+  "screens": [
+    {
+      "screen_id": "[flight_booking_page]",
+      "name": "Flight Booking Page",
+      "screen_type": "unknown",
+      "purpose": "The screen is for exploring flight booking options.",
+      "participates_in": [
+        "Flight Booking"
+      ],
+      "visit_count": 35,
+      "last_observation_id": ""
+    },
+    {
+      "screen_id": "[home_screen]",
+      "name": "Home Screen",
+      "screen_type": "unknown",
+      "purpose": "The screen is for exploring flight booking options.",
+      "participates_in": [],
+      "visit_count": 35,
+      "last_observation_id": ""
+    },
+    {
+      "screen_id": "[flight_booking_options]",
+      "name": "Flight Booking Options",
+      "screen_type": "unknown",
+      "purpose": "The screen is for exploring flight booking options.",
+      "participates_in": [
+        "Flight Booking"
+      ],
+      "visit_count": 31,
+      "last_observation_id": ""
+    },
+    {
+      "screen_id": "[flight_booking_confirmation]",
+      "name": "Flight Booking Confirmation",
+      "screen_type": "unknown",
+      "purpose": "The screen is for exploring flight booking options.",
+      "participates_in": [
+        "Flight Booking"
+      ],
+      "visit_count": 30,
+      "last_observation_id": ""
+    },
+    {
+      "screen_id": "[flight_details]",
+      "name": "Flight Details",
+      "screen_type": "unknown",
+      "purpose": "The screen is for exploring flight booking options.",
+      "participates_in": [
+        "Flight Booking"
+      ],
+      "visit_count": 9,
+      "last_observation_id": ""
+    },
+    {
+      "screen_id": "[obs_6f63aebe]",
+      "name": "Flight Booking Options",
+      "screen_type": "unknown",
+      "purpose": "The screen is for exploring flight booking options.",
+      "participates_in": [
+        "Flight Booking"
+      ],
+      "visit_count": 4,
+      "last_observation_id": ""
+    },
+    {
+      "screen_id": "[obs_fd1e67fc]",
+      "name": "Flight Booking Options",
+      "screen_type": "unknown",
+      "purpose": "The screen is for exploring flight booking options.",
+      "participates_in": [
+        "Flight Booking"
+      ],
+      "visit_count": 3,
+      "last_observation_id": ""
+    },
+    {
+      "screen_id": "[obs_4eab4a85]",
+      "name": "Flight Booking Options",
+      "screen_type": "unknown",
+      "purpose": "The screen is for exploring flight booking options.",
+      "participates_in": [
+        "Flight Booking"
+      ],
+      "visit_count": 2,
+      "last_observation_id": ""
+    },
+    {
+      "screen_id": "[obs_da0511f2]",
+      "name": "Flight Booking Options",
+      "screen_type": "unknown",
+      "purpose": "The screen is for exploring flight booking options.",
+      "participates_in": [
+        "Flight Booking"
+      ],
+      "visit_count": 1,
+      "last_observation_id": ""
+    }
+  ],
+  "transitions": [
+    {
+      "from_screen": "[flight_booking_page]",
+      "to_screen": "[flight_search_results]",
+      "action": "Search",
+      "observed_count": 35
+    },
+    {
+      "from_screen": "[flight_booking_options]",
+      "to_screen": "[flight_booking_page]",
+      "action": "Book Now",
+      "observed_count": 31
+    }
+  ],
+  "frontier": [
+    {
+      "description": "Explore other booking options (Hotels, Sight Seeing)",
+      "rationale": "The app is a travel booking app, and it's common for such apps to offer multiple booking options.",
+      "provenance": "inferred_structure",
+      "priority": 0.7,
+      "search_strategy": "Look for screens with booking options for hotels and sightseeing."
+    }
+  ],
+  "anomalies": [
+    {
+      "description": "Screen promotes various deals and offers for IndiGo services",
+      "observation_id": "obs_da0511f2",
+      "classification": "novel",
+      "exploration_priority_boost": 0.3
+    }
+  ],
+  "coverage_estimate": 0.3,
+  "confidence": 0.5
+}

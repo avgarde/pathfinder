@@ -1,0 +1,17 @@
+{
+  "run_id": "20260406-183420-8b6f",
+  "run_dir": "exploration/20260406-183420-8b6f",
+  "app": "Indigo",
+  "total_actions": 0,
+  "duration_seconds": 1809.3,
+  "stop_reason": "Error: Request timed out.",
+  "model_version": 0,
+  "screens_discovered": 0,
+  "transitions_discovered": 0,
+  "capabilities": 0,
+  "coverage_estimate": 0.0,
+  "confidence": 0.0,
+  "inputs_required": [],
+  "flows": [],
+  "steps": []
+}

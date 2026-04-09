@@ -1,0 +1,1 @@
+pathfinder explore-web https://espncricinfo.com --name 'Cricinfo' --max-actions 50

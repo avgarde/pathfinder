@@ -1,0 +1,107 @@
+{
+  "app_name": "Spotify",
+  "category": "music streaming",
+  "description": "Spotify is a digital music streaming platform that allows users to discover, play, and organize millions of songs, podcasts, and audio content. Users can create personalized playlists, follow artists, discover new music through recommendations, and access content both online and offline with premium subscriptions.",
+  "expected_capabilities": [
+    {
+      "name": "Stream Music",
+      "description": "Play songs, albums, and playlists instantly from a vast music library",
+      "estimated_importance": 1.0,
+      "estimated_frequency": 1.0,
+      "provenance": "automated_discovery"
+    },
+    {
+      "name": "Create Playlists",
+      "description": "Build and organize custom collections of songs for different moods or occasions",
+      "estimated_importance": 0.9,
+      "estimated_frequency": 0.7,
+      "provenance": "automated_discovery"
+    },
+    {
+      "name": "Discover Music",
+      "description": "Find new songs and artists through personalized recommendations and curated playlists",
+      "estimated_importance": 0.8,
+      "estimated_frequency": 0.6,
+      "provenance": "automated_discovery"
+    },
+    {
+      "name": "Download for Offline",
+      "description": "Save music locally to listen without internet connection (premium feature)",
+      "estimated_importance": 0.7,
+      "estimated_frequency": 0.5,
+      "provenance": "automated_discovery"
+    },
+    {
+      "name": "Follow Artists",
+      "description": "Stay updated with favorite artists' new releases and activities",
+      "estimated_importance": 0.6,
+      "estimated_frequency": 0.4,
+      "provenance": "automated_discovery"
+    },
+    {
+      "name": "Listen to Podcasts",
+      "description": "Stream and discover podcast episodes and shows",
+      "estimated_importance": 0.6,
+      "estimated_frequency": 0.3,
+      "provenance": "automated_discovery"
+    },
+    {
+      "name": "Share Music",
+      "description": "Send songs, playlists, or albums to friends and social media",
+      "estimated_importance": 0.5,
+      "estimated_frequency": 0.3,
+      "provenance": "automated_discovery"
+    },
+    {
+      "name": "Search Content",
+      "description": "Find specific songs, artists, albums, or podcasts using search functionality",
+      "estimated_importance": 0.8,
+      "estimated_frequency": 0.8,
+      "provenance": "automated_discovery"
+    }
+  ],
+  "expected_entities": [
+    {
+      "name": "Song",
+      "description": "Individual music tracks that can be played, added to playlists, or shared",
+      "provenance": "automated_discovery"
+    },
+    {
+      "name": "Artist",
+      "description": "Musicians or bands who create and perform songs",
+      "provenance": "automated_discovery"
+    },
+    {
+      "name": "Album",
+      "description": "Collections of songs released together by an artist",
+      "provenance": "automated_discovery"
+    },
+    {
+      "name": "Playlist",
+      "description": "User-created or curated collections of songs organized by theme, mood, or preference",
+      "provenance": "automated_discovery"
+    },
+    {
+      "name": "Podcast",
+      "description": "Audio shows or episodes covering various topics and genres",
+      "provenance": "automated_discovery"
+    },
+    {
+      "name": "Genre",
+      "description": "Musical categories that help classify and discover similar types of music",
+      "provenance": "automated_discovery"
+    },
+    {
+      "name": "User Profile",
+      "description": "Personal account containing listening history, preferences, and social connections",
+      "provenance": "automated_discovery"
+    }
+  ],
+  "sources": [
+    {
+      "source_type": "web_search",
+      "url": null,
+      "summary": "Web search results"
+    }
+  ]
+}

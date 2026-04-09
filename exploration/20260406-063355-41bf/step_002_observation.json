@@ -1,0 +1,374 @@
+{
+  "observation_id": "obs_a0f8b115",
+  "timestamp": "2026-04-06T06:35:08.334210",
+  "screenshot_path": "exploration/20260406-063355-41bf/step_002.png",
+  "ui_structure_path": "<body class=\"logged-out env-production page-responsive\" bounds=\"[0,0][1280,5397]\">\n  <div class=\"logged-out env-production page-responsive\" bounds=\"[0,0][1280,5397]\">\n    <div class=\"position-relative header-wrapper js-header-wrapper\" bounds=\"[0,0][1280,72]\">\n      <a class=\"px-2 tmp-py-4 color-bg-accent-emphasis\" href=\"#start-of-content\" bounds=\"[0,0][1,1]\" interactive=\"true\">Skip to content</a>\n      <header class=\"HeaderMktg header-logged-out js-details-container\" role=\"banner\" bounds=\"[0,0][1280,72]\">\n        <h2 class=\"sr-only\" bounds=\"[0,16][1,17]\">Navigation Menu</h2>\n        <div class=\"d-flex flex-column flex-lg-row\" bounds=\"[0,16][1280,56]\">\n          <div class=\"d-flex flex-justify-between flex-items-center\" bounds=\"[32,19][80,53]\">\n            <a class=\"tmp-mr-lg-3 color-fg-inherit flex-order-2\" aria-label=\"Homepage\" href=\"/\" bounds=\"[32,19][64,53]\" interactive=\"true\" />\n          </div>\n          <div class=\"HeaderMenu js-header-menu height-fit\" bounds=\"[80,16][1248,56]\">\n            <div class=\"HeaderMenu-wrapper d-flex flex-column\" bounds=\"[80,16][1248,56]\">\n              <div class=\"d-flex flex-column flex-lg-row\" bounds=\"[715,16][1248,56]\">\n                <a class=\"HeaderMenu-link HeaderMenu-link--sign-up HeaderMenu-button\" href=\"/signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F%3Cuser-name%3E%2F%3Crepo-name%3E&sour\" bounds=\"[1129,20][1204,52]\" interactive=\"true\">Sign up</a>\n              </div>\n            </div>\n          </div>\n        </div>\n      </header>\n    </div>\n    <footer class=\"footer tmp-pt-7 tmp-pb-6\" role=\"contentinfo\">\n      <h2 class=\"sr-only\">Footer</h2>\n      <div class=\"d-flex flex-justify-center flex-items-center\">\n        <div class=\"d-flex flex-items-center flex-shrink-0\">\n          <a class=\"footer-octicon mr-2\" aria-label=\"GitHub Homepage\" href=\"https://github.com\" interactive=\"true\" />\n          <span>© 2026 GitHub, Inc.</span>\n        </div>\n        <nav aria-label=\"Footer\">\n          <h3 id=\"sr-footer-heading\" class=\"sr-only\">Footer navigation</h3>\n          <ul class=\"list-style-none d-flex flex-justify-center\">\n            <li class=\"mx-2\">\n              <a class=\"Link--secondary Link\" href=\"https://docs.github.com/site-policy/github-terms/github-terms-of-service\" interactive=\"true\">Terms</a>\n            </li>\n            <li class=\"mx-2\">\n              <a class=\"Link--secondary Link\" href=\"https://docs.github.com/site-policy/privacy-policies/github-privacy-statement\" interactive=\"true\">Privacy</a>\n            </li>\n            <li class=\"mx-2\">\n              <a class=\"Link--secondary Link\" href=\"https://github.com/security\" interactive=\"true\">Security</a>\n            </li>\n            <li class=\"mx-2\">\n              <a class=\"Link--secondary Link\" href=\"https://www.githubstatus.com/\" interactive=\"true\">Status</a>\n            </li>\n            <li class=\"mx-2\">\n              <a class=\"Link--secondary Link\" href=\"https://github.community/\" interactive=\"true\">Community</a>\n            </li>\n            <li class=\"mx-2\">\n              <a class=\"Link--secondary Link\" href=\"https://docs.github.com/\" interactive=\"true\">Docs</a>\n            </li>\n            <li class=\"mx-2\">\n              <a class=\"Link--secondary Link\" href=\"https://support.github.com?tags=dotcom-footer\" interactive=\"true\">Contact</a>\n            </li>\n            <li class=\"mx-2\">\n              <cookie-consent-link>\n                <button class=\"Link--secondary underline-on-hover border-0\" type=\"button\" interactive=\"true\">Manage cookies</button>\n              </cookie-consent-link>\n            </li>\n            <li class=\"mx-2\">\n              <cookie-consent-link>\n                <button class=\"Link--secondary underline-on-hover border-0\" type=\"button\" interactive=\"true\">Do not share my personal information</button>\n              </cookie-consent-link>\n            </li>\n          </ul>\n        </nav>\n      </div>\n    </footer>\n  </div>\n</body>\n",
+  "screen_purpose": "This is a GitHub repository page for 'guppylm', showing the code repository structure, files, and project information for a 9M parameter LLM project",
+  "screen_type": "detail",
+  "app_state": {
+    "logged_in": "no",
+    "repository": "arman-bd/guppylm",
+    "repository_visibility": "public",
+    "current_branch": "main",
+    "current_tab": "code",
+    "stars": 385,
+    "forks": 22,
+    "watchers": 3
+  },
+  "elements": [
+    {
+      "element_id": "elem_01",
+      "reference": {
+        "resource_id": null,
+        "text": "GitHub",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "top-left header"
+      },
+      "element_type": "link",
+      "semantic_role": "Navigate to GitHub homepage",
+      "label": "GitHub",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "tap"
+      ],
+      "inferred_destination": "GitHub homepage",
+      "confidence": 0.95
+    },
+    {
+      "element_id": "elem_02",
+      "reference": {
+        "resource_id": null,
+        "text": "Platform",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "top navigation bar"
+      },
+      "element_type": "dropdown",
+      "semantic_role": "Access platform navigation menu",
+      "label": "Platform",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "tap"
+      ],
+      "inferred_destination": "Platform submenu",
+      "confidence": 0.9
+    },
+    {
+      "element_id": "elem_03",
+      "reference": {
+        "resource_id": null,
+        "text": "Sign up",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "top-right header"
+      },
+      "element_type": "button",
+      "semantic_role": "Sign up for GitHub account",
+      "label": "Sign up",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "tap"
+      ],
+      "inferred_destination": "Registration page",
+      "confidence": 0.95
+    },
+    {
+      "element_id": "elem_04",
+      "reference": {
+        "resource_id": null,
+        "text": "Sign in",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "top-right header"
+      },
+      "element_type": "button",
+      "semantic_role": "Sign in to GitHub account",
+      "label": "Sign in",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "tap"
+      ],
+      "inferred_destination": "Login page",
+      "confidence": 0.95
+    },
+    {
+      "element_id": "elem_05",
+      "reference": {
+        "resource_id": null,
+        "text": "Code",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "repository navigation tabs"
+      },
+      "element_type": "tab",
+      "semantic_role": "View repository code and files",
+      "label": "Code",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": true,
+      "possible_actions": [
+        "tap"
+      ],
+      "inferred_destination": "Code tab view",
+      "confidence": 0.95
+    },
+    {
+      "element_id": "elem_06",
+      "reference": {
+        "resource_id": null,
+        "text": "Issues",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "repository navigation tabs"
+      },
+      "element_type": "tab",
+      "semantic_role": "View repository issues",
+      "label": "Issues",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "tap"
+      ],
+      "inferred_destination": "Issues tab",
+      "confidence": 0.9
+    },
+    {
+      "element_id": "elem_07",
+      "reference": {
+        "resource_id": null,
+        "text": "Pull requests",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "repository navigation tabs"
+      },
+      "element_type": "tab",
+      "semantic_role": "View pull requests",
+      "label": "Pull requests",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "tap"
+      ],
+      "inferred_destination": "Pull requests tab",
+      "confidence": 0.9
+    },
+    {
+      "element_id": "elem_08",
+      "reference": {
+        "resource_id": null,
+        "text": "Fork 22",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "top-right repository actions"
+      },
+      "element_type": "button",
+      "semantic_role": "Fork this repository",
+      "label": "Fork 22",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "tap"
+      ],
+      "inferred_destination": "Fork repository dialog",
+      "confidence": 0.9
+    },
+    {
+      "element_id": "elem_09",
+      "reference": {
+        "resource_id": null,
+        "text": "Star 385",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "top-right repository actions"
+      },
+      "element_type": "button",
+      "semantic_role": "Star this repository",
+      "label": "Star 385",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "tap"
+      ],
+      "inferred_destination": "Star repository action",
+      "confidence": 0.9
+    },
+    {
+      "element_id": "elem_10",
+      "reference": {
+        "resource_id": null,
+        "text": "main",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "left side below tabs"
+      },
+      "element_type": "dropdown",
+      "semantic_role": "Select repository branch",
+      "label": "main",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "tap"
+      ],
+      "inferred_destination": "Branch selection menu",
+      "confidence": 0.9
+    },
+    {
+      "element_id": "elem_11",
+      "reference": {
+        "resource_id": null,
+        "text": "Code",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "right side below tabs"
+      },
+      "element_type": "button",
+      "semantic_role": "Browse repository code",
+      "label": "Code",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "tap"
+      ],
+      "inferred_destination": "Code browser",
+      "confidence": 0.85
+    },
+    {
+      "element_id": "elem_12",
+      "reference": {
+        "resource_id": null,
+        "text": "assets",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "file list"
+      },
+      "element_type": "list_item",
+      "semantic_role": "Navigate to assets folder",
+      "label": "assets",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "tap"
+      ],
+      "inferred_destination": "Assets folder contents",
+      "confidence": 0.9
+    },
+    {
+      "element_id": "elem_13",
+      "reference": {
+        "resource_id": null,
+        "text": "guppylm",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "file list"
+      },
+      "element_type": "list_item",
+      "semantic_role": "Navigate to guppylm folder",
+      "label": "guppylm",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "tap"
+      ],
+      "inferred_destination": "Guppylm folder contents",
+      "confidence": 0.9
+    },
+    {
+      "element_id": "elem_14",
+      "reference": {
+        "resource_id": null,
+        "text": "README.md",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "file list"
+      },
+      "element_type": "list_item",
+      "semantic_role": "View README.md file",
+      "label": "README.md",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "tap"
+      ],
+      "inferred_destination": "README file view",
+      "confidence": 0.9
+    },
+    {
+      "element_id": "elem_15",
+      "reference": {
+        "resource_id": null,
+        "text": "Readme",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "right sidebar"
+      },
+      "element_type": "link",
+      "semantic_role": "View readme content",
+      "label": "Readme",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "tap"
+      ],
+      "inferred_destination": "README content view",
+      "confidence": 0.85
+    }
+  ],
+  "navigation_context": {
+    "arrived_from": null,
+    "arrival_action": null,
+    "visible_navigation": [
+      "Platform",
+      "Solutions",
+      "Resources",
+      "Open Source",
+      "Enterprise",
+      "Pricing",
+      "Code",
+      "Issues",
+      "Pull requests",
+      "Actions",
+      "Projects",
+      "Security and quality",
+      "Insights"
+    ],
+    "active_navigation": "Code",
+    "back_available": true,
+    "inferred_depth": 2
+  },
+  "confidence": 0.92,
+  "raw_ai_response": "```json\n{\n  \"screen_purpose\": \"This is a GitHub repository page for 'guppylm', showing the code repository structure, files, and project information for a 9M parameter LLM project\",\n  \"screen_type\": \"detail\",\n  \"app_state\": {\n    \"logged_in\": \"no\",\n    \"repository\": \"arman-bd/guppylm\",\n    \"repository_visibility\": \"public\",\n    \"current_branch\": \"main\",\n    \"current_tab\": \"code\",\n    \"stars\": 385,\n    \"forks\": 22,\n    \"watchers\": 3\n  },\n  \"elements\": [\n    {\n      \"element_id\": \"elem_01\",\n      \"element_type\": \"link\",\n      \"semantic_role\": \"Navigate to GitHub homepage\",\n      \"label\": \"GitHub\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"tap\"],\n      \"inferred_destination\": \"GitHub homepage\",\n      \"bounds_description\": \"top-left header\",\n      \"confidence\": 0.95\n    },\n    {\n      \"element_id\": \"elem_02\",\n      \"element_type\": \"dropdown\",\n      \"semantic_role\": \"Access platform navigation menu\",\n      \"label\": \"Platform\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"tap\"],\n      \"inferred_destination\": \"Platform submenu\",\n      \"bounds_description\": \"top navigation bar\",\n      \"confidence\": 0.9\n    },\n    {\n      \"element_id\": \"elem_03\",\n      \"element_type\": \"button\",\n      \"semantic_role\": \"Sign up for GitHub account\",\n      \"label\": \"Sign up\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"tap\"],\n      \"inferred_destination\": \"Registration page\",\n      \"bounds_description\": \"top-right header\",\n      \"confidence\": 0.95\n    },\n    {\n      \"element_id\": \"elem_04\",\n      \"element_type\": \"button\",\n      \"semantic_role\": \"Sign in to GitHub account\",\n      \"label\": \"Sign in\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"tap\"],\n      \"inferred_destination\": \"Login page\",\n      \"bounds_description\": \"top-right header\",\n      \"confidence\": 0.95\n    },\n    {\n      \"element_id\": \"elem_05\",\n      \"element_type\": \"tab\",\n      \"semantic_role\": \"View repository code and files\",\n      \"label\": \"Code\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": true,\n      \"possible_actions\": [\"tap\"],\n      \"inferred_destination\": \"Code tab view\",\n      \"bounds_description\": \"repository navigation tabs\",\n      \"confidence\": 0.95\n    },\n    {\n      \"element_id\": \"elem_06\",\n      \"element_type\": \"tab\",\n      \"semantic_role\": \"View repository issues\",\n      \"label\": \"Issues\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"tap\"],\n      \"inferred_destination\": \"Issues tab\",\n      \"bounds_description\": \"repository navigation tabs\",\n      \"confidence\": 0.9\n    },\n    {\n      \"element_id\": \"elem_07\",\n      \"element_type\": \"tab\",\n      \"semantic_role\": \"View pull requests\",\n      \"label\": \"Pull requests\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"tap\"],\n      \"inferred_destination\": \"Pull requests tab\",\n      \"bounds_description\": \"repository navigation tabs\",\n      \"confidence\": 0.9\n    },\n    {\n      \"element_id\": \"elem_08\",\n      \"element_type\": \"button\",\n      \"semantic_role\": \"Fork this repository\",\n      \"label\": \"Fork 22\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"tap\"],\n      \"inferred_destination\": \"Fork repository dialog\",\n      \"bounds_description\": \"top-right repository actions\",\n      \"confidence\": 0.9\n    },\n    {\n      \"element_id\": \"elem_09\",\n      \"element_type\": \"button\",\n      \"semantic_role\": \"Star this repository\",\n      \"label\": \"Star 385\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"tap\"],\n      \"inferred_destination\": \"Star repository action\",\n      \"bounds_description\": \"top-right repository actions\",\n      \"confidence\": 0.9\n    },\n    {\n      \"element_id\": \"elem_10\",\n      \"element_type\": \"dropdown\",\n      \"semantic_role\": \"Select repository branch\",\n      \"label\": \"main\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"tap\"],\n      \"inferred_destination\": \"Branch selection menu\",\n      \"bounds_description\": \"left side below tabs\",\n      \"confidence\": 0.9\n    },\n    {\n      \"element_id\": \"elem_11\",\n      \"element_type\": \"button\",\n      \"semantic_role\": \"Browse repository code\",\n      \"label\": \"Code\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"tap\"],\n      \"inferred_destination\": \"Code browser\",\n      \"bounds_description\": \"right side below tabs\",\n      \"confidence\": 0.85\n    },\n    {\n      \"element_id\": \"elem_12\",\n      \"element_type\": \"list_item\",\n      \"semantic_role\": \"Navigate to assets folder\",\n      \"label\": \"assets\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"tap\"],\n      \"inferred_destination\": \"Assets folder contents\",\n      \"bounds_description\": \"file list\",\n      \"confidence\": 0.9\n    },\n    {\n      \"element_id\": \"elem_13\",\n      \"element_type\": \"list_item\",\n      \"semantic_role\": \"Navigate to guppylm folder\",\n      \"label\": \"guppylm\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"tap\"],\n      \"inferred_destination\": \"Guppylm folder contents\",\n      \"bounds_description\": \"file list\",\n      \"confidence\": 0.9\n    },\n    {\n      \"element_id\": \"elem_14\",\n      \"element_type\": \"list_item\",\n      \"semantic_role\": \"View README.md file\",\n      \"label\": \"README.md\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"tap\"],\n      \"inferred_destination\": \"README file view\",\n      \"bounds_description\": \"file list\",\n      \"confidence\": 0.9\n    },\n    {\n      \"element_id\": \"elem_15\",\n      \"element_type\": \"link\",\n      \"semantic_role\": \"View readme content\",\n      \"label\": \"Readme\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"tap\"],\n      \"inferred_destination\": \"README content view\",\n      \"bounds_description\": \"right sidebar\",\n      \"confidence\": 0.85\n    }\n  ],\n  \"navigation_context\": {\n    \"visible_navigation\": [\"Platform\", \"Solutions\", \"Resources\", \"Open Source\", \"Enterprise\", \"Pricing\", \"Code\", \"Issues\", \"Pull requests\", \"Actions\", \"Projects\", \"Security and quality\", \"Insights\"],\n    \"active_navigation\": \"Code\",\n    \"back_available\": true,\n    \"inferred_depth\": 2\n  },\n  \"confidence\": 0.92\n}\n```"
+}

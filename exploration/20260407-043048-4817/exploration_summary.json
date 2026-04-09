@@ -1,0 +1,159 @@
+{
+  "run_id": "20260407-043048-4817",
+  "run_dir": "exploration/20260407-043048-4817",
+  "app": "Indigo",
+  "total_actions": 10,
+  "duration_seconds": 358.0,
+  "stop_reason": "Budget exhausted",
+  "model_version": 10,
+  "screens_discovered": 4,
+  "transitions_discovered": 1,
+  "capabilities": 1,
+  "coverage_estimate": 0.3,
+  "confidence": 0.5,
+  "inputs_required": [
+    {
+      "field": "from",
+      "category": "content",
+      "screen_type": "form",
+      "element_label": "From",
+      "required": true,
+      "suggested_strategy": "skip",
+      "notes": "This field is required to enter the departure location for the flight search."
+    },
+    {
+      "field": "to",
+      "category": "content",
+      "screen_type": "form",
+      "element_label": "To",
+      "required": true,
+      "suggested_strategy": "skip",
+      "notes": "This field is required to enter the destination location for the flight search."
+    },
+    {
+      "field": "departure",
+      "category": "content",
+      "screen_type": "form",
+      "element_label": "Departure",
+      "required": true,
+      "suggested_strategy": "skip",
+      "notes": "This field is required to enter the departure date for the flight search."
+    },
+    {
+      "field": "return",
+      "category": "content",
+      "screen_type": "form",
+      "element_label": "Return",
+      "required": true,
+      "suggested_strategy": "skip",
+      "notes": "This field is required to enter the return date for the flight search."
+    },
+    {
+      "field": "destination_city",
+      "category": "content",
+      "screen_type": "form",
+      "element_label": "Destination",
+      "required": true,
+      "suggested_strategy": "skip",
+      "notes": "This field is required to proceed with the flight booking form."
+    }
+  ],
+  "flows": [
+    {
+      "flow_id": "flow_001",
+      "goal": "Book a flight",
+      "category": "core",
+      "importance": 0.8,
+      "status": "validated",
+      "steps": 2
+    },
+    {
+      "flow_id": "flow_002",
+      "goal": "Navigate through the responsibility notice modal",
+      "category": "secondary",
+      "importance": 0.5,
+      "status": "validated",
+      "steps": 1
+    },
+    {
+      "flow_id": "flow_003",
+      "goal": "Explore other screens related to flight booking",
+      "category": "onboarding",
+      "importance": 0.2,
+      "status": "hypothetical",
+      "steps": 1
+    }
+  ],
+  "steps": [
+    {
+      "step": 1,
+      "screen": "A flight booking form on the IndiGo website.",
+      "action": "Navigate away from the flight booking form to explore other parts of the application.",
+      "goal": "Explore other screens related to flight booking",
+      "success": true
+    },
+    {
+      "step": 2,
+      "screen": "A flight booking form on the IndiGo website.",
+      "action": "Enter 'Delhi' as the destination city in the text field",
+      "goal": "To continue filling out the flight booking form and proceed with the booking process.",
+      "success": true
+    },
+    {
+      "step": 3,
+      "screen": "This screen displays a responsibility notice before allowing access to a third-party platform.",
+      "action": "Navigate away from the responsibility notice modal to explore other parts of the application.",
+      "goal": "Explore other screens related to flight booking.",
+      "success": true
+    },
+    {
+      "step": 4,
+      "screen": "This screen displays a responsibility notice before allowing access to a third-party platform.",
+      "action": "Navigate away from the responsibility notice modal to explore other parts of the application.",
+      "goal": "Explore other screens related to flight booking",
+      "success": true
+    },
+    {
+      "step": 5,
+      "screen": "This screen displays a responsibility notice before allowing access to a third-party platform.",
+      "action": "Navigate away from the responsibility notice modal to explore other parts of the application.",
+      "goal": "Explore other screens related to flight booking",
+      "success": true
+    },
+    {
+      "step": 6,
+      "screen": "This screen displays a responsibility notice before allowing access to a third-party platform.",
+      "action": "Navigate away from the responsibility notice modal to explore other parts of the application.",
+      "goal": "Explore other screens related to flight booking.",
+      "success": true
+    },
+    {
+      "step": 7,
+      "screen": "This screen displays a responsibility notice before allowing access to a third-party platform.",
+      "action": "Navigate away from the responsibility notice modal to explore other parts of the application.",
+      "goal": "Explore other screens related to flight booking.",
+      "success": true
+    },
+    {
+      "step": 8,
+      "screen": "This screen displays a responsibility notice before allowing access to a third-party platform.",
+      "action": "Forced back \u2014 stuck on modal|2|button,button",
+      "goal": "Escape stuck state",
+      "success": true
+    },
+    {
+      "step": 9,
+      "screen": "This screen displays a responsibility notice before allowing access to a third-party platform.",
+      "action": "Navigate away from the responsibility notice modal to explore other parts of the application.",
+      "goal": "Explore other screens related to flight booking.",
+      "success": true
+    },
+    {
+      "step": 10,
+      "screen": "This screen displays a responsibility notice before allowing access to a third-party platform.",
+      "action": "Navigate away from the responsibility notice modal to explore other parts of the application.",
+      "goal": "Explore other screens related to flight booking",
+      "success": true
+    }
+  ]
+}

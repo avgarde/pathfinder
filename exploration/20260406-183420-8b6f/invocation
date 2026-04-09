@@ -1,0 +1,1 @@
+pathfinder explore-web https://goindigo.in --name 'Indigo' --max-actions 10 --inputs /Users/amitgarde/indigo_inputs.json

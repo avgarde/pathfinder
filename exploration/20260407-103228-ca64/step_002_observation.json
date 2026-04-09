@@ -1,0 +1,137 @@
+{
+  "observation_id": "obs_3968708a",
+  "timestamp": "2026-04-07T10:34:32.894751",
+  "screenshot_path": "exploration/20260407-103228-ca64/step_002.png",
+  "ui_structure_path": "<body bounds=\"[0,0][1280,1567]\">\n  <div id=\"__next\" bounds=\"[0,0][1280,1567]\">\n    <div class=\"app-wrapper ask-page\" bounds=\"[0,0][1280,1567]\">\n      <div class=\"header_beta\" bounds=\"[1202,87][1280,121]\">BETA</div>\n    </div>\n  </div>\n</body>\n",
+  "screen_purpose": "This screen is for searching and retrieving cricket statistics and information.",
+  "screen_type": "search",
+  "app_state": {
+    "logged_in": "unknown",
+    "cart_items": "unknown"
+  },
+  "elements": [
+    {
+      "element_id": "search_bar",
+      "reference": {
+        "resource_id": null,
+        "text": "Search Test/ODI/T20 stats",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "top center"
+      },
+      "element_type": "text_field",
+      "semantic_role": "Initiates search for cricket statistics",
+      "label": "Search Test/ODI/T20 stats",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "type",
+        "click"
+      ],
+      "inferred_destination": "search_results",
+      "confidence": 0.95
+    },
+    {
+      "element_id": "search_button",
+      "reference": {
+        "resource_id": null,
+        "text": "Search",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "right of search bar"
+      },
+      "element_type": "button",
+      "semantic_role": "Initiates search for cricket statistics",
+      "label": "Search",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "click"
+      ],
+      "inferred_destination": "search_results",
+      "confidence": 0.95
+    },
+    {
+      "element_id": "men_dropdown",
+      "reference": {
+        "resource_id": null,
+        "text": "Men",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "top left"
+      },
+      "element_type": "dropdown",
+      "semantic_role": "Filters search results by gender",
+      "label": "Men",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "click"
+      ],
+      "inferred_destination": "filtered_search_results",
+      "confidence": 0.95
+    },
+    {
+      "element_id": "tips_link",
+      "reference": {
+        "resource_id": null,
+        "text": "Tips for searching",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "top right"
+      },
+      "element_type": "link",
+      "semantic_role": "Provides tips for searching",
+      "label": "Tips for searching",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "click"
+      ],
+      "inferred_destination": "search_tips",
+      "confidence": 0.95
+    },
+    {
+      "element_id": "search_suggestions",
+      "reference": {
+        "resource_id": null,
+        "text": "TRY ASKING...",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "center"
+      },
+      "element_type": "list",
+      "semantic_role": "Suggests search queries",
+      "label": "TRY ASKING...",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "click"
+      ],
+      "inferred_destination": "search_results",
+      "confidence": 0.95
+    }
+  ],
+  "navigation_context": {
+    "arrived_from": null,
+    "arrival_action": null,
+    "visible_navigation": [
+      "Men dropdown"
+    ],
+    "active_navigation": "Men",
+    "back_available": true,
+    "inferred_depth": 0
+  },
+  "confidence": 0.9,
+  "raw_ai_response": "{\n  \"screen_purpose\": \"This screen is for searching and retrieving cricket statistics and information.\",\n  \"screen_type\": \"search\",\n  \"app_state\": {\n    \"logged_in\": \"unknown\",\n    \"cart_items\": \"unknown\"\n  },\n  \"elements\": [\n    {\n      \"element_id\": \"search_bar\",\n      \"element_type\": \"text_field\",\n      \"semantic_role\": \"Initiates search for cricket statistics\",\n      \"label\": \"Search Test/ODI/T20 stats\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"type\", \"click\"],\n      \"inferred_destination\": \"search_results\",\n      \"bounds_description\": \"top center\",\n      \"confidence\": 0.95\n    },\n    {\n      \"element_id\": \"search_button\",\n      \"element_type\": \"button\",\n      \"semantic_role\": \"Initiates search for cricket statistics\",\n      \"label\": \"Search\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"click\"],\n      \"inferred_destination\": \"search_results\",\n      \"bounds_description\": \"right of search bar\",\n      \"confidence\": 0.95\n    },\n    {\n      \"element_id\": \"men_dropdown\",\n      \"element_type\": \"dropdown\",\n      \"semantic_role\": \"Filters search results by gender\",\n      \"label\": \"Men\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"click\"],\n      \"inferred_destination\": \"filtered_search_results\",\n      \"bounds_description\": \"top left\",\n      \"confidence\": 0.95\n    },\n    {\n      \"element_id\": \"tips_link\",\n      \"element_type\": \"link\",\n      \"semantic_role\": \"Provides tips for searching\",\n      \"label\": \"Tips for searching\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"click\"],\n      \"inferred_destination\": \"search_tips\",\n      \"bounds_description\": \"top right\",\n      \"confidence\": 0.95\n    },\n    {\n      \"element_id\": \"search_suggestions\",\n      \"element_type\": \"list\",\n      \"semantic_role\": \"Suggests search queries\",\n      \"label\": \"TRY ASKING...\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"click\"],\n      \"inferred_destination\": \"search_results\",\n      \"bounds_description\": \"center\",\n      \"confidence\": 0.95\n    }\n  ],\n  \"navigation_context\": {\n    \"visible_navigation\": [\"Men dropdown\"],\n    \"active_navigation\": \"Men\",\n    \"back_available\": true,\n    \"inferred_depth\": 0\n  },\n  \"confidence\": 0.9\n}"
+}

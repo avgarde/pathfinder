@@ -1,0 +1,103 @@
+{
+  "app_reference": {
+    "package_name": null,
+    "app_store_url": null,
+    "bundle_path": null,
+    "web_url": "https://joinfleek.com",
+    "name": "Fleek",
+    "description": null,
+    "baseline": null,
+    "differentiation": null,
+    "credentials": null
+  },
+  "model_version": 50,
+  "domain": "e-commerce",
+  "purpose": "An e-commerce platform that allows users to resell products and access discount codes.",
+  "baseline_category": "e-commerce",
+  "differentiators": [
+    "Modal overlay for reselling guide and discount offer",
+    "Email discount code submission"
+  ],
+  "entities": [
+    {
+      "name": "Reselling Guide",
+      "description": "A guide for reselling products.",
+      "provenance": "observed"
+    },
+    {
+      "name": "Discount Code",
+      "description": "A discount code that can be redeemed.",
+      "provenance": "observed"
+    }
+  ],
+  "capabilities": [
+    {
+      "name": "Reselling Guide",
+      "description": "Provides a guide for reselling products.",
+      "estimated_importance": 0.8,
+      "estimated_frequency": 0.7,
+      "is_differentiator": true,
+      "provenance": "observed"
+    },
+    {
+      "name": "Discount Code",
+      "description": "Allows users to access and redeem discount codes.",
+      "estimated_importance": 0.8,
+      "estimated_frequency": 0.7,
+      "is_differentiator": true,
+      "provenance": "observed"
+    }
+  ],
+  "screens": [
+    {
+      "screen_id": "[modal_reselling_guide]",
+      "name": "Reselling Guide Modal",
+      "screen_type": "modal",
+      "purpose": "Provides a reselling guide and discount offer",
+      "participates_in": [
+        "Reselling Guide",
+        "Discount Code"
+      ],
+      "visit_count": 48,
+      "last_observation_id": "obs_8a1cb6e7"
+    },
+    {
+      "screen_id": "[modal_discount_code]",
+      "name": "Discount Code Modal",
+      "screen_type": "modal",
+      "purpose": "Allows users to access and redeem discount codes",
+      "participates_in": [
+        "Discount Code"
+      ],
+      "visit_count": 48,
+      "last_observation_id": "obs_8a1cb6e7"
+    }
+  ],
+  "transitions": [
+    {
+      "from_screen": "[modal_reselling_guide]",
+      "to_screen": "[modal_reselling_guide]",
+      "action": "submit",
+      "observed_count": 48
+    }
+  ],
+  "frontier": [
+    {
+      "description": "Explore the main e-commerce functionalities such as product listings, cart, and checkout.",
+      "rationale": "These are typical functionalities for an e-commerce app and should be present.",
+      "provenance": "inferred_structure",
+      "priority": 0.7,
+      "search_strategy": "Look for product listings, cart, and checkout screens."
+    }
+  ],
+  "anomalies": [
+    {
+      "description": "The screen is a modal overlay, which is not a typical screen type for an e-commerce app.",
+      "observation_id": "obs_8a1cb6e7",
+      "classification": "novel",
+      "exploration_priority_boost": 0.3
+    }
+  ],
+  "coverage_estimate": 0.3,
+  "confidence": 0.5
+}

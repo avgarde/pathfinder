@@ -1,0 +1,226 @@
+{
+  "observation_id": "obs_5fc774ea",
+  "timestamp": "2026-04-07T10:35:41.832002",
+  "screenshot_path": "exploration/20260407-103228-ca64/step_003.png",
+  "ui_structure_path": "<body bounds=\"[0,0][1280,1567]\">\n  <div id=\"__next\" bounds=\"[0,0][1280,1567]\">\n    <div class=\"app-wrapper ask-page\" bounds=\"[0,0][1280,1567]\">\n      <div class=\"header_beta\" bounds=\"[1202,87][1280,121]\">BETA</div>\n    </div>\n  </div>\n</body>\n",
+  "screen_purpose": "This screen is for searching and retrieving cricket statistics and information.",
+  "screen_type": "search",
+  "app_state": {
+    "logged_in": "yes"
+  },
+  "elements": [
+    {
+      "element_id": "search_bar",
+      "reference": {
+        "resource_id": null,
+        "text": "Search Test/ODI/T20 stats",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "top-left"
+      },
+      "element_type": "text_field",
+      "semantic_role": "Initiates search for cricket statistics",
+      "label": "Search Test/ODI/T20 stats",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "type",
+        "swipe"
+      ],
+      "inferred_destination": "Search results for cricket statistics",
+      "confidence": 0.95
+    },
+    {
+      "element_id": "search_button",
+      "reference": {
+        "resource_id": null,
+        "text": "Search",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "top-right"
+      },
+      "element_type": "button",
+      "semantic_role": "Initiates search for cricket statistics",
+      "label": "Search",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "tap"
+      ],
+      "inferred_destination": "Search results for cricket statistics",
+      "confidence": 0.95
+    },
+    {
+      "element_id": "men_dropdown",
+      "reference": {
+        "resource_id": null,
+        "text": "Men",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "top-left"
+      },
+      "element_type": "dropdown",
+      "semantic_role": "Filters search results by gender",
+      "label": "Men",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "click"
+      ],
+      "inferred_destination": "Search results filtered by gender",
+      "confidence": 0.95
+    },
+    {
+      "element_id": "tips_link",
+      "reference": {
+        "resource_id": null,
+        "text": "Tips for searching",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "top-right"
+      },
+      "element_type": "link",
+      "semantic_role": "Provides tips for searching",
+      "label": "Tips for searching",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "click"
+      ],
+      "inferred_destination": "Search tips page",
+      "confidence": 0.95
+    },
+    {
+      "element_id": "search_suggestions",
+      "reference": {
+        "resource_id": null,
+        "text": "most runs conceded by spinners in a team innings in T20Is",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "center"
+      },
+      "element_type": "list_item",
+      "semantic_role": "Suggests search queries",
+      "label": "most runs conceded by spinners in a team innings in T20Is",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "click"
+      ],
+      "inferred_destination": "Search results for 'most runs conceded by spinners in a team innings in T20Is'",
+      "confidence": 0.95
+    },
+    {
+      "element_id": "search_suggestions",
+      "reference": {
+        "resource_id": null,
+        "text": "who has the best bowling figures against Delhi Capitals in IPL",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "center"
+      },
+      "element_type": "list_item",
+      "semantic_role": "Suggests search queries",
+      "label": "who has the best bowling figures against Delhi Capitals in IPL",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "click"
+      ],
+      "inferred_destination": "Search results for 'who has the best bowling figures against Delhi Capitals in IPL'",
+      "confidence": 0.95
+    },
+    {
+      "element_id": "search_suggestions",
+      "reference": {
+        "resource_id": null,
+        "text": "Most times runout in IPL 2015",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "center"
+      },
+      "element_type": "list_item",
+      "semantic_role": "Suggests search queries",
+      "label": "Most times runout in IPL 2015",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "click"
+      ],
+      "inferred_destination": "Search results for 'Most times runout in IPL 2015'",
+      "confidence": 0.95
+    },
+    {
+      "element_id": "search_suggestions",
+      "reference": {
+        "resource_id": null,
+        "text": "Compare Mohammad Nabi's record against right-hand batsmen and left-hand batsmen in the IPL",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "center"
+      },
+      "element_type": "list_item",
+      "semantic_role": "Suggests search queries",
+      "label": "Compare Mohammad Nabi's record against right-hand batsmen and left-hand batsmen in the IPL",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "click"
+      ],
+      "inferred_destination": "Search results for 'Compare Mohammad Nabi's record against right-hand batsmen and left-hand batsmen in the IPL'",
+      "confidence": 0.95
+    },
+    {
+      "element_id": "search_suggestions",
+      "reference": {
+        "resource_id": null,
+        "text": "What is the most number of balls faced by an batsman to remain unbeaten in IPL?",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "center"
+      },
+      "element_type": "list_item",
+      "semantic_role": "Suggests search queries",
+      "label": "What is the most number of balls faced by an batsman to remain unbeaten in IPL?",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "click"
+      ],
+      "inferred_destination": "Search results for 'What is the most number of balls faced by an batsman to remain unbeaten in IPL?'",
+      "confidence": 0.95
+    }
+  ],
+  "navigation_context": {
+    "arrived_from": null,
+    "arrival_action": null,
+    "visible_navigation": [
+      "Men dropdown",
+      "Search button",
+      "Tips link"
+    ],
+    "active_navigation": null,
+    "back_available": true,
+    "inferred_depth": 0
+  },
+  "confidence": 0.9,
+  "raw_ai_response": "{\n  \"screen_purpose\": \"This screen is for searching and retrieving cricket statistics and information.\",\n  \"screen_type\": \"search\",\n  \"app_state\": {\n    \"logged_in\": \"yes\"\n  },\n  \"elements\": [\n    {\n      \"element_id\": \"search_bar\",\n      \"element_type\": \"text_field\",\n      \"semantic_role\": \"Initiates search for cricket statistics\",\n      \"label\": \"Search Test/ODI/T20 stats\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"type\", \"swipe\"],\n      \"inferred_destination\": \"Search results for cricket statistics\",\n      \"bounds_description\": \"top-left\",\n      \"confidence\": 0.95\n    },\n    {\n      \"element_id\": \"search_button\",\n      \"element_type\": \"button\",\n      \"semantic_role\": \"Initiates search for cricket statistics\",\n      \"label\": \"Search\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"tap\"],\n      \"inferred_destination\": \"Search results for cricket statistics\",\n      \"bounds_description\": \"top-right\",\n      \"confidence\": 0.95\n    },\n    {\n      \"element_id\": \"men_dropdown\",\n      \"element_type\": \"dropdown\",\n      \"semantic_role\": \"Filters search results by gender\",\n      \"label\": \"Men\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"click\"],\n      \"inferred_destination\": \"Search results filtered by gender\",\n      \"bounds_description\": \"top-left\",\n      \"confidence\": 0.95\n    },\n    {\n      \"element_id\": \"tips_link\",\n      \"element_type\": \"link\",\n      \"semantic_role\": \"Provides tips for searching\",\n      \"label\": \"Tips for searching\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"click\"],\n      \"inferred_destination\": \"Search tips page\",\n      \"bounds_description\": \"top-right\",\n      \"confidence\": 0.95\n    },\n    {\n      \"element_id\": \"search_suggestions\",\n      \"element_type\": \"list_item\",\n      \"semantic_role\": \"Suggests search queries\",\n      \"label\": \"most runs conceded by spinners in a team innings in T20Is\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"click\"],\n      \"inferred_destination\": \"Search results for 'most runs conceded by spinners in a team innings in T20Is'\",\n      \"bounds_description\": \"center\",\n      \"confidence\": 0.95\n    },\n    {\n      \"element_id\": \"search_suggestions\",\n      \"element_type\": \"list_item\",\n      \"semantic_role\": \"Suggests search queries\",\n      \"label\": \"who has the best bowling figures against Delhi Capitals in IPL\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"click\"],\n      \"inferred_destination\": \"Search results for 'who has the best bowling figures against Delhi Capitals in IPL'\",\n      \"bounds_description\": \"center\",\n      \"confidence\": 0.95\n    },\n    {\n      \"element_id\": \"search_suggestions\",\n      \"element_type\": \"list_item\",\n      \"semantic_role\": \"Suggests search queries\",\n      \"label\": \"Most times runout in IPL 2015\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"click\"],\n      \"inferred_destination\": \"Search results for 'Most times runout in IPL 2015'\",\n      \"bounds_description\": \"center\",\n      \"confidence\": 0.95\n    },\n    {\n      \"element_id\": \"search_suggestions\",\n      \"element_type\": \"list_item\",\n      \"semantic_role\": \"Suggests search queries\",\n      \"label\": \"Compare Mohammad Nabi's record against right-hand batsmen and left-hand batsmen in the IPL\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"click\"],\n      \"inferred_destination\": \"Search results for 'Compare Mohammad Nabi's record against right-hand batsmen and left-hand batsmen in the IPL'\",\n      \"bounds_description\": \"center\",\n      \"confidence\": 0.95\n    },\n    {\n      \"element_id\": \"search_suggestions\",\n      \"element_type\": \"list_item\",\n      \"semantic_role\": \"Suggests search queries\",\n      \"label\": \"What is the most number of balls faced by an batsman to remain unbeaten in IPL?\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"click\"],\n      \"inferred_destination\": \"Search results for 'What is the most number of balls faced by an batsman to remain unbeaten in IPL?'\",\n      \"bounds_description\": \"center\",\n      \"confidence\": 0.95\n    }\n  ],\n  \"navigation_context\": {\n    \"visible_navigation\": [\"Men dropdown\", \"Search button\", \"Tips link\"],\n    \"active_navigation\": null,\n    \"back_available\": true,\n    \"inferred_depth\": 0\n  },\n  \"confidence\": 0.9\n}"
+}

@@ -1,0 +1,91 @@
+{
+  "observation_id": "obs_b1e6bc78",
+  "timestamp": "2026-04-07T10:46:37.920288",
+  "screenshot_path": "exploration/20260407-103228-ca64/step_014.png",
+  "ui_structure_path": "<body bounds=\"[0,0][1280,2398]\">\n  <div id=\"__next\" bounds=\"[0,0][1280,2398]\">\n    <div class=\"app-wrapper result-page\" bounds=\"[0,0][1280,2398]\">\n      <div class=\"header_beta\" bounds=\"[1202,87][1280,121]\">BETA</div>\n    </div>\n  </div>\n</body>\n",
+  "screen_purpose": "This screen displays the most runs conceded by spinners in a team innings in T20Is.",
+  "screen_type": "list",
+  "app_state": {
+    "logged_in": "yes"
+  },
+  "elements": [
+    {
+      "element_id": "elem_01",
+      "reference": {
+        "resource_id": null,
+        "text": "Botswana (innings 1) v Namibia at Windhoek, 2019",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "top-left"
+      },
+      "element_type": "list_item",
+      "semantic_role": "Displays a cricket match with runs conceded by spinners",
+      "label": "Botswana (innings 1) v Namibia at Windhoek, 2019",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "tap"
+      ],
+      "inferred_destination": "View more details about the match",
+      "confidence": 0.95
+    },
+    {
+      "element_id": "elem_02",
+      "reference": {
+        "resource_id": null,
+        "text": "Thailand (innings 1) v Malaysia at Hangzhou, 2023",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "top-left"
+      },
+      "element_type": "list_item",
+      "semantic_role": "Displays a cricket match with runs conceded by spinners",
+      "label": "Thailand (innings 1) v Malaysia at Hangzhou, 2023",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "tap"
+      ],
+      "inferred_destination": "View more details about the match",
+      "confidence": 0.95
+    },
+    {
+      "element_id": "elem_03",
+      "reference": {
+        "resource_id": null,
+        "text": "Qatar (innings 2) v Bahrain at Doha, 2025/26",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "top-left"
+      },
+      "element_type": "list_item",
+      "semantic_role": "Displays a cricket match with runs conceded by spinners",
+      "label": "Qatar (innings 2) v Bahrain at Doha, 2025/26",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "tap"
+      ],
+      "inferred_destination": "View more details about the match",
+      "confidence": 0.95
+    }
+  ],
+  "navigation_context": {
+    "arrived_from": null,
+    "arrival_action": null,
+    "visible_navigation": [
+      "Men's T20I"
+    ],
+    "active_navigation": "Men's T20I",
+    "back_available": true,
+    "inferred_depth": 0
+  },
+  "confidence": 0.9,
+  "raw_ai_response": "{\n  \"screen_purpose\": \"This screen displays the most runs conceded by spinners in a team innings in T20Is.\",\n  \"screen_type\": \"list\",\n  \"app_state\": {\n    \"logged_in\": \"yes\"\n  },\n  \"elements\": [\n    {\n      \"element_id\": \"elem_01\",\n      \"element_type\": \"list_item\",\n      \"semantic_role\": \"Displays a cricket match with runs conceded by spinners\",\n      \"label\": \"Botswana (innings 1) v Namibia at Windhoek, 2019\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"tap\"],\n      \"inferred_destination\": \"View more details about the match\",\n      \"bounds_description\": \"top-left\",\n      \"confidence\": 0.95\n    },\n    {\n      \"element_id\": \"elem_02\",\n      \"element_type\": \"list_item\",\n      \"semantic_role\": \"Displays a cricket match with runs conceded by spinners\",\n      \"label\": \"Thailand (innings 1) v Malaysia at Hangzhou, 2023\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"tap\"],\n      \"inferred_destination\": \"View more details about the match\",\n      \"bounds_description\": \"top-left\",\n      \"confidence\": 0.95\n    },\n    {\n      \"element_id\": \"elem_03\",\n      \"element_type\": \"list_item\",\n      \"semantic_role\": \"Displays a cricket match with runs conceded by spinners\",\n      \"label\": \"Qatar (innings 2) v Bahrain at Doha, 2025/26\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"tap\"],\n      \"inferred_destination\": \"View more details about the match\",\n      \"bounds_description\": \"top-left\",\n      \"confidence\": 0.95\n    }\n  ],\n  \"navigation_context\": {\n    \"visible_navigation\": [\"Men's T20I\"],\n    \"active_navigation\": \"Men's T20I\",\n    \"back_available\": true,\n    \"inferred_depth\": 0\n  },\n  \"confidence\": 0.9\n}"
+}

@@ -1,0 +1,26 @@
+{
+  "app_reference": {
+    "package_name": null,
+    "app_store_url": null,
+    "bundle_path": null,
+    "web_url": "https://news.ycombinator.com",
+    "name": "Hacker News",
+    "description": null,
+    "baseline": null,
+    "differentiation": null,
+    "credentials": null
+  },
+  "model_version": 0,
+  "domain": "",
+  "purpose": "",
+  "baseline_category": null,
+  "differentiators": [],
+  "entities": [],
+  "capabilities": [],
+  "screens": [],
+  "transitions": [],
+  "frontier": [],
+  "anomalies": [],
+  "coverage_estimate": 0.0,
+  "confidence": 0.0
+}

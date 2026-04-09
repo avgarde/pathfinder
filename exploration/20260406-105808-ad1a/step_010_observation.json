@@ -1,0 +1,386 @@
+{
+  "observation_id": "obs_6aa23836",
+  "timestamp": "2026-04-06T11:08:40.380589",
+  "screenshot_path": "exploration/20260406-105808-ad1a/step_010.png",
+  "ui_structure_path": "<body id=\"homepage-50dd57bc89\" class=\"homepage basepage page\" bounds=\"[0,-240][1280,4721]\">\n  <div id=\"btn\" class=\"btn\" interactive=\"true\" />\n</body>\n",
+  "screen_purpose": "This is the main homepage for IndiGo airline booking with promotional banners for various travel services including cabs, shopping, sightseeing, hotels, and destination packages",
+  "screen_type": "home",
+  "app_state": {
+    "logged_in": "unknown",
+    "current_section": "6EPick",
+    "flight_alerts_active": "yes",
+    "promotional_offers_visible": "yes"
+  },
+  "elements": [
+    {
+      "element_id": "elem_01",
+      "reference": {
+        "resource_id": null,
+        "text": "here",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "top banner area"
+      },
+      "element_type": "link",
+      "semantic_role": "Navigates to flight status check page",
+      "label": "here",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "tap"
+      ],
+      "inferred_destination": "flight status page",
+      "confidence": 0.9
+    },
+    {
+      "element_id": "elem_02",
+      "reference": {
+        "resource_id": null,
+        "text": "here",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "top banner area"
+      },
+      "element_type": "link",
+      "semantic_role": "Navigates to flight cancellation and refund options",
+      "label": "here",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "tap"
+      ],
+      "inferred_destination": "cancellation/refund page",
+      "confidence": 0.9
+    },
+    {
+      "element_id": "elem_03",
+      "reference": {
+        "resource_id": null,
+        "text": "click here",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "top banner area"
+      },
+      "element_type": "link",
+      "semantic_role": "Shows list of cancelled flights",
+      "label": "click here",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "tap"
+      ],
+      "inferred_destination": "cancelled flights list",
+      "confidence": 0.9
+    },
+    {
+      "element_id": "elem_04",
+      "reference": {
+        "resource_id": null,
+        "text": "Book",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "top navigation bar"
+      },
+      "element_type": "tab",
+      "semantic_role": "Opens flight booking form and options",
+      "label": "Book",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "tap"
+      ],
+      "inferred_destination": "flight booking form",
+      "confidence": 0.95
+    },
+    {
+      "element_id": "elem_05",
+      "reference": {
+        "resource_id": null,
+        "text": "Trips",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "top navigation bar"
+      },
+      "element_type": "tab",
+      "semantic_role": "Manages existing trips and bookings",
+      "label": "Trips",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "tap"
+      ],
+      "inferred_destination": "trips management page",
+      "confidence": 0.95
+    },
+    {
+      "element_id": "elem_06",
+      "reference": {
+        "resource_id": null,
+        "text": "Check-in",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "top navigation bar"
+      },
+      "element_type": "tab",
+      "semantic_role": "Initiates online check-in process",
+      "label": "Check-in",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "tap"
+      ],
+      "inferred_destination": "check-in form",
+      "confidence": 0.95
+    },
+    {
+      "element_id": "elem_07",
+      "reference": {
+        "resource_id": null,
+        "text": "6EPick",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "top navigation bar"
+      },
+      "element_type": "dropdown",
+      "semantic_role": "Opens 6EPick services menu with additional travel services",
+      "label": "6EPick",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": true,
+      "possible_actions": [
+        "tap"
+      ],
+      "inferred_destination": "6EPick services page",
+      "confidence": 0.95
+    },
+    {
+      "element_id": "elem_08",
+      "reference": {
+        "resource_id": null,
+        "text": "IndiGo BluChip",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "top navigation bar"
+      },
+      "element_type": "dropdown",
+      "semantic_role": "Opens IndiGo BluChip loyalty program options",
+      "label": "IndiGo BluChip",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "tap"
+      ],
+      "inferred_destination": "BluChip loyalty page",
+      "confidence": 0.95
+    },
+    {
+      "element_id": "elem_09",
+      "reference": {
+        "resource_id": null,
+        "text": "Tariff Sheet",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "top navigation bar"
+      },
+      "element_type": "link",
+      "semantic_role": "Shows flight tariff information and pricing details",
+      "label": "Tariff Sheet",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "tap"
+      ],
+      "inferred_destination": "tariff information page",
+      "confidence": 0.9
+    },
+    {
+      "element_id": "elem_10",
+      "reference": {
+        "resource_id": null,
+        "text": "Login",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "top navigation bar"
+      },
+      "element_type": "button",
+      "semantic_role": "Initiates user login process",
+      "label": "Login",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "tap"
+      ],
+      "inferred_destination": "login page",
+      "confidence": 0.95
+    },
+    {
+      "element_id": "elem_11",
+      "reference": {
+        "resource_id": null,
+        "text": "Cabs",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "upper promotional section"
+      },
+      "element_type": "button",
+      "semantic_role": "Books airport transfer cab service",
+      "label": "Cabs",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "tap"
+      ],
+      "inferred_destination": "cab booking page",
+      "confidence": 0.9
+    },
+    {
+      "element_id": "elem_12",
+      "reference": {
+        "resource_id": null,
+        "text": "Shop",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "upper promotional section"
+      },
+      "element_type": "button",
+      "semantic_role": "Opens shopping section for travel items and electronics",
+      "label": "Shop",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "tap"
+      ],
+      "inferred_destination": "shopping page",
+      "confidence": 0.9
+    },
+    {
+      "element_id": "elem_13",
+      "reference": {
+        "resource_id": null,
+        "text": "50% off on Sight Seeing",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "middle promotional section"
+      },
+      "element_type": "button",
+      "semantic_role": "Books sightseeing tours and activities",
+      "label": "50% off on Sight Seeing",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "tap"
+      ],
+      "inferred_destination": "sightseeing booking page",
+      "confidence": 0.85
+    },
+    {
+      "element_id": "elem_14",
+      "reference": {
+        "resource_id": null,
+        "text": "Hotels on IndiGo",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "middle promotional section"
+      },
+      "element_type": "button",
+      "semantic_role": "Books hotel accommodations through IndiGo",
+      "label": "Hotels on IndiGo",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "tap"
+      ],
+      "inferred_destination": "hotel booking page",
+      "confidence": 0.85
+    },
+    {
+      "element_id": "elem_15",
+      "reference": {
+        "resource_id": null,
+        "text": "Destination",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "middle promotional section"
+      },
+      "element_type": "button",
+      "semantic_role": "Explores destination packages and travel deals",
+      "label": "Destination",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "tap"
+      ],
+      "inferred_destination": "destination packages page",
+      "confidence": 0.85
+    },
+    {
+      "element_id": "elem_16",
+      "reference": {
+        "resource_id": null,
+        "text": "Accept Cookies",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "bottom cookie banner"
+      },
+      "element_type": "button",
+      "semantic_role": "Accepts cookies for website functionality",
+      "label": "Accept Cookies",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "tap"
+      ],
+      "inferred_destination": null,
+      "confidence": 0.9
+    }
+  ],
+  "navigation_context": {
+    "arrived_from": null,
+    "arrival_action": null,
+    "visible_navigation": [
+      "Book",
+      "Trips",
+      "Check-in",
+      "6EPick",
+      "IndiGo BluChip",
+      "Tariff Sheet",
+      "Login"
+    ],
+    "active_navigation": "6EPick",
+    "back_available": false,
+    "inferred_depth": 0
+  },
+  "confidence": 0.9,
+  "raw_ai_response": "```json\n{\n  \"screen_purpose\": \"This is the main homepage for IndiGo airline booking with promotional banners for various travel services including cabs, shopping, sightseeing, hotels, and destination packages\",\n  \"screen_type\": \"home\",\n  \"app_state\": {\n    \"logged_in\": \"unknown\",\n    \"current_section\": \"6EPick\",\n    \"flight_alerts_active\": \"yes\",\n    \"promotional_offers_visible\": \"yes\"\n  },\n  \"elements\": [\n    {\n      \"element_id\": \"elem_01\",\n      \"element_type\": \"link\",\n      \"semantic_role\": \"Navigates to flight status check page\",\n      \"label\": \"here\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"tap\"],\n      \"inferred_destination\": \"flight status page\",\n      \"bounds_description\": \"top banner area\",\n      \"confidence\": 0.9\n    },\n    {\n      \"element_id\": \"elem_02\",\n      \"element_type\": \"link\",\n      \"semantic_role\": \"Navigates to flight cancellation and refund options\",\n      \"label\": \"here\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"tap\"],\n      \"inferred_destination\": \"cancellation/refund page\",\n      \"bounds_description\": \"top banner area\",\n      \"confidence\": 0.9\n    },\n    {\n      \"element_id\": \"elem_03\",\n      \"element_type\": \"link\",\n      \"semantic_role\": \"Shows list of cancelled flights\",\n      \"label\": \"click here\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"tap\"],\n      \"inferred_destination\": \"cancelled flights list\",\n      \"bounds_description\": \"top banner area\",\n      \"confidence\": 0.9\n    },\n    {\n      \"element_id\": \"elem_04\",\n      \"element_type\": \"tab\",\n      \"semantic_role\": \"Opens flight booking form and options\",\n      \"label\": \"Book\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"tap\"],\n      \"inferred_destination\": \"flight booking form\",\n      \"bounds_description\": \"top navigation bar\",\n      \"confidence\": 0.95\n    },\n    {\n      \"element_id\": \"elem_05\",\n      \"element_type\": \"tab\",\n      \"semantic_role\": \"Manages existing trips and bookings\",\n      \"label\": \"Trips\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"tap\"],\n      \"inferred_destination\": \"trips management page\",\n      \"bounds_description\": \"top navigation bar\",\n      \"confidence\": 0.95\n    },\n    {\n      \"element_id\": \"elem_06\",\n      \"element_type\": \"tab\",\n      \"semantic_role\": \"Initiates online check-in process\",\n      \"label\": \"Check-in\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"tap\"],\n      \"inferred_destination\": \"check-in form\",\n      \"bounds_description\": \"top navigation bar\",\n      \"confidence\": 0.95\n    },\n    {\n      \"element_id\": \"elem_07\",\n      \"element_type\": \"dropdown\",\n      \"semantic_role\": \"Opens 6EPick services menu with additional travel services\",\n      \"label\": \"6EPick\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": true,\n      \"possible_actions\": [\"tap\"],\n      \"inferred_destination\": \"6EPick services page\",\n      \"bounds_description\": \"top navigation bar\",\n      \"confidence\": 0.95\n    },\n    {\n      \"element_id\": \"elem_08\",\n      \"element_type\": \"dropdown\",\n      \"semantic_role\": \"Opens IndiGo BluChip loyalty program options\",\n      \"label\": \"IndiGo BluChip\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"tap\"],\n      \"inferred_destination\": \"BluChip loyalty page\",\n      \"bounds_description\": \"top navigation bar\",\n      \"confidence\": 0.95\n    },\n    {\n      \"element_id\": \"elem_09\",\n      \"element_type\": \"link\",\n      \"semantic_role\": \"Shows flight tariff information and pricing details\",\n      \"label\": \"Tariff Sheet\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"tap\"],\n      \"inferred_destination\": \"tariff information page\",\n      \"bounds_description\": \"top navigation bar\",\n      \"confidence\": 0.9\n    },\n    {\n      \"element_id\": \"elem_10\",\n      \"element_type\": \"button\",\n      \"semantic_role\": \"Initiates user login process\",\n      \"label\": \"Login\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"tap\"],\n      \"inferred_destination\": \"login page\",\n      \"bounds_description\": \"top navigation bar\",\n      \"confidence\": 0.95\n    },\n    {\n      \"element_id\": \"elem_11\",\n      \"element_type\": \"button\",\n      \"semantic_role\": \"Books airport transfer cab service\",\n      \"label\": \"Cabs\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"tap\"],\n      \"inferred_destination\": \"cab booking page\",\n      \"bounds_description\": \"upper promotional section\",\n      \"confidence\": 0.9\n    },\n    {\n      \"element_id\": \"elem_12\",\n      \"element_type\": \"button\",\n      \"semantic_role\": \"Opens shopping section for travel items and electronics\",\n      \"label\": \"Shop\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"tap\"],\n      \"inferred_destination\": \"shopping page\",\n      \"bounds_description\": \"upper promotional section\",\n      \"confidence\": 0.9\n    },\n    {\n      \"element_id\": \"elem_13\",\n      \"element_type\": \"button\",\n      \"semantic_role\": \"Books sightseeing tours and activities\",\n      \"label\": \"50% off on Sight Seeing\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"tap\"],\n      \"inferred_destination\": \"sightseeing booking page\",\n      \"bounds_description\": \"middle promotional section\",\n      \"confidence\": 0.85\n    },\n    {\n      \"element_id\": \"elem_14\",\n      \"element_type\": \"button\",\n      \"semantic_role\": \"Books hotel accommodations through IndiGo\",\n      \"label\": \"Hotels on IndiGo\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"tap\"],\n      \"inferred_destination\": \"hotel booking page\",\n      \"bounds_description\": \"middle promotional section\",\n      \"confidence\": 0.85\n    },\n    {\n      \"element_id\": \"elem_15\",\n      \"element_type\": \"button\",\n      \"semantic_role\": \"Explores destination packages and travel deals\",\n      \"label\": \"Destination\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"tap\"],\n      \"inferred_destination\": \"destination packages page\",\n      \"bounds_description\": \"middle promotional section\",\n      \"confidence\": 0.85\n    },\n    {\n      \"element_id\": \"elem_16\",\n      \"element_type\": \"button\",\n      \"semantic_role\": \"Accepts cookies for website functionality\",\n      \"label\": \"Accept Cookies\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"tap\"],\n      \"inferred_destination\": null,\n      \"bounds_description\": \"bottom cookie banner\",\n      \"confidence\": 0.9\n    }\n  ],\n  \"navigation_context\": {\n    \"visible_navigation\": [\"Book\", \"Trips\", \"Check-in\", \"6EPick\", \"IndiGo BluChip\", \"Tariff Sheet\", \"Login\"],\n    \"active_navigation\": \"6EPick\",\n    \"back_available\": false,\n    \"inferred_depth\": 0\n  },\n  \"confidence\": 0.9\n}\n```"
+}

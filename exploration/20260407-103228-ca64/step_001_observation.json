@@ -1,0 +1,185 @@
+{
+  "observation_id": "obs_f1dee1a9",
+  "timestamp": "2026-04-07T10:33:26.814148",
+  "screenshot_path": "exploration/20260407-103228-ca64/step_001.png",
+  "ui_structure_path": "<body class=\"ds-v2-body\" bounds=\"[0,0][1280,4585]\">\n  <div id=\"wzrk_wrapper\">\n    <div class=\"wzrk-alert wiz-show-animate\" role=\"dialog\" bounds=\"[914,20][1260,183]\">\n      <div class=\"wzrk-alert-heading\" aria-label=\"Latest cricket updates\" bounds=\"[962,37][1212,67]\">Latest cricket updates</div>\n      <div class=\"wzrk-alert-body\" aria-label=\"Get notified on all the cricket events, it's more than just scores!\" bounds=\"[931,77][1243,119]\">Get notified on all the cricket events, it's more than just scores!</div>\n      <div class=\"wzrk-button-container\" bounds=\"[931,129][1243,166]\">\n        <button id=\"wzrk-cancel\" class=\"No thanks\" aria-label=\"Not Now\" bounds=\"[949,129][1079,166]\" interactive=\"true\">Not Now</button>\n        <button id=\"wzrk-confirm\" class=\"Sign me Up!\" aria-label=\"Yes! I'm in\" bounds=\"[1094,129][1224,166]\" interactive=\"true\">Yes! I'm in</button>\n      </div>\n    </div>\n  </div>\n  <div id=\"__next\" bounds=\"[0,0][1280,4585]\">\n    <section id=\"pane-main\" bounds=\"[0,0][1280,4585]\">\n      <section id=\"main-container\" bounds=\"[0,0][1280,4585]\">\n        <div class=\"lg:ds-container lg:ds-mx-auto lg:ds-px-5\" bounds=\"[0,290][1280,354]\">\n          <div class=\"ds-relative ds-w-full ds-scrollbar-hide\" bounds=\"[20,290][1260,354]\">\n            <div class=\"ds-flex ds-flex-row ds-w-full\" bounds=\"[20,290][1260,354]\">\n              <div bounds=\"[20,306][173,338]\">\n                <a href=\"https://www.espncricinfo.com/series/ipl-2026-1510719/match-schedule-fixtures-and-results\" bounds=\"[20,311][173,330]\" interactive=\"true\" />\n              </div>\n              <div bounds=\"[181,306][278,338]\">\n                <a href=\"https://www.espncricinfo.com/series/ipl-2026-1510719\" bounds=\"[181,311][278,330]\" interactive=\"true\" />\n              </div>\n              <div bounds=\"[286,306][445,338]\">\n                <a href=\"https://www.espncricinfo.com/team/india-6/match-schedule-fixtures-and-results\" bounds=\"[286,311][445,330]\" interactive=\"true\" />\n              </div>\n              <div bounds=\"[453,306][628,338]\">\n                <a href=\"https://www.espncricinfo.com/team/india-women-1812/match-schedule-fixtures-and-results\" bounds=\"[453,311][628,330]\" interactive=\"true\" />\n              </div>\n              <div bounds=\"[636,306][753,338]\">\n                <a href=\"https://www.espncricinfo.com/ask\" bounds=\"[636,311][753,330]\" interactive=\"true\" />\n              </div>\n              <div bounds=\"[761,306][912,338]\">\n                <a href=\"https://www.espncricinfo.com/rankings/icc-team-ranking\" bounds=\"[761,311][912,330]\" interactive=\"true\" />\n              </div>\n              <div bounds=\"[920,306][1078,338]\">\n                <a href=\"https://www.espncricinfo.com/rankings/icc-player-ranking\" bounds=\"[920,311][1078,330]\" interactive=\"true\" />\n              </div>\n              <div bounds=\"[1086,306][1198,338]\">\n                <a href=\"https://www.espncricinfo.com/story/2000-2005-the-first-25-years-of-cricket-this-century-1477327\" bounds=\"[1086,311][1198,330]\" interactive=\"true\" />\n              </div>\n            </div>\n          </div>\n        </div>\n        <div class=\"ds-relative\" bounds=\"[0,354][1280,4585]\">\n          <div class=\"ds-px-4 ds-bg-color-bg-spotlight ds-pt-16\">\n            <div class=\"lg:ds-container lg:ds-mx-auto lg:ds-px-5\">\n              <div class=\"ds-flex ds-flex-col ds-items-center\">\n                <a class=\"ds-flex ds-flex-col ds-items-center\" href=\"https://www.espncricinfo.com/cricket-quotes\" interactive=\"true\" />\n              </div>\n            </div>\n          </div>\n          <footer class=\"ds-p-4 ds-bg-raw-grey09\">\n            <div class=\"lg:ds-container lg:ds-mx-auto lg:ds-px-5\">\n              <div class=\"ds-grid lg:ds-grid-cols-3 ds-grid-cols-1\">\n                <div class=\"ds-text-body-3 lg:ds-ml-auto ds-text-raw-grey06\">© 2026 ESPN Sports Media Ltd. All rights reserved</div>\n              </div>\n            </div>\n          </footer>\n        </div>\n      </section>\n    </section>\n  </div>\n</body>\n",
+  "screen_purpose": "This screen displays upcoming cricket matches and provides navigation to various cricket-related sections.",
+  "screen_type": "navigation",
+  "app_state": {
+    "logged_in": "yes"
+  },
+  "elements": [
+    {
+      "element_id": "elem_01",
+      "reference": {
+        "resource_id": null,
+        "text": "IPL 2026",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "top-left"
+      },
+      "element_type": "button",
+      "semantic_role": "Navigates to the IPL 2026 schedule",
+      "label": "IPL 2026",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "tap"
+      ],
+      "inferred_destination": "https://www.espncricinfo.com/series/ipl-2026-1510719",
+      "confidence": 0.95
+    },
+    {
+      "element_id": "elem_02",
+      "reference": {
+        "resource_id": null,
+        "text": "India men's fixtures",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "top-left"
+      },
+      "element_type": "button",
+      "semantic_role": "Navigates to the India men's fixtures",
+      "label": "India men's fixtures",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "tap"
+      ],
+      "inferred_destination": "https://www.espncricinfo.com/team/india-6/match-schedule-fixtures-and-results",
+      "confidence": 0.95
+    },
+    {
+      "element_id": "elem_03",
+      "reference": {
+        "resource_id": null,
+        "text": "India women's fixtures",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "top-left"
+      },
+      "element_type": "button",
+      "semantic_role": "Navigates to the India women's fixtures",
+      "label": "India women's fixtures",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "tap"
+      ],
+      "inferred_destination": "https://www.espncricinfo.com/team/india-women-1812/match-schedule-fixtures-and-results",
+      "confidence": 0.95
+    },
+    {
+      "element_id": "elem_04",
+      "reference": {
+        "resource_id": null,
+        "text": "Ask Cricinfo",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "top-left"
+      },
+      "element_type": "button",
+      "semantic_role": "Navigates to the Ask Cricinfo section",
+      "label": "Ask Cricinfo",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "tap"
+      ],
+      "inferred_destination": "https://www.espncricinfo.com/ask",
+      "confidence": 0.95
+    },
+    {
+      "element_id": "elem_05",
+      "reference": {
+        "resource_id": null,
+        "text": "ICC team rankings",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "top-left"
+      },
+      "element_type": "button",
+      "semantic_role": "Navigates to the ICC team rankings",
+      "label": "ICC team rankings",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "tap"
+      ],
+      "inferred_destination": "https://www.espncricinfo.com/rankings/icc-team-ranking",
+      "confidence": 0.95
+    },
+    {
+      "element_id": "elem_06",
+      "reference": {
+        "resource_id": null,
+        "text": "ICC player rankings",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "top-left"
+      },
+      "element_type": "button",
+      "semantic_role": "Navigates to the ICC player rankings",
+      "label": "ICC player rankings",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "tap"
+      ],
+      "inferred_destination": "https://www.espncricinfo.com/rankings/icc-player-ranking",
+      "confidence": 0.95
+    },
+    {
+      "element_id": "elem_07",
+      "reference": {
+        "resource_id": null,
+        "text": "2000-2025",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "top-left"
+      },
+      "element_type": "button",
+      "semantic_role": "Navigates to the 2000-2025 section",
+      "label": "2000-2025",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "tap"
+      ],
+      "inferred_destination": "https://www.espncricinfo.com/story/2000-2005-the-first-25-years-of-cricket-this-century-1477327",
+      "confidence": 0.95
+    }
+  ],
+  "navigation_context": {
+    "arrived_from": null,
+    "arrival_action": null,
+    "visible_navigation": [
+      "IPL 2026",
+      "India men's fixtures",
+      "India women's fixtures",
+      "Ask Cricinfo",
+      "ICC team rankings",
+      "ICC player rankings",
+      "2000-2025"
+    ],
+    "active_navigation": null,
+    "back_available": true,
+    "inferred_depth": 0
+  },
+  "confidence": 0.9,
+  "raw_ai_response": "{\n  \"screen_purpose\": \"This screen displays upcoming cricket matches and provides navigation to various cricket-related sections.\",\n  \"screen_type\": \"navigation\",\n  \"app_state\": {\n    \"logged_in\": \"yes\"\n  },\n  \"elements\": [\n    {\n      \"element_id\": \"elem_01\",\n      \"element_type\": \"button\",\n      \"semantic_role\": \"Navigates to the IPL 2026 schedule\",\n      \"label\": \"IPL 2026\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"tap\"],\n      \"inferred_destination\": \"https://www.espncricinfo.com/series/ipl-2026-1510719\",\n      \"bounds_description\": \"top-left\",\n      \"confidence\": 0.95\n    },\n    {\n      \"element_id\": \"elem_02\",\n      \"element_type\": \"button\",\n      \"semantic_role\": \"Navigates to the India men's fixtures\",\n      \"label\": \"India men's fixtures\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"tap\"],\n      \"inferred_destination\": \"https://www.espncricinfo.com/team/india-6/match-schedule-fixtures-and-results\",\n      \"bounds_description\": \"top-left\",\n      \"confidence\": 0.95\n    },\n    {\n      \"element_id\": \"elem_03\",\n      \"element_type\": \"button\",\n      \"semantic_role\": \"Navigates to the India women's fixtures\",\n      \"label\": \"India women's fixtures\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"tap\"],\n      \"inferred_destination\": \"https://www.espncricinfo.com/team/india-women-1812/match-schedule-fixtures-and-results\",\n      \"bounds_description\": \"top-left\",\n      \"confidence\": 0.95\n    },\n    {\n      \"element_id\": \"elem_04\",\n      \"element_type\": \"button\",\n      \"semantic_role\": \"Navigates to the Ask Cricinfo section\",\n      \"label\": \"Ask Cricinfo\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"tap\"],\n      \"inferred_destination\": \"https://www.espncricinfo.com/ask\",\n      \"bounds_description\": \"top-left\",\n      \"confidence\": 0.95\n    },\n    {\n      \"element_id\": \"elem_05\",\n      \"element_type\": \"button\",\n      \"semantic_role\": \"Navigates to the ICC team rankings\",\n      \"label\": \"ICC team rankings\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"tap\"],\n      \"inferred_destination\": \"https://www.espncricinfo.com/rankings/icc-team-ranking\",\n      \"bounds_description\": \"top-left\",\n      \"confidence\": 0.95\n    },\n    {\n      \"element_id\": \"elem_06\",\n      \"element_type\": \"button\",\n      \"semantic_role\": \"Navigates to the ICC player rankings\",\n      \"label\": \"ICC player rankings\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"tap\"],\n      \"inferred_destination\": \"https://www.espncricinfo.com/rankings/icc-player-ranking\",\n      \"bounds_description\": \"top-left\",\n      \"confidence\": 0.95\n    },\n    {\n      \"element_id\": \"elem_07\",\n      \"element_type\": \"button\",\n      \"semantic_role\": \"Navigates to the 2000-2025 section\",\n      \"label\": \"2000-2025\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"tap\"],\n      \"inferred_destination\": \"https://www.espncricinfo.com/story/2000-2005-the-first-25-years-of-cricket-this-century-1477327\",\n      \"bounds_description\": \"top-left\",\n      \"confidence\": 0.95\n    }\n  ],\n  \"navigation_context\": {\n    \"visible_navigation\": [\"IPL 2026\", \"India men's fixtures\", \"India women's fixtures\", \"Ask Cricinfo\", \"ICC team rankings\", \"ICC player rankings\", \"2000-2025\"],\n    \"active_navigation\": null,\n    \"back_available\": true,\n    \"inferred_depth\": 0\n  },\n  \"confidence\": 0.9\n}"
+}

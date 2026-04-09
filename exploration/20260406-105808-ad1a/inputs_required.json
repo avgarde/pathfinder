@@ -1,0 +1,28 @@
+[
+  {
+    "field": "destination_city",
+    "category": "selection",
+    "screen_type": "home",
+    "screen_purpose": "This is the main homepage for IndiGo airline booking where users can search for flights, hotels, and other travel servic",
+    "element_label": "Going to? Search by place/airport",
+    "element_type": "text_field",
+    "placeholder": "Search by place/airport",
+    "required": true,
+    "step_number": 1,
+    "suggested_strategy": "skip",
+    "notes": "Required to complete flight search functionality - gates access to flight search results"
+  },
+  {
+    "field": "destination",
+    "category": "search_query",
+    "screen_type": "home",
+    "screen_purpose": "This is the main homepage for IndiGo airline booking, allowing users to search for flights, hotels, and sightseeing opti",
+    "element_label": "Going to? Search by place/airport",
+    "element_type": "text_field",
+    "placeholder": "Search by place/airport",
+    "required": true,
+    "step_number": 3,
+    "suggested_strategy": "generate",
+    "notes": "Destination city/airport selection is required to perform flight search"
+  }
+]

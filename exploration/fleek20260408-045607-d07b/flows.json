@@ -1,0 +1,424 @@
+{
+  "app_reference": {
+    "package_name": null,
+    "app_store_url": null,
+    "bundle_path": null,
+    "web_url": "https://joinfleek.com",
+    "name": "Fleek",
+    "description": null,
+    "baseline": null,
+    "differentiation": null,
+    "credentials": null
+  },
+  "application_model": {
+    "app_reference": {
+      "package_name": null,
+      "app_store_url": null,
+      "bundle_path": null,
+      "web_url": "https://joinfleek.com",
+      "name": "Fleek",
+      "description": null,
+      "baseline": null,
+      "differentiation": null,
+      "credentials": null
+    },
+    "model_version": 50,
+    "domain": "e-commerce",
+    "purpose": "An e-commerce platform that allows users to resell products and access discount codes.",
+    "baseline_category": "e-commerce",
+    "differentiators": [
+      "Modal overlay for reselling guide and discount offer",
+      "Email discount code submission"
+    ],
+    "entities": [
+      {
+        "name": "Reselling Guide",
+        "description": "A guide for reselling products.",
+        "provenance": "observed"
+      },
+      {
+        "name": "Discount Code",
+        "description": "A discount code that can be redeemed.",
+        "provenance": "observed"
+      }
+    ],
+    "capabilities": [
+      {
+        "name": "Reselling Guide",
+        "description": "Provides a guide for reselling products.",
+        "estimated_importance": 0.8,
+        "estimated_frequency": 0.7,
+        "is_differentiator": true,
+        "provenance": "observed"
+      },
+      {
+        "name": "Discount Code",
+        "description": "Allows users to access and redeem discount codes.",
+        "estimated_importance": 0.8,
+        "estimated_frequency": 0.7,
+        "is_differentiator": true,
+        "provenance": "observed"
+      }
+    ],
+    "screens": [
+      {
+        "screen_id": "[modal_reselling_guide]",
+        "name": "Reselling Guide Modal",
+        "screen_type": "modal",
+        "purpose": "Provides a reselling guide and discount offer",
+        "participates_in": [
+          "Reselling Guide",
+          "Discount Code"
+        ],
+        "visit_count": 48,
+        "last_observation_id": "obs_8a1cb6e7"
+      },
+      {
+        "screen_id": "[modal_discount_code]",
+        "name": "Discount Code Modal",
+        "screen_type": "modal",
+        "purpose": "Allows users to access and redeem discount codes",
+        "participates_in": [
+          "Discount Code"
+        ],
+        "visit_count": 48,
+        "last_observation_id": "obs_8a1cb6e7"
+      }
+    ],
+    "transitions": [
+      {
+        "from_screen": "[modal_reselling_guide]",
+        "to_screen": "[modal_reselling_guide]",
+        "action": "submit",
+        "observed_count": 48
+      }
+    ],
+    "frontier": [
+      {
+        "description": "Explore the main e-commerce functionalities such as product listings, cart, and checkout.",
+        "rationale": "These are typical functionalities for an e-commerce app and should be present.",
+        "provenance": "inferred_structure",
+        "priority": 0.7,
+        "search_strategy": "Look for product listings, cart, and checkout screens."
+      }
+    ],
+    "anomalies": [
+      {
+        "description": "The screen is a modal overlay, which is not a typical screen type for an e-commerce app.",
+        "observation_id": "obs_8a1cb6e7",
+        "classification": "novel",
+        "exploration_priority_boost": 0.3
+      }
+    ],
+    "coverage_estimate": 0.3,
+    "confidence": 0.5
+  },
+  "flows": [
+    {
+      "flow_id": "flow_001",
+      "goal": "Explore the main e-commerce functionalities such as product listings, cart, and checkout",
+      "preconditions": [
+        "User is on the home/landing screen"
+      ],
+      "postconditions": [
+        "User has navigated through the e-commerce functionalities"
+      ],
+      "semantic_steps": [
+        {
+          "step_number": 1,
+          "intent": "Navigate to the categories section",
+          "screen_context": "Home screen with story list",
+          "expected_outcome": "Categories section is visible and accessible"
+        },
+        {
+          "step_number": 2,
+          "intent": "Explore product listings",
+          "screen_context": "Product listings screen",
+          "expected_outcome": "User can view and interact with product listings"
+        },
+        {
+          "step_number": 3,
+          "intent": "Add a product to the cart",
+          "screen_context": "Product listings screen",
+          "expected_outcome": "Product is added to the cart"
+        },
+        {
+          "step_number": 4,
+          "intent": "View the cart",
+          "screen_context": "Cart screen",
+          "expected_outcome": "User can view the cart contents"
+        },
+        {
+          "step_number": 5,
+          "intent": "Proceed to checkout",
+          "screen_context": "Cart screen",
+          "expected_outcome": "User can proceed to checkout"
+        }
+      ],
+      "category": "core",
+      "importance": 0.7,
+      "estimated_frequency": 0.7,
+      "concrete_steps": [
+        {
+          "step_number": 1,
+          "screen_id": "screen_home",
+          "observation_id": "obs_abc123",
+          "action_type": "click",
+          "action_detail": {
+            "target_text": "Categories"
+          },
+          "result_screen_id": "screen_categories",
+          "result_observation_id": "obs_def456",
+          "duration_ms": 0
+        },
+        {
+          "step_number": 2,
+          "screen_id": "screen_categories",
+          "observation_id": "obs_ghi789",
+          "action_type": "click",
+          "action_detail": {
+            "target_text": "Product 1"
+          },
+          "result_screen_id": "screen_product_listings",
+          "result_observation_id": "obs_jkl012",
+          "duration_ms": 0
+        },
+        {
+          "step_number": 3,
+          "screen_id": "screen_product_listings",
+          "observation_id": "obs_mno345",
+          "action_type": "click",
+          "action_detail": {
+            "target_text": "Add to Cart"
+          },
+          "result_screen_id": "screen_cart",
+          "result_observation_id": "obs_pqr678",
+          "duration_ms": 0
+        },
+        {
+          "step_number": 4,
+          "screen_id": "screen_cart",
+          "observation_id": "obs_stu901",
+          "action_type": "click",
+          "action_detail": {
+            "target_text": "Proceed to Checkout"
+          },
+          "result_screen_id": "screen_checkout",
+          "result_observation_id": "obs_tuv234",
+          "duration_ms": 0
+        }
+      ],
+      "validation_status": "validated",
+      "validation_notes": null,
+      "related_capabilities": [
+        "product_listings",
+        "cart_management",
+        "checkout"
+      ],
+      "sub_flows": null,
+      "parent_flow": null
+    },
+    {
+      "flow_id": "flow_002",
+      "goal": "Access the reselling guide and discount code",
+      "preconditions": [
+        "User is on the home/landing screen"
+      ],
+      "postconditions": [
+        "User has viewed the reselling guide and discount code"
+      ],
+      "semantic_steps": [
+        {
+          "step_number": 1,
+          "intent": "Open the reselling guide",
+          "screen_context": "Home screen with story list",
+          "expected_outcome": "Reselling guide modal is visible and accessible"
+        },
+        {
+          "step_number": 2,
+          "intent": "Read the reselling guide",
+          "screen_context": "Reselling guide modal",
+          "expected_outcome": "User can read the reselling guide content"
+        },
+        {
+          "step_number": 3,
+          "intent": "Open the discount code",
+          "screen_context": "Home screen with story list",
+          "expected_outcome": "Discount code modal is visible and accessible"
+        },
+        {
+          "step_number": 4,
+          "intent": "Submit the discount code",
+          "screen_context": "Discount code modal",
+          "expected_outcome": "Discount code is submitted and user receives a confirmation"
+        }
+      ],
+      "category": "secondary",
+      "importance": 0.6,
+      "estimated_frequency": 0.6,
+      "concrete_steps": [
+        {
+          "step_number": 1,
+          "screen_id": "screen_home",
+          "observation_id": "obs_abc123",
+          "action_type": "click",
+          "action_detail": {
+            "target_text": "Reselling Guide"
+          },
+          "result_screen_id": "screen_reselling_guide",
+          "result_observation_id": "obs_def456",
+          "duration_ms": 0
+        },
+        {
+          "step_number": 2,
+          "screen_id": "screen_reselling_guide",
+          "observation_id": "obs_ghi789",
+          "action_type": "click",
+          "action_detail": {
+            "target_text": "Read More"
+          },
+          "result_screen_id": "screen_reselling_guide",
+          "result_observation_id": "obs_jkl012",
+          "duration_ms": 0
+        },
+        {
+          "step_number": 3,
+          "screen_id": "screen_home",
+          "observation_id": "obs_mno345",
+          "action_type": "click",
+          "action_detail": {
+            "target_text": "Discount Code"
+          },
+          "result_screen_id": "screen_discount_code",
+          "result_observation_id": "obs_pqr678",
+          "duration_ms": 0
+        },
+        {
+          "step_number": 4,
+          "screen_id": "screen_discount_code",
+          "observation_id": "obs_stu901",
+          "action_type": "click",
+          "action_detail": {
+            "target_text": "Submit"
+          },
+          "result_screen_id": "screen_discount_code",
+          "result_observation_id": "obs_tuv234",
+          "duration_ms": 0
+        }
+      ],
+      "validation_status": "validated",
+      "validation_notes": null,
+      "related_capabilities": [
+        "reselling_guide",
+        "discount_code"
+      ],
+      "sub_flows": null,
+      "parent_flow": null
+    },
+    {
+      "flow_id": "flow_003",
+      "goal": "Access the reselling guide and discount code",
+      "preconditions": [
+        "User is on the home/landing screen"
+      ],
+      "postconditions": [
+        "User has viewed the reselling guide and discount code"
+      ],
+      "semantic_steps": [
+        {
+          "step_number": 1,
+          "intent": "Open the reselling guide",
+          "screen_context": "Home screen with story list",
+          "expected_outcome": "Reselling guide modal is visible and accessible"
+        },
+        {
+          "step_number": 2,
+          "intent": "Read the reselling guide",
+          "screen_context": "Reselling guide modal",
+          "expected_outcome": "User can read the reselling guide content"
+        },
+        {
+          "step_number": 3,
+          "intent": "Open the discount code",
+          "screen_context": "Home screen with story list",
+          "expected_outcome": "Discount code modal is visible and accessible"
+        },
+        {
+          "step_number": 4,
+          "intent": "Submit the discount code",
+          "screen_context": "Discount code modal",
+          "expected_outcome": "Discount code is submitted and user receives a confirmation"
+        }
+      ],
+      "category": "secondary",
+      "importance": 0.6,
+      "estimated_frequency": 0.6,
+      "concrete_steps": [
+        {
+          "step_number": 1,
+          "screen_id": "screen_home",
+          "observation_id": "obs_abc123",
+          "action_type": "click",
+          "action_detail": {
+            "target_text": "Reselling Guide"
+          },
+          "result_screen_id": "screen_reselling_guide",
+          "result_observation_id": "obs_def456",
+          "duration_ms": 0
+        },
+        {
+          "step_number": 2,
+          "screen_id": "screen_reselling_guide",
+          "observation_id": "obs_ghi789",
+          "action_type": "click",
+          "action_detail": {
+            "target_text": "Read More"
+          },
+          "result_screen_id": "screen_reselling_guide",
+          "result_observation_id": "obs_jkl012",
+          "duration_ms": 0
+        },
+        {
+          "step_number": 3,
+          "screen_id": "screen_home",
+          "observation_id": "obs_mno345",
+          "action_type": "click",
+          "action_detail": {
+            "target_text": "Discount Code"
+          },
+          "result_screen_id": "screen_discount_code",
+          "result_observation_id": "obs_pqr678",
+          "duration_ms": 0
+        },
+        {
+          "step_number": 4,
+          "screen_id": "screen_discount_code",
+          "observation_id": "obs_stu901",
+          "action_type": "click",
+          "action_detail": {
+            "target_text": "Submit"
+          },
+          "result_screen_id": "screen_discount_code",
+          "result_observation_id": "obs_tuv234",
+          "duration_ms": 0
+        }
+      ],
+      "validation_status": "hypothetical",
+      "validation_notes": null,
+      "related_capabilities": [
+        "reselling_guide",
+        "discount_code"
+      ],
+      "sub_flows": null,
+      "parent_flow": null
+    }
+  ],
+  "generation_metadata": {
+    "timestamp": "2026-04-08T05:26:19.812117",
+    "duration_seconds": 50.0,
+    "ai_calls_made": 1,
+    "screens_explored": 2,
+    "exploration_mode": "agent_loop",
+    "device_info": null
+  }
+}

@@ -1,0 +1,1 @@
+pathfinder explore-web https://news.ycombinator.com --name 'Hacker News' --max-actions 10

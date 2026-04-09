@@ -1,0 +1,15 @@
+[
+  {
+    "field": "search_query",
+    "category": "search_query",
+    "screen_type": "home",
+    "screen_purpose": "This is the main Hacker News homepage displaying a ranked list of technology news stories and discussions",
+    "element_label": "Search:",
+    "element_type": "text_field",
+    "placeholder": "",
+    "required": false,
+    "step_number": 1,
+    "suggested_strategy": "generate",
+    "notes": "Search functionality for finding specific stories - would need a search term to test this capability"
+  }
+]

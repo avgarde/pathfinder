@@ -1,0 +1,393 @@
+{
+  "run_id": "fleek20260408-045607-d07b",
+  "run_dir": "exploration/fleek20260408-045607-d07b",
+  "app": "Fleek",
+  "total_actions": 50,
+  "duration_seconds": 1745.4,
+  "stop_reason": "Budget exhausted",
+  "model_version": 50,
+  "screens_discovered": 2,
+  "transitions_discovered": 1,
+  "capabilities": 2,
+  "coverage_estimate": 0.3,
+  "confidence": 0.5,
+  "inputs_required": [],
+  "flows": [
+    {
+      "flow_id": "flow_001",
+      "goal": "Explore the main e-commerce functionalities such as product listings, cart, and checkout",
+      "category": "core",
+      "importance": 0.7,
+      "status": "validated",
+      "steps": 5
+    },
+    {
+      "flow_id": "flow_002",
+      "goal": "Access the reselling guide and discount code",
+      "category": "secondary",
+      "importance": 0.6,
+      "status": "validated",
+      "steps": 4
+    },
+    {
+      "flow_id": "flow_003",
+      "goal": "Access the reselling guide and discount code",
+      "category": "secondary",
+      "importance": 0.6,
+      "status": "hypothetical",
+      "steps": 4
+    }
+  ],
+  "steps": [
+    {
+      "step": 1,
+      "screen": "This screen is a modal overlay providing a reselling guide and discount offer.",
+      "action": "Navigate to the categories section to explore the main e-commerce functionalities",
+      "goal": "Explore the main e-commerce functionalities such as product listings, cart, and checkout.",
+      "success": true
+    },
+    {
+      "step": 2,
+      "screen": "This screen is a modal overlay providing a reselling guide and discount offer.",
+      "action": "Navigate to the 'Categories' section to explore the main e-commerce functionalities",
+      "goal": "Explore the main e-commerce functionalities such as product listings, cart, and checkout.",
+      "success": true
+    },
+    {
+      "step": 3,
+      "screen": "This screen is a modal overlay providing a reselling guide and discount offer.",
+      "action": "Navigate away from the modal overlay to explore the main e-commerce functionalities.",
+      "goal": "Explore the main e-commerce functionalities such as product listings, cart, and checkout.",
+      "success": true
+    },
+    {
+      "step": 4,
+      "screen": "This screen is a modal overlay providing a reselling guide and discount offer.",
+      "action": "Navigate away from the modal overlay to explore the main e-commerce functionalities.",
+      "goal": "Explore the main e-commerce functionalities such as product listings, cart, and checkout.",
+      "success": true
+    },
+    {
+      "step": 5,
+      "screen": "This screen is a modal overlay providing a reselling guide and discount offer.",
+      "action": "Navigate away from the modal overlay to explore the main e-commerce functionalities.",
+      "goal": "Explore the main e-commerce functionalities such as product listings, cart, and checkout.",
+      "success": true
+    },
+    {
+      "step": 6,
+      "screen": "This screen is a modal overlay providing a reselling guide and discount offer.",
+      "action": "Navigate away from the modal overlay to explore the main e-commerce functionalities.",
+      "goal": "Explore the main e-commerce functionalities such as product listings, cart, and checkout.",
+      "success": true
+    },
+    {
+      "step": 7,
+      "screen": "This screen is a modal overlay providing a reselling guide and discount offer.",
+      "action": "Navigate to the categories section to explore the main e-commerce functionalities",
+      "goal": "Explore the main e-commerce functionalities such as product listings, cart, and checkout.",
+      "success": true
+    },
+    {
+      "step": 8,
+      "screen": "This screen is a modal overlay providing a reselling guide and discount offer.",
+      "action": "Forced back \u2014 stuck on modal|3|button,button,text_field",
+      "goal": "Escape stuck state",
+      "success": true
+    },
+    {
+      "step": 9,
+      "screen": "This screen is a modal overlay providing a reselling guide and discount offer.",
+      "action": "Navigate to the 'Categories' section to explore the main e-commerce functionalities",
+      "goal": "Explore the main e-commerce functionalities such as product listings, cart, and checkout.",
+      "success": true
+    },
+    {
+      "step": 10,
+      "screen": "This screen is a modal overlay providing a reselling guide and discount offer.",
+      "action": "Navigate away from the modal overlay to explore the main e-commerce functionalities.",
+      "goal": "Explore the main e-commerce functionalities such as product listings, cart, and checkout.",
+      "success": true
+    },
+    {
+      "step": 11,
+      "screen": "This screen is a modal overlay providing a reselling guide and discount offer.",
+      "action": "Navigate away from the modal overlay to explore the main e-commerce functionalities.",
+      "goal": "Explore the main e-commerce functionalities such as product listings, cart, and checkout.",
+      "success": true
+    },
+    {
+      "step": 12,
+      "screen": "This screen is a modal overlay providing a reselling guide and discount offer.",
+      "action": "Navigate away from the modal overlay to explore the main e-commerce functionalities.",
+      "goal": "Explore the main e-commerce functionalities such as product listings, cart, and checkout.",
+      "success": true
+    },
+    {
+      "step": 13,
+      "screen": "This screen is a modal overlay providing a reselling guide and discount offer.",
+      "action": "Navigate away from the modal overlay to explore the main e-commerce functionalities.",
+      "goal": "Explore the main e-commerce functionalities such as product listings, cart, and checkout.",
+      "success": true
+    },
+    {
+      "step": 14,
+      "screen": "This screen is a modal overlay providing a reselling guide and discount offer.",
+      "action": "Navigate away from the modal overlay to explore the main e-commerce functionalities.",
+      "goal": "Explore the main e-commerce functionalities such as product listings, cart, and checkout.",
+      "success": true
+    },
+    {
+      "step": 15,
+      "screen": "This screen is a modal overlay providing a reselling guide and discount offer.",
+      "action": "Navigate away from the modal overlay to explore the main e-commerce functionalities.",
+      "goal": "Explore the main e-commerce functionalities such as product listings, cart, and checkout.",
+      "success": true
+    },
+    {
+      "step": 16,
+      "screen": "This screen is a modal overlay providing a reselling guide and discount offer.",
+      "action": "Navigate away from the modal overlay to explore the main e-commerce functionalities.",
+      "goal": "Explore the main e-commerce functionalities such as product listings, cart, and checkout.",
+      "success": true
+    },
+    {
+      "step": 17,
+      "screen": "This screen is a modal overlay providing a reselling guide and discount offer.",
+      "action": "Navigate back to the previous screen to explore the main e-commerce functionalities.",
+      "goal": "Explore the main e-commerce functionalities such as product listings, cart, and checkout.",
+      "success": true
+    },
+    {
+      "step": 18,
+      "screen": "This screen is a modal overlay providing a reselling guide and discount offer.",
+      "action": "Navigate back to the previous screen to explore the main e-commerce functionalities",
+      "goal": "Explore the main e-commerce functionalities such as product listings, cart, and checkout.",
+      "success": true
+    },
+    {
+      "step": 19,
+      "screen": "This screen is a modal overlay providing a reselling guide and discount offer.",
+      "action": "Navigate away from the current modal overlay to explore the main e-commerce functionalities.",
+      "goal": "Explore the main e-commerce functionalities such as product listings, cart, and checkout.",
+      "success": true
+    },
+    {
+      "step": 20,
+      "screen": "This screen is a modal overlay providing a reselling guide and discount offer.",
+      "action": "Navigate away from the current modal overlay to explore the main e-commerce functionalities.",
+      "goal": "Explore the main e-commerce functionalities such as product listings, cart, and checkout.",
+      "success": true
+    },
+    {
+      "step": 21,
+      "screen": "This screen is a modal overlay providing a reselling guide and discount offer.",
+      "action": "Navigate back to the previous screen to explore the main e-commerce functionalities",
+      "goal": "Explore the main e-commerce functionalities such as product listings, cart, and checkout.",
+      "success": true
+    },
+    {
+      "step": 22,
+      "screen": "This screen is a modal overlay providing a reselling guide and discount offer.",
+      "action": "Navigate away from the current modal overlay to explore the main e-commerce functionalities.",
+      "goal": "Explore the main e-commerce functionalities such as product listings, cart, and checkout.",
+      "success": true
+    },
+    {
+      "step": 23,
+      "screen": "This screen is a modal overlay providing a reselling guide and discount offer.",
+      "action": "Navigate away from the current modal overlay to explore the main e-commerce functionalities.",
+      "goal": "Explore the main e-commerce functionalities such as product listings, cart, and checkout.",
+      "success": true
+    },
+    {
+      "step": 24,
+      "screen": "This screen is a modal overlay providing a reselling guide and discount offer.",
+      "action": "Navigate away from the current modal overlay to explore the main e-commerce functionalities.",
+      "goal": "Explore the main e-commerce functionalities such as product listings, cart, and checkout.",
+      "success": true
+    },
+    {
+      "step": 25,
+      "screen": "This screen is a modal overlay providing a reselling guide and discount offer.",
+      "action": "Navigate away from the current modal overlay to explore the main e-commerce functionalities.",
+      "goal": "Explore the main e-commerce functionalities such as product listings, cart, and checkout.",
+      "success": true
+    },
+    {
+      "step": 26,
+      "screen": "This screen is a modal overlay providing a reselling guide and discount offer.",
+      "action": "Navigate back to the previous screen to explore the main e-commerce functionalities",
+      "goal": "Explore the main e-commerce functionalities such as product listings, cart, and checkout.",
+      "success": true
+    },
+    {
+      "step": 27,
+      "screen": "This screen is a modal overlay providing a reselling guide and discount offer.",
+      "action": "Navigate back to the previous screen to explore the main e-commerce functionalities",
+      "goal": "Explore the main e-commerce functionalities such as product listings, cart, and checkout.",
+      "success": true
+    },
+    {
+      "step": 28,
+      "screen": "This screen is a modal overlay providing a reselling guide and discount offer.",
+      "action": "Navigate away from the current modal overlay to explore the main e-commerce functionalities.",
+      "goal": "Explore the main e-commerce functionalities such as product listings, cart, and checkout.",
+      "success": true
+    },
+    {
+      "step": 29,
+      "screen": "This screen is a modal overlay providing a reselling guide and discount offer.",
+      "action": "Navigate back to the previous screen to explore the main e-commerce functionalities",
+      "goal": "Explore the main e-commerce functionalities such as product listings, cart, and checkout.",
+      "success": true
+    },
+    {
+      "step": 30,
+      "screen": "This screen is a modal overlay providing a reselling guide and discount offer.",
+      "action": "Navigate back to the previous screen to explore the main e-commerce functionalities",
+      "goal": "Explore the main e-commerce functionalities such as product listings, cart, and checkout.",
+      "success": true
+    },
+    {
+      "step": 31,
+      "screen": "This screen is a modal overlay providing a reselling guide and discount offer.",
+      "action": "Navigate away from the current modal overlay to explore the main e-commerce functionalities.",
+      "goal": "Explore the main e-commerce functionalities such as product listings, cart, and checkout.",
+      "success": true
+    },
+    {
+      "step": 32,
+      "screen": "This screen is a modal overlay providing a reselling guide and discount offer.",
+      "action": "Navigate away from the current modal overlay to explore the main e-commerce functionalities.",
+      "goal": "Explore the main e-commerce functionalities such as product listings, cart, and checkout.",
+      "success": true
+    },
+    {
+      "step": 33,
+      "screen": "This screen is a modal overlay providing a reselling guide and discount offer.",
+      "action": "Forced back \u2014 stuck on modal|0|",
+      "goal": "Escape stuck state",
+      "success": true
+    },
+    {
+      "step": 34,
+      "screen": "This screen is a modal overlay providing a reselling guide and discount offer.",
+      "action": "Forced back \u2014 stuck on modal|0|",
+      "goal": "Escape stuck state",
+      "success": true
+    },
+    {
+      "step": 35,
+      "screen": "This screen is a modal overlay providing a reselling guide and discount offer.",
+      "action": "Forced back \u2014 stuck on modal|0|",
+      "goal": "Escape stuck state",
+      "success": true
+    },
+    {
+      "step": 36,
+      "screen": "This screen is a modal overlay providing a reselling guide and discount offer.",
+      "action": "Navigate away from the current modal overlay to explore the main e-commerce functionalities.",
+      "goal": "Explore the main e-commerce functionalities such as product listings, cart, and checkout.",
+      "success": true
+    },
+    {
+      "step": 37,
+      "screen": "This screen is a modal overlay providing a reselling guide and discount offer.",
+      "action": "Navigate away from the current modal overlay to explore the main e-commerce functionalities.",
+      "goal": "Explore the main e-commerce functionalities such as product listings, cart, and checkout.",
+      "success": true
+    },
+    {
+      "step": 38,
+      "screen": "This screen is a modal overlay providing a reselling guide and discount offer.",
+      "action": "Navigate back to explore the main e-commerce functionalities.",
+      "goal": "Explore the main e-commerce functionalities such as product listings, cart, and checkout.",
+      "success": true
+    },
+    {
+      "step": 39,
+      "screen": "This screen is a modal overlay providing a reselling guide and discount offer.",
+      "action": "Navigate back to explore the main e-commerce functionalities.",
+      "goal": "Explore the main e-commerce functionalities such as product listings, cart, and checkout.",
+      "success": true
+    },
+    {
+      "step": 40,
+      "screen": "This screen is a modal overlay providing a reselling guide and discount offer.",
+      "action": "Forced back \u2014 stuck on modal|1|button",
+      "goal": "Escape stuck state",
+      "success": true
+    },
+    {
+      "step": 41,
+      "screen": "This screen is a modal overlay providing a reselling guide and discount offer.",
+      "action": "Forced back \u2014 stuck on modal|1|button",
+      "goal": "Escape stuck state",
+      "success": true
+    },
+    {
+      "step": 42,
+      "screen": "This screen is a modal overlay providing a reselling guide and discount offer.",
+      "action": "Forced back \u2014 stuck on modal|1|button",
+      "goal": "Escape stuck state",
+      "success": true
+    },
+    {
+      "step": 43,
+      "screen": "This screen is a modal overlay providing a reselling guide and discount offer.",
+      "action": "Forced back \u2014 stuck on modal|1|button",
+      "goal": "Escape stuck state",
+      "success": true
+    },
+    {
+      "step": 44,
+      "screen": "This screen is a modal overlay providing a reselling guide and discount offer.",
+      "action": "Forced back \u2014 stuck on modal|1|button",
+      "goal": "Escape stuck state",
+      "success": true
+    },
+    {
+      "step": 45,
+      "screen": "This screen is a modal overlay providing a reselling guide and discount offer.",
+      "action": "Forced back \u2014 stuck on modal|1|button",
+      "goal": "Escape stuck state",
+      "success": true
+    },
+    {
+      "step": 46,
+      "screen": "This screen is a modal overlay providing a reselling guide and discount offer.",
+      "action": "Forced back \u2014 stuck on modal|1|button",
+      "goal": "Escape stuck state",
+      "success": true
+    },
+    {
+      "step": 47,
+      "screen": "This screen is a modal overlay providing a reselling guide and discount offer.",
+      "action": "Forced back \u2014 stuck on modal|1|button",
+      "goal": "Escape stuck state",
+      "success": true
+    },
+    {
+      "step": 48,
+      "screen": "This screen is a modal overlay providing a reselling guide and discount offer.",
+      "action": "Forced back \u2014 stuck on modal|1|button",
+      "goal": "Escape stuck state",
+      "success": true
+    },
+    {
+      "step": 49,
+      "screen": "This screen is a modal overlay providing a reselling guide and discount offer.",
+      "action": "Forced back \u2014 stuck on modal|1|button",
+      "goal": "Escape stuck state",
+      "success": true
+    },
+    {
+      "step": 50,
+      "screen": "This screen is a modal overlay providing a reselling guide and discount offer.",
+      "action": "Forced back \u2014 stuck on modal|1|button",
+      "goal": "Escape stuck state",
+      "success": true
+    }
+  ]
+}

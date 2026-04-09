@@ -1,0 +1,450 @@
+{
+  "app_reference": {
+    "package_name": null,
+    "app_store_url": null,
+    "bundle_path": null,
+    "web_url": "https://goindigo.in",
+    "name": "Indigo",
+    "description": null,
+    "baseline": null,
+    "differentiation": null,
+    "credentials": null
+  },
+  "application_model": {
+    "app_reference": {
+      "package_name": null,
+      "app_store_url": null,
+      "bundle_path": null,
+      "web_url": "https://goindigo.in",
+      "name": "Indigo",
+      "description": null,
+      "baseline": null,
+      "differentiation": null,
+      "credentials": null
+    },
+    "model_version": 46,
+    "domain": "travel booking",
+    "purpose": "Facilitate flight booking and related travel arrangements",
+    "baseline_category": "travel booking",
+    "differentiators": [
+      "Flight booking functionality, Hotel and sightseeing options"
+    ],
+    "entities": [
+      {
+        "name": "Flight",
+        "description": "A flight booking option",
+        "provenance": "observed"
+      },
+      {
+        "name": "Hotel",
+        "description": "A hotel booking option",
+        "provenance": "observed"
+      },
+      {
+        "name": "Sight Seeing",
+        "description": "A sightseeing booking option",
+        "provenance": "observed"
+      }
+    ],
+    "capabilities": [
+      {
+        "name": "Flight Booking",
+        "description": "The ability to book flights",
+        "estimated_importance": 0.8,
+        "estimated_frequency": 0.7,
+        "is_differentiator": true,
+        "provenance": "observed"
+      },
+      {
+        "name": "Hotel Booking",
+        "description": "The ability to book hotels",
+        "estimated_importance": 0.6,
+        "estimated_frequency": 0.5,
+        "is_differentiator": false,
+        "provenance": "observed"
+      },
+      {
+        "name": "Sight Seeing Booking",
+        "description": "The ability to book sightseeing options",
+        "estimated_importance": 0.6,
+        "estimated_frequency": 0.5,
+        "is_differentiator": false,
+        "provenance": "observed"
+      }
+    ],
+    "screens": [
+      {
+        "screen_id": "[flight_booking_page]",
+        "name": "Flight Booking Page",
+        "screen_type": "unknown",
+        "purpose": "Flight Booking",
+        "participates_in": [
+          "Flight Booking"
+        ],
+        "visit_count": 45,
+        "last_observation_id": "obs_37c5e60f"
+      },
+      {
+        "screen_id": "[hotels_booking_page]",
+        "name": "Hotels Booking Page",
+        "screen_type": "unknown",
+        "purpose": "Hotel Booking",
+        "participates_in": [
+          "Hotel Booking"
+        ],
+        "visit_count": 45,
+        "last_observation_id": "obs_37c5e60f"
+      },
+      {
+        "screen_id": "[sightseeing_booking_page]",
+        "name": "Sightseeing Booking Page",
+        "screen_type": "unknown",
+        "purpose": "Sight Seeing Booking",
+        "participates_in": [
+          "Sight Seeing Booking"
+        ],
+        "visit_count": 45,
+        "last_observation_id": "obs_37c5e60f"
+      },
+      {
+        "screen_id": "[hotels_booking_page]",
+        "name": "Hotels Booking Page",
+        "screen_type": "unknown",
+        "purpose": "Hotel Booking",
+        "participates_in": [
+          "Hotel Booking"
+        ],
+        "visit_count": 45,
+        "last_observation_id": "obs_37c5e60f"
+      },
+      {
+        "screen_id": "[hotels_booking_page]",
+        "name": "Hotels Booking Page",
+        "screen_type": "unknown",
+        "purpose": "Hotel Booking",
+        "participates_in": [
+          "Hotel Booking"
+        ],
+        "visit_count": 45,
+        "last_observation_id": "obs_37c5e60f"
+      },
+      {
+        "screen_id": "[hotels_booking_page]",
+        "name": "Hotels Booking Page",
+        "screen_type": "unknown",
+        "purpose": "Hotel Booking",
+        "participates_in": [
+          "Hotel Booking"
+        ],
+        "visit_count": 45,
+        "last_observation_id": "obs_37c5e60f"
+      },
+      {
+        "screen_id": "[sightseeing_booking_page]",
+        "name": "Sightseeing Booking Page",
+        "screen_type": "unknown",
+        "purpose": "Sight Seeing Booking",
+        "participates_in": [
+          "Sight Seeing Booking"
+        ],
+        "visit_count": 45,
+        "last_observation_id": "obs_37c5e60f"
+      }
+    ],
+    "transitions": [
+      {
+        "from_screen": "[home_screen]",
+        "to_screen": "[flight_booking_page]",
+        "action": "click on 'Flights' tab",
+        "observed_count": 45
+      }
+    ],
+    "frontier": [
+      {
+        "description": "Explore the functionality of the 'Hotels' and 'Sight Seeing' tabs",
+        "rationale": "These tabs are present in the navigation menu and need to be confirmed as functional",
+        "provenance": "inferred_structure",
+        "priority": 0.7,
+        "search_strategy": "Look for interactive elements and transitions related to 'Hotels' and 'Sight Seeing'"
+      }
+    ],
+    "anomalies": [
+      {
+        "description": "The presence of 'Hotels' and 'Sight Seeing' tabs in the navigation menu, which are not yet confirmed as functional",
+        "observation_id": "obs_666c6d0e",
+        "classification": "novel",
+        "exploration_priority_boost": 0.3
+      }
+    ],
+    "coverage_estimate": 0.3,
+    "confidence": 0.5
+  },
+  "flows": [
+    {
+      "flow_id": "flow_003",
+      "goal": "Book a flight",
+      "preconditions": [
+        "User is on the home/landing screen"
+      ],
+      "postconditions": [
+        "User has navigated to the Flight Booking Page and selected a flight"
+      ],
+      "semantic_steps": [
+        {
+          "step_number": 1,
+          "intent": "Navigate to the 'Flights' tab",
+          "screen_context": "Home screen with story list",
+          "expected_outcome": "The 'Flights' tab is visible and clickable"
+        },
+        {
+          "step_number": 2,
+          "intent": "Click on the 'Flights' tab",
+          "screen_context": "Home screen with story list",
+          "expected_outcome": "Navigation to the Flight Booking Page"
+        },
+        {
+          "step_number": 3,
+          "intent": "Select a flight",
+          "screen_context": "Flight Booking Page",
+          "expected_outcome": "Flight details are displayed and booking options are available"
+        }
+      ],
+      "category": "core",
+      "importance": 0.8,
+      "estimated_frequency": 0.7,
+      "concrete_steps": [
+        {
+          "step_number": 1,
+          "screen_id": "screen_home",
+          "observation_id": "obs_mno345",
+          "action_type": "click",
+          "action_detail": {
+            "target_text": "Flights"
+          },
+          "result_screen_id": "screen_flight_booking",
+          "result_observation_id": "obs_pqr678",
+          "duration_ms": 0
+        }
+      ],
+      "validation_status": "validated",
+      "validation_notes": null,
+      "related_capabilities": [
+        "Flight Booking"
+      ],
+      "sub_flows": null,
+      "parent_flow": null
+    },
+    {
+      "flow_id": "flow_001",
+      "goal": "Explore hotel booking options",
+      "preconditions": [
+        "User is on the home/landing screen"
+      ],
+      "postconditions": [
+        "User has navigated to the Hotels Booking Page"
+      ],
+      "semantic_steps": [
+        {
+          "step_number": 1,
+          "intent": "Navigate to the 'Hotels' tab",
+          "screen_context": "Home screen with story list",
+          "expected_outcome": "The 'Hotels' tab is visible and clickable"
+        },
+        {
+          "step_number": 2,
+          "intent": "Click on the 'Hotels' tab",
+          "screen_context": "Home screen with story list",
+          "expected_outcome": "Navigation to the Hotels Booking Page"
+        }
+      ],
+      "category": "secondary",
+      "importance": 0.6,
+      "estimated_frequency": 0.5,
+      "concrete_steps": [
+        {
+          "step_number": 1,
+          "screen_id": "screen_home",
+          "observation_id": "obs_abc123",
+          "action_type": "click",
+          "action_detail": {
+            "target_text": "Hotels"
+          },
+          "result_screen_id": "screen_hotels_booking",
+          "result_observation_id": "obs_def456",
+          "duration_ms": 0
+        }
+      ],
+      "validation_status": "validated",
+      "validation_notes": null,
+      "related_capabilities": [
+        "Hotel Booking"
+      ],
+      "sub_flows": null,
+      "parent_flow": null
+    },
+    {
+      "flow_id": "flow_002",
+      "goal": "Explore sightseeing booking options",
+      "preconditions": [
+        "User is on the home/landing screen"
+      ],
+      "postconditions": [
+        "User has navigated to the Sightseeing Booking Page"
+      ],
+      "semantic_steps": [
+        {
+          "step_number": 1,
+          "intent": "Navigate to the 'Sight Seeing' tab",
+          "screen_context": "Home screen with story list",
+          "expected_outcome": "The 'Sight Seeing' tab is visible and clickable"
+        },
+        {
+          "step_number": 2,
+          "intent": "Click on the 'Sight Seeing' tab",
+          "screen_context": "Home screen with story list",
+          "expected_outcome": "Navigation to the Sightseeing Booking Page"
+        }
+      ],
+      "category": "secondary",
+      "importance": 0.6,
+      "estimated_frequency": 0.5,
+      "concrete_steps": [
+        {
+          "step_number": 1,
+          "screen_id": "screen_home",
+          "observation_id": "obs_ghi789",
+          "action_type": "click",
+          "action_detail": {
+            "target_text": "Sight Seeing"
+          },
+          "result_screen_id": "screen_sightseeing_booking",
+          "result_observation_id": "obs_jkl012",
+          "duration_ms": 0
+        }
+      ],
+      "validation_status": "validated",
+      "validation_notes": null,
+      "related_capabilities": [
+        "Sight Seeing Booking"
+      ],
+      "sub_flows": null,
+      "parent_flow": null
+    },
+    {
+      "flow_id": "flow_004",
+      "goal": "Book a hotel",
+      "preconditions": [
+        "User is on the home/landing screen"
+      ],
+      "postconditions": [
+        "User has navigated to the Hotels Booking Page and selected a hotel"
+      ],
+      "semantic_steps": [
+        {
+          "step_number": 1,
+          "intent": "Navigate to the 'Hotels' tab",
+          "screen_context": "Home screen with story list",
+          "expected_outcome": "The 'Hotels' tab is visible and clickable"
+        },
+        {
+          "step_number": 2,
+          "intent": "Click on the 'Hotels' tab",
+          "screen_context": "Home screen with story list",
+          "expected_outcome": "Navigation to the Hotels Booking Page"
+        },
+        {
+          "step_number": 3,
+          "intent": "Select a hotel",
+          "screen_context": "Hotels Booking Page",
+          "expected_outcome": "Hotel details are displayed and booking options are available"
+        }
+      ],
+      "category": "secondary",
+      "importance": 0.6,
+      "estimated_frequency": 0.5,
+      "concrete_steps": [
+        {
+          "step_number": 1,
+          "screen_id": "screen_home",
+          "observation_id": "obs_abc123",
+          "action_type": "click",
+          "action_detail": {
+            "target_text": "Hotels"
+          },
+          "result_screen_id": "screen_hotels_booking",
+          "result_observation_id": "obs_def456",
+          "duration_ms": 0
+        }
+      ],
+      "validation_status": "validated",
+      "validation_notes": null,
+      "related_capabilities": [
+        "Hotel Booking"
+      ],
+      "sub_flows": null,
+      "parent_flow": null
+    },
+    {
+      "flow_id": "flow_005",
+      "goal": "Book a sightseeing activity",
+      "preconditions": [
+        "User is on the home/landing screen"
+      ],
+      "postconditions": [
+        "User has navigated to the Sightseeing Booking Page and selected a sightseeing activity"
+      ],
+      "semantic_steps": [
+        {
+          "step_number": 1,
+          "intent": "Navigate to the 'Sight Seeing' tab",
+          "screen_context": "Home screen with story list",
+          "expected_outcome": "The 'Sight Seeing' tab is visible and clickable"
+        },
+        {
+          "step_number": 2,
+          "intent": "Click on the 'Sight Seeing' tab",
+          "screen_context": "Home screen with story list",
+          "expected_outcome": "Navigation to the Sightseeing Booking Page"
+        },
+        {
+          "step_number": 3,
+          "intent": "Select a sightseeing activity",
+          "screen_context": "Sightseeing Booking Page",
+          "expected_outcome": "Sightseeing activity details are displayed and booking options are available"
+        }
+      ],
+      "category": "secondary",
+      "importance": 0.6,
+      "estimated_frequency": 0.5,
+      "concrete_steps": [
+        {
+          "step_number": 1,
+          "screen_id": "screen_home",
+          "observation_id": "obs_ghi789",
+          "action_type": "click",
+          "action_detail": {
+            "target_text": "Sight Seeing"
+          },
+          "result_screen_id": "screen_sightseeing_booking",
+          "result_observation_id": "obs_jkl012",
+          "duration_ms": 0
+        }
+      ],
+      "validation_status": "validated",
+      "validation_notes": null,
+      "related_capabilities": [
+        "Sight Seeing Booking"
+      ],
+      "sub_flows": null,
+      "parent_flow": null
+    }
+  ],
+  "generation_metadata": {
+    "timestamp": "2026-04-07T06:42:47.926923",
+    "duration_seconds": 43.8,
+    "ai_calls_made": 1,
+    "screens_explored": 7,
+    "exploration_mode": "agent_loop",
+    "device_info": null
+  }
+}

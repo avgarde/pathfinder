@@ -1,0 +1,411 @@
+{
+  "run_id": "20260407-051654-3b73",
+  "run_dir": "exploration/20260407-051654-3b73",
+  "app": "Indigo",
+  "total_actions": 50,
+  "duration_seconds": 1922.8,
+  "stop_reason": "Budget exhausted",
+  "model_version": 50,
+  "screens_discovered": 6,
+  "transitions_discovered": 1,
+  "capabilities": 3,
+  "coverage_estimate": 0.3,
+  "confidence": 0.5,
+  "inputs_required": [
+    {
+      "field": "airport_code",
+      "category": "content",
+      "screen_type": "list",
+      "element_label": "Airport Code",
+      "required": true,
+      "suggested_strategy": "skip",
+      "notes": "This input is needed to proceed with hotel booking."
+    }
+  ],
+  "flows": [
+    {
+      "flow_id": "flow_003",
+      "goal": "Explore flight booking options",
+      "category": "core",
+      "importance": 0.8,
+      "status": "validated",
+      "steps": 2
+    },
+    {
+      "flow_id": "flow_001",
+      "goal": "Explore hotel booking options",
+      "category": "secondary",
+      "importance": 0.7,
+      "status": "validated",
+      "steps": 2
+    },
+    {
+      "flow_id": "flow_002",
+      "goal": "Explore sightseeing options",
+      "category": "secondary",
+      "importance": 0.7,
+      "status": "validated",
+      "steps": 2
+    },
+    {
+      "flow_id": "flow_004",
+      "goal": "Explore hotel and sightseeing options",
+      "category": "secondary",
+      "importance": 0.7,
+      "status": "validated",
+      "steps": 3
+    }
+  ],
+  "steps": [
+    {
+      "step": 1,
+      "screen": "A flight booking page for planning journeys with IndiGo.",
+      "action": "Enter 'DEL' as the departure location in the 'From' field",
+      "goal": "To explore the flight booking functionality by entering a departure location and proceeding with the booking process.",
+      "success": true
+    },
+    {
+      "step": 2,
+      "screen": "Promotes various deals and offers for IndiGo services.",
+      "action": "Swipe left to explore the next section of the home screen.",
+      "goal": "Explore the 'Hotels' and 'Sight Seeing' sections",
+      "success": true
+    },
+    {
+      "step": 3,
+      "screen": "Promotes various deals and offers for IndiGo services.",
+      "action": "Navigate to the Flight Booking Page to continue with the flight booking process",
+      "goal": "Explore the 'Flight Booking Page' to continue with the flight booking process.",
+      "success": true
+    },
+    {
+      "step": 4,
+      "screen": "Promotes various deals and offers for IndiGo services.",
+      "action": "Swipe left to explore the next section of the home screen",
+      "goal": "Explore the 'Hotels' and 'Sight Seeing' sections",
+      "success": true
+    },
+    {
+      "step": 5,
+      "screen": "Promotes various deals and offers for IndiGo services.",
+      "action": "Swipe left to explore the next section of the home screen",
+      "goal": "Explore the 'Hotels' and 'Sight Seeing' sections",
+      "success": true
+    },
+    {
+      "step": 6,
+      "screen": "Promotes various deals and offers for IndiGo services.",
+      "action": "Swipe left to explore the next section of the home screen",
+      "goal": "Explore the 'Hotels' and 'Sight Seeing' sections",
+      "success": true
+    },
+    {
+      "step": 7,
+      "screen": "Promotes various deals and offers for IndiGo services.",
+      "action": "Navigate back to the previous screen to continue exploring the app.",
+      "goal": "Explore the 'Hotels' and 'Sight Seeing' sections.",
+      "success": true
+    },
+    {
+      "step": 8,
+      "screen": "This screen is for exploring hotel and sightseeing options within the travel booking app.",
+      "action": "Tap on the 'Hotels' button to navigate to the hotel booking page",
+      "goal": "Explore the 'Hotels' section",
+      "success": false
+    },
+    {
+      "step": 9,
+      "screen": "This screen is for exploring hotel and sightseeing options within the travel booking app.",
+      "action": "Swipe left to explore the next section of the hotel and sightseeing options screen.",
+      "goal": "Explore the 'Hotels' and 'Sight Seeing' sections",
+      "success": true
+    },
+    {
+      "step": 10,
+      "screen": "This screen is for exploring hotel and sightseeing options within the travel booking app.",
+      "action": "Swipe left to explore the next section of the hotel and sightseeing options screen.",
+      "goal": "Explore the 'Hotels' and 'Sight Seeing' sections",
+      "success": true
+    },
+    {
+      "step": 11,
+      "screen": "This screen is for exploring hotel and sightseeing options within the travel booking app.",
+      "action": "Swipe left to explore the next section of the hotel and sightseeing options screen.",
+      "goal": "Explore the 'Hotels' section",
+      "success": true
+    },
+    {
+      "step": 12,
+      "screen": "This screen is for exploring hotel and sightseeing options within the travel booking app.",
+      "action": "Navigate to the hotel booking page",
+      "goal": "Explore the hotel booking section to continue with the flight booking process",
+      "success": true
+    },
+    {
+      "step": 13,
+      "screen": "This screen is for exploring hotel and sightseeing options within the travel booking app.",
+      "action": "Navigate to the hotel booking page",
+      "goal": "Explore the hotel booking page",
+      "success": true
+    },
+    {
+      "step": 14,
+      "screen": "This screen is for exploring hotel and sightseeing options within the travel booking app.",
+      "action": "Navigate to the hotel booking page",
+      "goal": "Explore the hotel booking section",
+      "success": true
+    },
+    {
+      "step": 15,
+      "screen": "This screen is for exploring hotel and sightseeing options within the travel booking app.",
+      "action": "Navigate to the home screen to explore other parts of the app.",
+      "goal": "Explore the 'Hotels' and 'Sight Seeing' sections",
+      "success": false
+    },
+    {
+      "step": 16,
+      "screen": "This screen is for exploring hotel and sightseeing options within the travel booking app.",
+      "action": "Navigate to the hotel booking page to explore hotel booking options.",
+      "goal": "Explore the hotel booking page to gather more information about the app's functionality.",
+      "success": false
+    },
+    {
+      "step": 17,
+      "screen": "This screen is for exploring hotel and sightseeing options within the travel booking app.",
+      "action": "Tap on the 'Hotels' button to navigate to the hotel booking page",
+      "goal": "Explore hotel booking options",
+      "success": false
+    },
+    {
+      "step": 18,
+      "screen": "This screen is for exploring hotel and sightseeing options within the travel booking app.",
+      "action": "Click on the 'Hotels' button to navigate to the hotel booking page",
+      "goal": "Explore the 'Hotels' section",
+      "success": true
+    },
+    {
+      "step": 19,
+      "screen": "This screen is for exploring hotel and sightseeing options within the travel booking app.",
+      "action": "Navigate to the hotel booking page to explore hotel booking options.",
+      "goal": "Explore the hotel booking page to gather more information about the hotel booking process.",
+      "success": false
+    },
+    {
+      "step": 20,
+      "screen": "This screen is for exploring hotel and sightseeing options within the travel booking app.",
+      "action": "Navigate to the hotel booking page to explore hotel booking options.",
+      "goal": "Explore the hotel booking page to gather more information about the hotel booking process.",
+      "success": false
+    },
+    {
+      "step": 21,
+      "screen": "This screen is for exploring hotel and sightseeing options within the travel booking app.",
+      "action": "Tap on the 'Hotels' button to navigate to the hotel booking page",
+      "goal": "Explore the 'Hotels' section to gather more information about hotel booking options.",
+      "success": false
+    },
+    {
+      "step": 22,
+      "screen": "This screen is for exploring hotel and sightseeing options within the travel booking app.",
+      "action": "Tap on the 'Hotels' button to navigate to the hotel booking page",
+      "goal": "Explore hotel booking options",
+      "success": false
+    },
+    {
+      "step": 23,
+      "screen": "This screen is for exploring hotel and sightseeing options within the travel booking app.",
+      "action": "Forced back \u2014 stuck on list|2|button,button",
+      "goal": "Escape stuck state",
+      "success": true
+    },
+    {
+      "step": 24,
+      "screen": "This screen is for exploring hotel and sightseeing options within the travel booking app.",
+      "action": "Forced back \u2014 stuck on list|2|button,button",
+      "goal": "Escape stuck state",
+      "success": true
+    },
+    {
+      "step": 25,
+      "screen": "This screen is for exploring hotel and sightseeing options within the travel booking app.",
+      "action": "Forced back \u2014 stuck on list|2|button,button",
+      "goal": "Escape stuck state",
+      "success": true
+    },
+    {
+      "step": 26,
+      "screen": "This screen is for exploring hotel and sightseeing options within the travel booking app.",
+      "action": "Forced back \u2014 stuck on list|2|button,button",
+      "goal": "Escape stuck state",
+      "success": true
+    },
+    {
+      "step": 27,
+      "screen": "This screen is for exploring hotel and sightseeing options within the travel booking app.",
+      "action": "Forced back \u2014 stuck on list|2|button,button",
+      "goal": "Escape stuck state",
+      "success": true
+    },
+    {
+      "step": 28,
+      "screen": "This screen is for exploring hotel and sightseeing options within the travel booking app.",
+      "action": "Forced back \u2014 stuck on list|2|button,button",
+      "goal": "Escape stuck state",
+      "success": true
+    },
+    {
+      "step": 29,
+      "screen": "This screen is for exploring hotel and sightseeing options within the travel booking app.",
+      "action": "Forced back \u2014 stuck on list|2|button,button",
+      "goal": "Escape stuck state",
+      "success": true
+    },
+    {
+      "step": 30,
+      "screen": "This screen is for exploring hotel and sightseeing options within the travel booking app.",
+      "action": "Forced back \u2014 stuck on list|2|button,button",
+      "goal": "Escape stuck state",
+      "success": true
+    },
+    {
+      "step": 31,
+      "screen": "This screen is for exploring hotel and sightseeing options within the travel booking app.",
+      "action": "Forced back \u2014 stuck on list|2|button,button",
+      "goal": "Escape stuck state",
+      "success": true
+    },
+    {
+      "step": 32,
+      "screen": "This screen is for exploring hotel and sightseeing options within the travel booking app.",
+      "action": "Forced back \u2014 stuck on list|2|button,button",
+      "goal": "Escape stuck state",
+      "success": true
+    },
+    {
+      "step": 33,
+      "screen": "This screen is for exploring hotel and sightseeing options within the travel booking app.",
+      "action": "Forced back \u2014 stuck on list|2|button,button",
+      "goal": "Escape stuck state",
+      "success": true
+    },
+    {
+      "step": 34,
+      "screen": "This screen is for exploring hotel and sightseeing options within the travel booking app.",
+      "action": "Forced back \u2014 stuck on list|2|button,button",
+      "goal": "Escape stuck state",
+      "success": true
+    },
+    {
+      "step": 35,
+      "screen": "This screen is for exploring hotel and sightseeing options within the travel booking app.",
+      "action": "Forced back \u2014 stuck on list|2|button,button",
+      "goal": "Escape stuck state",
+      "success": true
+    },
+    {
+      "step": 36,
+      "screen": "This screen is for exploring hotel and sightseeing options within the travel booking app.",
+      "action": "Forced back \u2014 stuck on list|2|button,button",
+      "goal": "Escape stuck state",
+      "success": true
+    },
+    {
+      "step": 37,
+      "screen": "This screen is for exploring hotel and sightseeing options within the travel booking app.",
+      "action": "Forced back \u2014 stuck on list|2|button,button",
+      "goal": "Escape stuck state",
+      "success": true
+    },
+    {
+      "step": 38,
+      "screen": "This screen is for exploring hotel and sightseeing options within the travel booking app.",
+      "action": "Forced back \u2014 stuck on list|2|button,button",
+      "goal": "Escape stuck state",
+      "success": true
+    },
+    {
+      "step": 39,
+      "screen": "This screen is for exploring hotel and sightseeing options within the travel booking app.",
+      "action": "Forced back \u2014 stuck on list|2|button,button",
+      "goal": "Escape stuck state",
+      "success": true
+    },
+    {
+      "step": 40,
+      "screen": "This screen is for exploring hotel and sightseeing options within the travel booking app.",
+      "action": "Forced back \u2014 stuck on list|2|button,button",
+      "goal": "Escape stuck state",
+      "success": true
+    },
+    {
+      "step": 41,
+      "screen": "This screen is for exploring hotel and sightseeing options within the travel booking app.",
+      "action": "Forced back \u2014 stuck on list|2|button,button",
+      "goal": "Escape stuck state",
+      "success": true
+    },
+    {
+      "step": 42,
+      "screen": "This screen is for exploring hotel and sightseeing options within the travel booking app.",
+      "action": "Forced back \u2014 stuck on list|2|button,button",
+      "goal": "Escape stuck state",
+      "success": true
+    },
+    {
+      "step": 43,
+      "screen": "This screen is for exploring hotel and sightseeing options within the travel booking app.",
+      "action": "Forced back \u2014 stuck on list|2|button,button",
+      "goal": "Escape stuck state",
+      "success": true
+    },
+    {
+      "step": 44,
+      "screen": "This screen is for exploring hotel and sightseeing options within the travel booking app.",
+      "action": "Forced back \u2014 stuck on list|2|button,button",
+      "goal": "Escape stuck state",
+      "success": true
+    },
+    {
+      "step": 45,
+      "screen": "This screen is for exploring hotel and sightseeing options within the travel booking app.",
+      "action": "Forced back \u2014 stuck on list|2|button,button",
+      "goal": "Escape stuck state",
+      "success": true
+    },
+    {
+      "step": 46,
+      "screen": "This screen is for exploring hotel and sightseeing options within the travel booking app.",
+      "action": "Forced back \u2014 stuck on list|2|button,button",
+      "goal": "Escape stuck state",
+      "success": true
+    },
+    {
+      "step": 47,
+      "screen": "This screen is for exploring hotel and sightseeing options within the travel booking app.",
+      "action": "Forced back \u2014 stuck on list|2|button,button",
+      "goal": "Escape stuck state",
+      "success": true
+    },
+    {
+      "step": 48,
+      "screen": "This screen is for exploring hotel and sightseeing options within the travel booking app.",
+      "action": "Forced back \u2014 stuck on list|2|button,button",
+      "goal": "Escape stuck state",
+      "success": true
+    },
+    {
+      "step": 49,
+      "screen": "This screen is for exploring hotel and sightseeing options within the travel booking app.",
+      "action": "Forced back \u2014 stuck on list|2|button,button",
+      "goal": "Escape stuck state",
+      "success": true
+    },
+    {
+      "step": 50,
+      "screen": "This screen is for exploring hotel and sightseeing options within the travel booking app.",
+      "action": "Forced back \u2014 stuck on list|2|button,button",
+      "goal": "Escape stuck state",
+      "success": true
+    }
+  ]
+}

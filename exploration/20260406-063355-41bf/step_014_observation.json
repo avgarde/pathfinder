@@ -1,0 +1,362 @@
+{
+  "observation_id": "obs_1420ec1e",
+  "timestamp": "2026-04-06T06:47:09.251414",
+  "screenshot_path": "exploration/20260406-063355-41bf/step_014.png",
+  "ui_structure_path": "<body class=\"ycdc2 companies show\" bounds=\"[0,0][1280,2289]\">\n  <div id=\"ycdc_new/pages/Companies/ShowPage-react-component-6a72f609-6a75-4a40-9bdd-c8c54ab9dd37\" bounds=\"[0,0][1280,2289]\">\n    <div class=\"no-scroll-behind sticky top-0\" bounds=\"[0,0][1280,64]\">\n      <div bounds=\"[0,0][1280,64]\">\n        <header class=\"w-full bg-beige-light leading-tight\" bounds=\"[0,0][1280,64]\">\n          <nav class=\"relative hidden items-center\" bounds=\"[0,0][1280,64]\">\n            <div class=\"flex w-full max-w-[1400px]\" bounds=\"[20,12][1260,52]\">\n              <div class=\"flex shrink-0 items-center\" bounds=\"[620,12][660,52]\">\n                <a class=\"inline-block h-[40px] w-[40px]\" href=\"/\" bounds=\"[620,12][660,52]\" interactive=\"true\" />\n              </div>\n            </div>\n            <div class=\"absolute right-5 flex\" bounds=\"[1128,12][1260,52]\">\n              <a class=\"font-['Outfit',sans-serif] text-sm tracking-[0.3px]\" href=\"https://account.ycombinator.com/?continue=https://www.ycombinator.com/companies/mbodi-ai\" bounds=\"[1128,22][1167,42]\" interactive=\"true\">Log in</a>\n              <a class=\"flex h-10 items-center\" href=\"/apply\" bounds=\"[1183,12][1260,52]\" interactive=\"true\">Apply</a>\n            </div>\n          </nav>\n        </header>\n      </div>\n    </div>\n    <div class=\"relative isolate z-0\" bounds=\"[0,64][1280,1796]\">\n      <div class=\"mx-auto max-w-ycdc-page px-4\" bounds=\"[90,64][1190,1796]\">\n        <div class=\"shared-breadcrumb flex items-center\" bounds=\"[106,64][1174,100]\">\n          <a class=\"shared-breadcrumb-text\" href=\"/home\" bounds=\"[106,64][141,84]\" interactive=\"true\">Home</a>\n          <span class=\"shared-breadcrumb-pipe\" bounds=\"[147,64][150,84]\">›</span>\n          <a class=\"shared-breadcrumb-text\" href=\"/companies\" bounds=\"[156,64][221,84]\" interactive=\"true\">Companies</a>\n          <span class=\"shared-breadcrumb-pipe\" bounds=\"[227,64][231,84]\">›</span>\n          <span class=\"shared-breadcrumb-text\" bounds=\"[237,64][288,84]\">Mbodi AI</span>\n        </div>\n        <div class=\"flex flex-col gap-8\" bounds=\"[106,110][1174,1772]\">\n          <div class=\"flex flex-col gap-y-2\" bounds=\"[106,110][842,1772]\">\n            <div class=\"flex flex-row items-start\" bounds=\"[106,110][842,195]\">\n              <div class=\"mt-2 h-12 w-12\" bounds=\"[106,120][170,184]\">\n                <img class=\"h-full w-full rounded-xl\" bounds=\"[106,120][170,184]\" />\n              </div>\n            </div>\n            <div class=\"relative isolate z-0\" bounds=\"[106,445][842,838]\">\n              <div class=\"mx-auto max-w-ycdc-page px-4\" bounds=\"[106,445][842,838]\">\n                <div class=\"my-4 text-2xl font-bold\" bounds=\"[122,445][826,477]\">Active Founders</div>\n              </div>\n            </div>\n            <div class=\"relative isolate z-0\">\n              <div class=\"mx-auto max-w-ycdc-page px-4\">\n                <div class=\"my-4 text-2xl font-bold\">Latest News</div>\n              </div>\n            </div>\n            <div class=\"relative isolate z-0\">\n              <div class=\"mx-auto max-w-ycdc-page px-4\">\n                <div class=\"my-4 text-2xl font-bold\">Company Launches</div>\n              </div>\n            </div>\n          </div>\n          <div bounds=\"[874,110][1174,1772]\">\n            <div class=\"ycdc-card-new space-y-1.5 w-full\" bounds=\"[874,110][1174,517]\">\n              <div class=\"mb-4 flex justify-center\" bounds=\"[899,135][1149,190]\">\n                <a class=\"block\" href=\"/companies/mbodi-ai\" bounds=\"[954,135][1094,190]\" interactive=\"true\" />\n              </div>\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n    <footer class=\"bg-black text-beige-light\">\n      <h2 id=\"footer-heading\" class=\"sr-only\">Footer</h2>\n      <div class=\"mx-auto max-w-ycdc-page px-6\">\n        <div class=\"flex flex-col space-y-8\">\n          <div class=\"flex flex-col items-start\">\n            <div class=\"flex flex-row items-center\">\n              <a class=\"block h-[40px] w-[40px]\" href=\"/\" interactive=\"true\">\n                <span class=\"sr-only\" interactive=\"true\">Y Combinator</span>\n                <img class=\"h-full w-full\" interactive=\"true\" />\n              </a>\n              <h3 class=\"font-['Outfit',sans-serif] font-light text-base\">Make something people want.</h3>\n            </div>\n          </div>\n          <div class=\"grid grid-cols-2 items-start\">\n            <div>\n              <h3 class=\"font-medium tracking-wider text-sm\">Programs</h3>\n            </div>\n            <div>\n              <h3 class=\"font-medium tracking-wider text-sm\">Resources</h3>\n            </div>\n            <div>\n              <h3 class=\"font-medium tracking-wider text-sm\">Company</h3>\n            </div>\n          </div>\n        </div>\n        <div class=\"mt-8 border-t border-gray-200\">\n          <div class=\"flex space-x-6 md:order-2\">\n            <a class=\"text-[#f5f5ee]\" href=\"https://twitter.com/ycombinator\" interactive=\"true\">\n              <span class=\"sr-only\" interactive=\"true\">Twitter</span>\n            </a>\n            <a class=\"text-[#f5f5ee]\" href=\"https://www.facebook.com/YCombinator/\" interactive=\"true\">\n              <span class=\"sr-only\" interactive=\"true\">Facebook</span>\n            </a>\n            <a class=\"text-[#f5f5ee]\" href=\"https://www.instagram.com/ycombinator\" interactive=\"true\">\n              <span class=\"sr-only\" interactive=\"true\">Instagram</span>\n            </a>\n            <a class=\"text-[#f5f5ee]\" href=\"https://www.linkedin.com/school/y-combinator/\" interactive=\"true\">\n              <span class=\"sr-only\" interactive=\"true\">LinkedIn</span>\n            </a>\n            <a class=\"text-[#f5f5ee]\" href=\"https://www.youtube.com/c/ycombinator\" interactive=\"true\">\n              <span class=\"sr-only\" interactive=\"true\">Youtube</span>\n            </a>\n          </div>\n          <p class=\"mt-8 font-['Outfit',sans-serif] font-light\">© 2026 Y Combinator</p>\n        </div>\n      </div>\n    </footer>\n  </div>\n</body>\n",
+  "screen_purpose": "This is a company profile page for Mbodi AI showing company details, founder information, and company statistics",
+  "screen_type": "detail",
+  "app_state": {
+    "logged_in": "no",
+    "current_company": "Mbodi AI",
+    "navigation_depth": 3,
+    "viewing_company_profile": "yes"
+  },
+  "elements": [
+    {
+      "element_id": "elem_01",
+      "reference": {
+        "resource_id": null,
+        "text": "Y",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "top navigation bar center"
+      },
+      "element_type": "link",
+      "semantic_role": "Navigates to Y Combinator homepage",
+      "label": "Y",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "tap"
+      ],
+      "inferred_destination": "Y Combinator homepage",
+      "confidence": 0.95
+    },
+    {
+      "element_id": "elem_02",
+      "reference": {
+        "resource_id": null,
+        "text": "Log in",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "top navigation bar right"
+      },
+      "element_type": "link",
+      "semantic_role": "Initiates login process",
+      "label": "Log in",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "tap"
+      ],
+      "inferred_destination": "Login page",
+      "confidence": 0.95
+    },
+    {
+      "element_id": "elem_03",
+      "reference": {
+        "resource_id": null,
+        "text": "Apply",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "top navigation bar right"
+      },
+      "element_type": "button",
+      "semantic_role": "Navigates to application form",
+      "label": "Apply",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "tap"
+      ],
+      "inferred_destination": "Application form",
+      "confidence": 0.95
+    },
+    {
+      "element_id": "elem_04",
+      "reference": {
+        "resource_id": null,
+        "text": "Home",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "breadcrumb navigation top-left"
+      },
+      "element_type": "link",
+      "semantic_role": "Navigates back to home page",
+      "label": "Home",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "tap"
+      ],
+      "inferred_destination": "Home page",
+      "confidence": 0.95
+    },
+    {
+      "element_id": "elem_05",
+      "reference": {
+        "resource_id": null,
+        "text": "Companies",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "breadcrumb navigation top-left"
+      },
+      "element_type": "link",
+      "semantic_role": "Navigates back to companies list",
+      "label": "Companies",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "tap"
+      ],
+      "inferred_destination": "Companies list page",
+      "confidence": 0.95
+    },
+    {
+      "element_id": "elem_06",
+      "reference": {
+        "resource_id": null,
+        "text": "Company",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "main content area left"
+      },
+      "element_type": "tab",
+      "semantic_role": "Shows company overview information",
+      "label": "Company",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": true,
+      "possible_actions": [
+        "tap"
+      ],
+      "inferred_destination": "Company overview tab",
+      "confidence": 0.95
+    },
+    {
+      "element_id": "elem_07",
+      "reference": {
+        "resource_id": null,
+        "text": "Jobs 1",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "main content area left"
+      },
+      "element_type": "tab",
+      "semantic_role": "Shows available job positions",
+      "label": "Jobs 1",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "tap"
+      ],
+      "inferred_destination": "Jobs tab showing 1 position",
+      "confidence": 0.95
+    },
+    {
+      "element_id": "elem_08",
+      "reference": {
+        "resource_id": null,
+        "text": "News",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "main content area left"
+      },
+      "element_type": "tab",
+      "semantic_role": "Shows company news and updates",
+      "label": "News",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "tap"
+      ],
+      "inferred_destination": "News tab",
+      "confidence": 0.95
+    },
+    {
+      "element_id": "elem_09",
+      "reference": {
+        "resource_id": null,
+        "text": "https://www.mbodi.ai/",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "main content area right of tabs"
+      },
+      "element_type": "link",
+      "semantic_role": "Opens company website in external browser",
+      "label": "https://www.mbodi.ai/",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "tap"
+      ],
+      "inferred_destination": "Mbodi AI website",
+      "confidence": 0.95
+    },
+    {
+      "element_id": "elem_10",
+      "reference": {
+        "resource_id": null,
+        "text": "Xavier (Tianhao) Chi Twitter",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "founder profile section"
+      },
+      "element_type": "link",
+      "semantic_role": "Opens founder's Twitter profile",
+      "label": "Xavier (Tianhao) Chi Twitter",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "tap"
+      ],
+      "inferred_destination": "Xavier Chi's Twitter profile",
+      "confidence": 0.9
+    },
+    {
+      "element_id": "elem_11",
+      "reference": {
+        "resource_id": null,
+        "text": "Xavier (Tianhao) Chi LinkedIn",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "founder profile section"
+      },
+      "element_type": "link",
+      "semantic_role": "Opens founder's LinkedIn profile",
+      "label": "Xavier (Tianhao) Chi LinkedIn",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "tap"
+      ],
+      "inferred_destination": "Xavier Chi's LinkedIn profile",
+      "confidence": 0.9
+    },
+    {
+      "element_id": "elem_12",
+      "reference": {
+        "resource_id": null,
+        "text": "Sebastian Peralta Twitter",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "founder profile section"
+      },
+      "element_type": "link",
+      "semantic_role": "Opens founder's Twitter profile",
+      "label": "Sebastian Peralta Twitter",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "tap"
+      ],
+      "inferred_destination": "Sebastian Peralta's Twitter profile",
+      "confidence": 0.9
+    },
+    {
+      "element_id": "elem_13",
+      "reference": {
+        "resource_id": null,
+        "text": "Sebastian Peralta LinkedIn",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "founder profile section"
+      },
+      "element_type": "link",
+      "semantic_role": "Opens founder's LinkedIn profile",
+      "label": "Sebastian Peralta LinkedIn",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "tap"
+      ],
+      "inferred_destination": "Sebastian Peralta's LinkedIn profile",
+      "confidence": 0.9
+    },
+    {
+      "element_id": "elem_14",
+      "reference": {
+        "resource_id": null,
+        "text": "Pete Koomen",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "company info sidebar"
+      },
+      "element_type": "link",
+      "semantic_role": "Opens primary partner's profile",
+      "label": "Pete Koomen",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "tap"
+      ],
+      "inferred_destination": "Pete Koomen's profile page",
+      "confidence": 0.9
+    },
+    {
+      "element_id": "elem_15",
+      "reference": {
+        "resource_id": null,
+        "text": "Company social links",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "company info sidebar bottom"
+      },
+      "element_type": "link",
+      "semantic_role": "Opens company social media links",
+      "label": "Company social links",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "tap"
+      ],
+      "inferred_destination": "Company social media profiles",
+      "confidence": 0.85
+    }
+  ],
+  "navigation_context": {
+    "arrived_from": null,
+    "arrival_action": null,
+    "visible_navigation": [
+      "Home",
+      "Companies",
+      "Company tab",
+      "Jobs tab",
+      "News tab"
+    ],
+    "active_navigation": "Company tab",
+    "back_available": true,
+    "inferred_depth": 3
+  },
+  "confidence": 0.92,
+  "raw_ai_response": "```json\n{\n  \"screen_purpose\": \"This is a company profile page for Mbodi AI showing company details, founder information, and company statistics\",\n  \"screen_type\": \"detail\",\n  \"app_state\": {\n    \"logged_in\": \"no\",\n    \"current_company\": \"Mbodi AI\",\n    \"navigation_depth\": 3,\n    \"viewing_company_profile\": \"yes\"\n  },\n  \"elements\": [\n    {\n      \"element_id\": \"elem_01\",\n      \"element_type\": \"link\",\n      \"semantic_role\": \"Navigates to Y Combinator homepage\",\n      \"label\": \"Y\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"tap\"],\n      \"inferred_destination\": \"Y Combinator homepage\",\n      \"bounds_description\": \"top navigation bar center\",\n      \"confidence\": 0.95\n    },\n    {\n      \"element_id\": \"elem_02\",\n      \"element_type\": \"link\",\n      \"semantic_role\": \"Initiates login process\",\n      \"label\": \"Log in\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"tap\"],\n      \"inferred_destination\": \"Login page\",\n      \"bounds_description\": \"top navigation bar right\",\n      \"confidence\": 0.95\n    },\n    {\n      \"element_id\": \"elem_03\",\n      \"element_type\": \"button\",\n      \"semantic_role\": \"Navigates to application form\",\n      \"label\": \"Apply\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"tap\"],\n      \"inferred_destination\": \"Application form\",\n      \"bounds_description\": \"top navigation bar right\",\n      \"confidence\": 0.95\n    },\n    {\n      \"element_id\": \"elem_04\",\n      \"element_type\": \"link\",\n      \"semantic_role\": \"Navigates back to home page\",\n      \"label\": \"Home\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"tap\"],\n      \"inferred_destination\": \"Home page\",\n      \"bounds_description\": \"breadcrumb navigation top-left\",\n      \"confidence\": 0.95\n    },\n    {\n      \"element_id\": \"elem_05\",\n      \"element_type\": \"link\",\n      \"semantic_role\": \"Navigates back to companies list\",\n      \"label\": \"Companies\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"tap\"],\n      \"inferred_destination\": \"Companies list page\",\n      \"bounds_description\": \"breadcrumb navigation top-left\",\n      \"confidence\": 0.95\n    },\n    {\n      \"element_id\": \"elem_06\",\n      \"element_type\": \"tab\",\n      \"semantic_role\": \"Shows company overview information\",\n      \"label\": \"Company\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": true,\n      \"possible_actions\": [\"tap\"],\n      \"inferred_destination\": \"Company overview tab\",\n      \"bounds_description\": \"main content area left\",\n      \"confidence\": 0.95\n    },\n    {\n      \"element_id\": \"elem_07\",\n      \"element_type\": \"tab\",\n      \"semantic_role\": \"Shows available job positions\",\n      \"label\": \"Jobs 1\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"tap\"],\n      \"inferred_destination\": \"Jobs tab showing 1 position\",\n      \"bounds_description\": \"main content area left\",\n      \"confidence\": 0.95\n    },\n    {\n      \"element_id\": \"elem_08\",\n      \"element_type\": \"tab\",\n      \"semantic_role\": \"Shows company news and updates\",\n      \"label\": \"News\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"tap\"],\n      \"inferred_destination\": \"News tab\",\n      \"bounds_description\": \"main content area left\",\n      \"confidence\": 0.95\n    },\n    {\n      \"element_id\": \"elem_09\",\n      \"element_type\": \"link\",\n      \"semantic_role\": \"Opens company website in external browser\",\n      \"label\": \"https://www.mbodi.ai/\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"tap\"],\n      \"inferred_destination\": \"Mbodi AI website\",\n      \"bounds_description\": \"main content area right of tabs\",\n      \"confidence\": 0.95\n    },\n    {\n      \"element_id\": \"elem_10\",\n      \"element_type\": \"link\",\n      \"semantic_role\": \"Opens founder's Twitter profile\",\n      \"label\": \"Xavier (Tianhao) Chi Twitter\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"tap\"],\n      \"inferred_destination\": \"Xavier Chi's Twitter profile\",\n      \"bounds_description\": \"founder profile section\",\n      \"confidence\": 0.90\n    },\n    {\n      \"element_id\": \"elem_11\",\n      \"element_type\": \"link\",\n      \"semantic_role\": \"Opens founder's LinkedIn profile\",\n      \"label\": \"Xavier (Tianhao) Chi LinkedIn\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"tap\"],\n      \"inferred_destination\": \"Xavier Chi's LinkedIn profile\",\n      \"bounds_description\": \"founder profile section\",\n      \"confidence\": 0.90\n    },\n    {\n      \"element_id\": \"elem_12\",\n      \"element_type\": \"link\",\n      \"semantic_role\": \"Opens founder's Twitter profile\",\n      \"label\": \"Sebastian Peralta Twitter\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"tap\"],\n      \"inferred_destination\": \"Sebastian Peralta's Twitter profile\",\n      \"bounds_description\": \"founder profile section\",\n      \"confidence\": 0.90\n    },\n    {\n      \"element_id\": \"elem_13\",\n      \"element_type\": \"link\",\n      \"semantic_role\": \"Opens founder's LinkedIn profile\",\n      \"label\": \"Sebastian Peralta LinkedIn\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"tap\"],\n      \"inferred_destination\": \"Sebastian Peralta's LinkedIn profile\",\n      \"bounds_description\": \"founder profile section\",\n      \"confidence\": 0.90\n    },\n    {\n      \"element_id\": \"elem_14\",\n      \"element_type\": \"link\",\n      \"semantic_role\": \"Opens primary partner's profile\",\n      \"label\": \"Pete Koomen\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"tap\"],\n      \"inferred_destination\": \"Pete Koomen's profile page\",\n      \"bounds_description\": \"company info sidebar\",\n      \"confidence\": 0.90\n    },\n    {\n      \"element_id\": \"elem_15\",\n      \"element_type\": \"link\",\n      \"semantic_role\": \"Opens company social media links\",\n      \"label\": \"Company social links\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"tap\"],\n      \"inferred_destination\": \"Company social media profiles\",\n      \"bounds_description\": \"company info sidebar bottom\",\n      \"confidence\": 0.85\n    }\n  ],\n  \"navigation_context\": {\n    \"visible_navigation\": [\"Home\", \"Companies\", \"Company tab\", \"Jobs tab\", \"News tab\"],\n    \"active_navigation\": \"Company tab\",\n    \"back_available\": true,\n    \"inferred_depth\": 3\n  },\n  \"confidence\": 0.92\n}\n```"
+}

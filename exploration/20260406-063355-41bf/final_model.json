@@ -1,0 +1,542 @@
+{
+  "app_reference": {
+    "package_name": null,
+    "app_store_url": null,
+    "bundle_path": null,
+    "web_url": "https://news.ycombinator.com",
+    "name": "Hacker News",
+    "description": null,
+    "baseline": null,
+    "differentiation": null,
+    "credentials": null
+  },
+  "model_version": 18,
+  "domain": "startup accelerator platform",
+  "purpose": "Y Combinator's platform for browsing startup companies, viewing company profiles, job opportunities, and application information.",
+  "baseline_category": "business directory",
+  "differentiators": [
+    "Focus on Y Combinator portfolio companies",
+    "Integration with startup accelerator ecosystem",
+    "Founder social media integration",
+    "Job listings tied to specific companies",
+    "Partner/investor information display",
+    "Advanced filtering and search for startup discovery",
+    "Dedicated job platform for YC startups",
+    "Magic link authentication for passwordless login",
+    "Username recovery via email modal"
+  ],
+  "entities": [
+    {
+      "name": "company",
+      "description": "Y Combinator portfolio startup companies",
+      "provenance": "observed"
+    },
+    {
+      "name": "founder",
+      "description": "Startup founders and team members",
+      "provenance": "observed"
+    },
+    {
+      "name": "job",
+      "description": "Job opportunities at YC companies",
+      "provenance": "observed"
+    },
+    {
+      "name": "partner",
+      "description": "Y Combinator partners and investors",
+      "provenance": "observed"
+    },
+    {
+      "name": "user",
+      "description": "Platform users including job seekers and founders",
+      "provenance": "observed"
+    },
+    {
+      "name": "batch",
+      "description": "Y Combinator cohort groups",
+      "provenance": "observed"
+    }
+  ],
+  "capabilities": [
+    {
+      "name": "browse_companies",
+      "description": "Browse and discover Y Combinator portfolio companies",
+      "estimated_importance": 0.9,
+      "estimated_frequency": 0.9,
+      "is_differentiator": false,
+      "provenance": "observed"
+    },
+    {
+      "name": "view_company_profiles",
+      "description": "View detailed information about specific companies",
+      "estimated_importance": 0.9,
+      "estimated_frequency": 0.7,
+      "is_differentiator": true,
+      "provenance": "observed"
+    },
+    {
+      "name": "search_companies",
+      "description": "Search for companies by various criteria",
+      "estimated_importance": 0.8,
+      "estimated_frequency": 0.6,
+      "is_differentiator": false,
+      "provenance": "observed"
+    },
+    {
+      "name": "filter_companies",
+      "description": "Filter companies by batch, industry, or other attributes",
+      "estimated_importance": 0.8,
+      "estimated_frequency": 0.5,
+      "is_differentiator": true,
+      "provenance": "observed"
+    },
+    {
+      "name": "browse_jobs",
+      "description": "Browse job opportunities at YC companies",
+      "estimated_importance": 0.9,
+      "estimated_frequency": 0.8,
+      "is_differentiator": false,
+      "provenance": "observed"
+    },
+    {
+      "name": "search_jobs",
+      "description": "Search for specific job opportunities",
+      "estimated_importance": 0.8,
+      "estimated_frequency": 0.7,
+      "is_differentiator": false,
+      "provenance": "observed"
+    },
+    {
+      "name": "filter_jobs_by_category",
+      "description": "Filter jobs by role type or department",
+      "estimated_importance": 0.8,
+      "estimated_frequency": 0.6,
+      "is_differentiator": true,
+      "provenance": "observed"
+    },
+    {
+      "name": "private_job_browsing",
+      "description": "Browse jobs privately for YC startup employees",
+      "estimated_importance": 0.6,
+      "estimated_frequency": 0.2,
+      "is_differentiator": true,
+      "provenance": "observed"
+    },
+    {
+      "name": "view_company_news",
+      "description": "View news and updates about companies",
+      "estimated_importance": 0.7,
+      "estimated_frequency": 0.4,
+      "is_differentiator": false,
+      "provenance": "observed"
+    },
+    {
+      "name": "user_authentication",
+      "description": "Log in and authenticate users",
+      "estimated_importance": 0.7,
+      "estimated_frequency": 0.3,
+      "is_differentiator": false,
+      "provenance": "observed"
+    },
+    {
+      "name": "magic_link_authentication",
+      "description": "Passwordless login via email magic links",
+      "estimated_importance": 0.6,
+      "estimated_frequency": 0.2,
+      "is_differentiator": true,
+      "provenance": "observed"
+    },
+    {
+      "name": "user_registration",
+      "description": "Register new user accounts",
+      "estimated_importance": 0.7,
+      "estimated_frequency": 0.2,
+      "is_differentiator": false,
+      "provenance": "observed"
+    },
+    {
+      "name": "apply_to_yc",
+      "description": "Apply to Y Combinator accelerator program",
+      "estimated_importance": 0.8,
+      "estimated_frequency": 0.1,
+      "is_differentiator": true,
+      "provenance": "observed"
+    },
+    {
+      "name": "access_founder_profiles",
+      "description": "View founder and team member profiles",
+      "estimated_importance": 0.6,
+      "estimated_frequency": 0.3,
+      "is_differentiator": true,
+      "provenance": "observed"
+    },
+    {
+      "name": "view_partner_information",
+      "description": "View Y Combinator partner profiles and information",
+      "estimated_importance": 0.5,
+      "estimated_frequency": 0.2,
+      "is_differentiator": true,
+      "provenance": "observed"
+    },
+    {
+      "name": "username_recovery",
+      "description": "Recover forgotten username via email",
+      "estimated_importance": 0.5,
+      "estimated_frequency": 0.1,
+      "is_differentiator": false,
+      "provenance": "observed"
+    }
+  ],
+  "screens": [
+    {
+      "screen_id": "company_profile_page",
+      "name": "Company Profile Page",
+      "screen_type": "detail",
+      "purpose": "Display detailed information about a specific Y Combinator company",
+      "participates_in": [
+        "view_company_profiles",
+        "browse_jobs",
+        "view_company_news",
+        "access_founder_profiles",
+        "view_partner_information",
+        "user_authentication",
+        "apply_to_yc"
+      ],
+      "visit_count": 10,
+      "last_observation_id": "obs_1420ec1e"
+    },
+    {
+      "screen_id": "companies_list_page",
+      "name": "Companies Directory Page",
+      "screen_type": "list",
+      "purpose": "Browse and search Y Combinator portfolio companies",
+      "participates_in": [
+        "browse_companies",
+        "search_companies",
+        "filter_companies",
+        "view_company_profiles",
+        "browse_jobs",
+        "user_authentication",
+        "apply_to_yc"
+      ],
+      "visit_count": 9,
+      "last_observation_id": "obs_0ae1ca6e"
+    },
+    {
+      "screen_id": "startup_jobs_homepage",
+      "name": "Work at a Startup Homepage",
+      "screen_type": "home",
+      "purpose": "Main landing page for job seekers at YC companies",
+      "participates_in": [
+        "browse_jobs",
+        "search_jobs",
+        "filter_jobs_by_category",
+        "private_job_browsing",
+        "user_authentication",
+        "apply_to_yc"
+      ],
+      "visit_count": 8,
+      "last_observation_id": "obs_93ffa773"
+    },
+    {
+      "screen_id": "user_registration_page",
+      "name": "User Registration Page",
+      "screen_type": "form",
+      "purpose": "Register new user accounts on the platform",
+      "participates_in": [
+        "user_registration",
+        "user_authentication"
+      ],
+      "visit_count": 7,
+      "last_observation_id": ""
+    },
+    {
+      "screen_id": "magic_link_login_page",
+      "name": "Magic Link Login Page",
+      "screen_type": "form",
+      "purpose": "Passwordless login using email magic links",
+      "participates_in": [
+        "magic_link_authentication",
+        "user_authentication"
+      ],
+      "visit_count": 4,
+      "last_observation_id": ""
+    },
+    {
+      "screen_id": "username_recovery_modal",
+      "name": "Username Recovery Modal",
+      "screen_type": "modal",
+      "purpose": "Allow users to recover forgotten username via email",
+      "participates_in": [
+        "username_recovery",
+        "user_authentication"
+      ],
+      "visit_count": 1,
+      "last_observation_id": "obs_6f87e85e"
+    }
+  ],
+  "transitions": [
+    {
+      "from_screen": "company_profile_page",
+      "to_screen": "yc_homepage",
+      "action": "Click Y Combinator logo",
+      "observed_count": 10
+    },
+    {
+      "from_screen": "company_profile_page",
+      "to_screen": "login_page",
+      "action": "Click Log in link",
+      "observed_count": 10
+    },
+    {
+      "from_screen": "company_profile_page",
+      "to_screen": "application_form",
+      "action": "Click Apply button",
+      "observed_count": 10
+    },
+    {
+      "from_screen": "company_profile_page",
+      "to_screen": "home_page",
+      "action": "Click Home link",
+      "observed_count": 10
+    },
+    {
+      "from_screen": "company_profile_page",
+      "to_screen": "companies_list_page",
+      "action": "Click Companies link",
+      "observed_count": 10
+    },
+    {
+      "from_screen": "company_profile_page",
+      "to_screen": "company_jobs_tab",
+      "action": "Click Jobs tab",
+      "observed_count": 10
+    },
+    {
+      "from_screen": "company_profile_page",
+      "to_screen": "company_news_tab",
+      "action": "Click News tab",
+      "observed_count": 10
+    },
+    {
+      "from_screen": "companies_list_page",
+      "to_screen": "yc_homepage",
+      "action": "Click Y Combinator logo",
+      "observed_count": 9
+    },
+    {
+      "from_screen": "companies_list_page",
+      "to_screen": "login_page",
+      "action": "Click Log in link",
+      "observed_count": 9
+    },
+    {
+      "from_screen": "companies_list_page",
+      "to_screen": "application_form",
+      "action": "Click Apply button",
+      "observed_count": 9
+    },
+    {
+      "from_screen": "companies_list_page",
+      "to_screen": "startup_jobs_homepage",
+      "action": "Click Work at a Startup link",
+      "observed_count": 8
+    },
+    {
+      "from_screen": "companies_list_page",
+      "to_screen": "company_profile_page",
+      "action": "Click company list item",
+      "observed_count": 9
+    },
+    {
+      "from_screen": "startup_jobs_homepage",
+      "to_screen": "yc_homepage",
+      "action": "Click Y Combinator logo",
+      "observed_count": 8
+    },
+    {
+      "from_screen": "startup_jobs_homepage",
+      "to_screen": "login_page",
+      "action": "Click Log in link",
+      "observed_count": 8
+    },
+    {
+      "from_screen": "startup_jobs_homepage",
+      "to_screen": "application_form",
+      "action": "Click Apply button",
+      "observed_count": 8
+    },
+    {
+      "from_screen": "startup_jobs_homepage",
+      "to_screen": "job_search_page",
+      "action": "Click Find a job button",
+      "observed_count": 8
+    },
+    {
+      "from_screen": "startup_jobs_homepage",
+      "to_screen": "private_browsing_page",
+      "action": "Click Browse privately link",
+      "observed_count": 8
+    },
+    {
+      "from_screen": "startup_jobs_homepage",
+      "to_screen": "design_jobs_page",
+      "action": "Click Design & UI/UX link",
+      "observed_count": 8
+    },
+    {
+      "from_screen": "startup_jobs_homepage",
+      "to_screen": "product_jobs_page",
+      "action": "Click Product link",
+      "observed_count": 8
+    },
+    {
+      "from_screen": "startup_jobs_homepage",
+      "to_screen": "recruiting_jobs_page",
+      "action": "Click Recruiting & HR link",
+      "observed_count": 8
+    },
+    {
+      "from_screen": "startup_jobs_homepage",
+      "to_screen": "sales_jobs_page",
+      "action": "Click Sales link",
+      "observed_count": 8
+    },
+    {
+      "from_screen": "startup_jobs_homepage",
+      "to_screen": "science_jobs_page",
+      "action": "Click Science link",
+      "observed_count": 8
+    },
+    {
+      "from_screen": "user_registration_page",
+      "to_screen": "dashboard_page",
+      "action": "Click Sign Up button",
+      "observed_count": 7
+    },
+    {
+      "from_screen": "user_registration_page",
+      "to_screen": "login_page",
+      "action": "Click Log in link",
+      "observed_count": 7
+    },
+    {
+      "from_screen": "magic_link_login_page",
+      "to_screen": "email_confirmation_page",
+      "action": "Click Send login link button",
+      "observed_count": 4
+    },
+    {
+      "from_screen": "magic_link_login_page",
+      "to_screen": "traditional_login_page",
+      "action": "Click Sign in link",
+      "observed_count": 4
+    },
+    {
+      "from_screen": "username_recovery_modal",
+      "to_screen": "login_screen",
+      "action": "Cancel username recovery and closes modal",
+      "observed_count": 1
+    },
+    {
+      "from_screen": "username_recovery_modal",
+      "to_screen": "confirmation_screen",
+      "action": "Sends username recovery email to entered address",
+      "observed_count": 1
+    }
+  ],
+  "frontier": [
+    {
+      "description": "Y Combinator main homepage with platform overview and navigation",
+      "rationale": "Referenced in multiple transitions but not yet observed",
+      "provenance": "inferred_structure",
+      "priority": 0.8,
+      "search_strategy": "Click Y Combinator logo from any page"
+    },
+    {
+      "description": "Job search and application page with detailed job listings",
+      "rationale": "Core functionality for job platform, referenced in transitions",
+      "provenance": "inferred_structure",
+      "priority": 0.9,
+      "search_strategy": "Click Find a job button from startup jobs homepage"
+    },
+    {
+      "description": "Category-specific job listing pages (Design, Product, Sales, etc.)",
+      "rationale": "Multiple category links observed on jobs homepage",
+      "provenance": "inferred_structure",
+      "priority": 0.7,
+      "search_strategy": "Click category links from startup jobs homepage"
+    },
+    {
+      "description": "Private job browsing page for YC startup employees",
+      "rationale": "Specialized feature for internal YC network",
+      "provenance": "inferred_structure",
+      "priority": 0.6,
+      "search_strategy": "Click Browse privately link from jobs homepage"
+    },
+    {
+      "description": "Traditional login page with username/password fields",
+      "rationale": "Username recovery modal suggests traditional login exists",
+      "provenance": "inferred_structure",
+      "priority": 0.8,
+      "search_strategy": "Look for login links or follow transitions from magic link page"
+    },
+    {
+      "description": "Email confirmation screen after username recovery request",
+      "rationale": "Username recovery modal transitions to confirmation screen",
+      "provenance": "inferred_structure",
+      "priority": 0.7,
+      "search_strategy": "Submit username recovery form with valid email"
+    },
+    {
+      "description": "Y Combinator application form for startup applications",
+      "rationale": "Apply buttons observed on multiple pages",
+      "provenance": "inferred_structure",
+      "priority": 0.7,
+      "search_strategy": "Click Apply button from any page"
+    },
+    {
+      "description": "User dashboard or account confirmation page after registration",
+      "rationale": "Registration form transitions to dashboard",
+      "provenance": "inferred_structure",
+      "priority": 0.6,
+      "search_strategy": "Complete user registration process"
+    },
+    {
+      "description": "Company jobs tab showing available positions at specific company",
+      "rationale": "Jobs tab observed on company profile pages",
+      "provenance": "inferred_structure",
+      "priority": 0.7,
+      "search_strategy": "Click Jobs tab on company profile page"
+    },
+    {
+      "description": "Company news tab showing updates and announcements",
+      "rationale": "News tab observed on company profile pages",
+      "provenance": "inferred_structure",
+      "priority": 0.6,
+      "search_strategy": "Click News tab on company profile page"
+    }
+  ],
+  "anomalies": [
+    {
+      "description": "Complete domain shift from Hacker News technology news aggregation to Y Combinator startup accelerator platform",
+      "observation_id": "obs_6f87e85e",
+      "classification": "contradictory",
+      "exploration_priority_boost": 0.0
+    },
+    {
+      "description": "Magic link login form shows validation error with empty email field, indicating form validation is active",
+      "observation_id": "obs_6f87e85e",
+      "classification": "novel",
+      "exploration_priority_boost": 0.2
+    },
+    {
+      "description": "Username recovery modal appears over login screen, suggesting traditional login exists alongside magic link authentication",
+      "observation_id": "obs_6f87e85e",
+      "classification": "novel",
+      "exploration_priority_boost": 0.3
+    }
+  ],
+  "coverage_estimate": 0.65,
+  "confidence": 0.91
+}

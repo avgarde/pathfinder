@@ -1,0 +1,63 @@
+2026-04-06 11:21:56,834 INFO pathfinder.orchestrator.agent_loop: Invocation: pathfinder explore-web https://news.ycombinator.com --name 'Hacker News' --max-actions 50
+2026-04-06 11:21:56,835 INFO pathfinder.orchestrator.agent_loop: Run ID: 20260406-055151-f4a6
+2026-04-06 11:21:56,836 INFO pathfinder.orchestrator.agent_loop: Run directory: exploration/20260406-055151-f4a6
+2026-04-06 11:21:56,836 INFO pathfinder.orchestrator.agent_loop: Navigating to start URL: https://news.ycombinator.com
+2026-04-06 11:21:56,836 INFO pathfinder.device.web.adapter: Navigating to: https://news.ycombinator.com
+2026-04-06 11:21:59,463 INFO pathfinder.layers.world_modeling: Created empty model
+2026-04-06 11:21:59,465 INFO pathfinder.orchestrator.agent_loop: Starting exploration of Hacker News (budget: 50 actions)
+2026-04-06 11:21:59,467 INFO pathfinder.orchestrator.agent_loop: === Step 1 / 50 ===
+2026-04-06 11:22:00,055 INFO pathfinder.device.web.adapter: Screenshot saved to exploration/20260406-055151-f4a6/screenshot.png
+2026-04-06 11:22:00,055 INFO pathfinder.layers.perception: Captured screenshot: exploration/20260406-055151-f4a6/screenshot.png
+2026-04-06 11:22:00,061 INFO pathfinder.device.web.adapter: DOM structure extracted (1158 chars)
+2026-04-06 11:22:00,061 INFO pathfinder.layers.perception: Captured UI structure (1158 chars)
+2026-04-06 11:22:00,061 INFO pathfinder.layers.perception: Perceiving screenshot: exploration/20260406-055151-f4a6/screenshot.png
+2026-04-06 11:22:00,064 INFO pathfinder.ai.anthropic_ai: Calling claude-sonnet-4-20250514 for perception...
+2026-04-06 11:22:17,939 INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-06 11:22:17,954 ERROR pathfinder.orchestrator.agent_loop: Exploration error: 1 validation error for ScreenObservation
+app_state.story_count
+  Input should be a valid string [type=string_type, input_value=22, input_type=int]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+Traceback (most recent call last):
+  File "/Users/amitgarde/hacking/claude-code/pathfinder/pathfinder/orchestrator/agent_loop.py", line 232, in explore
+    observation = await self.perception.perceive_live(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Users/amitgarde/hacking/claude-code/pathfinder/pathfinder/layers/perception.py", line 124, in perceive_live
+    return await self.perceive_screenshot(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Users/amitgarde/hacking/claude-code/pathfinder/pathfinder/layers/perception.py", line 68, in perceive_screenshot
+    observation = await self.ai.perceive(
+                  ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Users/amitgarde/hacking/claude-code/pathfinder/pathfinder/ai/anthropic_ai.py", line 115, in perceive
+    return self._parse_perception_response(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        raw_text, screenshot_path, ui_structure_xml
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/amitgarde/hacking/claude-code/pathfinder/pathfinder/ai/anthropic_ai.py", line 618, in _parse_perception_response
+    return ScreenObservation(
+        observation_id=f"obs_{uuid.uuid4().hex[:8]}",
+    ...<8 lines>...
+        raw_ai_response=raw_text,
+    )
+  File "/Users/amitgarde/hacking/claude-code/pathfinder/.venv/lib/python3.14/site-packages/pydantic/main.py", line 250, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+pydantic_core._pydantic_core.ValidationError: 1 validation error for ScreenObservation
+app_state.story_count
+  Input should be a valid string [type=string_type, input_value=22, input_type=int]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+2026-04-06 11:22:18,039 INFO pathfinder.layers.world_modeling: Model saved to exploration/20260406-055151-f4a6/final_model.json
+2026-04-06 11:22:18,040 INFO pathfinder.orchestrator.agent_loop: Exploration summary saved to exploration/20260406-055151-f4a6/exploration_summary.json
+2026-04-06 11:22:18,041 INFO pathfinder.orchestrator.agent_loop: Exploration complete: 0 actions in 18.6s. Model v0: 0 screens, 0 transitions, coverage=0%. Stop reason: Error: 1 validation error for ScreenObservation
+app_state.story_count
+  Input should be a valid string [type=string_type, input_value=22, input_type=int]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type

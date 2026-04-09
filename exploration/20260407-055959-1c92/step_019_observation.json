@@ -1,0 +1,180 @@
+{
+  "observation_id": "obs_b3f58d0b",
+  "timestamp": "2026-04-07T06:15:34.454815",
+  "screenshot_path": "exploration/20260407-055959-1c92/step_019.png",
+  "ui_structure_path": null,
+  "screen_purpose": "This screen is for booking hotels as part of a travel booking process.",
+  "screen_type": "form",
+  "app_state": {
+    "logged_in": "yes"
+  },
+  "elements": [
+    {
+      "element_id": "elem_01",
+      "reference": {
+        "resource_id": null,
+        "text": "Search",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "top-left"
+      },
+      "element_type": "text_field",
+      "semantic_role": "Allows user to enter hotel name or location",
+      "label": "Search",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "type"
+      ],
+      "inferred_destination": "Search results page",
+      "confidence": 0.95
+    },
+    {
+      "element_id": "elem_02",
+      "reference": {
+        "resource_id": null,
+        "text": "Check-in",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "top-left"
+      },
+      "element_type": "text_field",
+      "semantic_role": "Allows user to enter check-in date",
+      "label": "Check-in",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "type"
+      ],
+      "inferred_destination": "Date picker",
+      "confidence": 0.95
+    },
+    {
+      "element_id": "elem_03",
+      "reference": {
+        "resource_id": null,
+        "text": "Check-out",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "top-left"
+      },
+      "element_type": "text_field",
+      "semantic_role": "Allows user to enter check-out date",
+      "label": "Check-out",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "type"
+      ],
+      "inferred_destination": "Date picker",
+      "confidence": 0.95
+    },
+    {
+      "element_id": "elem_04",
+      "reference": {
+        "resource_id": null,
+        "text": "Guests",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "top-left"
+      },
+      "element_type": "dropdown",
+      "semantic_role": "Allows user to select number of guests",
+      "label": "Guests",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "type"
+      ],
+      "inferred_destination": "Guest selection page",
+      "confidence": 0.95
+    },
+    {
+      "element_id": "elem_05",
+      "reference": {
+        "resource_id": null,
+        "text": "Rooms",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "top-left"
+      },
+      "element_type": "dropdown",
+      "semantic_role": "Allows user to select number of rooms",
+      "label": "Rooms",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "type"
+      ],
+      "inferred_destination": "Room selection page",
+      "confidence": 0.95
+    },
+    {
+      "element_id": "elem_06",
+      "reference": {
+        "resource_id": null,
+        "text": "Hotels",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "top-left"
+      },
+      "element_type": "tab",
+      "semantic_role": "Switches between hotel and sightseeing booking tabs",
+      "label": "Hotels",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": true,
+      "possible_actions": [
+        "swipe"
+      ],
+      "inferred_destination": "Hotels booking form",
+      "confidence": 0.95
+    },
+    {
+      "element_id": "elem_07",
+      "reference": {
+        "resource_id": null,
+        "text": "Sight Seeing",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "top-left"
+      },
+      "element_type": "tab",
+      "semantic_role": "Switches between hotel and sightseeing booking tabs",
+      "label": "Sight Seeing",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "swipe"
+      ],
+      "inferred_destination": "Sightseeing booking form",
+      "confidence": 0.95
+    }
+  ],
+  "navigation_context": {
+    "arrived_from": null,
+    "arrival_action": null,
+    "visible_navigation": [
+      "Hotels",
+      "Sight Seeing"
+    ],
+    "active_navigation": "Hotels",
+    "back_available": true,
+    "inferred_depth": 0
+  },
+  "confidence": 0.9,
+  "raw_ai_response": "{\n  \"screen_purpose\": \"This screen is for booking hotels as part of a travel booking process.\",\n  \"screen_type\": \"form\",\n  \"app_state\": {\n    \"logged_in\": \"yes\"\n  },\n  \"elements\": [\n    {\n      \"element_id\": \"elem_01\",\n      \"element_type\": \"text_field\",\n      \"semantic_role\": \"Allows user to enter hotel name or location\",\n      \"label\": \"Search\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"type\"],\n      \"inferred_destination\": \"Search results page\",\n      \"bounds_description\": \"top-left\",\n      \"confidence\": 0.95\n    },\n    {\n      \"element_id\": \"elem_02\",\n      \"element_type\": \"text_field\",\n      \"semantic_role\": \"Allows user to enter check-in date\",\n      \"label\": \"Check-in\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"type\"],\n      \"inferred_destination\": \"Date picker\",\n      \"bounds_description\": \"top-left\",\n      \"confidence\": 0.95\n    },\n    {\n      \"element_id\": \"elem_03\",\n      \"element_type\": \"text_field\",\n      \"semantic_role\": \"Allows user to enter check-out date\",\n      \"label\": \"Check-out\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"type\"],\n      \"inferred_destination\": \"Date picker\",\n      \"bounds_description\": \"top-left\",\n      \"confidence\": 0.95\n    },\n    {\n      \"element_id\": \"elem_04\",\n      \"element_type\": \"dropdown\",\n      \"semantic_role\": \"Allows user to select number of guests\",\n      \"label\": \"Guests\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"type\"],\n      \"inferred_destination\": \"Guest selection page\",\n      \"bounds_description\": \"top-left\",\n      \"confidence\": 0.95\n    },\n    {\n      \"element_id\": \"elem_05\",\n      \"element_type\": \"dropdown\",\n      \"semantic_role\": \"Allows user to select number of rooms\",\n      \"label\": \"Rooms\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"type\"],\n      \"inferred_destination\": \"Room selection page\",\n      \"bounds_description\": \"top-left\",\n      \"confidence\": 0.95\n    },\n    {\n      \"element_id\": \"elem_06\",\n      \"element_type\": \"tab\",\n      \"semantic_role\": \"Switches between hotel and sightseeing booking tabs\",\n      \"label\": \"Hotels\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": true,\n      \"possible_actions\": [\"swipe\"],\n      \"inferred_destination\": \"Hotels booking form\",\n      \"bounds_description\": \"top-left\",\n      \"confidence\": 0.95\n    },\n    {\n      \"element_id\": \"elem_07\",\n      \"element_type\": \"tab\",\n      \"semantic_role\": \"Switches between hotel and sightseeing booking tabs\",\n      \"label\": \"Sight Seeing\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"swipe\"],\n      \"inferred_destination\": \"Sightseeing booking form\",\n      \"bounds_description\": \"top-left\",\n      \"confidence\": 0.95\n    }\n  ],\n  \"navigation_context\": {\n    \"visible_navigation\": [\"Hotels\", \"Sight Seeing\"],\n    \"active_navigation\": \"Hotels\",\n    \"back_available\": true,\n    \"inferred_depth\": 0\n  },\n  \"confidence\": 0.9\n}"
+}

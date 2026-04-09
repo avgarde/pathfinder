@@ -1,0 +1,609 @@
+{
+  "app_reference": {
+    "package_name": null,
+    "app_store_url": null,
+    "bundle_path": null,
+    "web_url": "https://goindigo.in",
+    "name": "Indigo",
+    "description": null,
+    "baseline": null,
+    "differentiation": null,
+    "credentials": null
+  },
+  "model_version": 9,
+  "domain": "airline booking and travel services",
+  "purpose": "IndiGo airline booking platform for flights, hotels, and travel services with loyalty programs and travel management features",
+  "baseline_category": "travel booking platform",
+  "differentiators": [
+    "6EPick service offering",
+    "IndiGo BluChip loyalty program",
+    "Multi-service platform (flights, hotels, sightseeing)",
+    "Student and family discount programs",
+    "One-click lowest fare finder",
+    "Compensation and cancelled flights support",
+    "Shopping integration with free shipping",
+    "100% confirmed cab rides with free cancellation"
+  ],
+  "entities": [
+    {
+      "name": "flight",
+      "description": "Flight booking and travel information",
+      "provenance": "observed"
+    },
+    {
+      "name": "hotel",
+      "description": "Hotel accommodation booking",
+      "provenance": "observed"
+    },
+    {
+      "name": "sightseeing",
+      "description": "Tourist attractions and activities",
+      "provenance": "observed"
+    },
+    {
+      "name": "passenger",
+      "description": "Traveler information and preferences",
+      "provenance": "observed"
+    },
+    {
+      "name": "promocode",
+      "description": "Discount codes and promotional offers",
+      "provenance": "observed"
+    },
+    {
+      "name": "trip",
+      "description": "Complete travel itinerary",
+      "provenance": "observed"
+    },
+    {
+      "name": "cab",
+      "description": "Ground transportation booking",
+      "provenance": "observed"
+    },
+    {
+      "name": "shopping",
+      "description": "Travel-related products and merchandise",
+      "provenance": "observed"
+    }
+  ],
+  "capabilities": [
+    {
+      "name": "flight_search",
+      "description": "Search and compare flight options",
+      "estimated_importance": 0.9,
+      "estimated_frequency": 0.9,
+      "is_differentiator": false,
+      "provenance": "observed"
+    },
+    {
+      "name": "hotel_booking",
+      "description": "Book hotel accommodations",
+      "estimated_importance": 0.7,
+      "estimated_frequency": 0.5,
+      "is_differentiator": false,
+      "provenance": "observed"
+    },
+    {
+      "name": "sightseeing_booking",
+      "description": "Book tourist attractions and activities",
+      "estimated_importance": 0.6,
+      "estimated_frequency": 0.3,
+      "is_differentiator": false,
+      "provenance": "observed"
+    },
+    {
+      "name": "check_in",
+      "description": "Online flight check-in process",
+      "estimated_importance": 0.8,
+      "estimated_frequency": 0.7,
+      "is_differentiator": false,
+      "provenance": "inferred_category"
+    },
+    {
+      "name": "trip_management",
+      "description": "Manage and view booked trips",
+      "estimated_importance": 0.8,
+      "estimated_frequency": 0.6,
+      "is_differentiator": false,
+      "provenance": "observed"
+    },
+    {
+      "name": "loyalty_program",
+      "description": "IndiGo BluChip rewards program",
+      "estimated_importance": 0.7,
+      "estimated_frequency": 0.4,
+      "is_differentiator": true,
+      "provenance": "observed"
+    },
+    {
+      "name": "6epick_services",
+      "description": "Premium service offerings",
+      "estimated_importance": 0.8,
+      "estimated_frequency": 0.4,
+      "is_differentiator": true,
+      "provenance": "observed"
+    },
+    {
+      "name": "flight_status_tracking",
+      "description": "Track flight status and updates",
+      "estimated_importance": 0.8,
+      "estimated_frequency": 0.6,
+      "is_differentiator": false,
+      "provenance": "observed"
+    },
+    {
+      "name": "discount_programs",
+      "description": "Student and family discount programs",
+      "estimated_importance": 0.6,
+      "estimated_frequency": 0.4,
+      "is_differentiator": true,
+      "provenance": "observed"
+    },
+    {
+      "name": "user_authentication",
+      "description": "User login and account management",
+      "estimated_importance": 0.7,
+      "estimated_frequency": 0.5,
+      "is_differentiator": false,
+      "provenance": "observed"
+    },
+    {
+      "name": "lowest_fare_finder",
+      "description": "One-click lowest fare search",
+      "estimated_importance": 0.7,
+      "estimated_frequency": 0.6,
+      "is_differentiator": true,
+      "provenance": "observed"
+    },
+    {
+      "name": "compensation_support",
+      "description": "Flight compensation assistance",
+      "estimated_importance": 0.5,
+      "estimated_frequency": 0.2,
+      "is_differentiator": false,
+      "provenance": "observed"
+    },
+    {
+      "name": "cancelled_flights_support",
+      "description": "Support for cancelled flight situations",
+      "estimated_importance": 0.6,
+      "estimated_frequency": 0.3,
+      "is_differentiator": false,
+      "provenance": "observed"
+    },
+    {
+      "name": "payment_method_selection",
+      "description": "Choose payment options for bookings",
+      "estimated_importance": 0.8,
+      "estimated_frequency": 0.8,
+      "is_differentiator": false,
+      "provenance": "observed"
+    },
+    {
+      "name": "trip_type_selection",
+      "description": "Select one-way, round-trip, or multi-city",
+      "estimated_importance": 0.8,
+      "estimated_frequency": 0.7,
+      "is_differentiator": false,
+      "provenance": "observed"
+    },
+    {
+      "name": "cab_booking",
+      "description": "Book ground transportation",
+      "estimated_importance": 0.6,
+      "estimated_frequency": 0.4,
+      "is_differentiator": false,
+      "provenance": "observed"
+    },
+    {
+      "name": "customer_support",
+      "description": "Customer service and assistance",
+      "estimated_importance": 0.6,
+      "estimated_frequency": 0.4,
+      "is_differentiator": false,
+      "provenance": "observed"
+    },
+    {
+      "name": "shopping_services",
+      "description": "Travel-related product shopping",
+      "estimated_importance": 0.5,
+      "estimated_frequency": 0.3,
+      "is_differentiator": true,
+      "provenance": "observed"
+    },
+    {
+      "name": "destination_packages",
+      "description": "Pre-packaged destination deals",
+      "estimated_importance": 0.6,
+      "estimated_frequency": 0.3,
+      "is_differentiator": false,
+      "provenance": "observed"
+    }
+  ],
+  "screens": [
+    {
+      "screen_id": "home_bbd3494a",
+      "name": "IndiGo Homepage",
+      "screen_type": "unknown",
+      "purpose": "Main landing page with booking options and services",
+      "participates_in": [
+        "flight_search",
+        "hotel_booking",
+        "sightseeing_booking",
+        "discount_programs",
+        "trip_management",
+        "6epick_services",
+        "flight_status_tracking",
+        "lowest_fare_finder",
+        "compensation_support",
+        "cancelled_flights_support",
+        "payment_method_selection",
+        "trip_type_selection",
+        "user_authentication",
+        "cab_booking",
+        "customer_support",
+        "loyalty_program"
+      ],
+      "visit_count": 9,
+      "last_observation_id": "obs_1e3aaabd"
+    },
+    {
+      "screen_id": "error_75659964",
+      "name": "Check-in Error Page",
+      "screen_type": "unknown",
+      "purpose": "Error page for check-in functionality",
+      "participates_in": [
+        "check_in"
+      ],
+      "visit_count": 8,
+      "last_observation_id": ""
+    },
+    {
+      "screen_id": "6epick_3742ca51",
+      "name": "6EPick Services Page",
+      "screen_type": "unknown",
+      "purpose": "Premium services and additional booking options",
+      "participates_in": [
+        "6epick_services",
+        "cab_booking",
+        "shopping_services",
+        "sightseeing_booking",
+        "hotel_booking",
+        "destination_packages"
+      ],
+      "visit_count": 2,
+      "last_observation_id": ""
+    },
+    {
+      "screen_id": "error_81fec6ec",
+      "name": "Connection Error Page",
+      "screen_type": "unknown",
+      "purpose": "Browser error page indicating website connectivity issues",
+      "participates_in": [],
+      "visit_count": 1,
+      "last_observation_id": ""
+    }
+  ],
+  "transitions": [
+    {
+      "from_screen": "home_bbd3494a",
+      "to_screen": "flight_status_page",
+      "action": "Click flight status link",
+      "observed_count": 7
+    },
+    {
+      "from_screen": "home_bbd3494a",
+      "to_screen": "check_in_page",
+      "action": "Click Check-in tab",
+      "observed_count": 4
+    },
+    {
+      "from_screen": "home_bbd3494a",
+      "to_screen": "flight_search_results",
+      "action": "Click Search button",
+      "observed_count": 7
+    },
+    {
+      "from_screen": "home_bbd3494a",
+      "to_screen": "hotel_booking_interface",
+      "action": "Click Hotels tab",
+      "observed_count": 7
+    },
+    {
+      "from_screen": "home_bbd3494a",
+      "to_screen": "sightseeing_booking_interface",
+      "action": "Click Sight Seeing tab",
+      "observed_count": 7
+    },
+    {
+      "from_screen": "home_bbd3494a",
+      "to_screen": "lowest_fare_finder_page",
+      "action": "Click lowest fare finder link",
+      "observed_count": 7
+    },
+    {
+      "from_screen": "home_bbd3494a",
+      "to_screen": "compensation_information_page",
+      "action": "Click Compensation link",
+      "observed_count": 7
+    },
+    {
+      "from_screen": "home_bbd3494a",
+      "to_screen": "cancelled_flights_page",
+      "action": "Click cancelled flights link",
+      "observed_count": 4
+    },
+    {
+      "from_screen": "home_bbd3494a",
+      "to_screen": "destination_search_interface",
+      "action": "Click Going to? text field",
+      "observed_count": 6
+    },
+    {
+      "from_screen": "home_bbd3494a",
+      "to_screen": "date_picker",
+      "action": "Click departure date field",
+      "observed_count": 6
+    },
+    {
+      "from_screen": "home_bbd3494a",
+      "to_screen": "passenger_selection_interface",
+      "action": "Click passenger count field",
+      "observed_count": 6
+    },
+    {
+      "from_screen": "home_bbd3494a",
+      "to_screen": "payment_method_selection",
+      "action": "Click payment method dropdown",
+      "observed_count": 6
+    },
+    {
+      "from_screen": "home_bbd3494a",
+      "to_screen": "quick_booking_interface",
+      "action": "Click One click away link",
+      "observed_count": 6
+    },
+    {
+      "from_screen": "home_bbd3494a",
+      "to_screen": "city_selection_interface",
+      "action": "Click departure city field",
+      "observed_count": 6
+    },
+    {
+      "from_screen": "home_bbd3494a",
+      "to_screen": "trips_management_page",
+      "action": "Click Trips tab",
+      "observed_count": 4
+    },
+    {
+      "from_screen": "home_bbd3494a",
+      "to_screen": "flight_booking_form",
+      "action": "Click Book tab",
+      "observed_count": 4
+    },
+    {
+      "from_screen": "home_bbd3494a",
+      "to_screen": "loyalty_program_page",
+      "action": "Click IndiGo BluChip tab",
+      "observed_count": 4
+    },
+    {
+      "from_screen": "home_bbd3494a",
+      "to_screen": "login_page",
+      "action": "Click Login button",
+      "observed_count": 4
+    },
+    {
+      "from_screen": "home_bbd3494a",
+      "to_screen": "customer_support_chat",
+      "action": "Click customer support button",
+      "observed_count": 4
+    },
+    {
+      "from_screen": "home_bbd3494a",
+      "to_screen": "cab_booking_page",
+      "action": "Click Cabs with IndiGo button",
+      "observed_count": 4
+    },
+    {
+      "from_screen": "home_bbd3494a",
+      "to_screen": "sightseeing_booking_page",
+      "action": "Click 50% off on Sight Seeing button",
+      "observed_count": 4
+    },
+    {
+      "from_screen": "home_bbd3494a",
+      "to_screen": "hotel_booking_page",
+      "action": "Click Hotels on IndiGo button",
+      "observed_count": 4
+    },
+    {
+      "from_screen": "home_bbd3494a",
+      "to_screen": "featured_destination_page",
+      "action": "Click Destination of the week button",
+      "observed_count": 4
+    },
+    {
+      "from_screen": "home_bbd3494a",
+      "to_screen": "tariff_information_page",
+      "action": "Click Tariff Sheet link",
+      "observed_count": 4
+    },
+    {
+      "from_screen": "home_bbd3494a",
+      "to_screen": "cancellation_refund_page",
+      "action": "Click alternate flight or refund link",
+      "observed_count": 4
+    },
+    {
+      "from_screen": "home_bbd3494a",
+      "to_screen": "cancelled_flights_list",
+      "action": "Click cancelled flights list link",
+      "observed_count": 4
+    },
+    {
+      "from_screen": "home_bbd3494a",
+      "to_screen": "6epick_3742ca51",
+      "action": "Click 6EPick dropdown",
+      "observed_count": 2
+    },
+    {
+      "from_screen": "6epick_3742ca51",
+      "to_screen": "flight_status_page",
+      "action": "Click here link",
+      "observed_count": 2
+    },
+    {
+      "from_screen": "6epick_3742ca51",
+      "to_screen": "home_bbd3494a",
+      "action": "Click IndiGo logo",
+      "observed_count": 2
+    },
+    {
+      "from_screen": "6epick_3742ca51",
+      "to_screen": "booking_options_menu",
+      "action": "Click Book dropdown",
+      "observed_count": 2
+    },
+    {
+      "from_screen": "6epick_3742ca51",
+      "to_screen": "trips_menu",
+      "action": "Click Trips dropdown",
+      "observed_count": 2
+    },
+    {
+      "from_screen": "6epick_3742ca51",
+      "to_screen": "check_in_page",
+      "action": "Click Check-in link",
+      "observed_count": 2
+    },
+    {
+      "from_screen": "6epick_3742ca51",
+      "to_screen": "BluChip_program_page",
+      "action": "Click IndiGo BluChip dropdown",
+      "observed_count": 2
+    },
+    {
+      "from_screen": "6epick_3742ca51",
+      "to_screen": "tariff_information_page",
+      "action": "Click Tariff Sheet link",
+      "observed_count": 2
+    },
+    {
+      "from_screen": "6epick_3742ca51",
+      "to_screen": "login_options",
+      "action": "Click Login dropdown",
+      "observed_count": 2
+    },
+    {
+      "from_screen": "6epick_3742ca51",
+      "to_screen": "cab_booking_page",
+      "action": "Click Cabs button",
+      "observed_count": 2
+    },
+    {
+      "from_screen": "6epick_3742ca51",
+      "to_screen": "shopping_page",
+      "action": "Click Shop button",
+      "observed_count": 2
+    },
+    {
+      "from_screen": "6epick_3742ca51",
+      "to_screen": "IndiGo_cab_booking",
+      "action": "Click Cabs with IndiGo button",
+      "observed_count": 2
+    },
+    {
+      "from_screen": "6epick_3742ca51",
+      "to_screen": "sightseeing_booking_page",
+      "action": "Click 50% off on Sight Seeing button",
+      "observed_count": 2
+    },
+    {
+      "from_screen": "6epick_3742ca51",
+      "to_screen": "hotel_booking_page",
+      "action": "Click Hotels on IndiGo button",
+      "observed_count": 2
+    },
+    {
+      "from_screen": "6epick_3742ca51",
+      "to_screen": "destination_packages_page",
+      "action": "Click Destination button",
+      "observed_count": 2
+    }
+  ],
+  "frontier": [
+    {
+      "description": "Flight booking form page",
+      "rationale": "Core functionality for completing flight reservations",
+      "provenance": "inferred_structure",
+      "priority": 0.9,
+      "search_strategy": "Navigate from homepage Book tab or search results"
+    },
+    {
+      "description": "Trips management page",
+      "rationale": "Essential for managing existing bookings and travel history",
+      "provenance": "inferred_structure",
+      "priority": 0.8,
+      "search_strategy": "Click Trips tab from homepage or navigation menu"
+    },
+    {
+      "description": "IndiGo BluChip loyalty program page",
+      "rationale": "Key differentiator and customer retention feature",
+      "provenance": "inferred_structure",
+      "priority": 0.8,
+      "search_strategy": "Click IndiGo BluChip tab or dropdown from navigation"
+    },
+    {
+      "description": "Working check-in page",
+      "rationale": "Critical functionality currently experiencing errors",
+      "provenance": "inferred_structure",
+      "priority": 0.8,
+      "search_strategy": "Try alternative routes or wait for technical resolution"
+    },
+    {
+      "description": "Shopping page with travel products",
+      "rationale": "Differentiating feature for additional revenue streams",
+      "provenance": "inferred_structure",
+      "priority": 0.7,
+      "search_strategy": "Click Shop button from 6EPick services page"
+    },
+    {
+      "description": "Login page",
+      "rationale": "Required for personalized services and account management",
+      "provenance": "inferred_structure",
+      "priority": 0.7,
+      "search_strategy": "Click Login button from homepage or navigation"
+    },
+    {
+      "description": "Flight status page",
+      "rationale": "Important operational feature for flight tracking",
+      "provenance": "inferred_structure",
+      "priority": 0.7,
+      "search_strategy": "Click flight status link from homepage"
+    },
+    {
+      "description": "Destination packages page",
+      "rationale": "Package deals and promotional offerings",
+      "provenance": "inferred_structure",
+      "priority": 0.6,
+      "search_strategy": "Click Destination button from 6EPick services page"
+    }
+  ],
+  "anomalies": [
+    {
+      "description": "Check-in functionality is currently unavailable due to protocol error",
+      "observation_id": "obs_81fec6ec",
+      "classification": "absent",
+      "exploration_priority_boost": 0.0
+    },
+    {
+      "description": "Website experiencing HTTP2 protocol errors preventing access",
+      "observation_id": "obs_81fec6ec",
+      "classification": "novel",
+      "exploration_priority_boost": 0.2
+    }
+  ],
+  "coverage_estimate": 0.55,
+  "confidence": 0.92
+}

@@ -1,0 +1,302 @@
+{
+  "observation_id": "obs_4b77143e",
+  "timestamp": "2026-04-06T06:46:00.237031",
+  "screenshot_path": "exploration/20260406-063355-41bf/step_013.png",
+  "ui_structure_path": "<body class=\"ycdc2 waas show_job\" bounds=\"[0,0][1280,3356]\">\n  <div id=\"WaasShowJobPage-react-component-54f179a0-e3fe-4ecb-a7fc-1873fedad3cc\" bounds=\"[0,0][1280,3356]\">\n    <div class=\"no-scroll-behind sticky top-0\" bounds=\"[0,0][1280,64]\">\n      <div bounds=\"[0,0][1280,64]\">\n        <header class=\"w-full bg-beige-light leading-tight\" bounds=\"[0,0][1280,64]\">\n          <nav class=\"relative hidden items-center\" bounds=\"[0,0][1280,64]\">\n            <div class=\"flex w-full max-w-[1400px]\" bounds=\"[20,12][1260,52]\">\n              <div class=\"flex shrink-0 items-center\" bounds=\"[620,12][660,52]\">\n                <a class=\"inline-block h-[40px] w-[40px]\" href=\"/\" bounds=\"[620,12][660,52]\" interactive=\"true\" />\n              </div>\n            </div>\n            <div class=\"absolute right-5 flex\" bounds=\"[1128,12][1260,52]\">\n              <a class=\"font-['Outfit',sans-serif] text-sm tracking-[0.3px]\" href=\"https://account.ycombinator.com/?continue=https://www.ycombinator.com/companies/mbodi-ai/jobs/mf9L3s\" bounds=\"[1128,22][1167,42]\" interactive=\"true\">Log in</a>\n              <a class=\"flex h-10 items-center\" href=\"/apply\" bounds=\"[1183,12][1260,52]\" interactive=\"true\">Apply</a>\n            </div>\n          </nav>\n        </header>\n      </div>\n    </div>\n    <div class=\"relative isolate z-0\" bounds=\"[0,64][1280,2863]\">\n      <div class=\"mx-auto max-w-ycdc-page px-4\" bounds=\"[90,100][1190,2827]\">\n        <div class=\"flex flex-col gap-8\" bounds=\"[106,100][1174,2827]\">\n          <div class=\"grow space-y-5\" bounds=\"[106,100][842,2827]\">\n            <div class=\"flex flex-row items-center\" bounds=\"[106,100][842,180]\">\n              <a class=\"mr-5 block grid\" bounds=\"[106,100][186,180]\" interactive=\"true\">\n                <img class=\"h-auto max-w-full rounded-full\" bounds=\"[106,100][186,180]\" interactive=\"true\" />\n              </a>\n              <div class=\"space-y-1\" bounds=\"[206,110][589,170]\">\n                <p bounds=\"[206,146][589,170]\">Industrial Robots that Learn and Operate Like Humans</p>\n              </div>\n            </div>\n            <div class=\"ycdc-card max-w-2xl\" bounds=\"[106,200][778,559]\">\n              <h1 class=\"ycdc-section-title mb-2\" bounds=\"[131,225][753,257]\">Senior Robotics Engineer (Systems & Controls)</h1>\n              <div class=\"flex flex-wrap items-center\" bounds=\"[131,265][753,289]\">\n                <span bounds=\"[131,265][239,289]\">$100K - $250K</span>\n                <span class=\"mx-2 text-sm text-gray-500\" bounds=\"[247,267][251,287]\">•</span>\n                <span bounds=\"[259,265][362,289]\">0.50% - 2.00%</span>\n                <span class=\"mx-2 text-sm text-gray-500\" bounds=\"[370,267][375,287]\">•</span>\n                <span bounds=\"[383,265][504,289]\">New York, NY, US</span>\n              </div>\n            </div>\n            <h2 class=\"ycdc-section-title\" bounds=\"[106,579][842,611]\">About the role</h2>\n            <div bounds=\"[106,631][842,2615]\">\n              <div class=\"prose max-w-full\" bounds=\"[106,631][842,2615]\">\n                <p bounds=\"[106,679][842,791]\">Join Mbodi AI (YC X25), an AI robotics startup founded by two former Googlers committed to pushing t</p>\n                <p>We are pioneering the next wave of robotics, where AI agents meet physical world applications. Backe</p>\n                <p>We’re looking for a to join our core team.</p>\n                <p>You will design and tune the systems that make robot behavior reliable under real-world constraints,</p>\n                <p>This is a hands-on role for someone equally comfortable with control design, motion behavior, hardwa</p>\n                <p>Salary: $100K – $250K</p>\n                <p>Equity: 0.50% – 2.00%</p>\n              </div>\n            </div>\n            <h2 class=\"ycdc-section-title\">About Mbodi AI</h2>\n            <div class=\"prose max-w-full\">\n              <p>Mbodi is an embodied AI platform that makes robots learn like humans, with natural language. So anyo</p>\n            </div>\n          </div>\n          <div bounds=\"[874,100][1174,2827]\">\n            <div class=\"ycdc-card-new space-y-1.5 w-full\" bounds=\"[874,100][1174,475]\">\n              <div class=\"mb-4 flex justify-center\" bounds=\"[899,125][1149,180]\">\n                <a class=\"block\" href=\"/companies/mbodi-ai\" bounds=\"[954,125][1094,180]\" interactive=\"true\" />\n              </div>\n            </div>\n            <div class=\"mb-2 mt-8 text-lg\" bounds=\"[874,507][1174,535]\">Founders</div>\n            <div class=\"ycdc-card mt-8 w-full\">\n              <div class=\"mb-3 border-b border-gray-300\">Similar Jobs</div>\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n    <footer class=\"bg-black text-beige-light\">\n      <h2 id=\"footer-heading\" class=\"sr-only\">Footer</h2>\n      <div class=\"mx-auto max-w-ycdc-page px-6\">\n        <div class=\"flex flex-col space-y-8\">\n          <div class=\"flex flex-col items-start\">\n            <div class=\"flex flex-row items-center\">\n              <a class=\"block h-[40px] w-[40px]\" href=\"/\" interactive=\"true\">\n                <span class=\"sr-only\" interactive=\"true\">Y Combinator</span>\n                <img class=\"h-full w-full\" interactive=\"true\" />\n              </a>\n              <h3 class=\"font-['Outfit',sans-serif] font-light text-base\">Make something people want.</h3>\n            </div>\n          </div>\n          <div class=\"grid grid-cols-2 items-start\">\n            <div>\n              <h3 class=\"font-medium tracking-wider text-sm\">Programs</h3>\n            </div>\n            <div>\n              <h3 class=\"font-medium tracking-wider text-sm\">Resources</h3>\n            </div>\n            <div>\n              <h3 class=\"font-medium tracking-wider text-sm\">Company</h3>\n            </div>\n          </div>\n        </div>\n        <div class=\"mt-8 border-t border-gray-200\">\n          <div class=\"flex space-x-6 md:order-2\">\n            <a class=\"text-[#f5f5ee]\" href=\"https://twitter.com/ycombinator\" interactive=\"true\">\n              <span class=\"sr-only\" interactive=\"true\">Twitter</span>\n            </a>\n            <a class=\"text-[#f5f5ee]\" href=\"https://www.facebook.com/YCombinator/\" interactive=\"true\">\n              <span class=\"sr-only\" interactive=\"true\">Facebook</span>\n            </a>\n            <a class=\"text-[#f5f5ee]\" href=\"https://www.instagram.com/ycombinator\" interactive=\"true\">\n              <span class=\"sr-only\" interactive=\"true\">Instagram</span>\n            </a>\n            <a class=\"text-[#f5f5ee]\" href=\"https://www.linkedin.com/school/y-combinator/\" interactive=\"true\">\n              <span class=\"sr-only\" interactive=\"true\">LinkedIn</span>\n            </a>\n            <a class=\"text-[#f5f5ee]\" href=\"https://www.youtube.com/c/ycombinator\" interactive=\"true\">\n              <span class=\"sr-only\" interactive=\"true\">Youtube</span>\n            </a>\n          </div>\n          <p class=\"mt-8 font-['Outfit',sans-serif] font-light\">© 2026 Y Combinator</p>\n        </div>\n      </div>\n    </footer>\n  </div>\n</body>\n",
+  "screen_purpose": "This is a job detail page for a Senior Robotics Engineer position at Mbodi AI, showing job details, company information, and founder profiles",
+  "screen_type": "detail",
+  "app_state": {
+    "logged_in": "no",
+    "current_section": "jobs",
+    "viewing_job": "mbodi_ai_robotics_engineer",
+    "company": "Mbodi AI"
+  },
+  "elements": [
+    {
+      "element_id": "elem_01",
+      "reference": {
+        "resource_id": null,
+        "text": "Y Combinator logo",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "top center header"
+      },
+      "element_type": "link",
+      "semantic_role": "Navigates to main Y Combinator homepage",
+      "label": "Y Combinator logo",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "tap"
+      ],
+      "inferred_destination": "Y Combinator homepage",
+      "confidence": 0.9
+    },
+    {
+      "element_id": "elem_02",
+      "reference": {
+        "resource_id": null,
+        "text": "Log in",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "top right header"
+      },
+      "element_type": "link",
+      "semantic_role": "Navigates to login page",
+      "label": "Log in",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "tap"
+      ],
+      "inferred_destination": "Login page",
+      "confidence": 0.95
+    },
+    {
+      "element_id": "elem_03",
+      "reference": {
+        "resource_id": null,
+        "text": "Apply",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "top right header"
+      },
+      "element_type": "button",
+      "semantic_role": "Initiates application process to Y Combinator",
+      "label": "Apply",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "tap"
+      ],
+      "inferred_destination": "Y Combinator application page",
+      "confidence": 0.95
+    },
+    {
+      "element_id": "elem_04",
+      "reference": {
+        "resource_id": null,
+        "text": "Mbodi AI company logo",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "left side below header"
+      },
+      "element_type": "link",
+      "semantic_role": "Navigates to Mbodi AI company profile page",
+      "label": "Mbodi AI company logo",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "tap"
+      ],
+      "inferred_destination": "Mbodi AI company page",
+      "confidence": 0.9
+    },
+    {
+      "element_id": "elem_05",
+      "reference": {
+        "resource_id": null,
+        "text": "Senior Robotics Engineer (Systems & Controls)",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "main content area, job card header"
+      },
+      "element_type": "text",
+      "semantic_role": "Displays job title",
+      "label": "Senior Robotics Engineer (Systems & Controls)",
+      "is_interactive": false,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [],
+      "inferred_destination": null,
+      "confidence": 0.95
+    },
+    {
+      "element_id": "elem_06",
+      "reference": {
+        "resource_id": null,
+        "text": "$100K - $250K • 0.50% - 2.00% • New York, NY, US",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "main content area, below job title"
+      },
+      "element_type": "text",
+      "semantic_role": "Displays job compensation and location details",
+      "label": "$100K - $250K • 0.50% - 2.00% • New York, NY, US",
+      "is_interactive": false,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [],
+      "inferred_destination": null,
+      "confidence": 0.95
+    },
+    {
+      "element_id": "elem_07",
+      "reference": {
+        "resource_id": null,
+        "text": "Apply to role ›",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "main content area, job card bottom"
+      },
+      "element_type": "button",
+      "semantic_role": "Initiates job application process for this specific role",
+      "label": "Apply to role ›",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "tap"
+      ],
+      "inferred_destination": "Job application form",
+      "confidence": 0.95
+    },
+    {
+      "element_id": "elem_08",
+      "reference": {
+        "resource_id": null,
+        "text": "Xavier (Tianhao) Chi - Founder",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "main content area, founder section"
+      },
+      "element_type": "text",
+      "semantic_role": "Displays founder profile information",
+      "label": "Xavier (Tianhao) Chi - Founder",
+      "is_interactive": false,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [],
+      "inferred_destination": null,
+      "confidence": 0.9
+    },
+    {
+      "element_id": "elem_09",
+      "reference": {
+        "resource_id": null,
+        "text": "Mbodi AI",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "right sidebar, company info section"
+      },
+      "element_type": "link",
+      "semantic_role": "Navigates to Mbodi AI company profile page",
+      "label": "Mbodi AI",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "tap"
+      ],
+      "inferred_destination": "Mbodi AI company page",
+      "confidence": 0.9
+    },
+    {
+      "element_id": "elem_10",
+      "reference": {
+        "resource_id": null,
+        "text": "Founded: 2024",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "right sidebar, company details"
+      },
+      "element_type": "text",
+      "semantic_role": "Displays company founding year",
+      "label": "Founded: 2024",
+      "is_interactive": false,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [],
+      "inferred_destination": null,
+      "confidence": 0.95
+    },
+    {
+      "element_id": "elem_11",
+      "reference": {
+        "resource_id": null,
+        "text": "Batch: P25",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "right sidebar, company details"
+      },
+      "element_type": "text",
+      "semantic_role": "Displays Y Combinator batch information",
+      "label": "Batch: P25",
+      "is_interactive": false,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [],
+      "inferred_destination": null,
+      "confidence": 0.95
+    },
+    {
+      "element_id": "elem_12",
+      "reference": {
+        "resource_id": null,
+        "text": "Team Size: 6",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "right sidebar, company details"
+      },
+      "element_type": "text",
+      "semantic_role": "Displays company team size",
+      "label": "Team Size: 6",
+      "is_interactive": false,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [],
+      "inferred_destination": null,
+      "confidence": 0.95
+    },
+    {
+      "element_id": "elem_13",
+      "reference": {
+        "resource_id": null,
+        "text": "Status: Active",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "right sidebar, company details"
+      },
+      "element_type": "text",
+      "semantic_role": "Displays company status",
+      "label": "Status: Active",
+      "is_interactive": false,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [],
+      "inferred_destination": null,
+      "confidence": 0.95
+    }
+  ],
+  "navigation_context": {
+    "arrived_from": null,
+    "arrival_action": null,
+    "visible_navigation": [
+      "Y Combinator logo",
+      "Log in",
+      "Apply"
+    ],
+    "active_navigation": null,
+    "back_available": true,
+    "inferred_depth": 2
+  },
+  "confidence": 0.92,
+  "raw_ai_response": "```json\n{\n  \"screen_purpose\": \"This is a job detail page for a Senior Robotics Engineer position at Mbodi AI, showing job details, company information, and founder profiles\",\n  \"screen_type\": \"detail\",\n  \"app_state\": {\n    \"logged_in\": \"no\",\n    \"current_section\": \"jobs\",\n    \"viewing_job\": \"mbodi_ai_robotics_engineer\",\n    \"company\": \"Mbodi AI\"\n  },\n  \"elements\": [\n    {\n      \"element_id\": \"elem_01\",\n      \"element_type\": \"link\",\n      \"semantic_role\": \"Navigates to main Y Combinator homepage\",\n      \"label\": \"Y Combinator logo\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"tap\"],\n      \"inferred_destination\": \"Y Combinator homepage\",\n      \"bounds_description\": \"top center header\",\n      \"confidence\": 0.9\n    },\n    {\n      \"element_id\": \"elem_02\",\n      \"element_type\": \"link\",\n      \"semantic_role\": \"Navigates to login page\",\n      \"label\": \"Log in\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"tap\"],\n      \"inferred_destination\": \"Login page\",\n      \"bounds_description\": \"top right header\",\n      \"confidence\": 0.95\n    },\n    {\n      \"element_id\": \"elem_03\",\n      \"element_type\": \"button\",\n      \"semantic_role\": \"Initiates application process to Y Combinator\",\n      \"label\": \"Apply\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"tap\"],\n      \"inferred_destination\": \"Y Combinator application page\",\n      \"bounds_description\": \"top right header\",\n      \"confidence\": 0.95\n    },\n    {\n      \"element_id\": \"elem_04\",\n      \"element_type\": \"link\",\n      \"semantic_role\": \"Navigates to Mbodi AI company profile page\",\n      \"label\": \"Mbodi AI company logo\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"tap\"],\n      \"inferred_destination\": \"Mbodi AI company page\",\n      \"bounds_description\": \"left side below header\",\n      \"confidence\": 0.9\n    },\n    {\n      \"element_id\": \"elem_05\",\n      \"element_type\": \"text\",\n      \"semantic_role\": \"Displays job title\",\n      \"label\": \"Senior Robotics Engineer (Systems & Controls)\",\n      \"is_interactive\": false,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [],\n      \"inferred_destination\": null,\n      \"bounds_description\": \"main content area, job card header\",\n      \"confidence\": 0.95\n    },\n    {\n      \"element_id\": \"elem_06\",\n      \"element_type\": \"text\",\n      \"semantic_role\": \"Displays job compensation and location details\",\n      \"label\": \"$100K - $250K • 0.50% - 2.00% • New York, NY, US\",\n      \"is_interactive\": false,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [],\n      \"inferred_destination\": null,\n      \"bounds_description\": \"main content area, below job title\",\n      \"confidence\": 0.95\n    },\n    {\n      \"element_id\": \"elem_07\",\n      \"element_type\": \"button\",\n      \"semantic_role\": \"Initiates job application process for this specific role\",\n      \"label\": \"Apply to role ›\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"tap\"],\n      \"inferred_destination\": \"Job application form\",\n      \"bounds_description\": \"main content area, job card bottom\",\n      \"confidence\": 0.95\n    },\n    {\n      \"element_id\": \"elem_08\",\n      \"element_type\": \"text\",\n      \"semantic_role\": \"Displays founder profile information\",\n      \"label\": \"Xavier (Tianhao) Chi - Founder\",\n      \"is_interactive\": false,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [],\n      \"inferred_destination\": null,\n      \"bounds_description\": \"main content area, founder section\",\n      \"confidence\": 0.9\n    },\n    {\n      \"element_id\": \"elem_09\",\n      \"element_type\": \"link\",\n      \"semantic_role\": \"Navigates to Mbodi AI company profile page\",\n      \"label\": \"Mbodi AI\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"tap\"],\n      \"inferred_destination\": \"Mbodi AI company page\",\n      \"bounds_description\": \"right sidebar, company info section\",\n      \"confidence\": 0.9\n    },\n    {\n      \"element_id\": \"elem_10\",\n      \"element_type\": \"text\",\n      \"semantic_role\": \"Displays company founding year\",\n      \"label\": \"Founded: 2024\",\n      \"is_interactive\": false,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [],\n      \"inferred_destination\": null,\n      \"bounds_description\": \"right sidebar, company details\",\n      \"confidence\": 0.95\n    },\n    {\n      \"element_id\": \"elem_11\",\n      \"element_type\": \"text\",\n      \"semantic_role\": \"Displays Y Combinator batch information\",\n      \"label\": \"Batch: P25\",\n      \"is_interactive\": false,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [],\n      \"inferred_destination\": null,\n      \"bounds_description\": \"right sidebar, company details\",\n      \"confidence\": 0.95\n    },\n    {\n      \"element_id\": \"elem_12\",\n      \"element_type\": \"text\",\n      \"semantic_role\": \"Displays company team size\",\n      \"label\": \"Team Size: 6\",\n      \"is_interactive\": false,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [],\n      \"inferred_destination\": null,\n      \"bounds_description\": \"right sidebar, company details\",\n      \"confidence\": 0.95\n    },\n    {\n      \"element_id\": \"elem_13\",\n      \"element_type\": \"text\",\n      \"semantic_role\": \"Displays company status\",\n      \"label\": \"Status: Active\",\n      \"is_interactive\": false,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [],\n      \"inferred_destination\": null,\n      \"bounds_description\": \"right sidebar, company details\",\n      \"confidence\": 0.95\n    }\n  ],\n  \"navigation_context\": {\n    \"visible_navigation\": [\"Y Combinator logo\", \"Log in\", \"Apply\"],\n    \"active_navigation\": null,\n    \"back_available\": true,\n    \"inferred_depth\": 2\n  },\n  \"confidence\": 0.92\n}\n```"
+}

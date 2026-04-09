@@ -1,0 +1,165 @@
+{
+  "app_reference": {
+    "package_name": null,
+    "app_store_url": null,
+    "bundle_path": null,
+    "web_url": "https://goindigo.in",
+    "name": "Indigo",
+    "description": null,
+    "baseline": null,
+    "differentiation": null,
+    "credentials": null
+  },
+  "model_version": 50,
+  "domain": "travel booking",
+  "purpose": "Facilitate flight booking and travel planning",
+  "baseline_category": "travel booking",
+  "differentiators": [
+    "Flight booking form with multiple fields",
+    "Date selection for departure and return",
+    "Passenger selection for flights",
+    "Promotes various deals and offers for IndiGo services"
+  ],
+  "entities": [
+    {
+      "name": "Flight Booking",
+      "description": "The process of booking flights",
+      "provenance": "observed"
+    },
+    {
+      "name": "Hotel Booking",
+      "description": "The process of booking hotels",
+      "provenance": "observed"
+    },
+    {
+      "name": "Sightseeing",
+      "description": "The process of arranging sightseeing activities",
+      "provenance": "observed"
+    }
+  ],
+  "capabilities": [
+    {
+      "name": "Flight Booking",
+      "description": "The ability to book flights",
+      "estimated_importance": 0.8,
+      "estimated_frequency": 0.7,
+      "is_differentiator": false,
+      "provenance": "observed"
+    },
+    {
+      "name": "Hotel Booking",
+      "description": "The ability to book hotels",
+      "estimated_importance": 0.8,
+      "estimated_frequency": 0.7,
+      "is_differentiator": false,
+      "provenance": "observed"
+    },
+    {
+      "name": "Sightseeing",
+      "description": "The ability to arrange sightseeing activities",
+      "estimated_importance": 0.8,
+      "estimated_frequency": 0.7,
+      "is_differentiator": false,
+      "provenance": "observed"
+    }
+  ],
+  "screens": [
+    {
+      "screen_id": "[flight_booking_page]",
+      "name": "Flight Booking Page",
+      "screen_type": "unknown",
+      "purpose": "The screen for booking flights",
+      "participates_in": [
+        "Flight Booking"
+      ],
+      "visit_count": 48,
+      "last_observation_id": ""
+    },
+    {
+      "screen_id": "[home_screen]",
+      "name": "Home Screen",
+      "screen_type": "unknown",
+      "purpose": "The main screen for accessing different booking options",
+      "participates_in": [
+        "Flight Booking",
+        "Hotel Booking",
+        "Sightseeing"
+      ],
+      "visit_count": 48,
+      "last_observation_id": ""
+    },
+    {
+      "screen_id": "[hotel_sightseeing_screen]",
+      "name": "Hotel and Sightseeing Options Screen",
+      "screen_type": "unknown",
+      "purpose": "The screen for exploring hotel and sightseeing options",
+      "participates_in": [
+        "Hotel Booking",
+        "Sightseeing"
+      ],
+      "visit_count": 43,
+      "last_observation_id": ""
+    },
+    {
+      "screen_id": "[hotel_booking_page]",
+      "name": "Hotel Booking Page",
+      "screen_type": "unknown",
+      "purpose": "The screen for booking hotels",
+      "participates_in": [
+        "Hotel Booking"
+      ],
+      "visit_count": 28,
+      "last_observation_id": ""
+    },
+    {
+      "screen_id": "[sightseeing_options_page]",
+      "name": "Sightseeing Options Page",
+      "screen_type": "unknown",
+      "purpose": "The screen for arranging sightseeing activities",
+      "participates_in": [
+        "Sightseeing"
+      ],
+      "visit_count": 28,
+      "last_observation_id": ""
+    },
+    {
+      "screen_id": "[new_screen]",
+      "name": "Hotel and Sightseeing Options Screen",
+      "screen_type": "unknown",
+      "purpose": "The screen for exploring hotel and sightseeing options",
+      "participates_in": [
+        "Hotel Booking",
+        "Sightseeing"
+      ],
+      "visit_count": 37,
+      "last_observation_id": ""
+    }
+  ],
+  "transitions": [
+    {
+      "from_screen": "[flight_booking_page]",
+      "to_screen": "[flight_booking_page]",
+      "action": "submit",
+      "observed_count": 48
+    }
+  ],
+  "frontier": [
+    {
+      "description": "Explore the 'Hotels' and 'Sight Seeing' sections",
+      "rationale": "These sections are likely to contain more details about hotel booking and sightseeing options",
+      "provenance": "inferred_structure",
+      "priority": 0.7,
+      "search_strategy": "Look for more detailed information on hotel booking and sightseeing options"
+    }
+  ],
+  "anomalies": [
+    {
+      "description": "The app promotes deals and offers for IndiGo services on the home screen",
+      "observation_id": "obs_ead1a251",
+      "classification": "novel",
+      "exploration_priority_boost": 0.3
+    }
+  ],
+  "coverage_estimate": 0.3,
+  "confidence": 0.5
+}

@@ -1,0 +1,391 @@
+{
+  "observation_id": "obs_71ae0521",
+  "timestamp": "2026-04-06T11:01:34.537579",
+  "screenshot_path": "exploration/20260406-105808-ad1a/step_004.png",
+  "ui_structure_path": "<body id=\"homepage-50dd57bc89\" class=\"homepage basepage page\" bounds=\"[0,0][1280,5059]\">\n  <div id=\"btn\" class=\"btn\" interactive=\"true\" />\n</body>\n",
+  "screen_purpose": "This is the main homepage for IndiGo airline booking, allowing users to search for flights, hotels, and sightseeing options with a flight search form as the primary interface",
+  "screen_type": "home",
+  "app_state": {
+    "logged_in": "unknown",
+    "selected_trip_type": "one_way",
+    "departure_city": "Delhi, DEL",
+    "destination_city": "not_selected",
+    "departure_date": "7 Apr Tuesday",
+    "passengers": "1 Passenger",
+    "payment_method": "Cash",
+    "active_tab": "flights"
+  },
+  "elements": [
+    {
+      "element_id": "elem_01",
+      "reference": {
+        "resource_id": null,
+        "text": "Flights",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "left section of tab bar"
+      },
+      "element_type": "tab",
+      "semantic_role": "Selects flight booking interface",
+      "label": "Flights",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": true,
+      "possible_actions": [
+        "tap"
+      ],
+      "inferred_destination": "flight search interface",
+      "confidence": 0.95
+    },
+    {
+      "element_id": "elem_02",
+      "reference": {
+        "resource_id": null,
+        "text": "Hotels",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "center section of tab bar"
+      },
+      "element_type": "tab",
+      "semantic_role": "Switches to hotel booking interface",
+      "label": "Hotels",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "tap"
+      ],
+      "inferred_destination": "hotel search interface",
+      "confidence": 0.95
+    },
+    {
+      "element_id": "elem_03",
+      "reference": {
+        "resource_id": null,
+        "text": "Sight Seeing",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "right section of tab bar"
+      },
+      "element_type": "tab",
+      "semantic_role": "Switches to sightseeing booking interface",
+      "label": "Sight Seeing",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "tap"
+      ],
+      "inferred_destination": "sightseeing search interface",
+      "confidence": 0.95
+    },
+    {
+      "element_id": "elem_04",
+      "reference": {
+        "resource_id": null,
+        "text": "One Way",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "left side of trip type selection"
+      },
+      "element_type": "radio_button",
+      "semantic_role": "Selects one-way trip type",
+      "label": "One Way",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": true,
+      "possible_actions": [
+        "tap"
+      ],
+      "inferred_destination": null,
+      "confidence": 0.95
+    },
+    {
+      "element_id": "elem_05",
+      "reference": {
+        "resource_id": null,
+        "text": "Round Trip",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "center of trip type selection"
+      },
+      "element_type": "radio_button",
+      "semantic_role": "Selects round trip type",
+      "label": "Round Trip",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "tap"
+      ],
+      "inferred_destination": null,
+      "confidence": 0.95
+    },
+    {
+      "element_id": "elem_06",
+      "reference": {
+        "resource_id": null,
+        "text": "Multi City",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "right side of trip type selection"
+      },
+      "element_type": "radio_button",
+      "semantic_role": "Selects multi-city trip type",
+      "label": "Multi City",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "tap"
+      ],
+      "inferred_destination": null,
+      "confidence": 0.95
+    },
+    {
+      "element_id": "elem_07",
+      "reference": {
+        "resource_id": null,
+        "text": "Delhi, DEL",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "left side of route selection"
+      },
+      "element_type": "text_field",
+      "semantic_role": "Shows selected departure city and allows changing it",
+      "label": "Delhi, DEL",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "tap"
+      ],
+      "inferred_destination": "city selection interface",
+      "confidence": 0.9
+    },
+    {
+      "element_id": "elem_08",
+      "reference": {
+        "resource_id": null,
+        "text": "Going to?",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "right side of route selection"
+      },
+      "element_type": "text_field",
+      "semantic_role": "Allows user to select destination city",
+      "label": "Going to?",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "tap",
+        "type"
+      ],
+      "inferred_destination": "destination search interface",
+      "confidence": 0.9
+    },
+    {
+      "element_id": "elem_09",
+      "reference": {
+        "resource_id": null,
+        "text": "7 Apr Tuesday",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "left side of date selection"
+      },
+      "element_type": "text_field",
+      "semantic_role": "Shows selected departure date and allows changing it",
+      "label": "7 Apr Tuesday",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "tap"
+      ],
+      "inferred_destination": "date picker",
+      "confidence": 0.9
+    },
+    {
+      "element_id": "elem_10",
+      "reference": {
+        "resource_id": null,
+        "text": "1 Passenger",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "right side of passenger selection"
+      },
+      "element_type": "text_field",
+      "semantic_role": "Shows passenger count and allows changing it",
+      "label": "1 Passenger",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "tap"
+      ],
+      "inferred_destination": "passenger selection interface",
+      "confidence": 0.9
+    },
+    {
+      "element_id": "elem_11",
+      "reference": {
+        "resource_id": null,
+        "text": "Search",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "bottom right of search form"
+      },
+      "element_type": "button",
+      "semantic_role": "Initiates flight search with current parameters",
+      "label": "Search",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "tap"
+      ],
+      "inferred_destination": "flight search results",
+      "confidence": 0.95
+    },
+    {
+      "element_id": "elem_12",
+      "reference": {
+        "resource_id": null,
+        "text": "Cash",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "bottom left of search form"
+      },
+      "element_type": "dropdown",
+      "semantic_role": "Selects payment method",
+      "label": "Cash",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "tap"
+      ],
+      "inferred_destination": "payment method selection",
+      "confidence": 0.9
+    },
+    {
+      "element_id": "elem_13",
+      "reference": {
+        "resource_id": null,
+        "text": "One click away",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "bottom section shortcuts"
+      },
+      "element_type": "link",
+      "semantic_role": "Navigates to one-click flight booking feature",
+      "label": "One click away",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "tap"
+      ],
+      "inferred_destination": "quick booking interface",
+      "confidence": 0.85
+    },
+    {
+      "element_id": "elem_14",
+      "reference": {
+        "resource_id": null,
+        "text": "Compensation",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "bottom section shortcuts"
+      },
+      "element_type": "link",
+      "semantic_role": "Navigates to flight compensation information",
+      "label": "Compensation",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "tap"
+      ],
+      "inferred_destination": "compensation details page",
+      "confidence": 0.85
+    },
+    {
+      "element_id": "elem_15",
+      "reference": {
+        "resource_id": null,
+        "text": "Cancelled flights",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "bottom section shortcuts"
+      },
+      "element_type": "link",
+      "semantic_role": "Navigates to cancelled flights information",
+      "label": "Cancelled flights",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "tap"
+      ],
+      "inferred_destination": "cancelled flights page",
+      "confidence": 0.85
+    },
+    {
+      "element_id": "elem_16",
+      "reference": {
+        "resource_id": null,
+        "text": "Accept Cookies",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "bottom cookie banner"
+      },
+      "element_type": "button",
+      "semantic_role": "Accepts cookies policy",
+      "label": "Accept Cookies",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "tap"
+      ],
+      "inferred_destination": null,
+      "confidence": 0.9
+    }
+  ],
+  "navigation_context": {
+    "arrived_from": null,
+    "arrival_action": null,
+    "visible_navigation": [
+      "Book",
+      "Trips",
+      "Check-in",
+      "6EPick",
+      "IndiGo BluChip",
+      "Tariff Sheet",
+      "Login"
+    ],
+    "active_navigation": null,
+    "back_available": false,
+    "inferred_depth": 0
+  },
+  "confidence": 0.92,
+  "raw_ai_response": "```json\n{\n  \"screen_purpose\": \"This is the main homepage for IndiGo airline booking, allowing users to search for flights, hotels, and sightseeing options with a flight search form as the primary interface\",\n  \"screen_type\": \"home\",\n  \"app_state\": {\n    \"logged_in\": \"unknown\",\n    \"selected_trip_type\": \"one_way\",\n    \"departure_city\": \"Delhi, DEL\",\n    \"destination_city\": \"not_selected\",\n    \"departure_date\": \"7 Apr Tuesday\",\n    \"passengers\": \"1 Passenger\",\n    \"payment_method\": \"Cash\",\n    \"active_tab\": \"flights\"\n  },\n  \"elements\": [\n    {\n      \"element_id\": \"elem_01\",\n      \"element_type\": \"tab\",\n      \"semantic_role\": \"Selects flight booking interface\",\n      \"label\": \"Flights\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": true,\n      \"possible_actions\": [\"tap\"],\n      \"inferred_destination\": \"flight search interface\",\n      \"bounds_description\": \"left section of tab bar\",\n      \"confidence\": 0.95\n    },\n    {\n      \"element_id\": \"elem_02\",\n      \"element_type\": \"tab\",\n      \"semantic_role\": \"Switches to hotel booking interface\",\n      \"label\": \"Hotels\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"tap\"],\n      \"inferred_destination\": \"hotel search interface\",\n      \"bounds_description\": \"center section of tab bar\",\n      \"confidence\": 0.95\n    },\n    {\n      \"element_id\": \"elem_03\",\n      \"element_type\": \"tab\",\n      \"semantic_role\": \"Switches to sightseeing booking interface\",\n      \"label\": \"Sight Seeing\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"tap\"],\n      \"inferred_destination\": \"sightseeing search interface\",\n      \"bounds_description\": \"right section of tab bar\",\n      \"confidence\": 0.95\n    },\n    {\n      \"element_id\": \"elem_04\",\n      \"element_type\": \"radio_button\",\n      \"semantic_role\": \"Selects one-way trip type\",\n      \"label\": \"One Way\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": true,\n      \"possible_actions\": [\"tap\"],\n      \"inferred_destination\": null,\n      \"bounds_description\": \"left side of trip type selection\",\n      \"confidence\": 0.95\n    },\n    {\n      \"element_id\": \"elem_05\",\n      \"element_type\": \"radio_button\",\n      \"semantic_role\": \"Selects round trip type\",\n      \"label\": \"Round Trip\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"tap\"],\n      \"inferred_destination\": null,\n      \"bounds_description\": \"center of trip type selection\",\n      \"confidence\": 0.95\n    },\n    {\n      \"element_id\": \"elem_06\",\n      \"element_type\": \"radio_button\",\n      \"semantic_role\": \"Selects multi-city trip type\",\n      \"label\": \"Multi City\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"tap\"],\n      \"inferred_destination\": null,\n      \"bounds_description\": \"right side of trip type selection\",\n      \"confidence\": 0.95\n    },\n    {\n      \"element_id\": \"elem_07\",\n      \"element_type\": \"text_field\",\n      \"semantic_role\": \"Shows selected departure city and allows changing it\",\n      \"label\": \"Delhi, DEL\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"tap\"],\n      \"inferred_destination\": \"city selection interface\",\n      \"bounds_description\": \"left side of route selection\",\n      \"confidence\": 0.9\n    },\n    {\n      \"element_id\": \"elem_08\",\n      \"element_type\": \"text_field\",\n      \"semantic_role\": \"Allows user to select destination city\",\n      \"label\": \"Going to?\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"tap\", \"type\"],\n      \"inferred_destination\": \"destination search interface\",\n      \"bounds_description\": \"right side of route selection\",\n      \"confidence\": 0.9\n    },\n    {\n      \"element_id\": \"elem_09\",\n      \"element_type\": \"text_field\",\n      \"semantic_role\": \"Shows selected departure date and allows changing it\",\n      \"label\": \"7 Apr Tuesday\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"tap\"],\n      \"inferred_destination\": \"date picker\",\n      \"bounds_description\": \"left side of date selection\",\n      \"confidence\": 0.9\n    },\n    {\n      \"element_id\": \"elem_10\",\n      \"element_type\": \"text_field\",\n      \"semantic_role\": \"Shows passenger count and allows changing it\",\n      \"label\": \"1 Passenger\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"tap\"],\n      \"inferred_destination\": \"passenger selection interface\",\n      \"bounds_description\": \"right side of passenger selection\",\n      \"confidence\": 0.9\n    },\n    {\n      \"element_id\": \"elem_11\",\n      \"element_type\": \"button\",\n      \"semantic_role\": \"Initiates flight search with current parameters\",\n      \"label\": \"Search\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"tap\"],\n      \"inferred_destination\": \"flight search results\",\n      \"bounds_description\": \"bottom right of search form\",\n      \"confidence\": 0.95\n    },\n    {\n      \"element_id\": \"elem_12\",\n      \"element_type\": \"dropdown\",\n      \"semantic_role\": \"Selects payment method\",\n      \"label\": \"Cash\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"tap\"],\n      \"inferred_destination\": \"payment method selection\",\n      \"bounds_description\": \"bottom left of search form\",\n      \"confidence\": 0.9\n    },\n    {\n      \"element_id\": \"elem_13\",\n      \"element_type\": \"link\",\n      \"semantic_role\": \"Navigates to one-click flight booking feature\",\n      \"label\": \"One click away\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"tap\"],\n      \"inferred_destination\": \"quick booking interface\",\n      \"bounds_description\": \"bottom section shortcuts\",\n      \"confidence\": 0.85\n    },\n    {\n      \"element_id\": \"elem_14\",\n      \"element_type\": \"link\",\n      \"semantic_role\": \"Navigates to flight compensation information\",\n      \"label\": \"Compensation\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"tap\"],\n      \"inferred_destination\": \"compensation details page\",\n      \"bounds_description\": \"bottom section shortcuts\",\n      \"confidence\": 0.85\n    },\n    {\n      \"element_id\": \"elem_15\",\n      \"element_type\": \"link\",\n      \"semantic_role\": \"Navigates to cancelled flights information\",\n      \"label\": \"Cancelled flights\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"tap\"],\n      \"inferred_destination\": \"cancelled flights page\",\n      \"bounds_description\": \"bottom section shortcuts\",\n      \"confidence\": 0.85\n    },\n    {\n      \"element_id\": \"elem_16\",\n      \"element_type\": \"button\",\n      \"semantic_role\": \"Accepts cookies policy\",\n      \"label\": \"Accept Cookies\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"tap\"],\n      \"inferred_destination\": null,\n      \"bounds_description\": \"bottom cookie banner\",\n      \"confidence\": 0.9\n    }\n  ],\n  \"navigation_context\": {\n    \"visible_navigation\": [\"Book\", \"Trips\", \"Check-in\", \"6EPick\", \"IndiGo BluChip\", \"Tariff Sheet\", \"Login\"],\n    \"active_navigation\": null,\n    \"back_available\": false,\n    \"inferred_depth\": 0\n  },\n  \"confidence\": 0.92\n}\n```"
+}

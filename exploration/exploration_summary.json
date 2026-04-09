@@ -1,0 +1,21 @@
+{
+  "app": "Hacker News",
+  "total_actions": 1,
+  "duration_seconds": 63.2,
+  "stop_reason": "Error: 1 validation error for ScreenObservation\napp_state.story_count\n  Input should be a valid string [type=string_type, input_value=22, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.12/v/string_type",
+  "model_version": 1,
+  "screens_discovered": 1,
+  "transitions_discovered": 0,
+  "capabilities": 7,
+  "coverage_estimate": 0.2,
+  "confidence": 0.8,
+  "steps": [
+    {
+      "step": 1,
+      "screen": "This is the main Hacker News homepage displaying a ranked list of technology news stories and discussions",
+      "action": "Tap on the 'new' tab to navigate to the newest stories page",
+      "goal": "Explore the New stories page (newest submissions) frontier item to understand how story filtering and browsing works",
+      "success": true
+    }
+  ]
+}

@@ -1,0 +1,364 @@
+{
+  "observation_id": "obs_3da4fd56",
+  "timestamp": "2026-04-06T11:12:59.999906",
+  "screenshot_path": "exploration/20260406-105808-ad1a/step_014.png",
+  "ui_structure_path": "<body id=\"homepage-50dd57bc89\" class=\"homepage basepage page\" bounds=\"[0,-240][1280,4721]\">\n  <div id=\"btn\" class=\"btn\" interactive=\"true\" />\n</body>\n",
+  "screen_purpose": "This is the main homepage for IndiGo airline booking and travel services, displaying promotional offers and deals for flights, hotels, sightseeing, and destination packages",
+  "screen_type": "home",
+  "app_state": {
+    "logged_in": "unknown",
+    "travel_alert_active": "yes",
+    "offers_loaded": "yes",
+    "cookies_consent_pending": "yes"
+  },
+  "elements": [
+    {
+      "element_id": "elem_01",
+      "reference": {
+        "resource_id": null,
+        "text": "here",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "top banner area"
+      },
+      "element_type": "link",
+      "semantic_role": "Provides flight status information for Iran and Middle East travel restrictions",
+      "label": "here",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "tap"
+      ],
+      "inferred_destination": "Flight status page or travel advisory details",
+      "confidence": 0.9
+    },
+    {
+      "element_id": "elem_02",
+      "reference": {
+        "resource_id": null,
+        "text": "Book",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "top navigation bar"
+      },
+      "element_type": "dropdown",
+      "semantic_role": "Opens booking options menu for flights, hotels, and other services",
+      "label": "Book",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "tap"
+      ],
+      "inferred_destination": "Booking form or booking options menu",
+      "confidence": 0.95
+    },
+    {
+      "element_id": "elem_03",
+      "reference": {
+        "resource_id": null,
+        "text": "Trips",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "top navigation bar"
+      },
+      "element_type": "dropdown",
+      "semantic_role": "Opens trip management options for existing bookings",
+      "label": "Trips",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "tap"
+      ],
+      "inferred_destination": "Trip management page",
+      "confidence": 0.95
+    },
+    {
+      "element_id": "elem_04",
+      "reference": {
+        "resource_id": null,
+        "text": "Check-in",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "top navigation bar"
+      },
+      "element_type": "link",
+      "semantic_role": "Navigates to online check-in process",
+      "label": "Check-in",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "tap"
+      ],
+      "inferred_destination": "Check-in form",
+      "confidence": 0.95
+    },
+    {
+      "element_id": "elem_05",
+      "reference": {
+        "resource_id": null,
+        "text": "6EPick",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "top navigation bar"
+      },
+      "element_type": "dropdown",
+      "semantic_role": "Opens 6EPick shopping marketplace for travel items and electronics",
+      "label": "6EPick",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "tap"
+      ],
+      "inferred_destination": "6EPick shopping marketplace",
+      "confidence": 0.95
+    },
+    {
+      "element_id": "elem_06",
+      "reference": {
+        "resource_id": null,
+        "text": "IndiGo BluChip",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "top navigation bar"
+      },
+      "element_type": "dropdown",
+      "semantic_role": "Opens IndiGo BluChip loyalty program options",
+      "label": "IndiGo BluChip",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "tap"
+      ],
+      "inferred_destination": "BluChip loyalty program page",
+      "confidence": 0.95
+    },
+    {
+      "element_id": "elem_07",
+      "reference": {
+        "resource_id": null,
+        "text": "Tariff Sheet",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "top navigation bar"
+      },
+      "element_type": "link",
+      "semantic_role": "Navigates to tariff and pricing information",
+      "label": "Tariff Sheet",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "tap"
+      ],
+      "inferred_destination": "Tariff and pricing page",
+      "confidence": 0.95
+    },
+    {
+      "element_id": "elem_08",
+      "reference": {
+        "resource_id": null,
+        "text": "Login",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "top navigation bar"
+      },
+      "element_type": "dropdown",
+      "semantic_role": "Opens login options or user account menu",
+      "label": "Login",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "tap"
+      ],
+      "inferred_destination": "Login form or user account page",
+      "confidence": 0.95
+    },
+    {
+      "element_id": "elem_09",
+      "reference": {
+        "resource_id": null,
+        "text": "ads and Offers",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "right side vertical button"
+      },
+      "element_type": "button",
+      "semantic_role": "Provides customer support or help options",
+      "label": "ads and Offers",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "tap"
+      ],
+      "inferred_destination": "Customer support or help page",
+      "confidence": 0.85
+    },
+    {
+      "element_id": "elem_10",
+      "reference": {
+        "resource_id": null,
+        "text": "Cabs with IndiGo",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "promotional offers section, left card"
+      },
+      "element_type": "button",
+      "semantic_role": "Promotes cab booking service with confirmed rides and free cancellation",
+      "label": "Cabs with IndiGo",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "tap"
+      ],
+      "inferred_destination": "Cab booking service page",
+      "confidence": 0.9
+    },
+    {
+      "element_id": "elem_11",
+      "reference": {
+        "resource_id": null,
+        "text": "50% off on Sight Seeing",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "promotional offers section, second card"
+      },
+      "element_type": "button",
+      "semantic_role": "Promotes 50% discount on sightseeing tours and activities",
+      "label": "50% off on Sight Seeing",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "tap"
+      ],
+      "inferred_destination": "Sightseeing booking page with discounted tours",
+      "confidence": 0.9
+    },
+    {
+      "element_id": "elem_12",
+      "reference": {
+        "resource_id": null,
+        "text": "Hotels on IndiGo",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "promotional offers section, third card"
+      },
+      "element_type": "button",
+      "semantic_role": "Promotes hotel booking through IndiGo with BluChips redemption",
+      "label": "Hotels on IndiGo",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "tap"
+      ],
+      "inferred_destination": "Hotel booking page",
+      "confidence": 0.9
+    },
+    {
+      "element_id": "elem_13",
+      "reference": {
+        "resource_id": null,
+        "text": "Destination of the week",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "promotional offers section, right card"
+      },
+      "element_type": "button",
+      "semantic_role": "Promotes destination of the week with 10% discount on international destinations",
+      "label": "Destination of the week",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "tap"
+      ],
+      "inferred_destination": "Featured destination booking page",
+      "confidence": 0.9
+    },
+    {
+      "element_id": "elem_14",
+      "reference": {
+        "resource_id": null,
+        "text": "×",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "bottom cookies banner, left side"
+      },
+      "element_type": "button",
+      "semantic_role": "Dismisses the cookies consent notification",
+      "label": "×",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "tap"
+      ],
+      "inferred_destination": "Dismisses notification",
+      "confidence": 0.95
+    },
+    {
+      "element_id": "elem_15",
+      "reference": {
+        "resource_id": null,
+        "text": "Accept Cookies",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "bottom cookies banner, right side"
+      },
+      "element_type": "button",
+      "semantic_role": "Accepts cookies policy to continue using the website",
+      "label": "Accept Cookies",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "tap"
+      ],
+      "inferred_destination": "Accepts cookies and dismisses banner",
+      "confidence": 0.95
+    }
+  ],
+  "navigation_context": {
+    "arrived_from": null,
+    "arrival_action": null,
+    "visible_navigation": [
+      "Book",
+      "Trips",
+      "Check-in",
+      "6EPick",
+      "IndiGo BluChip",
+      "Tariff Sheet",
+      "Login"
+    ],
+    "active_navigation": null,
+    "back_available": false,
+    "inferred_depth": 0
+  },
+  "confidence": 0.92,
+  "raw_ai_response": "```json\n{\n  \"screen_purpose\": \"This is the main homepage for IndiGo airline booking and travel services, displaying promotional offers and deals for flights, hotels, sightseeing, and destination packages\",\n  \"screen_type\": \"home\",\n  \"app_state\": {\n    \"logged_in\": \"unknown\",\n    \"travel_alert_active\": \"yes\",\n    \"offers_loaded\": \"yes\",\n    \"cookies_consent_pending\": \"yes\"\n  },\n  \"elements\": [\n    {\n      \"element_id\": \"elem_01\",\n      \"element_type\": \"link\",\n      \"semantic_role\": \"Provides flight status information for Iran and Middle East travel restrictions\",\n      \"label\": \"here\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"tap\"],\n      \"inferred_destination\": \"Flight status page or travel advisory details\",\n      \"bounds_description\": \"top banner area\",\n      \"confidence\": 0.9\n    },\n    {\n      \"element_id\": \"elem_02\",\n      \"element_type\": \"dropdown\",\n      \"semantic_role\": \"Opens booking options menu for flights, hotels, and other services\",\n      \"label\": \"Book\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"tap\"],\n      \"inferred_destination\": \"Booking form or booking options menu\",\n      \"bounds_description\": \"top navigation bar\",\n      \"confidence\": 0.95\n    },\n    {\n      \"element_id\": \"elem_03\",\n      \"element_type\": \"dropdown\",\n      \"semantic_role\": \"Opens trip management options for existing bookings\",\n      \"label\": \"Trips\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"tap\"],\n      \"inferred_destination\": \"Trip management page\",\n      \"bounds_description\": \"top navigation bar\",\n      \"confidence\": 0.95\n    },\n    {\n      \"element_id\": \"elem_04\",\n      \"element_type\": \"link\",\n      \"semantic_role\": \"Navigates to online check-in process\",\n      \"label\": \"Check-in\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"tap\"],\n      \"inferred_destination\": \"Check-in form\",\n      \"bounds_description\": \"top navigation bar\",\n      \"confidence\": 0.95\n    },\n    {\n      \"element_id\": \"elem_05\",\n      \"element_type\": \"dropdown\",\n      \"semantic_role\": \"Opens 6EPick shopping marketplace for travel items and electronics\",\n      \"label\": \"6EPick\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"tap\"],\n      \"inferred_destination\": \"6EPick shopping marketplace\",\n      \"bounds_description\": \"top navigation bar\",\n      \"confidence\": 0.95\n    },\n    {\n      \"element_id\": \"elem_06\",\n      \"element_type\": \"dropdown\",\n      \"semantic_role\": \"Opens IndiGo BluChip loyalty program options\",\n      \"label\": \"IndiGo BluChip\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"tap\"],\n      \"inferred_destination\": \"BluChip loyalty program page\",\n      \"bounds_description\": \"top navigation bar\",\n      \"confidence\": 0.95\n    },\n    {\n      \"element_id\": \"elem_07\",\n      \"element_type\": \"link\",\n      \"semantic_role\": \"Navigates to tariff and pricing information\",\n      \"label\": \"Tariff Sheet\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"tap\"],\n      \"inferred_destination\": \"Tariff and pricing page\",\n      \"bounds_description\": \"top navigation bar\",\n      \"confidence\": 0.95\n    },\n    {\n      \"element_id\": \"elem_08\",\n      \"element_type\": \"dropdown\",\n      \"semantic_role\": \"Opens login options or user account menu\",\n      \"label\": \"Login\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"tap\"],\n      \"inferred_destination\": \"Login form or user account page\",\n      \"bounds_description\": \"top navigation bar\",\n      \"confidence\": 0.95\n    },\n    {\n      \"element_id\": \"elem_09\",\n      \"element_type\": \"button\",\n      \"semantic_role\": \"Provides customer support or help options\",\n      \"label\": \"ads and Offers\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"tap\"],\n      \"inferred_destination\": \"Customer support or help page\",\n      \"bounds_description\": \"right side vertical button\",\n      \"confidence\": 0.85\n    },\n    {\n      \"element_id\": \"elem_10\",\n      \"element_type\": \"button\",\n      \"semantic_role\": \"Promotes cab booking service with confirmed rides and free cancellation\",\n      \"label\": \"Cabs with IndiGo\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"tap\"],\n      \"inferred_destination\": \"Cab booking service page\",\n      \"bounds_description\": \"promotional offers section, left card\",\n      \"confidence\": 0.9\n    },\n    {\n      \"element_id\": \"elem_11\",\n      \"element_type\": \"button\",\n      \"semantic_role\": \"Promotes 50% discount on sightseeing tours and activities\",\n      \"label\": \"50% off on Sight Seeing\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"tap\"],\n      \"inferred_destination\": \"Sightseeing booking page with discounted tours\",\n      \"bounds_description\": \"promotional offers section, second card\",\n      \"confidence\": 0.9\n    },\n    {\n      \"element_id\": \"elem_12\",\n      \"element_type\": \"button\",\n      \"semantic_role\": \"Promotes hotel booking through IndiGo with BluChips redemption\",\n      \"label\": \"Hotels on IndiGo\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"tap\"],\n      \"inferred_destination\": \"Hotel booking page\",\n      \"bounds_description\": \"promotional offers section, third card\",\n      \"confidence\": 0.9\n    },\n    {\n      \"element_id\": \"elem_13\",\n      \"element_type\": \"button\",\n      \"semantic_role\": \"Promotes destination of the week with 10% discount on international destinations\",\n      \"label\": \"Destination of the week\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"tap\"],\n      \"inferred_destination\": \"Featured destination booking page\",\n      \"bounds_description\": \"promotional offers section, right card\",\n      \"confidence\": 0.9\n    },\n    {\n      \"element_id\": \"elem_14\",\n      \"element_type\": \"button\",\n      \"semantic_role\": \"Dismisses the cookies consent notification\",\n      \"label\": \"×\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"tap\"],\n      \"inferred_destination\": \"Dismisses notification\",\n      \"bounds_description\": \"bottom cookies banner, left side\",\n      \"confidence\": 0.95\n    },\n    {\n      \"element_id\": \"elem_15\",\n      \"element_type\": \"button\",\n      \"semantic_role\": \"Accepts cookies policy to continue using the website\",\n      \"label\": \"Accept Cookies\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"tap\"],\n      \"inferred_destination\": \"Accepts cookies and dismisses banner\",\n      \"bounds_description\": \"bottom cookies banner, right side\",\n      \"confidence\": 0.95\n    }\n  ],\n  \"navigation_context\": {\n    \"visible_navigation\": [\"Book\", \"Trips\", \"Check-in\", \"6EPick\", \"IndiGo BluChip\", \"Tariff Sheet\", \"Login\"],\n    \"active_navigation\": null,\n    \"back_available\": false,\n    \"inferred_depth\": 0\n  },\n  \"confidence\": 0.92\n}\n```"
+}

@@ -1,0 +1,541 @@
+{
+  "app_reference": {
+    "package_name": null,
+    "app_store_url": null,
+    "bundle_path": null,
+    "web_url": "https://news.ycombinator.com",
+    "name": "Hacker News",
+    "description": null,
+    "baseline": null,
+    "differentiation": null,
+    "credentials": null
+  },
+  "model_version": 14,
+  "domain": "news aggregation and discussion",
+  "purpose": "Hacker News is a social news website focused on technology and startup content where users can submit, vote on, and discuss stories.",
+  "baseline_category": "social news aggregator",
+  "differentiators": [
+    "Technology and startup focus",
+    "Community-driven voting system",
+    "Minimalist design",
+    "Strong emphasis on discussion quality"
+  ],
+  "entities": [
+    {
+      "name": "story",
+      "description": "News articles, links, and discussions submitted by users",
+      "provenance": "observed"
+    },
+    {
+      "name": "user",
+      "description": "Registered members who can submit, vote, and comment",
+      "provenance": "observed"
+    },
+    {
+      "name": "comment",
+      "description": "User responses and discussions on stories",
+      "provenance": "observed"
+    },
+    {
+      "name": "job",
+      "description": "Job postings in the technology sector",
+      "provenance": "observed"
+    }
+  ],
+  "capabilities": [
+    {
+      "name": "browse_stories",
+      "description": "View ranked list of stories on homepage",
+      "estimated_importance": 0.9,
+      "estimated_frequency": 0.9,
+      "is_differentiator": false,
+      "provenance": "observed"
+    },
+    {
+      "name": "vote_on_content",
+      "description": "Upvote stories and comments",
+      "estimated_importance": 0.8,
+      "estimated_frequency": 0.7,
+      "is_differentiator": false,
+      "provenance": "observed"
+    },
+    {
+      "name": "submit_stories",
+      "description": "Submit new stories and links",
+      "estimated_importance": 0.7,
+      "estimated_frequency": 0.3,
+      "is_differentiator": false,
+      "provenance": "observed"
+    },
+    {
+      "name": "search_content",
+      "description": "Search through Hacker News content",
+      "estimated_importance": 0.6,
+      "estimated_frequency": 0.4,
+      "is_differentiator": false,
+      "provenance": "observed"
+    },
+    {
+      "name": "view_comments",
+      "description": "Read comments and discussions on stories",
+      "estimated_importance": 0.8,
+      "estimated_frequency": 0.6,
+      "is_differentiator": false,
+      "provenance": "observed"
+    },
+    {
+      "name": "post_comments",
+      "description": "Write comments and participate in discussions",
+      "estimated_importance": 0.8,
+      "estimated_frequency": 0.5,
+      "is_differentiator": false,
+      "provenance": "observed"
+    },
+    {
+      "name": "user_authentication",
+      "description": "Login and register user accounts",
+      "estimated_importance": 0.7,
+      "estimated_frequency": 0.2,
+      "is_differentiator": false,
+      "provenance": "observed"
+    },
+    {
+      "name": "browse_newest_stories",
+      "description": "View newest submitted stories",
+      "estimated_importance": 0.8,
+      "estimated_frequency": 0.6,
+      "is_differentiator": false,
+      "provenance": "observed"
+    },
+    {
+      "name": "browse_past_stories",
+      "description": "View stories from previous days, months, years",
+      "estimated_importance": 0.5,
+      "estimated_frequency": 0.2,
+      "is_differentiator": false,
+      "provenance": "observed"
+    },
+    {
+      "name": "browse_recent_comments",
+      "description": "View recently posted comments across all stories",
+      "estimated_importance": 0.6,
+      "estimated_frequency": 0.3,
+      "is_differentiator": false,
+      "provenance": "observed"
+    },
+    {
+      "name": "browse_ask_hn",
+      "description": "View Ask HN questions and discussions",
+      "estimated_importance": 0.7,
+      "estimated_frequency": 0.4,
+      "is_differentiator": true,
+      "provenance": "observed"
+    },
+    {
+      "name": "browse_show_hn",
+      "description": "View Show HN project showcases",
+      "estimated_importance": 0.7,
+      "estimated_frequency": 0.3,
+      "is_differentiator": true,
+      "provenance": "observed"
+    },
+    {
+      "name": "browse_jobs",
+      "description": "View job postings",
+      "estimated_importance": 0.6,
+      "estimated_frequency": 0.2,
+      "is_differentiator": false,
+      "provenance": "observed"
+    },
+    {
+      "name": "view_user_profiles",
+      "description": "View user profiles and activity",
+      "estimated_importance": 0.5,
+      "estimated_frequency": 0.2,
+      "is_differentiator": false,
+      "provenance": "observed"
+    },
+    {
+      "name": "password_recovery",
+      "description": "Reset forgotten passwords",
+      "estimated_importance": 0.4,
+      "estimated_frequency": 0.1,
+      "is_differentiator": false,
+      "provenance": "observed"
+    }
+  ],
+  "screens": [
+    {
+      "screen_id": "homepage",
+      "name": "Homepage",
+      "screen_type": "home",
+      "purpose": "Main landing page showing ranked technology news stories",
+      "participates_in": [
+        "browse_stories",
+        "vote_on_content",
+        "search_content",
+        "submit_stories",
+        "user_authentication"
+      ],
+      "visit_count": 14,
+      "last_observation_id": "obs_6d3668e1"
+    },
+    {
+      "screen_id": "newest_stories",
+      "name": "Newest Stories",
+      "screen_type": "list",
+      "purpose": "Display newest submitted stories chronologically",
+      "participates_in": [
+        "browse_newest_stories",
+        "vote_on_content",
+        "search_content",
+        "submit_stories",
+        "user_authentication"
+      ],
+      "visit_count": 13,
+      "last_observation_id": "obs_6e9a3950"
+    },
+    {
+      "screen_id": "story_detail",
+      "name": "Story Detail",
+      "screen_type": "detail",
+      "purpose": "Show individual story with comments and discussion",
+      "participates_in": [
+        "view_comments",
+        "post_comments",
+        "vote_on_content",
+        "search_content",
+        "user_authentication"
+      ],
+      "visit_count": 12,
+      "last_observation_id": "obs_d3b23849"
+    },
+    {
+      "screen_id": "ask_hn",
+      "name": "Ask HN",
+      "screen_type": "list",
+      "purpose": "Display Ask HN questions and discussions",
+      "participates_in": [
+        "browse_ask_hn",
+        "vote_on_content",
+        "search_content",
+        "submit_stories",
+        "user_authentication"
+      ],
+      "visit_count": 11,
+      "last_observation_id": "obs_6e9a3950"
+    },
+    {
+      "screen_id": "show_hn",
+      "name": "Show HN",
+      "screen_type": "list",
+      "purpose": "Display Show HN project showcases",
+      "participates_in": [
+        "browse_show_hn",
+        "vote_on_content",
+        "search_content",
+        "submit_stories",
+        "user_authentication"
+      ],
+      "visit_count": 10,
+      "last_observation_id": "obs_6e9a3950"
+    },
+    {
+      "screen_id": "jobs",
+      "name": "Jobs",
+      "screen_type": "list",
+      "purpose": "Display job postings in technology sector",
+      "participates_in": [
+        "browse_jobs",
+        "search_content",
+        "user_authentication"
+      ],
+      "visit_count": 9,
+      "last_observation_id": "obs_6e9a3950"
+    },
+    {
+      "screen_id": "past_stories",
+      "name": "Past Stories",
+      "screen_type": "list",
+      "purpose": "Browse stories from previous time periods",
+      "participates_in": [
+        "browse_past_stories",
+        "vote_on_content",
+        "search_content",
+        "user_authentication"
+      ],
+      "visit_count": 8,
+      "last_observation_id": "obs_6e9a3950"
+    },
+    {
+      "screen_id": "recent_comments",
+      "name": "Recent Comments",
+      "screen_type": "list",
+      "purpose": "Display recently posted comments across all stories",
+      "participates_in": [
+        "browse_recent_comments",
+        "view_comments",
+        "user_authentication",
+        "view_user_profiles"
+      ],
+      "visit_count": 7,
+      "last_observation_id": "obs_6e9a3950"
+    },
+    {
+      "screen_id": "login_registration",
+      "name": "Login/Registration",
+      "screen_type": "form",
+      "purpose": "User authentication and account creation",
+      "participates_in": [
+        "user_authentication",
+        "password_recovery"
+      ],
+      "visit_count": 6,
+      "last_observation_id": "obs_10442234"
+    },
+    {
+      "screen_id": "password_reset",
+      "name": "Password Reset",
+      "screen_type": "form",
+      "purpose": "Request password reset for forgotten passwords",
+      "participates_in": [
+        "password_recovery"
+      ],
+      "visit_count": 5,
+      "last_observation_id": "obs_10442234"
+    },
+    {
+      "screen_id": "password_reset_confirmation",
+      "name": "Password Reset Confirmation",
+      "screen_type": "confirmation",
+      "purpose": "Confirm password reset request submission",
+      "participates_in": [
+        "password_recovery"
+      ],
+      "visit_count": 2,
+      "last_observation_id": ""
+    }
+  ],
+  "transitions": [
+    {
+      "from_screen": "newest_stories",
+      "to_screen": "homepage",
+      "action": "Navigate to main page via tab",
+      "observed_count": 13
+    },
+    {
+      "from_screen": "story_detail",
+      "to_screen": "homepage",
+      "action": "Navigate to Hacker News homepage",
+      "observed_count": 12
+    },
+    {
+      "from_screen": "story_detail",
+      "to_screen": "newest_stories",
+      "action": "Navigate to newest stories via new tab",
+      "observed_count": 12
+    },
+    {
+      "from_screen": "ask_hn",
+      "to_screen": "homepage",
+      "action": "Navigate to Hacker News homepage",
+      "observed_count": 11
+    },
+    {
+      "from_screen": "ask_hn",
+      "to_screen": "newest_stories",
+      "action": "Navigate to newest stories via new tab",
+      "observed_count": 11
+    },
+    {
+      "from_screen": "ask_hn",
+      "to_screen": "story_detail",
+      "action": "Click on Ask HN story to view details",
+      "observed_count": 11
+    },
+    {
+      "from_screen": "show_hn",
+      "to_screen": "newest_stories",
+      "action": "Navigate to new stories section via tab",
+      "observed_count": 10
+    },
+    {
+      "from_screen": "show_hn",
+      "to_screen": "story_detail",
+      "action": "Click on Show HN project to view details",
+      "observed_count": 10
+    },
+    {
+      "from_screen": "jobs",
+      "to_screen": "newest_stories",
+      "action": "Navigate to newest stories via new tab",
+      "observed_count": 9
+    },
+    {
+      "from_screen": "jobs",
+      "to_screen": "ask_hn",
+      "action": "Navigate to Ask HN via ask tab",
+      "observed_count": 9
+    },
+    {
+      "from_screen": "jobs",
+      "to_screen": "show_hn",
+      "action": "Navigate to Show HN via show tab",
+      "observed_count": 9
+    },
+    {
+      "from_screen": "past_stories",
+      "to_screen": "homepage",
+      "action": "Navigate to Hacker News homepage",
+      "observed_count": 8
+    },
+    {
+      "from_screen": "past_stories",
+      "to_screen": "newest_stories",
+      "action": "Navigate to new stories section via tab",
+      "observed_count": 8
+    },
+    {
+      "from_screen": "past_stories",
+      "to_screen": "story_detail",
+      "action": "Click on story to view details",
+      "observed_count": 8
+    },
+    {
+      "from_screen": "past_stories",
+      "to_screen": "past_stories",
+      "action": "Navigate to different time period (day/month/year)",
+      "observed_count": 8
+    },
+    {
+      "from_screen": "recent_comments",
+      "to_screen": "homepage",
+      "action": "Navigate to Hacker News homepage",
+      "observed_count": 7
+    },
+    {
+      "from_screen": "recent_comments",
+      "to_screen": "newest_stories",
+      "action": "Navigate to new stories section via tab",
+      "observed_count": 7
+    },
+    {
+      "from_screen": "recent_comments",
+      "to_screen": "past_stories",
+      "action": "Navigate to past stories section via tab",
+      "observed_count": 7
+    },
+    {
+      "from_screen": "recent_comments",
+      "to_screen": "ask_hn",
+      "action": "Navigate to Ask HN section via tab",
+      "observed_count": 7
+    },
+    {
+      "from_screen": "recent_comments",
+      "to_screen": "show_hn",
+      "action": "Navigate to Show HN section via tab",
+      "observed_count": 7
+    },
+    {
+      "from_screen": "recent_comments",
+      "to_screen": "jobs",
+      "action": "Navigate to jobs section via tab",
+      "observed_count": 7
+    },
+    {
+      "from_screen": "login_registration",
+      "to_screen": "password_reset",
+      "action": "Click forgot password link to recover account",
+      "observed_count": 5
+    },
+    {
+      "from_screen": "password_reset",
+      "to_screen": "password_reset_confirmation",
+      "action": "Submit password reset request",
+      "observed_count": 2
+    },
+    {
+      "from_screen": "homepage",
+      "to_screen": "newest_stories",
+      "action": "Navigate to new stories page",
+      "observed_count": 1
+    },
+    {
+      "from_screen": "homepage",
+      "to_screen": "past_stories",
+      "action": "Navigate to past stories page",
+      "observed_count": 1
+    },
+    {
+      "from_screen": "homepage",
+      "to_screen": "recent_comments",
+      "action": "Navigate to comments page",
+      "observed_count": 1
+    },
+    {
+      "from_screen": "homepage",
+      "to_screen": "ask_hn",
+      "action": "Navigate to ask page for user questions",
+      "observed_count": 1
+    },
+    {
+      "from_screen": "homepage",
+      "to_screen": "show_hn",
+      "action": "Navigate to show page for user projects",
+      "observed_count": 1
+    },
+    {
+      "from_screen": "homepage",
+      "to_screen": "jobs",
+      "action": "Navigate to jobs page",
+      "observed_count": 1
+    },
+    {
+      "from_screen": "homepage",
+      "to_screen": "login_registration",
+      "action": "Navigate to user login page",
+      "observed_count": 1
+    }
+  ],
+  "frontier": [
+    {
+      "description": "Submit story page",
+      "rationale": "Submit link observed on homepage but destination not yet explored",
+      "provenance": "inferred_structure",
+      "priority": 0.8,
+      "search_strategy": "Click submit link from homepage"
+    },
+    {
+      "description": "Search results page",
+      "rationale": "Search field observed on homepage but results page not yet explored",
+      "provenance": "inferred_structure",
+      "priority": 0.7,
+      "search_strategy": "Enter search query and submit from homepage search field"
+    },
+    {
+      "description": "User profile page after login",
+      "rationale": "User authentication confirmed but logged-in user experience not fully explored",
+      "provenance": "inferred_structure",
+      "priority": 0.6,
+      "search_strategy": "Login and explore user-specific features and profile"
+    },
+    {
+      "description": "Job detail pages",
+      "rationale": "Jobs listing exists but individual job postings not yet explored",
+      "provenance": "inferred_structure",
+      "priority": 0.5,
+      "search_strategy": "Click on individual job postings from jobs page"
+    },
+    {
+      "description": "Comment context and parent views",
+      "rationale": "Comments system exists but threading and context navigation not fully mapped",
+      "provenance": "inferred_structure",
+      "priority": 0.4,
+      "search_strategy": "Explore comment threading and parent/child relationships"
+    }
+  ],
+  "anomalies": [],
+  "coverage_estimate": 0.96,
+  "confidence": 0.98
+}

@@ -1,0 +1,78 @@
+{
+  "app_reference": {
+    "package_name": null,
+    "app_store_url": null,
+    "bundle_path": null,
+    "web_url": "https://goindigo.in",
+    "name": "Indigo",
+    "description": null,
+    "baseline": null,
+    "differentiation": null,
+    "credentials": null
+  },
+  "model_version": 1,
+  "domain": "travel booking",
+  "purpose": "Facilitate flight booking and travel planning",
+  "baseline_category": null,
+  "differentiators": [
+    "Flight booking functionality",
+    "Travel planning features"
+  ],
+  "entities": [
+    {
+      "name": "Flight",
+      "description": "A flight booking entity with details such as departure and destination locations, dates, and number of passengers",
+      "provenance": "observed"
+    }
+  ],
+  "capabilities": [
+    {
+      "name": "Flight Booking",
+      "description": "Allows users to plan and book flights",
+      "estimated_importance": 0.8,
+      "estimated_frequency": 0.7,
+      "is_differentiator": true,
+      "provenance": "observed"
+    }
+  ],
+  "screens": [
+    {
+      "screen_id": "flight_booking_page",
+      "name": "Flight Booking Page",
+      "screen_type": "form",
+      "purpose": "Allows users to plan a journey by entering departure and destination locations, selecting dates, and specifying the number of passengers",
+      "participates_in": [
+        "Flight Booking"
+      ],
+      "visit_count": 1,
+      "last_observation_id": "obs_26e56140"
+    }
+  ],
+  "transitions": [
+    {
+      "from_screen": "flight_booking_page",
+      "to_screen": "search_results_page",
+      "action": "Search for flights",
+      "observed_count": 1
+    }
+  ],
+  "frontier": [
+    {
+      "description": "Explore the 'Hotels' and 'Sight Seeing' sections to confirm their existence and functionality",
+      "rationale": "These sections are typically found in travel booking apps and their absence suggests they might be missing or not yet implemented",
+      "provenance": "inferred_structure",
+      "priority": 0.7,
+      "search_strategy": "Check the navigation menu for 'Hotels' and 'Sight Seeing' options"
+    }
+  ],
+  "anomalies": [
+    {
+      "description": "The app does not have a 'Hotels' or 'Sight Seeing' section in the navigation menu, which is expected for a travel booking app",
+      "observation_id": "obs_26e56140",
+      "classification": "absent",
+      "exploration_priority_boost": 0.3
+    }
+  ],
+  "coverage_estimate": 0.3,
+  "confidence": 0.5
+}

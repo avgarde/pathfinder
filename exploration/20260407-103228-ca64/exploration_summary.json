@@ -1,0 +1,269 @@
+{
+  "run_id": "20260407-103228-ca64",
+  "run_dir": "exploration/20260407-103228-ca64",
+  "app": "Cricinfo",
+  "total_actions": 29,
+  "duration_seconds": 4308.8,
+  "stop_reason": "The screen is stuck in a loop and has no actionable elements to interact with.",
+  "model_version": 28,
+  "screens_discovered": 8,
+  "transitions_discovered": 12,
+  "capabilities": 5,
+  "coverage_estimate": 0.3,
+  "confidence": 0.5,
+  "inputs_required": [],
+  "flows": [
+    {
+      "flow_id": "flow_001",
+      "goal": "Browse and read cricket match details",
+      "category": "core",
+      "importance": 0.8,
+      "status": "validated",
+      "steps": 4
+    },
+    {
+      "flow_id": "flow_002",
+      "goal": "Search for cricket statistics",
+      "category": "core",
+      "importance": 0.8,
+      "status": "validated",
+      "steps": 3
+    },
+    {
+      "flow_id": "flow_003",
+      "goal": "View cricket team rankings",
+      "category": "core",
+      "importance": 0.8,
+      "status": "validated",
+      "steps": 2
+    },
+    {
+      "flow_id": "flow_004",
+      "goal": "View cricket player rankings",
+      "category": "core",
+      "importance": 0.8,
+      "status": "validated",
+      "steps": 2
+    },
+    {
+      "flow_id": "flow_005",
+      "goal": "Search for cricket-related information",
+      "category": "core",
+      "importance": 0.8,
+      "status": "validated",
+      "steps": 3
+    }
+  ],
+  "steps": [
+    {
+      "step": 1,
+      "screen": "This screen displays upcoming cricket matches and provides navigation to various cricket-related sections.",
+      "action": "Navigate to the Ask Cricinfo section",
+      "goal": "Explore the Ask Cricinfo section to understand its functionality.",
+      "success": true
+    },
+    {
+      "step": 2,
+      "screen": "This screen is for searching and retrieving cricket statistics and information.",
+      "action": "Type 'Test' into the search text field",
+      "goal": "Explore the Ask Cricinfo section to understand its functionality.",
+      "success": false
+    },
+    {
+      "step": 3,
+      "screen": "This screen is for searching and retrieving cricket statistics and information.",
+      "action": "Type the suggested search query to explore the app's search functionality",
+      "goal": "To explore the search functionality and gather more information about the app's capabilities.",
+      "success": true
+    },
+    {
+      "step": 4,
+      "screen": "This screen displays the most runs conceded by spinners in a team innings in T20Is.",
+      "action": "Navigate to the Ask Cricinfo section to explore its functionality",
+      "goal": "Explore the Ask Cricinfo section to understand its functionality.",
+      "success": true
+    },
+    {
+      "step": 5,
+      "screen": "This screen displays the most runs conceded by spinners in a team innings in T20Is.",
+      "action": "Navigate to the Ask Cricinfo section to explore its functionality",
+      "goal": "Explore the Ask Cricinfo section to understand its functionality",
+      "success": true
+    },
+    {
+      "step": 6,
+      "screen": "This screen displays the most runs conceded by spinners in a team innings in T20Is.",
+      "action": "Navigate to the Ask Cricinfo section to explore its functionality",
+      "goal": "Explore the Ask Cricinfo section to understand its functionality.",
+      "success": true
+    },
+    {
+      "step": 7,
+      "screen": "This screen displays the most runs conceded by spinners in a team innings in T20Is.",
+      "action": "Navigate to the Ask Cricinfo section to explore its functionality",
+      "goal": "Explore the Ask Cricinfo section to understand its functionality.",
+      "success": true
+    },
+    {
+      "step": 8,
+      "screen": "This screen displays the most runs conceded by spinners in a team innings in T20Is.",
+      "action": "Navigate to the Ask Cricinfo section to explore its functionality",
+      "goal": "Explore the Ask Cricinfo section to understand its functionality.",
+      "success": true
+    },
+    {
+      "step": 9,
+      "screen": "This screen displays the most runs conceded by spinners in a team innings in T20Is.",
+      "action": "Navigate to the Ask Cricinfo section to explore its functionality",
+      "goal": "Explore the Ask Cricinfo section to understand its functionality",
+      "success": true
+    },
+    {
+      "step": 10,
+      "screen": "This screen displays the most runs conceded by spinners in a team innings in T20Is.",
+      "action": "Navigate to the Ask Cricinfo section to explore its functionality",
+      "goal": "Explore the Ask Cricinfo section to understand its functionality",
+      "success": true
+    },
+    {
+      "step": 11,
+      "screen": "This screen displays the most runs conceded by spinners in a team innings in T20Is.",
+      "action": "Click on the first cricket match in the list to view more details.",
+      "goal": "Explore the details of a cricket match to understand the app's functionality and content.",
+      "success": true
+    },
+    {
+      "step": 12,
+      "screen": "This screen displays the most runs conceded by spinners in a team innings in T20Is.",
+      "action": "Click on the first cricket match to view more details",
+      "goal": "Explore the details of a cricket match to understand the app's functionality.",
+      "success": true
+    },
+    {
+      "step": 13,
+      "screen": "This screen displays the most runs conceded by spinners in a team innings in T20Is.",
+      "action": "Navigate to the Ask Cricinfo section to explore its functionality",
+      "goal": "Explore the Ask Cricinfo section to understand its functionality.",
+      "success": true
+    },
+    {
+      "step": 14,
+      "screen": "This screen displays the most runs conceded by spinners in a team innings in T20Is.",
+      "action": "Navigate to the Ask Cricinfo section to explore its functionality",
+      "goal": "Explore the Ask Cricinfo section to understand its functionality",
+      "success": true
+    },
+    {
+      "step": 15,
+      "screen": "This screen displays the most runs conceded by spinners in a team innings in T20Is.",
+      "action": "Click on the 'View more details about the cricket match' button to explore the details of a cricket match",
+      "goal": "To explore the functionality of viewing more details about a cricket match, which is part of the 'Browse Cricket Matches' capability.",
+      "success": true
+    },
+    {
+      "step": 16,
+      "screen": "This screen displays the most runs conceded by spinners in a team innings in T20Is.",
+      "action": "Forced back \u2014 stuck on list|3|list_item,list_item,list_item",
+      "goal": "Escape stuck state",
+      "success": true
+    },
+    {
+      "step": 17,
+      "screen": "This screen is for searching and exploring cricket statistics and questions.",
+      "action": "Click on the search suggestion for most runs conceded by spinners in a team innings in T20Is",
+      "goal": "Explore the search functionality and see if it leads to a new screen or further exploration.",
+      "success": true
+    },
+    {
+      "step": 18,
+      "screen": "This screen is for searching and exploring cricket statistics and questions.",
+      "action": "Click on the suggestion for most runs conceded by spinners in a team innings in T20Is to explore the search results",
+      "goal": "To explore the search functionality and see how it leads to new screens or content.",
+      "success": true
+    },
+    {
+      "step": 19,
+      "screen": "This screen is for searching and exploring cricket statistics and questions.",
+      "action": "Click on the 'Ask Cricinfo' button to explore its functionality",
+      "goal": "Explore the Ask Cricinfo section to understand its functionality.",
+      "success": true
+    },
+    {
+      "step": 20,
+      "screen": "Failed to parse AI response",
+      "action": "Navigate away from the current screen as it is an unknown type and requires user input.",
+      "goal": "Explore the Ask Cricinfo section to understand its functionality.",
+      "success": true
+    },
+    {
+      "step": 21,
+      "screen": "This screen is for searching and exploring cricket statistics.",
+      "action": "Click on the suggestion for most runs conceded by spinners in a team innings in T20Is to explore the search results",
+      "goal": "To explore the search functionality and gather more information about the app's capabilities.",
+      "success": true
+    },
+    {
+      "step": 22,
+      "screen": "This screen is for searching and exploring cricket statistics.",
+      "action": "Click on the suggestion for most runs conceded by spinners in a team innings in T20Is to explore the search results",
+      "goal": "To explore the search functionality and gather more information about the app's capabilities.",
+      "success": true
+    },
+    {
+      "step": 23,
+      "screen": "This screen is for searching and exploring cricket statistics.",
+      "action": "Click on the 'Ask Cricinfo' button to explore its functionality",
+      "goal": "Explore the Ask Cricinfo section to understand its functionality.",
+      "success": true
+    },
+    {
+      "step": 24,
+      "screen": "This screen is for searching and exploring cricket statistics.",
+      "action": "Click on the 'Ask Cricinfo' button to explore its functionality",
+      "goal": "Explore the Ask Cricinfo section to understand its functionality.",
+      "success": true
+    },
+    {
+      "step": 25,
+      "screen": "This screen is for searching and exploring cricket statistics.",
+      "action": "Forced back \u2014 stuck on search|6|list_item,list_item,list_item,list_item,list_item,text_field",
+      "goal": "Escape stuck state",
+      "success": true
+    },
+    {
+      "step": 26,
+      "screen": "This screen is for displaying upcoming cricket matches and providing navigation to different cricket-related sections.",
+      "action": "Click on the 'Ask Cricinfo' button to explore its functionality",
+      "goal": "Explore the Ask Cricinfo section to understand its functionality.",
+      "success": true
+    },
+    {
+      "step": 27,
+      "screen": "This screen is for displaying upcoming cricket matches and providing navigation to different cricket-related sections.",
+      "action": "Navigate to the Ask Cricinfo section",
+      "goal": "Explore the Ask Cricinfo section to understand its functionality.",
+      "success": true
+    },
+    {
+      "step": 28,
+      "screen": "This screen is for searching and exploring cricket statistics and related queries.",
+      "action": "Type a search query for cricket statistics",
+      "goal": "To explore the search functionality and gather more information about cricket statistics.",
+      "success": false
+    },
+    {
+      "step": 29,
+      "screen": "This screen is for searching and exploring cricket statistics and related queries.",
+      "action": "Type 'Test Matches' into the search field to explore the Ask Cricinfo section",
+      "goal": "To explore the Ask Cricinfo section and understand its functionality.",
+      "success": false
+    },
+    {
+      "step": 30,
+      "screen": "This screen is for searching and exploring cricket statistics and related queries.",
+      "action": "STOP",
+      "goal": "Explore other parts of the app to find unexplored areas.",
+      "success": null
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "observation_id": "obs_18bf9e08",
+  "timestamp": "2026-04-07T04:57:57.342127",
+  "screenshot_path": "exploration/20260407-045326-3b03/step_006.png",
+  "ui_structure_path": "<body id=\"homepage-50dd57bc89\" class=\"homepage basepage page\" bounds=\"[0,-240][1280,4721]\">\n  <div id=\"btn\" class=\"btn\" interactive=\"true\" />\n</body>\n",
+  "screen_purpose": "Promotes various deals and offers for IndiGo services.",
+  "screen_type": "home",
+  "app_state": {
+    "logged_in": "no",
+    "cart_items": "0"
+  },
+  "elements": [
+    {
+      "element_id": "elem_01",
+      "reference": {
+        "resource_id": null,
+        "text": "Cabs with IndiGo",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "top-left"
+      },
+      "element_type": "image",
+      "semantic_role": "Promotes IndiGo cab services",
+      "label": "Cabs with IndiGo",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "click"
+      ],
+      "inferred_destination": "flight_booking_page",
+      "confidence": 0.95
+    },
+    {
+      "element_id": "elem_02",
+      "reference": {
+        "resource_id": null,
+        "text": "50% off on Sight Seeing",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "center"
+      },
+      "element_type": "image",
+      "semantic_role": "Promotes 50% off on sightseeing",
+      "label": "50% off on Sight Seeing",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "click"
+      ],
+      "inferred_destination": "sightseeing_offers_page",
+      "confidence": 0.95
+    },
+    {
+      "element_id": "elem_03",
+      "reference": {
+        "resource_id": null,
+        "text": "Hotels on IndiGo",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "right"
+      },
+      "element_type": "image",
+      "semantic_role": "Promotes IndiGo hotels",
+      "label": "Hotels on IndiGo",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "click"
+      ],
+      "inferred_destination": "hotel_offers_page",
+      "confidence": 0.95
+    },
+    {
+      "element_id": "elem_04",
+      "reference": {
+        "resource_id": null,
+        "text": "Destination of the week",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "bottom-right"
+      },
+      "element_type": "image",
+      "semantic_role": "Promotes destination of the week",
+      "label": "Destination of the week",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "click"
+      ],
+      "inferred_destination": "destination_week_page",
+      "confidence": 0.95
+    }
+  ],
+  "navigation_context": {
+    "arrived_from": null,
+    "arrival_action": null,
+    "visible_navigation": [
+      "Book",
+      "Trips",
+      "Check-in",
+      "6EPick",
+      "IndiGo BluChip",
+      "Tariff Sheet",
+      "Login"
+    ],
+    "active_navigation": null,
+    "back_available": true,
+    "inferred_depth": 0
+  },
+  "confidence": 0.9,
+  "raw_ai_response": "```json\n{\n  \"screen_purpose\": \"Promotes various deals and offers for IndiGo services.\",\n  \"screen_type\": \"home\",\n  \"app_state\": {\n    \"logged_in\": \"no\",\n    \"cart_items\": \"0\"\n  },\n  \"elements\": [\n    {\n      \"element_id\": \"elem_01\",\n      \"element_type\": \"image\",\n      \"semantic_role\": \"Promotes IndiGo cab services\",\n      \"label\": \"Cabs with IndiGo\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"click\"],\n      \"inferred_destination\": \"flight_booking_page\",\n      \"bounds_description\": \"top-left\",\n      \"confidence\": 0.95\n    },\n    {\n      \"element_id\": \"elem_02\",\n      \"element_type\": \"image\",\n      \"semantic_role\": \"Promotes 50% off on sightseeing\",\n      \"label\": \"50% off on Sight Seeing\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"click\"],\n      \"inferred_destination\": \"sightseeing_offers_page\",\n      \"bounds_description\": \"center\",\n      \"confidence\": 0.95\n    },\n    {\n      \"element_id\": \"elem_03\",\n      \"element_type\": \"image\",\n      \"semantic_role\": \"Promotes IndiGo hotels\",\n      \"label\": \"Hotels on IndiGo\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"click\"],\n      \"inferred_destination\": \"hotel_offers_page\",\n      \"bounds_description\": \"right\",\n      \"confidence\": 0.95\n    },\n    {\n      \"element_id\": \"elem_04\",\n      \"element_type\": \"image\",\n      \"semantic_role\": \"Promotes destination of the week\",\n      \"label\": \"Destination of the week\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"click\"],\n      \"inferred_destination\": \"destination_week_page\",\n      \"bounds_description\": \"bottom-right\",\n      \"confidence\": 0.95\n    }\n  ],\n  \"navigation_context\": {\n    \"visible_navigation\": [\"Book\", \"Trips\", \"Check-in\", \"6EPick\", \"IndiGo BluChip\", \"Tariff Sheet\", \"Login\"],\n    \"active_navigation\": null,\n    \"back_available\": true,\n    \"inferred_depth\": 0\n  },\n  \"confidence\": 0.9\n}\n```"
+}

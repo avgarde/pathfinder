@@ -1,0 +1,1330 @@
+2026-04-07 10:23:28,988 INFO pathfinder.orchestrator.agent_loop: Invocation: pathfinder explore-web https://goindigo.in --name 'Indigo' --max-actions 50 --inputs /Users/amitgarde/indigo_inputs.json
+2026-04-07 10:23:28,988 INFO pathfinder.orchestrator.agent_loop: Run ID: 20260407-045326-3b03
+2026-04-07 10:23:28,989 INFO pathfinder.orchestrator.agent_loop: Run directory: exploration/20260407-045326-3b03
+2026-04-07 10:23:28,989 INFO pathfinder.orchestrator.agent_loop: Navigating to start URL: https://goindigo.in
+2026-04-07 10:23:28,989 INFO pathfinder.device.web.adapter: Navigating to: https://goindigo.in
+2026-04-07 10:23:31,543 INFO pathfinder.layers.world_modeling: Created empty model
+2026-04-07 10:23:31,544 INFO pathfinder.orchestrator.agent_loop: Available inputs: from, to, departure, return, destination_city, destination
+2026-04-07 10:23:31,544 INFO pathfinder.orchestrator.agent_loop: Starting exploration of Indigo (budget: 50 actions)
+2026-04-07 10:23:31,545 INFO pathfinder.orchestrator.agent_loop: === Step 1 / 50 ===
+2026-04-07 10:23:32,627 INFO pathfinder.device.web.adapter: Screenshot saved to exploration/20260407-045326-3b03/screenshot.png
+2026-04-07 10:23:32,627 INFO pathfinder.layers.perception: Captured screenshot: exploration/20260407-045326-3b03/screenshot.png
+2026-04-07 10:23:32,640 INFO pathfinder.device.web.adapter: DOM structure extracted (147 chars)
+2026-04-07 10:23:32,641 INFO pathfinder.layers.perception: Captured UI structure (147 chars)
+2026-04-07 10:23:32,641 INFO pathfinder.layers.perception: Perceiving screenshot: exploration/20260407-045326-3b03/screenshot.png
+2026-04-07 10:23:32,644 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 (with screenshot) — this may take a few minutes for local models...
+2026-04-07 10:23:43,781 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 10:23:45,487 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 12.8s (7.8 tok/s)
+2026-04-07 10:23:47,212 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 14.6s (13.7 tok/s)
+2026-04-07 10:23:48,947 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 16.3s (18.4 tok/s)
+2026-04-07 10:23:50,689 INFO pathfinder.ai.openai_compatible:   ... 400 tokens in 18.0s (22.2 tok/s)
+2026-04-07 10:23:52,471 INFO pathfinder.ai.openai_compatible:   ... 500 tokens in 19.8s (25.2 tok/s)
+2026-04-07 10:23:54,249 INFO pathfinder.ai.openai_compatible:   ... 600 tokens in 21.6s (27.8 tok/s)
+2026-04-07 10:23:56,034 INFO pathfinder.ai.openai_compatible:   ... 700 tokens in 23.4s (29.9 tok/s)
+2026-04-07 10:23:57,830 INFO pathfinder.ai.openai_compatible:   ... 800 tokens in 25.2s (31.8 tok/s)
+2026-04-07 10:23:59,612 INFO pathfinder.ai.openai_compatible:   ... 900 tokens in 27.0s (33.4 tok/s)
+2026-04-07 10:24:01,421 INFO pathfinder.ai.openai_compatible:   ... 1000 tokens in 28.8s (34.8 tok/s)
+2026-04-07 10:24:03,232 INFO pathfinder.ai.openai_compatible:   ... 1100 tokens in 30.6s (36.0 tok/s)
+2026-04-07 10:24:05,058 INFO pathfinder.ai.openai_compatible:   ... 1200 tokens in 32.4s (37.0 tok/s)
+2026-04-07 10:24:06,898 INFO pathfinder.ai.openai_compatible:   ... 1300 tokens in 34.3s (38.0 tok/s)
+2026-04-07 10:24:08,734 INFO pathfinder.ai.openai_compatible:   ... 1400 tokens in 36.1s (38.8 tok/s)
+2026-04-07 10:24:10,600 INFO pathfinder.ai.openai_compatible:   ... 1500 tokens in 38.0s (39.5 tok/s)
+2026-04-07 10:24:12,468 INFO pathfinder.ai.openai_compatible:   ... 1600 tokens in 39.8s (40.2 tok/s)
+2026-04-07 10:24:14,339 INFO pathfinder.ai.openai_compatible:   ... 1700 tokens in 41.7s (40.8 tok/s)
+2026-04-07 10:24:16,246 INFO pathfinder.ai.openai_compatible:   ... 1800 tokens in 43.6s (41.3 tok/s)
+2026-04-07 10:24:18,157 INFO pathfinder.ai.openai_compatible:   ... 1900 tokens in 45.5s (41.7 tok/s)
+2026-04-07 10:24:20,080 INFO pathfinder.ai.openai_compatible:   ... 2000 tokens in 47.4s (42.2 tok/s)
+2026-04-07 10:24:22,012 INFO pathfinder.ai.openai_compatible:   ... 2100 tokens in 49.4s (42.5 tok/s)
+2026-04-07 10:24:23,959 INFO pathfinder.ai.openai_compatible:   ... 2200 tokens in 51.3s (42.9 tok/s)
+2026-04-07 10:24:25,930 INFO pathfinder.ai.openai_compatible:   ... 2300 tokens in 53.3s (43.2 tok/s)
+2026-04-07 10:24:27,900 INFO pathfinder.ai.openai_compatible:   ... 2400 tokens in 55.3s (43.4 tok/s)
+2026-04-07 10:24:29,854 INFO pathfinder.ai.openai_compatible:   ... 2500 tokens in 57.2s (43.7 tok/s)
+2026-04-07 10:24:31,841 INFO pathfinder.ai.openai_compatible:   ... 2600 tokens in 59.2s (43.9 tok/s)
+2026-04-07 10:24:33,830 INFO pathfinder.ai.openai_compatible:   ... 2700 tokens in 61.2s (44.1 tok/s)
+2026-04-07 10:24:35,842 INFO pathfinder.ai.openai_compatible:   ... 2800 tokens in 63.2s (44.3 tok/s)
+2026-04-07 10:24:37,859 INFO pathfinder.ai.openai_compatible:   ... 2900 tokens in 65.2s (44.5 tok/s)
+2026-04-07 10:24:39,889 INFO pathfinder.ai.openai_compatible:   ... 3000 tokens in 67.2s (44.6 tok/s)
+2026-04-07 10:24:41,934 INFO pathfinder.ai.openai_compatible:   ... 3100 tokens in 69.3s (44.7 tok/s)
+2026-04-07 10:24:43,981 INFO pathfinder.ai.openai_compatible:   ... 3200 tokens in 71.3s (44.9 tok/s)
+2026-04-07 10:24:46,053 INFO pathfinder.ai.openai_compatible:   ... 3300 tokens in 73.4s (45.0 tok/s)
+2026-04-07 10:24:48,128 INFO pathfinder.ai.openai_compatible:   ... 3400 tokens in 75.5s (45.0 tok/s)
+2026-04-07 10:24:50,214 INFO pathfinder.ai.openai_compatible:   ... 3500 tokens in 77.6s (45.1 tok/s)
+2026-04-07 10:24:52,331 INFO pathfinder.ai.openai_compatible:   ... 3600 tokens in 79.7s (45.2 tok/s)
+2026-04-07 10:24:54,437 INFO pathfinder.ai.openai_compatible:   ... 3700 tokens in 81.8s (45.2 tok/s)
+2026-04-07 10:24:56,560 INFO pathfinder.ai.openai_compatible:   ... 3800 tokens in 83.9s (45.3 tok/s)
+2026-04-07 10:24:58,678 INFO pathfinder.ai.openai_compatible:   ... 3900 tokens in 86.0s (45.3 tok/s)
+2026-04-07 10:25:00,798 INFO pathfinder.ai.openai_compatible:   ... 4000 tokens in 88.2s (45.4 tok/s)
+2026-04-07 10:25:02,856 INFO pathfinder.ai.openai_compatible: Response: 4096 tokens, 15923 chars in 90.2s (45.4 tok/s)
+2026-04-07 10:25:02,857 ERROR pathfinder.ai.openai_compatible: Failed to parse perception response: Unterminated string starting at: line 518 column 24 (char 15913)
+2026-04-07 10:25:02,858 INFO pathfinder.layers.perception: Perceived: Failed to parse AI response (type=unknown, 0 elements, confidence=0.00)
+2026-04-07 10:25:02,862 INFO pathfinder.layers.perception: Observation saved to exploration/20260407-045326-3b03/step_001_observation.json
+2026-04-07 10:25:02,862 INFO pathfinder.orchestrator.agent_loop: Perceived: Failed to parse AI response (unknown, 0 elements)
+2026-04-07 10:25:02,863 INFO pathfinder.layers.world_modeling: Updating model (v0) with 1 new observations
+2026-04-07 10:25:02,863 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 10:25:04,173 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 10:25:05,746 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 2.9s (34.7 tok/s)
+2026-04-07 10:25:07,352 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 4.5s (44.6 tok/s)
+2026-04-07 10:25:08,451 INFO pathfinder.ai.openai_compatible: Response: 267 tokens, 1010 chars in 5.6s (47.8 tok/s)
+2026-04-07 10:25:08,452 INFO pathfinder.layers.world_modeling: Model updated to v1: 1 screens, 0 transitions, 0 capabilities, 0 entities, 1 frontier, 1 anomalies (coverage=30%, confidence=50%)
+2026-04-07 10:25:08,453 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 10:25:10,279 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 10:25:11,894 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 3.4s (29.1 tok/s)
+2026-04-07 10:25:13,538 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 5.1s (39.3 tok/s)
+2026-04-07 10:25:13,587 INFO pathfinder.ai.openai_compatible: Response: 202 tokens, 885 chars in 5.1s (39.3 tok/s)
+2026-04-07 10:25:13,588 INFO pathfinder.orchestrator.agent_loop: Plan: ExplorationPlan(navigate: Navigate away from the current screen to explore other parts of the app.)
+2026-04-07 10:25:13,588 INFO pathfinder.orchestrator.agent_loop: Executing: Navigate away from the current screen to explore other parts of the app.
+2026-04-07 10:25:15,591 INFO pathfinder.orchestrator.agent_loop: === Step 2 / 50 ===
+2026-04-07 10:25:15,735 INFO pathfinder.device.web.adapter: Screenshot saved to exploration/20260407-045326-3b03/screenshot.png
+2026-04-07 10:25:15,736 INFO pathfinder.layers.perception: Captured screenshot: exploration/20260407-045326-3b03/screenshot.png
+2026-04-07 10:25:15,738 INFO pathfinder.device.web.adapter: DOM structure extracted (147 chars)
+2026-04-07 10:25:15,739 INFO pathfinder.layers.perception: Captured UI structure (147 chars)
+2026-04-07 10:25:15,740 INFO pathfinder.layers.perception: Perceiving screenshot: exploration/20260407-045326-3b03/screenshot.png
+2026-04-07 10:25:15,742 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 (with screenshot) — this may take a few minutes for local models...
+2026-04-07 10:25:22,534 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 10:25:24,246 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 8.5s (11.8 tok/s)
+2026-04-07 10:25:25,999 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 10.3s (19.5 tok/s)
+2026-04-07 10:25:27,739 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 12.0s (25.0 tok/s)
+2026-04-07 10:25:29,495 INFO pathfinder.ai.openai_compatible:   ... 400 tokens in 13.8s (29.1 tok/s)
+2026-04-07 10:25:31,243 INFO pathfinder.ai.openai_compatible:   ... 500 tokens in 15.5s (32.3 tok/s)
+2026-04-07 10:25:31,683 INFO pathfinder.ai.openai_compatible: Response: 524 tokens, 1971 chars in 15.9s (32.9 tok/s)
+2026-04-07 10:25:31,686 INFO pathfinder.layers.perception: Perceived: A flight booking page for planning a journey with IndiGo. (type=form, 4 elements, confidence=0.90)
+2026-04-07 10:25:31,692 INFO pathfinder.layers.perception: Observation saved to exploration/20260407-045326-3b03/step_002_observation.json
+2026-04-07 10:25:31,694 INFO pathfinder.orchestrator.agent_loop: Perceived: A flight booking page for planning a journey with IndiGo. (form, 4 elements)
+2026-04-07 10:25:31,695 INFO pathfinder.layers.world_modeling: Updating model (v1) with 1 new observations
+2026-04-07 10:25:31,696 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 10:25:33,286 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 10:25:34,879 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 3.2s (31.4 tok/s)
+2026-04-07 10:25:36,494 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 4.8s (41.7 tok/s)
+2026-04-07 10:25:38,132 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 6.4s (46.6 tok/s)
+2026-04-07 10:25:39,775 INFO pathfinder.ai.openai_compatible:   ... 400 tokens in 8.1s (49.5 tok/s)
+2026-04-07 10:25:40,056 INFO pathfinder.ai.openai_compatible: Response: 416 tokens, 1686 chars in 8.4s (49.8 tok/s)
+2026-04-07 10:25:40,056 INFO pathfinder.layers.world_modeling: Model updated to v2: 1 screens, 1 transitions, 1 capabilities, 1 entities, 1 frontier, 1 anomalies (coverage=30%, confidence=50%)
+2026-04-07 10:25:40,057 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 10:25:42,255 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 10:25:43,878 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 3.8s (26.2 tok/s)
+2026-04-07 10:25:45,537 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 5.5s (36.5 tok/s)
+2026-04-07 10:25:45,721 INFO pathfinder.ai.openai_compatible: Response: 210 tokens, 910 chars in 5.7s (37.1 tok/s)
+2026-04-07 10:25:45,722 INFO pathfinder.orchestrator.agent_loop: Plan: ExplorationPlan(type: Enter the departure location 'DEL' in the 'From' text field)
+2026-04-07 10:25:45,722 INFO pathfinder.orchestrator.agent_loop: Executing: Enter the departure location 'DEL' in the 'From' text field
+2026-04-07 10:25:47,049 INFO pathfinder.orchestrator.agent_loop: === Step 3 / 50 ===
+2026-04-07 10:25:47,417 INFO pathfinder.device.web.adapter: Screenshot saved to exploration/20260407-045326-3b03/screenshot.png
+2026-04-07 10:25:47,417 INFO pathfinder.layers.perception: Captured screenshot: exploration/20260407-045326-3b03/screenshot.png
+2026-04-07 10:25:47,419 INFO pathfinder.device.web.adapter: DOM structure extracted (150 chars)
+2026-04-07 10:25:47,420 INFO pathfinder.layers.perception: Captured UI structure (150 chars)
+2026-04-07 10:25:47,420 INFO pathfinder.layers.perception: Perceiving screenshot: exploration/20260407-045326-3b03/screenshot.png
+2026-04-07 10:25:47,423 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 (with screenshot) — this may take a few minutes for local models...
+2026-04-07 10:25:54,361 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 10:25:56,130 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 8.7s (11.5 tok/s)
+2026-04-07 10:25:57,920 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 10.5s (19.1 tok/s)
+2026-04-07 10:25:59,692 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 12.3s (24.5 tok/s)
+2026-04-07 10:26:01,505 INFO pathfinder.ai.openai_compatible:   ... 400 tokens in 14.1s (28.4 tok/s)
+2026-04-07 10:26:03,322 INFO pathfinder.ai.openai_compatible:   ... 500 tokens in 15.9s (31.4 tok/s)
+2026-04-07 10:26:04,248 INFO pathfinder.ai.openai_compatible: Response: 550 tokens, 2025 chars in 16.8s (32.7 tok/s)
+2026-04-07 10:26:04,249 INFO pathfinder.layers.perception: Perceived: Promotes various deals and offers for IndiGo services. (type=home, 4 elements, confidence=0.90)
+2026-04-07 10:26:04,254 INFO pathfinder.layers.perception: Observation saved to exploration/20260407-045326-3b03/step_003_observation.json
+2026-04-07 10:26:04,255 INFO pathfinder.orchestrator.agent_loop: Perceived: Promotes various deals and offers for IndiGo services. (home, 4 elements)
+2026-04-07 10:26:04,255 INFO pathfinder.layers.world_modeling: Updating model (v2) with 1 new observations
+2026-04-07 10:26:04,256 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 10:26:06,029 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 10:26:07,677 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 3.4s (29.2 tok/s)
+2026-04-07 10:26:09,371 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 5.1s (39.1 tok/s)
+2026-04-07 10:26:11,135 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 6.9s (43.6 tok/s)
+2026-04-07 10:26:12,893 INFO pathfinder.ai.openai_compatible:   ... 400 tokens in 8.6s (46.3 tok/s)
+2026-04-07 10:26:13,954 INFO pathfinder.ai.openai_compatible: Response: 459 tokens, 1765 chars in 9.7s (47.3 tok/s)
+2026-04-07 10:26:13,955 INFO pathfinder.layers.world_modeling: Model updated to v3: 2 screens, 1 transitions, 1 capabilities, 1 entities, 1 frontier, 1 anomalies (coverage=30%, confidence=50%)
+2026-04-07 10:26:13,955 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 10:26:16,578 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 10:26:18,286 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 4.3s (23.1 tok/s)
+2026-04-07 10:26:19,968 INFO pathfinder.ai.openai_compatible: Response: 194 tokens, 793 chars in 6.0s (32.3 tok/s)
+2026-04-07 10:26:19,969 INFO pathfinder.orchestrator.agent_loop: Plan: ExplorationPlan(click: Click on the image promoting IndiGo cab services)
+2026-04-07 10:26:19,969 WARNING pathfinder.orchestrator.agent_loop: Unknown action type 'click', defaulting to wait
+2026-04-07 10:26:19,970 INFO pathfinder.orchestrator.agent_loop: Executing: Click on the image promoting IndiGo cab services
+2026-04-07 10:26:21,972 INFO pathfinder.orchestrator.agent_loop: === Step 4 / 50 ===
+2026-04-07 10:26:22,215 INFO pathfinder.device.web.adapter: Screenshot saved to exploration/20260407-045326-3b03/screenshot.png
+2026-04-07 10:26:22,216 INFO pathfinder.layers.perception: Captured screenshot: exploration/20260407-045326-3b03/screenshot.png
+2026-04-07 10:26:22,218 INFO pathfinder.device.web.adapter: DOM structure extracted (150 chars)
+2026-04-07 10:26:22,219 INFO pathfinder.layers.perception: Captured UI structure (150 chars)
+2026-04-07 10:26:22,219 INFO pathfinder.layers.perception: Perceiving screenshot: exploration/20260407-045326-3b03/screenshot.png
+2026-04-07 10:26:22,221 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 (with screenshot) — this may take a few minutes for local models...
+2026-04-07 10:26:29,523 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 10:26:31,280 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 9.1s (11.0 tok/s)
+2026-04-07 10:26:33,082 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 10.9s (18.4 tok/s)
+2026-04-07 10:26:34,996 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 12.8s (23.5 tok/s)
+2026-04-07 10:26:36,939 INFO pathfinder.ai.openai_compatible:   ... 400 tokens in 14.7s (27.2 tok/s)
+2026-04-07 10:26:38,857 INFO pathfinder.ai.openai_compatible:   ... 500 tokens in 16.6s (30.1 tok/s)
+2026-04-07 10:26:40,008 INFO pathfinder.ai.openai_compatible: Response: 558 tokens, 2046 chars in 17.8s (31.4 tok/s)
+2026-04-07 10:26:40,009 INFO pathfinder.layers.perception: Perceived: Promotes various deals and offers for IndiGo services. (type=home, 4 elements, confidence=0.90)
+2026-04-07 10:26:40,016 INFO pathfinder.layers.perception: Observation saved to exploration/20260407-045326-3b03/step_004_observation.json
+2026-04-07 10:26:40,016 INFO pathfinder.orchestrator.agent_loop: Perceived: Promotes various deals and offers for IndiGo services. (home, 4 elements)
+2026-04-07 10:26:40,017 INFO pathfinder.layers.world_modeling: Updating model (v3) with 1 new observations
+2026-04-07 10:26:40,017 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 10:26:42,222 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 10:26:43,896 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 3.9s (25.8 tok/s)
+2026-04-07 10:26:45,696 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 5.7s (35.2 tok/s)
+2026-04-07 10:26:47,533 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 7.5s (39.9 tok/s)
+2026-04-07 10:26:49,359 INFO pathfinder.ai.openai_compatible:   ... 400 tokens in 9.3s (42.8 tok/s)
+2026-04-07 10:26:50,577 INFO pathfinder.ai.openai_compatible: Response: 465 tokens, 1841 chars in 10.6s (44.0 tok/s)
+2026-04-07 10:26:50,578 INFO pathfinder.layers.world_modeling: Model updated to v4: 2 screens, 1 transitions, 1 capabilities, 1 entities, 1 frontier, 1 anomalies (coverage=30%, confidence=50%)
+2026-04-07 10:26:50,579 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 10:26:53,544 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 10:26:55,285 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 4.7s (21.3 tok/s)
+2026-04-07 10:26:57,023 INFO pathfinder.ai.openai_compatible: Response: 191 tokens, 788 chars in 6.4s (29.6 tok/s)
+2026-04-07 10:26:57,024 INFO pathfinder.orchestrator.agent_loop: Plan: ExplorationPlan(click: Click on the image promoting IndiGo cab services)
+2026-04-07 10:26:57,024 WARNING pathfinder.orchestrator.agent_loop: Unknown action type 'click', defaulting to wait
+2026-04-07 10:26:57,024 INFO pathfinder.orchestrator.agent_loop: Executing: Click on the image promoting IndiGo cab services
+2026-04-07 10:26:59,027 INFO pathfinder.orchestrator.agent_loop: === Step 5 / 50 ===
+2026-04-07 10:26:59,142 INFO pathfinder.device.web.adapter: Screenshot saved to exploration/20260407-045326-3b03/screenshot.png
+2026-04-07 10:26:59,143 INFO pathfinder.layers.perception: Captured screenshot: exploration/20260407-045326-3b03/screenshot.png
+2026-04-07 10:26:59,146 INFO pathfinder.device.web.adapter: DOM structure extracted (150 chars)
+2026-04-07 10:26:59,146 INFO pathfinder.layers.perception: Captured UI structure (150 chars)
+2026-04-07 10:26:59,147 INFO pathfinder.layers.perception: Perceiving screenshot: exploration/20260407-045326-3b03/screenshot.png
+2026-04-07 10:26:59,149 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 (with screenshot) — this may take a few minutes for local models...
+2026-04-07 10:27:06,669 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 10:27:08,518 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 9.4s (10.7 tok/s)
+2026-04-07 10:27:10,540 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 11.4s (17.6 tok/s)
+2026-04-07 10:27:12,574 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 13.4s (22.3 tok/s)
+2026-04-07 10:27:14,589 INFO pathfinder.ai.openai_compatible:   ... 400 tokens in 15.4s (25.9 tok/s)
+2026-04-07 10:27:16,629 INFO pathfinder.ai.openai_compatible:   ... 500 tokens in 17.5s (28.6 tok/s)
+2026-04-07 10:27:17,992 INFO pathfinder.ai.openai_compatible: Response: 565 tokens, 2040 chars in 18.8s (30.0 tok/s)
+2026-04-07 10:27:17,993 INFO pathfinder.layers.perception: Perceived: Promotes various deals and offers for IndiGo services. (type=home, 4 elements, confidence=0.90)
+2026-04-07 10:27:17,997 INFO pathfinder.layers.perception: Observation saved to exploration/20260407-045326-3b03/step_005_observation.json
+2026-04-07 10:27:17,997 INFO pathfinder.orchestrator.agent_loop: Perceived: Promotes various deals and offers for IndiGo services. (home, 4 elements)
+2026-04-07 10:27:17,998 WARNING pathfinder.orchestrator.agent_loop: STUCK: seen screen 'home|4|image,image,image,image' 3 times consecutively
+2026-04-07 10:27:17,998 INFO pathfinder.layers.world_modeling: Updating model (v4) with 1 new observations
+2026-04-07 10:27:17,999 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 10:27:20,344 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 10:27:22,062 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 4.1s (24.6 tok/s)
+2026-04-07 10:27:23,980 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 6.0s (33.4 tok/s)
+2026-04-07 10:27:25,916 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 7.9s (37.9 tok/s)
+2026-04-07 10:27:27,815 INFO pathfinder.ai.openai_compatible:   ... 400 tokens in 9.8s (40.8 tok/s)
+2026-04-07 10:27:29,014 INFO pathfinder.ai.openai_compatible: Response: 465 tokens, 1842 chars in 11.0s (42.2 tok/s)
+2026-04-07 10:27:29,015 INFO pathfinder.layers.world_modeling: Model updated to v5: 2 screens, 1 transitions, 1 capabilities, 1 entities, 1 frontier, 1 anomalies (coverage=30%, confidence=50%)
+2026-04-07 10:27:29,016 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 10:27:32,049 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 10:27:33,780 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 4.8s (21.0 tok/s)
+2026-04-07 10:27:35,554 INFO pathfinder.ai.openai_compatible: Response: 188 tokens, 829 chars in 6.5s (28.8 tok/s)
+2026-04-07 10:27:35,555 INFO pathfinder.orchestrator.agent_loop: Plan: ExplorationPlan(navigate: Navigate to the flight booking page to explore flight booking options.)
+2026-04-07 10:27:35,556 INFO pathfinder.orchestrator.agent_loop: Navigation requested to: flight_booking_page
+2026-04-07 10:27:35,557 INFO pathfinder.orchestrator.agent_loop: Executing: Navigate to the flight booking page to explore flight booking options.
+2026-04-07 10:27:35,557 INFO pathfinder.device.web.adapter: Navigating to: flight_booking_page
+2026-04-07 10:27:35,560 WARNING pathfinder.orchestrator.agent_loop: Action failed: Navigation failed: Page.goto: Protocol error (Page.navigate): Cannot navigate to invalid URL
+Call log:
+  - navigating to "flight_booking_page", waiting until "domcontentloaded"
+
+2026-04-07 10:27:36,563 INFO pathfinder.orchestrator.agent_loop: === Step 6 / 50 ===
+2026-04-07 10:27:36,838 INFO pathfinder.device.web.adapter: Screenshot saved to exploration/20260407-045326-3b03/screenshot.png
+2026-04-07 10:27:36,838 INFO pathfinder.layers.perception: Captured screenshot: exploration/20260407-045326-3b03/screenshot.png
+2026-04-07 10:27:36,840 INFO pathfinder.device.web.adapter: DOM structure extracted (150 chars)
+2026-04-07 10:27:36,841 INFO pathfinder.layers.perception: Captured UI structure (150 chars)
+2026-04-07 10:27:36,841 INFO pathfinder.layers.perception: Perceiving screenshot: exploration/20260407-045326-3b03/screenshot.png
+2026-04-07 10:27:36,844 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 (with screenshot) — this may take a few minutes for local models...
+2026-04-07 10:27:45,415 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 10:27:47,295 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 10.5s (9.6 tok/s)
+2026-04-07 10:27:49,384 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 12.5s (15.9 tok/s)
+2026-04-07 10:27:51,484 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 14.6s (20.5 tok/s)
+2026-04-07 10:27:53,561 INFO pathfinder.ai.openai_compatible:   ... 400 tokens in 16.7s (23.9 tok/s)
+2026-04-07 10:27:55,683 INFO pathfinder.ai.openai_compatible:   ... 500 tokens in 18.8s (26.5 tok/s)
+2026-04-07 10:27:57,341 INFO pathfinder.ai.openai_compatible: Response: 578 tokens, 2083 chars in 20.5s (28.2 tok/s)
+2026-04-07 10:27:57,342 INFO pathfinder.layers.perception: Perceived: Promotes various deals and offers for IndiGo services. (type=home, 4 elements, confidence=0.90)
+2026-04-07 10:27:57,348 INFO pathfinder.layers.perception: Observation saved to exploration/20260407-045326-3b03/step_006_observation.json
+2026-04-07 10:27:57,349 INFO pathfinder.orchestrator.agent_loop: Perceived: Promotes various deals and offers for IndiGo services. (home, 4 elements)
+2026-04-07 10:27:57,349 WARNING pathfinder.orchestrator.agent_loop: STUCK: seen screen 'home|4|image,image,image,image' 4 times consecutively
+2026-04-07 10:27:57,349 INFO pathfinder.layers.world_modeling: Updating model (v5) with 1 new observations
+2026-04-07 10:27:57,350 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 10:27:59,532 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 10:28:01,209 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 3.9s (25.9 tok/s)
+2026-04-07 10:28:02,987 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 5.6s (35.5 tok/s)
+2026-04-07 10:28:05,057 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 7.7s (38.9 tok/s)
+2026-04-07 10:28:07,018 INFO pathfinder.ai.openai_compatible:   ... 400 tokens in 9.7s (41.4 tok/s)
+2026-04-07 10:28:08,368 INFO pathfinder.ai.openai_compatible: Response: 468 tokens, 1862 chars in 11.0s (42.5 tok/s)
+2026-04-07 10:28:08,369 INFO pathfinder.layers.world_modeling: Model updated to v6: 2 screens, 1 transitions, 1 capabilities, 1 entities, 1 frontier, 1 anomalies (coverage=30%, confidence=50%)
+2026-04-07 10:28:08,370 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 10:28:11,820 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 10:28:13,634 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 5.3s (19.0 tok/s)
+2026-04-07 10:28:15,700 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 7.3s (27.3 tok/s)
+2026-04-07 10:28:15,846 INFO pathfinder.ai.openai_compatible: Response: 206 tokens, 909 chars in 7.5s (27.6 tok/s)
+2026-04-07 10:28:15,847 INFO pathfinder.orchestrator.agent_loop: Plan: ExplorationPlan(navigate: Navigate to the Flight Booking Page to explore flight booking options.)
+2026-04-07 10:28:15,847 INFO pathfinder.orchestrator.agent_loop: Navigation requested to: flight_booking_page
+2026-04-07 10:28:15,848 INFO pathfinder.orchestrator.agent_loop: Executing: Navigate to the Flight Booking Page to explore flight booking options.
+2026-04-07 10:28:15,848 INFO pathfinder.device.web.adapter: Navigating to: flight_booking_page
+2026-04-07 10:28:15,850 WARNING pathfinder.orchestrator.agent_loop: Action failed: Navigation failed: Page.goto: Protocol error (Page.navigate): Cannot navigate to invalid URL
+Call log:
+  - navigating to "flight_booking_page", waiting until "domcontentloaded"
+
+2026-04-07 10:28:16,853 INFO pathfinder.orchestrator.agent_loop: === Step 7 / 50 ===
+2026-04-07 10:28:17,100 INFO pathfinder.device.web.adapter: Screenshot saved to exploration/20260407-045326-3b03/screenshot.png
+2026-04-07 10:28:17,100 INFO pathfinder.layers.perception: Captured screenshot: exploration/20260407-045326-3b03/screenshot.png
+2026-04-07 10:28:17,102 INFO pathfinder.device.web.adapter: DOM structure extracted (150 chars)
+2026-04-07 10:28:17,103 INFO pathfinder.layers.perception: Captured UI structure (150 chars)
+2026-04-07 10:28:17,103 INFO pathfinder.layers.perception: Perceiving screenshot: exploration/20260407-045326-3b03/screenshot.png
+2026-04-07 10:28:17,106 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 (with screenshot) — this may take a few minutes for local models...
+2026-04-07 10:28:25,815 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 10:28:27,672 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 10.6s (9.5 tok/s)
+2026-04-07 10:28:29,598 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 12.5s (16.0 tok/s)
+2026-04-07 10:28:31,574 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 14.5s (20.7 tok/s)
+2026-04-07 10:28:33,717 INFO pathfinder.ai.openai_compatible:   ... 400 tokens in 16.6s (24.1 tok/s)
+2026-04-07 10:28:35,904 INFO pathfinder.ai.openai_compatible:   ... 500 tokens in 18.8s (26.6 tok/s)
+2026-04-07 10:28:37,309 INFO pathfinder.ai.openai_compatible: Response: 566 tokens, 2048 chars in 20.2s (28.0 tok/s)
+2026-04-07 10:28:37,310 INFO pathfinder.layers.perception: Perceived: Promotes various deals and offers for IndiGo services. (type=home, 4 elements, confidence=0.90)
+2026-04-07 10:28:37,317 INFO pathfinder.layers.perception: Observation saved to exploration/20260407-045326-3b03/step_007_observation.json
+2026-04-07 10:28:37,317 INFO pathfinder.orchestrator.agent_loop: Perceived: Promotes various deals and offers for IndiGo services. (home, 4 elements)
+2026-04-07 10:28:37,318 WARNING pathfinder.orchestrator.agent_loop: STUCK: seen screen 'home|4|image,image,image,image' 5 times consecutively
+2026-04-07 10:28:37,318 INFO pathfinder.layers.world_modeling: Updating model (v6) with 1 new observations
+2026-04-07 10:28:37,319 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 10:28:39,709 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 10:28:41,427 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 4.1s (24.3 tok/s)
+2026-04-07 10:28:43,405 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 6.1s (32.9 tok/s)
+2026-04-07 10:28:45,362 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 8.0s (37.3 tok/s)
+2026-04-07 10:28:47,306 INFO pathfinder.ai.openai_compatible:   ... 400 tokens in 10.0s (40.1 tok/s)
+2026-04-07 10:28:48,600 INFO pathfinder.ai.openai_compatible: Response: 465 tokens, 1841 chars in 11.3s (41.2 tok/s)
+2026-04-07 10:28:48,600 INFO pathfinder.layers.world_modeling: Model updated to v7: 2 screens, 1 transitions, 1 capabilities, 1 entities, 1 frontier, 1 anomalies (coverage=30%, confidence=50%)
+2026-04-07 10:28:48,601 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 10:28:52,261 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 10:28:54,070 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 5.5s (18.3 tok/s)
+2026-04-07 10:28:56,121 INFO pathfinder.ai.openai_compatible: Response: 198 tokens, 865 chars in 7.5s (26.3 tok/s)
+2026-04-07 10:28:56,122 INFO pathfinder.orchestrator.agent_loop: Plan: ExplorationPlan(navigate: Navigate to the Sightseeing Offers Page to explore other booking options.)
+2026-04-07 10:28:56,122 WARNING pathfinder.orchestrator.agent_loop: Force-navigating back: stuck for 5 steps
+2026-04-07 10:28:56,123 INFO pathfinder.orchestrator.agent_loop: Executing: Forced back — stuck on home|4|image,image,image,image
+2026-04-07 10:28:57,671 INFO pathfinder.orchestrator.agent_loop: === Step 8 / 50 ===
+2026-04-07 10:28:57,733 INFO pathfinder.device.web.adapter: Screenshot saved to exploration/20260407-045326-3b03/screenshot.png
+2026-04-07 10:28:57,733 INFO pathfinder.layers.perception: Captured screenshot: exploration/20260407-045326-3b03/screenshot.png
+2026-04-07 10:28:57,736 INFO pathfinder.layers.perception: UI structure not available
+2026-04-07 10:28:57,737 INFO pathfinder.layers.perception: Perceiving screenshot: exploration/20260407-045326-3b03/screenshot.png
+2026-04-07 10:28:57,741 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 (with screenshot) — this may take a few minutes for local models...
+2026-04-07 10:29:04,777 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 10:29:06,513 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 8.8s (11.4 tok/s)
+2026-04-07 10:29:08,267 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 10.5s (19.0 tok/s)
+2026-04-07 10:29:08,338 INFO pathfinder.ai.openai_compatible: Response: 203 tokens, 763 chars in 10.6s (19.2 tok/s)
+2026-04-07 10:29:08,339 INFO pathfinder.layers.perception: Perceived: This screen is for exploring flight booking options. (type=detail, 1 elements, confidence=0.90)
+2026-04-07 10:29:08,344 INFO pathfinder.layers.perception: Observation saved to exploration/20260407-045326-3b03/step_008_observation.json
+2026-04-07 10:29:08,346 INFO pathfinder.orchestrator.agent_loop: Perceived: This screen is for exploring flight booking options. (detail, 1 elements)
+2026-04-07 10:29:08,347 INFO pathfinder.layers.world_modeling: Updating model (v7) with 1 new observations
+2026-04-07 10:29:08,347 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 10:29:10,057 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 10:29:11,668 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 3.3s (30.1 tok/s)
+2026-04-07 10:29:13,295 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 4.9s (40.4 tok/s)
+2026-04-07 10:29:15,049 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 6.7s (44.8 tok/s)
+2026-04-07 10:29:16,856 INFO pathfinder.ai.openai_compatible:   ... 400 tokens in 8.5s (47.0 tok/s)
+2026-04-07 10:29:18,642 INFO pathfinder.ai.openai_compatible:   ... 500 tokens in 10.3s (48.6 tok/s)
+2026-04-07 10:29:19,740 INFO pathfinder.ai.openai_compatible: Response: 562 tokens, 2228 chars in 11.4s (49.3 tok/s)
+2026-04-07 10:29:19,741 INFO pathfinder.layers.world_modeling: Model updated to v8: 3 screens, 2 transitions, 1 capabilities, 1 entities, 1 frontier, 1 anomalies (coverage=30%, confidence=50%)
+2026-04-07 10:29:19,741 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 10:29:22,678 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 10:29:24,364 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 4.6s (21.6 tok/s)
+2026-04-07 10:29:26,102 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 6.4s (31.4 tok/s)
+2026-04-07 10:29:26,172 INFO pathfinder.ai.openai_compatible: Response: 203 tokens, 879 chars in 6.4s (31.6 tok/s)
+2026-04-07 10:29:26,174 INFO pathfinder.orchestrator.agent_loop: Plan: ExplorationPlan(click: Click the 'Book Now' button to initiate the flight booking process)
+2026-04-07 10:29:26,176 WARNING pathfinder.orchestrator.agent_loop: Unknown action type 'click', defaulting to wait
+2026-04-07 10:29:26,177 INFO pathfinder.orchestrator.agent_loop: Executing: Click the 'Book Now' button to initiate the flight booking process
+2026-04-07 10:29:28,180 INFO pathfinder.orchestrator.agent_loop: === Step 9 / 50 ===
+2026-04-07 10:29:28,231 INFO pathfinder.device.web.adapter: Screenshot saved to exploration/20260407-045326-3b03/screenshot.png
+2026-04-07 10:29:28,232 INFO pathfinder.layers.perception: Captured screenshot: exploration/20260407-045326-3b03/screenshot.png
+2026-04-07 10:29:28,234 INFO pathfinder.layers.perception: UI structure not available
+2026-04-07 10:29:28,234 INFO pathfinder.layers.perception: Perceiving screenshot: exploration/20260407-045326-3b03/screenshot.png
+2026-04-07 10:29:28,238 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 (with screenshot) — this may take a few minutes for local models...
+2026-04-07 10:29:35,259 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 10:29:36,995 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 8.8s (11.4 tok/s)
+2026-04-07 10:29:38,783 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 10.5s (19.0 tok/s)
+2026-04-07 10:29:38,837 INFO pathfinder.ai.openai_compatible: Response: 202 tokens, 765 chars in 10.6s (19.1 tok/s)
+2026-04-07 10:29:38,840 INFO pathfinder.layers.perception: Perceived: This screen is for exploring flight booking options. (type=detail, 1 elements, confidence=0.90)
+2026-04-07 10:29:38,846 INFO pathfinder.layers.perception: Observation saved to exploration/20260407-045326-3b03/step_009_observation.json
+2026-04-07 10:29:38,847 INFO pathfinder.orchestrator.agent_loop: Perceived: This screen is for exploring flight booking options. (detail, 1 elements)
+2026-04-07 10:29:38,848 INFO pathfinder.layers.world_modeling: Updating model (v8) with 1 new observations
+2026-04-07 10:29:38,849 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 10:29:40,647 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 10:29:42,287 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 3.4s (29.1 tok/s)
+2026-04-07 10:29:43,955 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 5.1s (39.2 tok/s)
+2026-04-07 10:29:45,619 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 6.8s (44.3 tok/s)
+2026-04-07 10:29:47,323 INFO pathfinder.ai.openai_compatible:   ... 400 tokens in 8.5s (47.2 tok/s)
+2026-04-07 10:29:49,126 INFO pathfinder.ai.openai_compatible:   ... 500 tokens in 10.3s (48.7 tok/s)
+2026-04-07 10:29:50,816 INFO pathfinder.ai.openai_compatible:   ... 600 tokens in 12.0s (50.1 tok/s)
+2026-04-07 10:29:51,206 INFO pathfinder.ai.openai_compatible: Response: 622 tokens, 2497 chars in 12.4s (50.3 tok/s)
+2026-04-07 10:29:51,209 INFO pathfinder.layers.world_modeling: Model updated to v9: 4 screens, 2 transitions, 1 capabilities, 1 entities, 1 frontier, 1 anomalies (coverage=30%, confidence=50%)
+2026-04-07 10:29:51,210 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 10:29:54,176 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 10:29:56,108 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 4.9s (20.4 tok/s)
+2026-04-07 10:29:57,542 INFO pathfinder.ai.openai_compatible: Response: 183 tokens, 784 chars in 6.3s (28.9 tok/s)
+2026-04-07 10:29:57,544 INFO pathfinder.orchestrator.agent_loop: Plan: ExplorationPlan(click: Click the 'Book Now' button to initiate the flight booking process)
+2026-04-07 10:29:57,545 WARNING pathfinder.orchestrator.agent_loop: Unknown action type 'click', defaulting to wait
+2026-04-07 10:29:57,546 INFO pathfinder.orchestrator.agent_loop: Executing: Click the 'Book Now' button to initiate the flight booking process
+2026-04-07 10:29:59,549 INFO pathfinder.orchestrator.agent_loop: === Step 10 / 50 ===
+2026-04-07 10:29:59,604 INFO pathfinder.device.web.adapter: Screenshot saved to exploration/20260407-045326-3b03/screenshot.png
+2026-04-07 10:29:59,604 INFO pathfinder.layers.perception: Captured screenshot: exploration/20260407-045326-3b03/screenshot.png
+2026-04-07 10:29:59,606 INFO pathfinder.layers.perception: UI structure not available
+2026-04-07 10:29:59,607 INFO pathfinder.layers.perception: Perceiving screenshot: exploration/20260407-045326-3b03/screenshot.png
+2026-04-07 10:29:59,610 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 (with screenshot) — this may take a few minutes for local models...
+2026-04-07 10:30:06,350 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 10:30:08,082 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 8.5s (11.8 tok/s)
+2026-04-07 10:30:09,835 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 10.2s (19.6 tok/s)
+2026-04-07 10:30:09,853 INFO pathfinder.ai.openai_compatible: Response: 200 tokens, 742 chars in 10.2s (19.5 tok/s)
+2026-04-07 10:30:09,854 INFO pathfinder.layers.perception: Perceived: This screen is for exploring flight booking options. (type=detail, 1 elements, confidence=0.90)
+2026-04-07 10:30:09,860 INFO pathfinder.layers.perception: Observation saved to exploration/20260407-045326-3b03/step_010_observation.json
+2026-04-07 10:30:09,861 INFO pathfinder.orchestrator.agent_loop: Perceived: This screen is for exploring flight booking options. (detail, 1 elements)
+2026-04-07 10:30:09,862 WARNING pathfinder.orchestrator.agent_loop: STUCK: seen screen 'detail|1|button' 3 times consecutively
+2026-04-07 10:30:09,863 INFO pathfinder.layers.world_modeling: Updating model (v9) with 1 new observations
+2026-04-07 10:30:09,864 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 10:30:11,612 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 10:30:13,236 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 3.4s (29.7 tok/s)
+2026-04-07 10:30:14,895 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 5.0s (39.8 tok/s)
+2026-04-07 10:30:16,559 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 6.7s (44.8 tok/s)
+2026-04-07 10:30:18,234 INFO pathfinder.ai.openai_compatible:   ... 400 tokens in 8.4s (47.8 tok/s)
+2026-04-07 10:30:19,926 INFO pathfinder.ai.openai_compatible:   ... 500 tokens in 10.1s (49.7 tok/s)
+2026-04-07 10:30:21,621 INFO pathfinder.ai.openai_compatible:   ... 600 tokens in 11.8s (51.0 tok/s)
+2026-04-07 10:30:23,131 INFO pathfinder.ai.openai_compatible: Response: 687 tokens, 2778 chars in 13.3s (51.8 tok/s)
+2026-04-07 10:30:23,133 INFO pathfinder.layers.world_modeling: Model updated to v10: 5 screens, 2 transitions, 1 capabilities, 1 entities, 1 frontier, 1 anomalies (coverage=30%, confidence=50%)
+2026-04-07 10:30:23,135 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 10:30:26,042 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 10:30:27,733 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 4.6s (21.8 tok/s)
+2026-04-07 10:30:29,443 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 6.3s (31.7 tok/s)
+2026-04-07 10:30:29,733 INFO pathfinder.ai.openai_compatible: Response: 216 tokens, 940 chars in 6.6s (32.7 tok/s)
+2026-04-07 10:30:29,734 INFO pathfinder.orchestrator.agent_loop: Plan: ExplorationPlan(click: Click the 'Book Now' button to initiate the flight booking process)
+2026-04-07 10:30:29,734 WARNING pathfinder.orchestrator.agent_loop: Unknown action type 'click', defaulting to wait
+2026-04-07 10:30:29,735 INFO pathfinder.orchestrator.agent_loop: Executing: Click the 'Book Now' button to initiate the flight booking process
+2026-04-07 10:30:31,739 INFO pathfinder.orchestrator.agent_loop: === Step 11 / 50 ===
+2026-04-07 10:30:31,783 INFO pathfinder.device.web.adapter: Screenshot saved to exploration/20260407-045326-3b03/screenshot.png
+2026-04-07 10:30:31,784 INFO pathfinder.layers.perception: Captured screenshot: exploration/20260407-045326-3b03/screenshot.png
+2026-04-07 10:30:31,786 INFO pathfinder.layers.perception: UI structure not available
+2026-04-07 10:30:31,786 INFO pathfinder.layers.perception: Perceiving screenshot: exploration/20260407-045326-3b03/screenshot.png
+2026-04-07 10:30:31,790 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 (with screenshot) — this may take a few minutes for local models...
+2026-04-07 10:30:38,356 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 10:30:40,084 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 8.3s (12.1 tok/s)
+2026-04-07 10:30:41,835 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 10.0s (19.9 tok/s)
+2026-04-07 10:30:41,888 INFO pathfinder.ai.openai_compatible: Response: 202 tokens, 765 chars in 10.1s (20.0 tok/s)
+2026-04-07 10:30:41,890 INFO pathfinder.layers.perception: Perceived: This screen is for exploring flight booking options. (type=detail, 1 elements, confidence=0.90)
+2026-04-07 10:30:41,897 INFO pathfinder.layers.perception: Observation saved to exploration/20260407-045326-3b03/step_011_observation.json
+2026-04-07 10:30:41,898 INFO pathfinder.orchestrator.agent_loop: Perceived: This screen is for exploring flight booking options. (detail, 1 elements)
+2026-04-07 10:30:41,899 WARNING pathfinder.orchestrator.agent_loop: STUCK: seen screen 'detail|1|button' 4 times consecutively
+2026-04-07 10:30:41,900 INFO pathfinder.layers.world_modeling: Updating model (v10) with 1 new observations
+2026-04-07 10:30:41,901 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 10:30:43,673 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 10:30:45,279 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 3.4s (29.6 tok/s)
+2026-04-07 10:30:46,936 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 5.0s (39.7 tok/s)
+2026-04-07 10:30:48,606 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 6.7s (44.7 tok/s)
+2026-04-07 10:30:50,290 INFO pathfinder.ai.openai_compatible:   ... 400 tokens in 8.4s (47.7 tok/s)
+2026-04-07 10:30:51,988 INFO pathfinder.ai.openai_compatible:   ... 500 tokens in 10.1s (49.6 tok/s)
+2026-04-07 10:30:53,688 INFO pathfinder.ai.openai_compatible:   ... 600 tokens in 11.8s (50.9 tok/s)
+2026-04-07 10:30:55,174 INFO pathfinder.ai.openai_compatible: Response: 685 tokens, 2776 chars in 13.3s (51.6 tok/s)
+2026-04-07 10:30:55,177 INFO pathfinder.layers.world_modeling: Model updated to v11: 5 screens, 2 transitions, 1 capabilities, 1 entities, 1 frontier, 1 anomalies (coverage=30%, confidence=50%)
+2026-04-07 10:30:55,178 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 10:30:58,073 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 10:30:59,758 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 4.6s (21.8 tok/s)
+2026-04-07 10:31:01,481 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 6.3s (31.7 tok/s)
+2026-04-07 10:31:01,692 INFO pathfinder.ai.openai_compatible: Response: 211 tokens, 927 chars in 6.5s (32.4 tok/s)
+2026-04-07 10:31:01,694 INFO pathfinder.orchestrator.agent_loop: Plan: ExplorationPlan(click: Click the 'Book Now' button to initiate the flight booking process)
+2026-04-07 10:31:01,695 WARNING pathfinder.orchestrator.agent_loop: Unknown action type 'click', defaulting to wait
+2026-04-07 10:31:01,696 INFO pathfinder.orchestrator.agent_loop: Executing: Click the 'Book Now' button to initiate the flight booking process
+2026-04-07 10:31:03,701 INFO pathfinder.orchestrator.agent_loop: === Step 12 / 50 ===
+2026-04-07 10:31:03,749 INFO pathfinder.device.web.adapter: Screenshot saved to exploration/20260407-045326-3b03/screenshot.png
+2026-04-07 10:31:03,749 INFO pathfinder.layers.perception: Captured screenshot: exploration/20260407-045326-3b03/screenshot.png
+2026-04-07 10:31:03,751 INFO pathfinder.layers.perception: UI structure not available
+2026-04-07 10:31:03,752 INFO pathfinder.layers.perception: Perceiving screenshot: exploration/20260407-045326-3b03/screenshot.png
+2026-04-07 10:31:03,756 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 (with screenshot) — this may take a few minutes for local models...
+2026-04-07 10:31:10,287 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 10:31:11,996 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 8.2s (12.1 tok/s)
+2026-04-07 10:31:13,742 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 10.0s (20.0 tok/s)
+2026-04-07 10:31:13,846 INFO pathfinder.ai.openai_compatible: Response: 205 tokens, 765 chars in 10.1s (20.3 tok/s)
+2026-04-07 10:31:13,849 INFO pathfinder.layers.perception: Perceived: This screen is for exploring flight booking options. (type=detail, 1 elements, confidence=0.90)
+2026-04-07 10:31:13,854 INFO pathfinder.layers.perception: Observation saved to exploration/20260407-045326-3b03/step_012_observation.json
+2026-04-07 10:31:13,856 INFO pathfinder.orchestrator.agent_loop: Perceived: This screen is for exploring flight booking options. (detail, 1 elements)
+2026-04-07 10:31:13,857 WARNING pathfinder.orchestrator.agent_loop: STUCK: seen screen 'detail|1|button' 5 times consecutively
+2026-04-07 10:31:13,858 INFO pathfinder.layers.world_modeling: Updating model (v11) with 1 new observations
+2026-04-07 10:31:13,858 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 10:31:15,678 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 10:31:17,298 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 3.4s (29.1 tok/s)
+2026-04-07 10:31:18,961 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 5.1s (39.2 tok/s)
+2026-04-07 10:31:20,621 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 6.8s (44.4 tok/s)
+2026-04-07 10:31:22,305 INFO pathfinder.ai.openai_compatible:   ... 400 tokens in 8.4s (47.4 tok/s)
+2026-04-07 10:31:24,007 INFO pathfinder.ai.openai_compatible:   ... 500 tokens in 10.1s (49.3 tok/s)
+2026-04-07 10:31:25,705 INFO pathfinder.ai.openai_compatible:   ... 600 tokens in 11.8s (50.7 tok/s)
+2026-04-07 10:31:27,426 INFO pathfinder.ai.openai_compatible:   ... 700 tokens in 13.6s (51.6 tok/s)
+2026-04-07 10:31:28,271 INFO pathfinder.ai.openai_compatible: Response: 748 tokens, 3034 chars in 14.4s (51.9 tok/s)
+2026-04-07 10:31:28,273 INFO pathfinder.layers.world_modeling: Model updated to v12: 6 screens, 2 transitions, 1 capabilities, 1 entities, 1 frontier, 1 anomalies (coverage=30%, confidence=50%)
+2026-04-07 10:31:28,275 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 10:31:31,208 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 10:31:32,903 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 4.6s (21.6 tok/s)
+2026-04-07 10:31:34,624 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 6.3s (31.5 tok/s)
+2026-04-07 10:31:34,793 INFO pathfinder.ai.openai_compatible: Response: 209 tokens, 914 chars in 6.5s (32.1 tok/s)
+2026-04-07 10:31:34,795 INFO pathfinder.orchestrator.agent_loop: Plan: ExplorationPlan(click: Click the 'Book Now' button to initiate the flight booking process)
+2026-04-07 10:31:34,796 WARNING pathfinder.orchestrator.agent_loop: Force-navigating back: stuck for 5 steps
+2026-04-07 10:31:34,797 INFO pathfinder.orchestrator.agent_loop: Executing: Forced back — stuck on detail|1|button
+2026-04-07 10:31:36,305 INFO pathfinder.orchestrator.agent_loop: === Step 13 / 50 ===
+2026-04-07 10:31:36,351 INFO pathfinder.device.web.adapter: Screenshot saved to exploration/20260407-045326-3b03/screenshot.png
+2026-04-07 10:31:36,351 INFO pathfinder.layers.perception: Captured screenshot: exploration/20260407-045326-3b03/screenshot.png
+2026-04-07 10:31:36,353 INFO pathfinder.layers.perception: UI structure not available
+2026-04-07 10:31:36,354 INFO pathfinder.layers.perception: Perceiving screenshot: exploration/20260407-045326-3b03/screenshot.png
+2026-04-07 10:31:36,358 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 (with screenshot) — this may take a few minutes for local models...
+2026-04-07 10:31:42,940 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 10:31:44,655 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 8.3s (12.1 tok/s)
+2026-04-07 10:31:46,406 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 10.0s (19.9 tok/s)
+2026-04-07 10:31:46,494 INFO pathfinder.ai.openai_compatible: Response: 204 tokens, 752 chars in 10.1s (20.1 tok/s)
+2026-04-07 10:31:46,497 INFO pathfinder.layers.perception: Perceived: This screen is for exploring flight booking options. (type=detail, 1 elements, confidence=0.90)
+2026-04-07 10:31:46,503 INFO pathfinder.layers.perception: Observation saved to exploration/20260407-045326-3b03/step_013_observation.json
+2026-04-07 10:31:46,505 INFO pathfinder.orchestrator.agent_loop: Perceived: This screen is for exploring flight booking options. (detail, 1 elements)
+2026-04-07 10:31:46,506 WARNING pathfinder.orchestrator.agent_loop: STUCK: seen screen 'detail|1|button' 6 times consecutively
+2026-04-07 10:31:46,507 INFO pathfinder.layers.world_modeling: Updating model (v12) with 1 new observations
+2026-04-07 10:31:46,508 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 10:31:48,350 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 10:31:49,970 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 3.5s (28.9 tok/s)
+2026-04-07 10:31:51,628 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 5.1s (39.1 tok/s)
+2026-04-07 10:31:53,313 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 6.8s (44.1 tok/s)
+2026-04-07 10:31:55,018 INFO pathfinder.ai.openai_compatible:   ... 400 tokens in 8.5s (47.0 tok/s)
+2026-04-07 10:31:56,726 INFO pathfinder.ai.openai_compatible:   ... 500 tokens in 10.2s (48.9 tok/s)
+2026-04-07 10:31:58,432 INFO pathfinder.ai.openai_compatible:   ... 600 tokens in 11.9s (50.3 tok/s)
+2026-04-07 10:32:00,062 INFO pathfinder.ai.openai_compatible: Response: 696 tokens, 2836 chars in 13.6s (51.4 tok/s)
+2026-04-07 10:32:00,065 INFO pathfinder.layers.world_modeling: Model updated to v13: 5 screens, 2 transitions, 1 capabilities, 1 entities, 1 frontier, 1 anomalies (coverage=30%, confidence=50%)
+2026-04-07 10:32:00,066 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 10:32:03,114 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 10:32:04,811 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 4.7s (21.1 tok/s)
+2026-04-07 10:32:06,538 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 6.5s (30.9 tok/s)
+2026-04-07 10:32:06,625 INFO pathfinder.ai.openai_compatible: Response: 204 tokens, 881 chars in 6.6s (31.1 tok/s)
+2026-04-07 10:32:06,627 INFO pathfinder.orchestrator.agent_loop: Plan: ExplorationPlan(click: Click the 'Book Now' button to initiate the flight booking process)
+2026-04-07 10:32:06,629 WARNING pathfinder.orchestrator.agent_loop: Force-navigating back: stuck for 6 steps
+2026-04-07 10:32:06,630 INFO pathfinder.orchestrator.agent_loop: Executing: Forced back — stuck on detail|1|button
+2026-04-07 10:32:08,136 INFO pathfinder.orchestrator.agent_loop: === Step 14 / 50 ===
+2026-04-07 10:32:08,183 INFO pathfinder.device.web.adapter: Screenshot saved to exploration/20260407-045326-3b03/screenshot.png
+2026-04-07 10:32:08,184 INFO pathfinder.layers.perception: Captured screenshot: exploration/20260407-045326-3b03/screenshot.png
+2026-04-07 10:32:08,186 INFO pathfinder.layers.perception: UI structure not available
+2026-04-07 10:32:08,186 INFO pathfinder.layers.perception: Perceiving screenshot: exploration/20260407-045326-3b03/screenshot.png
+2026-04-07 10:32:08,190 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 (with screenshot) — this may take a few minutes for local models...
+2026-04-07 10:32:14,767 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 10:32:16,491 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 8.3s (12.0 tok/s)
+2026-04-07 10:32:18,252 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 10.1s (19.9 tok/s)
+2026-04-07 10:32:18,374 INFO pathfinder.ai.openai_compatible: Response: 206 tokens, 768 chars in 10.2s (20.2 tok/s)
+2026-04-07 10:32:18,377 INFO pathfinder.layers.perception: Perceived: This screen is for exploring flight booking options. (type=detail, 1 elements, confidence=0.90)
+2026-04-07 10:32:18,383 INFO pathfinder.layers.perception: Observation saved to exploration/20260407-045326-3b03/step_014_observation.json
+2026-04-07 10:32:18,384 INFO pathfinder.orchestrator.agent_loop: Perceived: This screen is for exploring flight booking options. (detail, 1 elements)
+2026-04-07 10:32:18,385 WARNING pathfinder.orchestrator.agent_loop: STUCK: seen screen 'detail|1|button' 7 times consecutively
+2026-04-07 10:32:18,386 INFO pathfinder.layers.world_modeling: Updating model (v13) with 1 new observations
+2026-04-07 10:32:18,387 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 10:32:20,222 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 10:32:21,838 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 3.5s (29.0 tok/s)
+2026-04-07 10:32:23,500 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 5.1s (39.1 tok/s)
+2026-04-07 10:32:25,167 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 6.8s (44.2 tok/s)
+2026-04-07 10:32:26,853 INFO pathfinder.ai.openai_compatible:   ... 400 tokens in 8.5s (47.3 tok/s)
+2026-04-07 10:32:28,552 INFO pathfinder.ai.openai_compatible:   ... 500 tokens in 10.2s (49.2 tok/s)
+2026-04-07 10:32:30,243 INFO pathfinder.ai.openai_compatible:   ... 600 tokens in 11.9s (50.6 tok/s)
+2026-04-07 10:32:31,433 INFO pathfinder.ai.openai_compatible: Response: 668 tokens, 2669 chars in 13.0s (51.2 tok/s)
+2026-04-07 10:32:31,436 INFO pathfinder.layers.world_modeling: Model updated to v14: 5 screens, 2 transitions, 1 capabilities, 1 entities, 1 frontier, 1 anomalies (coverage=30%, confidence=50%)
+2026-04-07 10:32:31,437 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 10:32:34,352 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 10:32:36,041 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 4.6s (21.7 tok/s)
+2026-04-07 10:32:37,611 INFO pathfinder.ai.openai_compatible: Response: 191 tokens, 826 chars in 6.2s (30.9 tok/s)
+2026-04-07 10:32:37,614 INFO pathfinder.orchestrator.agent_loop: Plan: ExplorationPlan(click: Click the 'Book Now' button to initiate the flight booking process)
+2026-04-07 10:32:37,615 WARNING pathfinder.orchestrator.agent_loop: Force-navigating back: stuck for 7 steps
+2026-04-07 10:32:37,617 INFO pathfinder.orchestrator.agent_loop: Executing: Forced back — stuck on detail|1|button
+2026-04-07 10:32:39,125 INFO pathfinder.orchestrator.agent_loop: === Step 15 / 50 ===
+2026-04-07 10:32:39,184 INFO pathfinder.device.web.adapter: Screenshot saved to exploration/20260407-045326-3b03/screenshot.png
+2026-04-07 10:32:39,184 INFO pathfinder.layers.perception: Captured screenshot: exploration/20260407-045326-3b03/screenshot.png
+2026-04-07 10:32:39,186 INFO pathfinder.layers.perception: UI structure not available
+2026-04-07 10:32:39,187 INFO pathfinder.layers.perception: Perceiving screenshot: exploration/20260407-045326-3b03/screenshot.png
+2026-04-07 10:32:39,190 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 (with screenshot) — this may take a few minutes for local models...
+2026-04-07 10:32:45,765 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 10:32:47,485 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 8.3s (12.1 tok/s)
+2026-04-07 10:32:49,236 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 10.0s (19.9 tok/s)
+2026-04-07 10:32:49,359 INFO pathfinder.ai.openai_compatible: Response: 206 tokens, 768 chars in 10.2s (20.3 tok/s)
+2026-04-07 10:32:49,362 INFO pathfinder.layers.perception: Perceived: This screen is for exploring flight booking options. (type=detail, 1 elements, confidence=0.90)
+2026-04-07 10:32:49,367 INFO pathfinder.layers.perception: Observation saved to exploration/20260407-045326-3b03/step_015_observation.json
+2026-04-07 10:32:49,369 INFO pathfinder.orchestrator.agent_loop: Perceived: This screen is for exploring flight booking options. (detail, 1 elements)
+2026-04-07 10:32:49,370 WARNING pathfinder.orchestrator.agent_loop: STUCK: seen screen 'detail|1|button' 8 times consecutively
+2026-04-07 10:32:49,371 INFO pathfinder.layers.world_modeling: Updating model (v14) with 1 new observations
+2026-04-07 10:32:49,372 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 10:32:51,228 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 10:32:52,840 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 3.5s (28.8 tok/s)
+2026-04-07 10:32:54,506 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 5.1s (39.0 tok/s)
+2026-04-07 10:32:56,180 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 6.8s (44.1 tok/s)
+2026-04-07 10:32:57,871 INFO pathfinder.ai.openai_compatible:   ... 400 tokens in 8.5s (47.1 tok/s)
+2026-04-07 10:32:59,569 INFO pathfinder.ai.openai_compatible:   ... 500 tokens in 10.2s (49.0 tok/s)
+2026-04-07 10:33:01,259 INFO pathfinder.ai.openai_compatible:   ... 600 tokens in 11.9s (50.5 tok/s)
+2026-04-07 10:33:02,426 INFO pathfinder.ai.openai_compatible: Response: 667 tokens, 2666 chars in 13.1s (51.1 tok/s)
+2026-04-07 10:33:02,429 INFO pathfinder.layers.world_modeling: Model updated to v15: 5 screens, 2 transitions, 1 capabilities, 1 entities, 1 frontier, 1 anomalies (coverage=30%, confidence=50%)
+2026-04-07 10:33:02,431 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 10:33:05,262 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 10:33:06,944 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 4.5s (22.2 tok/s)
+2026-04-07 10:33:08,643 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 6.2s (32.2 tok/s)
+2026-04-07 10:33:08,985 INFO pathfinder.ai.openai_compatible: Response: 219 tokens, 954 chars in 6.6s (33.4 tok/s)
+2026-04-07 10:33:08,988 INFO pathfinder.orchestrator.agent_loop: Plan: ExplorationPlan(click: Click the 'Book Now' button to initiate the flight booking process)
+2026-04-07 10:33:08,989 WARNING pathfinder.orchestrator.agent_loop: Force-navigating back: stuck for 8 steps
+2026-04-07 10:33:08,990 INFO pathfinder.orchestrator.agent_loop: Executing: Forced back — stuck on detail|1|button
+2026-04-07 10:33:10,499 INFO pathfinder.orchestrator.agent_loop: === Step 16 / 50 ===
+2026-04-07 10:33:10,550 INFO pathfinder.device.web.adapter: Screenshot saved to exploration/20260407-045326-3b03/screenshot.png
+2026-04-07 10:33:10,551 INFO pathfinder.layers.perception: Captured screenshot: exploration/20260407-045326-3b03/screenshot.png
+2026-04-07 10:33:10,553 INFO pathfinder.layers.perception: UI structure not available
+2026-04-07 10:33:10,553 INFO pathfinder.layers.perception: Perceiving screenshot: exploration/20260407-045326-3b03/screenshot.png
+2026-04-07 10:33:10,557 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 (with screenshot) — this may take a few minutes for local models...
+2026-04-07 10:33:17,142 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 10:33:18,849 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 8.3s (12.1 tok/s)
+2026-04-07 10:33:20,597 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 10.0s (19.9 tok/s)
+2026-04-07 10:33:20,669 INFO pathfinder.ai.openai_compatible: Response: 203 tokens, 748 chars in 10.1s (20.1 tok/s)
+2026-04-07 10:33:20,671 INFO pathfinder.layers.perception: Perceived: This screen is for exploring flight booking options. (type=detail, 1 elements, confidence=0.90)
+2026-04-07 10:33:20,677 INFO pathfinder.layers.perception: Observation saved to exploration/20260407-045326-3b03/step_016_observation.json
+2026-04-07 10:33:20,678 INFO pathfinder.orchestrator.agent_loop: Perceived: This screen is for exploring flight booking options. (detail, 1 elements)
+2026-04-07 10:33:20,679 WARNING pathfinder.orchestrator.agent_loop: STUCK: seen screen 'detail|1|button' 9 times consecutively
+2026-04-07 10:33:20,680 INFO pathfinder.layers.world_modeling: Updating model (v15) with 1 new observations
+2026-04-07 10:33:20,681 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 10:33:22,581 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 10:33:24,188 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 3.5s (28.5 tok/s)
+2026-04-07 10:33:25,843 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 5.2s (38.8 tok/s)
+2026-04-07 10:33:27,502 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 6.8s (44.0 tok/s)
+2026-04-07 10:33:29,182 INFO pathfinder.ai.openai_compatible:   ... 400 tokens in 8.5s (47.1 tok/s)
+2026-04-07 10:33:30,872 INFO pathfinder.ai.openai_compatible:   ... 500 tokens in 10.2s (49.1 tok/s)
+2026-04-07 10:33:32,568 INFO pathfinder.ai.openai_compatible:   ... 600 tokens in 11.9s (50.5 tok/s)
+2026-04-07 10:33:33,720 INFO pathfinder.ai.openai_compatible: Response: 667 tokens, 2662 chars in 13.0s (51.2 tok/s)
+2026-04-07 10:33:33,722 INFO pathfinder.layers.world_modeling: Model updated to v16: 5 screens, 2 transitions, 1 capabilities, 1 entities, 1 frontier, 1 anomalies (coverage=30%, confidence=50%)
+2026-04-07 10:33:33,724 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 10:33:36,581 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 10:33:38,244 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 4.5s (22.1 tok/s)
+2026-04-07 10:33:39,681 INFO pathfinder.ai.openai_compatible: Response: 184 tokens, 794 chars in 6.0s (30.9 tok/s)
+2026-04-07 10:33:39,682 INFO pathfinder.orchestrator.agent_loop: Plan: ExplorationPlan(navigate: Navigate to the home screen to explore other booking options.)
+2026-04-07 10:33:39,683 WARNING pathfinder.orchestrator.agent_loop: Force-navigating back: stuck for 9 steps
+2026-04-07 10:33:39,683 INFO pathfinder.orchestrator.agent_loop: Executing: Forced back — stuck on detail|1|button
+2026-04-07 10:33:41,189 INFO pathfinder.orchestrator.agent_loop: === Step 17 / 50 ===
+2026-04-07 10:33:41,227 INFO pathfinder.device.web.adapter: Screenshot saved to exploration/20260407-045326-3b03/screenshot.png
+2026-04-07 10:33:41,228 INFO pathfinder.layers.perception: Captured screenshot: exploration/20260407-045326-3b03/screenshot.png
+2026-04-07 10:33:41,229 INFO pathfinder.layers.perception: UI structure not available
+2026-04-07 10:33:41,230 INFO pathfinder.layers.perception: Perceiving screenshot: exploration/20260407-045326-3b03/screenshot.png
+2026-04-07 10:33:41,232 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 (with screenshot) — this may take a few minutes for local models...
+2026-04-07 10:33:47,841 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 10:33:49,552 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 8.3s (12.0 tok/s)
+2026-04-07 10:33:51,298 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 10.1s (19.9 tok/s)
+2026-04-07 10:33:53,059 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 11.8s (25.4 tok/s)
+2026-04-07 10:33:53,164 INFO pathfinder.ai.openai_compatible: Response: 305 tokens, 1132 chars in 11.9s (25.6 tok/s)
+2026-04-07 10:33:53,167 INFO pathfinder.layers.perception: Perceived: This screen is for exploring flight booking options. (type=detail, 2 elements, confidence=0.90)
+2026-04-07 10:33:53,172 INFO pathfinder.layers.perception: Observation saved to exploration/20260407-045326-3b03/step_017_observation.json
+2026-04-07 10:33:53,173 INFO pathfinder.orchestrator.agent_loop: Perceived: This screen is for exploring flight booking options. (detail, 2 elements)
+2026-04-07 10:33:53,175 INFO pathfinder.layers.world_modeling: Updating model (v16) with 1 new observations
+2026-04-07 10:33:53,175 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 10:33:55,129 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 10:33:56,737 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 3.6s (28.1 tok/s)
+2026-04-07 10:33:58,375 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 5.2s (38.5 tok/s)
+2026-04-07 10:34:00,033 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 6.9s (43.8 tok/s)
+2026-04-07 10:34:01,710 INFO pathfinder.ai.openai_compatible:   ... 400 tokens in 8.5s (46.9 tok/s)
+2026-04-07 10:34:03,401 INFO pathfinder.ai.openai_compatible:   ... 500 tokens in 10.2s (48.9 tok/s)
+2026-04-07 10:34:05,112 INFO pathfinder.ai.openai_compatible:   ... 600 tokens in 11.9s (50.3 tok/s)
+2026-04-07 10:34:06,783 INFO pathfinder.ai.openai_compatible: Response: 696 tokens, 2838 chars in 13.6s (51.2 tok/s)
+2026-04-07 10:34:06,784 INFO pathfinder.layers.world_modeling: Model updated to v17: 5 screens, 2 transitions, 1 capabilities, 1 entities, 1 frontier, 1 anomalies (coverage=30%, confidence=50%)
+2026-04-07 10:34:06,784 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 10:34:09,644 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 10:34:11,276 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 4.5s (22.3 tok/s)
+2026-04-07 10:34:12,943 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 6.2s (32.5 tok/s)
+2026-04-07 10:34:12,993 INFO pathfinder.ai.openai_compatible: Response: 202 tokens, 888 chars in 6.2s (32.5 tok/s)
+2026-04-07 10:34:12,994 INFO pathfinder.orchestrator.agent_loop: Plan: ExplorationPlan(navigate: Navigate to the next screen in the flight booking process)
+2026-04-07 10:34:12,995 INFO pathfinder.orchestrator.agent_loop: Executing: Navigate to the next screen in the flight booking process
+2026-04-07 10:34:15,000 INFO pathfinder.orchestrator.agent_loop: === Step 18 / 50 ===
+2026-04-07 10:34:15,041 INFO pathfinder.device.web.adapter: Screenshot saved to exploration/20260407-045326-3b03/screenshot.png
+2026-04-07 10:34:15,042 INFO pathfinder.layers.perception: Captured screenshot: exploration/20260407-045326-3b03/screenshot.png
+2026-04-07 10:34:15,043 INFO pathfinder.layers.perception: UI structure not available
+2026-04-07 10:34:15,044 INFO pathfinder.layers.perception: Perceiving screenshot: exploration/20260407-045326-3b03/screenshot.png
+2026-04-07 10:34:15,047 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 (with screenshot) — this may take a few minutes for local models...
+2026-04-07 10:34:21,570 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 10:34:23,277 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 8.2s (12.2 tok/s)
+2026-04-07 10:34:25,017 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 10.0s (20.1 tok/s)
+2026-04-07 10:34:25,297 INFO pathfinder.ai.openai_compatible: Response: 215 tokens, 803 chars in 10.2s (21.0 tok/s)
+2026-04-07 10:34:25,299 INFO pathfinder.layers.perception: Perceived: This screen is for exploring flight booking options. (type=detail, 1 elements, confidence=0.90)
+2026-04-07 10:34:25,305 INFO pathfinder.layers.perception: Observation saved to exploration/20260407-045326-3b03/step_018_observation.json
+2026-04-07 10:34:25,306 INFO pathfinder.orchestrator.agent_loop: Perceived: This screen is for exploring flight booking options. (detail, 1 elements)
+2026-04-07 10:34:25,307 INFO pathfinder.layers.world_modeling: Updating model (v17) with 1 new observations
+2026-04-07 10:34:25,308 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 10:34:27,237 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 10:34:28,848 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 3.5s (28.3 tok/s)
+2026-04-07 10:34:30,501 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 5.2s (38.5 tok/s)
+2026-04-07 10:34:32,167 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 6.9s (43.7 tok/s)
+2026-04-07 10:34:33,812 INFO pathfinder.ai.openai_compatible:   ... 400 tokens in 8.5s (47.0 tok/s)
+2026-04-07 10:34:35,537 INFO pathfinder.ai.openai_compatible:   ... 500 tokens in 10.2s (48.9 tok/s)
+2026-04-07 10:34:37,228 INFO pathfinder.ai.openai_compatible:   ... 600 tokens in 11.9s (50.3 tok/s)
+2026-04-07 10:34:38,714 INFO pathfinder.ai.openai_compatible: Response: 686 tokens, 2759 chars in 13.4s (51.2 tok/s)
+2026-04-07 10:34:38,716 INFO pathfinder.layers.world_modeling: Model updated to v18: 5 screens, 2 transitions, 1 capabilities, 1 entities, 1 frontier, 1 anomalies (coverage=30%, confidence=50%)
+2026-04-07 10:34:38,717 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 10:34:41,632 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 10:34:43,280 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 4.6s (21.9 tok/s)
+2026-04-07 10:34:44,994 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 6.3s (31.9 tok/s)
+2026-04-07 10:34:45,164 INFO pathfinder.ai.openai_compatible: Response: 209 tokens, 908 chars in 6.4s (32.4 tok/s)
+2026-04-07 10:34:45,166 INFO pathfinder.orchestrator.agent_loop: Plan: ExplorationPlan(tap: Click the 'Next' button to proceed with the flight booking process)
+2026-04-07 10:34:45,167 INFO pathfinder.orchestrator.agent_loop: Executing: Click the 'Next' button to proceed with the flight booking process
+2026-04-07 10:34:45,192 WARNING pathfinder.orchestrator.agent_loop: Action failed: Click failed: Cannot resolve element: The 'Next' button to proceed with the flight booking process
+2026-04-07 10:34:46,195 INFO pathfinder.orchestrator.agent_loop: === Step 19 / 50 ===
+2026-04-07 10:34:46,244 INFO pathfinder.device.web.adapter: Screenshot saved to exploration/20260407-045326-3b03/screenshot.png
+2026-04-07 10:34:46,244 INFO pathfinder.layers.perception: Captured screenshot: exploration/20260407-045326-3b03/screenshot.png
+2026-04-07 10:34:46,246 INFO pathfinder.layers.perception: UI structure not available
+2026-04-07 10:34:46,246 INFO pathfinder.layers.perception: Perceiving screenshot: exploration/20260407-045326-3b03/screenshot.png
+2026-04-07 10:34:46,252 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 (with screenshot) — this may take a few minutes for local models...
+2026-04-07 10:34:53,408 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 10:34:55,131 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 8.9s (11.3 tok/s)
+2026-04-07 10:34:56,889 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 10.6s (18.8 tok/s)
+2026-04-07 10:34:58,634 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 12.4s (24.2 tok/s)
+2026-04-07 10:34:58,815 INFO pathfinder.ai.openai_compatible: Response: 309 tokens, 1137 chars in 12.6s (24.6 tok/s)
+2026-04-07 10:34:58,818 INFO pathfinder.layers.perception: Perceived: This screen is for exploring flight booking options. (type=detail, 2 elements, confidence=0.90)
+2026-04-07 10:34:58,824 INFO pathfinder.layers.perception: Observation saved to exploration/20260407-045326-3b03/step_019_observation.json
+2026-04-07 10:34:58,825 INFO pathfinder.orchestrator.agent_loop: Perceived: This screen is for exploring flight booking options. (detail, 2 elements)
+2026-04-07 10:34:58,826 INFO pathfinder.layers.world_modeling: Updating model (v18) with 1 new observations
+2026-04-07 10:34:58,827 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 10:35:00,796 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 10:35:02,410 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 3.6s (27.9 tok/s)
+2026-04-07 10:35:04,049 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 5.2s (38.3 tok/s)
+2026-04-07 10:35:05,683 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 6.9s (43.8 tok/s)
+2026-04-07 10:35:07,349 INFO pathfinder.ai.openai_compatible:   ... 400 tokens in 8.5s (46.9 tok/s)
+2026-04-07 10:35:09,026 INFO pathfinder.ai.openai_compatible:   ... 500 tokens in 10.2s (49.0 tok/s)
+2026-04-07 10:35:10,703 INFO pathfinder.ai.openai_compatible:   ... 600 tokens in 11.9s (50.5 tok/s)
+2026-04-07 10:35:12,358 INFO pathfinder.ai.openai_compatible: Response: 696 tokens, 2838 chars in 13.5s (51.4 tok/s)
+2026-04-07 10:35:12,362 INFO pathfinder.layers.world_modeling: Model updated to v19: 5 screens, 2 transitions, 1 capabilities, 1 entities, 1 frontier, 1 anomalies (coverage=30%, confidence=50%)
+2026-04-07 10:35:12,363 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 10:35:15,280 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 10:35:16,916 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 4.6s (22.0 tok/s)
+2026-04-07 10:35:18,592 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 6.2s (32.1 tok/s)
+2026-04-07 10:35:18,746 INFO pathfinder.ai.openai_compatible: Response: 208 tokens, 909 chars in 6.4s (32.6 tok/s)
+2026-04-07 10:35:18,749 INFO pathfinder.orchestrator.agent_loop: Plan: ExplorationPlan(navigate: Navigate to the Flight Booking Page to continue the booking process)
+2026-04-07 10:35:18,750 INFO pathfinder.orchestrator.agent_loop: Executing: Navigate to the Flight Booking Page to continue the booking process
+2026-04-07 10:35:20,756 INFO pathfinder.orchestrator.agent_loop: === Step 20 / 50 ===
+2026-04-07 10:35:20,811 INFO pathfinder.device.web.adapter: Screenshot saved to exploration/20260407-045326-3b03/screenshot.png
+2026-04-07 10:35:20,812 INFO pathfinder.layers.perception: Captured screenshot: exploration/20260407-045326-3b03/screenshot.png
+2026-04-07 10:35:20,814 INFO pathfinder.layers.perception: UI structure not available
+2026-04-07 10:35:20,814 INFO pathfinder.layers.perception: Perceiving screenshot: exploration/20260407-045326-3b03/screenshot.png
+2026-04-07 10:35:20,819 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 (with screenshot) — this may take a few minutes for local models...
+2026-04-07 10:35:27,370 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 10:35:29,070 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 8.3s (12.1 tok/s)
+2026-04-07 10:35:30,795 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 10.0s (20.0 tok/s)
+2026-04-07 10:35:32,622 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 11.8s (25.4 tok/s)
+2026-04-07 10:35:34,594 INFO pathfinder.ai.openai_compatible:   ... 400 tokens in 13.8s (29.0 tok/s)
+2026-04-07 10:35:34,726 INFO pathfinder.ai.openai_compatible: Response: 406 tokens, 1526 chars in 13.9s (29.2 tok/s)
+2026-04-07 10:35:34,728 INFO pathfinder.layers.perception: Perceived: This screen is for exploring flight booking options. (type=detail, 3 elements, confidence=0.90)
+2026-04-07 10:35:34,733 INFO pathfinder.layers.perception: Observation saved to exploration/20260407-045326-3b03/step_020_observation.json
+2026-04-07 10:35:34,735 INFO pathfinder.orchestrator.agent_loop: Perceived: This screen is for exploring flight booking options. (detail, 3 elements)
+2026-04-07 10:35:34,736 INFO pathfinder.layers.world_modeling: Updating model (v19) with 1 new observations
+2026-04-07 10:35:34,737 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 10:35:36,782 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 10:35:38,390 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 3.7s (27.4 tok/s)
+2026-04-07 10:35:39,962 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 5.3s (37.8 tok/s)
+2026-04-07 10:35:41,623 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 7.0s (43.1 tok/s)
+2026-04-07 10:35:43,314 INFO pathfinder.ai.openai_compatible:   ... 400 tokens in 8.6s (46.3 tok/s)
+2026-04-07 10:35:44,986 INFO pathfinder.ai.openai_compatible:   ... 500 tokens in 10.3s (48.5 tok/s)
+2026-04-07 10:35:46,696 INFO pathfinder.ai.openai_compatible:   ... 600 tokens in 12.0s (49.9 tok/s)
+2026-04-07 10:35:48,360 INFO pathfinder.ai.openai_compatible: Response: 696 tokens, 2838 chars in 13.7s (50.8 tok/s)
+2026-04-07 10:35:48,363 INFO pathfinder.layers.world_modeling: Model updated to v20: 5 screens, 2 transitions, 1 capabilities, 1 entities, 1 frontier, 1 anomalies (coverage=30%, confidence=50%)
+2026-04-07 10:35:48,365 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 10:35:51,300 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 10:35:52,974 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 4.6s (21.7 tok/s)
+2026-04-07 10:35:54,450 INFO pathfinder.ai.openai_compatible: Response: 186 tokens, 808 chars in 6.1s (30.6 tok/s)
+2026-04-07 10:35:54,453 INFO pathfinder.orchestrator.agent_loop: Plan: ExplorationPlan(navigate: Navigate to the Flight Booking Page to continue the booking process)
+2026-04-07 10:35:54,454 INFO pathfinder.orchestrator.agent_loop: Executing: Navigate to the Flight Booking Page to continue the booking process
+2026-04-07 10:35:56,456 INFO pathfinder.orchestrator.agent_loop: === Step 21 / 50 ===
+2026-04-07 10:35:56,505 INFO pathfinder.device.web.adapter: Screenshot saved to exploration/20260407-045326-3b03/screenshot.png
+2026-04-07 10:35:56,506 INFO pathfinder.layers.perception: Captured screenshot: exploration/20260407-045326-3b03/screenshot.png
+2026-04-07 10:35:56,508 INFO pathfinder.layers.perception: UI structure not available
+2026-04-07 10:35:56,508 INFO pathfinder.layers.perception: Perceiving screenshot: exploration/20260407-045326-3b03/screenshot.png
+2026-04-07 10:35:56,511 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 (with screenshot) — this may take a few minutes for local models...
+2026-04-07 10:36:03,090 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 10:36:04,802 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 8.3s (12.1 tok/s)
+2026-04-07 10:36:06,553 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 10.0s (19.9 tok/s)
+2026-04-07 10:36:08,312 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 11.8s (25.4 tok/s)
+2026-04-07 10:36:08,473 INFO pathfinder.ai.openai_compatible: Response: 308 tokens, 1138 chars in 12.0s (25.7 tok/s)
+2026-04-07 10:36:08,476 INFO pathfinder.layers.perception: Perceived: This screen is for exploring flight booking options. (type=detail, 2 elements, confidence=0.90)
+2026-04-07 10:36:08,482 INFO pathfinder.layers.perception: Observation saved to exploration/20260407-045326-3b03/step_021_observation.json
+2026-04-07 10:36:08,483 INFO pathfinder.orchestrator.agent_loop: Perceived: This screen is for exploring flight booking options. (detail, 2 elements)
+2026-04-07 10:36:08,484 INFO pathfinder.layers.world_modeling: Updating model (v20) with 1 new observations
+2026-04-07 10:36:08,485 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 10:36:10,415 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 10:36:12,024 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 3.5s (28.3 tok/s)
+2026-04-07 10:36:13,668 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 5.2s (38.6 tok/s)
+2026-04-07 10:36:15,331 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 6.8s (43.8 tok/s)
+2026-04-07 10:36:17,020 INFO pathfinder.ai.openai_compatible:   ... 400 tokens in 8.5s (46.9 tok/s)
+2026-04-07 10:36:18,703 INFO pathfinder.ai.openai_compatible:   ... 500 tokens in 10.2s (48.9 tok/s)
+2026-04-07 10:36:20,395 INFO pathfinder.ai.openai_compatible:   ... 600 tokens in 11.9s (50.4 tok/s)
+2026-04-07 10:36:22,059 INFO pathfinder.ai.openai_compatible: Response: 696 tokens, 2838 chars in 13.6s (51.3 tok/s)
+2026-04-07 10:36:22,061 INFO pathfinder.layers.world_modeling: Model updated to v21: 5 screens, 2 transitions, 1 capabilities, 1 entities, 1 frontier, 1 anomalies (coverage=30%, confidence=50%)
+2026-04-07 10:36:22,063 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 10:36:24,918 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 10:36:26,582 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 4.5s (22.1 tok/s)
+2026-04-07 10:36:28,024 INFO pathfinder.ai.openai_compatible: Response: 184 tokens, 796 chars in 6.0s (30.9 tok/s)
+2026-04-07 10:36:28,027 INFO pathfinder.orchestrator.agent_loop: Plan: ExplorationPlan(navigate: Navigate to the Flight Booking Page to continue the booking process)
+2026-04-07 10:36:28,028 INFO pathfinder.orchestrator.agent_loop: Executing: Navigate to the Flight Booking Page to continue the booking process
+2026-04-07 10:36:30,033 INFO pathfinder.orchestrator.agent_loop: === Step 22 / 50 ===
+2026-04-07 10:36:30,073 INFO pathfinder.device.web.adapter: Screenshot saved to exploration/20260407-045326-3b03/screenshot.png
+2026-04-07 10:36:30,073 INFO pathfinder.layers.perception: Captured screenshot: exploration/20260407-045326-3b03/screenshot.png
+2026-04-07 10:36:30,075 INFO pathfinder.layers.perception: UI structure not available
+2026-04-07 10:36:30,075 INFO pathfinder.layers.perception: Perceiving screenshot: exploration/20260407-045326-3b03/screenshot.png
+2026-04-07 10:36:30,078 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 (with screenshot) — this may take a few minutes for local models...
+2026-04-07 10:36:36,599 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 10:36:38,281 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 8.2s (12.2 tok/s)
+2026-04-07 10:36:40,012 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 9.9s (20.1 tok/s)
+2026-04-07 10:36:41,753 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 11.7s (25.7 tok/s)
+2026-04-07 10:36:43,521 INFO pathfinder.ai.openai_compatible:   ... 400 tokens in 13.4s (29.8 tok/s)
+2026-04-07 10:36:43,804 INFO pathfinder.ai.openai_compatible: Response: 415 tokens, 1556 chars in 13.7s (30.2 tok/s)
+2026-04-07 10:36:43,806 INFO pathfinder.layers.perception: Perceived: This screen is for exploring flight booking options. (type=detail, 3 elements, confidence=0.90)
+2026-04-07 10:36:43,811 INFO pathfinder.layers.perception: Observation saved to exploration/20260407-045326-3b03/step_022_observation.json
+2026-04-07 10:36:43,813 INFO pathfinder.orchestrator.agent_loop: Perceived: This screen is for exploring flight booking options. (detail, 3 elements)
+2026-04-07 10:36:43,814 INFO pathfinder.layers.world_modeling: Updating model (v21) with 1 new observations
+2026-04-07 10:36:43,814 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 10:36:45,816 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 10:36:47,414 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 3.6s (27.8 tok/s)
+2026-04-07 10:36:49,032 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 5.2s (38.3 tok/s)
+2026-04-07 10:36:50,666 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 6.9s (43.8 tok/s)
+2026-04-07 10:36:52,336 INFO pathfinder.ai.openai_compatible:   ... 400 tokens in 8.5s (46.9 tok/s)
+2026-04-07 10:36:54,003 INFO pathfinder.ai.openai_compatible:   ... 500 tokens in 10.2s (49.1 tok/s)
+2026-04-07 10:36:55,677 INFO pathfinder.ai.openai_compatible:   ... 600 tokens in 11.9s (50.6 tok/s)
+2026-04-07 10:36:57,321 INFO pathfinder.ai.openai_compatible: Response: 696 tokens, 2838 chars in 13.5s (51.5 tok/s)
+2026-04-07 10:36:57,324 INFO pathfinder.layers.world_modeling: Model updated to v22: 5 screens, 2 transitions, 1 capabilities, 1 entities, 1 frontier, 1 anomalies (coverage=30%, confidence=50%)
+2026-04-07 10:36:57,326 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 10:37:00,268 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 10:37:01,906 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 4.6s (21.8 tok/s)
+2026-04-07 10:37:03,400 INFO pathfinder.ai.openai_compatible: Response: 189 tokens, 809 chars in 6.1s (31.1 tok/s)
+2026-04-07 10:37:03,401 INFO pathfinder.orchestrator.agent_loop: Plan: ExplorationPlan(back: Navigate back to the list of flight booking options)
+2026-04-07 10:37:03,403 INFO pathfinder.orchestrator.agent_loop: Executing: Navigate back to the list of flight booking options
+2026-04-07 10:37:04,910 INFO pathfinder.orchestrator.agent_loop: === Step 23 / 50 ===
+2026-04-07 10:37:04,947 INFO pathfinder.device.web.adapter: Screenshot saved to exploration/20260407-045326-3b03/screenshot.png
+2026-04-07 10:37:04,947 INFO pathfinder.layers.perception: Captured screenshot: exploration/20260407-045326-3b03/screenshot.png
+2026-04-07 10:37:04,949 INFO pathfinder.layers.perception: UI structure not available
+2026-04-07 10:37:04,949 INFO pathfinder.layers.perception: Perceiving screenshot: exploration/20260407-045326-3b03/screenshot.png
+2026-04-07 10:37:04,951 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 (with screenshot) — this may take a few minutes for local models...
+2026-04-07 10:37:11,602 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 10:37:13,310 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 8.4s (12.0 tok/s)
+2026-04-07 10:37:15,049 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 10.1s (19.8 tok/s)
+2026-04-07 10:37:16,798 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 11.8s (25.3 tok/s)
+2026-04-07 10:37:17,101 INFO pathfinder.ai.openai_compatible: Response: 316 tokens, 1173 chars in 12.1s (26.0 tok/s)
+2026-04-07 10:37:17,103 INFO pathfinder.layers.perception: Perceived: This screen is for exploring flight booking options. (type=detail, 2 elements, confidence=0.90)
+2026-04-07 10:37:17,108 INFO pathfinder.layers.perception: Observation saved to exploration/20260407-045326-3b03/step_023_observation.json
+2026-04-07 10:37:17,110 INFO pathfinder.orchestrator.agent_loop: Perceived: This screen is for exploring flight booking options. (detail, 2 elements)
+2026-04-07 10:37:17,111 INFO pathfinder.layers.world_modeling: Updating model (v22) with 1 new observations
+2026-04-07 10:37:17,112 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 10:37:19,065 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 10:37:20,682 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 3.6s (28.0 tok/s)
+2026-04-07 10:37:22,342 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 5.2s (38.2 tok/s)
+2026-04-07 10:37:24,006 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 6.9s (43.5 tok/s)
+2026-04-07 10:37:25,689 INFO pathfinder.ai.openai_compatible:   ... 400 tokens in 8.6s (46.6 tok/s)
+2026-04-07 10:37:27,378 INFO pathfinder.ai.openai_compatible:   ... 500 tokens in 10.3s (48.7 tok/s)
+2026-04-07 10:37:29,071 INFO pathfinder.ai.openai_compatible:   ... 600 tokens in 12.0s (50.2 tok/s)
+2026-04-07 10:37:29,616 INFO pathfinder.ai.openai_compatible: Response: 631 tokens, 2562 chars in 12.5s (50.5 tok/s)
+2026-04-07 10:37:29,617 INFO pathfinder.layers.world_modeling: Model updated to v23: 4 screens, 2 transitions, 1 capabilities, 1 entities, 1 frontier, 1 anomalies (coverage=30%, confidence=50%)
+2026-04-07 10:37:29,618 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 10:37:32,482 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 10:37:34,151 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 4.5s (22.1 tok/s)
+2026-04-07 10:37:35,844 INFO pathfinder.ai.openai_compatible: Response: 199 tokens, 866 chars in 6.2s (32.0 tok/s)
+2026-04-07 10:37:35,846 INFO pathfinder.orchestrator.agent_loop: Plan: ExplorationPlan(navigate: Navigate to the Home Screen to explore other functionalities.)
+2026-04-07 10:37:35,847 INFO pathfinder.orchestrator.agent_loop: Executing: Navigate to the Home Screen to explore other functionalities.
+2026-04-07 10:37:37,851 INFO pathfinder.orchestrator.agent_loop: === Step 24 / 50 ===
+2026-04-07 10:37:37,904 INFO pathfinder.device.web.adapter: Screenshot saved to exploration/20260407-045326-3b03/screenshot.png
+2026-04-07 10:37:37,905 INFO pathfinder.layers.perception: Captured screenshot: exploration/20260407-045326-3b03/screenshot.png
+2026-04-07 10:37:37,907 INFO pathfinder.layers.perception: UI structure not available
+2026-04-07 10:37:37,907 INFO pathfinder.layers.perception: Perceiving screenshot: exploration/20260407-045326-3b03/screenshot.png
+2026-04-07 10:37:37,911 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 (with screenshot) — this may take a few minutes for local models...
+2026-04-07 10:37:44,404 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 10:37:46,076 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 8.2s (12.2 tok/s)
+2026-04-07 10:37:47,799 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 9.9s (20.2 tok/s)
+2026-04-07 10:37:49,571 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 11.7s (25.7 tok/s)
+2026-04-07 10:37:49,870 INFO pathfinder.ai.openai_compatible: Response: 316 tokens, 1178 chars in 12.0s (26.4 tok/s)
+2026-04-07 10:37:49,873 INFO pathfinder.layers.perception: Perceived: This screen is for exploring flight booking options. (type=detail, 2 elements, confidence=0.90)
+2026-04-07 10:37:49,879 INFO pathfinder.layers.perception: Observation saved to exploration/20260407-045326-3b03/step_024_observation.json
+2026-04-07 10:37:49,881 INFO pathfinder.orchestrator.agent_loop: Perceived: This screen is for exploring flight booking options. (detail, 2 elements)
+2026-04-07 10:37:49,882 INFO pathfinder.layers.world_modeling: Updating model (v23) with 1 new observations
+2026-04-07 10:37:49,882 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 10:37:51,875 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 10:37:53,447 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 3.6s (28.1 tok/s)
+2026-04-07 10:37:55,061 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 5.2s (38.6 tok/s)
+2026-04-07 10:37:56,698 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 6.8s (44.0 tok/s)
+2026-04-07 10:37:58,355 INFO pathfinder.ai.openai_compatible:   ... 400 tokens in 8.5s (47.2 tok/s)
+2026-04-07 10:38:00,025 INFO pathfinder.ai.openai_compatible:   ... 500 tokens in 10.1s (49.3 tok/s)
+2026-04-07 10:38:01,694 INFO pathfinder.ai.openai_compatible:   ... 600 tokens in 11.8s (50.8 tok/s)
+2026-04-07 10:38:02,279 INFO pathfinder.ai.openai_compatible: Response: 633 tokens, 2568 chars in 12.4s (51.1 tok/s)
+2026-04-07 10:38:02,280 INFO pathfinder.layers.world_modeling: Model updated to v24: 4 screens, 2 transitions, 1 capabilities, 1 entities, 1 frontier, 1 anomalies (coverage=30%, confidence=50%)
+2026-04-07 10:38:02,282 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 10:38:05,161 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 10:38:06,832 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 4.5s (22.0 tok/s)
+2026-04-07 10:38:08,468 INFO pathfinder.ai.openai_compatible: Response: 195 tokens, 854 chars in 6.2s (31.5 tok/s)
+2026-04-07 10:38:08,470 INFO pathfinder.orchestrator.agent_loop: Plan: ExplorationPlan(click: Click the 'Book Now' button to proceed with the flight booking process)
+2026-04-07 10:38:08,472 WARNING pathfinder.orchestrator.agent_loop: Unknown action type 'click', defaulting to wait
+2026-04-07 10:38:08,473 INFO pathfinder.orchestrator.agent_loop: Executing: Click the 'Book Now' button to proceed with the flight booking process
+2026-04-07 10:38:10,478 INFO pathfinder.orchestrator.agent_loop: === Step 25 / 50 ===
+2026-04-07 10:38:10,520 INFO pathfinder.device.web.adapter: Screenshot saved to exploration/20260407-045326-3b03/screenshot.png
+2026-04-07 10:38:10,521 INFO pathfinder.layers.perception: Captured screenshot: exploration/20260407-045326-3b03/screenshot.png
+2026-04-07 10:38:10,523 INFO pathfinder.layers.perception: UI structure not available
+2026-04-07 10:38:10,523 INFO pathfinder.layers.perception: Perceiving screenshot: exploration/20260407-045326-3b03/screenshot.png
+2026-04-07 10:38:10,528 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 (with screenshot) — this may take a few minutes for local models...
+2026-04-07 10:38:17,046 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 10:38:18,730 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 8.2s (12.2 tok/s)
+2026-04-07 10:38:20,437 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 9.9s (20.2 tok/s)
+2026-04-07 10:38:22,204 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 11.7s (25.7 tok/s)
+2026-04-07 10:38:22,504 INFO pathfinder.ai.openai_compatible: Response: 316 tokens, 1178 chars in 12.0s (26.4 tok/s)
+2026-04-07 10:38:22,506 INFO pathfinder.layers.perception: Perceived: This screen is for exploring flight booking options. (type=detail, 2 elements, confidence=0.90)
+2026-04-07 10:38:22,511 INFO pathfinder.layers.perception: Observation saved to exploration/20260407-045326-3b03/step_025_observation.json
+2026-04-07 10:38:22,512 INFO pathfinder.orchestrator.agent_loop: Perceived: This screen is for exploring flight booking options. (detail, 2 elements)
+2026-04-07 10:38:22,513 WARNING pathfinder.orchestrator.agent_loop: STUCK: seen screen 'detail|2|button,button' 3 times consecutively
+2026-04-07 10:38:22,513 INFO pathfinder.layers.world_modeling: Updating model (v24) with 1 new observations
+2026-04-07 10:38:22,514 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 10:38:24,470 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 10:38:26,072 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 3.6s (28.1 tok/s)
+2026-04-07 10:38:27,714 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 5.2s (38.5 tok/s)
+2026-04-07 10:38:29,375 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 6.9s (43.7 tok/s)
+2026-04-07 10:38:31,044 INFO pathfinder.ai.openai_compatible:   ... 400 tokens in 8.5s (46.9 tok/s)
+2026-04-07 10:38:32,740 INFO pathfinder.ai.openai_compatible:   ... 500 tokens in 10.2s (48.9 tok/s)
+2026-04-07 10:38:34,432 INFO pathfinder.ai.openai_compatible:   ... 600 tokens in 11.9s (50.4 tok/s)
+2026-04-07 10:38:35,016 INFO pathfinder.ai.openai_compatible: Response: 633 tokens, 2568 chars in 12.5s (50.6 tok/s)
+2026-04-07 10:38:35,018 INFO pathfinder.layers.world_modeling: Model updated to v25: 4 screens, 2 transitions, 1 capabilities, 1 entities, 1 frontier, 1 anomalies (coverage=30%, confidence=50%)
+2026-04-07 10:38:35,020 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 10:38:37,939 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 10:38:39,627 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 4.6s (21.7 tok/s)
+2026-04-07 10:38:41,341 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 6.3s (31.6 tok/s)
+2026-04-07 10:38:41,721 INFO pathfinder.ai.openai_compatible: Response: 221 tokens, 969 chars in 6.7s (33.0 tok/s)
+2026-04-07 10:38:41,723 INFO pathfinder.orchestrator.agent_loop: Plan: ExplorationPlan(click: Click the 'Book Now' button to proceed with the flight booking process)
+2026-04-07 10:38:41,724 WARNING pathfinder.orchestrator.agent_loop: Unknown action type 'click', defaulting to wait
+2026-04-07 10:38:41,725 INFO pathfinder.orchestrator.agent_loop: Executing: Click the 'Book Now' button to proceed with the flight booking process
+2026-04-07 10:38:43,729 INFO pathfinder.orchestrator.agent_loop: === Step 26 / 50 ===
+2026-04-07 10:38:43,779 INFO pathfinder.device.web.adapter: Screenshot saved to exploration/20260407-045326-3b03/screenshot.png
+2026-04-07 10:38:43,779 INFO pathfinder.layers.perception: Captured screenshot: exploration/20260407-045326-3b03/screenshot.png
+2026-04-07 10:38:43,781 INFO pathfinder.layers.perception: UI structure not available
+2026-04-07 10:38:43,782 INFO pathfinder.layers.perception: Perceiving screenshot: exploration/20260407-045326-3b03/screenshot.png
+2026-04-07 10:38:43,786 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 (with screenshot) — this may take a few minutes for local models...
+2026-04-07 10:38:50,300 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 10:38:52,011 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 8.2s (12.2 tok/s)
+2026-04-07 10:38:53,779 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 10.0s (20.0 tok/s)
+2026-04-07 10:38:53,974 INFO pathfinder.ai.openai_compatible: Response: 210 tokens, 793 chars in 10.2s (20.6 tok/s)
+2026-04-07 10:38:53,976 INFO pathfinder.layers.perception: Perceived: This screen is for exploring flight booking options. (type=detail, 1 elements, confidence=0.90)
+2026-04-07 10:38:53,981 INFO pathfinder.layers.perception: Observation saved to exploration/20260407-045326-3b03/step_026_observation.json
+2026-04-07 10:38:53,983 INFO pathfinder.orchestrator.agent_loop: Perceived: This screen is for exploring flight booking options. (detail, 1 elements)
+2026-04-07 10:38:53,984 INFO pathfinder.layers.world_modeling: Updating model (v25) with 1 new observations
+2026-04-07 10:38:53,985 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 10:38:55,878 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 10:38:57,500 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 3.5s (28.5 tok/s)
+2026-04-07 10:38:59,167 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 5.2s (38.6 tok/s)
+2026-04-07 10:39:00,834 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 6.8s (43.8 tok/s)
+2026-04-07 10:39:02,532 INFO pathfinder.ai.openai_compatible:   ... 400 tokens in 8.5s (46.8 tok/s)
+2026-04-07 10:39:04,250 INFO pathfinder.ai.openai_compatible:   ... 500 tokens in 10.3s (48.7 tok/s)
+2026-04-07 10:39:05,962 INFO pathfinder.ai.openai_compatible:   ... 600 tokens in 12.0s (50.1 tok/s)
+2026-04-07 10:39:07,444 INFO pathfinder.ai.openai_compatible: Response: 685 tokens, 2755 chars in 13.5s (50.9 tok/s)
+2026-04-07 10:39:07,447 INFO pathfinder.layers.world_modeling: Model updated to v26: 5 screens, 2 transitions, 1 capabilities, 1 entities, 1 frontier, 1 anomalies (coverage=30%, confidence=50%)
+2026-04-07 10:39:07,449 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 10:39:10,314 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 10:39:12,000 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 4.6s (22.0 tok/s)
+2026-04-07 10:39:13,698 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 6.2s (32.0 tok/s)
+2026-04-07 10:39:13,852 INFO pathfinder.ai.openai_compatible: Response: 208 tokens, 904 chars in 6.4s (32.5 tok/s)
+2026-04-07 10:39:13,854 INFO pathfinder.orchestrator.agent_loop: Plan: ExplorationPlan(click: Click the 'Book Now' button to proceed with the flight booking process)
+2026-04-07 10:39:13,855 WARNING pathfinder.orchestrator.agent_loop: Unknown action type 'click', defaulting to wait
+2026-04-07 10:39:13,855 INFO pathfinder.orchestrator.agent_loop: Executing: Click the 'Book Now' button to proceed with the flight booking process
+2026-04-07 10:39:15,858 INFO pathfinder.orchestrator.agent_loop: === Step 27 / 50 ===
+2026-04-07 10:39:15,903 INFO pathfinder.device.web.adapter: Screenshot saved to exploration/20260407-045326-3b03/screenshot.png
+2026-04-07 10:39:15,904 INFO pathfinder.layers.perception: Captured screenshot: exploration/20260407-045326-3b03/screenshot.png
+2026-04-07 10:39:15,906 INFO pathfinder.layers.perception: UI structure not available
+2026-04-07 10:39:15,906 INFO pathfinder.layers.perception: Perceiving screenshot: exploration/20260407-045326-3b03/screenshot.png
+2026-04-07 10:39:15,910 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 (with screenshot) — this may take a few minutes for local models...
+2026-04-07 10:39:22,437 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 10:39:24,150 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 8.2s (12.1 tok/s)
+2026-04-07 10:39:25,901 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 10.0s (20.0 tok/s)
+2026-04-07 10:39:27,667 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 11.8s (25.5 tok/s)
+2026-04-07 10:39:27,968 INFO pathfinder.ai.openai_compatible: Response: 316 tokens, 1178 chars in 12.1s (26.2 tok/s)
+2026-04-07 10:39:27,971 INFO pathfinder.layers.perception: Perceived: This screen is for exploring flight booking options. (type=detail, 2 elements, confidence=0.90)
+2026-04-07 10:39:27,977 INFO pathfinder.layers.perception: Observation saved to exploration/20260407-045326-3b03/step_027_observation.json
+2026-04-07 10:39:27,978 INFO pathfinder.orchestrator.agent_loop: Perceived: This screen is for exploring flight booking options. (detail, 2 elements)
+2026-04-07 10:39:27,979 INFO pathfinder.layers.world_modeling: Updating model (v26) with 1 new observations
+2026-04-07 10:39:27,980 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 10:39:29,938 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 10:39:31,562 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 3.6s (27.9 tok/s)
+2026-04-07 10:39:33,221 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 5.2s (38.2 tok/s)
+2026-04-07 10:39:34,902 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 6.9s (43.3 tok/s)
+2026-04-07 10:39:36,609 INFO pathfinder.ai.openai_compatible:   ... 400 tokens in 8.6s (46.4 tok/s)
+2026-04-07 10:39:38,321 INFO pathfinder.ai.openai_compatible:   ... 500 tokens in 10.3s (48.4 tok/s)
+2026-04-07 10:39:40,029 INFO pathfinder.ai.openai_compatible:   ... 600 tokens in 12.0s (49.8 tok/s)
+2026-04-07 10:39:40,584 INFO pathfinder.ai.openai_compatible: Response: 631 tokens, 2559 chars in 12.6s (50.1 tok/s)
+2026-04-07 10:39:40,587 INFO pathfinder.layers.world_modeling: Model updated to v27: 4 screens, 2 transitions, 1 capabilities, 1 entities, 1 frontier, 1 anomalies (coverage=30%, confidence=50%)
+2026-04-07 10:39:40,588 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 10:39:43,467 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 10:39:45,152 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 4.6s (21.9 tok/s)
+2026-04-07 10:39:46,861 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 6.3s (31.9 tok/s)
+2026-04-07 10:39:47,256 INFO pathfinder.ai.openai_compatible: Response: 222 tokens, 958 chars in 6.7s (33.3 tok/s)
+2026-04-07 10:39:47,259 INFO pathfinder.orchestrator.agent_loop: Plan: ExplorationPlan(click: Click the 'Book Now' button to proceed with the flight booking process)
+2026-04-07 10:39:47,260 WARNING pathfinder.orchestrator.agent_loop: Unknown action type 'click', defaulting to wait
+2026-04-07 10:39:47,261 INFO pathfinder.orchestrator.agent_loop: Executing: Click the 'Book Now' button to proceed with the flight booking process
+2026-04-07 10:39:49,266 INFO pathfinder.orchestrator.agent_loop: === Step 28 / 50 ===
+2026-04-07 10:39:49,310 INFO pathfinder.device.web.adapter: Screenshot saved to exploration/20260407-045326-3b03/screenshot.png
+2026-04-07 10:39:49,311 INFO pathfinder.layers.perception: Captured screenshot: exploration/20260407-045326-3b03/screenshot.png
+2026-04-07 10:39:49,313 INFO pathfinder.layers.perception: UI structure not available
+2026-04-07 10:39:49,313 INFO pathfinder.layers.perception: Perceiving screenshot: exploration/20260407-045326-3b03/screenshot.png
+2026-04-07 10:39:49,317 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 (with screenshot) — this may take a few minutes for local models...
+2026-04-07 10:39:55,953 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 10:39:57,672 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 8.4s (12.0 tok/s)
+2026-04-07 10:39:59,437 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 10.1s (19.8 tok/s)
+2026-04-07 10:39:59,576 INFO pathfinder.ai.openai_compatible: Response: 207 tokens, 784 chars in 10.3s (20.2 tok/s)
+2026-04-07 10:39:59,577 INFO pathfinder.layers.perception: Perceived: This screen is for exploring flight booking options. (type=detail, 1 elements, confidence=0.90)
+2026-04-07 10:39:59,582 INFO pathfinder.layers.perception: Observation saved to exploration/20260407-045326-3b03/step_028_observation.json
+2026-04-07 10:39:59,582 INFO pathfinder.orchestrator.agent_loop: Perceived: This screen is for exploring flight booking options. (detail, 1 elements)
+2026-04-07 10:39:59,582 INFO pathfinder.layers.world_modeling: Updating model (v27) with 1 new observations
+2026-04-07 10:39:59,583 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 10:40:01,494 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 10:40:03,113 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 3.5s (28.3 tok/s)
+2026-04-07 10:40:04,780 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 5.2s (38.5 tok/s)
+2026-04-07 10:40:06,459 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 6.9s (43.6 tok/s)
+2026-04-07 10:40:08,154 INFO pathfinder.ai.openai_compatible:   ... 400 tokens in 8.6s (46.7 tok/s)
+2026-04-07 10:40:09,863 INFO pathfinder.ai.openai_compatible:   ... 500 tokens in 10.3s (48.6 tok/s)
+2026-04-07 10:40:11,572 INFO pathfinder.ai.openai_compatible:   ... 600 tokens in 12.0s (50.0 tok/s)
+2026-04-07 10:40:13,088 INFO pathfinder.ai.openai_compatible: Response: 687 tokens, 2783 chars in 13.5s (50.9 tok/s)
+2026-04-07 10:40:13,091 INFO pathfinder.layers.world_modeling: Model updated to v28: 5 screens, 2 transitions, 1 capabilities, 1 entities, 1 frontier, 1 anomalies (coverage=30%, confidence=50%)
+2026-04-07 10:40:13,092 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 10:40:15,960 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 10:40:17,646 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 4.6s (22.0 tok/s)
+2026-04-07 10:40:19,102 INFO pathfinder.ai.openai_compatible: Response: 184 tokens, 780 chars in 6.0s (30.6 tok/s)
+2026-04-07 10:40:19,104 INFO pathfinder.orchestrator.agent_loop: Plan: ExplorationPlan(click: Click the 'Book Now' button to proceed with the flight booking process)
+2026-04-07 10:40:19,105 WARNING pathfinder.orchestrator.agent_loop: Unknown action type 'click', defaulting to wait
+2026-04-07 10:40:19,106 INFO pathfinder.orchestrator.agent_loop: Executing: Click the 'Book Now' button to proceed with the flight booking process
+2026-04-07 10:40:21,112 INFO pathfinder.orchestrator.agent_loop: === Step 29 / 50 ===
+2026-04-07 10:40:21,160 INFO pathfinder.device.web.adapter: Screenshot saved to exploration/20260407-045326-3b03/screenshot.png
+2026-04-07 10:40:21,161 INFO pathfinder.layers.perception: Captured screenshot: exploration/20260407-045326-3b03/screenshot.png
+2026-04-07 10:40:21,163 INFO pathfinder.layers.perception: UI structure not available
+2026-04-07 10:40:21,163 INFO pathfinder.layers.perception: Perceiving screenshot: exploration/20260407-045326-3b03/screenshot.png
+2026-04-07 10:40:21,168 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 (with screenshot) — this may take a few minutes for local models...
+2026-04-07 10:40:27,674 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 10:40:29,397 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 8.2s (12.2 tok/s)
+2026-04-07 10:40:31,152 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 10.0s (20.0 tok/s)
+2026-04-07 10:40:32,934 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 11.8s (25.5 tok/s)
+2026-04-07 10:40:33,041 INFO pathfinder.ai.openai_compatible: Response: 305 tokens, 1132 chars in 11.9s (25.7 tok/s)
+2026-04-07 10:40:33,044 INFO pathfinder.layers.perception: Perceived: This screen is for exploring flight booking options. (type=detail, 2 elements, confidence=0.90)
+2026-04-07 10:40:33,050 INFO pathfinder.layers.perception: Observation saved to exploration/20260407-045326-3b03/step_029_observation.json
+2026-04-07 10:40:33,052 INFO pathfinder.orchestrator.agent_loop: Perceived: This screen is for exploring flight booking options. (detail, 2 elements)
+2026-04-07 10:40:33,053 INFO pathfinder.layers.world_modeling: Updating model (v28) with 1 new observations
+2026-04-07 10:40:33,054 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 10:40:35,015 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 10:40:36,637 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 3.6s (27.9 tok/s)
+2026-04-07 10:40:38,300 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 5.2s (38.1 tok/s)
+2026-04-07 10:40:39,973 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 6.9s (43.4 tok/s)
+2026-04-07 10:40:41,679 INFO pathfinder.ai.openai_compatible:   ... 400 tokens in 8.6s (46.4 tok/s)
+2026-04-07 10:40:43,398 INFO pathfinder.ai.openai_compatible:   ... 500 tokens in 10.3s (48.3 tok/s)
+2026-04-07 10:40:45,114 INFO pathfinder.ai.openai_compatible:   ... 600 tokens in 12.1s (49.8 tok/s)
+2026-04-07 10:40:46,796 INFO pathfinder.ai.openai_compatible: Response: 696 tokens, 2840 chars in 13.7s (50.6 tok/s)
+2026-04-07 10:40:46,799 INFO pathfinder.layers.world_modeling: Model updated to v29: 5 screens, 2 transitions, 1 capabilities, 1 entities, 1 frontier, 1 anomalies (coverage=30%, confidence=50%)
+2026-04-07 10:40:46,801 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 10:40:49,672 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 10:40:51,342 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 4.5s (22.0 tok/s)
+2026-04-07 10:40:53,057 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 6.3s (32.0 tok/s)
+2026-04-07 10:40:53,162 INFO pathfinder.ai.openai_compatible: Response: 205 tokens, 906 chars in 6.4s (32.2 tok/s)
+2026-04-07 10:40:53,164 INFO pathfinder.orchestrator.agent_loop: Plan: ExplorationPlan(click: Click the 'Book Now' button to proceed with the flight booking process)
+2026-04-07 10:40:53,165 WARNING pathfinder.orchestrator.agent_loop: Unknown action type 'click', defaulting to wait
+2026-04-07 10:40:53,165 INFO pathfinder.orchestrator.agent_loop: Executing: Click the 'Book Now' button to proceed with the flight booking process
+2026-04-07 10:40:55,171 INFO pathfinder.orchestrator.agent_loop: === Step 30 / 50 ===
+2026-04-07 10:40:55,227 INFO pathfinder.device.web.adapter: Screenshot saved to exploration/20260407-045326-3b03/screenshot.png
+2026-04-07 10:40:55,228 INFO pathfinder.layers.perception: Captured screenshot: exploration/20260407-045326-3b03/screenshot.png
+2026-04-07 10:40:55,230 INFO pathfinder.layers.perception: UI structure not available
+2026-04-07 10:40:55,230 INFO pathfinder.layers.perception: Perceiving screenshot: exploration/20260407-045326-3b03/screenshot.png
+2026-04-07 10:40:55,235 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 (with screenshot) — this may take a few minutes for local models...
+2026-04-07 10:41:01,823 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 10:41:03,550 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 8.3s (12.0 tok/s)
+2026-04-07 10:41:05,320 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 10.1s (19.8 tok/s)
+2026-04-07 10:41:07,092 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 11.9s (25.3 tok/s)
+2026-04-07 10:41:07,199 INFO pathfinder.ai.openai_compatible: Response: 305 tokens, 1132 chars in 12.0s (25.5 tok/s)
+2026-04-07 10:41:07,202 INFO pathfinder.layers.perception: Perceived: This screen is for exploring flight booking options. (type=detail, 2 elements, confidence=0.90)
+2026-04-07 10:41:07,208 INFO pathfinder.layers.perception: Observation saved to exploration/20260407-045326-3b03/step_030_observation.json
+2026-04-07 10:41:07,209 INFO pathfinder.orchestrator.agent_loop: Perceived: This screen is for exploring flight booking options. (detail, 2 elements)
+2026-04-07 10:41:07,210 INFO pathfinder.layers.world_modeling: Updating model (v29) with 1 new observations
+2026-04-07 10:41:07,211 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 10:41:09,161 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 10:41:10,778 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 3.6s (28.0 tok/s)
+2026-04-07 10:41:12,444 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 5.2s (38.2 tok/s)
+2026-04-07 10:41:14,111 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 6.9s (43.5 tok/s)
+2026-04-07 10:41:15,818 INFO pathfinder.ai.openai_compatible:   ... 400 tokens in 8.6s (46.5 tok/s)
+2026-04-07 10:41:17,496 INFO pathfinder.ai.openai_compatible:   ... 500 tokens in 10.3s (48.6 tok/s)
+2026-04-07 10:41:19,218 INFO pathfinder.ai.openai_compatible:   ... 600 tokens in 12.0s (50.0 tok/s)
+2026-04-07 10:41:20,956 INFO pathfinder.ai.openai_compatible:   ... 700 tokens in 13.7s (50.9 tok/s)
+2026-04-07 10:41:21,892 INFO pathfinder.ai.openai_compatible: Response: 753 tokens, 3057 chars in 14.7s (51.3 tok/s)
+2026-04-07 10:41:21,894 INFO pathfinder.layers.world_modeling: Model updated to v30: 6 screens, 2 transitions, 1 capabilities, 1 entities, 1 frontier, 1 anomalies (coverage=30%, confidence=50%)
+2026-04-07 10:41:21,896 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 10:41:24,818 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 10:41:26,511 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 4.6s (21.7 tok/s)
+2026-04-07 10:41:28,229 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 6.3s (31.6 tok/s)
+2026-04-07 10:41:28,419 INFO pathfinder.ai.openai_compatible: Response: 210 tokens, 925 chars in 6.5s (32.2 tok/s)
+2026-04-07 10:41:28,421 INFO pathfinder.orchestrator.agent_loop: Plan: ExplorationPlan(click: Click the 'Book Now' button to proceed with the flight booking process)
+2026-04-07 10:41:28,422 WARNING pathfinder.orchestrator.agent_loop: Unknown action type 'click', defaulting to wait
+2026-04-07 10:41:28,423 INFO pathfinder.orchestrator.agent_loop: Executing: Click the 'Book Now' button to proceed with the flight booking process
+2026-04-07 10:41:30,427 INFO pathfinder.orchestrator.agent_loop: === Step 31 / 50 ===
+2026-04-07 10:41:30,477 INFO pathfinder.device.web.adapter: Screenshot saved to exploration/20260407-045326-3b03/screenshot.png
+2026-04-07 10:41:30,478 INFO pathfinder.layers.perception: Captured screenshot: exploration/20260407-045326-3b03/screenshot.png
+2026-04-07 10:41:30,480 INFO pathfinder.layers.perception: UI structure not available
+2026-04-07 10:41:30,480 INFO pathfinder.layers.perception: Perceiving screenshot: exploration/20260407-045326-3b03/screenshot.png
+2026-04-07 10:41:30,485 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 (with screenshot) — this may take a few minutes for local models...
+2026-04-07 10:41:37,016 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 10:41:38,738 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 8.3s (12.1 tok/s)
+2026-04-07 10:41:40,499 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 10.0s (20.0 tok/s)
+2026-04-07 10:41:42,282 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 11.8s (25.4 tok/s)
+2026-04-07 10:41:42,390 INFO pathfinder.ai.openai_compatible: Response: 305 tokens, 1132 chars in 11.9s (25.6 tok/s)
+2026-04-07 10:41:42,392 INFO pathfinder.layers.perception: Perceived: This screen is for exploring flight booking options. (type=detail, 2 elements, confidence=0.90)
+2026-04-07 10:41:42,398 INFO pathfinder.layers.perception: Observation saved to exploration/20260407-045326-3b03/step_031_observation.json
+2026-04-07 10:41:42,399 INFO pathfinder.orchestrator.agent_loop: Perceived: This screen is for exploring flight booking options. (detail, 2 elements)
+2026-04-07 10:41:42,400 WARNING pathfinder.orchestrator.agent_loop: STUCK: seen screen 'detail|2|button,button' 3 times consecutively
+2026-04-07 10:41:42,400 INFO pathfinder.layers.world_modeling: Updating model (v30) with 1 new observations
+2026-04-07 10:41:42,401 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 10:41:44,403 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 10:41:46,029 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 3.6s (27.6 tok/s)
+2026-04-07 10:41:47,694 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 5.3s (37.8 tok/s)
+2026-04-07 10:41:49,372 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 7.0s (43.0 tok/s)
+2026-04-07 10:41:51,077 INFO pathfinder.ai.openai_compatible:   ... 400 tokens in 8.7s (46.1 tok/s)
+2026-04-07 10:41:52,771 INFO pathfinder.ai.openai_compatible:   ... 500 tokens in 10.4s (48.2 tok/s)
+2026-04-07 10:41:54,491 INFO pathfinder.ai.openai_compatible:   ... 600 tokens in 12.1s (49.6 tok/s)
+2026-04-07 10:41:56,023 INFO pathfinder.ai.openai_compatible: Response: 687 tokens, 2772 chars in 13.6s (50.4 tok/s)
+2026-04-07 10:41:56,025 INFO pathfinder.layers.world_modeling: Model updated to v31: 5 screens, 2 transitions, 1 capabilities, 1 entities, 1 frontier, 1 anomalies (coverage=30%, confidence=50%)
+2026-04-07 10:41:56,027 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 10:41:58,955 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 10:42:00,635 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 4.6s (21.7 tok/s)
+2026-04-07 10:42:02,107 INFO pathfinder.ai.openai_compatible: Response: 185 tokens, 811 chars in 6.1s (30.4 tok/s)
+2026-04-07 10:42:02,109 INFO pathfinder.orchestrator.agent_loop: Plan: ExplorationPlan(navigate: Navigate to the Home Screen to explore other functionalities)
+2026-04-07 10:42:02,110 INFO pathfinder.orchestrator.agent_loop: Executing: Navigate to the Home Screen to explore other functionalities
+2026-04-07 10:42:04,114 INFO pathfinder.orchestrator.agent_loop: === Step 32 / 50 ===
+2026-04-07 10:42:04,159 INFO pathfinder.device.web.adapter: Screenshot saved to exploration/20260407-045326-3b03/screenshot.png
+2026-04-07 10:42:04,159 INFO pathfinder.layers.perception: Captured screenshot: exploration/20260407-045326-3b03/screenshot.png
+2026-04-07 10:42:04,161 INFO pathfinder.layers.perception: UI structure not available
+2026-04-07 10:42:04,162 INFO pathfinder.layers.perception: Perceiving screenshot: exploration/20260407-045326-3b03/screenshot.png
+2026-04-07 10:42:04,165 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 (with screenshot) — this may take a few minutes for local models...
+2026-04-07 10:42:10,686 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 10:42:12,404 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 8.2s (12.1 tok/s)
+2026-04-07 10:42:14,157 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 10.0s (20.0 tok/s)
+2026-04-07 10:42:15,935 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 11.8s (25.5 tok/s)
+2026-04-07 10:42:16,257 INFO pathfinder.ai.openai_compatible: Response: 317 tokens, 1151 chars in 12.1s (26.2 tok/s)
+2026-04-07 10:42:16,259 INFO pathfinder.layers.perception: Perceived: This screen is for exploring flight booking options. (type=detail, 2 elements, confidence=0.90)
+2026-04-07 10:42:16,264 INFO pathfinder.layers.perception: Observation saved to exploration/20260407-045326-3b03/step_032_observation.json
+2026-04-07 10:42:16,265 INFO pathfinder.orchestrator.agent_loop: Perceived: This screen is for exploring flight booking options. (detail, 2 elements)
+2026-04-07 10:42:16,266 WARNING pathfinder.orchestrator.agent_loop: STUCK: seen screen 'detail|2|button,button' 4 times consecutively
+2026-04-07 10:42:16,267 INFO pathfinder.layers.world_modeling: Updating model (v31) with 1 new observations
+2026-04-07 10:42:16,268 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 10:42:18,201 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 10:42:19,819 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 3.6s (28.2 tok/s)
+2026-04-07 10:42:21,486 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 5.2s (38.3 tok/s)
+2026-04-07 10:42:23,161 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 6.9s (43.5 tok/s)
+2026-04-07 10:42:24,863 INFO pathfinder.ai.openai_compatible:   ... 400 tokens in 8.6s (46.5 tok/s)
+2026-04-07 10:42:26,573 INFO pathfinder.ai.openai_compatible:   ... 500 tokens in 10.3s (48.5 tok/s)
+2026-04-07 10:42:28,290 INFO pathfinder.ai.openai_compatible:   ... 600 tokens in 12.0s (49.9 tok/s)
+2026-04-07 10:42:30,007 INFO pathfinder.ai.openai_compatible:   ... 700 tokens in 13.7s (51.0 tok/s)
+2026-04-07 10:42:30,991 INFO pathfinder.ai.openai_compatible: Response: 756 tokens, 3030 chars in 14.7s (51.4 tok/s)
+2026-04-07 10:42:30,992 INFO pathfinder.layers.world_modeling: Model updated to v32: 6 screens, 2 transitions, 1 capabilities, 1 entities, 1 frontier, 1 anomalies (coverage=30%, confidence=50%)
+2026-04-07 10:42:30,994 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 10:42:34,068 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 10:42:35,797 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 4.8s (20.8 tok/s)
+2026-04-07 10:42:37,614 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 6.6s (30.2 tok/s)
+2026-04-07 10:42:37,913 INFO pathfinder.ai.openai_compatible: Response: 216 tokens, 976 chars in 6.9s (31.2 tok/s)
+2026-04-07 10:42:37,915 INFO pathfinder.orchestrator.agent_loop: Plan: ExplorationPlan(navigate: Navigate to the Home Screen to explore other functionalities)
+2026-04-07 10:42:37,916 INFO pathfinder.orchestrator.agent_loop: Executing: Navigate to the Home Screen to explore other functionalities
+2026-04-07 10:42:39,919 INFO pathfinder.orchestrator.agent_loop: === Step 33 / 50 ===
+2026-04-07 10:42:39,974 INFO pathfinder.device.web.adapter: Screenshot saved to exploration/20260407-045326-3b03/screenshot.png
+2026-04-07 10:42:39,975 INFO pathfinder.layers.perception: Captured screenshot: exploration/20260407-045326-3b03/screenshot.png
+2026-04-07 10:42:39,978 INFO pathfinder.layers.perception: UI structure not available
+2026-04-07 10:42:39,978 INFO pathfinder.layers.perception: Perceiving screenshot: exploration/20260407-045326-3b03/screenshot.png
+2026-04-07 10:42:39,983 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 (with screenshot) — this may take a few minutes for local models...
+2026-04-07 10:42:46,877 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 10:42:48,603 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 8.6s (11.6 tok/s)
+2026-04-07 10:42:50,364 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 10.4s (19.3 tok/s)
+2026-04-07 10:42:50,486 INFO pathfinder.ai.openai_compatible: Response: 206 tokens, 777 chars in 10.5s (19.6 tok/s)
+2026-04-07 10:42:50,487 INFO pathfinder.layers.perception: Perceived: This screen is for exploring flight booking options. (type=detail, 1 elements, confidence=0.90)
+2026-04-07 10:42:50,493 INFO pathfinder.layers.perception: Observation saved to exploration/20260407-045326-3b03/step_033_observation.json
+2026-04-07 10:42:50,493 INFO pathfinder.orchestrator.agent_loop: Perceived: This screen is for exploring flight booking options. (detail, 1 elements)
+2026-04-07 10:42:50,494 INFO pathfinder.layers.world_modeling: Updating model (v32) with 1 new observations
+2026-04-07 10:42:50,495 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 10:42:52,481 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 10:42:54,092 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 3.6s (27.8 tok/s)
+2026-04-07 10:42:55,739 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 5.2s (38.1 tok/s)
+2026-04-07 10:42:57,429 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 6.9s (43.3 tok/s)
+2026-04-07 10:42:59,130 INFO pathfinder.ai.openai_compatible:   ... 400 tokens in 8.6s (46.3 tok/s)
+2026-04-07 10:43:00,837 INFO pathfinder.ai.openai_compatible:   ... 500 tokens in 10.3s (48.3 tok/s)
+2026-04-07 10:43:02,568 INFO pathfinder.ai.openai_compatible:   ... 600 tokens in 12.1s (49.7 tok/s)
+2026-04-07 10:43:04,306 INFO pathfinder.ai.openai_compatible:   ... 700 tokens in 13.8s (50.7 tok/s)
+2026-04-07 10:43:06,039 INFO pathfinder.ai.openai_compatible:   ... 800 tokens in 15.5s (51.5 tok/s)
+2026-04-07 10:43:06,402 INFO pathfinder.ai.openai_compatible: Response: 820 tokens, 3245 chars in 15.9s (51.6 tok/s)
+2026-04-07 10:43:06,405 INFO pathfinder.layers.world_modeling: Model updated to v33: 7 screens, 2 transitions, 1 capabilities, 1 entities, 1 frontier, 1 anomalies (coverage=30%, confidence=50%)
+2026-04-07 10:43:06,406 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 10:43:09,385 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 10:43:11,078 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 4.7s (21.4 tok/s)
+2026-04-07 10:43:12,800 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 6.4s (31.3 tok/s)
+2026-04-07 10:43:12,870 INFO pathfinder.ai.openai_compatible: Response: 203 tokens, 895 chars in 6.5s (31.4 tok/s)
+2026-04-07 10:43:12,872 INFO pathfinder.orchestrator.agent_loop: Plan: ExplorationPlan(navigate: Navigate to the Home Screen to explore other functionalities)
+2026-04-07 10:43:12,873 INFO pathfinder.orchestrator.agent_loop: Executing: Navigate to the Home Screen to explore other functionalities
+2026-04-07 10:43:14,875 INFO pathfinder.orchestrator.agent_loop: === Step 34 / 50 ===
+2026-04-07 10:43:14,922 INFO pathfinder.device.web.adapter: Screenshot saved to exploration/20260407-045326-3b03/screenshot.png
+2026-04-07 10:43:14,923 INFO pathfinder.layers.perception: Captured screenshot: exploration/20260407-045326-3b03/screenshot.png
+2026-04-07 10:43:14,924 INFO pathfinder.layers.perception: UI structure not available
+2026-04-07 10:43:14,925 INFO pathfinder.layers.perception: Perceiving screenshot: exploration/20260407-045326-3b03/screenshot.png
+2026-04-07 10:43:14,928 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 (with screenshot) — this may take a few minutes for local models...
+2026-04-07 10:43:21,445 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 10:43:23,168 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 8.2s (12.1 tok/s)
+2026-04-07 10:43:24,931 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 10.0s (20.0 tok/s)
+2026-04-07 10:43:25,269 INFO pathfinder.ai.openai_compatible: Response: 218 tokens, 796 chars in 10.3s (21.1 tok/s)
+2026-04-07 10:43:25,271 INFO pathfinder.layers.perception: Perceived: This screen is for exploring flight booking options. (type=detail, 1 elements, confidence=0.90)
+2026-04-07 10:43:25,277 INFO pathfinder.layers.perception: Observation saved to exploration/20260407-045326-3b03/step_034_observation.json
+2026-04-07 10:43:25,278 INFO pathfinder.orchestrator.agent_loop: Perceived: This screen is for exploring flight booking options. (detail, 1 elements)
+2026-04-07 10:43:25,280 INFO pathfinder.layers.world_modeling: Updating model (v33) with 1 new observations
+2026-04-07 10:43:25,280 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 10:43:27,332 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 10:43:28,970 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 3.7s (27.1 tok/s)
+2026-04-07 10:43:30,632 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 5.4s (37.4 tok/s)
+2026-04-07 10:43:32,323 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 7.0s (42.6 tok/s)
+2026-04-07 10:43:34,035 INFO pathfinder.ai.openai_compatible:   ... 400 tokens in 8.8s (45.7 tok/s)
+2026-04-07 10:43:35,749 INFO pathfinder.ai.openai_compatible:   ... 500 tokens in 10.5s (47.8 tok/s)
+2026-04-07 10:43:37,475 INFO pathfinder.ai.openai_compatible:   ... 600 tokens in 12.2s (49.2 tok/s)
+2026-04-07 10:43:39,199 INFO pathfinder.ai.openai_compatible:   ... 700 tokens in 13.9s (50.3 tok/s)
+2026-04-07 10:43:40,941 INFO pathfinder.ai.openai_compatible:   ... 800 tokens in 15.7s (51.1 tok/s)
+2026-04-07 10:43:42,661 INFO pathfinder.ai.openai_compatible: Response: 896 tokens, 3560 chars in 17.4s (51.6 tok/s)
+2026-04-07 10:43:42,663 INFO pathfinder.layers.world_modeling: Model updated to v34: 8 screens, 2 transitions, 1 capabilities, 1 entities, 1 frontier, 1 anomalies (coverage=30%, confidence=50%)
+2026-04-07 10:43:42,664 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 10:43:45,718 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 10:43:47,416 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 4.8s (21.1 tok/s)
+2026-04-07 10:43:49,142 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 6.5s (30.9 tok/s)
+2026-04-07 10:43:49,196 INFO pathfinder.ai.openai_compatible: Response: 202 tokens, 890 chars in 6.5s (30.9 tok/s)
+2026-04-07 10:43:49,197 INFO pathfinder.orchestrator.agent_loop: Plan: ExplorationPlan(navigate: Navigate to the Home Screen to explore other functionalities)
+2026-04-07 10:43:49,199 INFO pathfinder.orchestrator.agent_loop: Executing: Navigate to the Home Screen to explore other functionalities
+2026-04-07 10:43:51,202 INFO pathfinder.orchestrator.agent_loop: === Step 35 / 50 ===
+2026-04-07 10:43:51,235 INFO pathfinder.device.web.adapter: Screenshot saved to exploration/20260407-045326-3b03/screenshot.png
+2026-04-07 10:43:51,235 INFO pathfinder.layers.perception: Captured screenshot: exploration/20260407-045326-3b03/screenshot.png
+2026-04-07 10:43:51,237 INFO pathfinder.layers.perception: UI structure not available
+2026-04-07 10:43:51,237 INFO pathfinder.layers.perception: Perceiving screenshot: exploration/20260407-045326-3b03/screenshot.png
+2026-04-07 10:43:51,240 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 (with screenshot) — this may take a few minutes for local models...
+2026-04-07 10:43:57,847 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 10:43:59,575 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 8.3s (12.0 tok/s)
+2026-04-07 10:44:01,351 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 10.1s (19.8 tok/s)
+2026-04-07 10:44:01,423 INFO pathfinder.ai.openai_compatible: Response: 203 tokens, 754 chars in 10.2s (19.9 tok/s)
+2026-04-07 10:44:01,424 INFO pathfinder.layers.perception: Perceived: This screen is for exploring flight booking options. (type=detail, 1 elements, confidence=0.90)
+2026-04-07 10:44:01,430 INFO pathfinder.layers.perception: Observation saved to exploration/20260407-045326-3b03/step_035_observation.json
+2026-04-07 10:44:01,430 INFO pathfinder.orchestrator.agent_loop: Perceived: This screen is for exploring flight booking options. (detail, 1 elements)
+2026-04-07 10:44:01,431 WARNING pathfinder.orchestrator.agent_loop: STUCK: seen screen 'detail|1|button' 3 times consecutively
+2026-04-07 10:44:01,431 INFO pathfinder.layers.world_modeling: Updating model (v34) with 1 new observations
+2026-04-07 10:44:01,432 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 10:44:03,525 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 10:44:05,169 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 3.7s (26.8 tok/s)
+2026-04-07 10:44:06,836 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 5.4s (37.0 tok/s)
+2026-04-07 10:44:08,533 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 7.1s (42.2 tok/s)
+2026-04-07 10:44:10,256 INFO pathfinder.ai.openai_compatible:   ... 400 tokens in 8.8s (45.3 tok/s)
+2026-04-07 10:44:11,981 INFO pathfinder.ai.openai_compatible:   ... 500 tokens in 10.5s (47.4 tok/s)
+2026-04-07 10:44:13,722 INFO pathfinder.ai.openai_compatible:   ... 600 tokens in 12.3s (48.8 tok/s)
+2026-04-07 10:44:15,463 INFO pathfinder.ai.openai_compatible:   ... 700 tokens in 14.0s (49.9 tok/s)
+2026-04-07 10:44:16,458 INFO pathfinder.ai.openai_compatible: Response: 756 tokens, 3030 chars in 15.0s (50.3 tok/s)
+2026-04-07 10:44:16,461 INFO pathfinder.layers.world_modeling: Model updated to v35: 6 screens, 2 transitions, 1 capabilities, 1 entities, 1 frontier, 1 anomalies (coverage=30%, confidence=50%)
+2026-04-07 10:44:16,463 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 10:44:19,449 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 10:44:21,140 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 4.7s (21.4 tok/s)
+2026-04-07 10:44:22,858 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 6.4s (31.3 tok/s)
+2026-04-07 10:44:24,622 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 8.2s (36.8 tok/s)
+2026-04-07 10:44:25,440 INFO pathfinder.ai.openai_compatible: Response: 345 tokens, 1521 chars in 9.0s (38.4 tok/s)
+2026-04-07 10:44:25,442 INFO pathfinder.orchestrator.agent_loop: Plan: ExplorationPlan(navigate: Navigate away from the current screen as it is a boundary and requires input that cannot be filled., needs=[username, password])
+2026-04-07 10:44:25,444 INFO pathfinder.orchestrator.agent_loop: Input required: username (credentials) on detail
+2026-04-07 10:44:25,444 INFO pathfinder.orchestrator.agent_loop: Input required: password (credentials) on detail
+2026-04-07 10:44:25,445 INFO pathfinder.orchestrator.agent_loop: Executing: Navigate away from the current screen as it is a boundary and requires input that cannot be filled.
+2026-04-07 10:44:27,448 INFO pathfinder.orchestrator.agent_loop: === Step 36 / 50 ===
+2026-04-07 10:44:27,489 INFO pathfinder.device.web.adapter: Screenshot saved to exploration/20260407-045326-3b03/screenshot.png
+2026-04-07 10:44:27,490 INFO pathfinder.layers.perception: Captured screenshot: exploration/20260407-045326-3b03/screenshot.png
+2026-04-07 10:44:27,492 INFO pathfinder.layers.perception: UI structure not available
+2026-04-07 10:44:27,492 INFO pathfinder.layers.perception: Perceiving screenshot: exploration/20260407-045326-3b03/screenshot.png
+2026-04-07 10:44:27,495 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 (with screenshot) — this may take a few minutes for local models...
+2026-04-07 10:44:34,045 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 10:44:35,772 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 8.3s (12.1 tok/s)
+2026-04-07 10:44:37,540 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 10.0s (19.9 tok/s)
+2026-04-07 10:44:39,324 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 11.8s (25.4 tok/s)
+2026-04-07 10:44:41,134 INFO pathfinder.ai.openai_compatible:   ... 400 tokens in 13.6s (29.3 tok/s)
+2026-04-07 10:44:41,389 INFO pathfinder.ai.openai_compatible: Response: 413 tokens, 1542 chars in 13.9s (29.7 tok/s)
+2026-04-07 10:44:41,392 INFO pathfinder.layers.perception: Perceived: This screen is for exploring flight booking options. (type=detail, 3 elements, confidence=0.90)
+2026-04-07 10:44:41,398 INFO pathfinder.layers.perception: Observation saved to exploration/20260407-045326-3b03/step_036_observation.json
+2026-04-07 10:44:41,400 INFO pathfinder.orchestrator.agent_loop: Perceived: This screen is for exploring flight booking options. (detail, 3 elements)
+2026-04-07 10:44:41,400 INFO pathfinder.layers.world_modeling: Updating model (v35) with 1 new observations
+2026-04-07 10:44:41,401 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 10:44:43,505 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 10:44:45,127 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 3.7s (26.8 tok/s)
+2026-04-07 10:44:46,784 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 5.4s (37.2 tok/s)
+2026-04-07 10:44:48,525 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 7.1s (42.1 tok/s)
+2026-04-07 10:44:50,250 INFO pathfinder.ai.openai_compatible:   ... 400 tokens in 8.8s (45.2 tok/s)
+2026-04-07 10:44:51,974 INFO pathfinder.ai.openai_compatible:   ... 500 tokens in 10.6s (47.3 tok/s)
+2026-04-07 10:44:53,713 INFO pathfinder.ai.openai_compatible:   ... 600 tokens in 12.3s (48.7 tok/s)
+2026-04-07 10:44:55,460 INFO pathfinder.ai.openai_compatible:   ... 700 tokens in 14.1s (49.8 tok/s)
+2026-04-07 10:44:57,195 INFO pathfinder.ai.openai_compatible:   ... 800 tokens in 15.8s (50.7 tok/s)
+2026-04-07 10:44:57,670 INFO pathfinder.ai.openai_compatible: Response: 825 tokens, 3312 chars in 16.3s (50.7 tok/s)
+2026-04-07 10:44:57,672 INFO pathfinder.layers.world_modeling: Model updated to v36: 7 screens, 2 transitions, 1 capabilities, 1 entities, 1 frontier, 1 anomalies (coverage=30%, confidence=50%)
+2026-04-07 10:44:57,674 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 10:45:00,750 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 10:45:02,447 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 4.8s (21.0 tok/s)
+2026-04-07 10:45:04,161 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 6.5s (30.8 tok/s)
+2026-04-07 10:45:05,009 INFO pathfinder.ai.openai_compatible: Response: 247 tokens, 1047 chars in 7.3s (33.7 tok/s)
+2026-04-07 10:45:05,011 INFO pathfinder.orchestrator.agent_loop: Plan: ExplorationPlan(navigate: Navigate away from the current screen as it is a boundary and requires input that cannot be filled., needs=[username])
+2026-04-07 10:45:05,013 INFO pathfinder.orchestrator.agent_loop: Input required: username (credentials) on detail
+2026-04-07 10:45:05,014 INFO pathfinder.orchestrator.agent_loop: Executing: Navigate away from the current screen as it is a boundary and requires input that cannot be filled.
+2026-04-07 10:45:07,017 INFO pathfinder.orchestrator.agent_loop: === Step 37 / 50 ===
+2026-04-07 10:45:07,067 INFO pathfinder.device.web.adapter: Screenshot saved to exploration/20260407-045326-3b03/screenshot.png
+2026-04-07 10:45:07,068 INFO pathfinder.layers.perception: Captured screenshot: exploration/20260407-045326-3b03/screenshot.png
+2026-04-07 10:45:07,070 INFO pathfinder.layers.perception: UI structure not available
+2026-04-07 10:45:07,070 INFO pathfinder.layers.perception: Perceiving screenshot: exploration/20260407-045326-3b03/screenshot.png
+2026-04-07 10:45:07,074 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 (with screenshot) — this may take a few minutes for local models...
+2026-04-07 10:45:13,677 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 10:45:15,404 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 8.3s (12.0 tok/s)
+2026-04-07 10:45:17,178 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 10.1s (19.8 tok/s)
+2026-04-07 10:45:18,974 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 11.9s (25.2 tok/s)
+2026-04-07 10:45:20,797 INFO pathfinder.ai.openai_compatible:   ... 400 tokens in 13.7s (29.1 tok/s)
+2026-04-07 10:45:21,053 INFO pathfinder.ai.openai_compatible: Response: 413 tokens, 1542 chars in 14.0s (29.5 tok/s)
+2026-04-07 10:45:21,055 INFO pathfinder.layers.perception: Perceived: This screen is for exploring flight booking options. (type=detail, 3 elements, confidence=0.90)
+2026-04-07 10:45:21,061 INFO pathfinder.layers.perception: Observation saved to exploration/20260407-045326-3b03/step_037_observation.json
+2026-04-07 10:45:21,062 INFO pathfinder.orchestrator.agent_loop: Perceived: This screen is for exploring flight booking options. (detail, 3 elements)
+2026-04-07 10:45:21,063 INFO pathfinder.layers.world_modeling: Updating model (v36) with 1 new observations
+2026-04-07 10:45:21,064 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 10:45:23,188 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 10:45:24,834 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 3.8s (26.5 tok/s)
+2026-04-07 10:45:26,507 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 5.4s (36.8 tok/s)
+2026-04-07 10:45:28,212 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 7.1s (42.0 tok/s)
+2026-04-07 10:45:29,936 INFO pathfinder.ai.openai_compatible:   ... 400 tokens in 8.9s (45.1 tok/s)
+2026-04-07 10:45:31,665 INFO pathfinder.ai.openai_compatible:   ... 500 tokens in 10.6s (47.2 tok/s)
+2026-04-07 10:45:33,408 INFO pathfinder.ai.openai_compatible:   ... 600 tokens in 12.3s (48.6 tok/s)
+2026-04-07 10:45:35,151 INFO pathfinder.ai.openai_compatible:   ... 700 tokens in 14.1s (49.7 tok/s)
+2026-04-07 10:45:36,908 INFO pathfinder.ai.openai_compatible:   ... 800 tokens in 15.8s (50.5 tok/s)
+2026-04-07 10:45:38,690 INFO pathfinder.ai.openai_compatible:   ... 900 tokens in 17.6s (51.1 tok/s)
+2026-04-07 10:45:38,778 INFO pathfinder.ai.openai_compatible: Response: 904 tokens, 3644 chars in 17.7s (51.0 tok/s)
+2026-04-07 10:45:38,780 INFO pathfinder.layers.world_modeling: Model updated to v37: 8 screens, 2 transitions, 1 capabilities, 1 entities, 1 frontier, 1 anomalies (coverage=30%, confidence=50%)
+2026-04-07 10:45:38,781 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 10:45:41,959 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 10:45:43,646 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 4.9s (20.6 tok/s)
+2026-04-07 10:45:44,905 INFO pathfinder.ai.openai_compatible: Response: 172 tokens, 728 chars in 6.1s (28.1 tok/s)
+2026-04-07 10:45:44,907 INFO pathfinder.orchestrator.agent_loop: Plan: ExplorationPlan(navigate: Navigate away from the current screen as it is a boundary and requires input that cannot be filled.)
+2026-04-07 10:45:44,909 INFO pathfinder.orchestrator.agent_loop: Executing: Navigate away from the current screen as it is a boundary and requires input that cannot be filled.
+2026-04-07 10:45:46,912 INFO pathfinder.orchestrator.agent_loop: === Step 38 / 50 ===
+2026-04-07 10:45:46,959 INFO pathfinder.device.web.adapter: Screenshot saved to exploration/20260407-045326-3b03/screenshot.png
+2026-04-07 10:45:46,959 INFO pathfinder.layers.perception: Captured screenshot: exploration/20260407-045326-3b03/screenshot.png
+2026-04-07 10:45:46,961 INFO pathfinder.layers.perception: UI structure not available
+2026-04-07 10:45:46,961 INFO pathfinder.layers.perception: Perceiving screenshot: exploration/20260407-045326-3b03/screenshot.png
+2026-04-07 10:45:46,965 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 (with screenshot) — this may take a few minutes for local models...
+2026-04-07 10:45:53,591 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 10:45:55,309 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 8.3s (12.0 tok/s)
+2026-04-07 10:45:57,085 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 10.1s (19.8 tok/s)
+2026-04-07 10:45:58,874 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 11.9s (25.2 tok/s)
+2026-04-07 10:46:00,723 INFO pathfinder.ai.openai_compatible:   ... 400 tokens in 13.8s (29.1 tok/s)
+2026-04-07 10:46:00,980 INFO pathfinder.ai.openai_compatible: Response: 413 tokens, 1542 chars in 14.0s (29.5 tok/s)
+2026-04-07 10:46:00,982 INFO pathfinder.layers.perception: Perceived: This screen is for exploring flight booking options. (type=detail, 3 elements, confidence=0.90)
+2026-04-07 10:46:00,988 INFO pathfinder.layers.perception: Observation saved to exploration/20260407-045326-3b03/step_038_observation.json
+2026-04-07 10:46:00,989 INFO pathfinder.orchestrator.agent_loop: Perceived: This screen is for exploring flight booking options. (detail, 3 elements)
+2026-04-07 10:46:00,990 WARNING pathfinder.orchestrator.agent_loop: STUCK: seen screen 'detail|3|button,button,button' 3 times consecutively
+2026-04-07 10:46:00,991 INFO pathfinder.layers.world_modeling: Updating model (v37) with 1 new observations
+2026-04-07 10:46:00,992 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 10:46:03,206 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 10:46:04,847 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 3.9s (25.9 tok/s)
+2026-04-07 10:46:06,510 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 5.5s (36.2 tok/s)
+2026-04-07 10:46:08,227 INFO pathfinder.ai.openai_compatible:   ... 300 tokens in 7.2s (41.5 tok/s)
+2026-04-07 10:46:09,954 INFO pathfinder.ai.openai_compatible:   ... 400 tokens in 9.0s (44.6 tok/s)
+2026-04-07 10:46:11,684 INFO pathfinder.ai.openai_compatible:   ... 500 tokens in 10.7s (46.8 tok/s)
+2026-04-07 10:46:13,427 INFO pathfinder.ai.openai_compatible:   ... 600 tokens in 12.4s (48.3 tok/s)
+2026-04-07 10:46:15,171 INFO pathfinder.ai.openai_compatible:   ... 700 tokens in 14.2s (49.4 tok/s)
+2026-04-07 10:46:16,934 INFO pathfinder.ai.openai_compatible:   ... 800 tokens in 15.9s (50.2 tok/s)
+2026-04-07 10:46:18,704 INFO pathfinder.ai.openai_compatible:   ... 900 tokens in 17.7s (50.8 tok/s)
+2026-04-07 10:46:20,031 INFO pathfinder.ai.openai_compatible: Response: 974 tokens, 3916 chars in 19.0s (51.2 tok/s)
+2026-04-07 10:46:20,034 INFO pathfinder.layers.world_modeling: Model updated to v38: 9 screens, 2 transitions, 1 capabilities, 1 entities, 1 frontier, 1 anomalies (coverage=30%, confidence=50%)
+2026-04-07 10:46:20,036 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 10:46:23,313 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 10:46:25,002 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 5.0s (20.1 tok/s)
+2026-04-07 10:46:26,752 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 6.7s (29.8 tok/s)
+2026-04-07 10:46:26,770 INFO pathfinder.ai.openai_compatible: Response: 200 tokens, 874 chars in 6.7s (29.7 tok/s)
+2026-04-07 10:46:26,772 INFO pathfinder.orchestrator.agent_loop: Plan: ExplorationPlan(navigate: Navigate away from the current screen as it is a boundary and requires input that cannot be filled.)
+2026-04-07 10:46:26,774 INFO pathfinder.orchestrator.agent_loop: Executing: Navigate away from the current screen as it is a boundary and requires input that cannot be filled.
+2026-04-07 10:46:28,778 INFO pathfinder.orchestrator.agent_loop: === Step 39 / 50 ===
+2026-04-07 10:46:28,806 INFO pathfinder.device.web.adapter: Screenshot saved to exploration/20260407-045326-3b03/screenshot.png
+2026-04-07 10:46:28,807 INFO pathfinder.layers.perception: Captured screenshot: exploration/20260407-045326-3b03/screenshot.png
+2026-04-07 10:46:28,808 INFO pathfinder.layers.perception: UI structure not available
+2026-04-07 10:46:28,808 INFO pathfinder.layers.perception: Perceiving screenshot: exploration/20260407-045326-3b03/screenshot.png
+2026-04-07 10:46:28,811 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 (with screenshot) — this may take a few minutes for local models...
+2026-04-07 10:46:35,535 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 10:46:37,261 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 8.4s (11.8 tok/s)
+2026-04-07 10:46:39,033 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 10.2s (19.6 tok/s)
+2026-04-07 10:46:40,763 INFO pathfinder.ai.openai_compatible: Response: 295 tokens, 1113 chars in 12.0s (24.7 tok/s)
+2026-04-07 10:46:40,766 INFO pathfinder.layers.perception: Perceived: This screen is for exploring flight booking options. (type=detail, 2 elements, confidence=0.90)
+2026-04-07 10:46:40,771 INFO pathfinder.layers.perception: Observation saved to exploration/20260407-045326-3b03/step_039_observation.json
+2026-04-07 10:46:40,772 INFO pathfinder.orchestrator.agent_loop: Perceived: This screen is for exploring flight booking options. (detail, 2 elements)
+2026-04-07 10:46:40,774 INFO pathfinder.layers.world_modeling: Updating model (v38) with 1 new observations
+2026-04-07 10:46:40,775 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...
+2026-04-07 10:46:42,999 INFO httpx: HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-07 10:46:44,642 INFO pathfinder.ai.openai_compatible:   ... 100 tokens in 3.9s (25.9 tok/s)
+2026-04-07 10:46:46,308 INFO pathfinder.ai.openai_compatible:   ... 200 tokens in 5.5s (36.2 tok/s)
+2026-04-07 10:46:46,559 INFO pathfinder.orchestrator.agent_loop: Exploration interrupted by user
+2026-04-07 10:46:46,561 INFO pathfinder.layers.world_modeling: Model saved to exploration/20260407-045326-3b03/final_model.json
+2026-04-07 10:46:46,562 INFO pathfinder.orchestrator.agent_loop: Saved 2 input requirements to exploration/20260407-045326-3b03/inputs_required.json
+2026-04-07 10:46:46,563 INFO pathfinder.orchestrator.agent_loop: Running Layer 3: Flow Generation...
+2026-04-07 10:46:46,563 INFO pathfinder.layers.flow_generation: Generating flows from model v38 (9 screens, 2 transitions) and 38 trace steps
+2026-04-07 10:46:46,564 INFO pathfinder.ai.openai_compatible: Calling qwen2.5vl:7b at http://localhost:11434/v1 — this may take a few minutes for local models...

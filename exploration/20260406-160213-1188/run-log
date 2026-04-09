@@ -1,0 +1,63 @@
+2026-04-06 21:32:16,405 INFO pathfinder.orchestrator.agent_loop: Invocation: pathfinder explore-web https://goindigo.in --name 'Indigo' --max-actions 50 --inputs /Users/amitgarde/indigo_inputs.json
+2026-04-06 21:32:16,406 INFO pathfinder.orchestrator.agent_loop: Run ID: 20260406-160213-1188
+2026-04-06 21:32:16,406 INFO pathfinder.orchestrator.agent_loop: Run directory: exploration/20260406-160213-1188
+2026-04-06 21:32:16,406 INFO pathfinder.orchestrator.agent_loop: Navigating to start URL: https://goindigo.in
+2026-04-06 21:32:16,407 INFO pathfinder.device.web.adapter: Navigating to: https://goindigo.in
+2026-04-06 21:32:19,436 INFO pathfinder.layers.world_modeling: Created empty model
+2026-04-06 21:32:19,436 INFO pathfinder.orchestrator.agent_loop: Available inputs: destination_city, destination
+2026-04-06 21:32:19,436 INFO pathfinder.orchestrator.agent_loop: Starting exploration of Indigo (budget: 50 actions)
+2026-04-06 21:32:19,437 INFO pathfinder.orchestrator.agent_loop: === Step 1 / 50 ===
+2026-04-06 21:32:20,099 INFO pathfinder.device.web.adapter: Screenshot saved to exploration/20260406-160213-1188/screenshot.png
+2026-04-06 21:32:20,100 INFO pathfinder.layers.perception: Captured screenshot: exploration/20260406-160213-1188/screenshot.png
+2026-04-06 21:32:20,105 INFO pathfinder.device.web.adapter: DOM structure extracted (147 chars)
+2026-04-06 21:32:20,106 INFO pathfinder.layers.perception: Captured UI structure (147 chars)
+2026-04-06 21:32:20,106 INFO pathfinder.layers.perception: Perceiving screenshot: exploration/20260406-160213-1188/screenshot.png
+2026-04-06 21:32:20,111 INFO pathfinder.ai.anthropic_ai: Calling claude-sonnet-4-20250514 for perception...
+2026-04-06 21:32:20,929 INFO httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-04-06 21:32:20,930 ERROR pathfinder.orchestrator.agent_loop: Exploration error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CZnoHRp2GBhe35uppHG9A'}
+Traceback (most recent call last):
+  File "/Users/amitgarde/hacking/claude-code/pathfinder/pathfinder/orchestrator/agent_loop.py", line 301, in explore
+    observation = await self.perception.perceive_live(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Users/amitgarde/hacking/claude-code/pathfinder/pathfinder/layers/perception.py", line 124, in perceive_live
+    return await self.perceive_screenshot(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Users/amitgarde/hacking/claude-code/pathfinder/pathfinder/layers/perception.py", line 68, in perceive_screenshot
+    observation = await self.ai.perceive(
+                  ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Users/amitgarde/hacking/claude-code/pathfinder/pathfinder/ai/anthropic_ai.py", line 89, in perceive
+    response = self.client.messages.create(
+        model=self.config.model,
+    ...<21 lines>...
+        ],
+    )
+  File "/Users/amitgarde/hacking/claude-code/pathfinder/.venv/lib/python3.14/site-packages/anthropic/_utils/_utils.py", line 282, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/amitgarde/hacking/claude-code/pathfinder/.venv/lib/python3.14/site-packages/anthropic/resources/messages/messages.py", line 996, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/v1/messages",
+        ^^^^^^^^^^^^^^^
+    ...<30 lines>...
+        stream_cls=Stream[RawMessageStreamEvent],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/amitgarde/hacking/claude-code/pathfinder/.venv/lib/python3.14/site-packages/anthropic/_base_client.py", line 1370, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amitgarde/hacking/claude-code/pathfinder/.venv/lib/python3.14/site-packages/anthropic/_base_client.py", line 1143, in request
+    raise self._make_status_error_from_response(err.response) from None
+anthropic.BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CZnoHRp2GBhe35uppHG9A'}
+2026-04-06 21:32:21,051 INFO pathfinder.layers.world_modeling: Model saved to exploration/20260406-160213-1188/final_model.json
+2026-04-06 21:32:21,052 INFO pathfinder.orchestrator.agent_loop: Exploration summary saved to exploration/20260406-160213-1188/exploration_summary.json
+2026-04-06 21:32:21,053 INFO pathfinder.orchestrator.agent_loop: Exploration complete: 0 actions in 1.6s. Model v0: 0 screens, 0 transitions, coverage=0%. Stop reason: Error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CZnoHRp2GBhe35uppHG9A'}

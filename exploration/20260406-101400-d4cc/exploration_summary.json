@@ -1,0 +1,97 @@
+{
+  "run_id": "20260406-101400-d4cc",
+  "run_dir": "exploration/20260406-101400-d4cc",
+  "app": "Hacker News",
+  "total_actions": 10,
+  "duration_seconds": 497.8,
+  "stop_reason": "Budget exhausted",
+  "model_version": 10,
+  "screens_discovered": 8,
+  "transitions_discovered": 24,
+  "capabilities": 14,
+  "coverage_estimate": 0.85,
+  "confidence": 0.95,
+  "inputs_required": [
+    {
+      "field": "search_query",
+      "category": "search_query",
+      "screen_type": "home",
+      "element_label": "Search:",
+      "required": false,
+      "suggested_strategy": "generate",
+      "notes": "Search functionality for finding specific stories - would need a search term to test this capability"
+    }
+  ],
+  "steps": [
+    {
+      "step": 1,
+      "screen": "This is the main Hacker News homepage displaying a ranked list of technology news stories and discussions",
+      "action": "Tap the 'new' tab to navigate to the newest stories page",
+      "goal": "New stories page (newest content) - highest priority frontier item",
+      "success": true
+    },
+    {
+      "step": 2,
+      "screen": "This is the Hacker News 'new' page displaying the newest technology stories and discussions in chronological order",
+      "action": "Tap on the 'Custom Paper Pocket Yachts' story to view its detail page",
+      "goal": "Explore individual story detail pages (priority 0.9) and discover the comments/discussion interface structure",
+      "success": true
+    },
+    {
+      "step": 3,
+      "screen": "This is a story detail page for 'Custom Paper Pocket Yachts' showing the story content with navigation sidebar and company branding",
+      "action": "Click the Home link to navigate back to the Hacker News homepage",
+      "goal": "Navigate back to main Hacker News interface to continue exploring high-priority frontier items like comments pages and other sections",
+      "success": false
+    },
+    {
+      "step": 4,
+      "screen": "This is a website for Custom Paper Pocket Yachts displaying their homepage with navigation menu and company branding",
+      "action": "Navigate back using browser back button to return to Hacker News",
+      "goal": "Return to Hacker News application to continue exploring the frontier items, particularly the comments page and discussion interface",
+      "success": true
+    },
+    {
+      "step": 5,
+      "screen": "This is the Hacker News homepage displaying a ranked list of technology news stories and discussions",
+      "action": "Tap the 'comments' tab to navigate to the comments page",
+      "goal": "Explore the comments page and discussion interface (priority=0.9 frontier item)",
+      "success": true
+    },
+    {
+      "step": 6,
+      "screen": "This is the Hacker News comments page displaying recent comments from users across various stories and discussions",
+      "action": "Tap the 'past' tab to navigate to the past stories page",
+      "goal": "Explore the past stories page from the high-priority frontier to confirm the browse_past_stories capability",
+      "success": true
+    },
+    {
+      "step": 7,
+      "screen": "This is the Hacker News 'past' page displaying archived stories from April 5, 2026 with navigation to browse historical content by date",
+      "action": "Tap the 'ask' tab to navigate to the Ask HN section",
+      "goal": "Explore Ask HN section for community questions (priority=0.8 frontier item)",
+      "success": true
+    },
+    {
+      "step": 8,
+      "screen": "This is the Hacker News Ask HN section displaying user-submitted questions and discussion topics",
+      "action": "Tap the 'show' tab to navigate to the Show HN section",
+      "goal": "Explore the Show HN section for community showcases (priority=0.8 frontier item)",
+      "success": true
+    },
+    {
+      "step": 9,
+      "screen": "This is the Hacker News Show HN section displaying user-submitted projects and creations for community feedback",
+      "action": "Tap the 'jobs' tab to navigate to the jobs section",
+      "goal": "Explore the jobs section frontier item to confirm browse_jobs capability and discover the jobs page screen",
+      "success": true
+    },
+    {
+      "step": 10,
+      "screen": "This is the Hacker News jobs section displaying job listings from Y Combinator startups",
+      "action": "Tap on the Hightouchs job listing to view the job detail page",
+      "goal": "Job detail pages (priority=0.8) - confirming the job detail page capability and exploring the jobs workflow",
+      "success": false
+    }
+  ]
+}

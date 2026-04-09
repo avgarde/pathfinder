@@ -1,0 +1,15 @@
+[
+  {
+    "field": "airport_code",
+    "category": "content",
+    "screen_type": "list",
+    "screen_purpose": "This screen is for exploring hotel and sightseeing options within the travel booking app.",
+    "element_label": "Airport Code",
+    "element_type": "text_field",
+    "placeholder": "Enter airport code",
+    "required": true,
+    "step_number": 25,
+    "suggested_strategy": "skip",
+    "notes": "This input is needed to proceed with hotel booking."
+  }
+]

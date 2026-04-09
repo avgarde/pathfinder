@@ -1,0 +1,135 @@
+{
+  "run_id": "20260406-105808-ad1a",
+  "run_dir": "exploration/20260406-105808-ad1a",
+  "app": "Indigo",
+  "total_actions": 14,
+  "duration_seconds": 980.2,
+  "stop_reason": "Error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CZnRLYFjycYjP6d9Pn7Kx'}",
+  "model_version": 9,
+  "screens_discovered": 4,
+  "transitions_discovered": 41,
+  "capabilities": 19,
+  "coverage_estimate": 0.55,
+  "confidence": 0.92,
+  "inputs_required": [
+    {
+      "field": "destination_city",
+      "category": "selection",
+      "screen_type": "home",
+      "element_label": "Going to? Search by place/airport",
+      "required": true,
+      "suggested_strategy": "skip",
+      "notes": "Required to complete flight search functionality - gates access to flight search results"
+    },
+    {
+      "field": "destination",
+      "category": "search_query",
+      "screen_type": "home",
+      "element_label": "Going to? Search by place/airport",
+      "required": true,
+      "suggested_strategy": "generate",
+      "notes": "Destination city/airport selection is required to perform flight search"
+    }
+  ],
+  "flows": [],
+  "steps": [
+    {
+      "step": 1,
+      "screen": "This is the main homepage for IndiGo airline booking where users can search for flights, hotels, and other travel services",
+      "action": "Navigate to the check-in page to explore check-in functionality",
+      "goal": "Exploring the check-in capability which is high priority (0.8 importance) and is on the exploration frontier",
+      "success": true
+    },
+    {
+      "step": 2,
+      "screen": "This is an error page indicating that the IndiGo check-in webpage cannot be reached due to a protocol error",
+      "action": "Navigate back to the homepage from the error page",
+      "goal": "Return to homepage to pursue flight search results page exploration, which is the highest priority frontier item",
+      "success": true
+    },
+    {
+      "step": 3,
+      "screen": "This is the main homepage for IndiGo airline booking, allowing users to search for flights, hotels, and sightseeing options",
+      "action": "Tap the destination input field to see if it opens a destination search interface or requires manual input",
+      "goal": "Investigating the destination search interface (priority 0.8) which is needed before we can proceed to flight search results",
+      "success": false
+    },
+    {
+      "step": 4,
+      "screen": "This is the main homepage for IndiGo airline booking, allowing users to search for flights, hotels, and sightseeing options with a flight search form as the primary interface",
+      "action": "Tap the departure date field to open the date picker interface",
+      "goal": "Explore the date picker interface from the frontier (priority 0.8)",
+      "success": false
+    },
+    {
+      "step": 5,
+      "screen": "This is the main homepage for IndiGo airline booking, allowing users to search for flights, hotels, and sightseeing options with a flight search form as the primary interface",
+      "action": "Tap the destination input field to open destination search interface",
+      "goal": "Exploring the destination search interface from the frontier",
+      "success": true
+    },
+    {
+      "step": 6,
+      "screen": "This is the main homepage for IndiGo airline booking, displaying promotional offers and deals for flights, hotels, and sightseeing options",
+      "action": "Tap the Book tab to navigate to the flight booking form",
+      "goal": "Explore the Flight booking form page (priority=0.9) from the exploration frontier",
+      "success": false
+    },
+    {
+      "step": 7,
+      "screen": "This is the main homepage for IndiGo airline booking, displaying promotional offers and deals for flights, hotels, and sightseeing options",
+      "action": "Tap the 6EPick dropdown to open the 6EPick services page",
+      "goal": "Explore the 6EPick services page - the highest priority frontier item and a key differentiator for IndiGo",
+      "success": true
+    },
+    {
+      "step": 8,
+      "screen": "This is the 6EPick services page showing various travel-related services and offers including cabs, shopping, sightseeing, hotels, and destination packages",
+      "action": "Tap the Shop button to explore the shopping section for travel items and electronics",
+      "goal": "Exploring the 6EPick services page to understand the shopping functionality and complete coverage of this high-priority frontier item",
+      "success": false
+    },
+    {
+      "step": 9,
+      "screen": "This is the 6EPick services page showing various travel-related services and promotional offers including cabs, shopping, sightseeing, hotels, and destination packages",
+      "action": "Tap the Shop button to explore the shopping section for travel items and electronics",
+      "goal": "Shopping page with travel products (priority=0.7) - exploring the shopping_services capability which is a differentiating feature",
+      "success": false
+    },
+    {
+      "step": 10,
+      "screen": "This is the main homepage for IndiGo airline booking with promotional banners for various travel services including cabs, shopping, sightseeing, hotels, and destination packages",
+      "action": "Tap the Shop button to explore the shopping section for travel items and electronics",
+      "goal": "Shopping page with travel products (priority=0.7) - exploring IndiGo's differentiating shopping integration feature",
+      "success": true
+    },
+    {
+      "step": 11,
+      "screen": "This is a marketplace disclaimer modal that users must accept before entering the 6EPick shopping section of the IndiGo platform",
+      "action": "Check the consent checkbox to enable the Continue button",
+      "goal": "Shopping page with travel products - exploring the shopping_services capability which is a differentiator for IndiGo",
+      "success": true
+    },
+    {
+      "step": 12,
+      "screen": "This is a marketplace disclaimer modal requiring user consent before accessing the 6EPick shopping section",
+      "action": "Tap the Continue button to enter the 6EPick marketplace shopping section",
+      "goal": "Shopping page with travel products (priority=0.7) - exploring the shopping_services capability and 6EPick differentiator",
+      "success": true
+    },
+    {
+      "step": 13,
+      "screen": "This is the main homepage for IndiGo airline booking and travel services, displaying promotional offers and deals for flights, hotels, sightseeing, and destination packages",
+      "action": "Tap the Book link to navigate to the flight booking form",
+      "goal": "Flight booking form page (priority=0.9) - exploring the core flight booking capability",
+      "success": false
+    },
+    {
+      "step": 14,
+      "screen": "This is the main homepage for IndiGo airline booking and travel services, displaying promotional offers and deals for flights, hotels, sightseeing, and destination packages",
+      "action": "Tap the Trips dropdown to open trip management options",
+      "goal": "Trips management page (priority=0.8) - exploring trip_management capability",
+      "success": false
+    }
+  ]
+}

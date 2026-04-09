@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pathfinder Studio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app">
+    <!-- Toolbar -->
+    <div class="toolbar">
+      <div class="toolbar-left">
+        <div class="toolbar-group">
+          <label for="urlInput" class="label">URL:</label>
+          <input
+            type="text"
+            id="urlInput"
+            class="input-field"
+            placeholder="Enter URL to explore..."
+          >
+        </div>
+
+        <div class="toolbar-group">
+          <label for="appNameInput" class="label">App Name:</label>
+          <input
+            type="text"
+            id="appNameInput"
+            class="input-field"
+            placeholder="Untitled Exploration"
+          >
+        </div>
+
+        <div class="toolbar-group">
+          <label for="maxActionsInput" class="label">Max Actions:</label>
+          <input
+            type="number"
+            id="maxActionsInput"
+            class="input-field"
+            value="30"
+            min="1"
+            max="500"
+          >
+        </div>
+      </div>
+
+      <div class="toolbar-right">
+        <div class="toolbar-group">
+          <button id="startBtn" class="btn btn-primary">Start Exploration</button>
+          <button id="stopBtn" class="btn btn-danger" disabled>Stop</button>
+        </div>
+
+        <div class="toolbar-group">
+          <div id="connectionStatus" class="connection-status disconnected" title="Disconnected">
+            <span class="status-dot"></span>
+            <span class="status-text">Disconnected</span>
+          </div>
+        </div>
+
+        <div class="toolbar-group">
+          <span id="runId" class="run-id" style="display: none;">Run ID: <span id="runIdValue"></span></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Content Area -->
+    <div class="main-content">
+      <!-- Left Panel: Device Viewport -->
+      <div class="panel left-panel">
+        <div class="panel-header">
+          <span id="deviceTitle" class="panel-title">Device — Waiting for exploration...</span>
+        </div>
+        <div class="panel-content">
+          <div id="deviceViewport" class="device-viewport">
+            <img id="screenshotImg" class="screenshot-img" style="display: none;" alt="Device Screenshot">
+            <div id="viewportPlaceholder" class="viewport-placeholder">
+              <div class="placeholder-content">
+                <p>No screenshot yet</p>
+                <p class="placeholder-hint">Start an exploration to see the device viewport</p>
+              </div>
+            </div>
+          </div>
+          <div class="current-url">
+            <span class="url-label">Current URL:</span>
+            <span id="currentUrl" class="url-text">—</span>
+          </div>
+          <div id="stepBadge" class="step-badge" style="display: none;">Step <span id="stepNumber">0</span></div>
+        </div>
+      </div>
+
+      <!-- Right Panel (split vertically) -->
+      <div class="right-panels">
+        <!-- Top Right: Trace Panel -->
+        <div class="panel trace-panel">
+          <div class="panel-header">
+            <span class="panel-title">Exploration Trace</span>
+          </div>
+          <div class="panel-content">
+            <div id="traceList" class="trace-list">
+              <div class="empty-state">No steps yet</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom Right (split horizontally) -->
+        <div class="bottom-right-panels">
+          <!-- State Panel -->
+          <div class="panel state-panel">
+            <div class="panel-header">
+              <span class="panel-title">Application Model</span>
+            </div>
+            <div class="panel-content">
+              <div class="model-stats">
+                <div class="stat-row">
+                  <span class="stat-label">Screens:</span>
+                  <span id="screenCount" class="stat-value">0</span>
+                </div>
+                <div class="stat-row">
+                  <span class="stat-label">Transitions:</span>
+                  <span id="transitionCount" class="stat-value">0</span>
+                </div>
+                <div class="stat-row">
+                  <span class="stat-label">Capabilities:</span>
+                  <span id="capabilityCount" class="stat-value">0</span>
+                </div>
+              </div>
+
+              <div class="coverage-section">
+                <div class="coverage-label">
+                  <span>Coverage:</span>
+                  <span id="coveragePercent">0%</span>
+                </div>
+                <div class="progress-bar">
+                  <div id="coverageBar" class="progress-fill" style="width: 0%;"></div>
+                </div>
+              </div>
+
+              <div class="screen-list">
+                <div class="list-label">Screens Discovered:</div>
+                <div id="screenList" class="screen-list-content">
+                  <div class="empty-state-small">None yet</div>
+                </div>
+              </div>
+
+              <div class="graph-container">
+                <svg id="modelGraph" class="model-graph" width="100%" height="200"></svg>
+              </div>
+            </div>
+          </div>
+
+          <!-- Flow Panel -->
+          <div class="panel flow-panel">
+            <div class="panel-header">
+              <span class="panel-title">Discovered Flows</span>
+            </div>
+            <div class="panel-content">
+              <div id="flowList" class="flow-list">
+                <div class="empty-state">No flows discovered yet</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Input Modal -->
+  <div id="inputModal" class="modal" style="display: none;">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title">User Input Required</h2>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+          <label for="inputField" class="form-label">Enter value:</label>
+          <input
+            type="text"
+            id="inputField"
+            class="input-field"
+            placeholder="Enter input..."
+          >
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button id="submitInputBtn" class="btn btn-primary">Submit</button>
+        <button id="cancelInputBtn" class="btn btn-secondary">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="toast" style="display: none;"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>

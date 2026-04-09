@@ -1,0 +1,168 @@
+{
+  "app_reference": {
+    "package_name": null,
+    "app_store_url": null,
+    "bundle_path": null,
+    "web_url": "https://news.ycombinator.com",
+    "name": "Hacker News",
+    "description": null,
+    "baseline": null,
+    "differentiation": null,
+    "credentials": null
+  },
+  "model_version": 1,
+  "domain": "news aggregation and discussion",
+  "purpose": "Hacker News is a social news website focused on technology and startup content where users can submit, vote on, and discuss stories.",
+  "baseline_category": "social news aggregator",
+  "differentiators": [
+    "Technology and startup focus",
+    "Community-driven content curation",
+    "Minimalist interface design",
+    "Emphasis on discussion quality"
+  ],
+  "entities": [
+    {
+      "name": "story",
+      "description": "A news article, blog post, or other content item submitted by users",
+      "provenance": "observed"
+    },
+    {
+      "name": "user",
+      "description": "A registered member who can submit stories, vote, and comment",
+      "provenance": "observed"
+    },
+    {
+      "name": "comment",
+      "description": "User discussion and responses to stories or other comments",
+      "provenance": "observed"
+    }
+  ],
+  "capabilities": [
+    {
+      "name": "browse_stories",
+      "description": "View and navigate through ranked lists of technology news stories",
+      "estimated_importance": 0.9,
+      "estimated_frequency": 0.9,
+      "is_differentiator": false,
+      "provenance": "observed"
+    },
+    {
+      "name": "filter_by_category",
+      "description": "View stories filtered by type (new, past, ask, show, jobs)",
+      "estimated_importance": 0.8,
+      "estimated_frequency": 0.6,
+      "is_differentiator": false,
+      "provenance": "observed"
+    },
+    {
+      "name": "search_content",
+      "description": "Search for specific stories and content using keywords",
+      "estimated_importance": 0.7,
+      "estimated_frequency": 0.4,
+      "is_differentiator": false,
+      "provenance": "observed"
+    },
+    {
+      "name": "submit_stories",
+      "description": "Submit new stories and content for community review",
+      "estimated_importance": 0.8,
+      "estimated_frequency": 0.2,
+      "is_differentiator": false,
+      "provenance": "inferred_category"
+    },
+    {
+      "name": "user_authentication",
+      "description": "Login and manage user account and profile",
+      "estimated_importance": 0.7,
+      "estimated_frequency": 0.3,
+      "is_differentiator": false,
+      "provenance": "inferred_category"
+    },
+    {
+      "name": "view_comments",
+      "description": "Read and participate in discussions about stories",
+      "estimated_importance": 0.8,
+      "estimated_frequency": 0.7,
+      "is_differentiator": true,
+      "provenance": "inferred_category"
+    },
+    {
+      "name": "browse_jobs",
+      "description": "View technology job postings",
+      "estimated_importance": 0.6,
+      "estimated_frequency": 0.3,
+      "is_differentiator": true,
+      "provenance": "inferred_category"
+    }
+  ],
+  "screens": [
+    {
+      "screen_id": "homepage",
+      "name": "Homepage",
+      "screen_type": "home",
+      "purpose": "Main landing page showing ranked list of technology news stories with navigation options",
+      "participates_in": [
+        "browse_stories",
+        "filter_by_category",
+        "search_content"
+      ],
+      "visit_count": 1,
+      "last_observation_id": "obs_ee06cb58"
+    }
+  ],
+  "transitions": [],
+  "frontier": [
+    {
+      "description": "New stories page (newest submissions)",
+      "rationale": "Tab is visible and selected in current view, likely shows chronologically newest stories",
+      "provenance": "inferred_structure",
+      "priority": 0.8,
+      "search_strategy": "Click on 'new' tab to see newest story submissions"
+    },
+    {
+      "description": "Comments page or individual story discussion",
+      "rationale": "Comments tab suggests dedicated discussion views, core to HN's community aspect",
+      "provenance": "inferred_structure",
+      "priority": 0.9,
+      "search_strategy": "Click on 'comments' tab or individual story comment links"
+    },
+    {
+      "description": "Ask HN posts section",
+      "rationale": "Ask tab suggests community Q&A section, important differentiator",
+      "provenance": "inferred_structure",
+      "priority": 0.7,
+      "search_strategy": "Click on 'ask' tab to view Ask HN posts"
+    },
+    {
+      "description": "Show HN posts section",
+      "rationale": "Show tab suggests user project showcases, another key differentiator",
+      "provenance": "inferred_structure",
+      "priority": 0.7,
+      "search_strategy": "Click on 'show' tab to view Show HN posts"
+    },
+    {
+      "description": "Jobs section",
+      "rationale": "Jobs tab indicates dedicated job board functionality",
+      "provenance": "inferred_structure",
+      "priority": 0.6,
+      "search_strategy": "Click on 'jobs' tab to view job postings"
+    },
+    {
+      "description": "Story submission form",
+      "rationale": "Submit tab suggests story submission capability",
+      "provenance": "inferred_structure",
+      "priority": 0.6,
+      "search_strategy": "Click on 'submit' tab to access submission form"
+    },
+    {
+      "description": "User login/profile page",
+      "rationale": "Login link suggests user authentication and profile management",
+      "provenance": "inferred_structure",
+      "priority": 0.5,
+      "search_strategy": "Click on 'login' link to access authentication"
+    }
+  ],
+  "anomalies": [],
+  "coverage_estimate": 0.2,
+  "confidence": 0.8
+}

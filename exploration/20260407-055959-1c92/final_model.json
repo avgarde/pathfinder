@@ -1,0 +1,169 @@
+{
+  "app_reference": {
+    "package_name": null,
+    "app_store_url": null,
+    "bundle_path": null,
+    "web_url": "https://goindigo.in",
+    "name": "Indigo",
+    "description": null,
+    "baseline": null,
+    "differentiation": null,
+    "credentials": null
+  },
+  "model_version": 46,
+  "domain": "travel booking",
+  "purpose": "Facilitate flight booking and related travel arrangements",
+  "baseline_category": "travel booking",
+  "differentiators": [
+    "Flight booking functionality, Hotel and sightseeing options"
+  ],
+  "entities": [
+    {
+      "name": "Flight",
+      "description": "A flight booking option",
+      "provenance": "observed"
+    },
+    {
+      "name": "Hotel",
+      "description": "A hotel booking option",
+      "provenance": "observed"
+    },
+    {
+      "name": "Sight Seeing",
+      "description": "A sightseeing booking option",
+      "provenance": "observed"
+    }
+  ],
+  "capabilities": [
+    {
+      "name": "Flight Booking",
+      "description": "The ability to book flights",
+      "estimated_importance": 0.8,
+      "estimated_frequency": 0.7,
+      "is_differentiator": true,
+      "provenance": "observed"
+    },
+    {
+      "name": "Hotel Booking",
+      "description": "The ability to book hotels",
+      "estimated_importance": 0.6,
+      "estimated_frequency": 0.5,
+      "is_differentiator": false,
+      "provenance": "observed"
+    },
+    {
+      "name": "Sight Seeing Booking",
+      "description": "The ability to book sightseeing options",
+      "estimated_importance": 0.6,
+      "estimated_frequency": 0.5,
+      "is_differentiator": false,
+      "provenance": "observed"
+    }
+  ],
+  "screens": [
+    {
+      "screen_id": "[flight_booking_page]",
+      "name": "Flight Booking Page",
+      "screen_type": "unknown",
+      "purpose": "Flight Booking",
+      "participates_in": [
+        "Flight Booking"
+      ],
+      "visit_count": 45,
+      "last_observation_id": "obs_37c5e60f"
+    },
+    {
+      "screen_id": "[hotels_booking_page]",
+      "name": "Hotels Booking Page",
+      "screen_type": "unknown",
+      "purpose": "Hotel Booking",
+      "participates_in": [
+        "Hotel Booking"
+      ],
+      "visit_count": 45,
+      "last_observation_id": "obs_37c5e60f"
+    },
+    {
+      "screen_id": "[sightseeing_booking_page]",
+      "name": "Sightseeing Booking Page",
+      "screen_type": "unknown",
+      "purpose": "Sight Seeing Booking",
+      "participates_in": [
+        "Sight Seeing Booking"
+      ],
+      "visit_count": 45,
+      "last_observation_id": "obs_37c5e60f"
+    },
+    {
+      "screen_id": "[hotels_booking_page]",
+      "name": "Hotels Booking Page",
+      "screen_type": "unknown",
+      "purpose": "Hotel Booking",
+      "participates_in": [
+        "Hotel Booking"
+      ],
+      "visit_count": 45,
+      "last_observation_id": "obs_37c5e60f"
+    },
+    {
+      "screen_id": "[hotels_booking_page]",
+      "name": "Hotels Booking Page",
+      "screen_type": "unknown",
+      "purpose": "Hotel Booking",
+      "participates_in": [
+        "Hotel Booking"
+      ],
+      "visit_count": 45,
+      "last_observation_id": "obs_37c5e60f"
+    },
+    {
+      "screen_id": "[hotels_booking_page]",
+      "name": "Hotels Booking Page",
+      "screen_type": "unknown",
+      "purpose": "Hotel Booking",
+      "participates_in": [
+        "Hotel Booking"
+      ],
+      "visit_count": 45,
+      "last_observation_id": "obs_37c5e60f"
+    },
+    {
+      "screen_id": "[sightseeing_booking_page]",
+      "name": "Sightseeing Booking Page",
+      "screen_type": "unknown",
+      "purpose": "Sight Seeing Booking",
+      "participates_in": [
+        "Sight Seeing Booking"
+      ],
+      "visit_count": 45,
+      "last_observation_id": "obs_37c5e60f"
+    }
+  ],
+  "transitions": [
+    {
+      "from_screen": "[home_screen]",
+      "to_screen": "[flight_booking_page]",
+      "action": "click on 'Flights' tab",
+      "observed_count": 45
+    }
+  ],
+  "frontier": [
+    {
+      "description": "Explore the functionality of the 'Hotels' and 'Sight Seeing' tabs",
+      "rationale": "These tabs are present in the navigation menu and need to be confirmed as functional",
+      "provenance": "inferred_structure",
+      "priority": 0.7,
+      "search_strategy": "Look for interactive elements and transitions related to 'Hotels' and 'Sight Seeing'"
+    }
+  ],
+  "anomalies": [
+    {
+      "description": "The presence of 'Hotels' and 'Sight Seeing' tabs in the navigation menu, which are not yet confirmed as functional",
+      "observation_id": "obs_666c6d0e",
+      "classification": "novel",
+      "exploration_priority_boost": 0.3
+    }
+  ],
+  "coverage_estimate": 0.3,
+  "confidence": 0.5
+}

@@ -1,0 +1,158 @@
+{
+  "observation_id": "obs_6acb87ef",
+  "timestamp": "2026-04-07T11:05:45.946666",
+  "screenshot_path": "exploration/20260407-103228-ca64/step_029.png",
+  "ui_structure_path": "<body bounds=\"[0,0][1280,1477]\">\n  <div id=\"__next\" bounds=\"[0,0][1280,1477]\">\n    <div class=\"app-wrapper ask-page\" bounds=\"[0,0][1280,1477]\">\n      <div class=\"header_beta\" bounds=\"[1202,87][1280,121]\">BETA</div>\n    </div>\n  </div>\n</body>\n",
+  "screen_purpose": "This screen is for searching and exploring cricket statistics and related queries.",
+  "screen_type": "search",
+  "app_state": {
+    "logged_in": "yes"
+  },
+  "elements": [
+    {
+      "element_id": "search_bar",
+      "reference": {
+        "resource_id": null,
+        "text": "Search Test/ODI/T20 stats",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "top center"
+      },
+      "element_type": "text_field",
+      "semantic_role": "Initiates search for cricket statistics",
+      "label": "Search Test/ODI/T20 stats",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "type",
+        "click"
+      ],
+      "inferred_destination": "search_results",
+      "confidence": 0.95
+    },
+    {
+      "element_id": "search_query_1",
+      "reference": {
+        "resource_id": null,
+        "text": "against which team did Valthathy score an IPL hundred?",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "top left"
+      },
+      "element_type": "list_item",
+      "semantic_role": "Search suggestion",
+      "label": "against which team did Valthathy score an IPL hundred?",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "click"
+      ],
+      "inferred_destination": "search_results",
+      "confidence": 0.95
+    },
+    {
+      "element_id": "search_query_2",
+      "reference": {
+        "resource_id": null,
+        "text": "How many overs has Jadeja bowled in the last five seasons",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "top left"
+      },
+      "element_type": "list_item",
+      "semantic_role": "Search suggestion",
+      "label": "How many overs has Jadeja bowled in the last five seasons",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "click"
+      ],
+      "inferred_destination": "search_results",
+      "confidence": 0.95
+    },
+    {
+      "element_id": "search_query_3",
+      "reference": {
+        "resource_id": null,
+        "text": "who has won the most man of the match awards in playoff games in the ipl",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "top left"
+      },
+      "element_type": "list_item",
+      "semantic_role": "Search suggestion",
+      "label": "who has won the most man of the match awards in playoff games in the ipl",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "click"
+      ],
+      "inferred_destination": "search_results",
+      "confidence": 0.95
+    },
+    {
+      "element_id": "search_query_4",
+      "reference": {
+        "resource_id": null,
+        "text": "Rohit Sharma in the Powerplay in the IPL 2020 v 2021",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "top left"
+      },
+      "element_type": "list_item",
+      "semantic_role": "Search suggestion",
+      "label": "Rohit Sharma in the Powerplay in the IPL 2020 v 2021",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "click"
+      ],
+      "inferred_destination": "search_results",
+      "confidence": 0.95
+    },
+    {
+      "element_id": "search_query_5",
+      "reference": {
+        "resource_id": null,
+        "text": "best bowling average in tests since apr 2014 (min 200 wickets)",
+        "content_description": null,
+        "class_name": null,
+        "bounds": null,
+        "description": "top left"
+      },
+      "element_type": "list_item",
+      "semantic_role": "Search suggestion",
+      "label": "best bowling average in tests since apr 2014 (min 200 wickets)",
+      "is_interactive": true,
+      "is_enabled": true,
+      "is_selected": false,
+      "possible_actions": [
+        "click"
+      ],
+      "inferred_destination": "search_results",
+      "confidence": 0.95
+    }
+  ],
+  "navigation_context": {
+    "arrived_from": null,
+    "arrival_action": null,
+    "visible_navigation": [
+      "Men"
+    ],
+    "active_navigation": "Men",
+    "back_available": true,
+    "inferred_depth": 0
+  },
+  "confidence": 0.9,
+  "raw_ai_response": "{\n  \"screen_purpose\": \"This screen is for searching and exploring cricket statistics and related queries.\",\n  \"screen_type\": \"search\",\n  \"app_state\": {\n    \"logged_in\": \"yes\"\n  },\n  \"elements\": [\n    {\n      \"element_id\": \"search_bar\",\n      \"element_type\": \"text_field\",\n      \"semantic_role\": \"Initiates search for cricket statistics\",\n      \"label\": \"Search Test/ODI/T20 stats\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"type\", \"click\"],\n      \"inferred_destination\": \"search_results\",\n      \"bounds_description\": \"top center\",\n      \"confidence\": 0.95\n    },\n    {\n      \"element_id\": \"search_query_1\",\n      \"element_type\": \"list_item\",\n      \"semantic_role\": \"Search suggestion\",\n      \"label\": \"against which team did Valthathy score an IPL hundred?\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"click\"],\n      \"inferred_destination\": \"search_results\",\n      \"bounds_description\": \"top left\",\n      \"confidence\": 0.95\n    },\n    {\n      \"element_id\": \"search_query_2\",\n      \"element_type\": \"list_item\",\n      \"semantic_role\": \"Search suggestion\",\n      \"label\": \"How many overs has Jadeja bowled in the last five seasons\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"click\"],\n      \"inferred_destination\": \"search_results\",\n      \"bounds_description\": \"top left\",\n      \"confidence\": 0.95\n    },\n    {\n      \"element_id\": \"search_query_3\",\n      \"element_type\": \"list_item\",\n      \"semantic_role\": \"Search suggestion\",\n      \"label\": \"who has won the most man of the match awards in playoff games in the ipl\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"click\"],\n      \"inferred_destination\": \"search_results\",\n      \"bounds_description\": \"top left\",\n      \"confidence\": 0.95\n    },\n    {\n      \"element_id\": \"search_query_4\",\n      \"element_type\": \"list_item\",\n      \"semantic_role\": \"Search suggestion\",\n      \"label\": \"Rohit Sharma in the Powerplay in the IPL 2020 v 2021\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"click\"],\n      \"inferred_destination\": \"search_results\",\n      \"bounds_description\": \"top left\",\n      \"confidence\": 0.95\n    },\n    {\n      \"element_id\": \"search_query_5\",\n      \"element_type\": \"list_item\",\n      \"semantic_role\": \"Search suggestion\",\n      \"label\": \"best bowling average in tests since apr 2014 (min 200 wickets)\",\n      \"is_interactive\": true,\n      \"is_enabled\": true,\n      \"is_selected\": false,\n      \"possible_actions\": [\"click\"],\n      \"inferred_destination\": \"search_results\",\n      \"bounds_description\": \"top left\",\n      \"confidence\": 0.95\n    }\n  ],\n  \"navigation_context\": {\n    \"visible_navigation\": [\"Men\"],\n    \"active_navigation\": \"Men\",\n    \"back_available\": true,\n    \"inferred_depth\": 0\n  },\n  \"confidence\": 0.9\n}"
+}

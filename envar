@@ -1,0 +1,4 @@
+export PATHFINDER_AI_PROVIDER=openai_compatible
+export PATHFINDER_AI_BASE_URL=http://localhost:11434/v1
+export PATHFINDER_AI_MODEL=qwen2.5vl:32b
+
