@@ -12,6 +12,9 @@ screen observation (what we see right now), decide what action to take next \
 to continue exploring the application productively.
 
 Key principles:
+- PRIORITISE GOALS: if Exploration Goals are listed, actively pursue them.
+  Move toward goal-relevant screens rather than following the default frontier.
+  Report a goal as confirmed the moment you can see it has been reached.
 - PRIORITISE the exploration frontier: if the model has hypotheses about \
 screens or capabilities that haven't been confirmed, try to reach them.
 - INVESTIGATE anomalies: if something novel was observed, explore it deeper.
@@ -20,8 +23,18 @@ unless they're a necessary waypoint to reach unexplored areas.
 - BE PURPOSEFUL: every action should be aimed at discovering new screens, \
 confirming or refuting a hypothesis, or reaching an unexplored area. Random \
 clicking is not exploration.
-- KNOW WHEN TO STOP: if the model has high coverage and confidence, and \
-the frontier is empty or low-priority, recommend stopping.
+- KNOW WHEN TO STOP: if all Exploration Goals are confirmed, or if the \
+model has high coverage and the frontier is empty/low-priority, \
+recommend stopping.
+
+GOAL CONFIRMATION RULES:
+- A goal is "confirmed" when the current screen unambiguously demonstrates \
+the described user capability exists in the app. You don't have to fully \
+complete the flow — reaching the relevant screen or seeing the key UI element \
+is sufficient to confirm the goal.
+- List confirmed goals in the `goals_confirmed` field of your response.
+- Once all listed goals are confirmed, you may set should_stop=true with \
+stop_reason="All exploration goals confirmed".
 
 INPUT HANDLING — critical:
 - When you encounter a screen that requires input you don't have (login \
@@ -57,6 +70,9 @@ EXPLORATION_PLAN_SCHEMA = """\
   },
   "expected_outcome": "string — what we expect to see after this action",
   "exploration_goal": "string — what frontier item or hypothesis this action is pursuing",
+  "goals_confirmed": [
+    "string — exact text of each exploration goal that is confirmed by the CURRENT screen"
+  ],
   "inputs_required": [
     {
       "field": "string — semantic name, e.g. 'username', 'password', 'search_query'",
@@ -73,7 +89,11 @@ EXPLORATION_PLAN_SCHEMA = """\
 The inputs_required array should list ALL input fields on the current screen \
 that the system cannot fill. It may be empty if the screen has no unfilled \
 input requirements. ALWAYS populate this when you see a form, login screen, \
-or any screen with input fields — even if you plan to navigate away."""
+or any screen with input fields — even if you plan to navigate away.
+
+The goals_confirmed array should list any exploration goals (from the \
+Exploration Goals section) that are confirmed by the CURRENT screen. \
+Leave empty if no goals are confirmed on this step. Use the exact goal text."""
 
 
 def build_exploration_plan_prompt(
@@ -82,6 +102,8 @@ def build_exploration_plan_prompt(
     action_history: list[str] | None = None,
     max_actions_remaining: int = 50,
     available_inputs: dict[str, str] | None = None,
+    exploration_goals: list[str] | None = None,
+    confirmed_goals: list[str] | None = None,
 ) -> str:
     """Build the prompt for planning the next exploration action.
 
@@ -93,12 +115,38 @@ def build_exploration_plan_prompt(
         available_inputs: Dict of field→value (or field→hint for generate
                          strategy) that the system can use. Keys are
                          semantic field names like "username", "search_query".
+        exploration_goals: User-specified goals to pursue during exploration.
+        confirmed_goals: Goals already confirmed in previous steps (to skip).
     """
     parts = [
         "Decide the next exploration action based on the current state.",
         f"\n--- Application Model (what we know) ---\n{current_model_summary}\n--- End Model ---",
         f"\n--- Current Screen (what we see) ---\n{current_observation_summary}\n--- End Screen ---",
     ]
+
+    # Goal-directed section
+    if exploration_goals:
+        confirmed_set = set(confirmed_goals or [])
+        unconfirmed = [g for g in exploration_goals if g not in confirmed_set]
+        parts.append("\n--- Exploration Goals ---")
+        for g in exploration_goals:
+            status = "✓ CONFIRMED" if g in confirmed_set else "○ PENDING"
+            parts.append(f"  [{status}] {g}")
+        if unconfirmed:
+            parts.append(
+                f"\nACTIVELY PURSUE these unconfirmed goals: "
+                + ", ".join(f'"{g}"' for g in unconfirmed)
+            )
+            parts.append(
+                "Navigate toward parts of the app that would demonstrate "
+                "or confirm these capabilities."
+            )
+        else:
+            parts.append(
+                "\nAll goals are confirmed. You may stop or continue "
+                "exploring if there is budget remaining and new areas to cover."
+            )
+        parts.append("--- End Goals ---")
 
     if action_history:
         recent = action_history[-10:]  # Last 10 actions
@@ -120,6 +168,22 @@ def build_exploration_plan_prompt(
         parts.append("--- End Available Inputs ---")
 
     parts.append(f"\nExploration budget remaining: {max_actions_remaining} actions")
+
+    if exploration_goals:
+        unconfirmed_count = len(
+            [g for g in exploration_goals if g not in set(confirmed_goals or [])]
+        )
+        if unconfirmed_count == 0:
+            parts.append(
+                "\nAll exploration goals confirmed. "
+                "You may stop (set should_stop=true) if the budget is low "
+                "or there is nothing new to explore."
+            )
+        else:
+            parts.append(
+                f"\n{unconfirmed_count} exploration goal(s) still pending. "
+                "Prioritise actions that move toward confirming them."
+            )
 
     parts.append(
         "\nChoose the SINGLE most productive next action. "

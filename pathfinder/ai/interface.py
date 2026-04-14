@@ -104,6 +104,8 @@ class AIInterface(Protocol):
         action_history: list[str] | None = None,
         max_actions_remaining: int = 50,
         available_inputs: dict[str, str] | None = None,
+        exploration_goals: list[str] | None = None,
+        confirmed_goals: list[str] | None = None,
     ) -> ExplorationPlan:
         """Given the current model and what's on screen, decide the next
         exploration action.
@@ -128,6 +130,7 @@ class ExplorationPlan:
         expected_outcome: str,
         exploration_goal: str,
         inputs_required: list[dict[str, Any]] | None = None,
+        goals_confirmed: list[str] | None = None,
     ):
         self.reasoning = reasoning
         self.should_stop = should_stop
@@ -136,6 +139,7 @@ class ExplorationPlan:
         self.expected_outcome = expected_outcome
         self.exploration_goal = exploration_goal
         self.inputs_required = inputs_required or []
+        self.goals_confirmed = goals_confirmed or []  # Goals confirmed by this step
 
     def __repr__(self) -> str:
         if self.should_stop:
@@ -144,6 +148,8 @@ class ExplorationPlan:
         if self.inputs_required:
             fields = [ir.get("field", "?") for ir in self.inputs_required]
             suffix = f", needs=[{', '.join(fields)}]"
+        if self.goals_confirmed:
+            suffix += f", confirms={self.goals_confirmed}"
         return (
             f"ExplorationPlan({self.action.get('action_type', '?')}: "
             f"{self.action.get('description', '?')}{suffix})"

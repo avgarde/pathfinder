@@ -5,6 +5,7 @@ from __future__ import annotations
 import base64
 import json
 import logging
+import re
 import uuid
 from pathlib import Path
 
@@ -53,7 +54,7 @@ class AnthropicAI:
 
     def __init__(self, config: AIConfig):
         self.config = config
-        self.client = anthropic.Anthropic(
+        self.client = anthropic.AsyncAnthropic(
             api_key=config.api_key,
             base_url=config.base_url,
         )
@@ -86,7 +87,7 @@ class AnthropicAI:
 
         # Call the model
         logger.info("Calling %s for perception...", self.config.model)
-        response = self.client.messages.create(
+        response = await self.client.messages.create(
             model=self.config.model,
             max_tokens=self.config.max_tokens,
             temperature=self.config.temperature,
@@ -145,7 +146,7 @@ class AnthropicAI:
         )
 
         logger.info("Calling %s for context synthesis...", self.config.model)
-        response = self.client.messages.create(
+        response = await self.client.messages.create(
             model=self.config.model,
             max_tokens=self.config.max_tokens,
             temperature=self.config.temperature,
@@ -182,7 +183,7 @@ class AnthropicAI:
         )
 
         logger.info("Calling %s for world model update...", self.config.model)
-        response = self.client.messages.create(
+        response = await self.client.messages.create(
             model=self.config.model,
             max_tokens=self.config.max_tokens,
             temperature=self.config.temperature,
@@ -204,6 +205,8 @@ class AnthropicAI:
         action_history: list[str] | None = None,
         max_actions_remaining: int = 50,
         available_inputs: dict[str, str] | None = None,
+        exploration_goals: list[str] | None = None,
+        confirmed_goals: list[str] | None = None,
     ) -> ExplorationPlan:
         """Decide the next exploration action based on current state."""
 
@@ -216,10 +219,12 @@ class AnthropicAI:
             action_history=action_history,
             max_actions_remaining=max_actions_remaining,
             available_inputs=available_inputs,
+            exploration_goals=exploration_goals,
+            confirmed_goals=confirmed_goals,
         )
 
         logger.info("Calling %s for exploration planning...", self.config.model)
-        response = self.client.messages.create(
+        response = await self.client.messages.create(
             model=self.config.model,
             max_tokens=self.config.max_tokens,
             temperature=self.config.temperature,
@@ -271,7 +276,7 @@ class AnthropicAI:
         )
 
         logger.info("Calling %s for flow generation...", self.config.model)
-        response = self.client.messages.create(
+        response = await self.client.messages.create(
             model=self.config.model,
             max_tokens=self.config.max_tokens,
             temperature=self.config.temperature,
@@ -354,6 +359,7 @@ class AnthropicAI:
             expected_outcome=data.get("expected_outcome", ""),
             exploration_goal=data.get("exploration_goal", ""),
             inputs_required=data.get("inputs_required", []),
+            goals_confirmed=data.get("goals_confirmed", []),
         )
 
     def _summarise_model(self, model: ApplicationModel) -> str:
@@ -369,10 +375,10 @@ class AnthropicAI:
         if model.baseline_category:
             parts.append(f"Category: {model.baseline_category}")
         if model.differentiators:
-            parts.append(f"Differentiators: {', '.join(model.differentiators)}")
+            parts.append(f"Differentiators: {', '.join(model.differentiators[:5])}")
 
         if model.entities:
-            parts.append(f"\nEntities: {', '.join(e.name for e in model.entities)}")
+            parts.append(f"\nEntities: {', '.join(e.name for e in model.entities[:15])}")
 
         if model.capabilities:
             parts.append("\nCapabilities:")
@@ -383,16 +389,52 @@ class AnthropicAI:
                 )
 
         if model.screens:
-            parts.append("\nKnown screens:")
-            for s in model.screens:
-                parts.append(
-                    f"  - [{s.screen_id}] {s.name} ({s.screen_type}) "
-                    f"visits={s.visit_count}, participates_in=[{', '.join(s.participates_in)}]"
-                )
+            COMPRESSION_THRESHOLD = 8
+            if len(model.screens) <= COMPRESSION_THRESHOLD:
+                # Small model: full details for all screens
+                parts.append("\nKnown screens:")
+                for s in model.screens:
+                    parts.append(
+                        f"  - [{s.screen_id}] {s.name} ({s.screen_type}) "
+                        f"visits={s.visit_count}, participates_in=[{', '.join(s.participates_in)}]"
+                    )
+            else:
+                # Large model: full details for recent/frontier screens only
+                # Sort by visit_count descending; the most-recently active ones matter most
+                recent_ids = {s.screen_id for s in sorted(model.screens, key=lambda x: x.visit_count)[-3:]}
+                frontier_screen_ids = {
+                    h.description.split()[-1] for h in model.frontier
+                    if len(h.description.split()) > 0
+                }  # rough heuristic — frontier items may reference screen IDs
+
+                parts.append(f"\nKnown screens ({len(model.screens)} total):")
+                condensed = []
+                detailed = []
+                for s in model.screens:
+                    if s.screen_id in recent_ids:
+                        detailed.append(s)
+                    else:
+                        condensed.append(s)
+
+                if condensed:
+                    parts.append("  [Condensed — confirmed screens]")
+                    for s in condensed:
+                        parts.append(
+                            f"    [{s.screen_id}] {s.name} ({s.screen_type.value}) visits={s.visit_count}"
+                        )
+                if detailed:
+                    parts.append("  [Full detail — recent screens]")
+                    for s in detailed:
+                        parts.append(
+                            f"    [{s.screen_id}] {s.name} ({s.screen_type.value}) "
+                            f"visits={s.visit_count}, participates_in=[{', '.join(s.participates_in)}]"
+                        )
 
         if model.transitions:
-            parts.append("\nKnown transitions:")
-            for t in model.transitions:
+            # Show at most 20 transitions (oldest ones are least useful)
+            shown_transitions = model.transitions[-20:]
+            parts.append(f"\nKnown transitions ({len(model.transitions)} total, showing {len(shown_transitions)}):")
+            for t in shown_transitions:
                 parts.append(f"  - {t.from_screen} → {t.to_screen} via \"{t.action}\"")
 
         if model.frontier:
@@ -488,21 +530,38 @@ class AnthropicAI:
                     last_obs_id = obs.observation_id
                     break
 
-            # Check if this screen existed before
-            existing = next(
-                (s for s in current_model.screens if s.screen_id == s_data.get("screen_id")),
+            # Compute structural fingerprint for deduplication
+            name_norm = re.sub(r'[^a-z0-9]', '', s_data.get("name", "").lower())
+            purpose_words = s_data.get("purpose", "").lower().split()[:5]
+            fp = f"{screen_type_str}:{name_norm}:{' '.join(purpose_words)}"
+
+            # Check if an existing screen already has this fingerprint (dedup)
+            existing_by_fp = next(
+                (s for s in current_model.screens if s.fingerprint == fp and fp != ""),
                 None,
             )
-            visit_count = (existing.visit_count + 1) if existing else 1
+            if existing_by_fp:
+                # Merge: increment visit count on existing screen rather than adding duplicate
+                visit_count = existing_by_fp.visit_count + 1
+                screen_id_to_use = existing_by_fp.screen_id
+            else:
+                # Check if this screen existed before by screen_id (backward compatibility)
+                existing = next(
+                    (s for s in current_model.screens if s.screen_id == s_data.get("screen_id")),
+                    None,
+                )
+                visit_count = (existing.visit_count + 1) if existing else 1
+                screen_id_to_use = s_data.get("screen_id", f"screen_{uuid.uuid4().hex[:6]}")
 
             screens.append(ScreenNode(
-                screen_id=s_data.get("screen_id", f"screen_{uuid.uuid4().hex[:6]}"),
+                screen_id=screen_id_to_use,
                 name=s_data.get("name", "Unknown"),
                 screen_type=screen_type,
                 purpose=s_data.get("purpose", ""),
                 participates_in=s_data.get("participates_in", []),
                 visit_count=visit_count,
-                last_observation_id=last_obs_id or (existing.last_observation_id if existing else ""),
+                last_observation_id=last_obs_id or (existing_by_fp.last_observation_id if existing_by_fp else ""),
+                fingerprint=fp,
             ))
 
         transitions = []
@@ -565,6 +624,19 @@ class AnthropicAI:
         all_observations = list(current_model.observations) if hasattr(current_model, 'observations') else []
         all_observations.extend(observations)
 
+        # Compute structural coverage from graph topology (not LLM estimate)
+        # confirmed = screens we've actually visited
+        # total_expected = confirmed + remaining frontier items
+        confirmed_count = len(screens)  # all returned screens have been visited at least once
+        frontier_count = len(frontier)
+        if confirmed_count + frontier_count > 0:
+            structural_coverage = confirmed_count / (confirmed_count + frontier_count)
+        else:
+            structural_coverage = 0.0
+        # Blend: use structural as the floor, LLM can push it slightly higher
+        ai_coverage = float(data.get("coverage_estimate", 0.0))
+        blended_coverage = max(structural_coverage, min(ai_coverage, structural_coverage + 0.15))
+
         return ApplicationModel(
             app_reference=current_model.app_reference,
             model_version=current_model.model_version + 1,
@@ -578,7 +650,7 @@ class AnthropicAI:
             transitions=transitions,
             frontier=frontier,
             anomalies=anomalies,
-            coverage_estimate=data.get("coverage_estimate", current_model.coverage_estimate),
+            coverage_estimate=blended_coverage,
             confidence=data.get("confidence", current_model.confidence),
         )
 

@@ -295,6 +295,8 @@ class OpenAICompatibleAI:
         action_history: list[str] | None = None,
         max_actions_remaining: int = 50,
         available_inputs: dict[str, str] | None = None,
+        exploration_goals: list[str] | None = None,
+        confirmed_goals: list[str] | None = None,
     ) -> ExplorationPlan:
         model_summary = self._summarise_model(current_model)
         observation_summary = self._summarise_observations([current_observation])
@@ -305,6 +307,8 @@ class OpenAICompatibleAI:
             action_history=action_history,
             max_actions_remaining=max_actions_remaining,
             available_inputs=available_inputs,
+            exploration_goals=exploration_goals,
+            confirmed_goals=confirmed_goals,
         )
 
         raw_text = self._chat(EXPLORATION_PLANNER_SYSTEM_PROMPT, user_prompt)
@@ -375,6 +379,7 @@ class OpenAICompatibleAI:
             expected_outcome=data.get("expected_outcome", ""),
             exploration_goal=data.get("exploration_goal", ""),
             inputs_required=data.get("inputs_required", []),
+            goals_confirmed=data.get("goals_confirmed", []),
         )
 
     def _parse_flow_generation_response(self, raw_text: str) -> list[dict[str, Any]]:

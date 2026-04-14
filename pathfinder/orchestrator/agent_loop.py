@@ -99,6 +99,10 @@ class ExplorationConfig:
     generate_flows: bool = True     # Run Layer 3 after exploration completes
     deep_trace: bool = False        # Save screenshot + page source per step
                                     # into <run_dir>/deeptrace/
+    exploration_goals: list[str] | None = None  # Optional goals to pursue.
+                                    # e.g. ["find checkout flow", "find account settings"]
+                                    # Exploration continues until all goals are
+                                    # confirmed OR budget exhausted OR frontier empty.
 
 
 @dataclass
@@ -130,6 +134,7 @@ class ExplorationResult:
     end_time: float = 0.0
     stop_reason: str = ""
     total_actions: int = 0
+    confirmed_goals: list[str] = field(default_factory=list)  # Goals confirmed during run
 
     @property
     def duration_seconds(self) -> float:
@@ -154,11 +159,13 @@ class AgentLoop:
         device: Any,  # DeviceAdapter — using Any to avoid import cycle
         config: ExplorationConfig | None = None,
         event_bus: EventBus | None = None,
+        stop_flag: asyncio.Event | None = None,
     ):
         self.ai = ai
         self.device = device
         self.config = config or ExplorationConfig()
         self.event_bus = event_bus or EventBus()
+        self.stop_flag = stop_flag
 
         # Compose the layers
         self.perception = PerceptionLayer(ai=ai, device=device)
@@ -281,6 +288,10 @@ class AgentLoop:
         actions_taken = 0
         self._pending_navigation: str | None = None
 
+        # Goal tracking: set of goals confirmed so far
+        confirmed_goals: set[str] = set()
+        exploration_goals: list[str] = list(self.config.exploration_goals or [])
+
         # Loop detection state.
         # _screen_fingerprints tracks a short signature of each screen seen,
         # derived from (screen_type, first ~80 chars of screen_purpose).
@@ -290,6 +301,11 @@ class AgentLoop:
         last_fingerprint: str = ""
         consecutive_same: int = 0
         dead_ends: set[str] = set()
+
+        # Graph-level cycle detection: sliding window of recent fingerprints
+        # Detects A→B→A→B patterns that same-screen detection misses
+        _recent_fingerprints: list[str] = []
+        _CYCLE_WINDOW = 8  # look back 8 steps
 
         logger.info(
             "Starting exploration of %s (budget: %d actions)",
@@ -315,6 +331,12 @@ class AgentLoop:
             while actions_taken < self.config.max_actions:
                 step_num = actions_taken + 1
                 logger.info("=== Step %d / %d ===", step_num, self.config.max_actions)
+
+                # Check for external stop request (from IDE or other controller)
+                if self.stop_flag is not None and self.stop_flag.is_set():
+                    logger.info("Stop flag set — terminating exploration gracefully")
+                    result.stop_reason = "Stop requested by user"
+                    break
 
                 # --- EVENT: Step Started ---
                 await self.event_bus.emit(StepStarted(step=step_num))
@@ -417,6 +439,37 @@ class AgentLoop:
                         fingerprint, consecutive_same,
                     )
 
+                # --- GRAPH CYCLE DETECTION ---
+                _recent_fingerprints.append(fingerprint)
+                if len(_recent_fingerprints) > _CYCLE_WINDOW:
+                    _recent_fingerprints.pop(0)
+
+                # Detect 2-screen cycles: [A, B, A, B] in last 4 steps
+                in_2cycle = False
+                if len(_recent_fingerprints) >= 4:
+                    last4 = _recent_fingerprints[-4:]
+                    if last4[0] == last4[2] and last4[1] == last4[3] and last4[0] != last4[1]:
+                        in_2cycle = True
+                        logger.warning(
+                            "2-CYCLE DETECTED: alternating between '%s' and '%s'",
+                            last4[0][:40], last4[1][:40],
+                        )
+                        dead_ends.add(last4[0])
+                        dead_ends.add(last4[1])
+
+                # Detect 3-screen cycles: [A, B, C, A, B, C] in last 6 steps
+                in_3cycle = False
+                if len(_recent_fingerprints) >= 6:
+                    last6 = _recent_fingerprints[-6:]
+                    if last6[:3] == last6[3:]:
+                        in_3cycle = True
+                        logger.warning(
+                            "3-CYCLE DETECTED: repeating pattern %s",
+                            [fp[:30] for fp in last6[:3]],
+                        )
+                        for fp in last6[:3]:
+                            dead_ends.add(fp)
+
                 # --- 2. UPDATE WORLD MODEL ---
                 ctx_for_update = prior_context if step_num == 1 else None
                 model = await self.world_modeling.update(
@@ -455,6 +508,15 @@ class AgentLoop:
                         f"navigate back or try a completely different part of the "
                         f"app. Do NOT repeat any action already in the history."
                     )
+                if in_2cycle or in_3cycle:
+                    cycle_type = "2-screen" if in_2cycle else "3-screen"
+                    cycle_fps = _recent_fingerprints[-4:] if in_2cycle else _recent_fingerprints[-6:]
+                    enriched_history.append(
+                        f"⚠ {cycle_type.upper()} CYCLE DETECTED: The exploration is oscillating "
+                        f"between screens. You MUST navigate to a completely different part of "
+                        f"the app — use a top-level navigation item, go to the home screen, "
+                        f"or navigate to an unvisited URL. Do NOT continue the same pattern."
+                    )
                 if dead_ends:
                     de_list = ", ".join(sorted(dead_ends))
                     enriched_history.append(
@@ -472,7 +534,22 @@ class AgentLoop:
                     action_history=enriched_history,
                     max_actions_remaining=self.config.max_actions - actions_taken,
                     available_inputs=available_inputs or None,
+                    exploration_goals=exploration_goals or None,
+                    confirmed_goals=list(confirmed_goals) if confirmed_goals else None,
                 )
+
+                # --- GOAL TRACKING ---
+                if plan.goals_confirmed:
+                    for g in plan.goals_confirmed:
+                        if g and g not in confirmed_goals:
+                            confirmed_goals.add(g)
+                            logger.info("✓ Goal confirmed: %s", g)
+                    if exploration_goals and confirmed_goals.issuperset(set(exploration_goals)):
+                        logger.info(
+                            "All exploration goals confirmed (%d/%d). "
+                            "Exploration will stop after this step.",
+                            len(confirmed_goals), len(exploration_goals),
+                        )
 
                 logger.info("Plan: %s", plan)
 
@@ -544,7 +621,7 @@ class AgentLoop:
                             input_registry.resolve(field, context)
 
                 # If stuck for too long, override the planner and force a back
-                if is_stuck and consecutive_same > self.config.stuck_threshold + 2:
+                if (is_stuck and consecutive_same > self.config.stuck_threshold + 2) or in_2cycle or in_3cycle:
                     logger.warning(
                         "Force-navigating back: stuck for %d steps",
                         consecutive_same,
@@ -648,6 +725,7 @@ class AgentLoop:
         result.end_time = time.time()
         result.total_actions = actions_taken
         result.input_requests = input_registry.requests
+        result.confirmed_goals = list(confirmed_goals)
 
         # Save final model
         final_model_path = str(output_dir / "final_model.json")
@@ -698,10 +776,10 @@ class AgentLoop:
                     await self.event_bus.emit(FlowDetected(
                         flow_name=f.goal,
                         flow_category=f.category.value if hasattr(f.category, "value") else str(f.category),
-                        flow_type=f.flow_type if hasattr(f, "flow_type") else "observed",
+                        flow_type=f.validation_status,
                         importance=f.importance,
-                        step_count=len(f.semantic_steps),
-                        description=f.preconditions or "",
+                        step_count=len(f.steps),
+                        description=f.description or (f.success_criteria[0] if f.success_criteria else ""),
                     ))
             except Exception as e:
                 logger.error("Flow generation failed: %s", e, exc_info=True)
@@ -921,6 +999,8 @@ class AgentLoop:
                 }
                 for ir in result.input_requests
             ],
+            "exploration_goals": list(self.config.exploration_goals or []),
+            "confirmed_goals": result.confirmed_goals,
             "flows": (
                 [
                     {
@@ -929,7 +1009,7 @@ class AgentLoop:
                         "category": f.category.value if hasattr(f.category, 'value') else f.category,
                         "importance": f.importance,
                         "status": f.validation_status,
-                        "steps": len(f.semantic_steps),
+                        "steps": len(f.steps),
                     }
                     for f in result.flow_set.flows
                 ]

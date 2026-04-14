@@ -181,7 +181,8 @@ class InputRegistry:
                     ask failed / not interactive)
 
         For "generate" strategy, this returns the generate_hint so the
-        caller can pass it to the AI.
+        caller can pass it to the AI.  If you want actual AI synthesis,
+        use ``await async_resolve(...)`` instead.
 
         For "ask" strategy, this calls the prompt_fn callback (if
         interactive mode is enabled and a prompt_fn was provided).
@@ -197,7 +198,8 @@ class InputRegistry:
             return spec.value
 
         if spec.strategy == InputStrategy.GENERATE:
-            # Return the hint; caller passes this to the AI to synthesise
+            # Synchronous fallback: return hint so caller can still make
+            # progress.  For true AI synthesis use async_resolve().
             return spec.generate_hint or f"generate a plausible value for: {field}"
 
         if spec.strategy == InputStrategy.ASK:
@@ -219,6 +221,101 @@ class InputRegistry:
 
         # SKIP
         return None
+
+    async def async_resolve(
+        self,
+        field: str,
+        context: str = "",
+        ai: Any | None = None,
+        request: "InputRequest | None" = None,
+    ) -> str | None:
+        """Async version of resolve that can synthesise values via AI.
+
+        Identical to :meth:`resolve` for all strategies except "generate":
+        instead of returning the hint, it calls the AI to produce a
+        realistic sample value.
+
+        Args:
+            field:   Semantic field name (e.g. "search_query").
+            context: Additional context about where/how this value is used.
+            ai:      An AIInterface-compatible object with a ``client``
+                     attribute (``AsyncAnthropic`` or similar).
+                     If None, falls back to the synchronous hint.
+            request: The original InputRequest (provides richer context).
+
+        Returns:
+            A concrete string value, or None to skip.
+        """
+        if field not in self._specs:
+            return None
+
+        spec = self._specs[field]
+
+        # Non-generate strategies: delegate to the synchronous path
+        if spec.strategy != InputStrategy.GENERATE:
+            return self.resolve(field, context)
+
+        # --- Generate strategy ------------------------------------------------
+        # Build context for the AI from the spec, the request, and any extra
+        # context string supplied by the caller.
+        hint = spec.generate_hint or ""
+        category = (request.category if request else "other")
+        element_label = (request.element_label if request else field)
+        placeholder = (request.placeholder if request else "")
+        screen_purpose = (request.screen_purpose if request else "")
+
+        # Build a concise but information-rich prompt so the AI returns
+        # just the value text — nothing else.
+        prompt_parts = [
+            f"Generate a single realistic sample value for an input field.",
+            f"Field name: {field}",
+        ]
+        if element_label and element_label != field:
+            prompt_parts.append(f"Field label: {element_label}")
+        if placeholder:
+            prompt_parts.append(f"Placeholder text: {placeholder}")
+        if category:
+            prompt_parts.append(f"Category: {category}")
+        if screen_purpose:
+            prompt_parts.append(f"Screen: {screen_purpose}")
+        if hint:
+            prompt_parts.append(f"Hint: {hint}")
+        if context:
+            prompt_parts.append(f"Additional context: {context}")
+        prompt_parts.append(
+            "\nRespond with ONLY the value itself — no quotes, no explanation."
+        )
+        generation_prompt = "\n".join(prompt_parts)
+
+        # Cache key: field + hint + context (so the same field gets the same
+        # value across multiple steps in one run)
+        cache_key = f"__gen__{field}__{hint}__{context}"
+        if cache_key in self._ask_cache:
+            return self._ask_cache[cache_key]
+
+        # Try AI synthesis if we have an AI client
+        if ai is not None and hasattr(ai, "client"):
+            try:
+                response = await ai.client.messages.create(
+                    model=ai.config.model,
+                    max_tokens=64,
+                    system=(
+                        "You are a test data generator. "
+                        "Return only the requested value — nothing else."
+                    ),
+                    messages=[{"role": "user", "content": generation_prompt}],
+                )
+                generated = response.content[0].text.strip()
+                if generated:
+                    self._ask_cache[cache_key] = generated
+                    return generated
+            except Exception:
+                pass  # Fall through to hint
+
+        # Fallback: return the hint so tests can still proceed
+        fallback = hint or f"sample_{field}"
+        self._ask_cache[cache_key] = fallback
+        return fallback
 
     @property
     def requests(self) -> list[InputRequest]:

@@ -306,6 +306,7 @@ class PathfinderServer:
                 device=self._current_device,
                 config=exploration_config,
                 event_bus=self._event_bus,
+                stop_flag=self._stop_flag,
             )
 
             # Start exploration in background

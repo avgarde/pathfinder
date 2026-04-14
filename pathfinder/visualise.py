@@ -644,19 +644,23 @@ function buildFlowView(flow) {
     </div>
   `;
 
-  if (flow.preconditions && flow.preconditions.length > 0) {
+  // Entry conditions (v2 format: entry_conditions) or preconditions (v1 compat)
+  const entryConditions = (flow.entry_conditions || []).map(c => c.description || c);
+  const preList = entryConditions.length > 0 ? entryConditions : (flow.preconditions || []);
+  if (preList.length > 0) {
     html += `<div class="flow-conditions">
-      Pre: <span>${flow.preconditions.map(esc).join(', ')}</span>
+      Pre: <span>${preList.map(esc).join(', ')}</span>
     </div>`;
   }
-  if (flow.postconditions && flow.postconditions.length > 0) {
+  const successCriteria = flow.success_criteria || flow.postconditions || [];
+  if (successCriteria.length > 0) {
     html += `<div class="flow-conditions">
-      Post: <span>${flow.postconditions.map(esc).join(', ')}</span>
+      Post: <span>${successCriteria.map(esc).join(', ')}</span>
     </div>`;
   }
 
-  // Playback controls
-  const steps = flow.semantic_steps || [];
+  // Playback controls — use new 'steps' field if available, else 'semantic_steps' (v1 compat)
+  const steps = flow.steps && flow.steps.length > 0 ? flow.steps : (flow.semantic_steps || []);
   html += `
     <div class="playback-bar">
       <button onclick="startPlayback()">&#9654; Play</button>
@@ -735,7 +739,7 @@ function getPrevAction(flow, stepIdx) {
       : '');
   }
   // Fall back to trace
-  const steps = flow.semantic_steps || [];
+  const steps = (flow.steps && flow.steps.length > 0) ? flow.steps : (flow.semantic_steps || []);
   if (stepIdx > 0 && steps[stepIdx - 1]) {
     return steps[stepIdx - 1].expected_outcome || 'action';
   }
@@ -758,7 +762,7 @@ function findBestTraceStep(semanticStep, index) {
 function updateActiveStep() {
   const flow = DATA.flows[currentFlowIdx];
   if (!flow) return;
-  const steps = flow.semantic_steps || [];
+  const steps = (flow.steps && flow.steps.length > 0) ? flow.steps : (flow.semantic_steps || []);
   if (steps.length === 0) return;
 
   // Clamp
@@ -813,7 +817,7 @@ function startPlayback() {
   updateActiveStep();
   playbackTimer = setInterval(() => {
     const flow = DATA.flows[currentFlowIdx];
-    const steps = flow ? flow.semantic_steps || [] : [];
+    const steps = flow ? ((flow.steps && flow.steps.length > 0) ? flow.steps : (flow.semantic_steps || [])) : [];
     if (playbackStep < steps.length - 1) {
       playbackStep++;
       updateActiveStep();

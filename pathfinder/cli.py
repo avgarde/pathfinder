@@ -799,6 +799,11 @@ def visualise(run_dir: str, output: str | None, open_browser: bool) -> None:
     "--run-prefix", type=str, default="pathfinder-run-",
     help="Prefix for the run directory name (default: 'pathfinder-run-')",
 )
+@click.option(
+    "--goals", type=str, default=None,
+    help="Comma-separated exploration goals (e.g. 'find checkout,find account settings'). "
+         "Exploration prioritises these and stops when all are confirmed.",
+)
 def explore_web(
     url: str,
     name: str | None,
@@ -813,6 +818,7 @@ def explore_web(
     interactive: bool,
     deep_trace: bool,
     run_prefix: str,
+    goals: str | None,
 ) -> None:
     """Explore a web application autonomously and build an ApplicationModel.
 
@@ -835,6 +841,8 @@ def explore_web(
         pathfinder explore-web https://app.example.com --inputs inputs.json
 
         pathfinder explore-web https://app.example.com --inputs inputs.json --interactive
+
+        pathfinder explore-web https://app.example.com --goals "find checkout,find settings"
     """
     # Reconstruct the invocation command for logging
     parts = ["pathfinder", "explore-web", url]
@@ -862,12 +870,15 @@ def explore_web(
         parts.append("--deep-trace")
     if run_prefix != "pathfinder-run-":
         parts.extend(["--run-prefix", repr(run_prefix)])
+    if goals:
+        parts.extend(["--goals", repr(goals)])
     invocation_command = " ".join(parts)
 
     asyncio.run(_explore_web_async(
         url, name, description, max_actions, output_dir,
         headless, browser, prior_context, viewport, invocation_command,
         inputs, interactive, deep_trace, run_prefix,
+        goals=goals,
     ))
 
 
@@ -886,6 +897,7 @@ async def _explore_web_async(
     interactive: bool = False,
     deep_trace: bool = False,
     run_prefix: str = "pathfinder-run-",
+    goals: str | None = None,
 ) -> None:
     """Async implementation of explore-web."""
     from pathfinder.contracts.app_reference import AppReference
@@ -936,12 +948,18 @@ async def _explore_web_async(
         viewport_height=viewport_height,
     )
 
+    # Parse goals
+    exploration_goals = None
+    if goals:
+        exploration_goals = [g.strip() for g in goals.split(",") if g.strip()]
+
     exploration_config = ExplorationConfig(
         max_actions=max_actions,
         output_dir=output_dir,
         input_specs=input_specs,
         interactive=interactive,
         deep_trace=deep_trace,
+        exploration_goals=exploration_goals,
     )
 
     run_dir = os.path.join(output_dir, run_id)
@@ -953,6 +971,10 @@ async def _explore_web_async(
     console.print(f"  Budget: {max_actions} actions")
     if deep_trace:
         console.print(f"  Deep trace: ON (screenshots + page source in deeptrace/)")
+    if exploration_goals:
+        console.print(f"  Goals ({len(exploration_goals)}):")
+        for g in exploration_goals:
+            console.print(f"    ○ {g}")
     console.print(f"  Output: {run_dir}")
     console.print()
 
@@ -987,7 +1009,26 @@ async def _explore_web_async(
         summary_table.add_row("Coverage", f"{result.model.coverage_estimate:.0%}")
         summary_table.add_row("Confidence", f"{result.model.confidence:.0%}")
         summary_table.add_row("Model version", str(result.model.model_version))
+        if exploration_goals:
+            confirmed_count = len(result.confirmed_goals)
+            total_count = len(exploration_goals)
+            summary_table.add_row(
+                "Goals confirmed",
+                f"{confirmed_count}/{total_count}",
+            )
         console.print(summary_table)
+
+        if exploration_goals:
+            console.print()
+            goal_table = Table(title="Exploration Goals")
+            goal_table.add_column("Status")
+            goal_table.add_column("Goal")
+            for g in exploration_goals:
+                if g in result.confirmed_goals:
+                    goal_table.add_row("[green]✓ confirmed[/green]", g)
+                else:
+                    goal_table.add_row("[yellow]○ not confirmed[/yellow]", g)
+            console.print(goal_table)
 
         if result.model.screens:
             console.print()
@@ -1072,6 +1113,557 @@ async def _explore_web_async(
 
     finally:
         await adapter.stop()
+
+
+@main.command("verify")
+@click.option(
+    "--flows", "flows_path",
+    type=click.Path(exists=True), required=True,
+    help="Path to flows.json from a previous exploration run",
+)
+@click.option(
+    "--url", type=str, required=True,
+    help="Starting URL to navigate to before each flow",
+)
+@click.option("--output-dir", "-o", type=click.Path(), default="./verification", help="Output directory")
+@click.option("--headless", is_flag=True, help="Run browser headless")
+@click.option("--browser", type=click.Choice(["chromium", "firefox", "webkit"]), default="chromium")
+@click.option("--viewport", type=str, default="1280x800", help="Viewport WIDTHxHEIGHT")
+@click.option(
+    "--inputs", type=click.Path(exists=True),
+    help="JSON input specs (for flows that require credentials)",
+)
+@click.option(
+    "--regression", is_flag=True,
+    help="Regression mode: only re-verify previously-validated flows; exit 1 on failure",
+)
+@click.option(
+    "--no-ai-assertions", is_flag=True,
+    help="Disable AI-powered semantic assertion evaluation (faster, less accurate)",
+)
+def verify(
+    flows_path: str,
+    url: str,
+    output_dir: str,
+    headless: bool,
+    browser: str,
+    viewport: str,
+    inputs: str | None,
+    regression: bool,
+    no_ai_assertions: bool,
+) -> None:
+    """Execute and verify candidate flows against a live application.
+
+    Loads flows.json, replays each flow step-by-step, evaluates assertions
+    at every step, and promotes flows to 'validated' or marks them 'failed'.
+
+    In regression mode (--regression), only previously-validated flows are
+    re-run. Exit code is 1 if any previously-validated flow now fails.
+
+    Examples:
+
+        pathfinder verify --flows ./exploration/run-xyz/flows.json --url https://app.com
+
+        pathfinder verify --flows flows.json --url https://app.com --regression
+
+        pathfinder verify --flows flows.json --url https://app.com --inputs creds.json
+    """
+    asyncio.run(_verify_async(
+        flows_path=flows_path,
+        url=url,
+        output_dir=output_dir,
+        headless=headless,
+        browser=browser,
+        viewport=viewport,
+        inputs_path=inputs,
+        regression=regression,
+        ai_assertions=not no_ai_assertions,
+    ))
+
+
+async def _verify_async(
+    flows_path: str,
+    url: str,
+    output_dir: str,
+    headless: bool,
+    browser: str,
+    viewport: str,
+    inputs_path: str | None,
+    regression: bool,
+    ai_assertions: bool,
+) -> None:
+    """Async implementation of the verify command."""
+    from pathfinder.contracts.inputs import InputRegistry
+    from pathfinder.device.web.adapter import WebDeviceAdapter
+    from pathfinder.layers.flow_generation import FlowGenerationLayer
+    from pathfinder.verifier.flow_verifier import FlowVerifier
+
+    config = get_ai_config()
+    ai = get_ai(config)
+
+    # Load flow set
+    flow_set = FlowGenerationLayer.load_flows(flows_path)
+    console.print(f"[bold]Verifying:[/bold] {len(flow_set.flows)} flows from {flows_path}")
+    console.print(f"  URL: {url}")
+    console.print(f"  Regression mode: {'ON' if regression else 'OFF'}")
+    console.print(f"  AI assertions: {'ON' if ai_assertions else 'OFF'}")
+    console.print()
+
+    # Parse viewport
+    try:
+        vw, vh = viewport.split("x")
+        viewport_width, viewport_height = int(vw), int(vh)
+    except ValueError:
+        viewport_width, viewport_height = 1280, 800
+
+    # Load input specs
+    input_specs = None
+    if inputs_path:
+        input_specs = InputRegistry.load_specs(inputs_path)
+        console.print(f"  Loaded {len(input_specs)} input specs")
+
+    adapter = WebDeviceAdapter(
+        headless=headless,
+        browser_type=browser,
+        viewport_width=viewport_width,
+        viewport_height=viewport_height,
+    )
+
+    try:
+        await adapter.start()
+
+        verifier = FlowVerifier(
+            ai=ai,
+            device=adapter,
+            output_dir=output_dir,
+            ai_assertions=ai_assertions,
+        )
+
+        vrun = await verifier.verify_all(
+            flow_set=flow_set,
+            start_url=url,
+            input_specs=input_specs,
+            regression=regression,
+        )
+
+        # Display results
+        console.print()
+        console.print(Panel(
+            f"[bold]Verification Run: {vrun.run_id}[/bold]",
+            title=f"{'✓ All Passed' if vrun.success else '✗ Some Failed'} — {vrun.duration_seconds:.1f}s",
+        ))
+
+        result_table = Table(title="Verification Results")
+        result_table.add_column("Flow ID", style="cyan")
+        result_table.add_column("Goal")
+        result_table.add_column("Status")
+        result_table.add_column("Steps")
+
+        for flow, fr in zip(flow_set.flows, vrun.flow_results):
+            status_map = {
+                "validated": "[green]✓ validated[/green]",
+                "partial": "[yellow]~ partial[/yellow]",
+                "failed": "[red]✗ failed[/red]",
+                "blocked": "[dim]⊘ blocked[/dim]",
+            }
+            status = status_map.get(flow.validation_status, flow.validation_status)
+            result_table.add_row(
+                flow.flow_id,
+                flow.goal[:50],
+                status,
+                f"{fr.steps_passed}/{fr.steps_verified}",
+            )
+
+        console.print(result_table)
+
+        summary_table = Table()
+        summary_table.add_column("Metric", style="cyan")
+        summary_table.add_column("Count")
+        summary_table.add_row("Total", str(vrun.total_flows))
+        summary_table.add_row("[green]Validated[/green]", str(vrun.flows_validated))
+        summary_table.add_row("[yellow]Partial[/yellow]", str(vrun.flows_partial))
+        summary_table.add_row("[red]Failed[/red]", str(vrun.flows_failed))
+        summary_table.add_row("[dim]Blocked[/dim]", str(vrun.flows_blocked))
+        console.print(summary_table)
+
+        # Save updated flow set (now with verification results)
+        verified_path = str(Path(output_dir) / vrun.run_id / "flows_verified.json")
+        FlowGenerationLayer.save_flows(flow_set, verified_path)
+        console.print(f"\n[green]Verified flows saved to:[/green] {verified_path}")
+        console.print(f"Summary: {vrun.run_dir}/verification_summary.json")
+
+        if regression and not vrun.success:
+            console.print("\n[red bold]REGRESSION DETECTED: some previously-validated flows now fail.[/red bold]")
+            import sys
+            sys.exit(1)
+
+    finally:
+        await adapter.stop()
+
+
+@main.command("report")
+@click.argument("report_type", type=click.Choice(["test-cases", "telemetry", "coverage", "usability"]))
+@click.option(
+    "--flows", "flows_path",
+    type=click.Path(exists=True), required=True,
+    help="Path to a verified flows.json file",
+)
+@click.option(
+    "--output-dir", "-o", type=click.Path(), default="./reports",
+    help="Output directory for generated reports",
+)
+@click.option(
+    "--format", "output_format",
+    type=click.Choice(["playwright", "json", "markdown", "html"]), default="json",
+    help="Output format for test cases (default: json)",
+)
+@click.option(
+    "--requirements", type=click.Path(exists=True),
+    help="JSON file with requirement IDs (for coverage report)",
+)
+def report(
+    report_type: str,
+    flows_path: str,
+    output_dir: str,
+    output_format: str,
+    requirements: str | None,
+) -> None:
+    """Generate downstream artifacts from verified flows.
+
+    REPORT_TYPE is one of: test-cases, telemetry, coverage, usability.
+
+    Examples:
+
+        pathfinder report test-cases --flows flows_verified.json --format playwright
+
+        pathfinder report telemetry --flows flows_verified.json
+
+        pathfinder report coverage --flows flows_verified.json --requirements req.json
+
+        pathfinder report usability --flows flows_verified.json
+    """
+    asyncio.run(_report_async(
+        report_type=report_type,
+        flows_path=flows_path,
+        output_dir=output_dir,
+        output_format=output_format,
+        requirements_path=requirements,
+    ))
+
+
+async def _report_async(
+    report_type: str,
+    flows_path: str,
+    output_dir: str,
+    output_format: str,
+    requirements_path: str | None,
+) -> None:
+    """Async implementation of the report command."""
+    from pathfinder.layers.flow_generation import FlowGenerationLayer
+    from pathfinder.reporter.report_generator import ReportGenerator
+
+    flow_set = FlowGenerationLayer.load_flows(flows_path)
+    Path(output_dir).mkdir(parents=True, exist_ok=True)
+
+    generator = ReportGenerator(flow_set=flow_set, output_dir=output_dir)
+
+    console.print(
+        f"[bold]Generating {report_type} report[/bold] from {len(flow_set.flows)} flows"
+    )
+
+    output_paths = []
+
+    if report_type == "test-cases":
+        output_paths = generator.generate_test_cases(output_format=output_format)
+        console.print(f"Generated {len(output_paths)} test case file(s)")
+
+    elif report_type == "telemetry":
+        output_path = generator.generate_telemetry_schema()
+        output_paths = [output_path]
+        console.print(f"Generated telemetry schema: {output_path}")
+
+    elif report_type == "coverage":
+        requirements_data = None
+        if requirements_path:
+            requirements_data = json.loads(Path(requirements_path).read_text())
+        output_path = generator.generate_coverage_report(requirements=requirements_data)
+        output_paths = [output_path]
+        console.print(f"Generated coverage report: {output_path}")
+
+    elif report_type == "usability":
+        output_path = generator.generate_usability_report()
+        output_paths = [output_path]
+        console.print(f"Generated usability report: {output_path}")
+
+    console.print()
+    for p in output_paths:
+        console.print(f"  [green]→[/green] {p}")
+
+
+@main.command("run")
+@click.argument("url")
+@click.option("--name", type=str, help="App/site name")
+@click.option("--goals", type=str, default=None,
+              help="Comma-separated exploration goals")
+@click.option("--inputs", type=click.Path(exists=True), help="Input specs JSON")
+@click.option("--max-actions", type=int, default=30, help="Exploration budget (default: 30)")
+@click.option("--output-dir", "-o", type=click.Path(), default="./pathfinder-runs",
+              help="Output base directory")
+@click.option("--headless", is_flag=True, help="Run browser headless")
+@click.option("--browser", type=click.Choice(["chromium", "firefox", "webkit"]), default="chromium")
+@click.option("--viewport", type=str, default="1280x800")
+@click.option(
+    "--report", type=str, default=None,
+    help="Comma-separated reports to generate after verification: "
+         "test-cases,telemetry,coverage,usability,all",
+)
+@click.option("--skip-verify", is_flag=True, help="Skip verification pass (explore only)")
+@click.option("--regression", is_flag=True,
+              help="In verify pass: exit 1 if any previously-validated flow regresses")
+def run_pipeline(
+    url: str,
+    name: str | None,
+    goals: str | None,
+    inputs: str | None,
+    max_actions: int,
+    output_dir: str,
+    headless: bool,
+    browser: str,
+    viewport: str,
+    report: str | None,
+    skip_verify: bool,
+    regression: bool,
+) -> None:
+    """Full pipeline: discover → verify → report.
+
+    Chains together explore-web, verify, and report into a single command.
+    Exit code is 0 if all verified flows pass; 1 if regressions are found
+    (only meaningful when --regression is passed).
+
+    Examples:
+
+        pathfinder run https://app.com --name "My App" --goals "find checkout" --report all
+
+        pathfinder run https://app.com --max-actions 60 --skip-verify --report test-cases
+
+        pathfinder run https://app.com --inputs creds.json --report all --regression
+    """
+    asyncio.run(_run_pipeline_async(
+        url=url,
+        name=name,
+        goals=goals,
+        inputs_path=inputs,
+        max_actions=max_actions,
+        output_dir=output_dir,
+        headless=headless,
+        browser=browser,
+        viewport=viewport,
+        report=report,
+        skip_verify=skip_verify,
+        regression=regression,
+    ))
+
+
+async def _run_pipeline_async(
+    url: str,
+    name: str | None,
+    goals: str | None,
+    inputs_path: str | None,
+    max_actions: int,
+    output_dir: str,
+    headless: bool,
+    browser: str,
+    viewport: str,
+    report: str | None,
+    skip_verify: bool,
+    regression: bool,
+) -> None:
+    """Async implementation of the full pipeline."""
+    import sys
+
+    from pathfinder.contracts.app_reference import AppReference
+    from pathfinder.contracts.inputs import InputRegistry
+    from pathfinder.device.web.adapter import WebDeviceAdapter
+    from pathfinder.layers.context_gathering import ContextGatheringLayer
+    from pathfinder.layers.flow_generation import FlowGenerationLayer
+    from pathfinder.orchestrator.agent_loop import AgentLoop, ExplorationConfig, generate_run_id
+
+    config = get_ai_config()
+    ai = get_ai(config)
+
+    run_id = "run-" + generate_run_id()
+    run_dir = Path(output_dir) / run_id
+    run_dir.mkdir(parents=True, exist_ok=True)
+
+    console.print(f"[bold blue]Pathfinder Pipeline[/bold blue]")
+    console.print(f"  URL: {url}")
+    console.print(f"  Run ID: {run_id}")
+    if goals:
+        console.print(f"  Goals: {goals}")
+    console.print(f"  Output: {run_dir}")
+    console.print()
+
+    # Parse viewport
+    try:
+        vw, vh = viewport.split("x")
+        viewport_width, viewport_height = int(vw), int(vh)
+    except ValueError:
+        viewport_width, viewport_height = 1280, 800
+
+    # Load inputs
+    input_specs = None
+    if inputs_path:
+        input_specs = InputRegistry.load_specs(inputs_path)
+
+    # Parse goals
+    exploration_goals = [g.strip() for g in goals.split(",") if g.strip()] if goals else None
+
+    app_ref = AppReference(name=name or url, web_url=url)
+
+    adapter = WebDeviceAdapter(
+        headless=headless,
+        browser_type=browser,
+        viewport_width=viewport_width,
+        viewport_height=viewport_height,
+    )
+
+    flows_path: str | None = None
+
+    # ---------------------------------------------------------------
+    # Phase 1: Explore
+    # ---------------------------------------------------------------
+    console.rule("[bold]Phase 1: Discover[/bold]")
+    exploration_config = ExplorationConfig(
+        max_actions=max_actions,
+        output_dir=str(run_dir / "explore"),
+        input_specs=input_specs,
+        exploration_goals=exploration_goals,
+    )
+
+    try:
+        await adapter.start()
+
+        loop = AgentLoop(ai=ai, device=adapter, config=exploration_config)
+        explore_result = await loop.explore(
+            app_ref=app_ref,
+            start_url=url,
+            run_id="explore",
+        )
+
+        if explore_result.flow_set and explore_result.flow_set.flows:
+            console.print(
+                f"[green]✓ Discovered {len(explore_result.flow_set.flows)} flows "
+                f"({explore_result.total_actions} actions)[/green]"
+            )
+            flows_path = str(
+                Path(explore_result.run_dir) / "flows.json"
+            )
+        else:
+            console.print("[yellow]No flows generated from exploration[/yellow]")
+
+        if exploration_goals and explore_result.confirmed_goals:
+            console.print(
+                f"  Goals confirmed: {len(explore_result.confirmed_goals)}/{len(exploration_goals)}"
+            )
+
+    finally:
+        await adapter.stop()
+
+    if not flows_path or not Path(flows_path).exists():
+        console.print("[red]No flows to verify or report on — pipeline done.[/red]")
+        return
+
+    # ---------------------------------------------------------------
+    # Phase 2: Verify
+    # ---------------------------------------------------------------
+    if not skip_verify:
+        console.rule("[bold]Phase 2: Verify[/bold]")
+
+        from pathfinder.verifier.flow_verifier import FlowVerifier
+
+        flow_set = FlowGenerationLayer.load_flows(flows_path)
+        verify_dir = str(run_dir / "verify")
+
+        adapter2 = WebDeviceAdapter(
+            headless=headless,
+            browser_type=browser,
+            viewport_width=viewport_width,
+            viewport_height=viewport_height,
+        )
+
+        try:
+            await adapter2.start()
+            verifier = FlowVerifier(
+                ai=ai,
+                device=adapter2,
+                output_dir=verify_dir,
+            )
+
+            vrun = await verifier.verify_all(
+                flow_set=flow_set,
+                start_url=url,
+                input_specs=input_specs,
+                regression=regression,
+            )
+
+            console.print(
+                f"[green]✓ Verified: {vrun.flows_validated}/{vrun.total_flows} flows passed[/green]"
+            )
+            if vrun.flows_failed:
+                console.print(f"  [red]{vrun.flows_failed} failed[/red]")
+            if vrun.flows_blocked:
+                console.print(f"  [dim]{vrun.flows_blocked} blocked[/dim]")
+
+            # Save updated flows with verification results
+            verified_flows_path = str(run_dir / "flows_verified.json")
+            FlowGenerationLayer.save_flows(flow_set, verified_flows_path)
+            flows_path = verified_flows_path
+
+        finally:
+            await adapter2.stop()
+
+        if regression and not vrun.success:
+            console.print("\n[red bold]REGRESSION DETECTED[/red bold]")
+            sys.exit(1)
+
+    # ---------------------------------------------------------------
+    # Phase 3: Report
+    # ---------------------------------------------------------------
+    if report:
+        console.rule("[bold]Phase 3: Report[/bold]")
+
+        from pathfinder.reporter.report_generator import ReportGenerator
+
+        report_types = set()
+        for r in report.split(","):
+            r = r.strip()
+            if r == "all":
+                report_types |= {"test-cases", "telemetry", "coverage", "usability"}
+            elif r:
+                report_types.add(r)
+
+        flow_set = FlowGenerationLayer.load_flows(flows_path)
+        report_dir = str(run_dir / "reports")
+        generator = ReportGenerator(flow_set=flow_set, output_dir=report_dir)
+
+        if "test-cases" in report_types:
+            paths = generator.generate_test_cases(output_format="playwright")
+            console.print(f"  [green]→[/green] Test cases: {len(paths)} files in {report_dir}/test-cases/")
+
+        if "telemetry" in report_types:
+            p = generator.generate_telemetry_schema()
+            console.print(f"  [green]→[/green] Telemetry schema: {p}")
+
+        if "coverage" in report_types:
+            p = generator.generate_coverage_report()
+            console.print(f"  [green]→[/green] Coverage report: {p}")
+
+        if "usability" in report_types:
+            p = generator.generate_usability_report()
+            console.print(f"  [green]→[/green] Usability report: {p}")
+
+    console.print()
+    console.print(f"[bold green]Pipeline complete.[/bold green] Run artifacts: {run_dir}/")
 
 
 @main.command("serve")

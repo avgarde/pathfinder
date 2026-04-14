@@ -21,6 +21,7 @@ class ScreenNode(BaseModel):
     participates_in: list[str] = Field(default_factory=list)  # Capability names
     visit_count: int = 1
     last_observation_id: str = ""
+    fingerprint: str = ""  # Structural fingerprint for deduplication
 
 
 class ScreenTransition(BaseModel):

@@ -94,9 +94,12 @@ def build_perception_prompt(
                 f"\nKnown entities in this app: {', '.join(context.known_entities)}"
             )
         if context.prior_screen:
+            prior = context.prior_screen
             parts.append(
-                f"\nThe previous screen was: {context.prior_screen.screen_purpose} "
-                f"(type: {context.prior_screen.screen_type.value})"
+                f"\nPrevious screen (what you just came from): "
+                f"{prior.screen_purpose} (type: {prior.screen_type.value}). "
+                f"This is important for understanding navigation context — you likely "
+                f"navigated FROM that screen to this one via some action."
             )
         if context.navigation_history:
             parts.append(
